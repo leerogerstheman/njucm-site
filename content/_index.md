@@ -1,5 +1,5 @@
 ---
-title: "首页"
+title: "njucm.org"
 ---
 
-你好，欢迎来到 njucm.org
+An independent academic and technical site exploring traditional Chinese medicine, pharmacy, and modern computational methods.
