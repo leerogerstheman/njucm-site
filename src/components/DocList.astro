@@ -1,0 +1,43 @@
+---
+import type { Doc } from '../utils/content';
+
+interface Props {
+  docs: Doc[];
+  emptyHint?: string;
+  /** cap the number of grid columns; omit to auto-fill the row */
+  columns?: number;
+}
+
+const { docs, emptyHint = '这个栏目还没有内容。', columns } = Astro.props;
+---
+
+{
+  docs.length === 0 ? (
+    <p class="empty">{emptyHint}</p>
+  ) : (
+    <div class="grid" style={columns ? `grid-template-columns:repeat(${columns}, minmax(0, 1fr))` : undefined}>
+      {docs.map((doc) => (
+        <article class="card">
+          <h2 class="card__title">
+            <a href={doc.href}>{doc.title}</a>
+          </h2>
+
+          {doc.description && <p class="card__desc">{doc.description}</p>}
+
+          <div class="card__meta">
+            {doc.date && (
+              <time datetime={doc.date.toISOString()}>
+                {doc.date.toISOString().slice(0, 10)}
+              </time>
+            )}
+            {doc.status && <span class="tag">{doc.status}</span>}
+            {doc.tags.slice(0, 3).map((tag) => (
+              <span class="tag">{tag}</span>
+            ))}
+            {doc.draft && <span class="tag">draft</span>}
+          </div>
+        </article>
+      ))}
+    </div>
+  )
+}

@@ -1,0 +1,31 @@
+---
+import type { NavItem } from '../data/site';
+
+interface Props {
+  items: NavItem[];
+  /** current pathname, e.g. Astro.url.pathname */
+  current: string;
+}
+
+const { items, current } = Astro.props;
+
+const isActive = (href: string) => {
+  const path = current.replace(/\/+$/, '') || '/';
+  if (href === '/') return path === '/';
+  return path === href || path.startsWith(href + '/');
+};
+---
+
+<ul class="nav__list" id="site-nav-list" data-open="false">
+  {items.map((item) => (
+    <li>
+      <a
+        class="nav__link"
+        href={item.href}
+        aria-current={isActive(item.href) ? 'page' : undefined}
+      >
+        {item.label}
+      </a>
+    </li>
+  ))}
+</ul>

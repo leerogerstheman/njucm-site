@@ -1,0 +1,39 @@
+---
+import { SITE } from '../data/site';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="site-foot__inner">
+      <div class="site-foot__col">
+        <p class="site-foot__title">{SITE.title} · {SITE.domain}</p>
+        <p>{SITE.description}</p>
+      </div>
+
+      <div class="site-foot__col">
+        <p class="site-foot__title">Sections</p>
+        <ul class="site-foot__links">
+          <li><a href="/notes">Notes</a></li>
+          <li><a href="/data">Data</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </div>
+
+      <div class="site-foot__col">
+        <p class="site-foot__title">Elsewhere</p>
+        <ul class="site-foot__links">
+          <li><a href={SITE.repo} rel="noopener noreferrer" target="_blank">GitHub</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-foot__bottom">
+      <p>© {year} {SITE.domain}</p>
+      <p>Built with Astro · {SITE.tagline}</p>
+    </div>
+  </div>
+</footer>

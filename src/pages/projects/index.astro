@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionIndex from '../../components/SectionIndex.astro';
+import { NAV } from '../../data/site';
+import { getDocs } from '../../utils/content';
+
+const item = NAV.find((i) => i.href === '/projects')!;
+const docs = await getDocs('projects');
+---
+
+<BaseLayout title={item.label} description={item.desc}>
+  <SectionIndex
+    item={item}
+    docs={docs}
+    emptyHint="还没有项目条目。在 src/content/projects/ 下新建 .md 文件即可出现在这里。"
+  />
+</BaseLayout>

@@ -1,0 +1,22 @@
+---
+import type { NavItem } from '../data/site';
+import DocList from '../components/DocList.astro';
+import type { Doc } from '../utils/content';
+
+interface Props {
+  item: NavItem;
+  docs: Doc[];
+  emptyHint?: string;
+}
+
+const { item, docs, emptyHint } = Astro.props;
+---
+
+<header class="page-head">
+  <p class="eyebrow">{item.label}</p>
+  <h1>{item.label}</h1>
+  <p class="page-head__desc">{item.desc}</p>
+  <p class="count" style="margin:1rem 0 0">{docs.length} 篇</p>
+</header>
+
+<DocList docs={docs} emptyHint={emptyHint} />

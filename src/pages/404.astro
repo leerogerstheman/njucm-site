@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="404" description="页面不存在。">
+  <div class="prose-narrow" style="padding-block:3rem">
+    <p class="eyebrow">Error 404</p>
+    <h1>这个页面不存在</h1>
+    <p class="muted">
+      链接可能已经失效，或者内容还没写。可以回到首页，或者从下面的栏目继续。
+    </p>
+    <div class="hero__actions" style="margin-top:1.75rem">
+      <a class="btn btn--primary" href="/">返回首页</a>
+      <a class="btn" href="/notes">Notes</a>
+      <a class="btn" href="/data">Data</a>
+      <a class="btn" href="/projects">Projects</a>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,63 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE } from '../data/site';
+import '../styles/global.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+
+interface Props {
+  /** full <title>; falls back to the site title */
+  title?: string;
+  description?: string;
+  /** set on article pages so the title reads "page · site" */
+  isArticle?: boolean;
+}
+
+const { title, description = SITE.description, isArticle = false } = Astro.props;
+
+const pageTitle = title
+  ? isArticle
+    ? `${title} · ${SITE.title}`
+    : `${title} · ${SITE.title}`
+  : `${SITE.title} · ${SITE.domain}`;
+
+const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://njucm.org').href;
+---
+
+<!doctype html>
+<html lang={SITE.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#07090d" />
+    <meta name="author" content={SITE.author} />
+
+    <meta property="og:type" content={isArticle ? 'article' : 'website'} />
+    <meta property="og:site_name" content={SITE.title} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/rss.xml" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <Header />
+    <main id="main">
+      <div class="wrap">
+        <slot />
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

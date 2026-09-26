@@ -1,0 +1,5 @@
+# pnpm blocks postinstall scripts by default (supply-chain hardening).
+# Astro needs esbuild's native binary; sharp is used for image optimisation.
+allowBuilds:
+  esbuild: true
+  sharp: true

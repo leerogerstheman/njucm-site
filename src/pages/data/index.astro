@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionIndex from '../../components/SectionIndex.astro';
+import { NAV } from '../../data/site';
+import { getDocs } from '../../utils/content';
+
+const item = NAV.find((i) => i.href === '/data')!;
+const docs = await getDocs('data');
+---
+
+<BaseLayout title={item.label} description={item.desc}>
+  <SectionIndex
+    item={item}
+    docs={docs}
+    emptyHint="还没有数据集。在 src/content/data/ 下新建 .md 文件即可出现在这里。"
+  />
+</BaseLayout>

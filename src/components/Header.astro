@@ -1,0 +1,50 @@
+---
+import { SITE, NAV } from '../data/site';
+import Nav from './Nav.astro';
+---
+
+<header class="site-head">
+  <div class="wrap site-head__inner">
+    <a class="brand" href="/">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span>{SITE.title}</span>
+      <span class="brand__sub">{SITE.domain}</span>
+    </a>
+
+    <nav class="nav" aria-label="主导航">
+      <Nav items={NAV} current={Astro.url.pathname} />
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav-list"
+        aria-label="打开导航菜单"
+      >
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('.nav-toggle');
+  const list = document.getElementById('site-nav-list');
+
+  if (toggle && list) {
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      toggle.setAttribute('aria-label', open ? '打开导航菜单' : '关闭导航菜单');
+      list.dataset.open = String(!open);
+    });
+
+    // reset when resizing up to desktop
+    const mq = window.matchMedia('(min-width: 861px)');
+    mq.addEventListener('change', (event) => {
+      if (event.matches) {
+        toggle.setAttribute('aria-expanded', 'false');
+        list.dataset.open = 'false';
+      }
+    });
+  }
+</script>

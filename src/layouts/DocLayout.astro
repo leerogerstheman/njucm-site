@@ -1,0 +1,34 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import type { Doc } from '../utils/content';
+
+interface Props {
+  doc: Doc;
+  /** label of the parent section, used for the back link */
+  sectionLabel: string;
+}
+
+const { doc, sectionLabel } = Astro.props;
+const date = doc.date ? doc.date.toISOString().slice(0, 10) : undefined;
+---
+
+<BaseLayout title={doc.title} description={doc.description} isArticle>
+  <article class="article">
+    <a class="backlink" href={doc.href.replace(/[^/]+\/$/, '')}>← {sectionLabel}</a>
+
+    <header class="article__head">
+      <h1>{doc.title}</h1>
+      <div class="article__meta">
+        {date && <time datetime={doc.date!.toISOString()}>{date}</time>}
+        {doc.status && <span class="tag">{doc.status}</span>}
+        {doc.tags.map((tag) => (
+          <span class="tag">{tag}</span>
+        ))}
+      </div>
+    </header>
+
+    <div class="article__body">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>
