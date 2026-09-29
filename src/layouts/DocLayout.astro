@@ -20,11 +20,20 @@ const date = doc.date ? doc.date.toISOString().slice(0, 10) : undefined;
       <h1>{doc.title}</h1>
       <div class="article__meta">
         {date && <time datetime={doc.date!.toISOString()}>{date}</time>}
-        {doc.status && <span class="tag">{doc.status}</span>}
+        {doc.status && <span class={`tag tag--${doc.status}`}>{doc.status}</span>}
         {doc.tags.map((tag) => (
           <span class="tag">{tag}</span>
         ))}
       </div>
+      {
+        doc.repo && (
+          <p class="article__repo">
+            <a href={doc.repo} rel="noopener noreferrer" target="_blank">
+              仓库：{doc.repo.replace(/^https?:\/\/(www\.)?github\.com\//, '')}
+            </a>
+          </p>
+        )
+      }
     </header>
 
     <div class="article__body">

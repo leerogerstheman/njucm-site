@@ -9,13 +9,20 @@ interface Props {
 }
 
 const { docs, emptyHint = '这个栏目还没有内容。', columns } = Astro.props;
+
+// A doc list never wants the fixed 4-column section-card layout, and squeezing
+// two entries into four columns makes the cards unreadably narrow. `auto` opts
+// out of the wide-screen override in global.css; callers can still pin a count.
+const colStyle = columns
+  ? `repeat(${columns}, minmax(0, 1fr))`
+  : `repeat(auto-fill, minmax(min(100%, 21rem), 1fr))`;
 ---
 
 {
   docs.length === 0 ? (
     <p class="empty">{emptyHint}</p>
   ) : (
-    <div class="grid" style={columns ? `grid-template-columns:repeat(${columns}, minmax(0, 1fr))` : undefined}>
+    <div class="grid" style={`grid-template-columns:${colStyle}`}>
       {docs.map((doc) => (
         <article class="card">
           <h2 class="card__title">
@@ -30,7 +37,12 @@ const { docs, emptyHint = '这个栏目还没有内容。', columns } = Astro.pr
                 {doc.date.toISOString().slice(0, 10)}
               </time>
             )}
-            {doc.status && <span class="tag">{doc.status}</span>}
+            {doc.status && <span class={`tag tag--${doc.status}`}>{doc.status}</span>}
+            {doc.repo && (
+              <a class="tag tag--repo" href={doc.repo} rel="noopener noreferrer" target="_blank">
+                仓库
+              </a>
+            )}
             {doc.tags.slice(0, 3).map((tag) => (
               <span class="tag">{tag}</span>
             ))}
