@@ -21,7 +21,10 @@ export const SITE = {
     'An independent academic and technical site exploring traditional Chinese medicine, pharmacy, and modern computational methods.',
   lang: 'zh-CN',
   author: 'leerogerstheman',
+  /** GitHub profile, linked from the footer and the about page */
+  github: 'https://github.com/leerogerstheman',
   repo: 'https://github.com/leerogerstheman/njucm-site',
+  email: 'leerogers072605@gmail.com',
 } as const;
 
 export const NAV: NavItem[] = [

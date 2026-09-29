@@ -36,8 +36,11 @@ const rendered = await Promise.all(
     <h2>联系</h2>
     <ul>
       <li>
+        邮箱：<a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+      </li>
+      <li>
         GitHub：
-        <a href={SITE.repo} rel="noopener noreferrer" target="_blank">@{SITE.author}</a>
+        <a href={SITE.github} rel="noopener noreferrer" target="_blank">@{SITE.author}</a>
       </li>
       <li>站点：<a href="https://njucm.org">njucm.org</a></li>
     </ul>
