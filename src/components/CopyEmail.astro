@@ -1,0 +1,239 @@
+---
+/**
+ * Click-to-copy email address.
+ *
+ * Deliberately NOT a mailto: link — clicking copies the address to the
+ * clipboard instead of handing it to a mail client.
+ *
+ * Note: Cloudflare's "Email Address Obfuscation" (on by default on the free
+ * plan) rewrites the address at the edge and restores it client-side with its
+ * own script. That is harmless here: the handler reads back whatever the
+ * decoder left in the element, and it is injected near the end of <body>, so
+ * the address is already readable by the time a click can happen.
+ */
+interface Props {
+  email: string;
+  /** optional label shown before the address, e.g. "邮箱" */
+  label?: string;
+  class?: string;
+}
+
+const { email, label, class: className = '' } = Astro.props;
+---
+
+<span class={`copy-email ${className}`.trim()} data-copy-email data-email={email}>
+  {label && <span class="copy-email__label">{label}</span>}
+  <button
+    class="copy-email__button"
+    type="button"
+    data-copy-email-button
+    aria-label={`复制邮箱地址 ${email}`}
+    title="点击复制邮箱地址"
+  >
+    <span class="copy-email__text" data-copy-email-text>{email}</span>
+    <span class="copy-email__icon" data-copy-email-icon aria-hidden="true">复制</span>
+  </button>
+</span>
+
+<style>
+  .copy-email {
+    display: inline-flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    min-width: 0;
+  }
+
+  .copy-email__label {
+    color: var(--text-dim);
+  }
+
+  .copy-email__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+    padding: 0.28rem 0.7rem;
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-line);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .copy-email__button:hover {
+    background: rgba(34, 211, 238, 0.2);
+    border-color: var(--accent);
+    color: #b9f1fb;
+  }
+
+  .copy-email__button:active {
+    transform: translateY(1px);
+  }
+
+  /* Long addresses must not push the layout wider than the viewport. */
+  .copy-email__text {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .copy-email__icon {
+    flex: 0 0 auto;
+    font-family: var(--font-sans);
+    font-size: 0.72em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+
+  .copy-email[data-copied='true'] .copy-email__button {
+    background: rgba(110, 231, 168, 0.14);
+    border-color: rgba(110, 231, 168, 0.45);
+    color: #6ee7a8;
+  }
+
+  .copy-email[data-copied='true'] .copy-email__icon {
+    color: #6ee7a8;
+  }
+
+  .copy-email[data-copy-failed='true'] .copy-email__button {
+    border-color: rgba(251, 191, 36, 0.5);
+    color: #fbbf24;
+  }
+</style>
+
+<script>
+  const RESET_MS = 2000;
+  const DEFAULT_ICON = '复制';
+
+  async function copyText(text: string): Promise<boolean> {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
+      }
+    } catch {
+      // fall through to the legacy path below
+    }
+
+    // Fallback for non-secure contexts / older browsers.
+    try {
+      const area = document.createElement('textarea');
+      area.value = text;
+      area.setAttribute('readonly', '');
+      area.style.position = 'fixed';
+      area.style.top = '-9999px';
+      document.body.appendChild(area);
+      area.select();
+      const ok = document.execCommand('copy');
+      document.body.removeChild(area);
+      return ok;
+    } catch {
+      return false;
+    }
+  }
+
+  function wire(container: HTMLElement) {
+    if (container.dataset.copyEmailReady === 'true') return;
+    container.dataset.copyEmailReady = 'true';
+
+    const button = container.querySelector<HTMLElement>('[data-copy-email-button]');
+    const textEl = container.querySelector<HTMLElement>('[data-copy-email-text]');
+    const iconEl = container.querySelector<HTMLElement>('[data-copy-email-icon]');
+    if (!button) return;
+
+    // The live text wins over the build-time value, so any edge rewriting
+    // (Cloudflare email obfuscation) is transparently accounted for.
+    const fallback = container.dataset.email ?? '';
+
+    const run = async () => {
+      const value = (textEl?.textContent ?? fallback).trim();
+      const ok = await copyText(value);
+
+      container.dataset.copied = String(ok);
+      container.dataset.copyFailed = String(!ok);
+      if (iconEl) iconEl.textContent = ok ? '已复制' : '复制失败';
+
+      window.setTimeout(() => {
+        container.dataset.copied = 'false';
+        container.dataset.copyFailed = 'false';
+        if (iconEl) iconEl.textContent = DEFAULT_ICON;
+      }, RESET_MS);
+    };
+
+    button.addEventListener('click', run);
+
+    // Keyboard parity for the markdown-created control.
+    if (button.getAttribute('role') === 'button') {
+      button.addEventListener('keydown', (event) => {
+        const key = (event as KeyboardEvent).key;
+        if (key === 'Enter' || key === ' ') {
+          event.preventDefault();
+          run();
+        }
+      });
+    }
+  }
+
+  /**
+   * Markdown cannot instantiate an Astro component, so a bare element tagged
+   * with data-copy-email is turned into the copy control here.
+   */
+  function initBare() {
+    document.querySelectorAll<HTMLElement>('[data-copy-email]').forEach((el) => {
+      if (el.dataset.copyEmailReady === 'true') return;
+      // The component wrapper also carries data-copy-email. Skip anything that
+      // already has a real button, otherwise a bubbling click would also run
+      // this container-level handler and copy the label text along with it.
+      if (el.querySelector('[data-copy-email-button]')) return;
+
+      const email = (el.textContent ?? '').trim();
+      if (!email) return;
+
+      // Markdown emits a mailto: anchor. Replace it outright with a button so
+      // the element has no href at all — clicking must never hand the address
+      // to a mail client, and a nested text node cannot swallow the click.
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'copy-email__button';
+      button.dataset.copyEmailButton = '';
+      button.setAttribute('aria-label', `复制邮箱地址 ${email}`);
+      button.title = '点击复制邮箱地址';
+
+      const textEl = document.createElement('span');
+      textEl.className = 'copy-email__text';
+      textEl.dataset.copyEmailText = '';
+      textEl.textContent = email;
+
+      const iconEl = document.createElement('span');
+      iconEl.className = 'copy-email__icon';
+      iconEl.dataset.copyEmailIcon = '';
+      iconEl.setAttribute('aria-hidden', 'true');
+      iconEl.textContent = DEFAULT_ICON;
+
+      button.append(textEl, iconEl);
+
+      const wrapper = document.createElement('span');
+      wrapper.className = 'copy-email';
+      wrapper.dataset.copyEmail = '';
+      wrapper.dataset.copyEmailReady = 'true';
+      wrapper.append(button);
+
+      el.replaceWith(wrapper);
+      wire(wrapper);
+    });
+  }
+
+  function init() {
+    initBare();
+    document
+      .querySelectorAll<HTMLElement>('.copy-email[data-copy-email]')
+      .forEach((el) => wire(el));
+  }
+
+  init();
+  document.addEventListener('astro:page-load', init);
+</script>

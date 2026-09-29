@@ -32,5 +32,5 @@ draft: false
 
 ## 联系与代码
 
-- 邮箱：**[leerogers072605@gmail.com](mailto:leerogers072605@gmail.com)**
+- 邮箱（**点击即可复制**）：[leerogers072605@gmail.com](mailto:leerogers072605@gmail.com){data-copy-email}
 - 本站及相关项目的源码都在 GitHub 上：**[https://github.com/leerogerstheman](https://github.com/leerogerstheman)**

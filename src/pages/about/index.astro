@@ -1,6 +1,7 @@
 ---
 import { render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import CopyEmail from '../../components/CopyEmail.astro';
 import { SITE } from '../../data/site';
 import { getDocs, getRawEntry } from '../../utils/content';
 
@@ -36,7 +37,7 @@ const rendered = await Promise.all(
     <h2>联系</h2>
     <ul>
       <li>
-        邮箱：<a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+        <CopyEmail email={SITE.email} label="邮箱：" />
       </li>
       <li>
         GitHub：

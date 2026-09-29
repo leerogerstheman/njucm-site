@@ -1,4 +1,5 @@
 ---
+import CopyEmail from './CopyEmail.astro';
 import { SITE } from '../data/site';
 
 const year = new Date().getFullYear();
@@ -26,7 +27,7 @@ const year = new Date().getFullYear();
         <p class="site-foot__title">Elsewhere</p>
         <ul class="site-foot__links">
           <li><a href={SITE.github} rel="noopener noreferrer" target="_blank">GitHub</a></li>
-          <li><a href={`mailto:${SITE.email}`}>Email</a></li>
+          <li><CopyEmail email={SITE.email} /></li>
           <li><a href="/rss.xml">RSS</a></li>
         </ul>
       </div>
