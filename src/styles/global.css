@@ -507,6 +507,23 @@ tbody tr:hover { background: rgba(255, 255, 255, 0.015); }
 
 .article__body > :first-child { margin-top: 0; }
 
+/* in-page TOC layout: side column + article, collapsed to one column on
+   narrow viewports (the Toc component hides itself below 1100px) */
+.article-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 46rem);
+  gap: 2.25rem;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+}
+
+.article-layout--toc {
+  /* 230px side column keeps the article readable; overall block stays
+     centered via justify-content on the grid */
+  grid-template-columns: 230px minmax(0, 46rem);
+}
+
 .article__repo {
   margin: 1rem 0 0;
   font-family: var(--font-mono);

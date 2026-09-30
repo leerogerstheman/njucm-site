@@ -1,0 +1,157 @@
+---
+/**
+ * In-page table of contents (当页导览).
+ *
+ * Rendered from the `headings` that Astro's content renderer produces, so the
+ * slug values always match the id attributes on the rendered <h2>/<h3> —
+ * never generate the slugs yourself, or the anchor links will silently break
+ * (Astro slugs ids with a github-style slugger, which strips CJK brackets
+ * etc.).
+ */
+export interface TocHeading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: TocHeading[];
+}
+
+const { headings } = Astro.props;
+
+// h2 level items and one level of children (h3). Anything deeper is noise
+// for a side navigation, and h1 never appears inside article bodies here.
+const items = headings
+  .filter((h) => h.depth >= 2 && h.depth <= 3)
+  .map((h) => ({ depth: h.depth as 2 | 3, slug: h.slug, text: h.text }));
+---
+
+{
+  items.length > 0 && (
+    <nav class="toc" aria-label="本页目录">
+      <p class="toc__title">本页目录</p>
+      <ul class="toc__list">
+        {items.map((it) => (
+          <li class={it.depth === 3 ? 'toc__li--sub' : undefined}>
+            <a href={`#${it.slug}`} data-toc-link class="toc__link">
+              {it.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )
+}
+
+<style>
+  .toc {
+    position: sticky;
+    top: calc(4rem + 1.5rem); /* below the fixed header */
+    max-height: calc(100vh - 4rem - 3rem);
+    overflow-y: auto;
+    padding-left: 0.35rem;
+    border-left: 1px solid var(--line);
+  }
+
+  .toc__title {
+    margin: 0 0 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+
+  .toc__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.15rem;
+  }
+
+  .toc__li--sub .toc__link {
+    padding-left: 1rem;
+    font-size: 0.82rem;
+  }
+
+  .toc__link {
+    display: block;
+    padding: 0.25rem 0.6rem 0.25rem 0.45rem;
+    border-radius: var(--radius-sm);
+    border-left: 2px solid transparent;
+    margin-left: -0.35rem; /* let the border sit on the nav border line */
+    color: var(--text-dim);
+    font-size: 0.86rem;
+    line-height: 1.45;
+    transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  }
+
+  .toc__link:hover {
+    color: #fff;
+    text-decoration: none;
+    background: var(--surface);
+  }
+
+  .toc__link[data-active='true'] {
+    color: var(--accent);
+    border-left-color: var(--accent);
+    background: var(--accent-soft);
+  }
+
+  @media (max-width: 1100px) {
+    .toc {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  const links = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-toc-link]'));
+  if (links.length > 0) {
+    // {link, element}[] for the scrollspy — filter out any link whose target
+    // heading is missing from the page.
+    const targets = links
+      .map((a) => ({ a, el: document.getElementById(a.getAttribute('href')!.slice(1)) }))
+      .filter((x) => x.el);
+
+    const setActive = (link: HTMLAnchorElement) => {
+      for (const other of links) {
+        other.dataset.active = String(other === link);
+      }
+      const nav = link.closest('.toc') as HTMLElement | null;
+      if (nav) {
+        nav.scrollTo({
+          top: Math.max(0, link.offsetTop - nav.clientHeight / 2),
+          behavior: 'smooth',
+        });
+      }
+    };
+
+    // Scroll-based spy: the active item is the last heading whose top has
+    // passed the reading line; at the very bottom force the last one so the
+    // final section highlights correctly.
+    const THRESHOLD = 96; // 4rem header + breathing room
+    const update = () => {
+      let current = targets[0];
+      for (const t of targets) {
+        if (t.el!.getBoundingClientRect().top <= THRESHOLD) {
+          current = t;
+        } else {
+          break;
+        }
+      }
+      if (
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 8
+      ) {
+        current = targets[targets.length - 1];
+      }
+      setActive(current.a);
+    };
+
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+  }
+</script>

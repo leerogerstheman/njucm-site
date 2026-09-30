@@ -1,43 +1,51 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import Toc, { type TocHeading } from '../components/Toc.astro';
 import type { Doc } from '../utils/content';
 
 interface Props {
   doc: Doc;
   /** label of the parent section, used for the back link */
   sectionLabel: string;
+  /** heading outline from the markdown renderer, drives the side TOC */
+  headings?: TocHeading[];
 }
 
-const { doc, sectionLabel } = Astro.props;
+const { doc, sectionLabel, headings = [] } = Astro.props;
 const date = doc.date ? doc.date.toISOString().slice(0, 10) : undefined;
+const hasToc = headings.some((h) => h.depth >= 2 && h.depth <= 3);
 ---
 
 <BaseLayout title={doc.title} description={doc.description} isArticle>
-  <article class="article">
-    <a class="backlink" href={doc.href.replace(/[^/]+\/$/, '')}>← {sectionLabel}</a>
+  <div class:list={['article-layout', hasToc && 'article-layout--toc']}>
+    {hasToc && <Toc headings={headings} />}
 
-    <header class="article__head">
-      <h1>{doc.title}</h1>
-      <div class="article__meta">
-        {date && <time datetime={doc.date!.toISOString()}>{date}</time>}
-        {doc.status && <span class={`tag tag--${doc.status}`}>{doc.status}</span>}
-        {doc.tags.map((tag) => (
-          <span class="tag">{tag}</span>
-        ))}
+    <article class="article">
+      <a class="backlink" href={doc.href.replace(/[^/]+\/$/, '')}>← {sectionLabel}</a>
+
+      <header class="article__head">
+        <h1>{doc.title}</h1>
+        <div class="article__meta">
+          {date && <time datetime={doc.date!.toISOString()}>{date}</time>}
+          {doc.status && <span class={`tag tag--${doc.status}`}>{doc.status}</span>}
+          {doc.tags.map((tag) => (
+            <span class="tag">{tag}</span>
+          ))}
+        </div>
+        {
+          doc.repo && (
+            <p class="article__repo">
+              <a href={doc.repo} rel="noopener noreferrer" target="_blank">
+                仓库：{doc.repo.replace(/^https?:\/\/(www\.)?github\.com\//, '')}
+              </a>
+            </p>
+          )
+        }
+      </header>
+
+      <div class="article__body">
+        <slot />
       </div>
-      {
-        doc.repo && (
-          <p class="article__repo">
-            <a href={doc.repo} rel="noopener noreferrer" target="_blank">
-              仓库：{doc.repo.replace(/^https?:\/\/(www\.)?github\.com\//, '')}
-            </a>
-          </p>
-        )
-      }
-    </header>
-
-    <div class="article__body">
-      <slot />
-    </div>
-  </article>
+    </article>
+  </div>
 </BaseLayout>
