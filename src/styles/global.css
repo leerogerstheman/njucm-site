@@ -211,6 +211,9 @@ code {
   border-radius: 4px;
   padding: 0.12em 0.38em;
   color: #b8e8f2;
+  /* Long unbreakable strings (Windows paths, hashes) would otherwise push the
+     whole page wider than a phone viewport. */
+  overflow-wrap: anywhere;
 }
 
 pre {
@@ -234,11 +237,15 @@ pre code {
 
 table {
   width: 100%;
+  /* display:block makes the table shrink-to-fit its content, which can exceed
+     a narrow viewport. Clamp it and let the box scroll instead of the page. */
+  max-width: 100%;
   margin: 1.75rem 0;
   border-collapse: collapse;
   font-size: 0.94rem;
   display: block;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 th, td {
@@ -582,6 +589,66 @@ tbody tr:hover { background: rgba(255, 255, 255, 0.015); }
   font-family: var(--font-mono);
   font-size: 0.78rem;
   letter-spacing: 0.06em;
+}
+
+/* --------------------------------------------------------------------------
+   download box (used from markdown as raw HTML)
+   -------------------------------------------------------------------------- */
+
+.dl {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1.75rem 0;
+}
+
+.dl__item {
+  display: grid;
+  gap: 0.3rem;
+  padding: 1.05rem 1.2rem;
+  background: linear-gradient(180deg, var(--surface), var(--bg-soft));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--text);
+  transition: border-color 0.18s ease, transform 0.18s ease, background 0.18s ease;
+}
+
+.dl__item:hover {
+  text-decoration: none;
+  border-color: var(--accent-line);
+  background: linear-gradient(180deg, var(--surface-2), var(--bg-soft));
+  transform: translateY(-2px);
+}
+
+.dl__item--primary {
+  border-color: var(--accent-line);
+  background: linear-gradient(180deg, rgba(34, 211, 238, 0.08), var(--bg-soft));
+}
+
+.dl__name {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+
+.dl__item--primary .dl__name { color: #7ee9fb; }
+
+.dl__meta {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: var(--text-faint);
+}
+
+.dl__how {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+.dl__how code {
+  font-size: 0.85em;
 }
 
 /* --------------------------------------------------------------------------

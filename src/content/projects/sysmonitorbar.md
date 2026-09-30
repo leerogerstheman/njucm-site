@@ -29,15 +29,32 @@ Windows 10/11 · .NET 8 · WinForms · MIT 协议
 - **不挡操作**：默认鼠标穿透，点击直接透到后面的窗口；鼠标移到它上面时**强烈淡化**到 15%
 - **常驻托盘**：拖动定位、字号快捷增减、开机自启（提权时创建计划任务，**开机不再弹 UAC**）
 
-## 快速开始
+## 下载即用
 
-### 方式一：下载编译好的版本（推荐，不用装 SDK）
+<div class="dl">
+  <a class="dl__item dl__item--primary" href="/downloads/SysMonitorBar-1.1.0-win-x64.zip" download>
+    <span class="dl__name">SysMonitorBar-1.1.0-win-x64.zip</span>
+    <span class="dl__meta">2.9 MB · Windows x64 · v1.1.0</span>
+    <span class="dl__how">解压后双击 <code>启动-管理员.cmd</code>（推荐）或 <code>启动.cmd</code></span>
+  </a>
+</div>
 
-到 [Releases](https://github.com/leerogerstheman/SysMonitorBar/releases) 下载 ZIP，解压后双击 `启动-管理员.cmd`。
+### ⚠️ 先装 .NET 8 桌面运行时，否则打不开
 
-需要先装 [.NET 8 桌面运行时](https://dotnet.microsoft.com/download/dotnet/8.0)（只装 Runtime，不用 SDK）。
+这个包是**框架依赖**版本，体积只有 2.9 MB，因为它复用系统的 .NET 运行时。
+**没装的话双击会没有任何反应或提示缺少运行时。**
 
-### 方式二：从源码编译
+请先安装一次（只需装 **Runtime**，不用装 SDK，装完永久有效）：
+
+> **[下载 .NET 8 桌面运行时](https://dotnet.microsoft.com/download/dotnet/8.0)** → 选 **Desktop Runtime** 的 **x64** 版本
+
+装好后回来解压上面的 ZIP 即可。
+
+> 判断依据：程序用的是 `net8.0-windows` 配 `SelfContained=false`，
+> 所以必须有 **Microsoft.WindowsDesktop.App 8.x**。
+> 如果你的电脑已经装过 .NET 8 桌面运行时，可以跳过这一步。
+
+## 从源码编译（开发者）
 
 ```bat
 git clone https://github.com/leerogerstheman/SysMonitorBar.git
@@ -47,6 +64,8 @@ build.cmd             :: 需要 .NET 8 SDK，脚本会自动找
 ```
 
 > `app\` 目录是编译产物，**不在仓库里**，所以从源码走必须先跑一次 `build.cmd`。
+
+想直接从 GitHub 拿文件、或看历史版本：[Releases](https://github.com/leerogerstheman/SysMonitorBar/releases)
 
 ## 使用方法
 

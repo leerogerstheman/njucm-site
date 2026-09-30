@@ -29,22 +29,33 @@ draft: false
 | **导出齐全** | 圆豆图纸 PNG、矢量 SVG、成品效果图、挑豆清单 TXT、颗数 CSV、格子编号 CSV、可打印网页 |
 | **实时预览** | 鼠标悬停查看每格坐标与色号；适应窗口 / 1× ~ 5× 缩放 |
 
-## 安装与运行
+## 下载即用
 
-### 最省事：直接下单个 exe
+<div class="dl">
+  <a class="dl__item dl__item--primary" href="/downloads/perler-bead-studio-v1.1.0-full.zip" download>
+    <span class="dl__name">perler-bead-studio-full.zip</span>
+    <span class="dl__meta">34.9 MB · 自带 Python 运行时 · 无需安装任何东西</span>
+    <span class="dl__how">下载后解压，双击文件夹里的 <code>启动.bat</code> 即可运行</span>
+  </a>
+  <a class="dl__item" href="https://github.com/leerogerstheman/perler-bead-studio/releases/latest/download/PerlerBeadStudio.exe">
+    <span class="dl__name">PerlerBeadStudio.exe</span>
+    <span class="dl__meta">29.8 MB · 单文件版 · 免解压（从 GitHub 下载）</span>
+    <span class="dl__how">直接双击运行。首次启动会自解压到临时目录，约等 3~8 秒</span>
+  </a>
+</div>
 
-到 [Releases](https://github.com/leerogerstheman/perler-bead-studio/releases/latest) 下载：
+**版本怎么选**：推荐下第一个 `full.zip`——它**自带 Python 运行时**，解压就能跑，也不依赖网络。
+`exe` 单文件更省事但每次启动要自解压、稍慢，且需要从 GitHub 下载。两个版本功能完全一样。
 
-| 下载 | 大小 | 说明 |
-| --- | --- | --- |
-| **PerlerBeadStudio.exe** | **30 MB** | **推荐**。单文件程序，双击直接运行，不需要装任何东西。首次启动会解压到临时目录，约等 3~8 秒 |
-| **perler-bead-studio-full.zip** | 49 MB | 自带 Python 运行时的文件夹版，解压后双击 `启动.bat`。启动更快，适合放 U 盘 |
-| perler-bead-studio-lite.zip | 0.6 MB | 已装好 Python 3.10+ 与 Pillow 的人，只有源码 |
+> 📦 本站提供的 `full.zip` 是**精简便携版**：功能与官方包完全一致（已通过自带自检），
+> 只是去掉了工具用不到的大型依赖库，体积更小、解压更快。
+> 官方完整版（含全部依赖，49.4 MB）见 [GitHub Releases](https://github.com/leerogerstheman/perler-bead-studio/releases)。
 
-想把图片直接交给它打开：把图片**拖到 exe 图标上**，或命令行
-`PerlerBeadStudio.exe D:\图片.png`。
+> 这个软件**开源免费**，不收取任何费用。首次启动会弹出这条声明，勾选「不再显示」后不再打扰。
 
-### 从源码跑
+想直接从 GitHub 拿文件、或看历史版本：[Releases](https://github.com/leerogerstheman/perler-bead-studio/releases)
+
+## 从源码运行（开发者）
 
 ```bat
 git clone https://github.com/leerogerstheman/perler-bead-studio.git

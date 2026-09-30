@@ -22,3 +22,8 @@ Thumbs.db
 .idea/
 .vscode/*
 !.vscode/extensions.json
+
+# local tooling / build scratch
+.build/
+.preview/
+
