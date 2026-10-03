@@ -12,6 +12,38 @@ const docs = await getDocs('projects');
   <SectionIndex
     item={item}
     docs={docs}
+    shuffle
     emptyHint="还没有项目条目。在 src/content/projects/ 下新建 .md 文件即可出现在这里。"
   />
+
+  <script is:inline>
+    // Randomise the project cards on every page load.
+    //
+    // Only each card's CSS `order` is shuffled — the DOM keeps the chronological
+    // (newest-first) order it was rendered in, so crawlers, no-JS visitors and
+    // the tab order all still see a stable, meaningful list. Because nothing is
+    // moved in the DOM, no listeners or anchors can be disturbed either.
+    //
+    // The script sits right after the grid, so it runs during parsing and before
+    // the first paint: the cards are never displayed in chronological order and
+    // then visibly reordered.
+    (function () {
+      var grids = document.querySelectorAll('[data-shuffle]:not([data-shuffled])');
+      for (var g = 0; g < grids.length; g++) {
+        var grid = grids[g];
+        var cards = Array.prototype.slice.call(grid.children);
+        // Fisher-Yates
+        for (var i = cards.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var tmp = cards[i];
+          cards[i] = cards[j];
+          cards[j] = tmp;
+        }
+        for (var k = 0; k < cards.length; k++) {
+          cards[k].style.order = String(k);
+        }
+        grid.setAttribute('data-shuffled', 'true');
+      }
+    })();
+  </script>
 </BaseLayout>

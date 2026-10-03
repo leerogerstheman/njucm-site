@@ -7,9 +7,11 @@ interface Props {
   item: NavItem;
   docs: Doc[];
   emptyHint?: string;
+  /** randomise the card order on every page load (see DocList) */
+  shuffle?: boolean;
 }
 
-const { item, docs, emptyHint } = Astro.props;
+const { item, docs, emptyHint, shuffle = false } = Astro.props;
 ---
 
 <header class="page-head">
@@ -19,4 +21,4 @@ const { item, docs, emptyHint } = Astro.props;
   <p class="count" style="margin:1rem 0 0">{docs.length} 篇</p>
 </header>
 
-<DocList docs={docs} emptyHint={emptyHint} />
+<DocList docs={docs} emptyHint={emptyHint} shuffle={shuffle} />

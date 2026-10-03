@@ -6,9 +6,18 @@ interface Props {
   emptyHint?: string;
   /** cap the number of grid columns; omit to auto-fill the row */
   columns?: number;
+  /**
+   * Randomise the visual order on every page load.
+   *
+   * Only the CSS `order` of each card is shuffled — the DOM order stays as
+   * rendered (newest first), so crawlers, no-JS visitors and the tab order all
+   * still see a chronological list. That also means nothing is moved in the
+   * DOM, so no listeners or anchors can be disturbed.
+   */
+  shuffle?: boolean;
 }
 
-const { docs, emptyHint = '这个栏目还没有内容。', columns } = Astro.props;
+const { docs, emptyHint = '这个栏目还没有内容。', columns, shuffle = false } = Astro.props;
 
 // A doc list never wants the fixed 4-column section-card layout, and squeezing
 // two entries into four columns makes the cards unreadably narrow. `auto` opts
@@ -22,7 +31,11 @@ const colStyle = columns
   docs.length === 0 ? (
     <p class="empty">{emptyHint}</p>
   ) : (
-    <div class="grid" style={`grid-template-columns:${colStyle}`}>
+    <div
+      class="grid"
+      data-shuffle={shuffle ? '' : undefined}
+      style={`grid-template-columns:${colStyle}`}
+    >
       {docs.map((doc) => (
         <article class="card">
           <h2 class="card__title">
