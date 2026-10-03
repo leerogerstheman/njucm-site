@@ -1,6 +1,6 @@
 ---
 title: "药事管理智能 Agent · LeebertyPharmacyAdministration"
-description: "基于本地知识库（14 个专题、112 个知识块）的药事管理问答、合规自查与模板导航；可选接入真实大模型（OpenAI 兼容协议，RAG 增强）。纯 Python 标准库，无需 pip 安装。"
+description: "基于本地知识库（14 个专题、112 个知识块）的药事管理问答、合规自查与模板导航；可选接入真实大模型（OpenAI 兼容协议，RAG 增强）。已打包为单文件 exe，双击即用，无需装 Python。"
 date: 2026-10-02
 tags: ["药事管理", "python", "tkinter", "llm", "rag"]
 status: "active"
@@ -16,22 +16,30 @@ draft: false
 <div class="dl">
   <a class="dl__item dl__item--primary" href="/downloads/LeebertyPharmacyAdministration-windows-portable.zip" download>
     <span class="dl__name">LeebertyPharmacyAdministration-windows-portable.zip</span>
-    <span class="dl__meta">119 KB · 源码便携包 · 零第三方依赖</span>
-    <span class="dl__how">解压后双击 <code>start_app.bat</code> 打开桌面应用</span>
+    <span class="dl__meta">8.7 MB · 含单文件 exe · 无需安装 Python</span>
+    <span class="dl__how">解压后双击 <code>LeebertyPharmacyAdministration.exe</code> 打开桌面应用</span>
   </a>
 </div>
 
-**环境要求**：**Windows + Python 3.8+**（只要装好 Python 就能跑——**仅标准库，无需 `pip install` 任何包**。
-如果 Python 不是你装的，双击 `start_app.bat` 前请确保 `pythonw` 可用）。
+**环境要求**：Windows。**包内已含打包好的单文件 exe，不需要安装 Python**。
+首次启动会解压运行所需组件，稍等几秒即可。
+
+| 方式 | 用什么 |
+| --- | --- |
+| **桌面应用（推荐）** | 双击 `LeebertyPharmacyAdministration.exe` |
+| 源码方式（需 Python） | `start_app.bat`、`start_web.bat`、`start_cli.bat`（见下） |
+
+**源码方式**（包内也含完整源码）：**Windows + Python 3.8+**，**仅标准库，无需 `pip install` 任何包**。
 
 | 方式 | 命令 |
 | --- | --- |
-| **桌面应用（推荐）** | `start_app.bat` 或 `python agent\gui.py` |
+| 桌面应用 | `start_app.bat` 或 `python agent\gui.py` |
 | Web 服务 | `start_web.bat` 或 `python agent\server.py` → http://127.0.0.1:8901 |
 | 命令行 | `start_cli.bat` 或 `python agent\cli.py` |
 
-> ⚠️ Windows 控制台（GBK）下若程序提示 `UnicodeEncodeError` 打印 ✔/✘ 失败，
-> 在命令行临时执行 `set PYTHONIOENCODING=utf-8` 即可；桌面应用（pythonw）不受影响。
+> ⚠️ 用源码方式且控制台为 GBK 时，若程序提示 `UnicodeEncodeError` 打印 ✔/✘ 失败，
+> 在命令行临时执行 `set PYTHONIOENCODING=utf-8` 即可；桌面应用（pythonw）与打包版不受影响。
+
 
 ## 接入大模型（可选）
 
