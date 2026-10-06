@@ -9,6 +9,10 @@ export interface Doc {
   title: string;
   description?: string;
   date?: Date;
+  /** repo upload date, mirrored from GitHub (used by the projects sorter) */
+  created?: Date;
+  /** repo last-push date, mirrored from GitHub (used by the projects sorter) */
+  updated?: Date;
   tags: string[];
   draft: boolean;
   status?: string;
@@ -29,6 +33,8 @@ function normalise(section: SectionName, entry: any): Doc {
     title: String(data.title ?? slug),
     description: typeof data.description === 'string' ? data.description : undefined,
     date: data.date instanceof Date ? data.date : undefined,
+    created: data.created instanceof Date ? data.created : undefined,
+    updated: data.updated instanceof Date ? data.updated : undefined,
     tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
     draft: data.draft === true,
     status: typeof data.status === 'string' ? data.status : undefined,

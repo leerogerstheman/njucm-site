@@ -6,44 +6,211 @@ import { getDocs } from '../../utils/content';
 
 const item = NAV.find((i) => i.href === '/projects')!;
 const docs = await getDocs('projects');
+
+/**
+ * Sort modes offered above the list. `random` stays the default (and clicking it
+ * re-rolls), because the cards were originally asked to reshuffle on every visit.
+ */
+const SORTS = [
+  { id: 'random', label: '随机', hint: '每次进入重新打乱；再点一次可重新洗牌' },
+  { id: 'updated', label: '最新更新', hint: '按仓库最后更新时间排序，最近更新的在前' },
+  { id: 'created', label: '最新上传', hint: '按仓库上传到 GitHub 的时间排序，最新的在前' },
+];
 ---
 
 <BaseLayout title={item.label} description={item.desc}>
   <SectionIndex
     item={item}
     docs={docs}
-    shuffle
+    sortable
     emptyHint="还没有项目条目。在 src/content/projects/ 下新建 .md 文件即可出现在这里。"
-  />
-
-  <script is:inline>
-    // Randomise the project cards on every page load.
-    //
-    // Only each card's CSS `order` is shuffled — the DOM keeps the chronological
-    // (newest-first) order it was rendered in, so crawlers, no-JS visitors and
-    // the tab order all still see a stable, meaningful list. Because nothing is
-    // moved in the DOM, no listeners or anchors can be disturbed either.
-    //
-    // The script sits right after the grid, so it runs during parsing and before
-    // the first paint: the cards are never displayed in chronological order and
-    // then visibly reordered.
-    (function () {
-      var grids = document.querySelectorAll('[data-shuffle]:not([data-shuffled])');
-      for (var g = 0; g < grids.length; g++) {
-        var grid = grids[g];
-        var cards = Array.prototype.slice.call(grid.children);
-        // Fisher-Yates
-        for (var i = cards.length - 1; i > 0; i--) {
-          var j = Math.floor(Math.random() * (i + 1));
-          var tmp = cards[i];
-          cards[i] = cards[j];
-          cards[j] = tmp;
+  >
+    <div slot="before-list" class="sorter" data-sorter>
+      <span class="sorter__label" id="sorter-label">排序</span>
+      <div class="sorter__group" role="group" aria-labelledby="sorter-label">
+        {
+          SORTS.map((s, i) => (
+            <button
+              type="button"
+              class="sorter__btn"
+              data-sort={s.id}
+              data-hint={s.hint}
+              aria-pressed={i === 0 ? 'true' : 'false'}
+            >
+              {s.label}
+            </button>
+          ))
         }
-        for (var k = 0; k < cards.length; k++) {
-          cards[k].style.order = String(k);
-        }
-        grid.setAttribute('data-shuffled', 'true');
-      }
-    })();
-  </script>
+      </div>
+      <p class="sorter__hint" data-sort-hint aria-live="polite">{SORTS[0].hint}</p>
+    </div>
+  </SectionIndex>
 </BaseLayout>
+
+<script is:inline>
+  // Client-side ordering for the project cards.
+  //
+  // Only each card's CSS `order` changes — the DOM keeps the order it was
+  // rendered in, so crawlers, no-JS visitors and the tab sequence all still get
+  // a stable list, and nothing moves (no listeners or anchors can break).
+  //
+  // The script sits right after the grid, i.e. during parsing and before the
+  // first paint, so cards are never shown in one order and then visibly
+  // reordered.
+  (function () {
+    var grid = document.querySelector('[data-sortable]');
+    if (!grid) return;
+
+    var cards = Array.prototype.slice.call(grid.children);
+    var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-sort]'));
+    var hintEl = document.querySelector('[data-sort-hint]');
+    var STORAGE_KEY = 'njucm:projects-sort';
+    var MODES = { random: 1, updated: 1, created: 1 };
+
+    function shuffle(list) {
+      var out = list.slice();
+      for (var i = out.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tmp = out[i];
+        out[i] = out[j];
+        out[j] = tmp;
+      }
+      return out;
+    }
+
+    // Newest first. Cards without the attribute sort to the bottom.
+    function byDate(list, attr) {
+      return list.slice().sort(function (a, b) {
+        var av = a.getAttribute(attr) || '';
+        var bv = b.getAttribute(attr) || '';
+        if (av === bv) return 0;
+        if (!av) return 1;
+        if (!bv) return -1;
+        return av < bv ? 1 : -1;
+      });
+    }
+
+    function apply(mode) {
+      var ordered;
+      if (mode === 'updated') ordered = byDate(cards, 'data-updated');
+      else if (mode === 'created') ordered = byDate(cards, 'data-created');
+      else ordered = shuffle(cards);
+
+      for (var i = 0; i < ordered.length; i++) {
+        ordered[i].style.order = String(i);
+      }
+
+      for (var b = 0; b < buttons.length; b++) {
+        var on = buttons[b].getAttribute('data-sort') === mode;
+        buttons[b].setAttribute('aria-pressed', on ? 'true' : 'false');
+        if (on && hintEl) hintEl.textContent = buttons[b].getAttribute('data-hint') || '';
+      }
+      grid.setAttribute('data-sorted', mode);
+    }
+
+    function fromUrl() {
+      var m = new URLSearchParams(window.location.search).get('sort');
+      return m && MODES[m] ? m : null;
+    }
+
+    function initialMode() {
+      var m = fromUrl();
+      if (m) return m;
+      try {
+        var saved = window.localStorage.getItem(STORAGE_KEY);
+        if (saved && MODES[saved]) return saved;
+      } catch (e) {
+        /* storage can be blocked; random is a fine fallback */
+      }
+      return 'random';
+    }
+
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener('click', function () {
+        var mode = this.getAttribute('data-sort');
+        apply(mode); // clicking 随机 again re-rolls the order
+        try {
+          window.localStorage.setItem(STORAGE_KEY, mode);
+        } catch (e) {
+          /* ignore */
+        }
+        var url = new URL(window.location.href);
+        if (mode === 'random') url.searchParams.delete('sort');
+        else url.searchParams.set('sort', mode);
+        window.history.replaceState(null, '', url);
+      });
+    }
+
+    apply(initialMode());
+  })();
+</script>
+
+<style>
+  .sorter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+    margin: 1.5rem 0 1.25rem;
+  }
+
+  .sorter__label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+
+  .sorter__group {
+    display: inline-flex;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+  }
+
+  .sorter__btn {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    border-right: 1px solid var(--line);
+    color: var(--text-dim);
+    font: inherit;
+    font-size: 0.85rem;
+    line-height: 1;
+    padding: 0.5rem 0.9rem;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .sorter__btn:last-child {
+    border-right: 0;
+  }
+
+  .sorter__btn:hover {
+    color: #fff;
+    background: var(--surface);
+  }
+
+  .sorter__btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+  }
+
+  .sorter__btn[aria-pressed='true'] {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  .sorter__hint {
+    margin: 0;
+    font-size: 0.78rem;
+    color: var(--text-faint);
+  }
+
+  @media (max-width: 560px) {
+    .sorter__hint {
+      flex-basis: 100%;
+    }
+  }
+</style>

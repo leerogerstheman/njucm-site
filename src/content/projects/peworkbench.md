@@ -6,6 +6,9 @@ tags: ["药物经济学", "hea", "hta", "webview2", "审计追踪", "电子签�
 status: "active"
 repo: "https://github.com/leerogerstheman/PE-Workbench"
 draft: false
+created: 2026-10-03
+updated: 2026-10-03
+
 ---
 
 **让药物经济学工作的每一步可理解、可追溯、可审查。**

@@ -6,6 +6,9 @@ tags: ["药事管理", "药品注册", "法规检索", "ich", "ctd", "fts5", "sq
 status: "active"
 repo: "https://github.com/leerogerstheman/NMPARegHub"
 draft: false
+created: 2026-10-03
+updated: 2026-10-03
+
 ---
 
 **纯 Python 标准库实现，零第三方依赖。** 一个 SQLite 文件即全部数据。

@@ -6,6 +6,9 @@ tags: ["关于", "个人主页", "药学", "索引"]
 status: "active"
 repo: "https://github.com/leerogerstheman/leerogerstheman"
 draft: false
+created: 2026-10-05
+updated: 2026-10-05
+
 ---
 
 > 📇 这一条不是软件项目，而是 **GitHub 个人主页**（`leerogerstheman/leerogerstheman` 这个同名仓库的

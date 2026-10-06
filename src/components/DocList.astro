@@ -7,17 +7,18 @@ interface Props {
   /** cap the number of grid columns; omit to auto-fill the row */
   columns?: number;
   /**
-   * Randomise the visual order on every page load.
+   * Marks the grid as client-sortable and stamps each card with its repo dates,
+   * so the /projects page can offer random / newest-updated / newest-created
+   * ordering.
    *
-   * Only the CSS `order` of each card is shuffled — the DOM order stays as
-   * rendered (newest first), so crawlers, no-JS visitors and the tab order all
-   * still see a chronological list. That also means nothing is moved in the
-   * DOM, so no listeners or anchors can be disturbed.
+   * Only each card's CSS `order` is ever changed — the DOM keeps the order it
+   * was rendered in, so crawlers, no-JS visitors and the tab sequence all still
+   * get a stable list, and nothing moves (so no listeners or anchors can break).
    */
-  shuffle?: boolean;
+  sortable?: boolean;
 }
 
-const { docs, emptyHint = '这个栏目还没有内容。', columns, shuffle = false } = Astro.props;
+const { docs, emptyHint = '这个栏目还没有内容。', columns, sortable = false } = Astro.props;
 
 // A doc list never wants the fixed 4-column section-card layout, and squeezing
 // two entries into four columns makes the cards unreadably narrow. `auto` opts
@@ -33,11 +34,15 @@ const colStyle = columns
   ) : (
     <div
       class="grid"
-      data-shuffle={shuffle ? '' : undefined}
+      data-sortable={sortable ? '' : undefined}
       style={`grid-template-columns:${colStyle}`}
     >
       {docs.map((doc) => (
-        <article class="card">
+        <article
+          class="card"
+          data-created={doc.created ? doc.created.toISOString().slice(0, 10) : undefined}
+          data-updated={doc.updated ? doc.updated.toISOString().slice(0, 10) : undefined}
+        >
           <h2 class="card__title">
             <a href={doc.href}>{doc.title}</a>
           </h2>

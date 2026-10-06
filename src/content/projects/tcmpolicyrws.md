@@ -6,6 +6,9 @@ tags: ["中医药", "政策分析", "真实世界研究", "药物警戒", "adr",
 status: "active"
 repo: "https://github.com/leerogerstheman/TCMPolicyRWS"
 draft: false
+created: 2026-10-03
+updated: 2026-10-03
+
 ---
 
 面向**中医药政策文本挖掘**与**中医药真实世界研究（RWS）**的量化分析工具。

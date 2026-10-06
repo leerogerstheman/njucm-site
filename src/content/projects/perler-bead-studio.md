@@ -6,6 +6,9 @@ tags: ["python", "windows", "图像处理", "桌面应用"]
 status: "active"
 repo: "https://github.com/leerogerstheman/perler-bead-studio"
 draft: false
+created: 2026-09-26
+updated: 2026-09-27
+
 ---
 
 把一张图片变成**拼豆（拼拼豆豆 / Perler Beads）图纸**：自由选择行×列（16×16、29×29、32×32，一直到 1024×1024），

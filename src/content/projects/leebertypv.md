@@ -6,6 +6,9 @@ tags: ["药物警戒", "pv", "icsr", "gvp", "审计追踪", "电子签名"]
 status: "active"
 repo: "https://github.com/leerogerstheman/LeebertyPV"
 draft: false
+created: 2026-10-03
+updated: 2026-10-04
+
 ---
 
 **让日常药物警戒（PV）义务可执行、可追溯、可审计。**

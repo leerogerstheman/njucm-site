@@ -6,6 +6,9 @@ tags: ["临床试验", "cra", "crc", "webview2", "审计追踪"]
 status: "active"
 repo: "https://github.com/leerogerstheman/LeebertyCR"
 draft: false
+created: 2026-10-03
+updated: 2026-10-03
+
 ---
 
 **让临床监查员（CRA）与临床协调员（CRC）的日常工作，看得懂、学得会、做得对。**

@@ -6,6 +6,12 @@ const docSchema = z.object({
   title: z.string(),
   description: z.string().optional(),
   date: z.coerce.date().optional(),
+  /**
+   * Dates mirrored from the upstream repository, used by the /projects sorter:
+   * `created` is when the repo was first uploaded, `updated` is its last push.
+   */
+  created: z.coerce.date().optional(),
+  updated: z.coerce.date().optional(),
   tags: z.array(z.string()).default([]),
   draft: z.boolean().default(false),
 });

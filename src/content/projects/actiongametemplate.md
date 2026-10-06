@@ -6,6 +6,9 @@ tags: ["游戏", "javascript", "动作游戏", "模板", "零依赖"]
 status: "active"
 repo: "https://github.com/leerogerstheman/ActionGameTemplate"
 draft: false
+created: 2026-10-06
+updated: 2026-10-06
+
 ---
 
 **一个零依赖、纯静态的 2D 横版动作游戏模板。双击 `index.html` 即可在浏览器直接游玩。**

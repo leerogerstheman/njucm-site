@@ -6,6 +6,9 @@ tags: ["pdf", "electron", "阅读器", "批注", "离线"]
 status: "active"
 repo: "https://github.com/leerogerstheman/LeebertyPDF"
 draft: false
+created: 2026-10-05
+updated: 2026-10-05
+
 ---
 
 **为 Windows 打造的本地 PDF 阅读器** —— PDF.js 渲染内核 + 全自研界面。

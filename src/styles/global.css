@@ -421,6 +421,10 @@ tbody tr:hover { background: rgba(255, 255, 255, 0.015); }
   color: var(--text-dim);
   font-size: 0.925rem;
   line-height: 1.65;
+  /* Slashes and long paths are not break opportunities, so an unbreakable run
+     like "CSV/Excel/SQLite/…" would push the card (and the page) wider than the
+     viewport on narrow screens. `anywhere` also lets the box shrink properly. */
+  overflow-wrap: anywhere;
 }
 
 .card__meta {

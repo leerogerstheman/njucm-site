@@ -6,6 +6,9 @@ tags: ["csharp", "dotnet", "windows", "硬件监控"]
 status: "active"
 repo: "https://github.com/leerogerstheman/SysMonitorBar"
 draft: false
+created: 2026-09-29
+updated: 2026-09-29
+
 ---
 
 在屏幕**顶部正中**用 1~2 行显示实时硬件状态，数据全部自选，鼠标穿透、不挡操作。

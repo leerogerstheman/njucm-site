@@ -6,6 +6,9 @@ tags: ["pixiv", "crawler", "python", "tkinter", "图库"]
 status: "active"
 repo: "https://github.com/leerogerstheman/LeebertyPixiv"
 draft: false
+created: 2026-09-29
+updated: 2026-10-04
+
 ---
 
 输入关键词 → 抓取 pixiv 搜索结果 → 下载**原图** → 按标签 / 画师 / 关键词建立**硬链接分类**（不占额外空间）

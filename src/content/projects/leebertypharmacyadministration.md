@@ -6,6 +6,9 @@ tags: ["药事管理", "python", "tkinter", "llm", "rag"]
 status: "active"
 repo: "https://github.com/leerogerstheman/LeebertyPharmacyAdministration"
 draft: false
+created: 2026-10-02
+updated: 2026-10-03
+
 ---
 
 面向**个人 / 医疗机构 / 企业**的药事管理科目服务：基于本地知识库提供**知识问答、合规自查与模板导航**；

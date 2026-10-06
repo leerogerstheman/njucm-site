@@ -6,6 +6,9 @@ tags: ["游戏", "jrpg", "nodejs", "程序化美术", "webview2"]
 status: "active"
 repo: "https://github.com/leerogerstheman/StarfallChronicle"
 draft: false
+created: 2026-10-05
+updated: 2026-10-06
+
 ---
 
 **一个零依赖的 JRPG 战斗模板与可玩 Demo。**

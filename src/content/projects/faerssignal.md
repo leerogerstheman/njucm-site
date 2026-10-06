@@ -6,6 +6,9 @@ tags: ["药物警戒", "faers", "openfda", "信号检测", "prr", "ror", "bcpnn"
 status: "active"
 repo: "https://github.com/leerogerstheman/FAERSSignal"
 draft: false
+created: 2026-10-03
+updated: 2026-10-03
+
 ---
 
 **这不是一个录入界面，而是一次真实的安全性分析。** 对 openFDA 全库做不相称性

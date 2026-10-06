@@ -6,6 +6,9 @@ tags: ["药物警戒", "material-design3", "rag", "学习工具", "离线"]
 status: "active"
 repo: "https://github.com/leerogerstheman/PharmacovigilanceAgent"
 draft: false
+created: 2026-10-03
+updated: 2026-10-03
+
 ---
 
 **面向药学学生的智能体学习工具** —— 基于 [Datawhale hello-agents](https://github.com/datawhalechina/hello-agents)

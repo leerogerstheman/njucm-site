@@ -6,6 +6,9 @@ tags: ["卫生经济学", "集采", "vbp", "医保", "drg", "icer", "qaly", "预
 status: "active"
 repo: "https://github.com/leerogerstheman/ChinaHTA"
 draft: false
+created: 2026-10-03
+updated: 2026-10-03
+
 ---
 
 **面向中国市场准入（market access）场景**，而不是照搬欧美 HTA 模板。

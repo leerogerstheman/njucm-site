@@ -6,6 +6,9 @@ tags: ["药物经济学", "electron", "material-design3", "学习工具", "HEOR"
 status: "active"
 repo: "https://github.com/leerogerstheman/PharmaEconAgent"
 draft: false
+created: 2026-10-03
+updated: 2026-10-03
+
 ---
 
 **下载即用：不需要安装 Python、pip、数据库、Node.js，也不需要联网。**

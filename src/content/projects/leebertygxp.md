@@ -6,6 +6,9 @@ tags: ["gxp", "合规", "webview2", "电子签名", "数据完整性"]
 status: "active"
 repo: "https://github.com/leerogerstheman/LeebertyGXP"
 draft: false
+created: 2026-10-02
+updated: 2026-10-04
+
 ---
 
 **让日常 GxP 义务可执行、可追溯、可审计。**
