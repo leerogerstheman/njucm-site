@@ -1,7 +1,7 @@
 ---
 title: "星陨纪年 · Starfall Chronicle"
-description: "一个零依赖的 JRPG 战斗模板与可玩 Demo：行动条推条、弱点击破、战技点、终结技插入；全部人物形象由代码生成 SVG，没有一张位图。双击 start.bat 即玩，原生窗口，不需要浏览器。"
-date: 2026-10-05
+description: "一个零依赖的 JRPG 战斗模板与可玩 Demo：行动条推条、弱点击破、战技点、终结技插入，v0.3.0 加入道具闭环、追击与精英词缀；全部人物形象由代码生成 SVG，没有一张位图。双击 start.bat 即玩，原生窗口，不需要浏览器。"
+date: 2026-10-06
 tags: ["游戏", "jrpg", "nodejs", "程序化美术", "webview2"]
 status: "active"
 repo: "https://github.com/leerogerstheman/StarfallChronicle"
@@ -21,18 +21,24 @@ draft: false
 ## 下载即玩（Windows）
 
 <div class="dl">
-  <a class="dl__item dl__item--primary" href="/downloads/StarfallChronicle-v0.2.0.zip" download>
-    <span class="dl__name">StarfallChronicle-v0.2.0.zip</span>
-    <span class="dl__meta">3.5 MB · v0.2.0 · 解压双击即玩</span>
+  <a class="dl__item dl__item--primary" href="/downloads/StarfallChronicle-v0.3.0.zip" download>
+    <span class="dl__name">StarfallChronicle-v0.3.0.zip</span>
+    <span class="dl__meta">3.3 MB · v0.3.0 · 解压双击即玩</span>
     <span class="dl__how">解压后双击 <code>start.bat</code>，弹出独立窗口「星陨纪年 · Starfall Chronicle」</span>
   </a>
 </div>
 
 **环境要求**：**只需要 Node.js 22 或更新版本**，其余什么都不用装。
 
-> 原生窗口启动器在发行包里**已经编译好**（`desktop/bin/StarfallChronicle.exe`）；若缺失，
-> 首次运行会自动用 Windows 自带的 C# 编译器现场构建（约 2 秒），之后每次都是秒开。
-> 游戏跑在自己的原生窗口里——**不占用浏览器标签页**。
+> v0.3.0 的发行包**不再附带预编译的启动器**——首次运行 `start.bat` 时会自动用 Windows 自带的
+> C# 编译器现场构建（约 2 秒），之后每次都是秒开。游戏跑在自己的原生窗口里——**不占用浏览器标签页**。
+
+### v0.3.0 新增
+
+- **道具闭环**：可携带道具的获取、使用与引爆，与战斗节奏打通
+- **追击**：对被打上天的敌人进行空中追击
+- **精英词缀**：精英敌人带随机词缀，同一只精英每局表现不同
+- 模板指南补充了追击 / 词缀 / 敌方道具 / 掉落四章
 
 ## 开始玩
 
