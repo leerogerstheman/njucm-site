@@ -15,24 +15,26 @@ Markdown / RIS / BibTeX / MEDLINE 索引 → 多维检索 + Material Design 3 �
 ## 下载即用（Windows）
 
 <div class="dl">
-  <a class="dl__item dl__item--primary" href="/downloads/LeebertyPharma-windows-portable.zip" download>
-    <span class="dl__name">LeebertyPharma-windows-portable.zip</span>
-    <span class="dl__meta">0.33 MB · 纯标准库 · 解压双击即用</span>
-    <span class="dl__how">解压后双击 <code>gui.bat</code> 打开图形界面（无需 pip 安装任何包）</span>
+  <a class="dl__item dl__item--primary" href="/downloads/PharmaCrawler-v1.0.0-portable-win64.zip" download>
+    <span class="dl__name">PharmaCrawler-v1.0.0-portable-win64.zip</span>
+    <span class="dl__meta">12.8 MB · 官方便携版 · 已内置 Python 运行时，免安装</span>
+    <span class="dl__how">解压后双击 <code>PharmaCrawler.exe</code>（或 <code>gui.bat</code>）打开图形界面</span>
   </a>
 </div>
 
-**环境要求**：**Windows + Python 3.9+**（官方安装包默认自带 tkinter）。
-**纯标准库实现，不需要 `pip install` 任何东西。**
+**环境要求**：**Windows 10/11 x64。官方便携版已内置 Python 运行时——不需要安装 Python，也不需要
+`pip install` 任何东西。**
 
 | 方式 | 用什么 |
 | --- | --- |
-| **图形界面（推荐）** | 双击 `gui.bat`（或 `python pharma_crawler.py gui`） |
+| **图形界面（推荐）** | 双击 `PharmaCrawler.exe` 或 `gui.bat` |
 | 命令行爬取 | `crawl.bat --dataset label --search "..."` |
 | 检索已下载数据 | `search.bat` |
-| 自检 | `selftest.bat`（加 `--offline` 跳过联网检查） |
+| 自检 | `SELFTEST.bat`（加 `--offline` 跳过联网检查） |
 
-> 💡 **数据默认存在程序旁的 `library` 目录**（便携包里已这样配置），换机器时整个文件夹拷走即可。
+> 💡 **数据默认存在程序旁的 `library` 目录**，换机器时整个文件夹拷走即可。
+
+也可以从源码运行（需 Python 3.9+，**纯标准库，无需 pip**）：`python pharma_crawler.py gui`。
 
 ## 先申请 API key（免费，配额差 120 倍）
 

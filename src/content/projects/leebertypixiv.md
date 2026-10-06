@@ -1,6 +1,6 @@
 ---
 title: "pixiv 关键词爬虫 · LeebertyPixiv"
-description: "pixiv 原图下载 + 可检索分类图库（GUI）：关键词/画师/全量三种检索，R-18/AIGC 分级开关，动图转码，画师追更，多维图库检索。纯 Python 标准库，带图形界面。"
+description: "pixiv 原图下载 + 可检索分类图库（GUI）：关键词/画师/全量/收藏夹四种检索，R-18/AIGC 分级开关，动图转码，画师追更，多维图库检索。纯 Python 标准库，带图形界面。"
 date: 2026-09-30
 tags: ["pixiv", "crawler", "python", "tkinter", "图库"]
 status: "active"
@@ -20,9 +20,9 @@ draft: false
 ## 下载即用（Windows）
 
 <div class="dl">
-  <a class="dl__item dl__item--primary" href="/downloads/PixivCrawler-windows-v0.10.0-beta.zip" download>
+  <a class="dl__item dl__item--primary" href="/downloads/PixivCrawler-windows-v0.11.1-beta.zip" download>
     <span class="dl__name">PixivCrawler-windows.zip</span>
-    <span class="dl__meta">29.8 MB · Windows 10/11 x64 · v0.10.0-beta</span>
+    <span class="dl__meta">30.0 MB · Windows 10/11 x64 · v0.11.1-beta</span>
     <span class="dl__how">解压后双击 <code>PixivCrawler.exe</code> 即可运行，无需装 Python</span>
   </a>
 </div>
@@ -32,7 +32,7 @@ draft: false
 - **请整目录解压**，不要把 exe 单独拷走——它依赖同目录的 `_internal\`（自带 Python 与依赖）
 - 首次使用建议先**登录**（程序内有引导，或见下文"登录方式"），否则只能匿名搜索、每种排序约 600 个作品、无 R-18
 - 当前为测试版，pixiv 改接口时程序会明确报错，等待更新版本即可
-- 官方发布与历史版本：[GitHub Releases](https://github.com/leerogerstheman/LeebertyPixiv/releases)（v0.10.0-beta 为最新）
+- 官方发布与历史版本：[GitHub Releases](https://github.com/leerogerstheman/LeebertyPixiv/releases)（**v0.11.1-beta 为最新**）
 
 ## 快速上手
 
@@ -49,7 +49,7 @@ PixivCrawler.exe selftest                 # 自检（离线 20 项，--offline �
 
 | 能力 | 说明 |
 | --- | --- |
-| **三种检索** | 关键词 / 画师ID（走作品全集接口，不受翻页上限）/ 全量分段（按时间切分，突破约 6000 条上限） |
+| **四种检索** | 关键词 / 画师ID（走作品全集接口，不受翻页上限）/ 全量分段（按时间切分，突破约 6000 条上限）/ **用户收藏夹**（公开可爬、私密需 OAuth） |
 | **筛选** | 时间范围（年月日三级联动）、点赞/收藏门槛、**R-18 / R-18G 独立开关**、**AIGC 排除/只要** |
 | **动图** | ugoira 转 webp / gif（用 ffmpeg），可自动删原始 zip |
 | **画师追更** | 订阅清单（`artists.txt`）+ 增量下载 + 上次追更时间；GUI「追更」页一键同步 |
