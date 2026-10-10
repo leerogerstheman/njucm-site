@@ -1,0 +1,16 @@
+{
+  "name": "njucm-comments-worker",
+  "private": true,
+  "type": "module",
+  "description": "Comment API for njucm.org — Cloudflare Worker + D1",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create njucm-comments",
+    "db:init:local": "wrangler d1 execute njucm-comments --local --file=./schema.sql",
+    "db:init": "wrangler d1 execute njucm-comments --remote --file=./schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^4.42.0"
+  }
+}

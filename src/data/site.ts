@@ -49,3 +49,15 @@ export const NAV: NavItem[] = [
     desc: '关于这个站点，以及它在做什么。',
   },
 ];
+
+/**
+ * Anonymous comments, served by the Cloudflare Worker in ./worker.
+ *
+ * `enabled` stays false until the Worker is deployed and answering, so the live
+ * site never shows a comment box that cannot post. Once deployed, flip it to
+ * true (and set `api` if the Worker is not routed under the site's own domain).
+ */
+export const COMMENTS = {
+  enabled: false,
+  api: '/api/comments',
+} as const;

@@ -1,6 +1,8 @@
 ---
 import { render } from 'astro:content';
 import DocLayout from '../../layouts/DocLayout.astro';
+import Comments from '../../components/Comments.astro';
+import { COMMENTS } from '../../data/site';
 import { getDocs, getRawEntry } from '../../utils/content';
 
 export async function getStaticPaths() {
@@ -16,4 +18,5 @@ const { Content, headings } = await render(entry);
 
 <DocLayout doc={doc} sectionLabel="Notes" headings={headings}>
   <Content />
+  {COMMENTS.enabled && <Comments slug={doc.slug} api={COMMENTS.api} />}
 </DocLayout>

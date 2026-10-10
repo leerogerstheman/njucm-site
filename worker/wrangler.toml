@@ -1,0 +1,32 @@
+name = "njucm-comments"
+main = "src/index.js"
+compatibility_date = "2025-01-15"
+
+# Keep the workers.dev URL enabled: it is handy for testing before the route is
+# attached to the domain.
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "njucm-comments"
+# Filled in by `wrangler d1 create njucm-comments` (or pasted from the dashboard).
+database_id = "REPLACE_WITH_DATABASE_ID"
+
+[vars]
+# Origins allowed to call the API cross-origin. Same-origin calls (the site
+# itself, once the route below is attached) send no Origin header and always work.
+ALLOWED_ORIGINS = "https://njucm.org,https://www.njucm.org"
+# "1" = new comments are stored as pending and stay hidden until approved.
+MODERATION = "0"
+
+# Secrets are NOT kept here; set them once with:
+#   wrangler secret put IP_SALT      # any long random string, salts IP hashes
+#   wrangler secret put ADMIN_TOKEN  # required by DELETE /api/comments/<id>
+
+# Optional but recommended: serve the API from the site's own origin so the
+# browser makes same-origin requests (no CORS, no third-party domain).
+# Uncomment after the first successful deploy, then run `wrangler deploy` again.
+#
+# [[routes]]
+# pattern = "njucm.org/api/*"
+# zone_name = "njucm.org"

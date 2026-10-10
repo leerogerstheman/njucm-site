@@ -1,0 +1,473 @@
+---
+/**
+ * Anonymous comment section for a page.
+ *
+ * Talks to the Cloudflare Worker in ./worker (see worker/README.md). The slug
+ * identifies the page; the API is same-origin once the Worker route is attached
+ * to the domain, so no CORS round-trip is needed.
+ *
+ * Everything the API returns is inserted with textContent — never innerHTML —
+ * so a comment can never inject markup into the page.
+ */
+interface Props {
+  /** page identifier, e.g. the notes slug */
+  slug: string;
+  /**
+   * Endpoint base. Defaults to the same-origin route served by the Worker
+   * (njucm.org/api/*). Set PUBLIC_COMMENTS_API at build time to point at a
+   * workers.dev URL instead, or pass this prop explicitly.
+   */
+  api?: string;
+}
+
+const { slug, api = import.meta.env.PUBLIC_COMMENTS_API || '/api/comments' } = Astro.props;
+---
+
+<section class="comments" data-comments data-slug={slug} data-api={api}>
+  <div class="comments__head">
+    <h2 class="comments__title">留言</h2>
+    <span class="comments__count" data-comments-count hidden></span>
+  </div>
+
+  <p class="comments__note">
+    无需登录，匿名留言。请勿填写真实姓名、联系方式等个人信息；留言会公开显示。
+  </p>
+
+  <div class="comments__list" data-comments-list>
+    <p class="comments__state" data-comments-state>正在加载留言…</p>
+  </div>
+
+  <form class="comments__form" data-comments-form novalidate>
+    <div class="comments__field">
+      <label class="comments__label" for={`comment-name-${slug}`}>
+        昵称<span class="comments__optional">（可选）</span>
+      </label>
+      <input
+        class="comments__input"
+        id={`comment-name-${slug}`}
+        name="name"
+        type="text"
+        maxlength="24"
+        autocomplete="nickname"
+        placeholder="怎么称呼你？"
+      />
+    </div>
+
+    <div class="comments__field">
+      <label class="comments__label" for={`comment-body-${slug}`}>留言内容</label>
+      <textarea
+        class="comments__textarea"
+        id={`comment-body-${slug}`}
+        name="body"
+        rows="4"
+        maxlength="1000"
+        required
+        placeholder="说点什么…（最多 1000 字，链接不超过 2 个）"></textarea>
+      <div class="comments__meta">
+        <span class="comments__hint" data-comments-hint></span>
+        <span class="comments__counter" data-comments-counter>0 / 1000</span>
+      </div>
+    </div>
+
+    <!-- Honeypot: hidden from people, irresistible to naive bots. -->
+    <div class="comments__trap" aria-hidden="true">
+      <label for={`comment-trap-${slug}`}>网址</label>
+      <input id={`comment-trap-${slug}`} name="trap" type="text" tabindex="-1" autocomplete="off" />
+    </div>
+
+    <div class="comments__actions">
+      <button class="comments__submit" type="submit" data-comments-submit>发表留言</button>
+      <p class="comments__status" data-comments-status role="status" aria-live="polite"></p>
+    </div>
+  </form>
+</section>
+
+<script>
+  (function () {
+    var root = document.querySelector('[data-comments]');
+    if (!root) return;
+
+    var slug = root.getAttribute('data-slug') || '';
+    var api = root.getAttribute('data-api') || '/api/comments';
+    var listEl = root.querySelector('[data-comments-list]');
+    var stateEl = root.querySelector('[data-comments-state]');
+    var countEl = root.querySelector('[data-comments-count]');
+    var form = root.querySelector('[data-comments-form]');
+    var statusEl = root.querySelector('[data-comments-status]');
+    var submitEl = root.querySelector('[data-comments-submit]');
+    var hintEl = root.querySelector('[data-comments-hint]');
+    var counterEl = root.querySelector('[data-comments-counter]');
+    var bodyEl = form.querySelector('textarea[name="body"]');
+    var nameEl = form.querySelector('input[name="name"]');
+    var trapEl = form.querySelector('input[name="trap"]');
+    var openedAt = Date.now();
+    var busy = false;
+
+    function setStatus(text, kind) {
+      statusEl.textContent = text || '';
+      statusEl.setAttribute('data-kind', kind || '');
+    }
+
+    function relTime(iso) {
+      var then = Date.parse(iso);
+      if (!then) return '';
+      var mins = Math.round((Date.now() - then) / 60000);
+      if (mins < 1) return '刚刚';
+      if (mins < 60) return mins + ' 分钟前';
+      var hours = Math.round(mins / 60);
+      if (hours < 24) return hours + ' 小时前';
+      var days = Math.round(hours / 24);
+      if (days < 30) return days + ' 天前';
+      return iso.slice(0, 10);
+    }
+
+    function renderComment(c) {
+      var item = document.createElement('article');
+      item.className = 'comments__item';
+
+      var head = document.createElement('div');
+      head.className = 'comments__item-head';
+
+      var who = document.createElement('span');
+      who.className = 'comments__who';
+      // textContent, never innerHTML: user input cannot become markup.
+      who.textContent = c.name && c.name.length ? c.name : '匿名';
+
+      var when = document.createElement('time');
+      when.className = 'comments__when';
+      when.dateTime = c.createdAt || '';
+      when.title = c.createdAt || '';
+      when.textContent = relTime(c.createdAt);
+
+      head.appendChild(who);
+      head.appendChild(when);
+
+      var text = document.createElement('p');
+      text.className = 'comments__body';
+      text.textContent = c.body;
+
+      item.appendChild(head);
+      item.appendChild(text);
+      return item;
+    }
+
+    function showEmpty() {
+      listEl.textContent = '';
+      var p = document.createElement('p');
+      p.className = 'comments__state';
+      p.textContent = '还没有留言，来做第一个吧。';
+      listEl.appendChild(p);
+    }
+
+    function showUnavailable(message) {
+      listEl.textContent = '';
+      var p = document.createElement('p');
+      p.className = 'comments__state comments__state--error';
+      p.textContent = message;
+      listEl.appendChild(p);
+      if (form) form.setAttribute('hidden', '');
+    }
+
+    function load() {
+      fetch(api + '?slug=' + encodeURIComponent(slug), { headers: { accept: 'application/json' } })
+        .then(function (r) {
+          if (!r.ok) throw new Error('http ' + r.status);
+          return r.json();
+        })
+        .then(function (data) {
+          var comments = (data && data.comments) || [];
+          listEl.textContent = '';
+          if (!comments.length) {
+            showEmpty();
+          } else {
+            comments.forEach(function (c) {
+              listEl.appendChild(renderComment(c));
+            });
+          }
+          if (countEl) {
+            countEl.textContent = comments.length ? String(comments.length) : '';
+            if (comments.length) countEl.removeAttribute('hidden');
+          }
+        })
+        .catch(function () {
+          showUnavailable('留言功能暂时不可用（接口未连接）。');
+        });
+    }
+
+    if (bodyEl && counterEl) {
+      bodyEl.addEventListener('input', function () {
+        counterEl.textContent = bodyEl.value.length + ' / 1000';
+      });
+    }
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (busy) return;
+
+      var body = (bodyEl.value || '').trim();
+      if (body.length < 2) {
+        setStatus('留言内容太短了。', 'error');
+        bodyEl.focus();
+        return;
+      }
+
+      busy = true;
+      submitEl.disabled = true;
+      setStatus('正在提交…', 'pending');
+
+      fetch(api, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({
+          slug: slug,
+          name: (nameEl.value || '').trim(),
+          body: body,
+          trap: trapEl ? trapEl.value : '',
+          elapsed: Date.now() - openedAt,
+        }),
+      })
+        .then(function (r) {
+          return r.json().then(function (data) {
+            return { ok: r.ok, status: r.status, data: data };
+          });
+        })
+        .then(function (res) {
+          if (!res.ok) {
+            var map = {
+              rate_limited: '留言太频繁了，请过一会儿再试。',
+              too_fast: '提交太快了，请稍后再试。',
+              body_too_long: '留言太长了（上限 1000 字）。',
+              body_too_short: '留言内容太短了。',
+              too_many_links: '链接太多了（最多 2 个）。',
+              bad_slug: '页面标识无效。',
+            };
+            setStatus(map[res.data && res.data.error] || '提交失败，请稍后再试。', 'error');
+            return;
+          }
+          if (res.data && res.data.pending) {
+            setStatus('已提交，等待管理员审核后显示。', 'ok');
+          } else {
+            setStatus('已发表，谢谢！', 'ok');
+          }
+          bodyEl.value = '';
+          if (counterEl) counterEl.textContent = '0 / 1000';
+          if (res.data && res.data.comment && !res.data.pending) {
+            var placeholder = listEl.querySelector('.comments__state');
+            if (placeholder) placeholder.remove();
+            listEl.appendChild(renderComment(res.data.comment));
+            if (countEl) {
+              var n = listEl.querySelectorAll('.comments__item').length;
+              countEl.textContent = String(n);
+              countEl.removeAttribute('hidden');
+            }
+          }
+        })
+        .catch(function () {
+          setStatus('网络错误，留言没有发出去。', 'error');
+        })
+        .then(function () {
+          busy = false;
+          submitEl.disabled = false;
+        });
+    });
+
+    if (hintEl) hintEl.textContent = '';
+    load();
+  })();
+</script>
+
+<style>
+  .comments {
+    margin: 3.5rem 0 0;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .comments__head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+  }
+
+  .comments__title {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    margin: 0;
+    color: #fff;
+  }
+
+  .comments__count {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--accent);
+  }
+
+  .comments__note {
+    margin: 0.6rem 0 1.5rem;
+    font-size: 0.82rem;
+    color: var(--text-faint);
+    line-height: 1.7;
+  }
+
+  .comments__list {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .comments__state {
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--text-faint);
+  }
+
+  .comments__state--error {
+    color: #f0a58a;
+  }
+
+  .comments__item {
+    padding: 0.9rem 1.1rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+  }
+
+  .comments__item-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.45rem;
+  }
+
+  .comments__who {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text);
+    overflow-wrap: anywhere;
+  }
+
+  .comments__when {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-faint);
+    white-space: nowrap;
+  }
+
+  .comments__body {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.75;
+    color: var(--text-dim);
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+
+  .comments__form {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .comments__field {
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  .comments__label {
+    font-size: 0.82rem;
+    color: var(--text-dim);
+  }
+
+  .comments__optional {
+    color: var(--text-faint);
+  }
+
+  .comments__input,
+  .comments__textarea {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    resize: vertical;
+  }
+
+  .comments__input:focus-visible,
+  .comments__textarea:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -1px;
+  }
+
+  .comments__meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-faint);
+  }
+
+  /* Visually hidden but still in the DOM, which is the point of a honeypot. */
+  .comments__trap {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .comments__actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .comments__submit {
+    appearance: none;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-sm);
+    background: var(--accent-soft);
+    color: var(--accent);
+    font: inherit;
+    font-size: 0.88rem;
+    padding: 0.55rem 1.1rem;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .comments__submit:hover:not(:disabled) {
+    background: var(--accent);
+    color: #04222a;
+  }
+
+  .comments__submit:disabled {
+    opacity: 0.55;
+    cursor: default;
+  }
+
+  .comments__status {
+    margin: 0;
+    font-size: 0.82rem;
+    color: var(--text-faint);
+  }
+
+  .comments__status[data-kind='ok'] {
+    color: var(--accent);
+  }
+
+  .comments__status[data-kind='error'] {
+    color: #f0a58a;
+  }
+
+  @media (max-width: 560px) {
+    .comments__meta {
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+  }
+</style>

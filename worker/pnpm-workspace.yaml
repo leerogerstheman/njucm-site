@@ -1,0 +1,8 @@
+# The worker is its own workspace root, so its toolchain (wrangler + workerd)
+# stays out of the site's dependency tree.
+#
+# pnpm blocks postinstall scripts by default; wrangler cannot run without
+# workerd's native binary, and esbuild needs its own. Those two are allowed.
+allowBuilds:
+  workerd: true
+  esbuild: true
