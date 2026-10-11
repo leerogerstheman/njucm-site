@@ -44,69 +44,6 @@ const items = headings
   )
 }
 
-<style>
-  .toc {
-    position: sticky;
-    top: calc(4rem + 1.5rem); /* below the fixed header */
-    max-height: calc(100vh - 4rem - 3rem);
-    overflow-y: auto;
-    padding-left: 0.35rem;
-    border-left: 1px solid var(--line);
-  }
-
-  .toc__title {
-    margin: 0 0 0.75rem;
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--text-faint);
-  }
-
-  .toc__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    gap: 0.15rem;
-  }
-
-  .toc__li--sub .toc__link {
-    padding-left: 1rem;
-    font-size: 0.82rem;
-  }
-
-  .toc__link {
-    display: block;
-    padding: 0.25rem 0.6rem 0.25rem 0.45rem;
-    border-radius: var(--radius-sm);
-    border-left: 2px solid transparent;
-    margin-left: -0.35rem; /* let the border sit on the nav border line */
-    color: var(--text-dim);
-    font-size: 0.86rem;
-    line-height: 1.45;
-    transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
-  }
-
-  .toc__link:hover {
-    color: #fff;
-    text-decoration: none;
-    background: var(--surface);
-  }
-
-  .toc__link[data-active='true'] {
-    color: var(--accent);
-    border-left-color: var(--accent);
-    background: var(--accent-soft);
-  }
-
-  @media (max-width: 1100px) {
-    .toc {
-      display: none;
-    }
-  }
-</style>
-
 <script>
   const links = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-toc-link]'));
   if (links.length > 0) {

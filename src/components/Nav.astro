@@ -16,7 +16,13 @@ const isActive = (href: string) => {
 };
 ---
 
-<ul class="nav__list" id="site-nav-list" data-open="false">
+<!--
+  `popover` is what powers the narrow-screen menu: the browser opens it from the
+  header button, closes it on Esc or an outside click, and renders the backdrop.
+  No JavaScript is involved. On wide screens CSS returns this same list to
+  normal flow.
+-->
+<ul class="nav__list" id="site-nav-list" popover>
   {items.map((item) => (
     <li>
       <a

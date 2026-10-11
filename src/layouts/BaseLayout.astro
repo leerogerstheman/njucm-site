@@ -16,11 +16,7 @@ interface Props {
 
 const { title, description = SITE.description, isArticle = false } = Astro.props;
 
-const pageTitle = title
-  ? isArticle
-    ? `${title} · ${SITE.title}`
-    : `${title} · ${SITE.title}`
-  : `${SITE.title} · ${SITE.domain}`;
+const pageTitle = title ? `${title} · ${SITE.title}` : `${SITE.title} · ${SITE.domain}`;
 
 const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://njucm.org').href;
 ---
@@ -35,8 +31,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://njucm.org')
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
 
-    <meta name="color-scheme" content="dark" />
-    <meta name="theme-color" content="#07090d" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#05070a" />
     <meta name="author" content={SITE.author} />
 
     <meta property="og:type" content={isArticle ? 'article' : 'website'} />
@@ -48,6 +44,24 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://njucm.org')
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/rss.xml" />
+
+    {/*
+      Applies a previously chosen theme before the first paint, so a light-theme
+      visitor never sees a dark flash. Inline (not bundled) on purpose: a module
+      script would be deferred until after the page has already rendered.
+    */}
+    <script is:inline>
+      (function () {
+        try {
+          var saved = localStorage.getItem('njucm:theme');
+          if (saved === 'light' || saved === 'dark') {
+            document.documentElement.dataset.theme = saved;
+          }
+        } catch (e) {
+          /* storage blocked: fall through to the dark default */
+        }
+      })();
+    </script>
   </head>
 
   <body>

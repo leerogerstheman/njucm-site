@@ -1,61 +1,75 @@
-/* site footer */
+/* ==========================================================================
+   site footer
+   ========================================================================== */
+
 .site-foot {
+  margin-top: auto;
+  padding-block: var(--space-xl) var(--space-lg);
   border-top: 1px solid var(--line);
   background: var(--bg-soft);
-  padding-block: 2.5rem 2rem;
-  margin-top: auto;
-  font-size: 0.875rem;
+  font-size: var(--fs-sm);
   color: var(--text-faint);
 }
 
 .site-foot__inner {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem 3rem;
+  gap: var(--space-lg) var(--space-2xl);
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.site-foot__col { max-width: 34ch; }
-
-.site-foot__title {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-  margin: 0 0 0.7rem;
+.site-foot__col {
+  max-width: 36ch;
 }
 
-.site-foot p { margin: 0 0 0.5rem; line-height: 1.65; }
-.site-foot p:last-child { margin-bottom: 0; }
+.site-foot__title {
+  margin: 0 0 0.7rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-2xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.site-foot p {
+  margin: 0 0 0.5rem;
+  line-height: 1.7;
+}
+
+.site-foot p:last-child {
+  margin-bottom: 0;
+}
 
 .site-foot__links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem 1.1rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-.site-foot__links li { margin: 0; }
+.site-foot__links a {
+  color: var(--text-dim);
+}
 
-.site-foot__links a { color: var(--text-dim); }
-.site-foot__links a:hover { color: var(--accent); text-decoration: none; }
+.site-foot__links a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
 
 .site-foot__bottom {
-  margin-top: 2rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--line);
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 1.5rem;
   justify-content: space-between;
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--line);
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: var(--fs-2xs);
   letter-spacing: 0.04em;
   color: var(--text-faint);
 }
 
-.site-foot__bottom p { margin: 0; }
+.site-foot__bottom p {
+  margin: 0;
+}

@@ -12,39 +12,64 @@ import Nav from './Nav.astro';
     </a>
 
     <nav class="nav" aria-label="主导航">
-      <Nav items={NAV} current={Astro.url.pathname} />
       <button
         class="nav-toggle"
         type="button"
-        aria-expanded="false"
-        aria-controls="site-nav-list"
+        popovertarget="site-nav-list"
         aria-label="打开导航菜单"
       >
         <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+
+      <Nav items={NAV} current={Astro.url.pathname} />
+
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换到浅色主题">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"></circle>
+          <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"></path>
+        </svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 14.2A8.2 8.2 0 0 1 9.8 4a8.4 8.4 0 1 0 10.2 10.2Z"></path>
+        </svg>
       </button>
     </nav>
   </div>
 </header>
 
 <script>
-  const toggle = document.querySelector<HTMLButtonElement>('.nav-toggle');
-  const list = document.getElementById('site-nav-list');
+  // The only behaviour left in the header: the theme switch. The mobile menu is
+  // handled natively by the popover API.
+  const toggle = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
+  const root = document.documentElement;
 
-  if (toggle && list) {
+  if (toggle) {
+    const currentTheme = () => (root.dataset.theme === 'light' ? 'light' : 'dark');
+
+    const describe = (theme: 'light' | 'dark') => {
+      toggle.setAttribute('aria-label', theme === 'dark' ? '切换到浅色主题' : '切换到深色主题');
+      toggle.setAttribute('title', theme === 'dark' ? '切换到浅色主题' : '切换到深色主题');
+    };
+
+    const syncChrome = () => {
+      // Keep the browser/OS chrome colour in step with the resolved background.
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', getComputedStyle(document.body).backgroundColor);
+    };
+
+    describe(currentTheme());
+
     toggle.addEventListener('click', () => {
-      const open = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!open));
-      toggle.setAttribute('aria-label', open ? '打开导航菜单' : '关闭导航菜单');
-      list.dataset.open = String(!open);
+      const next = currentTheme() === 'dark' ? 'light' : 'dark';
+      root.dataset.theme = next;
+      try {
+        localStorage.setItem('njucm:theme', next);
+      } catch {
+        /* private mode / storage disabled: the choice just will not persist */
+      }
+      describe(next);
+      syncChrome();
     });
 
-    // reset when resizing up to desktop
-    const mq = window.matchMedia('(min-width: 861px)');
-    mq.addEventListener('change', (event) => {
-      if (event.matches) {
-        toggle.setAttribute('aria-expanded', 'false');
-        list.dataset.open = 'false';
-      }
-    });
+    syncChrome();
   }
 </script>
