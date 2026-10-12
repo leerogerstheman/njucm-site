@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import DocList from '../components/DocList.astro';
+import HeroPlate from '../components/HeroPlate.astro';
+import SectionGlyph from '../components/SectionGlyph.astro';
 import { SITE, NAV } from '../data/site';
 import { getDocs } from '../utils/content';
 
@@ -19,23 +21,63 @@ const counts: Record<string, number> = {
 };
 
 const totalEntries = notes.length + data.length + projects.length;
+
+/** 每个栏目配一枚专属线稿，key 与 data/site.ts 里的 NAV 对应 */
+const GLYPHS: Record<string, 'notes' | 'data' | 'projects' | 'about'> = {
+  '/notes': 'notes',
+  '/data': 'data',
+  '/projects': 'projects',
+  '/about': 'about',
+};
 ---
 
 <BaseLayout>
   <section class="hero">
-    <p class="eyebrow">Independent research site</p>
-    <h1>{SITE.title}<span class="faint">.org</span></h1>
-    <p class="hero__lede">{SITE.description}</p>
-    <div class="hero__actions">
-      <a class="btn btn--primary" href="/notes">浏览 Notes</a>
-      <a class="btn" href="/about">关于本站</a>
+    <div class="hero__text">
+      <p class="eyebrow" data-reveal style="--reveal-delay:0">Independent research site</p>
+
+      <h1 data-reveal style="--reveal-delay:70">
+        {SITE.title}<span class="faint">.org</span>
+      </h1>
+
+      <p class="hero__tagline" data-reveal style="--reveal-delay:140">{SITE.tagline}</p>
+
+      <p class="hero__lede" data-reveal style="--reveal-delay:210">{SITE.description}</p>
+
+      <div class="hero__actions" data-reveal style="--reveal-delay:280">
+        <a class="btn btn--primary" href="/projects">
+          浏览 Projects
+          <span class="btn__arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="btn" href="/about">关于本站</a>
+      </div>
+
+      <dl class="hero__stats" data-reveal style="--reveal-delay:350">
+        <div class="hero__stat">
+          <dt>Notes</dt>
+          <dd>{notes.length}</dd>
+        </div>
+        <div class="hero__stat">
+          <dt>Data</dt>
+          <dd>{data.length}</dd>
+        </div>
+        <div class="hero__stat">
+          <dt>Projects</dt>
+          <dd>{projects.length}</dd>
+        </div>
+      </dl>
     </div>
+
+    <figure class="hero__figure" data-reveal style="--reveal-delay:200">
+      <HeroPlate />
+      <figcaption>一株羽状复叶，一组节点——本站的两个关键词。</figcaption>
+    </figure>
   </section>
 
   {
     latest.length > 0 && (
       <section class="section-block">
-        <div class="section-block__head">
+        <div class="section-block__head" data-reveal>
           <h2>最新笔记</h2>
           <a href="/notes">全部 →</a>
         </div>
@@ -45,17 +87,20 @@ const totalEntries = notes.length + data.length + projects.length;
   }
 
   <section class="section-block">
-    <div class="section-block__head">
+    <div class="section-block__head" data-reveal>
       <h2>栏目</h2>
       <span class="count">
         {NAV.length} sections · {totalEntries} {totalEntries === 1 ? 'entry' : 'entries'}
       </span>
     </div>
 
-    <div class="grid">
+    <div class="grid" data-cols={NAV.length}>
       {
-        NAV.map((item) => (
-          <article class="card">
+        NAV.map((item, i) => (
+          <article class="card card--glyph" data-reveal style={`--reveal-delay:${420 + i * 70}`}>
+            <span class="card__glyph">
+              <SectionGlyph name={GLYPHS[item.href]} />
+            </span>
             <h3 class="card__title">
               <a href={item.href}>{item.label}</a>
             </h3>

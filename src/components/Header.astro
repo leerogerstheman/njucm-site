@@ -1,12 +1,13 @@
 ---
 import { SITE, NAV } from '../data/site';
 import Nav from './Nav.astro';
+import Seal from './Seal.astro';
 ---
 
 <header class="site-head">
   <div class="wrap site-head__inner">
     <a class="brand" href="/">
-      <span class="brand__mark" aria-hidden="true"></span>
+      <Seal size="1.28rem" />
       <span>{SITE.title}</span>
       <span class="brand__sub">{SITE.domain}</span>
     </a>

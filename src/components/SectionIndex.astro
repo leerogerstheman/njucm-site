@@ -1,6 +1,7 @@
 ---
 import type { NavItem } from '../data/site';
 import DocList from '../components/DocList.astro';
+import SectionGlyph from '../components/SectionGlyph.astro';
 import type { Doc } from '../utils/content';
 
 interface Props {
@@ -9,13 +10,22 @@ interface Props {
   emptyHint?: string;
   /** let the client reorder the cards (see DocList) */
   sortable?: boolean;
+  /** 栏目线稿；省略则不显示 */
+  glyph?: 'notes' | 'data' | 'projects' | 'about';
 }
 
-const { item, docs, emptyHint, sortable = false } = Astro.props;
+const { item, docs, emptyHint, sortable = false, glyph } = Astro.props;
 ---
 
-<header class="page-head">
-  <p class="eyebrow">{item.label}</p>
+<header class="page-head" data-reveal>
+  <p class:list={['eyebrow', { 'eyebrow--glyph': Boolean(glyph) }]}>
+    {glyph && (
+      <span class="page-head__glyph">
+        <SectionGlyph name={glyph} />
+      </span>
+    )}
+    {item.label}
+  </p>
   <h1>{item.label}</h1>
   <p class="page-head__desc">{item.desc}</p>
   <p class="count" style="margin:1rem 0 0">{docs.length} 篇</p>

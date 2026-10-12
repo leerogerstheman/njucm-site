@@ -20,12 +20,23 @@ interface Props {
 
 const { docs, emptyHint = '这个栏目还没有内容。', columns, sortable = false } = Astro.props;
 
-// A doc list never wants the fixed 4-column section-card layout, and squeezing
-// two entries into four columns makes the cards unreadably narrow. `auto` opts
-// out of the wide-screen override in global.css; callers can still pin a count.
-const colStyle = columns
-  ? `repeat(${columns}, minmax(0, 1fr))`
-  : `repeat(auto-fill, minmax(min(100%, 21rem), 1fr))`;
+// A doc list never wants the fixed 4-column section-card layout. When a caller
+// pins `columns`, we hand it to CSS as data-cols rather than an inline
+// grid-template-columns, so the stylesheet can still collapse it on narrow
+// screens — an inline declaration would win over any media query.
+//
+// A pinned count is an upper bound, not a promise: asking for 3 columns with a
+// single entry must not strand that entry in the first of three tracks with two
+// empty columns beside it. Clamping to the item count turns the lone card into
+// a full-width row, which is what one card should have been all along.
+// The same reasoning applies unpinned: a 1–2 entry list gets an exact column
+// count instead of leaning on auto-fit, whose collapsed-track behaviour varies.
+const cols = columns
+  ? Math.min(columns, docs.length)
+  : docs.length <= 2
+    ? docs.length
+    : undefined;
+const colStyle = cols ? undefined : 'repeat(auto-fit, minmax(min(100%, 21rem), 1fr))';
 ---
 
 {
@@ -34,12 +45,16 @@ const colStyle = columns
   ) : (
     <div
       class="grid"
+      data-cols={cols}
       data-sortable={sortable ? '' : undefined}
-      style={`grid-template-columns:${colStyle}`}
+      style={colStyle}
     >
-      {docs.map((doc) => (
+      {docs.map((doc, i) => (
         <article
           class="card"
+          data-reveal
+          /* 卡片只错开前 8 张：再多就变成拖沓，而不是节奏 */
+          style={`--reveal-delay:${Math.min(i, 8) * 45}`}
           data-created={doc.created ? doc.created.toISOString().slice(0, 10) : undefined}
           data-updated={doc.updated ? doc.updated.toISOString().slice(0, 10) : undefined}
         >

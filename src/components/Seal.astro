@@ -1,0 +1,52 @@
+---
+/**
+ * 站印：一枚朱砂方印，内含「藥」字。
+ *
+ * 全站唯一发光的东西，也是唯一大量使用朱砂色的地方——印章之所以有力量，
+ * 是因为整个画面里只有它一个红点。
+ */
+interface Props {
+  /** 边长，任意 CSS 长度 */
+  size?: string;
+  /** 无障碍描述；省略则视为纯装饰 */
+  label?: string;
+}
+
+const { size = '1.5rem', label } = Astro.props;
+---
+
+{
+  label ? (
+    <svg class="seal" viewBox="0 0 32 32" role="img" aria-label={label} style={`width:${size}`}>
+      <rect width="32" height="32" rx="3" fill="var(--seal)" />
+      <text x="16" y="17" text-anchor="middle" dominant-baseline="central">藥</text>
+    </svg>
+  ) : (
+    <svg class="seal" viewBox="0 0 32 32" aria-hidden="true" style={`width:${size}`}>
+      <rect width="32" height="32" rx="3" fill="var(--seal)" />
+      <text x="16" y="17" text-anchor="middle" dominant-baseline="central">藥</text>
+    </svg>
+  )
+}
+
+<style>
+  .seal {
+    height: auto;
+    display: block;
+    overflow: visible;
+    filter: drop-shadow(0 1px 6px color-mix(in oklab, var(--seal) 40%, transparent));
+  }
+
+  .seal text {
+    font-family: var(--font-serif);
+    font-size: 21px;
+    font-weight: 600;
+    fill: #fff;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .seal {
+      transition: transform var(--dur) var(--ease), filter var(--dur) var(--ease);
+    }
+  }
+</style>

@@ -1,0 +1,252 @@
+---
+/**
+ * 首页主视觉：「本草 · 計算」标本图
+ *
+ * 一株手绘的羽状复叶（中药材常见的叶序），与一片稀疏的节点网络叠在同一张
+ * 图上——植物学代表本草，网络代表计算方法，两者共用一张标本纸。
+ *
+ * 全部为手写 SVG：没有位图、没有图标库，缩放不失真，主题切换时自动跟随
+ * 颜色变量。结构线用 --line / --text-dim，只有"计算"那一半的点节点和印章
+ * 使用强调色，这样它待在正文旁边也不会抢戏。
+ */
+
+/* 沿主茎交错生长的羽状复叶：越往上越小、越收拢 */
+const LEAF_COUNT = 9;
+const leaves = Array.from({ length: LEAF_COUNT }, (_, i) => {
+  const t = 0.04 + (i / (LEAF_COUNT - 1)) * 0.9; // 0.04 → 0.94
+  return {
+    t,
+    y: 442 - t * 244,
+    scale: 0.96 - t * 0.52,
+    angle: 52 - t * 21,
+    side: i % 2 === 0 ? 1 : -1,
+  };
+});
+
+/* 右上角的稀疏节点网络 —— 站点的另一半身份 */
+const nodes = [
+  { x: 332, y: 118, r: 3.6 },
+  { x: 388, y: 156, r: 2.4 },
+  { x: 306, y: 182, r: 2.4 },
+  { x: 374, y: 228, r: 3.1 },
+  { x: 318, y: 262, r: 2.1 },
+  { x: 244, y: 128, r: 2.1 },
+];
+const edges = [
+  [0, 1],
+  [0, 2],
+  [1, 3],
+  [2, 3],
+  [2, 5],
+  [3, 4],
+];
+
+/* 一枚小叶：阔卵形，先张后收，尖端略上翘——比细长形更像真正的药材叶 */
+const LEAF = 'M0 0C20 -19 56 -21 82 -2C56 17 20 15 0 0Z';
+const MIDRIB = 'M1 0C26 -5 58 -6 80 -2';
+---
+
+<svg
+  class="plate"
+  viewBox="0 0 420 560"
+  role="img"
+  aria-label="标本图：一株羽状复叶与一片节点网络，象征中药材与计算方法"
+>
+  <defs>
+    <pattern id="plate-grid" width="13" height="13" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.9" fill="var(--grid-dot)"></circle>
+    </pattern>
+    <radialGradient id="plate-wash" cx="46%" cy="38%" r="62%">
+      <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.1"></stop>
+      <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"></stop>
+    </radialGradient>
+    <clipPath id="plate-clip">
+      <rect x="0.5" y="0.5" width="419" height="559" rx="14"></rect>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#plate-clip)">
+    <rect x="0.5" y="0.5" width="419" height="559" rx="14" fill="url(#plate-wash)"></rect>
+    <rect x="0.5" y="0.5" width="419" height="559" rx="14" fill="url(#plate-grid)"></rect>
+
+    {/* 标本纸的内框，比外框更浅一层 */}
+    <rect
+      x="24.5"
+      y="24.5"
+      width="371"
+      height="511"
+      rx="7"
+      fill="none"
+      stroke="var(--line)"
+      stroke-width="1"
+    ></rect>
+
+    {/* 压在叶片背后的墨环 —— 给构图一个重心 */}
+    <circle
+      cx="200"
+      cy="320"
+      r="136"
+      fill="none"
+      stroke="var(--line)"
+      stroke-width="1"
+      stroke-dasharray="2 8"
+      stroke-linecap="round"
+      opacity="0.7"
+    ></circle>
+
+    {/* ---- 主茎 ---- */}
+    <path
+      d="M200 448C207 388 193 318 202 190"
+      fill="none"
+      stroke="var(--text-dim)"
+      stroke-width="1.7"
+      stroke-linecap="round"
+    ></path>
+
+    {/* ---- 羽状复叶 ---- */}
+    {
+      leaves.map((leaf) => (
+        <g
+          transform={`translate(200 ${leaf.y.toFixed(1)}) rotate(${(leaf.angle * leaf.side).toFixed(1)}) scale(${leaf.scale.toFixed(3)})`}
+        >
+          <path
+            d={LEAF}
+            fill="var(--accent-soft)"
+            stroke="var(--accent)"
+            stroke-width="1.25"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d={MIDRIB}
+            fill="none"
+            stroke="var(--accent)"
+            stroke-width="0.8"
+            stroke-linecap="round"
+            opacity="0.65"
+          ></path>
+        </g>
+      ))
+    }
+
+    {/* 茎顶的果穗 */}
+    <g transform="translate(202 164)">
+      <path
+        d="M0 28C-2 14 3 4 0 -12"
+        fill="none"
+        stroke="var(--text-dim)"
+        stroke-width="1.4"
+        stroke-linecap="round"
+      ></path>
+      <ellipse cx="0" cy="-20" rx="7.5" ry="11" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.2"></ellipse>
+      <ellipse cx="-11" cy="-6" rx="5" ry="7.5" fill="var(--surface)" stroke="var(--accent)" stroke-width="1"></ellipse>
+      <ellipse cx="11" cy="-4" rx="5" ry="7.5" fill="var(--surface)" stroke="var(--accent)" stroke-width="1"></ellipse>
+    </g>
+
+    {/* ---- 节点网络：计算方法的那一半 ---- */}
+    <g class="plate__net">
+      {
+        edges.map(([a, b]) => (
+          <line
+            x1={nodes[a].x}
+            y1={nodes[a].y}
+            x2={nodes[b].x}
+            y2={nodes[b].y}
+            stroke="var(--accent)"
+            stroke-width="0.9"
+            opacity="0.4"
+          ></line>
+        ))
+      }
+      {
+        nodes.map((n, i) => (
+          <circle
+            cx={n.x}
+            cy={n.y}
+            r={n.r}
+            fill={i === 0 ? 'var(--accent)' : 'var(--surface)'}
+            stroke="var(--accent)"
+            stroke-width="1.1"
+          ></circle>
+        ))
+      }
+    </g>
+
+    {/* ---- 标注引线：左右各一，都从叶尖出发，不与网络抢位置 ---- */}
+    <g class="plate__notes">
+      <path d="M238 252H304l14 -13" fill="none" stroke="var(--line-strong)" stroke-width="1"></path>
+      <text x="324" y="236">PINNATE</text>
+
+      <path d="M152 311H96l-13 12" fill="none" stroke="var(--line-strong)" stroke-width="1"></path>
+      <text x="77" y="327" text-anchor="end">COMPOUND</text>
+    </g>
+
+    {/* ---- 编号与印章 ---- */}
+    <text class="plate__plate-no" x="32" y="512">PL. 07 — HERBARIUM / NETWORK</text>
+
+    <g class="plate__seal" transform="translate(346 470)">
+      <rect width="46" height="46" rx="4" fill="var(--seal)" opacity="0.92"></rect>
+      <text x="23" y="24" text-anchor="middle" dominant-baseline="central">藥</text>
+    </g>
+  </g>
+
+  <rect
+    x="0.5"
+    y="0.5"
+    width="419"
+    height="559"
+    rx="14"
+    fill="none"
+    stroke="var(--line)"
+    stroke-width="1"
+  ></rect>
+</svg>
+
+<style>
+  .plate {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .plate text {
+    font-family: var(--font-mono);
+    font-size: 8.5px;
+    letter-spacing: 0.16em;
+    fill: var(--text-faint);
+    text-transform: uppercase;
+  }
+
+  .plate__plate-no {
+    font-size: 8px !important;
+    opacity: 0.75;
+  }
+
+  /* 印章是全站唯一发光的东西，而且只发一点点 */
+  .plate__seal text {
+    font-family: var(--font-serif);
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0;
+    fill: #fff;
+  }
+
+  .plate__seal {
+    filter: drop-shadow(0 2px 8px color-mix(in oklab, var(--seal) 35%, transparent));
+  }
+
+  /* 极轻微的一层：网络节点比植物稍慢半拍地稳定下来，像仪器锁定读数 */
+  @media (prefers-reduced-motion: no-preference) {
+    .plate__net {
+      animation: plate-settle 900ms var(--ease-out-expo) 420ms both;
+    }
+
+    @keyframes plate-settle {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+</style>
