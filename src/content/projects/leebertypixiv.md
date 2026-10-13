@@ -1,6 +1,7 @@
 ---
 title: "pixiv 关键词爬虫 · LeebertyPixiv"
 description: "pixiv 原图下载 + 可检索分类图库（GUI）：关键词/画师/全量/收藏夹四种检索，R-18/AIGC 分级开关，动图转码，画师追更，多维图库检索。纯 Python 标准库，带图形界面。"
+domain: "creative"
 date: 2026-09-30
 tags: ["pixiv", "crawler", "python", "tkinter", "图库"]
 status: "active"

@@ -1,6 +1,7 @@
 ---
 title: "GitHub 主页 · AnAheim phArmA"
 description: "GitHub 个人主页（profile README）：药学 × 计算——把药事管理、药物警戒、药物经济学里繁琐的合规流程做成能双击运行的工具。含研究方向、技术栈与精选项目索引。"
+domain: "about"
 date: 2026-10-05
 tags: ["关于", "个人主页", "药学", "索引"]
 status: "active"

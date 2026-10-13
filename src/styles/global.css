@@ -489,8 +489,20 @@
   /* Deliberately the only entrance in the system. It plays on load, it never
      replays, nothing scrolls into view to be "revealed", and it is short enough
      (sub-second, heavily eased out) that it reads as arrival rather than as
-     decoration. Guarded by prefers-reduced-motion so the content is never
-     stranded at opacity 0 for a visitor who asked for stillness. */
+     decoration.
+
+     The two guards below are the important part. A "fade in from opacity 0"
+     pattern is only safe if nothing can prevent the animation from running,
+     and plenty of things can: a backgrounded tab, a compositor under load,
+     a screenshot tool, an embedded webview, print. In those cases a naive
+     implementation leaves the page permanently blank — the worst possible
+     failure for a site whose entire value is its content.
+
+     So:
+       html.js         the animation only exists when scripting ran, so a
+                       no-JS visitor gets the content plainly;
+       .reveal-settled the head script removes the animation after 2.5s no
+                       matter what, so content is guaranteed visible. */
   @keyframes rise-in {
     from {
       opacity: 0;
@@ -503,7 +515,7 @@
   }
 
   @media (prefers-reduced-motion: no-preference) {
-    [data-reveal] {
+    html.js:not(.reveal-settled) [data-reveal] {
       /* No `will-change` on purpose: the animation runs once and never again,
          so promoting every card to its own compositor layer would cost memory
          for the rest of the page's life and buy nothing. */
@@ -1117,6 +1129,32 @@
     background: var(--accent-soft);
   }
 
+  /* 领域是卡片上唯一承担导航功能的标签，所以给它最实心的处理：实心底、
+     等宽无衬线。它一旦被用户理解为"类别"而非"关键词"，分类体系就成立了。 */
+  .tag--domain {
+    color: var(--accent-ink);
+    border-color: var(--accent);
+    background: var(--accent);
+    font-weight: 600;
+  }
+
+  /* 技术栈：可读，但明确降级——小一号、去掉边框、放在标签行之外，
+     所以它永远只是信息，不会被误当成筛选入口。 */
+  .card__stack {
+    margin: 0.55rem 0 0;
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    letter-spacing: 0.06em;
+    color: var(--text-faint);
+    opacity: 0.8;
+  }
+
+  /* 被筛掉的卡片直接移出渲染。没有 JS 时这个属性不存在，所有卡片照常可见，
+     所以筛选永远是增强项而不是前提。 */
+  .grid[data-filterable] .card[data-hidden='true'] {
+    display: none;
+  }
+
   /* ---- article ---------------------------------------------------------- */
   .article {
     min-width: 0;
@@ -1638,13 +1676,286 @@
     color: var(--danger);
   }
 
-  /* ---- projects sorter -------------------------------------------------- */
+  /* ---- search ----------------------------------------------------------- */
+  /* 这些样式必须住在 global.css 而不是 search.astro 的 scoped <style> 里：
+     搜索结果是脚本用 innerHTML 注入的，拿不到 Astro 的 data-astro-cid 作用域
+     属性，写在组件里会一条都不生效。项目的约定也是「凡是会被 JS 改写的样式，
+     一律放全局层」。 */
+  .search {
+    margin: 1.75rem 0 1.5rem;
+    max-width: 40rem;
+  }
+
+  .search__field {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .search__icon {
+    position: absolute;
+    left: 0.95rem;
+    width: 1.05rem;
+    height: 1.05rem;
+    fill: none;
+    stroke: var(--text-faint);
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    pointer-events: none;
+  }
+
+  .search__input {
+    width: 100%;
+    padding: 0.8rem 5.2rem 0.8rem 2.75rem;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-pill);
+    background: var(--surface);
+    color: var(--text);
+    font-size: var(--fs-md);
+    transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+  }
+
+  .search__input::placeholder {
+    color: var(--text-faint);
+  }
+
+  .search__input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+
+  .search__input::-webkit-search-cancel-button {
+    display: none;
+  }
+
+  .search__clear {
+    position: absolute;
+    right: 0.6rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-pill);
+    background: var(--surface-2);
+    color: var(--text-dim);
+    font-size: var(--fs-xs);
+    transition: color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+  }
+
+  .search__clear:hover {
+    color: var(--accent);
+    background: var(--accent-soft);
+  }
+
+  .search__status {
+    margin: 0.7rem 0 0 0.4rem;
+    font-family: var(--font-mono);
+    font-size: var(--fs-xs);
+    color: var(--text-faint);
+  }
+
+  .search__results {
+    display: grid;
+    gap: 0.15rem;
+  }
+
+  .search__hit {
+    padding: 0.9rem 0.4rem 0.9rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    border-left: 2px solid transparent;
+    transition: border-color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+  }
+
+  .search__hit:hover {
+    background: var(--surface);
+    border-left-color: var(--accent);
+  }
+
+  .search__hit-link {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    color: var(--text);
+    background-image: none;
+  }
+
+  .search__hit-link:hover {
+    background-image: none;
+    text-decoration: none;
+  }
+
+  .search__hit-title {
+    font-size: var(--fs-md);
+    font-weight: 600;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .search__hit:hover .search__hit-title {
+    color: var(--accent);
+  }
+
+  .search__hit-meta {
+    flex: 0 0 auto;
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+
+  .search__hit-snip {
+    margin: 0.35rem 0 0;
+    font-size: var(--fs-sm);
+    line-height: 1.7;
+    color: var(--text-dim);
+  }
+
+  /* 命中词用强调色系而不是浏览器默认的荧光黄——默认黄在墨底上像是一个
+     错误提示，而不是一次成功的命中。 */
+  .search__hit-title mark,
+  .search__hit-snip mark {
+    padding: 0.05em 0.2em;
+    border-radius: 3px;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    font-weight: inherit;
+  }
+
+  /* ---- changelog timeline ------------------------------------------------- */
+  .timeline {
+    margin-top: 2rem;
+  }
+
+  .timeline__month + .timeline__month {
+    margin-top: 2.25rem;
+  }
+
+  .timeline__month-label {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin: 0 0 0.9rem;
+    padding-bottom: 0.55rem;
+    border-bottom: 1px solid var(--line);
+    font-family: var(--font-serif);
+    font-size: var(--fs-lg);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .timeline__count {
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    font-weight: 400;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: var(--tracking-wide);
+    color: var(--text-faint);
+  }
+
+  /* 一条竖线串起所有条目，圆点落在线上——更新记录最经典的形态，
+     在没有图片的站点上它比任何图形都更能表达"顺序"。 */
+  .timeline__list {
+    display: grid;
+    gap: 0.05rem;
+    margin-left: 0.35rem;
+    padding-left: 1.2rem;
+    border-left: 1px solid var(--line);
+  }
+
+  .timeline__item {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.3rem 0.7rem;
+    padding: 0.5rem 0;
+  }
+
+  .timeline__item::before {
+    content: '';
+    position: absolute;
+    left: calc(-1.2rem - 3.5px);
+    top: 1.05rem;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1.5px solid var(--accent);
+    background: var(--bg);
+    transition: background var(--dur-fast) var(--ease);
+  }
+
+  .timeline__item:hover::before {
+    background: var(--accent);
+  }
+
+  .timeline__date {
+    flex: 0 0 auto;
+    min-width: 3.2rem;
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    font-variant-numeric: tabular-nums;
+    color: var(--text-faint);
+  }
+
+  .timeline__link {
+    color: var(--text);
+    min-width: 0;
+  }
+
+  .timeline__link:hover {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .timeline__section {
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+
+  .timeline__flag {
+    padding: 0.05rem 0.4rem;
+    border-radius: var(--radius-xs);
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    line-height: 1.5;
+  }
+
+  .changelog__back {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: var(--space-2xl);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--line);
+  }
+
+  @media (max-width: 560px) {
+    .timeline__date {
+      min-width: 2.6rem;
+    }
+
+    .timeline__item {
+      gap: 0.25rem 0.6rem;
+    }
+  }
+
+  /* ---- projects sorter + domain filter ----------------------------------- */
   .sorter {
+    display: grid;
+    gap: 0.7rem;
+    margin: 1.5rem 0 1.25rem;
+  }
+
+  .sorter__row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 0.75rem 1rem;
-    margin: 1.5rem 0 1.25rem;
   }
 
   .sorter__label {
@@ -1657,6 +1968,7 @@
 
   .sorter__group {
     display: inline-flex;
+    flex-wrap: wrap;
     padding: 2px;
     border: 1px solid var(--line);
     border-radius: var(--radius-pill);
@@ -1664,6 +1976,9 @@
   }
 
   .sorter__btn {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.35rem;
     padding: 0.42rem 0.9rem;
     border-radius: var(--radius-pill);
     color: var(--text-dim);
@@ -1680,6 +1995,19 @@
     background: var(--accent-soft);
     color: var(--accent);
     box-shadow: inset 0 0 0 1px var(--accent-line);
+  }
+
+  /* 计数用等宽数字并压暗，让它退到标签之后——它是辅助信息，不是标题 */
+  .sorter__count {
+    font-family: var(--font-mono);
+    font-size: 0.82em;
+    font-variant-numeric: tabular-nums;
+    color: var(--text-faint);
+  }
+
+  .sorter__btn[aria-pressed='true'] .sorter__count {
+    color: var(--accent);
+    opacity: 0.75;
   }
 
   .sorter__hint {

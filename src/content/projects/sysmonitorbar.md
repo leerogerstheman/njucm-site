@@ -1,6 +1,7 @@
 ---
 title: "顶部硬件监控条 · SysMonitorBar"
 description: "在屏幕顶部正中显示实时硬件状态：CPU/GPU 温度与占用、内存显存、网速、刷新率与实测帧率。数据全部自选，鼠标穿透不挡操作。"
+domain: "creative"
 date: 2026-09-29
 tags: ["csharp", "dotnet", "windows", "硬件监控"]
 status: "active"

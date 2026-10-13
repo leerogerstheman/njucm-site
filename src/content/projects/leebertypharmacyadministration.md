@@ -1,6 +1,7 @@
 ---
 title: "药事管理智能 Agent · LeebertyPharmacyAdministration"
 description: "基于本地知识库（14 个专题、112 个知识块）的药事管理问答、合规自查与模板导航；可选接入真实大模型（OpenAI 兼容协议，RAG 增强）。已打包为单文件 exe，双击即用，无需装 Python。"
+domain: "pharmacy"
 date: 2026-10-02
 tags: ["药事管理", "python", "tkinter", "llm", "rag"]
 status: "active"

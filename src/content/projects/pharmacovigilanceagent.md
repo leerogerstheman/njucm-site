@@ -1,6 +1,7 @@
 ---
 title: "药智 · 药物警戒助手"
 description: "面向药学学生的离线智能体学习工具：13 大类知识库、34+ 文档，基于 hello-agents 思路与 RAG 构建，完全离线零依赖。双击即用，无需 Python / Node.js / 数据库 / 网络。"
+domain: "pv"
 date: 2026-10-03
 tags: ["药物警戒", "material-design3", "rag", "学习工具", "离线"]
 status: "active"

@@ -1,5 +1,6 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
+import { DOMAINS } from './data/taxonomy';
 
 /** Shared frontmatter contract for every section. */
 const docSchema = z.object({
@@ -31,6 +32,12 @@ const projects = defineCollection({
   schema: docSchema.extend({
     repo: z.string().url().optional(),
     status: z.enum(['idea', 'active', 'paused', 'done']).default('active'),
+    /**
+     * The one navigable axis. Typed against DOMAINS rather than left as a free
+     * string, so a typo fails the build instead of silently creating a filter
+     * pill that matches nothing.
+     */
+    domain: z.enum(DOMAINS.map((d) => d.id) as [string, ...string[]]).optional(),
   }),
 });
 

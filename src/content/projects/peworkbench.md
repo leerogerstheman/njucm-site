@@ -1,6 +1,7 @@
 ---
 title: "药物经济学工作台 · PE-Workbench"
 description: "面向 HEOR/HTA 工作者的本地化受控工作台：把「方案-证据-建模-分析-报告-申报」变成受控工作流，哈希链审计、双要素电子签名、RBAC 职责分离，内置 CHEERS 2022 / 中国药经评价指南 / ISPOR-SMDM 检查表。原生窗口双击即用。"
+domain: "pharmacy"
 date: 2026-10-03
 tags: ["药物经济学", "hea", "hta", "webview2", "审计追踪", "电子签名"]
 status: "active"

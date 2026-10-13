@@ -1,0 +1,264 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Search"
+  description="搜索 njucm.org 的全部笔记、数据集与项目。"
+>
+  <header class="page-head" data-reveal>
+    <p class="eyebrow">Search</p>
+    <h1>搜索</h1>
+    <p class="page-head__desc">
+      索引在构建期生成，包含每篇的正文纯文本。按 <kbd>/</kbd> 聚焦，
+      <kbd>Esc</kbd> 清空。中文不需要分词，直接按子串匹配。
+    </p>
+  </header>
+
+  <form class="search" role="search" data-search data-reveal>
+    <div class="search__field">
+      <svg class="search__icon" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="11" cy="11" r="6.4"></circle>
+        <path d="M15.8 15.8L20 20"></path>
+      </svg>
+      <input
+        class="search__input"
+        type="search"
+        name="q"
+        placeholder="搜索项目、笔记、数据集…"
+        autocomplete="off"
+        autocapitalize="off"
+        spellcheck="false"
+        aria-describedby="search-status"
+      />
+      <button class="search__clear" type="button" data-search-clear hidden>清除</button>
+    </div>
+    <p class="search__status" id="search-status" role="status" aria-live="polite">
+      正在准备索引…
+    </p>
+  </form>
+
+  <ol class="search__results" data-search-results></ol>
+
+  <noscript>
+    <p class="empty">
+      站内搜索需要 JavaScript。没有它的话，可以直接浏览
+      <a href="/projects">Projects</a>、<a href="/notes">Notes</a> 与
+      <a href="/data">Data</a>，或看 <a href="/changelog">更新记录</a>。
+    </p>
+  </noscript>
+</BaseLayout>
+
+<script is:inline>
+  // 客户端检索。
+  //
+  // 索引是构建期生成的静态 JSON，只在访客第一次输入时才取 —— 所以搜索功能
+  // 不给任何一个页面的首屏增加任何负担（见 pages/search-index.json.ts）。
+  //
+  // 匹配用的是朴素子串查找而不是分词：中文没有空格边界，分词反而会在
+  // 短查询上出错；英文那边 26 篇文档的规模也远没到需要索引结构的程度。
+  (function () {
+    var form = document.querySelector('[data-search]');
+    var input = form && form.querySelector('.search__input');
+    var status = document.querySelector('#search-status');
+    var list = document.querySelector('[data-search-results]');
+    var clearBtn = document.querySelector('[data-search-clear]');
+    if (!form || !input || !list) return;
+
+    var INDEX_URL = '/search-index.json';
+    var SNIPPET_RADIUS = 62;
+    var MAX_RESULTS = 20;
+
+    var index = null;
+    var loading = null;
+
+    function load() {
+      if (index) return Promise.resolve(index);
+      if (loading) return loading;
+      loading = fetch(INDEX_URL)
+        .then(function (r) {
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          return r.json();
+        })
+        .then(function (data) {
+          index = data.map(function (e) {
+            return {
+              title: e.t || '',
+              desc: e.d || '',
+              href: e.u,
+              section: e.s,
+              tags: e.g || [],
+              text: e.x || '',
+              lower: (e.t || '').toLowerCase(),
+              lowerDesc: (e.d || '').toLowerCase(),
+              lowerTags: (e.g || []).join(' ').toLowerCase(),
+              lowerText: (e.x || '').toLowerCase(),
+            };
+          });
+          return index;
+        })
+        .catch(function () {
+          index = null;
+          loading = null;
+          throw new Error('索引加载失败');
+        });
+      return loading;
+    }
+
+    /**
+     * 相关度：标题命中最重，其次标签、描述、正文；正文里再按出现次数给一点
+     * 连续奖励。粗暴但可预测——对一个 26 条的索引，精确排序没有意义，
+     * 而"搜得到"比"排得准"重要得多。
+     */
+    function score(entry, q) {
+      var s = 0;
+      if (entry.lower.indexOf(q) !== -1) s += 100;
+      if (entry.lower.indexOf(q) === 0) s += 60;
+      if (entry.lowerTags.indexOf(q) !== -1) s += 30;
+      if (entry.lowerDesc.indexOf(q) !== -1) s += 20;
+      var hits = entry.lowerText.split(q).length - 1;
+      if (hits > 0) s += 10 + Math.min(hits, 12);
+      return s;
+    }
+
+    function esc(s) {
+      return s.replace(/[&<>"]/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+      });
+    }
+
+    /** 把命中片段标出来；只在确认是纯文本之后才插 <mark> */
+    function highlight(text, q) {
+      var i = text.toLowerCase().indexOf(q);
+      if (i === -1) return esc(text);
+      var end = i + q.length;
+      return (
+        esc(text.slice(Math.max(0, i - SNIPPET_RADIUS), i)) +
+        '<mark>' +
+        esc(text.slice(i, end)) +
+        '</mark>' +
+        esc(text.slice(end, end + SNIPPET_RADIUS))
+      );
+    }
+
+    function snippet(entry, q) {
+      var i = entry.lowerText.indexOf(q);
+      if (i === -1) return entry.desc ? esc(entry.desc) : '';
+      var start = Math.max(0, i - SNIPPET_RADIUS);
+      var body = entry.text.slice(start, i + q.length + SNIPPET_RADIUS);
+      return (start > 0 ? '…' : '') + highlight(body, q) + '…';
+    }
+
+    var SECTION_LABEL = { projects: 'Projects', notes: 'Notes', data: 'Data' };
+
+    function render(q) {
+      if (!q) {
+        list.innerHTML = '';
+        status.textContent = '共 ' + (index ? index.length : 0) + ' 篇内容可搜索。输入关键词开始。';
+        return;
+      }
+
+      var hits = [];
+      for (var i = 0; i < index.length; i++) {
+        var s = score(index[i], q);
+        if (s > 0) hits.push({ doc: index[i], score: s });
+      }
+      hits.sort(function (a, b) {
+        return b.score - a.score || a.doc.title.localeCompare(b.doc.title, 'zh-Hans-CN');
+      });
+      hits = hits.slice(0, MAX_RESULTS);
+
+      status.textContent = hits.length
+        ? '找到 ' + hits.length + ' 条结果' + (hits.length === MAX_RESULTS ? '（仅显示前 ' + MAX_RESULTS + ' 条）' : '')
+        : '没有匹配「' + q + '」的结果';
+
+      list.innerHTML = hits
+        .map(function (h) {
+          var d = h.doc;
+          return (
+            '<li class="search__hit">' +
+            '<a class="search__hit-link" href="' + esc(d.href) + '">' +
+            '<span class="search__hit-title">' + highlight(d.title, q) + '</span>' +
+            '<span class="search__hit-meta">' + esc(SECTION_LABEL[d.section] || d.section) + '</span>' +
+            '</a>' +
+            '<p class="search__hit-snip">' + snippet(d, q) + '</p>' +
+            '</li>'
+          );
+        })
+        .join('');
+    }
+
+    var timer = null;
+    function run() {
+      var q = input.value.trim().toLowerCase();
+      if (clearBtn) clearBtn.hidden = input.value.length === 0;
+      if (!index) {
+        status.textContent = '正在加载索引…';
+        load()
+          .then(function () {
+            render(q);
+          })
+          .catch(function () {
+            status.textContent = '索引加载失败，请稍后重试。';
+          });
+        return;
+      }
+      render(q);
+    }
+
+    input.addEventListener('input', function () {
+      // 去抖 120ms：中文输入法下每个音节都会触发 input，不去抖会一直重排。
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(run, 120);
+    });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      run();
+    });
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function () {
+        input.value = '';
+        input.focus();
+        run();
+      });
+    }
+
+    // 预取索引：访客打开页面时就在后台取，真正输入时几乎不用等。
+    load()
+      .then(function () {
+        status.textContent = '共 ' + index.length + ' 篇内容可搜索。输入关键词开始。';
+      })
+      .catch(function () {
+        status.textContent = '索引加载失败，请稍后重试。';
+      });
+
+    // "/" 聚焦，除非访客正在输入
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey) return;
+      var t = e.target;
+      var tag = t && t.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || (t && t.isContentEditable)) return;
+      e.preventDefault();
+      input.focus();
+      input.select();
+    });
+
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        input.value = '';
+        input.blur();
+        run();
+      }
+    });
+
+    // 直接带 ?q= 进来时立刻出结果
+    var initial = new URLSearchParams(window.location.search).get('q');
+    if (initial) {
+      input.value = initial;
+      run();
+    }
+  })();
+</script>
+

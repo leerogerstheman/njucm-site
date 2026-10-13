@@ -1,6 +1,7 @@
 ---
 title: "FAERS 药物警戒信号检测 · FAERSSignal"
 description: "基于 openFDA 全库约 39,500,000 份不良事件报告，从零实现 PRR / ROR / BCPNN 三种不相称性分析，输出可复现的信号检测报告。纯 Python 标准库。"
+domain: "pv"
 date: 2026-10-04
 tags: ["药物警戒", "faers", "openfda", "信号检测", "prr", "ror", "bcpnn", "pharmacovigilance"]
 status: "active"

@@ -1,6 +1,7 @@
 ---
 title: "鬼泣式动作游戏模板 · STYLISH ACTION"
 description: "零依赖、纯静态的 2D 横版动作游戏模板 + Demo：清版波次 → 精英压制 → Boss 三阶段决战，方向码支援律令、无敌帧翻滚、风格评级 SSS。双击 index.html 即玩，无构建无依赖。"
+domain: "creative"
 date: 2026-10-06
 tags: ["游戏", "javascript", "动作游戏", "模板", "零依赖"]
 status: "active"

@@ -274,6 +274,40 @@ body:has(.nav__list:popover-open) .nav-toggle__bars::after {
   }
 }
 
+/* ---- search link -------------------------------------------------------- */
+.search-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text-dim);
+  background-image: none;
+  transition: color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease),
+    background var(--dur-fast) var(--ease);
+}
+
+.search-link:hover {
+  color: var(--accent);
+  border-color: var(--accent-line);
+  background: var(--accent-soft);
+  text-decoration: none;
+  background-image: none;
+}
+
+.search-link svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+}
+
 /* ---- theme toggle -------------------------------------------------------- */
 
 .theme-toggle {

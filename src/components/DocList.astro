@@ -1,5 +1,6 @@
 ---
 import type { Doc } from '../utils/content';
+import { getDomain, getStack } from '../data/taxonomy';
 
 interface Props {
   docs: Doc[];
@@ -16,9 +17,12 @@ interface Props {
    * get a stable list, and nothing moves (so no listeners or anchors can break).
    */
   sortable?: boolean;
+  /** let the /projects page filter cards by domain (see data/taxonomy.ts) */
+  filterable?: boolean;
 }
 
-const { docs, emptyHint = '这个栏目还没有内容。', columns, sortable = false } = Astro.props;
+const { docs, emptyHint = '这个栏目还没有内容。', columns, sortable = false, filterable = false } =
+  Astro.props;
 
 // A doc list never wants the fixed 4-column section-card layout. When a caller
 // pins `columns`, we hand it to CSS as data-cols rather than an inline
@@ -36,7 +40,13 @@ const cols = columns
   : docs.length <= 2
     ? docs.length
     : undefined;
-const colStyle = cols ? undefined : 'repeat(auto-fit, minmax(min(100%, 21rem), 1fr))';
+// 注意属性名不能漏：style 属性里放裸值（没有 `grid-template-columns:` 前缀）
+// 会被浏览器整条丢弃，而不是回退到样式表里的默认值 —— 那样列数就悄悄不对了。
+const colStyle = cols ? undefined : `grid-template-columns:repeat(auto-fit, minmax(min(100%, 21rem), 1fr))`;
+
+// 项目标签里语言/平台太密，逐个铺出来会把卡片压垮；只留最前面的三个，
+// 而可导航的分类交给 domain。
+const TAG_PREVIEW = 3;
 ---
 
 {
@@ -47,42 +57,56 @@ const colStyle = cols ? undefined : 'repeat(auto-fit, minmax(min(100%, 21rem), 1
       class="grid"
       data-cols={cols}
       data-sortable={sortable ? '' : undefined}
+      data-filterable={filterable ? '' : undefined}
       style={colStyle}
     >
-      {docs.map((doc, i) => (
-        <article
-          class="card"
-          data-reveal
-          /* 卡片只错开前 8 张：再多就变成拖沓，而不是节奏 */
-          style={`--reveal-delay:${Math.min(i, 8) * 45}`}
-          data-created={doc.created ? doc.created.toISOString().slice(0, 10) : undefined}
-          data-updated={doc.updated ? doc.updated.toISOString().slice(0, 10) : undefined}
-        >
-          <h2 class="card__title">
-            <a href={doc.href}>{doc.title}</a>
-          </h2>
+      {docs.map((doc, i) => {
+        const domain = getDomain(doc.domain);
+        const stack = getStack(doc.tags);
+        return (
+          <article
+            class="card"
+            data-reveal
+            /* 卡片只错开前 8 张：再多就变成拖沓，而不是节奏 */
+            style={`--reveal-delay:${Math.min(i, 8) * 45}`}
+            data-created={doc.created ? doc.created.toISOString().slice(0, 10) : undefined}
+            data-updated={doc.updated ? doc.updated.toISOString().slice(0, 10) : undefined}
+            data-domain={doc.domain}
+          >
+            <h2 class="card__title">
+              <a href={doc.href}>{doc.title}</a>
+            </h2>
 
-          {doc.description && <p class="card__desc">{doc.description}</p>}
+            {doc.description && <p class="card__desc">{doc.description}</p>}
 
-          <div class="card__meta">
-            {doc.date && (
-              <time datetime={doc.date.toISOString()}>
-                {doc.date.toISOString().slice(0, 10)}
-              </time>
+            <div class="card__meta">
+              {domain && <span class="tag tag--domain">{domain.label}</span>}
+              {doc.date && (
+                <time datetime={doc.date.toISOString()}>
+                  {doc.date.toISOString().slice(0, 10)}
+                </time>
+              )}
+              {doc.status && <span class={`tag tag--${doc.status}`}>{doc.status}</span>}
+              {doc.repo && (
+                <a class="tag tag--repo" href={doc.repo} rel="noopener noreferrer" target="_blank">
+                  仓库
+                </a>
+              )}
+              {doc.tags.slice(0, TAG_PREVIEW).map((tag) => (
+                <span class="tag">{tag}</span>
+              ))}
+              {doc.draft && <span class="tag">draft</span>}
+            </div>
+
+            {/* 技术栈只在这一条隐藏行里展示：它可读，但不参与导航 */}
+            {stack.length > 0 && (
+              <p class="card__stack" aria-label={`技术栈：${stack.join('、')}`}>
+                {stack.join(' · ')}
+              </p>
             )}
-            {doc.status && <span class={`tag tag--${doc.status}`}>{doc.status}</span>}
-            {doc.repo && (
-              <a class="tag tag--repo" href={doc.repo} rel="noopener noreferrer" target="_blank">
-                仓库
-              </a>
-            )}
-            {doc.tags.slice(0, 3).map((tag) => (
-              <span class="tag">{tag}</span>
-            ))}
-            {doc.draft && <span class="tag">draft</span>}
-          </div>
-        </article>
-      ))}
+          </article>
+        );
+      })}
     </div>
   )
 }

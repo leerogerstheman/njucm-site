@@ -1,6 +1,7 @@
 ---
 title: "中国集采 / 医保卫生经济学分析 · ChinaHTA"
 description: "面向中国市场准入场景的卫生经济学分析工具：集采降价测算、预算影响分析（BIA）、成本-效果分析（ICER/PSA/CEAC）、Markov 队列模型、DRG/DIP 支付影响。"
+domain: "pharmacy"
 date: 2026-10-04
 tags: ["卫生经济学", "集采", "vbp", "医保", "drg", "icer", "qaly", "预算影响分析", "markov"]
 status: "active"

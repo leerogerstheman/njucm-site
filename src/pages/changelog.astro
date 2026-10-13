@@ -1,0 +1,138 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { NAV } from '../data/site';
+import { getDomain } from '../data/taxonomy';
+import { getDocs } from '../utils/content';
+
+/**
+ * Changelog 是把三个栏目按"最后一次变动"重新排一次，不新增任何内容。
+ *
+ * 项目用仓库的最后推送时间（updated），笔记与数据用写作日期 —— 对作者来说
+ * "我什么时候动过它"才是这条时间线要回答的问题，而不是"它是什么时候入库的"。
+ */
+const [notes, data, projects] = await Promise.all([
+  getDocs('notes'),
+  getDocs('data'),
+  getDocs('projects'),
+]);
+
+const SECTION_LABEL: Record<string, string> = {
+  projects: 'Projects',
+  notes: 'Notes',
+  data: 'Data',
+};
+
+interface Entry {
+  when: Date;
+  title: string;
+  href: string;
+  section: string;
+  domain?: string;
+  isNew: boolean;
+}
+
+const entries: Entry[] = [
+  ...projects.map((d) => ({
+    when: d.updated ?? d.date ?? new Date(0),
+    title: d.title,
+    href: d.href,
+    section: 'projects',
+    domain: d.domain,
+    isNew: true,
+  })),
+  ...notes.map((d) => ({
+    when: d.date ?? new Date(0),
+    title: d.title,
+    href: d.href,
+    section: 'notes',
+    isNew: false,
+  })),
+  ...data.map((d) => ({
+    when: d.date ?? new Date(0),
+    title: d.title,
+    href: d.href,
+    section: 'data',
+    isNew: false,
+  })),
+]
+  .filter((e) => e.when.getTime() > 0)
+  .sort((a, b) => b.when.getTime() - a.when.getTime());
+
+/** 按月分组，从新到旧 */
+const months: { key: string; label: string; items: Entry[] }[] = [];
+for (const entry of entries) {
+  const key = `${entry.when.getUTCFullYear()}-${String(entry.when.getUTCMonth() + 1).padStart(2, '0')}`;
+  const label = `${entry.when.getUTCFullYear()} 年 ${entry.when.getUTCMonth() + 1} 月`;
+  let bucket = months.find((m) => m.key === key);
+  if (!bucket) {
+    bucket = { key, label, items: [] };
+    months.push(bucket);
+  }
+  bucket.items.push(entry);
+}
+---
+
+<BaseLayout
+  title="Changelog"
+  description="njucm.org 的更新记录：所有栏目按最后一次变动重新排列。"
+>
+  <header class="page-head" data-reveal>
+    <p class="eyebrow">Changelog</p>
+    <h1>更新记录</h1>
+    <p class="page-head__desc">
+      三个栏目按<strong>最后一次变动</strong>重新排成一条时间线：项目用仓库的最后推送时间，
+      笔记与数据集用写作日期。它不新增内容，只是换一种顺序回答「这个站在动吗」。
+    </p>
+    <p class="count" style="margin:1rem 0 0">{entries.length} 条记录</p>
+  </header>
+
+  <div class="timeline" data-reveal>
+    {
+      months.map((month) => (
+        <section class="timeline__month">
+          <h2 class="timeline__month-label">
+            {month.label}
+            <span class="timeline__count">{month.items.length}</span>
+          </h2>
+
+          <ol class="timeline__list">
+            {month.items.map((item) => {
+              const domain = getDomain(item.domain);
+              return (
+                <li class="timeline__item" data-domain={item.domain}>
+                  <time class="timeline__date" datetime={item.when.toISOString().slice(0, 10)}>
+                    {item.when.getUTCDate()} 日
+                  </time>
+
+                  <a class="timeline__link" href={item.href}>
+                    {item.title}
+                  </a>
+
+                  <span class="timeline__section">{SECTION_LABEL[item.section]}</span>
+
+                  {domain && (
+                    <span class="tag tag--domain" title={domain.desc}>
+                      {domain.label}
+                    </span>
+                  )}
+
+                  {item.isNew && <span class="timeline__flag">新</span>}
+                </li>
+              );
+            })}
+          </ol>
+        </section>
+      ))
+    }
+  </div>
+
+  <nav class="changelog__back" aria-label="返回栏目">
+    {
+      NAV.map((item) => (
+        <a class="btn" href={item.href}>
+          {item.label}
+        </a>
+      ))
+    }
+  </nav>
+</BaseLayout>

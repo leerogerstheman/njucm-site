@@ -1,6 +1,7 @@
 ---
 title: "拼豆图案生成器 · Perler Bead Studio"
 description: "把任意图片变成拼豆图纸的 Windows 工具：4×4 到 1024×1024 任选，内置 50/32/16 三套色卡，支持颜色抖动、去背景、EXIF 自动转正，包豪斯风格界面，开源免费。"
+domain: "creative"
 date: 2026-09-27
 tags: ["python", "windows", "图像处理", "桌面应用"]
 status: "active"

@@ -10,11 +10,13 @@ interface Props {
   emptyHint?: string;
   /** let the client reorder the cards (see DocList) */
   sortable?: boolean;
+  /** let the client narrow the cards by domain (see data/taxonomy.ts) */
+  filterable?: boolean;
   /** 栏目线稿；省略则不显示 */
   glyph?: 'notes' | 'data' | 'projects' | 'about';
 }
 
-const { item, docs, emptyHint, sortable = false, glyph } = Astro.props;
+const { item, docs, emptyHint, sortable = false, filterable = false, glyph } = Astro.props;
 ---
 
 <header class="page-head" data-reveal>
@@ -34,4 +36,4 @@ const { item, docs, emptyHint, sortable = false, glyph } = Astro.props;
 <!-- the /projects page drops its sort control in here -->
 <slot name="before-list" />
 
-<DocList docs={docs} emptyHint={emptyHint} sortable={sortable} />
+<DocList docs={docs} emptyHint={emptyHint} sortable={sortable} filterable={filterable} />

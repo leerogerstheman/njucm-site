@@ -16,6 +16,8 @@ export interface Doc {
   tags: string[];
   draft: boolean;
   status?: string;
+  /** the single navigable axis for projects (see src/data/taxonomy.ts) */
+  domain?: string;
   repo?: string;
   href: string;
 }
@@ -38,6 +40,7 @@ function normalise(section: SectionName, entry: any): Doc {
     tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
     draft: data.draft === true,
     status: typeof data.status === 'string' ? data.status : undefined,
+    domain: typeof data.domain === 'string' ? data.domain : undefined,
     repo: typeof data.repo === 'string' ? data.repo : undefined,
     href: `/${section}/${slug}/`,
   };
@@ -67,6 +70,69 @@ export async function getRawEntry(section: SectionName, slug: string) {
   const entries = (await (getCollection as any)(section)) as any[];
   const wanted = stripExt(slug);
   return entries.find((e) => stripExt(String(e.id)) === wanted);
+}
+
+/** A Doc plus its body flattened to plain text, for the search index. */
+export interface SearchableDoc extends Doc {
+  text: string;
+}
+
+/**
+ * Markdown -> plain text, for indexing only.
+ *
+ * Deliberately crude: it throws away every construct that is not prose, which
+ * is exactly right for a search index (nobody searches for a closing code
+ * fence) and keeps this dependency-free. What matters is that it can never
+ * *lose* a word, so a miss here means a miss in search.
+ */
+function markdownToText(md: string): string {
+  return md
+    .replace(/^---[\s\S]*?\n---/, ' ')
+    .replace(/```[\s\S]*?```/g, ' ')
+    .replace(/`([^`]*)`/g, '$1')
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/^\s{0,3}#{1,6}\s+/gm, '')
+    .replace(/^\s{0,3}>\s?/gm, '')
+    .replace(/[*_~]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/**
+ * Per-document cap: enough to match on, small enough to ship.
+ *
+ * 2500 字符是一个刻意选过的数字——实测 26 篇文档在这个上限下索引约 60 KB
+ * （gzip 后更小），而摘录本身只显示命中点前后约 120 个字符，所以再多存
+ * 只是让首屏那次 fetch 变慢，换不来任何一次更准的命中。
+ */
+const INDEX_TEXT_LIMIT = 2500;
+
+/**
+ * Every doc across the three content sections, flattened for search.
+ *
+ * Built at compile time and served as one static JSON file, so the search page
+ * itself stays a few kilobytes and the index is only fetched when the visitor
+ * actually starts typing.
+ */
+export async function getSearchableDocs(): Promise<SearchableDoc[]> {
+  const sections: SectionName[] = ['notes', 'data', 'projects'];
+
+  const all = await Promise.all(
+    sections.map(async (section) => {
+      const docs = await getDocs(section);
+      return Promise.all(
+        docs.map(async (doc) => {
+          const entry = await getRawEntry(section, doc.slug);
+          const body = typeof entry?.body === 'string' ? entry.body : '';
+          return { ...doc, section, text: markdownToText(body).slice(0, INDEX_TEXT_LIMIT) };
+        }),
+      );
+    }),
+  );
+
+  return all.flat();
 }
 
 /** YYYY-MM-DD, timezone-stable (no locale surprises between machines). */

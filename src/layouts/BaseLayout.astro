@@ -18,7 +18,10 @@ const { title, description = SITE.description, isArticle = false } = Astro.props
 
 const pageTitle = title ? `${title} · ${SITE.title}` : `${SITE.title} · ${SITE.domain}`;
 
-const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://njucm.org').href;
+const siteOrigin = Astro.site ?? new URL('https://njucm.org');
+const canonical = new URL(Astro.url.pathname, siteOrigin).href;
+/* 分享卡片必须是绝对 URL，相对路径在各家抓取器里都会被当成无效 */
+const ogImage = new URL('/og.png', siteOrigin).href;
 ---
 
 <!doctype html>
@@ -40,7 +43,12 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://njucm.org')
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${SITE.title} — ${SITE.tagline}`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={ogImage} />
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/rss.xml" />
@@ -52,6 +60,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://njucm.org')
     */}
     <script is:inline>
       (function () {
+        // 两件事，都必须在首帧之前同步做完，所以内联且不加 defer。
+
+        // 1) 主题：提前落定，避免浅色访客看到一闪的深色。
         try {
           var saved = localStorage.getItem('njucm:theme');
           if (saved === 'light' || saved === 'dark') {
@@ -60,6 +71,15 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://njucm.org')
         } catch (e) {
           /* storage blocked: fall through to the dark default */
         }
+
+        // 2) 入场动效的分级开关（见 global.css 的 rise-in）：
+        //    内容绝不能因为「动画没跑」而看不见，所以动画只在确认脚本可用时
+        //    才启用；再由下面的兜底计时器保证它一定会被解除。
+        var root = document.documentElement;
+        root.classList.add('js');
+        window.setTimeout(function () {
+          root.classList.add('reveal-settled');
+        }, 2500);
       })();
     </script>
   </head>

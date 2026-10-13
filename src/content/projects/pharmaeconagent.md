@@ -1,6 +1,7 @@
 ---
 title: "药物经济学智能体 · PharmaEconAgent"
 description: "面向药学与经济学专业学生的零配置药物经济学学习与计算助手：会讲人话的问答（每条标注出处）、9 个不会算错的计算工具、13 步零基础学习路径。单文件 exe，双击即用，无需 Python / 数据库 / Node。"
+domain: "pharmacy"
 date: 2026-10-03
 tags: ["药物经济学", "electron", "material-design3", "学习工具", "HEOR"]
 status: "active"

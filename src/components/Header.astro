@@ -24,6 +24,13 @@ import Seal from './Seal.astro';
 
       <Nav items={NAV} current={Astro.url.pathname} />
 
+      <a class="search-link" href="/search" aria-label="站内搜索" title="站内搜索（/）">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="6.4"></circle>
+          <path d="M15.8 15.8L20 20"></path>
+        </svg>
+      </a>
+
       <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换到浅色主题">
         <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
           <circle cx="12" cy="12" r="4.2"></circle>

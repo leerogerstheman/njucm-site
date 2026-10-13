@@ -1,6 +1,7 @@
 ---
 title: "本地 PDF 阅读器 · LeebertyPDF"
 description: "为 Windows 打造的本地 PDF 阅读器：PDF.js 渲染内核 + 全自研界面。全文搜索、高亮批注、目录书签、夜间阅读、标签页、阅读进度记忆；批注写回 PDF 文件本身，在 Acrobat / Firefox / Preview 中都能正确打开。"
+domain: "creative"
 date: 2026-10-05
 tags: ["pdf", "electron", "阅读器", "批注", "离线"]
 status: "active"

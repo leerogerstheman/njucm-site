@@ -1,6 +1,7 @@
 ---
 title: "CRA/CRC 临床试验工作台 · LeebertyCR"
 description: "本地运行、零依赖的临床试验岗位辅助应用：把 CRA/CRC 的工作流程、核查清单、场景练习与文件模板结构化，配合受控工作流、电子签名与审计追踪。原生 Windows 窗口，双击即用。"
+domain: "clinical"
 date: 2026-10-03
 tags: ["临床试验", "cra", "crc", "webview2", "审计追踪"]
 status: "active"

@@ -1,6 +1,7 @@
 ---
 title: "GxP 合规工作台 · LeebertyGXP"
 description: "面向制药与实验室的本地化合规工作台：覆盖 GMP/GLP/GCP/GVP/GDP/GPP/GAMP 与数据完整性。哈希链审计追踪、电子签名、偏差/CAPA/OOS、文档控制、自检、生产批次执行。零 npm 依赖，双击即用。"
+domain: "clinical"
 date: 2026-10-02
 tags: ["gxp", "合规", "webview2", "电子签名", "数据完整性"]
 status: "active"

@@ -1,6 +1,7 @@
 ---
 title: "FDA 药品数据 + PubMed 文献爬虫 · PharmaCrawler"
 description: "输入检索式 → 抓取 openFDA 七大药品数据源与 PubMed 文献 → 硬链接分类 → 生成 CSV / Excel / SQLite / Markdown / RIS / BibTeX / MEDLINE 索引。纯 Python 标准库，Material Design 3 界面。"
+domain: "pharmacy"
 date: 2026-10-03
 tags: ["爬虫", "python", "openfda", "pubmed", "文献管理", "material-design3"]
 status: "active"

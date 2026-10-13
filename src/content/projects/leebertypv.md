@@ -1,6 +1,7 @@
 ---
 title: "药物警戒工作台 · LeebertyPV"
 description: "面向中国 MAH、医疗机构与药物警戒部门的本地化合规工作台：覆盖 ICSR、信号检测、PSUR/PBRER、RMP、文献监测、AEFI、投诉召回与 GVP 八大领域。哈希链审计追踪、双要素电子签名、职责分离，原生窗口双击即用。"
+domain: "pv"
 date: 2026-10-02
 tags: ["药物警戒", "pv", "icsr", "gvp", "审计追踪", "电子签名"]
 status: "active"

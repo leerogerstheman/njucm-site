@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SectionIndex from '../../components/SectionIndex.astro';
 import { NAV } from '../../data/site';
+import { DOMAINS } from '../../data/taxonomy';
 import { getDocs } from '../../utils/content';
 
 const item = NAV.find((i) => i.href === '/projects')!;
@@ -16,6 +17,10 @@ const SORTS = [
   { id: 'updated', label: '最新更新', hint: '按仓库最后更新时间排序，最近更新的在前' },
   { id: 'created', label: '最新上传', hint: '按仓库上传到 GitHub 的时间排序，最新的在前' },
 ];
+
+/** 只列出真正有项目的领域，空领域不占一个按钮 */
+const usedDomains = DOMAINS.filter((d) => docs.some((doc) => doc.domain === d.id));
+const counts = new Map(usedDomains.map((d) => [d.id, docs.filter((doc) => doc.domain === d.id).length]));
 ---
 
 <BaseLayout title={item.label} description={item.desc}>
@@ -23,37 +28,58 @@ const SORTS = [
     item={item}
     docs={docs}
     sortable
+    filterable
     glyph="projects"
     emptyHint="还没有项目条目。在 src/content/projects/ 下新建 .md 文件即可出现在这里。"
   >
     <div slot="before-list" class="sorter" data-sorter>
-      <span class="sorter__label" id="sorter-label">排序</span>
-      <div class="sorter__group" role="group" aria-labelledby="sorter-label">
-        {
-          SORTS.map((s, i) => (
-            <button
-              type="button"
-              class="sorter__btn"
-              data-sort={s.id}
-              data-hint={s.hint}
-              aria-pressed={i === 0 ? 'true' : 'false'}
-            >
-              {s.label}
-            </button>
-          ))
-        }
+      <div class="sorter__row">
+        <span class="sorter__label" id="sorter-label">排序</span>
+        <div class="sorter__group" role="group" aria-labelledby="sorter-label">
+          {
+            SORTS.map((s, i) => (
+              <button
+                type="button"
+                class="sorter__btn"
+                data-sort={s.id}
+                data-hint={s.hint}
+                aria-pressed={i === 0 ? 'true' : 'false'}
+              >
+                {s.label}
+              </button>
+            ))
+          }
+        </div>
+        <p class="sorter__hint" data-sort-hint aria-live="polite">{SORTS[0].hint}</p>
       </div>
-      <p class="sorter__hint" data-sort-hint aria-live="polite">{SORTS[0].hint}</p>
+
+      <div class="sorter__row">
+        <span class="sorter__label" id="filter-label">领域</span>
+        <div class="sorter__group" role="group" aria-labelledby="filter-label">
+          <button type="button" class="sorter__btn" data-filter="" aria-pressed="true">
+            全部<span class="sorter__count">{docs.length}</span>
+          </button>
+          {
+            usedDomains.map((d) => (
+              <button type="button" class="sorter__btn" data-filter={d.id} aria-pressed="false">
+                {d.label}
+                <span class="sorter__count">{counts.get(d.id)}</span>
+              </button>
+            ))
+          }
+        </div>
+      </div>
     </div>
   </SectionIndex>
 </BaseLayout>
 
 <script is:inline>
-  // Client-side ordering for the project cards.
+  // Client-side ordering and domain filtering for the project cards.
   //
-  // Only each card's CSS `order` changes — the DOM keeps the order it was
-  // rendered in, so crawlers, no-JS visitors and the tab sequence all still get
-  // a stable list, and nothing moves (no listeners or anchors can break).
+  // Only each card's CSS `order` changes, and hidden cards get `data-hidden` —
+  // the DOM keeps the order it was rendered in, so crawlers, no-JS visitors and
+  // the tab sequence all still get a stable list, and nothing moves (so no
+  // listeners or anchors can break).
   //
   // The script sits right after the grid, i.e. during parsing and before the
   // first paint, so cards are never shown in one order and then visibly
@@ -63,9 +89,11 @@ const SORTS = [
     if (!grid) return;
 
     var cards = Array.prototype.slice.call(grid.children);
-    var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-sort]'));
+    var sortButtons = Array.prototype.slice.call(document.querySelectorAll('[data-sort]'));
+    var filterButtons = Array.prototype.slice.call(document.querySelectorAll('[data-filter]'));
     var hintEl = document.querySelector('[data-sort-hint]');
     var STORAGE_KEY = 'njucm:projects-sort';
+    var FILTER_KEY = 'njucm:projects-domain';
     var MODES = { random: 1, updated: 1, created: 1 };
 
     function shuffle(list) {
@@ -91,7 +119,12 @@ const SORTS = [
       });
     }
 
-    function apply(mode) {
+    /**
+     * Order and filtering are applied together because the visible count depends
+     * on both: `order` is assigned over the whole set first, so a hidden card
+     * keeps a stable slot and unhiding never reshuffles the visible ones.
+     */
+    function apply(mode, domain) {
       var ordered;
       if (mode === 'updated') ordered = byDate(cards, 'data-updated');
       else if (mode === 'created') ordered = byDate(cards, 'data-created');
@@ -101,22 +134,40 @@ const SORTS = [
         ordered[i].style.order = String(i);
       }
 
-      for (var b = 0; b < buttons.length; b++) {
-        var on = buttons[b].getAttribute('data-sort') === mode;
-        buttons[b].setAttribute('aria-pressed', on ? 'true' : 'false');
-        if (on && hintEl) hintEl.textContent = buttons[b].getAttribute('data-hint') || '';
+      for (var c = 0; c < cards.length; c++) {
+        var d = cards[c].getAttribute('data-domain') || '';
+        if (domain && d !== domain) cards[c].setAttribute('data-hidden', 'true');
+        else cards[c].removeAttribute('data-hidden');
       }
+
+      for (var b = 0; b < sortButtons.length; b++) {
+        var on = sortButtons[b].getAttribute('data-sort') === mode;
+        sortButtons[b].setAttribute('aria-pressed', on ? 'true' : 'false');
+        if (on && hintEl) hintEl.textContent = sortButtons[b].getAttribute('data-hint') || '';
+      }
+
+      for (var f = 0; f < filterButtons.length; f++) {
+        var dom = filterButtons[f].getAttribute('data-filter') || '';
+        filterButtons[f].setAttribute('aria-pressed', dom === domain ? 'true' : 'false');
+      }
+
       grid.setAttribute('data-sorted', mode);
+      grid.setAttribute('data-domain', domain || 'all');
     }
 
     function fromUrl() {
-      var m = new URLSearchParams(window.location.search).get('sort');
-      return m && MODES[m] ? m : null;
+      var p = new URLSearchParams(window.location.search);
+      var m = p.get('sort');
+      var d = p.get('domain');
+      return {
+        mode: m && MODES[m] ? m : null,
+        domain: d || null,
+      };
     }
 
     function initialMode() {
-      var m = fromUrl();
-      if (m) return m;
+      var from = fromUrl().mode;
+      if (from) return from;
       try {
         var saved = window.localStorage.getItem(STORAGE_KEY);
         if (saved && MODES[saved]) return saved;
@@ -126,22 +177,54 @@ const SORTS = [
       return 'random';
     }
 
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].addEventListener('click', function () {
-        var mode = this.getAttribute('data-sort');
-        apply(mode); // clicking 随机 again re-rolls the order
-        try {
-          window.localStorage.setItem(STORAGE_KEY, mode);
-        } catch (e) {
-          /* ignore */
-        }
-        var url = new URL(window.location.href);
-        if (mode === 'random') url.searchParams.delete('sort');
-        else url.searchParams.set('sort', mode);
-        window.history.replaceState(null, '', url);
+    function initialDomain() {
+      var from = fromUrl().domain;
+      if (from) return from;
+      try {
+        return window.localStorage.getItem(FILTER_KEY) || '';
+      } catch (e) {
+        return '';
+      }
+    }
+
+    function syncUrl(mode, domain) {
+      var url = new URL(window.location.href);
+      if (mode === 'random') url.searchParams.delete('sort');
+      else url.searchParams.set('sort', mode);
+      if (domain) url.searchParams.set('domain', domain);
+      else url.searchParams.delete('domain');
+      window.history.replaceState(null, '', url);
+    }
+
+    function remember(key, value) {
+      try {
+        window.localStorage.setItem(key, value);
+      } catch (e) {
+        /* ignore */
+      }
+    }
+
+    var mode = initialMode();
+    var domain = initialDomain();
+
+    for (var i = 0; i < sortButtons.length; i++) {
+      sortButtons[i].addEventListener('click', function () {
+        mode = this.getAttribute('data-sort');
+        apply(mode, domain); // clicking 随机 again re-rolls the order
+        remember(STORAGE_KEY, mode);
+        syncUrl(mode, domain);
       });
     }
 
-    apply(initialMode());
+    for (var j = 0; j < filterButtons.length; j++) {
+      filterButtons[j].addEventListener('click', function () {
+        domain = this.getAttribute('data-filter') || '';
+        apply(mode, domain);
+        remember(FILTER_KEY, domain);
+        syncUrl(mode, domain);
+      });
+    }
+
+    apply(mode, domain);
   })();
 </script>

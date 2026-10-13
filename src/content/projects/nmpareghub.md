@@ -1,6 +1,7 @@
 ---
 title: "药品法规知识库 · NMPARegHub"
 description: "把散落在政府网站上的药品法规、公告、指导原则汇总为可全文检索、可按 ICH/CTD 归类、可追踪修订历史的本地知识库。纯 Python 标准库，零依赖。"
+domain: "pharmacy"
 date: 2026-10-04
 tags: ["药事管理", "药品注册", "法规检索", "ich", "ctd", "fts5", "sqlite", "零依赖"]
 status: "active"

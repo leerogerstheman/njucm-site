@@ -1,6 +1,7 @@
 ---
 title: "星陨纪年 · Starfall Chronicle"
 description: "一个零依赖的 JRPG 战斗模板与可玩 Demo：行动条推条、弱点击破、战技点、终结技插入，v0.3.0 加入道具闭环、追击与精英词缀；全部人物形象由代码生成 SVG，没有一张位图。双击 start.bat 即玩，原生窗口，不需要浏览器。"
+domain: "creative"
 date: 2026-10-06
 tags: ["游戏", "jrpg", "nodejs", "程序化美术", "webview2"]
 status: "active"
