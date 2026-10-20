@@ -26,6 +26,8 @@ Thumbs.db
 # local tooling / build scratch
 .build/
 .preview/
+.cache/
+.shot/
 
 # Cloudflare Worker (see worker/): local dev state and secrets
 worker/.wrangler/

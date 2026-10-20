@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import KitBrowser from '../../../components/gundam/KitBrowser.astro';
+import KitStats from '../../../components/gundam/KitStats.astro';
+import { KITS, releaseYear } from '../../../data/gundam';
+import '../../../styles/gundam.css';
+
+const years = KITS.map((k) => releaseYear(k.released)).filter(Boolean);
+const span = years.length ? `${Math.min(...years)}–${Math.max(...years)}` : '—';
+const grades = new Set(KITS.map((k) => k.grade)).size;
+const seriesCount = new Set(KITS.map((k) => k.series)).size;
+
+const description =
+  '按等级、系列、发售年代与官方定价检索的高达塑料模型数据库。每条记录都标注出处与核实状态。';
+---
+
+<BaseLayout title="高达模型数据库" description={description}>
+  <header class="page-head" data-reveal>
+    <p class="eyebrow">Data</p>
+    <h1>高达模型数据库</h1>
+    <p class="page-head__desc">
+      把分散在各处的高达塑料模型资料收拢成一张可检索的表：型号、等级、系列、发售时间、
+      官方建议零售价与销售渠道。每条记录都标明它是从哪儿核来的。
+    </p>
+    <p class="count" style="margin:1rem 0 0">
+      {KITS.length} 条 · {grades} 个等级 · {seriesCount} 条作品线 · 发售年份 {span}
+    </p>
+  </header>
+
+  <KitStats kits={KITS} />
+
+  <KitBrowser kits={KITS} />
+</BaseLayout>

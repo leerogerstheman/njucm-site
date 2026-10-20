@@ -1,0 +1,462 @@
+---
+/**
+ * 检索浏览器 · 筛选、排序与网格
+ *
+ * 筛选全部在客户端完成：条目总数在百级，把数据烘进 DOM 比再发一次请求
+ * 更快，也让筛选状态可以直接写进 URL（?grade=MG&series=uc&sort=old），
+ * 分享出去的链接还是同一次检索。
+ *
+ * 分面计数是联动的：选中「等级 = MG」之后，系列一栏里的数字会变成
+ * 「MG 里的各系列还有多少条」，而不是全库的数量。这是这类站点最有用的一
+ * 个细节——它让人知道换一个条件会不会落到空集。
+ */
+import KitCard from './KitCard.astro';
+import {
+  GRADES,
+  CHANNELS,
+  gradeMeta,
+  seriesMeta,
+  countBy,
+  releaseYear,
+  decadeOf,
+  type GundamKit,
+} from '../../data/gundam';
+
+interface Props {
+  kits: GundamKit[];
+}
+
+const { kits } = Astro.props;
+
+const SORTS = [
+  { id: 'new', label: '最新' },
+  { id: 'old', label: '最早' },
+  { id: 'price-desc', label: '价格高→低' },
+  { id: 'price-asc', label: '价格低→高' },
+  { id: 'grade', label: '等级' },
+  { id: 'name', label: '名称' },
+];
+
+const gradeCounts = new Map(countBy(kits, (k) => k.grade, (id) => id).map((c) => [c.id, c.count]));
+const channelCounts = new Map(countBy(kits, (k) => k.channel, (id) => id).map((c) => [c.id, c.count]));
+const seriesCounts = new Map(countBy(kits, (k) => k.series, (id) => id).map((c) => [c.id, c.count]));
+
+const decadeCounts = countBy(kits, (k) => decadeOf(releaseYear(k.released)), (id) => id).sort((a, b) =>
+  a.id.localeCompare(b.id),
+);
+
+const PRICE_BUCKETS = [
+  { id: '0-1000', label: '¥1,000 以下' },
+  { id: '1001-3000', label: '¥1,000–3,000' },
+  { id: '3001-6000', label: '¥3,000–6,000' },
+  { id: '6001+', label: '¥6,000 以上' },
+  { id: 'unknown', label: '价格未收录' },
+];
+
+function priceBucket(p: number): string {
+  if (!p) return 'unknown';
+  if (p <= 1000) return '0-1000';
+  if (p <= 3000) return '1001-3000';
+  if (p <= 6000) return '3001-6000';
+  return '6001+';
+}
+
+const priceCounts = new Map<string, number>();
+for (const kit of kits) {
+  const b = priceBucket(kit.priceJpy);
+  priceCounts.set(b, (priceCounts.get(b) ?? 0) + 1);
+}
+
+const usedGrades = GRADES.filter((g) => gradeCounts.has(g.id));
+const usedChannels = CHANNELS.filter((c) => channelCounts.has(c.id));
+const usedSeries = [...seriesCounts.entries()]
+  .sort((a, b) => b[1] - a[1] || seriesMeta(a[0]).label.localeCompare(seriesMeta(b[0]).label, 'zh-Hans-CN'))
+  .map(([id]) => id);
+---
+
+<div class="gdb" data-browser>
+  <!-- 工具条：搜索 + 排序 -->
+  <div class="gdb__toolbar">
+    <div class="gdb__searchbox">
+      <input
+        class="gdb__search"
+        type="search"
+        data-search
+        placeholder="搜索型号、中文名、日文名、系列……"
+        aria-label="搜索条目"
+        autocomplete="off"
+      />
+      <button class="gdb__clear" type="button" data-clear-search hidden>清空</button>
+    </div>
+
+    <div class="gdb__sortrow">
+      <span class="sorter__label" id="gdb-sort-label">排序</span>
+      <div class="sorter__group" role="group" aria-labelledby="gdb-sort-label">
+        {
+          SORTS.map((s, i) => (
+            <button type="button" class="sorter__btn" data-sort={s.id} aria-pressed={i === 0 ? 'true' : 'false'}>
+              {s.label}
+            </button>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- 分面筛选 -->
+  <div class="gdb__facets">
+    <div class="gdb__facet">
+      <span class="sorter__label" id="gdb-f-grade">等级</span>
+      <div class="sorter__group" role="group" aria-labelledby="gdb-f-grade" data-facet="grade">
+        <button type="button" class="sorter__btn" data-value="" aria-pressed="true">
+          全部<span class="sorter__count">{kits.length}</span>
+        </button>
+        {
+          usedGrades.map((g) => (
+            <button type="button" class="sorter__btn" data-value={g.id} aria-pressed="false">
+              {g.label}
+              <span class="sorter__count">{gradeCounts.get(g.id)}</span>
+            </button>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="gdb__facet">
+      <span class="sorter__label" id="gdb-f-series">系列</span>
+      <div class="sorter__group" role="group" aria-labelledby="gdb-f-series" data-facet="series">
+        <button type="button" class="sorter__btn" data-value="" aria-pressed="true">
+          全部<span class="sorter__count">{kits.length}</span>
+        </button>
+        {
+          usedSeries.map((id) => (
+            <button type="button" class="sorter__btn" data-value={id} aria-pressed="false">
+              {seriesMeta(id).label}
+              <span class="sorter__count">{seriesCounts.get(id)}</span>
+            </button>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="gdb__facet">
+      <span class="sorter__label" id="gdb-f-channel">渠道</span>
+      <div class="sorter__group" role="group" aria-labelledby="gdb-f-channel" data-facet="channel">
+        <button type="button" class="sorter__btn" data-value="" aria-pressed="true">
+          全部<span class="sorter__count">{kits.length}</span>
+        </button>
+        {
+          usedChannels.map((c) => (
+            <button type="button" class="sorter__btn" data-value={c.id} aria-pressed="false">
+              {c.label}
+              <span class="sorter__count">{channelCounts.get(c.id)}</span>
+            </button>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="gdb__facet">
+      <span class="sorter__label" id="gdb-f-decade">年代</span>
+      <div class="sorter__group" role="group" aria-labelledby="gdb-f-decade" data-facet="decade">
+        <button type="button" class="sorter__btn" data-value="" aria-pressed="true">
+          全部<span class="sorter__count">{kits.length}</span>
+        </button>
+        {
+          decadeCounts.map((d) => (
+            <button type="button" class="sorter__btn" data-value={d.id} aria-pressed="false">
+              {d.id}
+              <span class="sorter__count">{d.count}</span>
+            </button>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="gdb__facet">
+      <span class="sorter__label" id="gdb-f-price">定价</span>
+      <div class="sorter__group" role="group" aria-labelledby="gdb-f-price" data-facet="price">
+        <button type="button" class="sorter__btn" data-value="" aria-pressed="true">
+          全部<span class="sorter__count">{kits.length}</span>
+        </button>
+        {
+          PRICE_BUCKETS.map((b) => (
+            <button type="button" class="sorter__btn" data-value={b.id} aria-pressed="false">
+              {b.label}
+              <span class="sorter__count">{priceCounts.get(b.id) ?? 0}</span>
+            </button>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+
+  <div class="gdb__status">
+    <p class="count" data-result aria-live="polite">共 {kits.length} 条</p>
+    <button class="gdb__reset" type="button" data-reset hidden>清空全部筛选</button>
+  </div>
+
+  <div class="gdb__grid" data-grid>
+    {kits.map((kit, i) => <KitCard kit={kit} index={i} />)}
+  </div>
+
+  <p class="empty" data-empty hidden>没有符合条件的条目，试着放宽某个条件。</p>
+</div>
+
+<script is:inline>
+  // 客户端筛选、排序与分面计数。
+  //
+  // 脚本紧跟在网格后面，趁页面还在解析时就把顺序和显隐定下来，访客不会
+  // 先看到一种顺序再看到另一种。隐藏用 data-hidden 而不是 display:none
+  // 的内联样式，好让样式表统一决定怎么藏。
+  (function () {
+    var root = document.querySelector('[data-browser]');
+    if (!root) return;
+
+    var grid = root.querySelector('[data-grid]');
+    var cards = Array.prototype.slice.call(grid.children);
+    var searchInput = root.querySelector('[data-search]');
+    var clearSearchBtn = root.querySelector('[data-clear-search]');
+    var resetBtn = root.querySelector('[data-reset]');
+    var resultEl = root.querySelector('[data-result]');
+    var emptyEl = root.querySelector('[data-empty]');
+    var facetGroups = Array.prototype.slice.call(root.querySelectorAll('[data-facet]'));
+    var sortButtons = Array.prototype.slice.call(root.querySelectorAll('[data-sort]'));
+
+    var GRADE_ORDER = { PG: 0, MG: 1, MGSD: 2, RG: 3, MR: 4, FM: 5, FG: 6, HG: 7, EG: 8, SD: 9 };
+
+    var state = { q: '', grade: '', series: '', channel: '', decade: '', price: '', sort: 'new' };
+
+    /* 归一化：与生成 data-text 时用的是同一套规则，大小写与分隔符都不参与匹配 */
+    function norm(value) {
+      return (value || '')
+        .toLowerCase()
+        .replace(/[\s　·・,，.。/\\()（）\-_]/g, '');
+    }
+
+    function decadeOf(year) {
+      /* 与服务端的 decadeOf 保持一致：没有年份的条目归到「未知」，
+         两边算法不同会让这一档的计数恒为 0。 */
+      if (!year) return '未知';
+      return Math.floor(year / 10) * 10 + 's';
+    }
+
+    function priceBucket(price) {
+      if (!price) return 'unknown';
+      if (price <= 1000) return '0-1000';
+      if (price <= 3000) return '1001-3000';
+      if (price <= 6000) return '3001-6000';
+      return '6001+';
+    }
+
+    function cardPrice(card) {
+      return Number(card.getAttribute('data-price')) || 0;
+    }
+
+    function cardYear(card) {
+      return Number(card.getAttribute('data-year')) || 0;
+    }
+
+    function matches(card, s) {
+      if (s.q) {
+        var text = card.getAttribute('data-text') || '';
+        /* data-text 建库时已归一化，这里把用户输入也归一化再比；
+           但 state.q 存的是原样文本，回填输入框时才是用户认得的字。 */
+        if (text.indexOf(norm(s.q)) === -1) return false;
+      }
+      if (s.grade && card.getAttribute('data-grade') !== s.grade) return false;
+      if (s.series && card.getAttribute('data-series') !== s.series) return false;
+      if (s.channel && card.getAttribute('data-channel') !== s.channel) return false;
+      if (s.decade && decadeOf(cardYear(card)) !== s.decade) return false;
+      if (s.price && priceBucket(cardPrice(card)) !== s.price) return false;
+      return true;
+    }
+
+    function withFacet(s, key, value) {
+      var out = {};
+      for (var k in s) if (Object.prototype.hasOwnProperty.call(s, k)) out[k] = s[k];
+      out[key] = value;
+      return out;
+    }
+
+    /* 价格未收录的条目不参与价格高低排序，一律沉到最后 */
+    function priceCompare(a, b) {
+      var pa = cardPrice(a);
+      var pb = cardPrice(b);
+      if (!pa && !pb) return 0;
+      if (!pa) return 1;
+      if (!pb) return -1;
+      return pa - pb;
+    }
+
+    function comparator(a, b) {
+      var d = 0;
+      if (state.sort === 'new') d = Number(b.getAttribute('data-rk')) - Number(a.getAttribute('data-rk'));
+      else if (state.sort === 'old') d = Number(a.getAttribute('data-rk')) - Number(b.getAttribute('data-rk'));
+      else if (state.sort === 'price-desc') d = priceCompare(b, a);
+      else if (state.sort === 'price-asc') d = priceCompare(a, b);
+      else if (state.sort === 'grade')
+        d = (GRADE_ORDER[a.getAttribute('data-grade')] || 99) - (GRADE_ORDER[b.getAttribute('data-grade')] || 99);
+      else if (state.sort === 'name')
+        d = (a.getAttribute('data-name') || '').localeCompare(b.getAttribute('data-name') || '', 'zh-Hans-CN');
+      if (d !== 0) return d;
+      /* 同分时按发售时间倒序，保证顺序是确定的，不会每次刷新都换一个排列 */
+      return Number(b.getAttribute('data-rk')) - Number(a.getAttribute('data-rk'));
+    }
+
+    function apply() {
+      var visible = [];
+      var hidden = [];
+      var i;
+      for (i = 0; i < cards.length; i++) {
+        if (matches(cards[i], state)) visible.push(cards[i]);
+        else hidden.push(cards[i]);
+      }
+
+      visible.sort(comparator);
+
+      /* 先给可见的排 0..n-1，再把藏起来的排在后面：所有卡片都保有连续的
+         order 值，网格的排布不会因为筛选而出现空洞。 */
+      var order = 0;
+      for (i = 0; i < visible.length; i++) visible[i].style.order = String(order++);
+      for (i = 0; i < hidden.length; i++) hidden[i].style.order = String(order++);
+      for (i = 0; i < hidden.length; i++) hidden[i].setAttribute('data-hidden', 'true');
+      for (i = 0; i < visible.length; i++) visible[i].removeAttribute('data-hidden');
+
+      /* 分面计数跟着当前条件走：把该分面本身换成候选值，看还剩多少条 */
+      for (var g = 0; g < facetGroups.length; g++) {
+        var key = facetGroups[g].getAttribute('data-facet');
+        var buttons = facetGroups[g].querySelectorAll('[data-value]');
+        for (var b = 0; b < buttons.length; b++) {
+          var value = buttons[b].getAttribute('data-value') || '';
+          var probe = withFacet(state, key, value);
+          var count = 0;
+          for (var c = 0; c < cards.length; c++) if (matches(cards[c], probe)) count++;
+          var slot = buttons[b].querySelector('.sorter__count');
+          if (slot) slot.textContent = String(count);
+          buttons[b].setAttribute('aria-pressed', value === state[key] ? 'true' : 'false');
+        }
+      }
+
+      for (var s = 0; s < sortButtons.length; s++) {
+        sortButtons[s].setAttribute(
+          'aria-pressed',
+          sortButtons[s].getAttribute('data-sort') === state.sort ? 'true' : 'false',
+        );
+      }
+
+      if (resultEl) resultEl.textContent = '共 ' + visible.length + ' 条';
+      if (emptyEl) emptyEl.hidden = visible.length !== 0;
+      if (resetBtn)
+        resetBtn.hidden =
+          !state.q &&
+          !state.grade &&
+          !state.series &&
+          !state.channel &&
+          !state.decade &&
+          !state.price;
+      if (clearSearchBtn) clearSearchBtn.hidden = !state.q;
+    }
+
+    function syncUrl() {
+      var url = new URL(window.location.href);
+      var params = url.searchParams;
+      if (state.q) params.set('q', state.q);
+      else params.delete('q');
+      ['grade', 'series', 'channel', 'decade', 'price'].forEach(function (key) {
+        if (state[key]) params.set(key, state[key]);
+        else params.delete(key);
+      });
+      if (state.sort && state.sort !== 'new') params.set('sort', state.sort);
+      else params.delete('sort');
+      window.history.replaceState(null, '', url);
+    }
+
+    function readUrl() {
+      var params = new URLSearchParams(window.location.search);
+      var next = { q: '', grade: '', series: '', channel: '', decade: '', price: '', sort: 'new' };
+      next.q = params.get('q') || '';
+      ['grade', 'series', 'channel', 'decade', 'price'].forEach(function (key) {
+        var value = params.get(key);
+        if (value) next[key] = value;
+      });
+      var sort = params.get('sort');
+      if (sort) next.sort = sort;
+      return next;
+    }
+
+    /* 从 URL 读进来的条件必须真的能匹配到条目，否则会得到一个空网格 */
+    function sanitize(next) {
+      var probe = withFacet(next, 'q', '');
+      ['grade', 'series', 'channel', 'decade', 'price'].forEach(function (key) {
+        probe = withFacet(probe, key, '');
+      });
+      ['grade', 'series', 'channel', 'decade', 'price'].forEach(function (key) {
+        if (!next[key]) return;
+        var candidate = withFacet(probe, key, next[key]);
+        for (var i = 0; i < cards.length; i++) {
+          if (matches(cards[i], candidate)) return;
+        }
+        next[key] = '';
+      });
+      return next;
+    }
+
+    var initial = sanitize(readUrl());
+    for (var key in initial) if (Object.prototype.hasOwnProperty.call(initial, key)) state[key] = initial[key];
+    if (searchInput) searchInput.value = state.q ? state.q : '';
+
+    if (searchInput) {
+      searchInput.addEventListener('input', function () {
+        state.q = searchInput.value;
+        apply();
+        syncUrl();
+      });
+    }
+
+    if (clearSearchBtn) {
+      clearSearchBtn.addEventListener('click', function () {
+        state.q = '';
+        if (searchInput) searchInput.value = '';
+        apply();
+        syncUrl();
+        if (searchInput) searchInput.focus();
+      });
+    }
+
+    facetGroups.forEach(function (group) {
+      var key = group.getAttribute('data-facet');
+      group.addEventListener('click', function (event) {
+        var button = event.target.closest ? event.target.closest('[data-value]') : null;
+        if (!button || !group.contains(button)) return;
+        state[key] = button.getAttribute('data-value') || '';
+        apply();
+        syncUrl();
+      });
+    });
+
+    sortButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        state.sort = button.getAttribute('data-sort') || 'new';
+        apply();
+        syncUrl();
+      });
+    });
+
+    if (resetBtn) {
+      resetBtn.addEventListener('click', function () {
+        state.q = '';
+        state.grade = '';
+        state.series = '';
+        state.channel = '';
+        state.decade = '';
+        state.price = '';
+        if (searchInput) searchInput.value = '';
+        apply();
+        syncUrl();
+      });
+    }
+
+    apply();
+  })();
+</script>

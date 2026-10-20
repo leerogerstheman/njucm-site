@@ -9,7 +9,13 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check"
+    "check": "astro check",
+    "data:gundam": "node scripts/build-gundam-data.mjs",
+    "data:gundam:images": "node scripts/fetch-gundam-images.mjs",
+    "data:gundam:catalog": "node scripts/harvest-gundam-catalog.mjs",
+    "data:gundam:jp": "node scripts/harvest-gundam-jp.mjs",
+    "data:gundam:join-jp": "node scripts/join-gundam-jp.mjs",
+    "data:gundam:backfill": "node scripts/backfill-gundam-details.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.11",
