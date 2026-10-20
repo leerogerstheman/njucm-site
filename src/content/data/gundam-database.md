@@ -15,14 +15,28 @@ draft: false
 条目分两层来源，界面上用「已核实 / 未核实」区分：
 
 - **万代 Hobby 官方中文站**（bandaihobbysite.cn）是中文品名与商品页的主要来源。
-  它的**品牌分类页**（HG / RG / MG / MG Ver.Ka / MGSD / PG / ENTRY GRADE / FULL MECHANICS /
-  RE/100 / SDCS / SDEX / Hi-Resolution Model / MGEX / 高达汇战 …）按等级列出全部模型，
-  卡片上直接带品名、官方商品图、建议零售价与发售月份。
+  它的**全量商品总表**（`/item_all`，298 页）按 id 倒序列出站内全部商品，
+  本库从那里取全部高达模型条目；**品牌分类页**（HG / RG / MG / MG Ver.Ka / MGSD / PG /
+  ENTRY GRADE / FULL MECHANICS / RE/100 / SDCS / SDEX / Hi-Resolution Model / MGEX /
+  高达汇战 …）与**作品线分类页**用于补上作品线归属。
+- **商品详情页**给出列表页没有的权威信息：渠道徽章（`pg-products__tag`）、
+  中国内地官方零售价、精确到日的发售日期。万代用徽章区分三种限定渠道——
+  「线上售卖」即网络限定，「高达基地限定」即店限定。**渠道判定以徽章为准**，
+  不再靠品名里有没有「高达基地限定」四个字去猜。
 - **万代 Hobby 官方日本站**（bandai-hobby.net）是官方日文品名、含税定价与税目的源头。
   它的商品页规格表里写着「価格 = メーカー希望小売価格(税10%込)／プレミアムバンダイ販売価格」，
   也就是**含税价**。本库按「等级 + 比例 + 定价 + 发售月」把它和中文站条目对上，
   以日本站的数据为准（对上的 500 多条里，定价差异为零）。
   日本站的品牌页只覆盖现售商品，早年的老品要靠 sitemap 里的商品页补齐。
+- **万代日本站 Premium Bandai 目录**（`/brand/pb_*`）是 PB 限定的源头。
+  PB 商品在日站没有自己的商品页，只以「外链到 p-bandai.jp」的形式出现在品牌页里，
+  商品号形如 `item-1000257632`（不是主站那种 `01_7269`）。
+- **万代中文站「网上商店 · PB 商品预约信息专区」**（`/index/index/onlineshop_topics`，
+  48 页）给出 PB 商品的**官方中文品名**、官方商品图，以及「PB上新 / PB再贩」的
+  预约公告与传送门。这个专区是中文站里唯一成规模陈列 PB 的地方。
+- **GUNDAM ASSEMBLE 官方站**（`bandai-hobby.net/site/gundam-assemble/`）是
+  「高达集结」产品线的一手来源：商品一览给出套装分类、厂商希望零售价、发售月与
+  专用商品图；单元卡清单给出起始套装里六台机体的官方编号。
 - **模型资料站**：HPOI（hpoi.net）用于补齐 METAL ROBOT 魂这类官方中文站不收录的品类。
 - **公共资料**：Gundam Info、维基与 Gundam Wiki 用于补齐零件数、全高、骨架结构等字段。
 
@@ -35,8 +49,13 @@ draft: false
 所以日本站现行页面上**一律标「税10%込」**，看不到 8% 的标注。
 
 **限定渠道商品没有日元定价，这不是缺漏**：万代对高达基地限定、Premium Bandai
-限定等商品只公布人民币零售价，官方页上根本没有日元建议零售价。中文站无价的
-229 条，在日本站同样查不到价，两边完全一致。
+限定等商品只公布人民币零售价，官方页上根本没有日元建议零售价。这类条目带
+`priceCny`（中国内地官方零售价），没有日元价就显示人民币价。
+
+**PB 限定的中日对照为什么只补上了小部分**：中文名与日文名分属两种文字系统，
+既没有共同锚点，商品图也确实是不同的照片（日站是深色特写，中文站是白底合影），
+图像匹配不成立。本库用「锚点对齐 + 自助迭代」从库内已有的日中对照学出一张
+词级对照表，机器能高置信度确认的配对才写进数据，其余条目的定价与发售日留空。
 
 ## 字段是什么意思
 
@@ -45,21 +64,28 @@ draft: false
 | `id` | 条目的稳定标识，用于 URL，一旦发布不改 | 必填 |
 | `name` | 中文品名，格式为「等级 比例 名称」 | 必填 |
 | `nameJa` | 官方日文品名 | 空字符串 |
-| `grade` | 等级：PG、MG、MGSD、RG、HG、FG、SD、EG、FM、MR | 必填，越界即丢弃该条 |
-| `series` | 作品线（UC、SEED、GQuuuuuuX 等） | 归入「其他作品」 |
-| `scale` | 比例，如 1/100 | 按等级取该等级常见比例 |
+| `grade` | 等级：PG、MG、MGSD、RG、HG、FG、SD、EG、FM、MR、GA | 必填，越界即丢弃该条 |
+| `series` | 作品线（UC、SEED、GQuuuuuuX、高达集结等） | 归入「其他作品」 |
+| `scale` | 比例，如 1/100；GA 为「约 50mm」 | 按等级取该等级常见比例 |
 | `released` | 发售时间，`YYYY` / `YYYY-MM` / `YYYY-MM-DD` | 空字符串，排序时沉到最后 |
 | `priceJpy` | 官方建议零售价，含税日元 | 0，表示未收录 |
+| `priceCny` | 中国内地官方零售价（元） | 0，表示未收录 |
 | `channel` | 一般销售 / Premium Bandai 限定 / 高达基地限定 / 网络限定 | 按一般销售处理 |
 | `skillLevel` | 官方拼装难度 1–5 | `null` |
 | `parts` / `heightMm` | 零件数 / 全高毫米数 | `null` |
 | `material` | 材质简述 | `null` |
 | `tags` | 特征标签（内构骨架、水贴、预涂…） | 空数组 |
 | `note` | 一句话看点 | 空字符串 |
+| `units` | 高达集结套装里收录的兵人（编号、中日名、出自哪条作品线） | 不存在该字段 |
 | `verified` | 是否已核实到出处 | 由 `source` 是否存在推出 |
 
 品名里带上等级与比例，是 78动漫、大龙网、HPOI 与千岛共同的写法，也因为同一台机体
 在不同等级下是彼此独立的商品——「RX-78-2 高达」既有 RG 也有 FG，没有等级就分不清。
+
+**GA（高达集结）是个例外**：GUNDAM ASSEMBLE 是万代 2026 年 10 月起发售的桌上战棋
+产品线，兵人约 50 高、插销式拼装、需自行涂装，既不是 1/144 也不是 1/100 的比例模型，
+所以单独给一个等级。它的单位是「套装」而不是单件模型，套装里装着哪几台机体
+记在 `units` 字段里，详情页单列一栏展示。
 
 ## 怎么复现
 
@@ -68,8 +94,10 @@ draft: false
 ```
 src/data/gundam.kits.classic.json   事实层：经典线原始记录
 src/data/gundam.kits.recent.json    事实层：新作线原始记录
-src/data/gundam.kits.catalog.json   事实层：全量目录抓取结果
+src/data/gundam.kits.cn.json        事实层：中文站全量商品（作品线 + 渠道 + 价格）
 src/data/gundam.kits.seed.json      事实层：逐条核实过的记录
+src/data/gundam.kits.pb.json        事实层：PB 限定（中文名 + 日站校准）
+src/data/gundam.kits.assemble.json  事实层：高达集结套装
             │
             ▼  scripts/build-gundam-data.mjs
 src/data/gundam.kits.ts              渲染层：合并、去重、校验、排序后的类型化模块
@@ -86,7 +114,15 @@ src/data/gundam.images.json         缓存层：id → 本地图片路径
 
 ```bash
 pnpm data:gundam:catalog   # 从万代中文站抓目录（自限速 + 遇限流自动退避，可中断续跑）
+node scripts/harvest-gundam-itemall.mjs   # 抓中文站全量商品总表
+node scripts/backfill-gundam-channels.mjs # 回填详情页的渠道徽章、人民币价与精确发售日
+node scripts/build-gundam-cn-facts.mjs    # 合成中文站事实文件
 pnpm data:gundam:jp        # 从万代日本站抓目录与官方商品图
+node scripts/harvest-gundam-pb-jp.mjs     # 抓 Premium Bandai 目录与商品图
+node scripts/harvest-gundam-pb.mjs        # 抓中文站 PB 专区（官方中文名）
+node scripts/build-gundam-pb-facts.mjs    # 合成 PB 事实文件
+node scripts/harvest-gundam-assemble.mjs  # 抓高达集结官方商品一览
+node scripts/build-gundam-assemble-facts.mjs  # 合成高达集结事实文件
 node scripts/join-gundam-jp.mjs   # 把日本站的数据对照到中文站条目上（叠加层）
 pnpm data:gundam           # 合并 → 生成 gundam.kits.ts
 pnpm data:gundam:images    # 下载中文站商品图 → 生成 gundam.images.json
@@ -116,8 +152,8 @@ pnpm data:gundam           # 再合并一次
 
 ## 有什么限制
 
-- **不是完整目录**。这是从万代官网各品牌与作品分类页抓下来的子集，覆盖了官网
-  在售的高达模型，但官网本身也没有更早的产品。
+- **不是完整目录**。这是从万代官网的全量商品总表、各品牌与作品分类页抓下来的子集，
+  覆盖了官网在售的高达模型，但官网本身也没有更早的产品。
 - **封面是官方商品图，不是照片**。用的是万代官方商品图，下载后压成 480px 的
   WebP 存进 `public/gundam/`，条目里保留原始 URL 便于溯源。图片加载前会先显示
   一块白底占位（商品图本身是白底拍摄，看不出接缝）。
@@ -126,10 +162,14 @@ pnpm data:gundam           # 再合并一次
 - **发售时间会变**。万代多次延期发售日期，个别条目记的是当初公布的时间。
 - **字段缺失是常态**。零件数与全高这类数字来自官方说明与玩家实测，不同时期统计口径
   略有差异；缺失一律留空，不做估算。
-- **约两百条没有日元定价**。高达基地限定、Premium Bandai 限定等商品，万代官网只
-  公布人民币零售价，官方页上根本没有日元建议零售价——这些条目的 `priceJpy`
-  记为 0，是事实而非缺漏。
+- **限定品大多没有日元定价**。高达基地限定、网络限定、Premium Bandai 限定等商品，
+  万代官网只公布人民币零售价，官方页上根本没有日元建议零售价——这些条目的
+  `priceJpy` 记为 0，是事实而非缺漏；有人民币价的记在 `priceCny` 里。
+- **PB 的中日对照只补上一小部分**。中文名与日文名分属两种文字系统，商品图又是
+  不同的照片，机器只能高置信度确认少数几条。其余 PB 条目的定价与发售日留空。
+- **PB 专区只覆盖近年**。中文站的 PB 专区是预约公告板，往前翻不到太久以前的记录。
 - **作品线归属靠官网的作品分类页**。官网只维护 40 条作品分类，没有归到这 40 条
-  里的产品（例如某些扩展套件与特殊版本）会落进「其他作品」。
-- **封面是内联 SVG，不是图片**。条目破千时列表页的 HTML 约 1.2 MB（gzip 后
+  里的产品（例如某些扩展套件与特殊版本）会落进「其他作品」。PB 商品没有作品线
+  信息，改用机体编号反查，查不到也归「其他作品」。
+- **列表页是整页渲染**。条目破千时列表页的 HTML 约 1.2 MB（gzip 后
   约 90 KB）；继续增长需要改成按需渲染，否则列表页会先变重。

@@ -21,6 +21,9 @@ const decadeMax = Math.max(1, ...decades.map((d) => d.count));
 
 const gradeCounts = countBy(kits, (k) => k.grade, (id) => gradeMeta(id).label);
 const gradeMax = Math.max(1, ...gradeCounts.map((g) => g.count));
+/** 最多的两条等级线，按条目数说话，不写死 */
+const topGrades = gradeCounts.slice(0, 2).map((g) => g.label).join(' 与 ');
+const hasAssemble = kits.some((k) => k.grade === 'GA');
 
 const earliest = kits.reduce(
   (min, k) => (releaseYear(k.released) && (!min || releaseYear(k.released) < releaseYear(min.released)) ? k : min),
@@ -56,7 +59,10 @@ const latest = kits.reduce(
 
   <div class="gstats__block">
     <h2 class="gstats__title">等级构成</h2>
-    <p class="gstats__desc">MG 与 RG 是收录最多的两条线；PG 与 MR 条目少，但单条的信息量最大。</p>
+    <p class="gstats__desc">
+      {topGrades} 是收录最多的两条线；PG 与 MR 条目少，但单条的信息量最大。
+      {hasAssemble && 'GA 是 2026 年起新增的桌面战棋线（高达集结）。'}
+    </p>
     <ul class="gstats__bars">
       {
         gradeCounts.map((g) => (

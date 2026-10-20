@@ -123,10 +123,14 @@ const description = `${kit.name}（${kit.grade} ${kit.scale}）· ${series.label
       {kit.note && <p class="gdetail__note">{kit.note}</p>}
 
       <div class="gspec">
-        <div class="gspec__row">
-          <span class="gspec__key">型号</span>
-          <span class="gspec__val">{kit.nameJa}</span>
-        </div>
+        {
+          kit.nameJa && (
+            <div class="gspec__row">
+              <span class="gspec__key">型号</span>
+              <span class="gspec__val">{kit.nameJa}</span>
+            </div>
+          )
+        }
         <div class="gspec__row">
           <span class="gspec__key">等级</span>
           <span class="gspec__val">
@@ -156,8 +160,22 @@ const description = `${kit.name}（${kit.grade} ${kit.scale}）· ${series.label
                 （含税{kit.taxRate ? ` ${kit.taxRate}%` : ''}）
               </span>
             )}
+            {kit.priceJpy === 0 && kit.priceCny > 0 && (
+              <span class="faint"> （限定品只公布人民币零售价） </span>
+            )}
           </span>
         </div>
+        {
+          kit.priceJpy === 0 && kit.priceCny > 0 && (
+            <div class="gspec__row">
+              <span class="gspec__key">内地零售价</span>
+              <span class="gspec__val">
+                ¥{kit.priceCny.toLocaleString('en-US')}
+                <span class="faint"> （万代官方旗舰店／高达基地零售价） </span>
+              </span>
+            </div>
+          )
+        }
         <div class="gspec__row">
           <span class="gspec__key">销售渠道</span>
           <span class="gspec__val">{channel.label} — {channel.brief}</span>
@@ -202,6 +220,30 @@ const description = `${kit.name}（${kit.grade} ${kit.scale}）· ${series.label
           )
         }
       </div>
+
+      {
+        kit.units && kit.units.length > 0 && (
+          <div class="gunits">
+            <h3 class="gunits__title">套装收录机体</h3>
+            <p class="gunits__desc">
+              官方单元卡上登记的机体与编号——编号可以反查它出自哪部作品。
+            </p>
+            <ul class="gunits__list">
+              {kit.units.map((unit) => (
+                <li class="gunits__item">
+                  <span class="gunits__code">{unit.code}</span>
+                  <span class="gunits__name">{unit.name}</span>
+                  <span class="gunits__designation">{unit.designation}</span>
+                  <span class="gunits__ja">{unit.nameJa}</span>
+                  <a class="gunits__series" href={`/data/gundam/?series=${unit.series}`}>
+                    {seriesMeta(unit.series).label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )
+      }
 
       <div class="gprovenance">
         <h3>数据溯源</h3>

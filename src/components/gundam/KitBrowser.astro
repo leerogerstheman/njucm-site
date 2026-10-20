@@ -50,7 +50,7 @@ const PRICE_BUCKETS = [
   { id: '1001-3000', label: '¥1,000–3,000' },
   { id: '3001-6000', label: '¥3,000–6,000' },
   { id: '6001+', label: '¥6,000 以上' },
-  { id: 'unknown', label: '价格未收录' },
+  { id: 'unknown', label: '暂无日元定价' },
 ];
 
 function priceBucket(p: number): string {
@@ -223,7 +223,7 @@ const usedSeries = [...seriesCounts.entries()]
     var facetGroups = Array.prototype.slice.call(root.querySelectorAll('[data-facet]'));
     var sortButtons = Array.prototype.slice.call(root.querySelectorAll('[data-sort]'));
 
-    var GRADE_ORDER = { PG: 0, MG: 1, MGSD: 2, RG: 3, MR: 4, FM: 5, FG: 6, HG: 7, EG: 8, SD: 9 };
+    var GRADE_ORDER = { PG: 0, MG: 1, MGSD: 2, RG: 3, MR: 4, FM: 5, GA: 6, FG: 7, HG: 8, EG: 9, SD: 10 };
 
     var state = { q: '', grade: '', series: '', channel: '', decade: '', price: '', sort: 'new' };
 

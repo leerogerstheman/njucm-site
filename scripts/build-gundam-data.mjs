@@ -27,14 +27,18 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SOURCES = [
   'src/data/gundam.kits.classic.json',
   'src/data/gundam.kits.recent.json',
-  'src/data/gundam.kits.catalog.json',
+  'src/data/gundam.kits.cn.json',
   'src/data/gundam.kits.seed.json',
+  'src/data/gundam.kits.pb.json',
+  'src/data/gundam.kits.assemble.json',
 ];
 const OUT_FILE = 'src/data/gundam.kits.ts';
 /** 本地图片清单，由 scripts/fetch-gundam-images.mjs 生成 */
 const IMAGES_FILE = 'src/data/gundam.images.json';
 
-const GRADES = new Set(['PG', 'MG', 'MGSD', 'RG', 'HG', 'FG', 'SD', 'EG', 'FM', 'MR']);
+const GRADES = new Set([
+  'PG', 'MG', 'MGSD', 'RG', 'HG', 'FG', 'SD', 'EG', 'FM', 'MR', 'GA',
+]);
 const CHANNELS = new Set(['general', 'pb', 'gb', 'wt']);
 const SERIES = new Set([
   'uc', '0080', '0083', '0093', '0094', 'hathaway', 'gundam-x', 'gquuuuuux',
@@ -42,13 +46,15 @@ const SERIES = new Set([
   'gundam-build', 'iron-blooded', 'wing-gundam', 'gundam-duelists', 'stargazer',
   'crossbone-g', 'gundam-00', 'gundam-age', 'gundam-nt', 'gundam-mv', 'gundam-front',
   'gundam-moon', 'gundam-xarx-zero', 'gundam-build-divers', 'ring-of-nergal',
-  'pilot-season', 'v-gundam', 'g-gundam', 'wfm', 'sd-gundam', 'missing-link', 'other',
+  'pilot-season', 'v-gundam', 'g-gundam', 'wfm', 'sd-gundam', 'missing-link',
+  'gundam-assemble', 'other',
 ]);
 
 /** 等级缺比例时用它兜底 */
 const DEFAULT_SCALE = {
   PG: '1/100', MG: '1/100', MGSD: 'SD 比例', RG: '1/144', HG: '1/144',
   FG: '1/144', SD: '非等比', EG: '1/144', FM: '1/100', MR: '约 1/100',
+  GA: '约 50mm',
 };
 
 const problems = [];
@@ -153,7 +159,10 @@ function normalise(entry, file) {
 
   let released = text(entry.released);
   if (!/^\d{4}/.test(released)) {
-    note(`${file} / ${id}: 发售日期「${released}」无法解析，已清空`);
+    /* 只有「填了却解析不出来」才需要人管；本来就没填的不算问题 */
+    if (released) {
+      note(`${file} / ${id}: 发售日期「${released}」无法解析，已清空`);
+    }
     released = '';
   }
 
@@ -172,8 +181,12 @@ function normalise(entry, file) {
     : [];
 
   const source = optionalText(entry.source);
-  /* 原始记录里的 image 是官方 CDN 上的图片地址；本地路径由图片清单挂上 */
-  const imageUrl = optionalText(entry.image) || optionalText(entry.imageUrl);
+  /* 原始记录里的 image 官方 CDN 上的图片地址；本地路径由图片清单挂上。
+     少数来源（PB 目录）直接把下载好的本地图路径写在这里，站点路径以
+     /gundam/ 开头，认出它就不必再走一遍下载。 */
+  const rawImage = optionalText(entry.image);
+  const localImage = rawImage?.startsWith('/gundam/') ? rawImage : null;
+  const imageUrl = localImage ? null : rawImage || optionalText(entry.imageUrl);
 
   return {
     id,
@@ -185,6 +198,7 @@ function normalise(entry, file) {
     scale: text(entry.scale) || DEFAULT_SCALE[grade],
     released,
     priceJpy: price !== null && price >= 0 ? price : 0,
+    priceCny: numberOrNull(entry.priceCny) ?? 0,
     channel,
     skillLevel: skill !== null && skill >= 1 && skill <= 5 ? skill : null,
     parts,
@@ -194,10 +208,11 @@ function normalise(entry, file) {
     note: text(entry.note),
     verified: entry.verified === true && source !== null,
     source,
-    image: null,
+    image: localImage,
     imageUrl,
     taxRate: Number.isFinite(entry.taxRate) ? entry.taxRate : null,
     sourceJp: optionalText(entry.sourceJp),
+    units: Array.isArray(entry.units) && entry.units.length ? entry.units : undefined,
   };
 }
 
@@ -222,6 +237,7 @@ function merge(a, b) {
     scale: keep.scale || other.scale,
     released: keep.released || other.released,
     priceJpy: keep.priceJpy || other.priceJpy,
+    priceCny: keep.priceCny || other.priceCny,
     channel: keep.channel !== 'general' ? keep.channel : other.channel,
     skillLevel: keep.skillLevel ?? other.skillLevel,
     parts: keep.parts ?? other.parts,
@@ -235,6 +251,7 @@ function merge(a, b) {
     imageUrl: keep.imageUrl ?? other.imageUrl,
     taxRate: keep.taxRate ?? other.taxRate,
     sourceJp: keep.sourceJp ?? other.sourceJp,
+    units: keep.units ?? other.units,
   };
 }
 

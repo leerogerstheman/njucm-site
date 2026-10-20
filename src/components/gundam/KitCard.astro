@@ -86,7 +86,9 @@ const channel = channelMeta(kit.channel);
 
       <span class="gcard__meta">
         <time datetime={kit.released}>{releaseShort(kit.released)}</time>
-        <span class="gcard__price">{formatJPY(kit.priceJpy)}</span>
+        <span class="gcard__price">
+          {kit.priceJpy > 0 ? formatJPY(kit.priceJpy) : kit.priceCny > 0 ? `¥${kit.priceCny.toLocaleString('en-US')}` : '—'}
+        </span>
       </span>
 
       <span class="gcard__series">{meta.label}</span>

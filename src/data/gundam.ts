@@ -17,11 +17,25 @@ import { GUNDAM_KITS } from './gundam.kits';
 /* 类型                                                                        */
 /* -------------------------------------------------------------------------- */
 
-export const GRADE_IDS = ['PG', 'MG', 'MGSD', 'RG', 'HG', 'FG', 'SD', 'EG', 'FM', 'MR'] as const;
+export const GRADE_IDS = ['PG', 'MG', 'MGSD', 'RG', 'HG', 'FG', 'SD', 'EG', 'FM', 'MR', 'GA'] as const;
 export type GradeId = (typeof GRADE_IDS)[number];
 
 export const CHANNEL_IDS = ['general', 'pb', 'gb', 'wt'] as const;
 export type ChannelId = (typeof CHANNEL_IDS)[number];
+
+/** 高达集结里的单台兵人 */
+export interface AssembleUnit {
+  /** 官方单元卡编号，如 ST01-U01 */
+  code: string;
+  /** 机体编号，如 RX-78-2 */
+  designation: string;
+  /** 中文名 */
+  name: string;
+  /** 官方日文名 */
+  nameJa: string;
+  /** 该机体出自哪条作品线 */
+  series: SeriesId;
+}
 
 export type SeriesId =
   | 'uc'
@@ -61,6 +75,7 @@ export type SeriesId =
   | 'wfm'
   | 'sd-gundam'
   | 'missing-link'
+  | 'gundam-assemble'
   | 'other';
 
 /** 一条模型记录的完整形状。字段的语义见 src/content/data/gundam-database.md */
@@ -79,6 +94,13 @@ export interface GundamKit {
   released: string;
   /** 官方建议零售价（含税，日元）。0 表示未查到 */
   priceJpy: number;
+  /**
+   * 中国内地官方零售价（元）。
+   *
+   * 限定品只在中文站公布人民币价、没有日元建议零售价——这类条目靠这个字段
+   * 才有价可显示。0 表示未公布。
+   */
+  priceCny: number;
   channel: ChannelId;
   /** 官方 skill level 1–5 */
   skillLevel: number | null;
@@ -116,6 +138,13 @@ export interface GundamKit {
   taxRate: number | null;
   /** 万代日本官网上的商品页，作为日文名与定价的出处 */
   sourceJp: string | null;
+  /**
+   * 高达集结套装里收录的兵人。
+   *
+   * 只有 GUNDAM ASSEMBLE 这条产品线用到——它是套装而不是单件模型，
+   * 一盒里装着哪几台机体是它的核心信息。
+   */
+  units?: AssembleUnit[];
 }
 
 /* -------------------------------------------------------------------------- */
@@ -144,6 +173,13 @@ export const GRADES: GradeMeta[] = [
   { id: 'EG', label: 'EG', full: 'Entry Grade', scale: '1/144', brief: '平价入门，零件少、成型好' },
   { id: 'FM', label: 'FM', full: 'Full Mechanics', scale: '1/100', brief: '早期的高完成度线，现已停摆' },
   { id: 'MR', label: 'MR', full: 'METAL ROBOT 魂', scale: '约 1/100', brief: '完成品，高度还原的收藏向' },
+  {
+    id: 'GA',
+    label: 'GA',
+    full: 'Gundam Assemble',
+    scale: '约 50mm',
+    brief: '高达集结：桌面战棋用的拼装兵人',
+  },
 ];
 
 export interface ChannelMeta {
@@ -156,7 +192,7 @@ export const CHANNELS: ChannelMeta[] = [
   { id: 'general', label: '一般销售', brief: '常规零售渠道可买到' },
   { id: 'pb', label: 'PB 限定', brief: 'Premium Bandai 独占' },
   { id: 'gb', label: '高达基地限定', brief: 'GUNDAM BASE 店限定' },
-  { id: 'wt', label: '网络限定', brief: '网络商店专属' },
+  { id: 'wt', label: '网络限定', brief: '官方线上商店专属（商品页标注「线上售卖」）' },
 ];
 
 export interface SeriesMeta {
@@ -235,6 +271,12 @@ export const SERIES: SeriesMeta[] = [
     label: '机动战士高达外传 MISSING LINK',
     short: 'MISSING LINK',
     palette: ['#e8ebef', '#3f5a8a', '#c0503c'],
+  },
+  {
+    id: 'gundam-assemble',
+    label: '高达集结 GUNDAM ASSEMBLE',
+    short: 'ASSEMBLE',
+    palette: ['#e4e8ec', '#2f4f8f', '#d94f2b'],
   },
   { id: 'other', label: '其他作品', short: 'OTHER', palette: ['#e2e6ea', '#3c4a5c', '#7a8894'] },
 ];
