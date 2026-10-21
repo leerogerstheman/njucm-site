@@ -1,0 +1,420 @@
+---
+/**
+ * 条目并排对比
+ *
+ * 主题页给的是「同一台机体各品类之间」的对比——那是最常见的一类。
+ * 这一页管的是另一类：几台不同的机体，或者同一台的不同定位，放在一起看参数。
+ *
+ * 数据不在服务端渲染：条目有 1742 条，为一个对比页把整库塞进 HTML 不划算。
+ * 页面取的是列表页那份索引（/data/models/index.json），从 URL 的 ids 参数里
+ * 挑出要对比的那几条。挑不中就退回浏览器里存的对比栏选择。
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CompareBar from '../../../components/models/CompareBar.astro';
+import '../../../styles/models.css';
+import '../../../styles/gundam-theme.css';
+---
+
+<BaseLayout
+  title="条目对比"
+  description="把几个高达模型条目并排放，逐行比较品类、比例、发售、定价、零件数与主题归属。"
+  scope="gundam"
+>
+  <nav class="gbreadcrumb" aria-label="面包屑">
+    <a href="/data/">Data</a>
+    <span aria-hidden="true">/</span>
+    <a href="/data/models/">模型数据库</a>
+    <span aria-hidden="true">/</span>
+    <span class="faint">条目对比</span>
+  </nav>
+
+  <header class="page-head" data-reveal>
+    <p class="eyebrow">对比</p>
+    <h1>条目对比</h1>
+    <p class="page-head__desc">
+      选两到六条放进同一张表里，逐行比较品类、比例、发售、官方定价、零件数与
+      主题归属。选中状态存在你自己的浏览器里，不会传到服务端；地址栏里的
+      <code>?ids=</code> 可以直接分享给别人。
+    </p>
+    <p class="gdb__tools">
+      <a href="/data/models/">条目列表</a>
+      <span aria-hidden="true">·</span>
+      <a href="/data/models/subject/">按主题浏览</a>
+      <span aria-hidden="true">·</span>
+      <a href="/data/models/series/">按作品线浏览</a>
+    </p>
+  </header>
+
+  <section class="gcmppage" data-reveal>
+    <div class="gcmppage__bar">
+      <p class="gcmppage__count" data-cmp-count aria-live="polite">尚未选择条目</p>
+      <p class="gcmppage__hint">
+        在
+        <a href="/data/models/">条目列表</a>或
+        <a href="/data/models/subject/">主题索引</a>里挑，或从条目详情页点「加入对比」。
+      </p>
+    </div>
+    <div class="gcmppage__scroll" data-cmp-body></div>
+  </section>
+
+  <noscript>
+    <p class="empty">
+      对比页需要 JavaScript 才能读取选中状态。没有它的话，可以直接打开
+      <a href="/data/models/">条目列表</a>逐个查看，或到
+      <a href="/data/models/subject/">主题页</a>看同一台机体的各等级横向对比。
+    </p>
+  </noscript>
+
+  <CompareBar />
+</BaseLayout>
+
+<script is:inline>
+  // 对比页。条目数据取列表页那份索引，从 ids 里挑出要对比的几条。
+  (function () {
+    var body = document.querySelector('[data-cmp-body]');
+    var countEl = document.querySelector('[data-cmp-count]');
+    if (!body) return;
+
+    var STORAGE_KEY = 'njucm:gundam:compare';
+    var INDEX_URL = '/data/models/index.json';
+
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+      });
+    }
+
+    function stored() {
+      try {
+        var raw = localStorage.getItem(STORAGE_KEY);
+        var list = raw ? JSON.parse(raw) : [];
+        return Array.isArray(list) ? list : [];
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function wanted() {
+      var ids = new URLSearchParams(window.location.search).get('ids');
+      if (ids) return ids.split(',').filter(Boolean);
+      return stored();
+    }
+
+    var ROWS = [
+      { key: 'cover', label: '商品图', render: function (r) {
+          return r.image
+            ? '<img class="gcmppage__img" src="' + esc(r.image) + '" alt="" loading="lazy" decoding="async">'
+            : '<span class="gcmppage__img gcmppage__img--none">无图</span>';
+        } },
+      { key: 'name', label: '品名', render: function (r) {
+          return '<a href="/data/models/' + encodeURIComponent(r.id) + '/">' + esc(r.name) + '</a>' +
+            (r.nameJa ? '<span class="gcmppage__ja">' + esc(r.nameJa) + '</span>' : '');
+        } },
+      { key: 'category', label: '品类 / 比例', render: function (r) {
+          return '<span class="gcard__grade" data-category="' + esc(categoryMeta(r.category).label) + '">' + esc(categoryMeta(r.category).label) + '</span>' +
+            '<span class="gcmppage__mono">' + esc(r.scale) + '</span>';
+        } },
+      { key: 'series', label: '作品线', render: function (r) {
+          return '<a href="/data/models/series/' + encodeURIComponent(r.series) + '/">' +
+            esc(r.seriesLabel) + '</a>';
+        } },
+      { key: 'channel', label: '渠道', render: function (r) {
+          return esc(r.channelLabel);
+        } },
+      { key: 'released', label: '发售', render: function (r) {
+          return '<span class="gcmppage__mono">' + esc(r.released || '—') + '</span>';
+        } },
+      { key: 'price', label: '官方定价', render: function (r) {
+          if (r.priceJpy) return '<span class="gcmppage__mono">¥' + r.priceJpy.toLocaleString('en-US') + '</span>';
+          if (r.priceCny) return '<span class="gcmppage__mono">¥' + r.priceCny.toLocaleString('en-US') + '</span><span class="gcmppage__hint">人民币</span>';
+          return '—';
+        } },
+      { key: 'size', label: '全高 / 零件数', render: function (r) {
+          var bits = [];
+          if (r.heightMm !== null && r.heightMm !== undefined) bits.push('约 ' + r.heightMm + ' mm');
+          if (r.parts !== null && r.parts !== undefined) bits.push(r.parts + ' 件');
+          return bits.length ? '<span class="gcmppage__mono">' + esc(bits.join(' / ')) + '</span>' : '—';
+        } },
+      { key: 'skill', label: '拼装难度', render: function (r) {
+          return r.skillLevel === null || r.skillLevel === undefined
+            ? '—'
+            : '<span class="gcmppage__mono">' + r.skillLevel + ' / 5</span>';
+        } },
+      { key: 'material', label: '材质', render: function (r) {
+          return r.material ? esc(r.material) : '—';
+        } },
+      { key: 'subject', label: '主题', render: function (r) {
+          if (!r.subject) return '—';
+          return '<a href="/data/models/?q=' + encodeURIComponent(r.subject) + '">' + esc(r.subject) + '</a>';
+        } },
+      { key: 'aliases', label: '又名', render: function (r) {
+          var list = r.aliases || [];
+          return list.length ? '<span class="gcmppage__aliases">' + list.map(esc).join(' · ') + '</span>' : '—';
+        } },
+      { key: 'tags', label: '标签', render: function (r) {
+          var list = r.tags || [];
+          return list.length
+            ? '<span class="gcmppage__tags">' + list.map(function (t) {
+                return '<a href="/data/models/?tag=' + encodeURIComponent(t) + '">' + esc(t) + '</a>';
+              }).join('') + '</span>'
+            : '—';
+        } },
+      { key: 'note', label: '看点', render: function (r) {
+          return r.note ? esc(r.note) : '—';
+        } },
+      { key: 'remove', label: '', render: function (r) {
+          return '<button type="button" class="gcmppage__remove" data-cmp-remove="' + esc(r.id) + '">移除</button>';
+        } },
+    ];
+
+    function render(rows) {
+      if (!rows.length) {
+        if (countEl) countEl.textContent = '尚未选择条目';
+        body.innerHTML =
+          '<p class="empty">还没有选中条目。在条目详情页点「加入对比」，或直接在这里粘一个 ids 参数。</p>';
+        return;
+      }
+
+      if (countEl) countEl.textContent = '正在对比 ' + rows.length + ' 条';
+
+      var html = '<table class="gcmppage__table"><thead><tr><th scope="col">项目</th>';
+      for (var i = 0; i < rows.length; i++) {
+        html += '<th scope="col" class="gcmppage__col">' + esc(rows[i].name) + '</th>';
+      }
+      html += '</tr></thead><tbody>';
+      for (var r = 0; r < ROWS.length; r++) {
+        var row = ROWS[r];
+        html += '<tr' + (row.key === 'remove' ? ' class="gcmppage__row--remove"' : '') + '>';
+        html += '<th scope="row">' + esc(row.label) + '</th>';
+        for (var c = 0; c < rows.length; c++) {
+          html += '<td>' + row.render(rows[c]) + '</td>';
+        }
+        html += '</tr>';
+      }
+      html += '</tbody></table>';
+      body.innerHTML = html;
+
+      if (countEl) countEl.textContent = '正在对比 ' + rows.length + ' 条';
+    }
+
+    function apply() {
+      var ids = wanted();
+      if (!ids.length) {
+        render([]);
+        return;
+      }
+      fetch(INDEX_URL)
+        .then(function (res) {
+          return res.json();
+        })
+        .then(function (payload) {
+          var idx = {};
+          payload.fields.forEach(function (f, i) {
+            idx[f] = i;
+          });
+          var map = {};
+          payload.rows.forEach(function (row) {
+            var k = {};
+            payload.fields.forEach(function (f, i) {
+              k[f] = row[i];
+            });
+            k.seriesLabel = payload.series[k.series] || '';
+            k.channelLabel = payload.channels[k.channel] || '';
+            map[k.id] = k;
+          });
+          var rows = ids
+            .map(function (id) { return map[id]; })
+            .filter(Boolean);
+          render(rows);
+        })
+        .catch(function () {
+          body.innerHTML = '<p class="empty">索引加载失败，请稍后重试。</p>';
+        });
+    }
+
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest ? e.target.closest('[data-cmp-remove]') : null;
+      if (!btn) return;
+      var id = btn.getAttribute('data-cmp-remove');
+      var next = stored().filter(function (x) { return x !== id; });
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      } catch (err) {
+        /* ignore */
+      }
+      var url = new URL(window.location.href);
+      if (next.length) url.searchParams.set('ids', next.join(','));
+      else url.searchParams.delete('ids');
+      window.history.replaceState(null, '', url);
+      apply();
+      document.dispatchEvent(new CustomEvent('gundam:compare-change'));
+    });
+
+    apply();
+  })();
+</script>
+
+<style is:global>
+  .gcmppage {
+    margin: 2rem 0 0;
+  }
+
+  .gcmppage__bar {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .gcmppage__count {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: var(--fs-sm);
+    color: var(--accent);
+  }
+
+  .gcmppage__hint {
+    margin: 0;
+    font-size: var(--fs-xs);
+    color: var(--text-faint);
+  }
+
+  .gcmppage__scroll {
+    overflow-x: auto;
+  }
+
+  .gcmppage__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--fs-sm);
+    min-width: 34rem;
+  }
+
+  .gcmppage__table th[scope='row'] {
+    text-align: left;
+    font-size: var(--fs-xs);
+    font-weight: 500;
+    color: var(--text-faint);
+    padding: 0.5rem 0.7rem 0.5rem 0;
+    border-bottom: 1px solid var(--line);
+    white-space: nowrap;
+    vertical-align: top;
+    width: 8rem;
+  }
+
+  .gcmppage__table thead th {
+    text-align: left;
+    font-family: inherit;
+    font-size: var(--fs-sm);
+    font-weight: 640;
+    letter-spacing: normal;
+    text-transform: none;
+    color: var(--text);
+    padding: 0 0.7rem 0.6rem 0;
+    border-bottom: 1px solid var(--line-strong);
+    vertical-align: bottom;
+    min-width: 11rem;
+    /* 全局表格样式给 thead th 加了 nowrap，品名一长就互相压住了 */
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .gcmppage__table td {
+    padding: 0.5rem 0.7rem 0.5rem 0;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+
+  .gcmppage__table tbody tr:hover td,
+  .gcmppage__table tbody tr:hover th {
+    background: var(--surface);
+  }
+
+  .gcmppage__row--remove td {
+    border-bottom: none;
+    padding-top: 0.8rem;
+  }
+
+  .gcmppage__col {
+    max-width: 16rem;
+  }
+
+  .gcmppage__img {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: var(--radius-xs);
+    background: #fff;
+  }
+
+  .gcmppage__img--none {
+    padding: 1.4rem 0;
+    text-align: center;
+    font-size: var(--fs-2xs);
+    color: var(--text-faint);
+    background: var(--surface-2);
+  }
+
+  .gcmppage__ja {
+    display: block;
+    margin-top: 0.15rem;
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    color: var(--text-faint);
+  }
+
+  .gcmppage__mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .gcmppage__hint {
+    margin-left: 0.35rem;
+    font-size: var(--fs-2xs);
+    color: var(--text-faint);
+  }
+
+  .gcmppage__aliases {
+    font-size: var(--fs-xs);
+    color: var(--text-dim);
+  }
+
+  .gcmppage__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .gcmppage__tags a {
+    padding: 0.05rem 0.4rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-pill);
+    font-size: var(--fs-2xs);
+    color: var(--text-dim);
+    background-image: none;
+  }
+
+  .gcmppage__tags a:hover {
+    background-image: none;
+    color: var(--accent);
+    border-color: var(--accent-line);
+  }
+
+  .gcmppage__remove {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-pill);
+    padding: 0.12rem 0.6rem;
+    background: var(--surface);
+    color: var(--text-faint);
+    font-size: var(--fs-2xs);
+    cursor: pointer;
+  }
+
+  .gcmppage__remove:hover {
+    color: var(--accent);
+    border-color: var(--accent-line);
+  }
+</style>

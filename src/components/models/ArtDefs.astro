@@ -1,0 +1,48 @@
+---
+/**
+ * 页面级的线稿定义
+ * ---------------------------------------------------------------------------
+ * 封面是手写的 SVG 线稿。线稿本身只有四个视角，却要在同一个页面里出现很多次——
+ * 详情页有四个大图加四个缩略图，列表页有六十张卡片。
+ *
+ * 把线稿直接内联进每一张封面，详情页会涨到 85 KB：八千多条记录就是 700 MB，
+ * 站点会被撑到 GitHub Pages 的 1 GB 上限之外。
+ *
+ * 所以线稿抽到这里，一页只存一份，各张封面用 `<use>` 引它。
+ * `<use>` 复制出来的是影子树，自定义属性（--m / --s / --t）照样继承进去，
+ * 所以每条记录仍然能用自己作品线的配色上色。
+ *
+ * 这个组件刻意不写 scoped 样式：一旦有 scoped 样式，Astro 会给这里的每一个
+ * 元素加上 data-astro-cid 属性，一百多条路径就多出好几 KB。线稿的配色规则
+ * 本来就在全局的 models.css 里，不需要作用域标记。
+ */
+import { ART_VIEWS } from '../../data/gundam.art';
+---
+
+<svg class="gdb-artdefs" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <linearGradient id="gdb-art-ground" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="var(--gdb-ground-1)" />
+      <stop offset="100%" stop-color="var(--gdb-ground-2)" />
+    </linearGradient>
+    <pattern id="gdb-art-dots" width="11" height="11" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1" fill="var(--gdb-dot)" />
+    </pattern>
+    {
+      ART_VIEWS.map((view) => (
+        <symbol id={`gdb-art-${view.id}`} viewBox="0 0 300 380">
+          <g
+            class="gdb-poster__mech"
+            transform={view.id === 'head'
+              ? 'translate(30 44) scale(1.0)'
+              : 'translate(44 52) scale(0.88)'}
+          >
+            {view.shapes.map((shape) => (
+              <path d={shape.d} class={`l-${shape.fill}`} />
+            ))}
+          </g>
+        </symbol>
+      ))
+    }
+  </defs>
+</svg>

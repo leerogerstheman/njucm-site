@@ -4,14 +4,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout
   title="Search"
-  description="搜索 njucm.org 的全部笔记、数据集、项目与高达模型条目。"
+  description="搜索 njucm.org 的全部笔记、数据集、项目与模型条目。"
 >
   <header class="page-head" data-reveal>
     <p class="eyebrow">Search</p>
     <h1>搜索</h1>
     <p class="page-head__desc">
-      索引在构建期生成，包含每篇的正文纯文本；高达模型条目则复用数据库自己的
-      索引（型号、中文名、日文名、机体、别名、标签都在里面）。
+      索引在构建期生成，包含每篇的正文纯文本；模型条目则复用数据库自己的
+      索引（型号、中文名、日文名、主题、别名、标签都在里面）。
       按 <kbd>/</kbd> 聚焦，<kbd>Esc</kbd> 清空。中文不需要分词，直接按子串匹配。
     </p>
   </header>
@@ -56,12 +56,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
  *
  * 三件事和原来不一样：
  *
- * 1. 打分按字段加权。标题最重；别名与机体名单独加权——玩家搜「元祖高达」时
+ * 1. 打分按字段加权。标题最重；别名与主题名单独加权——玩家搜「元祖高达」时
  *    命中的是别名，那比在正文里蹭到一次要值钱得多；正文命中按出现次数给
  *    对数奖励，出现一次和出现十次不该差十倍。
- * 2. 模型结果按机体收组。同一个机体的各等级、各配色本来就是一件事，
+ * 2. 模型结果按主题收组。同一个主题的各品类、各配色本来就是一件事，
  *    合成一条比逐条列出来有用得多。
- * 3. 结果分成「高达模型」与「站点内容」两段，不混在一张列表里。
+ * 3. 结果分成「模型条目」与「站点内容」两段，不混在一张列表里。
  */
 (function () {
   var form = document.querySelector('[data-search]');
@@ -72,11 +72,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   if (!form || !input || !list) return;
 
   var DOC_INDEX_URL = '/search-index.json';
-  var KIT_INDEX_URL = '/data/gundam/index.json';
+  var KIT_INDEX_URL = '/data/models/index.json';
   var SNIPPET_RADIUS = 62;
   var MAX_DOC = 20;
   var MAX_KIT = 14;
-  /* 同一个机体少于这么多条就不合并了——那多半是用户要的就是其中一条 */
+  /* 同一个主题少于这么多条就不合并了——那多半是用户要的就是其中一条 */
   var MERGE_MIN = 4;
   /* 合并后最多列出几个具体版本 */
   var MERGE_SHOW = 4;
@@ -121,7 +121,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
 
   /**
-   * 高达模型索引。列表页的数据结构直接复用：行是数组，字段顺序由 fields 定。
+   * 模型索引。列表页的数据结构直接复用：行是数组，字段顺序由 fields 定。
    * 这里把它摊平成和文档一样的形状，好让打分与摘录走同一套代码。
    */
   function loadKits() {
@@ -146,31 +146,31 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           var channelLabel = payload.channels[k.channel] || '';
           var aliases = k.aliases || [];
           var tags = k.tags || [];
-          var text = [k.name, k.nameJa, k.mech]
+          var text = [k.name, k.nameJa, k.subject]
             .concat(aliases)
             .concat(tags)
             .filter(Boolean)
             .join(' · ');
           var desc =
-            k.grade + ' ' + k.scale + ' · ' + seriesLabel + ' · ' + (k.released || '—');
+            k.category + ' ' + k.scale + ' · ' + seriesLabel + ' · ' + (k.released || '—');
           if (k.priceJpy) desc += ' · ¥' + k.priceJpy.toLocaleString('en-US');
           else if (k.priceCny) desc += ' · ¥' + k.priceCny.toLocaleString('en-US');
-          var tagList = [k.grade, k.scale, seriesLabel, channelLabel].concat(tags);
+          var tagList = [k.category, k.scale, seriesLabel, channelLabel].concat(tags);
           return {
             title: k.name,
             desc: desc,
-            href: '/data/gundam/' + encodeURIComponent(k.id) + '/',
+            href: '/data/models/' + encodeURIComponent(k.id) + '/',
             section: 'gundam',
             tags: tagList,
             aliases: aliases,
-            mech: k.mech || '',
-            mechId: k.mechId || '',
+            subject: k.subject || '',
+            subjectId: k.subjectId || '',
             text: text,
             lower: (k.name || '').toLowerCase(),
             lowerDesc: desc.toLowerCase(),
             lowerTags: tagList.join(' ').toLowerCase(),
             lowerAliases: aliases.join(' ').toLowerCase(),
-            lowerMech: (k.mech || '').toLowerCase(),
+            lowerSubject: (k.subject || '').toLowerCase(),
             lowerText: text.toLowerCase(),
           };
         });
@@ -187,7 +187,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   /**
    * 相关度：按字段加权。
    *
-   * 标题命中最重，标题开头再加分；别名与机体名次之——那是玩家真正在找的东西；
+   * 标题命中最重，标题开头再加分；别名与主题名次之——那是玩家真正在找的东西；
    * 标签、描述、正文依次递减。正文里出现的次数给对数奖励：出现一次和出现
    * 十次不该差十倍。
    */
@@ -196,7 +196,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     if (entry.lower.indexOf(q) !== -1) s += 100;
     if (entry.lower.indexOf(q) === 0) s += 60;
     if (entry.lowerAliases && entry.lowerAliases.indexOf(q) !== -1) s += 45;
-    if (entry.lowerMech && entry.lowerMech.indexOf(q) !== -1) s += 35;
+    if (entry.lowerSubject && entry.lowerSubject.indexOf(q) !== -1) s += 35;
     if (entry.lowerTags.indexOf(q) !== -1) s += 30;
     if (entry.lowerDesc.indexOf(q) !== -1) s += 20;
     var hits = entry.lowerText.split(q).length - 1;
@@ -232,13 +232,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     return (start > 0 ? '…' : '') + highlight(body, q) + '…';
   }
 
-  var SECTION_LABEL = { projects: 'Projects', notes: 'Notes', data: 'Data', about: 'About', gundam: '高达', site: '站点' };
+  var SECTION_LABEL = { projects: 'Projects', notes: 'Notes', data: 'Data', about: 'About', gundam: '模型', site: '站点' };
 
   /**
-   * 模型结果按机体收组。
+   * 模型结果按主题收组。
    *
-   * 搜「高达」会命中上千个条目，逐条列出来没有意义；同一个机体的各等级、
-   * 各配色本来就是一件事，合成一条：标题是机体名（链到机体页），底下挂几个
+   * 搜「高达」会命中上千个条目，逐条列出来没有意义；同一个主题的各品类、
+   * 各配色本来就是一件事，合成一条：标题是主题名（链到主题页），底下挂几个
    * 具体版本。少于 MERGE_MIN 条的组不合并——那多半是用户要的就是那一条。
    */
   function groupKits(hits) {
@@ -246,14 +246,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     var order = [];
     for (var i = 0; i < hits.length; i++) {
       var d = hits[i].doc;
-      if (!d.mechId) {
+      if (!d.subjectId) {
         order.push({ kind: 'kit', doc: d, score: hits[i].score });
         continue;
       }
-      var g = groups.get(d.mechId);
+      var g = groups.get(d.subjectId);
       if (!g) {
-        g = { kind: 'mech', mech: d.mech, mechId: d.mechId, members: [], score: 0 };
-        groups.set(d.mechId, g);
+        g = { kind: 'subject', subject: d.subject, subjectId: d.subjectId, members: [], score: 0 };
+        groups.set(d.subjectId, g);
         order.push(g);
       }
       g.members.push(d);
@@ -263,7 +263,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     var out = [];
     for (var j = 0; j < order.length; j++) {
       var item = order[j];
-      if (item.kind !== 'mech') {
+      if (item.kind !== 'subject') {
         out.push(item);
         continue;
       }
@@ -325,15 +325,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     var kitHtml = '';
 
     if (shownKits.length) {
-      kitHtml += '<li class="search__group" role="presentation">高达模型</li>';
+      kitHtml += '<li class="search__group" role="presentation">模型条目</li>';
       for (var g = 0; g < shownKits.length; g++) {
         var item = shownKits[g];
-        if (item.kind === 'mech') {
+        if (item.kind === 'subject') {
           kitHtml +=
             '<li class="search__hit search__hit--mech">' +
-            '<a class="search__hit-link" href="/data/gundam/mech/' + encodeURIComponent(item.mechId) + '/">' +
-            '<span class="search__hit-title">' + highlight(item.mech, q) + '</span>' +
-            '<span class="search__hit-meta">机体 · ' + item.members.length + ' 个版本</span>' +
+            '<a class="search__hit-link" href="/data/models/subject/' + encodeURIComponent(item.subjectId) + '/">' +
+            '<span class="search__hit-title">' + highlight(item.subject, q) + '</span>' +
+            '<span class="search__hit-meta">主题 · ' + item.members.length + ' 个版本</span>' +
             '</a>' +
             '<ul class="search__members">';
           for (var m = 0; m < Math.min(MERGE_SHOW, item.members.length); m++) {
@@ -344,7 +344,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           if (item.members.length > MERGE_SHOW) {
             kitHtml +=
               '<li class="search__membersMore"><a href="' +
-              esc('/data/gundam/mech/' + encodeURIComponent(item.mechId) + '/') +
+              esc('/data/models/subject/' + encodeURIComponent(item.subjectId) + '/') +
               '">还有 ' + (item.members.length - MERGE_SHOW) + ' 个版本</a></li>';
           }
           kitHtml += '</ul></li>';
@@ -354,7 +354,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             '<li class="search__hit">' +
             '<a class="search__hit-link" href="' + esc(d.href) + '">' +
             '<span class="search__hit-title">' + highlight(d.title, q) + '</span>' +
-            '<span class="search__hit-meta">高达模型</span>' +
+            '<span class="search__hit-meta">模型条目</span>' +
             '</a>' +
             '<p class="search__hit-snip">' + snippet(d, q) + '</p>' +
             '</li>';

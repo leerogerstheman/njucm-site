@@ -3,8 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import SectionIndex from '../../components/SectionIndex.astro';
 import { NAV } from '../../data/site';
 import { getDocs } from '../../utils/content';
-import { KITS } from '../../data/gundam';
-import '../../styles/gundam.css';
+import { PRODUCTS } from '../../data/models';
+import '../../styles/models.css';
 
 const item = NAV.find((i) => i.href === '/data')!;
 const docs = await getDocs('data');
@@ -18,11 +18,11 @@ const docs = await getDocs('data');
     emptyHint="还没有数据集。在 src/content/data/ 下新建 .md 文件即可出现在这里。"
   >
     <div slot="before-list" class="gdb-featured">
-      <a class="gdb-featured__link" href="/data/gundam/">
+      <a class="gdb-featured__link" href="/data/models/">
         <span class="gdb-featured__badge">Database</span>
-        <span class="gdb-featured__title">高达模型数据库</span>
+        <span class="gdb-featured__title">模型数据库</span>
         <span class="gdb-featured__desc">
-          按等级、系列、发售年代与官方定价检索的高达塑料模型条目，共 {KITS.length} 条。
+          按厂商、品类、作品线、主题、发售年代与官方定价检索的模型条目，共 {PRODUCTS.length} 条。
           每条记录都标明出处与核实状态。
         </span>
         <span class="gdb-featured__cta">进入数据库 →</span>

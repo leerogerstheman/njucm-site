@@ -1,0 +1,231 @@
+---
+/**
+ * 作品线页
+ *
+ * 一条作品线在库里是什么形状：收了哪些品类、从哪一年到哪一年、定价落在什么
+ * 区间，以及这条线里版本最多的几个主题。条目网格排在最后，方便从上往下读。
+ */
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import KitCard from '../../../../components/models/KitCard.astro';
+import CompareBar from '../../../../components/models/CompareBar.astro';
+import ArtDefs from '../../../../components/models/ArtDefs.astro';
+import { PRODUCTS, SERIES, seriesMeta, formatJPY, releaseYear, categoryMeta,
+} from '../../../../data/models';
+import SUBJECTS from '../../../../data/models.subjects.json';
+import '../../../../styles/models.css';
+import '../../../../styles/gundam-theme.css';
+
+interface MechEntry {
+  label: string;
+  count: number;
+  kits: string[];
+  series: string[];
+}
+
+export async function getStaticPaths() {
+  /* 只为库里真的有记录的作品线生成页面 */
+  const used = new Set(PRODUCTS.map((k) => k.series));
+  return SERIES.filter((s) => used.has(s.id)).map((s) => ({ params: { id: s.id } }));
+}
+
+const { id } = Astro.params as { id: string };
+const meta = seriesMeta(id);
+const kits = PRODUCTS.filter((k) => k.series === id);
+
+/* 一页最多列多少条——良笑的作品线动辄几百条，全列出来页面会到 2 MB */
+const GRID_LIMIT = 60;
+
+const years = kits.map((k) => releaseYear(k.released)).filter(Boolean);
+const from = years.length ? Math.min(...years) : null;
+const to = years.length ? Math.max(...years) : null;
+
+const prices = kits.map((k) => k.priceJpy).filter((p) => p > 0);
+const priceMin = prices.length ? Math.min(...prices) : 0;
+const priceMax = prices.length ? Math.max(...prices) : 0;
+
+const categoryCounts = new Map<string, number>();
+for (const k of kits) categoryCounts.set(k.category, (categoryCounts.get(k.category) ?? 0) + 1);
+const categories = [...categoryCounts.entries()].sort((a, b) => b[1] - a[1]);
+const categoryMax = Math.max(1, ...categories.map(([, n]) => n));
+
+/* 这条线里版本最多的机体：同机体的不同等级与配色 */
+const mechs = Object.entries(SUBJECTS as Record<string, MechEntry>)
+  .filter(([, m]) => m.series.includes(id) && m.count > 1)
+  .sort((a, b) => b[1].count - a[1].count || a[1].label.localeCompare(b[1].label, 'zh-Hans-CN'))
+  .slice(0, 12)
+  .map(([key, m]) => ({ key, label: m.label, count: m.count }));
+
+const description = `${meta.label}：库里 ${kits.length} 条记录${
+  from ? `，${from}–${to} 年` : ''
+}${priceMax ? `，官方定价 ${formatJPY(priceMin)} – ${formatJPY(priceMax)}` : ''}。`;
+---
+
+<BaseLayout title={meta.label} description={description} scope="gundam">
+  <ArtDefs />
+
+  <nav class="gbreadcrumb" aria-label="面包屑">
+    <a href="/data/">Data</a>
+    <span aria-hidden="true">/</span>
+    <a href="/data/models/">模型数据库</a>
+    <span aria-hidden="true">/</span>
+    <a href="/data/models/series/">按作品线浏览</a>
+    <span aria-hidden="true">/</span>
+    <span class="faint">{meta.label}</span>
+  </nav>
+
+  <header class="page-head" data-reveal>
+    <p class="eyebrow">作品线</p>
+    <h1>{meta.label}</h1>
+    <p class="gserpage__short">{meta.short}</p>
+    <p class="count" style="margin:1rem 0 0">
+      {kits.length} 条记录
+      {from && ` · ${from}–${to} 年`}
+      {priceMax > 0 && ` · 官方定价 ${formatJPY(priceMin)} – ${formatJPY(priceMax)}`}
+    </p>
+    <p class="gserpage__swatch" aria-hidden="true">
+      {
+        meta.palette.map((c) => (
+          <i style={`--c:${c}`} />
+        ))
+      }
+    </p>
+  </header>
+
+  {
+    categories.length > 0 && (
+      <section class="gserpage" data-reveal>
+        <h2 class="gserpage__title">品类构成</h2>
+        <ul class="gstats__bars">
+          {categories.map(([g, n]) => (
+            <li class="gstats__bar-row">
+              <span class="gstats__bar-label">{categoryMeta(g).label}</span>
+              <span class="gstats__bar-track">
+                <span
+                  class="gstats__bar-fill"
+                  data-grade={categoryMeta(g).short ?? g}
+                  style={`--w:${(n / categoryMax) * 100}%`}
+                />
+              </span>
+              <span class="gstats__bar-num">{n}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  {
+    mechs.length > 0 && (
+      <section class="gserpage" data-reveal>
+        <h2 class="gserpage__title">这条线里版本最多的主题</h2>
+        <p class="gserpage__desc">
+          同一个对象往往有多个产品——机体有机体等级，手办有不同尺寸与造型——点进去可以横向对比它们。
+        </p>
+        <ul class="gserpage__mechs">
+          {mechs.map((m) => (
+            <li>
+              <a href={`/data/models/subject/${m.key}/`}>
+                <span class="gserpage__mechLabel">{m.label}</span>
+                <span class="gserpage__mechCount">{m.count} 个版本</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <section class="gserpage" data-reveal>
+    <h2 class="gserpage__title">条目</h2>
+    {
+      kits.length > GRID_LIMIT && (
+        <p class="gserpage__desc">
+          这条线有 {kits.length} 条，这里只列前 {GRID_LIMIT} 条；
+          <a href={`/data/models/?series=${id}`}>在列表页里筛选这条线</a>
+          能看到全部。
+        </p>
+      )
+    }
+    <div class="gdb__grid" data-grid>
+      {kits.slice(0, GRID_LIMIT).map((kit, i) => <KitCard kit={kit} index={i} />)}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .gserpage {
+    margin: 2rem 0 0;
+  }
+
+  .gserpage__title {
+    font-size: var(--fs-lg);
+    margin: 0 0 0.8rem;
+  }
+
+  .gserpage__desc {
+    font-size: var(--fs-sm);
+    color: var(--text-dim);
+    margin: 0 0 0.8rem;
+  }
+
+  .gserpage__short {
+    font-family: var(--font-mono);
+    font-size: var(--fs-sm);
+    letter-spacing: var(--tracking-wide);
+    color: var(--text-faint);
+    margin: 0.35rem 0 0;
+  }
+
+  .gserpage__swatch {
+    display: flex;
+    gap: 4px;
+    margin: 0.9rem 0 0;
+  }
+
+  .gserpage__swatch i {
+    width: 18px;
+    height: 6px;
+    border-radius: 2px;
+    background: var(--c);
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.12);
+  }
+
+  .gserpage__mechs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gserpage__mechs a {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.45rem;
+    padding: 0.2rem 0.65rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-pill);
+    font-size: var(--fs-xs);
+    color: var(--text-dim);
+    background-image: none;
+  }
+
+  .gserpage__mechs a:hover {
+    background-image: none;
+    color: var(--accent);
+    border-color: var(--accent-line);
+    background: var(--accent-soft);
+  }
+
+  .gserpage__mechLabel {
+    font-weight: 600;
+  }
+
+  .gserpage__mechCount {
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    color: var(--text-faint);
+    font-variant-numeric: tabular-nums;
+  }
+</style>

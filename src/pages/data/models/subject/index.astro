@@ -1,0 +1,248 @@
+---
+/**
+ * 主题索引：按主题浏览
+ *
+ * 列表页的分面是「厂商 / 品类 / 作品线 / 渠道 / 年代 / 定价」——都是商品的属性。
+ * 主题是另一个维度：同一个对象往往有好几个产品——「RX-78-2 高达」既有 RG 也有 MG，
+ * 同一个角色既有 figma 也有 Nendoroid。玩家最先想知道的通常是「它还出过哪些东西」。
+ * 这里把多版本的主题排在前面。
+ */
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import SUBJECTS from '../../../../data/models.subjects.json';
+import { seriesMeta, type ModelProduct , categoryMeta, CATEGORIES, PRODUCTS } from '../../../../data/models';
+import '../../../../styles/models.css';
+import '../../../../styles/gundam-theme.css';
+
+interface MechEntry {
+  label: string;
+  en: string | null;
+  alt: string[];
+  count: number;
+  categories: Record<string, number>;
+  series: string[];
+  kits: string[];
+}
+
+const mechs = Object.entries(SUBJECTS as Record<string, MechEntry>)
+  .map(([key, m]) => ({ key, ...m }))
+  .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'zh-Hans-CN'));
+
+const multi = mechs.filter((m) => m.count > 1);
+const single = mechs.filter((m) => m.count === 1);
+
+/*
+ * 单一版本的主题可能有几千个（良笑的角色多是独条），全列出来会把这一页撑成
+ * 一堵墙。这里只列前 300 个，剩下的交给列表页的搜索。
+ */
+const SINGLE_SHOWN = 300;
+const singleShown = single.slice(0, SINGLE_SHOWN);
+const singleRest = single.length - singleShown.length;
+
+/* 品类顺序：按库里的规模从大到小，和列表页的排序一致 */
+const categoryCount = new Map<string, number>();
+for (const k of PRODUCTS) categoryCount.set(k.category, (categoryCount.get(k.category) ?? 0) + 1);
+const CATEGORY_ORDER = [...categoryCount.entries()].sort((a, b) => b[1] - a[1]).map(([id]) => id);
+
+function categoryLabel(g: string): string {
+  return categoryMeta(g).short ?? g;
+}
+
+function categoryLine(m: MechEntry): string {
+  return CATEGORY_ORDER.filter((g) => m.categories[g])
+    .map((g) => `${categoryLabel(g)}×${m.categories[g]}`)
+    .join('　');
+}
+
+function seriesLabel(m: MechEntry): string {
+  const known = m.series.filter((s) => s && s !== 'other');
+  if (!known.length) return '作品线待考';
+  return [...new Set(known.map((s) => seriesMeta(s).label))].join(' / ');
+}
+---
+
+<BaseLayout
+  title="按主题浏览"
+  description="同一个对象往往有多个产品——机体有机体等级，手办有不同尺寸与造型，这里按主题把它们串起来。"
+  scope="gundam"
+>
+  <nav class="gbreadcrumb" aria-label="面包屑">
+    <a href="/data/">Data</a>
+    <span aria-hidden="true">/</span>
+    <a href="/data/models/">模型数据库</a>
+    <span aria-hidden="true">/</span>
+    <span class="faint">按主题浏览</span>
+  </nav>
+
+  <header class="page-head" data-reveal>
+    <p class="eyebrow">主题</p>
+    <h1>按主题浏览</h1>
+    <p class="page-head__desc">
+      主题是「这条产品是关于谁的」：塑料模型那边是机体，手办那边是角色。
+      同一台机器常常有多个等级与多种配色，同一个角色也常有 figma 与 Nendoroid
+      两种形态——这里把它们串在一起，附跨品类的横向对比。
+    </p>
+    <p class="count" style="margin:1rem 0 0">
+      {mechs.length} 个主题 · {multi.length} 个有两个以上版本
+    </p>
+    <p class="gdb__tools">
+      <a href="/data/models/series/">按作品线浏览</a>
+      <span aria-hidden="true">·</span>
+      <a href="/data/models/stats/">数据概览</a>
+      <span aria-hidden="true">·</span>
+      <a href="/data/models/">条目列表</a>
+    </p>
+  </header>
+
+  <section class="gmechs" data-reveal>
+    <h2 class="gmechs__title">多版本主题</h2>
+    <ul class="gmechs__list">
+      {
+        multi.map((m) => (
+          <li class="gmech">
+            <a class="gmech__link" href={`/data/models/subject/${m.key}/`}>
+              <span class="gmech__label">{m.label}</span>
+              {m.en && <span class="gmech__en">{m.en}</span>}
+              <span class="gmech__meta">
+                <span class="gmech__count">{m.count} 个版本</span>
+                <span class="gmech__grades">{categoryLine(m)}</span>
+              </span>
+              <span class="gmech__series">{seriesLabel(m)}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="gmechs gmechs--single" data-reveal>
+    <h2 class="gmechs__title">单一版本主题</h2>
+    <p class="gmechs__desc">
+      库里只收了一款的主题，{single.length} 个。它们没有可对比的同主题产品，
+      就不单独占一页了——要查具体某一款，用上面的搜索。
+      {singleRest > 0 && `这里只列了前 ${singleShown.length} 个。`}
+    </p>
+    <ul class="gmechs__tags">
+      {
+        singleShown.map((m) => (
+          <li>
+            <span>{m.label}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>
+
+<style>
+  .gmechs {
+    margin: 2rem 0 0;
+  }
+
+  .gmechs__title {
+    font-size: var(--fs-lg);
+    margin: 0 0 0.8rem;
+  }
+
+  .gmechs__desc {
+    font-size: var(--fs-sm);
+    color: var(--text-dim);
+    margin: 0 0 0.8rem;
+  }
+
+  .gmechs__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: 0.6rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gmech {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+  }
+
+  .gmech__link {
+    display: grid;
+    gap: 0.2rem;
+    padding: 0.7rem 0.85rem;
+    color: var(--text);
+    background-image: none;
+  }
+
+  .gmech__link:hover {
+    background-image: none;
+    border-radius: var(--radius-sm);
+    background: var(--accent-soft);
+  }
+
+  .gmech__label {
+    font-size: var(--fs-sm);
+    font-weight: 640;
+    color: var(--text);
+  }
+
+  .gmech__link:hover .gmech__label {
+    color: var(--accent);
+  }
+
+  .gmech__en {
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    color: var(--text-faint);
+  }
+
+  .gmech__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.7rem;
+    font-size: var(--fs-xs);
+    color: var(--text-dim);
+  }
+
+  .gmech__count {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .gmech__grades {
+    font-family: var(--font-mono);
+  }
+
+  .gmech__series {
+    font-size: var(--fs-2xs);
+    color: var(--text-faint);
+  }
+
+  .gmechs--single {
+    margin-top: 2.5rem;
+  }
+
+  .gmechs__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gmechs__tags a,
+  .gmechs__tags span {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-pill);
+    font-size: var(--fs-xs);
+    color: var(--text-dim);
+    background-image: none;
+  }
+
+  .gmechs__tags a:hover {
+    color: var(--accent);
+    border-color: var(--accent-line);
+    background: var(--accent-soft);
+  }
+</style>

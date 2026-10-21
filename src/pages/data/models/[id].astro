@@ -1,0 +1,535 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import KitCover from '../../../components/models/KitCover.astro';
+import KitCard from '../../../components/models/KitCard.astro';
+import CompareBar from '../../../components/models/CompareBar.astro';
+import ArtDefs from '../../../components/models/ArtDefs.astro';
+import { ART_VIEWS } from '../../../data/gundam.art';
+import SUBJECTS from '../../../data/models.subjects.json';
+import {
+  PRODUCTS,
+  seriesMeta,
+  categoryMeta,
+  channelMeta,
+  makerMeta,
+  formatJPY,
+  releaseLabel,
+  relatedProducts,
+  type ModelProduct, categoryMeta } from '../../../data/models';
+import '../../../styles/models.css';
+import '../../../styles/gundam-theme.css';
+
+export async function getStaticPaths() {
+  return PRODUCTS.map((kit) => ({ params: { id: kit.id }, props: { kit } }));
+}
+
+const { kit } = Astro.props as { kit: ModelProduct };
+
+const series = seriesMeta(kit.series);
+const category = categoryMeta(kit.category);
+const channel = channelMeta(kit.channel);
+const maker = makerMeta(kit.maker);
+const related = relatedProducts(kit, PRODUCTS, 6);
+
+/* 同一主题的其它产品 */
+const subjectId = kit.subjectId;
+const subjectEntry = subjectId ? (SUBJECTS as Record<string, any>)[subjectId] : null;
+const siblingKits = subjectEntry
+  ? subjectEntry.kits
+      .filter((id: string) => id !== kit.id)
+      .map((id: string) => PRODUCTS.find((k) => k.id === id))
+      .filter(Boolean)
+  : [];
+
+/** 官方 skill level 的简短说明，避免读者去猜 1–5 是什么意思 */
+function skillHint(level: number): string {
+  if (level <= 1) return '无工具、无需剪修，直接拼合';
+  if (level === 2) return '剪修即可，不需要涂装工具';
+  if (level === 3) return '标准塑料模型，需要剪修与涂装';
+  if (level === 4) return '需要一定技术，可能涉及金属件或树脂件';
+  return '面向有经验的玩家，可能需要自制零件';
+}
+
+const description = [
+  kit.name,
+  [category.label, kit.scale].filter(Boolean).join(' '),
+  series.label,
+  releaseLabel(kit.released),
+  formatJPY(kit.priceJpy),
+]
+  .filter(Boolean)
+  .join(' · ');
+
+/*
+ * 结构化数据。
+ *
+ * 这是一个数据库，不是电商——但把条目按 schema.org/Product 描述出来，搜索引擎
+ * 就能把它当商品读懂（名称、型号、发售日、定价、图片），别人引用这份数据时
+ * 也不必再从页面里抠字段。
+ */
+const SITE = 'https://njucm.org';
+const offers = kit.priceJpy
+  ? { '@type': 'Offer', price: kit.priceJpy, priceCurrency: 'JPY', availability: 'https://schema.org/InStock', url: `${SITE}/data/models/${kit.id}/` }
+  : kit.priceCny
+    ? { '@type': 'Offer', price: kit.priceCny, priceCurrency: 'CNY', availability: 'https://schema.org/InStock', url: `${SITE}/data/models/${kit.id}/` }
+    : undefined;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: kit.name,
+  alternateName: kit.nameJa || undefined,
+  description,
+  sku: kit.id,
+  mpn: kit.id,
+  image: kit.image ? [`${SITE}${kit.image}`] : undefined,
+  brand: { '@type': 'Brand', name: maker.label },
+  category: `${category.label} ${kit.scale} · ${series.label}`,
+  releaseDate: kit.released,
+  material: kit.material ?? undefined,
+  weight: kit.heightMm
+    ? { '@type': 'QuantitativeValue', value: kit.heightMm, unitCode: 'MMT', name: '全高' }
+    : undefined,
+  numberOfItems: kit.parts ?? undefined,
+  offers,
+  additionalProperty: [
+    { '@type': 'PropertyValue', name: '厂商', value: maker.label },
+    { '@type': 'PropertyValue', name: '品类', value: category.short },
+    { '@type': 'PropertyValue', name: '比例', value: kit.scale },
+    { '@type': 'PropertyValue', name: '作品线', value: series.label },
+    { '@type': 'PropertyValue', name: '销售渠道', value: channel.label },
+    ...(kit.subject ? [{ '@type': 'PropertyValue', name: '主题', value: kit.subject }] : []),
+    ...(kit.aliases.length
+      ? [{ '@type': 'PropertyValue', name: '又名', value: kit.aliases.join(' · ') }]
+      : []),
+    ...(kit.parts !== null
+      ? [{ '@type': 'PropertyValue', name: '零件数', value: String(kit.parts) }]
+      : []),
+    ...(kit.skillLevel !== null
+      ? [{ '@type': 'PropertyValue', name: '拼装难度', value: `skill level ${kit.skillLevel} / 5` }]
+      : []),
+  ],
+  url: `${SITE}/data/models/${kit.id}/`,
+};
+---
+
+<BaseLayout title={kit.name} description={description} isArticle scope="gundam">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
+
+  <ArtDefs />
+
+  <nav class="gbreadcrumb" aria-label="面包屑">
+    <a href="/data/">Data</a>
+    <span aria-hidden="true">/</span>
+    <a href="/data/models/">模型数据库</a>
+    <span aria-hidden="true">/</span>
+    <span class="faint">{kit.name}</span>
+  </nav>
+
+  <article class="gdetail" data-reveal>
+    <!-- 图集：官方商品图 + 四张手绘技术视图 -->
+    <div class="ggallery" data-gallery>
+      <button class="ggallery__stage" type="button" data-open-lightbox aria-label="放大查看图片">
+        {
+          kit.image && (
+            <span class="ggallery__photoWrap" data-frame="photo">
+              <img
+                class="ggallery__photo"
+                src={kit.image}
+                alt={`${kit.name} 商品图`}
+                loading="eager"
+                decoding="async"
+              />
+            </span>
+          )
+        }
+        {
+          ART_VIEWS.map((view, i) => (
+            <span class="ggallery__frame" data-frame={view.id} hidden={i !== 0 || Boolean(kit.image)}>
+              <KitCover kit={kit} view={view.id} uid={`detail-${kit.id}-${view.id}`} />
+            </span>
+          ))
+        }
+      </button>
+
+      <div class="ggallery__thumbs" role="group" aria-label="切换视角">
+        {
+          kit.image && (
+            <button
+              class="ggallery__thumb"
+              type="button"
+              data-view="photo"
+              aria-pressed="true"
+            >
+              <span class="ggallery__thumb-photo">
+                <img src={kit.image} alt="" loading="lazy" decoding="async" />
+              </span>
+              <span class="ggallery__thumb-label">商品照</span>
+            </button>
+          )
+        }
+        {
+          ART_VIEWS.map((view, i) => (
+            <button
+              class="ggallery__thumb"
+              type="button"
+              data-view={view.id}
+              aria-pressed={!kit.image && i === 0 ? 'true' : 'false'}
+            >
+              <KitCover kit={kit} view={view.id} compact uid={`thumb-${kit.id}-${view.id}`} />
+              <span class="ggallery__thumb-label">{view.label}</span>
+            </button>
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- 条目信息 -->
+    <div class="gdetail__body">
+      <h1 class="gdetail__title">{kit.name}</h1>
+      <p class="gdetail__ja">{kit.nameJa}</p>
+
+      <div class="gdetail__tags">
+        <a class="gdetail__tag gdetail__tag--maker" href={`/data/models/?maker=${kit.maker}`}>
+          {maker.label}
+        </a>
+        <span class="gdetail__tag gdetail__tag--grade">{categoryMeta(kit.category).label}</span>
+        <span class="gdetail__tag">{kit.scale}</span>
+        <a class="gdetail__tag" href={`/data/models/series/${kit.series}/`}>{series.label}</a>
+        <span class="gdetail__tag">{channel.label}</span>
+        {kit.tags.map((tag) => <a class="gdetail__tag" href={`/data/models/?tag=${encodeURIComponent(tag)}`}>{tag}</a>)}
+        <button class="gdetail__tag gdetail__tag--btn" type="button" data-compare-add={kit.id} data-compare-name={kit.name}>
+          加入对比
+        </button>
+      </div>
+
+      {kit.note && <p class="gdetail__note">{kit.note}</p>}
+
+      <div class="gspec">
+        {
+          kit.nameJa && kit.nameJa !== kit.name && (
+            <div class="gspec__row">
+              <span class="gspec__key">型号</span>
+              <span class="gspec__val">{kit.nameJa}</span>
+            </div>
+          )
+        }
+        <div class="gspec__row">
+          <span class="gspec__key">品类</span>
+          <span class="gspec__val">
+            {category.label} · {category.brief}
+          </span>
+        </div>
+        <div class="gspec__row">
+          <span class="gspec__key">作品线</span>
+          <span class="gspec__val">
+            <a href={`/data/models/series/${kit.series}/`}>{series.label}</a>
+          </span>
+        </div>
+        {
+          kit.scale && (
+            <div class="gspec__row">
+              <span class="gspec__key">比例</span>
+              <span class="gspec__val">{kit.scale}</span>
+            </div>
+          )
+        }
+        <div class="gspec__row">
+          <span class="gspec__key">发售时间</span>
+          <span class="gspec__val">{releaseLabel(kit.released)}</span>
+        </div>
+        <div class="gspec__row">
+          <span class="gspec__key">官方定价</span>
+          <span class="gspec__val">
+            {formatJPY(kit.priceJpy)}
+            {kit.priceJpy > 0 && (
+              <span class="faint">
+                （含税{kit.taxRate ? ` ${kit.taxRate}%` : ''}）
+              </span>
+            )}
+            {kit.priceJpy === 0 && kit.priceCny > 0 && (
+              <span class="faint"> （限定品只公布人民币零售价） </span>
+            )}
+          </span>
+        </div>
+        {
+          kit.priceJpy === 0 && kit.priceCny > 0 && (
+            <div class="gspec__row">
+              <span class="gspec__key">内地零售价</span>
+              <span class="gspec__val">
+                ¥{kit.priceCny.toLocaleString('en-US')}
+                <span class="faint"> （万代官方旗舰店／高达基地零售价） </span>
+              </span>
+            </div>
+          )
+        }
+        <div class="gspec__row">
+          <span class="gspec__key">销售渠道</span>
+          <span class="gspec__val">{channel.label} — {channel.brief}</span>
+        </div>
+        <div class="gspec__row">
+          <span class="gspec__key">厂商</span>
+          <span class="gspec__val">
+            <a href={`/data/models/?maker=${kit.maker}`}>{maker.label}</a>
+            <span class="faint"> — {maker.brief}</span>
+          </span>
+        </div>
+        {
+          kit.material && (
+            <div class="gspec__row">
+              <span class="gspec__key">材质</span>
+              <span class="gspec__val">{kit.material}</span>
+            </div>
+          )
+        }
+        {
+          kit.parts !== null && (
+            <div class="gspec__row">
+              <span class="gspec__key">零件数</span>
+              <span class="gspec__val">约 {kit.parts} 件</span>
+            </div>
+          )
+        }
+        {
+          kit.heightMm !== null && (
+            <div class="gspec__row">
+              <span class="gspec__key">全高</span>
+              <span class="gspec__val">约 {kit.heightMm} mm</span>
+            </div>
+          )
+        }
+        {
+          kit.skillLevel !== null && (
+            <div class="gspec__row">
+              <span class="gspec__key">拼装难度</span>
+              <span class="gspec__val">
+                Skill Level {kit.skillLevel} / 5
+                <span class="faint">（{skillHint(kit.skillLevel)}）</span>
+              </span>
+            </div>
+          )
+        }
+      </div>
+
+      {
+        kit.units && kit.units.length > 0 && (
+          <div class="gunits">
+            <h3 class="gunits__title">套装收录机体</h3>
+            <p class="gunits__desc">
+              官方单元卡上登记的机体与编号——编号可以反查它出自哪部作品。
+            </p>
+            <ul class="gunits__list">
+              {kit.units.map((unit) => (
+                <li class="gunits__item">
+                  <span class="gunits__code">{unit.code}</span>
+                  <span class="gunits__name">{unit.name}</span>
+                  <span class="gunits__designation">{unit.designation}</span>
+                  <span class="gunits__ja">{unit.nameJa}</span>
+                  <a class="gunits__series" href={`/data/models/?series=${unit.series}`}>
+                    {seriesMeta(unit.series).label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )
+      }
+
+      {
+        kit.subject && (
+          <div class="gunits">
+            <h3 class="gunits__title">同一主题</h3>
+            <p class="gunits__desc">
+              {subjectEntry && subjectEntry.count > 1 ? (
+                <>
+                  <a href={`/data/models/subject/${subjectId}/`}>{kit.subject}</a>
+                  　这个主题在库里共 {subjectEntry.count} 个产品：
+                </>
+              ) : (
+                <>主题：{kit.subject}　</>
+              )}
+            </p>
+            {siblingKits.length > 0 && (
+              <ul class="gunits__list">
+                {siblingKits.map((v) => (
+                  <li class="gunits__item">
+                    <span class="gunits__code">{categoryMeta(v.category).short ?? v.category}</span>
+                    <a class="gunits__name" href={`/data/models/${v.id}/`}>
+                      {v.name}
+                    </a>
+                    <span class="gunits__designation">{v.scale}</span>
+                    <span class="gunits__ja">
+                      {v.released ? releaseLabel(v.released) : ''}
+                      {v.priceJpy > 0 ? ` · ${formatJPY(v.priceJpy)}` : ''}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {kit.aliases.length > 0 && (
+              <p class="gunits__desc" style="margin-top:0.6rem">
+                又名 {kit.aliases.join(' · ')}
+              </p>
+            )}
+          </div>
+        )
+      }
+
+      <div class="gprovenance">
+        <h3>数据溯源</h3>
+        <p>
+          {
+            kit.verified
+              ? '本条已核实到官方或经销渠道的公开资料。'
+              : '本条尚未核实到确切出处，字段可能不完整，请勿直接引用。'
+          }
+        </p>
+        {
+          kit.source && (
+            <p>
+              出处：<a href={kit.source} rel="noopener noreferrer" target="_blank">{kit.source}</a>
+            </p>
+          )
+        }
+        {
+          kit.sourceJp && (
+            <p>
+              日文名与定价出处：<a href={kit.sourceJp} rel="noopener noreferrer" target="_blank">
+                {kit.sourceJp}
+              </a>
+            </p>
+          )
+        }
+        <p>
+          字段口径、缺失值约定与更新方式见
+          <a href="/data/models-database/">数据集说明</a>。
+        </p>
+      </div>
+    </div>
+  </article>
+
+  {
+    related.length > 0 && (
+      <section class="grelated">
+        <h2 class="grelated__title">相关条目</h2>
+        <div class="gdb__grid">
+          {related.map((item, i) => (
+            <KitCard kit={item} index={i} />
+          ))}
+        </div>
+      </section>
+    )
+  }
+  <CompareBar />
+</BaseLayout>
+
+<!-- 灯箱 -->
+<dialog class="glightbox" data-lightbox>
+  <button class="glightbox__close" type="button" data-lightbox-close>关闭 (Esc)</button>
+  <div data-lightbox-body></div>
+</dialog>
+
+<script>
+  // 「加入对比」按钮。选中状态存在浏览器里，由 CompareBar 组件负责显示。
+  (function () {
+    var btn = document.querySelector('[data-compare-add]');
+    if (!btn || !window.__gundamCompare) return;
+
+    var id = btn.getAttribute('data-compare-add');
+    var name = btn.getAttribute('data-compare-name') || '';
+
+    function sync() {
+      var on = window.__gundamCompare.has(id);
+      btn.textContent = on ? '已在对比中' : '加入对比';
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.classList.toggle('is-on', on);
+    }
+
+    btn.addEventListener('click', function () {
+      window.__gundamCompare.add(id, name);
+      sync();
+      document.dispatchEvent(new CustomEvent('gundam:compare-change'));
+    });
+
+    sync();
+  })();
+</script>
+
+<script>
+  // 图集：切换视角 + 灯箱。
+  //
+  // 灯箱里的内容是从当前视角克隆出来的，克隆时把 SVG 内部 id 全部改写一遍
+  // ——否则页面上会出现两套同名 id，渐变的引用会指到另一处去。
+  (function () {
+    var root = document.querySelector('[data-gallery]');
+    if (!root) return;
+
+    var frames = Array.prototype.slice.call(root.querySelectorAll('[data-frame]'));
+    var thumbs = Array.prototype.slice.call(root.querySelectorAll('[data-view]'));
+    var dialog = document.querySelector('[data-lightbox]');
+    var body = dialog ? dialog.querySelector('[data-lightbox-body]') : null;
+    var openBtn = root.querySelector('[data-open-lightbox]');
+
+    function show(view) {
+      for (var i = 0; i < frames.length; i++) {
+        frames[i].hidden = frames[i].getAttribute('data-frame') !== view;
+      }
+      for (var j = 0; j < thumbs.length; j++) {
+        thumbs[j].setAttribute(
+          'aria-pressed',
+          thumbs[j].getAttribute('data-view') === view ? 'true' : 'false',
+        );
+      }
+    }
+
+    function cloneWithFreshIds(node) {
+      var clone = node.cloneNode(true);
+      var map = {};
+      var idNodes = clone.querySelectorAll('[id]');
+      for (var i = 0; i < idNodes.length; i++) {
+        var oldId = idNodes[i].getAttribute('id');
+        var newId = oldId + '-lb';
+        map[oldId] = newId;
+        idNodes[i].setAttribute('id', newId);
+      }
+      var all = clone.querySelectorAll('*');
+      for (var j = 0; j < all.length; j++) {
+        var fill = all[j].getAttribute('fill');
+        if (fill && fill.indexOf('url(#') === 0) {
+          var key = fill.slice(5, fill.indexOf(')'));
+          if (map[key]) all[j].setAttribute('fill', 'url(#' + map[key] + ')');
+        }
+      }
+      return clone;
+    }
+
+    for (var t = 0; t < thumbs.length; t++) {
+      thumbs[t].addEventListener('click', function () {
+        show(this.getAttribute('data-view'));
+      });
+    }
+
+    if (openBtn && dialog && body) {
+      openBtn.addEventListener('click', function () {
+        var active = root.querySelector('[data-frame]:not([hidden])');
+        body.innerHTML = '';
+        if (active) body.appendChild(cloneWithFreshIds(active));
+        if (typeof dialog.showModal === 'function') dialog.showModal();
+        else dialog.setAttribute('open', '');
+      });
+    }
+
+    if (dialog) {
+      var closeBtn = dialog.querySelector('[data-lightbox-close]');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function () {
+          dialog.close();
+        });
+      }
+      dialog.addEventListener('click', function (event) {
+        /* 点在对话框之外（也就是遮罩）就关掉 */
+        if (event.target === dialog) dialog.close();
+      });
+    }
+  })();
+</script>

@@ -1,0 +1,98 @@
+---
+/**
+ * 条目卡片 · 列表网格里的一张
+ *
+ * 视觉优先用万代官方商品图；没有图的条目回落到手绘封面（同一套线稿按系列
+ * 配色生成）。官方图盖在手绘封面上，图片还没到时先看到的是封面，不会出现
+ * 一块空白。
+ */
+import KitCover from './KitCover.astro';
+import {
+  productHref,
+  seriesMeta,
+  formatJPY,
+  releaseShort,
+  releaseYear,
+  releaseSortKey,
+  searchHaystack,
+  channelMeta,
+  type ModelProduct,
+  categoryMeta,
+} from '../../data/models';
+
+interface Props {
+  kit: ModelProduct;
+  index?: number;
+}
+
+const { kit, index = 0 } = Astro.props;
+const meta = seriesMeta(kit.series);
+const channel = channelMeta(kit.channel);
+---
+
+<article
+  class="gcard"
+  data-reveal
+  style={`--reveal-delay:${Math.min(index, 8) * 40}`}
+  data-category={categoryMeta(kit.category).label}
+  data-series={kit.series}
+  data-channel={kit.channel}
+  data-year={releaseYear(kit.released)}
+  data-price={kit.priceJpy}
+  data-rk={releaseSortKey(kit.released)}
+  data-name={kit.name}
+  data-text={searchHaystack(kit)}
+>
+  <a class="gcard__link" href={productHref(kit)}>
+    <span class="gcard__poster">
+      {
+        /*
+          有官方商品图就不再内联手绘封面：封面线稿占了卡片 HTML 的大头，
+          而它在这里只是一张还没加载完时的占位图。商品图本身是白底拍摄，
+          占位底板也是白的，图片进来时不会有跳变。
+        */
+        kit.image ? (
+          <span class="gcard__blank" />
+        ) : (
+          <KitCover kit={kit} view="front" compact uid={`card-${kit.id}`} />
+        )
+      }
+      {
+        kit.image && (
+          <img
+            class="gcard__photo"
+            src={kit.image}
+            alt={`${kit.name} 商品图`}
+            loading="lazy"
+            decoding="async"
+          />
+        )
+      }
+    </span>
+    <span class="gcard__body">
+      <span class="gcard__head">
+        <span class="gcard__grade" data-category={categoryMeta(kit.category).label}>{categoryMeta(kit.category).label}</span>
+        <span class="gcard__scale">{kit.scale}</span>
+        {
+          kit.channel !== 'general' && (
+            <span class="gcard__flag" data-channel={kit.channel}>
+              {channel.label}
+            </span>
+          )
+        }
+      </span>
+
+      <span class="gcard__title">{kit.name}</span>
+      <span class="gcard__sub">{kit.nameJa}</span>
+
+      <span class="gcard__meta">
+        <time datetime={kit.released}>{releaseShort(kit.released)}</time>
+        <span class="gcard__price">
+          {kit.priceJpy > 0 ? formatJPY(kit.priceJpy) : kit.priceCny > 0 ? `¥${kit.priceCny.toLocaleString('en-US')}` : '—'}
+        </span>
+      </span>
+
+      <span class="gcard__series">{meta.label}</span>
+    </span>
+  </a>
+</article>

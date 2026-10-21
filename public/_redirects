@@ -1,0 +1,17 @@
+# 旧路径 → 新路径
+#
+# 数据库从「高达模型」扩成「综合模型」之后，条目页与各维度的地址都挪了位。
+# GitHub Pages 用这个文件做 301，旧的收藏与外链不会断。
+#
+# 规则从上往下匹配，先具体的后笼统的。
+
+/data/gundam/mech/*        /data/models/subject/:splat   301
+/data/gundam/series/*      /data/models/series/:splat    301
+/data/gundam/stats/        /data/models/stats/          301
+/data/gundam/compare/      /data/models/compare/        301
+/data/gundam/export.json   /data/models/export.json     301
+/data/gundam/export.csv    /data/models/export.csv      301
+/data/gundam/index.json    /data/models/index.json      301
+/data/gundam/              /data/models/                301
+/data/gundam/*             /data/models/:splat          301
+/data/gundam-database/     /data/models-database/       301

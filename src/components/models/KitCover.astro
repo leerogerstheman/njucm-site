@@ -1,0 +1,149 @@
+---
+/**
+ * 封面 · 用线稿 + 配色生成的产品海报
+ *
+ * 没有商品照片可用，所以每条记录都配一张自己画出来的封面：机体线稿按作品线
+ * 配色上色，四周叠上技术图纸的角标与引线。同一台机体在正面、侧面、背面与
+ * 头部特写之间换视角，详情页的图集就是这么来的。
+ *
+ * 线稿本身在 ArtDefs.astro 里，一页只存一份；这里只画「这一张」的部分：
+ * 底纹、角标、徽章与文字。页面必须先渲染 ArtDefs，否则 `<use>` 引不到线稿。
+ */
+import { artView, artSeed, type ArtViewId } from '../../data/gundam.art';
+import { seriesMeta, releaseShort, type ModelProduct, categoryMeta, makerMeta,
+} from '../../data/models';
+
+interface Props {
+  kit: ModelProduct;
+  view?: ArtViewId;
+  /** 紧凑版只留线稿——缩略图那么小，角标与文字都是看不清的 */
+  compact?: boolean;
+  /** 同一条目可能在页面里出现多次，用它保证 SVG 里的 id 不重复 */
+  uid?: string;
+  class?: string;
+}
+
+const { kit, view = 'front', compact = false, uid = `${kit.id}-${view}`, class: className } =
+  Astro.props;
+
+const art = artView(view);
+const meta = seriesMeta(kit.series);
+const seed = artSeed(`${kit.id}:${view}`);
+const [main, sub, trim] = meta.palette;
+/* 顶部的字样是厂牌，不是「高达」——库里还有寿屋、良笑与魔动核的产品 */
+const maker = makerMeta(kit.maker);
+
+/**
+ * 把一个颜色压暗，用作零件之间的接缝线。
+ *
+ * 白色装甲在浅色主题下几乎贴着纸面，如果没有这道线，机体就散成一片白。
+ * 用同色系压暗而不是统一描边，接缝看起来才像涂装的分色线，而不是描了一圈
+ * 轮廓的插画。
+ */
+function shade(hex: string, amount: number): string {
+  const raw = hex.replace('#', '');
+  const full = raw.length === 3 ? raw.split('').map((c) => c + c).join('') : raw;
+  const packed = Number.parseInt(full, 16);
+  if (!Number.isFinite(packed)) return hex;
+  const adjust = (v: number) => Math.max(0, Math.min(255, Math.round(v + (amount / 100) * 255)));
+  const parts = [
+    adjust((packed >> 16) & 255),
+    adjust((packed >> 8) & 255),
+    adjust(packed & 255),
+  ].map((v) => v.toString(16).padStart(2, '0'));
+  return `#${parts.join('')}`;
+}
+
+/**
+ * 配色以 CSS 变量的形式挂在 svg 上，零件只带一个图层类。
+ *
+ * 这样同一套线稿在任何条目上都是逐字节相同的 HTML，页面里几十张封面压缩起来
+ * 几乎不占体积；配色则只在这一行 style 里出现一次。
+ */
+const paletteVars = `--m:${main};--ms:${shade(main, -22)};--s:${sub};--ss:${shade(sub, -22)};--t:${trim};--ts:${shade(trim, -22)}`;
+
+/* 由种子决定的小差异，让同系列的几张封面不至于长得一模一样 */
+const glowX = 108 + (seed % 84);
+const glowY = 138 + (seed % 40);
+const calloutY = 74 + (seed % 46);
+const calloutX = 196 + (seed % 22);
+const jaName = kit.nameJa.length > 20 ? `${kit.nameJa.slice(0, 19)}…` : kit.nameJa;
+---
+
+<svg
+  class:list={['gdb-poster', className]}
+  viewBox="0 0 300 380"
+  role="img"
+  aria-label={`${kit.name} 的${art.label}示意图`}
+  style={paletteVars}
+>
+  {
+    !compact && (
+      <defs>
+        <radialGradient id={`${uid}-glow`} cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="var(--t)" stop-opacity="0.22" />
+          <stop offset="100%" stop-color="var(--t)" stop-opacity="0" />
+        </radialGradient>
+      </defs>
+    )
+  }
+
+  <rect width="300" height="380" fill="url(#gdb-art-ground)" />
+  <rect width="300" height="380" fill="url(#gdb-art-dots)" />
+  {!compact && <circle cx={glowX} cy={glowY} r="132" fill={`url(#${uid}-glow)`} />}
+
+  {/* 图纸角标 */}
+  {
+    !compact && (
+      <g class="gdb-poster__marks" fill="none" stroke="var(--gdb-mark)" stroke-width="1.1">
+        <path d="M16 36 V16 H36" />
+        <path d="M264 16 H284 V36" />
+        <path d="M16 344 V364 H36" />
+        <path d="M264 364 H284 V344" />
+      </g>
+    )
+  }
+
+  {/* 机体线稿（在 ArtDefs 里，一页一份） */}
+  <use href={`#gdb-art-${view}`} />
+
+  {/* 引线：一条指向机体的技术标注 */}
+  {
+    !compact && (
+      <g class="gdb-poster__callout" stroke="var(--gdb-mark)" fill="none" stroke-width="0.9">
+        <path d={`M${calloutX} ${calloutY} H${calloutX + 52}`} />
+        <path d={`M${calloutX} ${calloutY - 6} V${calloutY + 6}`} />
+      </g>
+    )
+  }
+
+  {/* 顶部：厂牌与品类徽章 */}
+  {
+    !compact && (
+      <>
+        <text class="gdb-poster__eyebrow" x="18" y="30">{maker.labelEn}</text>
+        <g>
+          <rect x="238" y="14" width="46" height="24" rx="5" fill={trim} />
+          <text class="gdb-poster__grade" x="261" y="31" text-anchor="middle">
+            {categoryMeta(kit.category).label}
+          </text>
+        </g>
+      </>
+    )
+  }
+
+  {/* 底部：系列、比例、发售与原名 */}
+  {
+    !compact && (
+      <>
+        <line x1="18" y1="328" x2="282" y2="328" stroke="var(--gdb-mark)" stroke-width="1" />
+        <text class="gdb-poster__meta" x="18" y="345">{meta.short}</text>
+        <text class="gdb-poster__meta" x="282" y="345" text-anchor="end">
+          {releaseShort(kit.released)}
+        </text>
+        <text class="gdb-poster__sub" x="18" y="363">{kit.scale}</text>
+        <text class="gdb-poster__sub" x="282" y="363" text-anchor="end">{jaName}</text>
+      </>
+    )
+  }
+</svg>
