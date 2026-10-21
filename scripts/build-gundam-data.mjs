@@ -332,6 +332,28 @@ for (const kit of kits) {
 }
 
 /*
+ * 精确发售日的叠加层。
+ *
+ * 列表页给的发售时间常常只到月，精确到日的那天在商品详情页的规格表里。
+ * scripts/backfill-gundam-release-dates.mjs 抓回来写在这里，合并时优先采用
+ * ——比事实文件里的「只到月」更精确。
+ */
+const dateOverlay = readJsonArray('src/data/gundam.kits.dates.json');
+let withPreciseDate = 0;
+if (dateOverlay.length) {
+  const byId = new Map(dateOverlay.map((e) => [e.id, e]));
+  for (const kit of kits) {
+    const d = byId.get(kit.id);
+    if (!d || !d.released) continue;
+    if ((kit.released || '').length >= 10) continue;
+    /* 只补同日或同月的——月份对不上的说明是另一款，不能乱补 */
+    if (kit.released && kit.released.slice(0, 7) !== d.released.slice(0, 7)) continue;
+    kit.released = d.released;
+    withPreciseDate++;
+  }
+}
+
+/*
  * 万代日本官网的叠加层。
  *
  * 中文站给中文品名与商品页 URL，日本站给官方日文品名、含税定价与税目。
@@ -420,6 +442,76 @@ for (const group of mechGroups.values()) {
 
 /* 别名：机体编号 + 词典里的英文名与俗称 */
 const DESIGNATION = /[A-Z]{1,5}-?\d{1,4}(?:-[A-Z]?\d{1,3})?[A-Z]?/g;
+
+/*
+ * 作品线归类规则。
+ *
+ * 官网的作品分类页只维护 40 条分类，库里有近 500 条落进「其他作品」——这些
+ * 产品的整条产品线都没被官网归过类，机器没法从别处反推。规则是人工整理的
+ * （src/data/gundam.series-rules.json），可逐条审阅。
+ *
+ * 官网已经给了作品线的条目不动——这里只填「其他作品」的洞。
+ */
+const seriesRules = readJsonObject('src/data/gundam.series-rules.json');
+const NON_GUNDAM_KEYWORDS = seriesRules.nonGundam.keywords;
+const SERIES_KEYWORDS = Object.entries(seriesRules.byKeyword);
+
+/** 查表用的机体编号：字母 + 连字符 + 数字（可带尾部字母数字） */
+const RULE_DESIGNATION = /\b([A-Z]{1,5}-\d{1,4}[A-Z]?\d?(?:-[A-Z]?\d{1,3})?)\b/g;
+
+/** 机体编号归一：去掉连字符与空格，便于查表 */
+function desigKey(d) {
+  return d.replace(/[\s-]/g, '').toUpperCase();
+}
+
+let seriesByRule = 0;
+let seriesNonGundam = 0;
+for (const kit of kits) {
+  if (kit.series !== 'other') continue;
+
+  /* 1. 是不是别的 IP（Macross、EVA、奥特曼…）——中文站把它们和高达放在同一目录 */
+  if (NON_GUNDAM_KEYWORDS.some((kw) => kit.name.includes(kw))) {
+    kit.series = 'non-gundam';
+    seriesNonGundam++;
+    continue;
+  }
+
+  /* 2. 机体编号——不会歧义，最可靠。
+        查表用专门的正则：字母后必须带连字符，尾部的数字与字母一起吃掉，
+        否则「MS-07B3 老虎特装型」会被截成「MS-07B」（格鲁古古），把老虎
+        归到 0080 去。 */
+  let hit = null;
+  for (const d of kit.name.match(RULE_DESIGNATION) || []) {
+    const key = desigKey(d);
+    if (seriesRules.byDesignation[key]) {
+      hit = seriesRules.byDesignation[key];
+      break;
+    }
+  }
+  if (hit) {
+    kit.series = hit;
+    seriesByRule++;
+    continue;
+  }
+
+  /* 3. 机体名 */
+  if (kit.mech && seriesRules.byMech[kit.mech]) {
+    kit.series = seriesRules.byMech[kit.mech];
+    seriesByRule++;
+    continue;
+  }
+
+  /* 4. 品名关键词（产品线名） */
+  for (const [kw, sid] of SERIES_KEYWORDS) {
+    if (kit.name.includes(kw)) {
+      kit.series = sid;
+      seriesByRule++;
+      break;
+    }
+  }
+}
+
+/* 别名：机体编号 + 词典里的英文名与俗称 */
 for (const kit of kits) {
   const alt = new Set();
   for (const m of kit.name.match(DESIGNATION) || []) {
@@ -476,9 +568,15 @@ console.log(
   `合并后 ${kits.length} 条，其中 ${verified} 条已核实出处，${withPrice} 条有官方定价，${withImage} 条有本地图片`,
 );
 if (withJp) console.log(`其中 ${withJp} 条已用万代日本官网的数据校准（日文名、含税定价与税目）`);
+const stillOther = kits.filter((k) => k.series === "other").length;
+const nonGundam = kits.filter((k) => k.series === "non-gundam").length;
 console.log(
   `机体 ${mechGroups.size} 台，其中 ${multiVersion} 台有多个版本；靠同机体继承作品线 ${seriesInherited} 条；${withAlias} 条带别名`,
 );
+console.log(
+  `作品线：规则补齐 ${seriesByRule} 条，标为非高达作品 ${seriesNonGundam} 条，仍待考 ${stillOther} 条`,
+);
+console.log(`精确发售日补齐 ${withPreciseDate} 条`);
 if (problems.length) {
   console.log('\n需要人工确认的问题：');
   for (const p of problems) console.log(`  - ${p}`);

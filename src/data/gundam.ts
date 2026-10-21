@@ -76,6 +76,7 @@ export type SeriesId =
   | 'sd-gundam'
   | 'missing-link'
   | 'gundam-assemble'
+  | 'non-gundam'
   | 'other';
 
 /** 一条模型记录的完整形状。字段的语义见 src/content/data/gundam-database.md */
@@ -293,6 +294,12 @@ export const SERIES: SeriesMeta[] = [
     label: '高达集结 GUNDAM ASSEMBLE',
     short: 'ASSEMBLE',
     palette: ['#e4e8ec', '#2f4f8f', '#d94f2b'],
+  },
+  {
+    id: 'non-gundam',
+    label: '非高达作品',
+    short: 'OTHER IP',
+    palette: ['#e4e4e4', '#5a5a5a', '#8a7a6a'],
   },
   { id: 'other', label: '其他作品', short: 'OTHER', palette: ['#e2e6ea', '#3c4a5c', '#7a8894'] },
 ];

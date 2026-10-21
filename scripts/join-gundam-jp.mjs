@@ -26,15 +26,26 @@ const JP_ORIGIN = 'https://bandai-hobby.net';
 const CN_ORIGIN = 'https://www.bandaihobbysite.cn';
 
 async function fetchText(url) {
-  const res = await fetch(url, {
-    headers: {
-      'User-Agent': UA,
-      Accept: 'text/html',
-      Referer: url.includes('bandaihobbysite') ? `${CN_ORIGIN}/` : `${JP_ORIGIN}/`,
-    },
-  });
-  if (!res.ok) return '';
-  return res.text();
+  /* 日站会重置连接（ECONNRESET），重试几次再放弃。 */
+  let backoff = 2_000;
+  for (let attempt = 0; attempt < 4; attempt++) {
+    try {
+      const res = await fetch(url, {
+        headers: {
+          'User-Agent': UA,
+          Accept: 'text/html',
+          Referer: url.includes('bandaihobbysite') ? `${CN_ORIGIN}/` : `${JP_ORIGIN}/`,
+        },
+      });
+      if (!res.ok) return '';
+      return await res.text();
+    } catch {
+      if (attempt === 3) return '';
+      await new Promise((r) => setTimeout(r, backoff));
+      backoff *= 2;
+    }
+  }
+  return '';
 }
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -245,6 +256,67 @@ for (const [k, jpItems] of jpIndex) {
 }
 
 /*
+ * 第二轮：用机体编号做锚点。
+ *
+ * 四元组（等级 + 比例 + 定价 + 发售月）对不上的时候，编号往往还在——
+ * 「RX-79[G] 陆战型高达」的中文品名与日文品名写法完全不同，编号却一样。
+ *
+ * 两条硬约束：候选必须唯一；两边都知道定价时必须相等。宁可少配几条，
+ * 也不能把日文名安到错的商品上——日文名与定价是要写进数据里的。
+ */
+const jpByDesig = new Map();
+for (const item of jp) {
+  if (item.isPb) continue;
+  const gs = gradeScale(item.nameJa);
+  for (const d of designations(item.nameJa)) {
+    for (const scale of gs.scale ? [gs.scale] : ['']) {
+      const key = `${gs.grade || item.grade}|${scale}|${d}`;
+      if (!jpByDesig.has(key)) jpByDesig.set(key, []);
+      jpByDesig.get(key).push(item);
+    }
+  }
+}
+
+const matchedIds = new Set(enriched.map((e) => e.id));
+let byDesigAnchor = 0;
+for (const cn of cnBySource.values()) {
+  if (matchedIds.has(cn.id)) continue;
+  if (cn.nameJa) continue;
+
+  const cnDesigs = designations(cn.name);
+  if (!cnDesigs.size) continue;
+
+  const cands = new Map();
+  for (const d of cnDesigs) {
+    for (const scale of cn.scale ? [cn.scale] : ['']) {
+      for (const j of jpByDesig.get(`${cn.grade}|${scale}|${d}`) || []) cands.set(j.url, j);
+    }
+  }
+  if (cands.size !== 1) continue;
+
+  const j = [...cands.values()][0];
+  /* 定价是硬校验：两边都有却不一致，说明不是同一款 */
+  if (cn.priceJpy && j.priceJpy && cn.priceJpy !== j.priceJpy) continue;
+  /* 发售月也要对得上 */
+  const cnMonth = (cn.released || '').slice(0, 7);
+  const jpMonth = (j.released || '').slice(0, 7);
+  if (cnMonth.length === 7 && jpMonth.length === 7 && cnMonth !== jpMonth) continue;
+
+  enriched.push({
+    id: cn.id,
+    nameJa: j.nameJa,
+    priceJpy: j.priceJpy,
+    taxRate: j.taxRate,
+    released: j.released || cn.released,
+    image: j.image || null,
+    imageUrl: j.imageUrl || null,
+    sourceJp: j.url,
+  });
+  matchedIds.add(cn.id);
+  byDesigAnchor++;
+}
+
+/*
  * 写出一个叠加层，而不是改写中文站的事实文件。
  *
  * 两个来源各有权威之处：中文站给中文品名与商品页 URL，日本站给官方日文
@@ -265,6 +337,7 @@ console.log(`\n日本站条目 ${jp.length} 条，中文站条目 ${cnBySource.s
 console.log(
   `对上的 ${matched} 条（型号标识消歧 ${byDesignation} 条，精确发售日消歧 ${byDate} 条），跳过歧义 ${ambiguous} 条`,
 );
+console.log(`其中 ${byDesigAnchor} 条是靠机体编号单独对上的`);
 if (priceMismatch.length) {
   console.log(`\n定价对不上的 ${priceMismatch.length} 条：`);
   for (const m of priceMismatch.slice(0, 20)) {
@@ -275,10 +348,21 @@ console.log(`\n写出 ${OUT_FILE}`);
 
 /* 日本站的图片是签名地址，当场下载才拿得到，所以采集时把整批都下了。
    但对不上的那些最终用不到，留在 public/ 里只是白占仓库——
-   把它们挪进 .cache（已 gitignore），要用时再取。 */
+   把它们挪进 .cache（已 gitignore），要用时再取。
+
+   注意：要用到的图片不止日站叠加层里的那些。高达集结的套装图也放在
+   public/gundam/ 下（名字同样是 jp- 开头，是从日站商品页下来的），
+   却记在 assemble 事实文件里——只看叠加层会把它们误当成没用的挪走，
+   站点上就缺图了。所以这里要把所有事实文件里引用到的图片都算进去。 */
 const used = new Set(
   enriched.map((e) => (e.image || '').split('/').pop()).filter(Boolean),
 );
+for (const rel of [...CN_SOURCES, 'src/data/gundam.kits.assemble.json', 'src/data/gundam.kits.pb.json']) {
+  for (const kit of readJson(rel)) {
+    const name = (kit.image || '').split('/').pop();
+    if (name && name.startsWith('jp-')) used.add(name);
+  }
+}
 const publicDir = join(ROOT, 'public', 'gundam');
 const cacheDir = join(ROOT, '.cache', 'gundam-jp', 'unused');
 if (exists('public/gundam')) {

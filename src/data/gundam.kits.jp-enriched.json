@@ -1150,26 +1150,6 @@
     "sourceJp": "https://bandai-hobby.net/item/01_1012/"
   },
   {
-    "id": "bc-1805",
-    "nameJa": "HG 1/144 陸戦型ガンダムS型（GUNDAM THUNDERBOLT Ver.）",
-    "priceJpy": 1980,
-    "taxRate": 10,
-    "released": "2017-05-27",
-    "image": "/gundam/jp-01_998.webp",
-    "imageUrl": "https://bandai-hobby.net/images/ecms_154_1935_o_1bef70f7t1rvn2091rvl1mlckes23.jpg",
-    "sourceJp": "https://bandai-hobby.net/item/01_998/"
-  },
-  {
-    "id": "bc-1791",
-    "nameJa": "HGUC 1/144 ゼータガンダム",
-    "priceJpy": 2200,
-    "taxRate": 10,
-    "released": "2017-04-22",
-    "image": "/gundam/jp-01_860.webp",
-    "imageUrl": "https://bandai-hobby.net/images/ecms_154_1802_o_1bccocc7makd1m6pv4rrevqhv23.jpg",
-    "sourceJp": "https://bandai-hobby.net/item/01_860/"
-  },
-  {
     "id": "bc-1785",
     "nameJa": "HG 1/144 ガンダムウヴァル",
     "priceJpy": 1540,
@@ -5248,5 +5228,135 @@
     "image": "/gundam/jp-01_2119.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792510586&Key-Pair-Id=K7AVJM1114TH7&Signature=W~IT38X0iqiISuJ3IlRSA3DDJ3sf~xH4z7dui1YiDKjMFIQRqp~xELKgSHsZDecyHxbPaSZFXk8sgTNjRRcaM1udxoynJTdCJMexm-bfHFVk-Gi8O6hzNVtc1t-OwHLglNa7wYjgQP-R2Ydy8lkrTjbebX903edWATwcLpZFb38pv2ysG2g~d4Nt8egdRZmaNwBQu~48TwfiliHdIixf-w91WaP4eTKxn~i9nJXaLmMBQXJp8WMXW1atN0y88CyAkdqXlCzlkRm2dNodsQC7hvqiWttFO87X~thqBh2AAxFsHXLHhtPI2B8UyEpOGcUJfEpQFcOkXivNPxxjDw2feQ__",
     "sourceJp": "https://bandai-hobby.net/item/01_2119/"
+  },
+  {
+    "id": "bc-2865",
+    "nameJa": "HGUC 1/144 ギャプラン TR-5［フライルー］",
+    "priceJpy": 2640,
+    "taxRate": 10,
+    "released": "2006-12-23",
+    "image": "/gundam/jp-01_5644.webp",
+    "imageUrl": "https://bandai-hobby.net/images/154_706_s_8usom2zdq3w4te6kjy8y2gx20ugh.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_5644/"
+  },
+  {
+    "id": "bc-2864",
+    "nameJa": "HGUC 1/144 ギャプラン TR-5［フライルー］",
+    "priceJpy": 2640,
+    "taxRate": 10,
+    "released": "2006-12-23",
+    "image": "/gundam/jp-01_5644.webp",
+    "imageUrl": "https://bandai-hobby.net/images/154_706_s_8usom2zdq3w4te6kjy8y2gx20ugh.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_5644/"
+  },
+  {
+    "id": "bc-1698",
+    "nameJa": "HG 1/144 MS-04 ブグ（ランバ・ラル機）",
+    "priceJpy": 1870,
+    "taxRate": 10,
+    "released": "2016-12-03",
+    "image": "/gundam/jp-01_752.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_1700_o_1d6t5ot3g1bt92atd0n1vt018e423.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_752/"
+  },
+  {
+    "id": "bc-1396",
+    "nameJa": "HG 1/144 YMS-03 ヴァッフ",
+    "priceJpy": 1870,
+    "taxRate": 10,
+    "released": "2016-04-16",
+    "image": "/gundam/jp-01_532.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_1494_o_1d6t5krc2166n1vrd14ms9mh1m2g23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_532/"
+  },
+  {
+    "id": "bc-2863",
+    "nameJa": "MG 1/100 ガンダムベース限定 ガンダムF90[クリアカラー］",
+    "priceJpy": 5060,
+    "taxRate": 10,
+    "released": "2022-06-11",
+    "image": "/gundam/jp-01_4213.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_5132_o_1g49di3mel5c1420b1o1l1i1g0028.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_4213/"
+  },
+  {
+    "id": "bc-3525",
+    "nameJa": "MG 1/100 PLAN303E ディープストライカー",
+    "priceJpy": 22880,
+    "taxRate": 10,
+    "released": "2018-03-17",
+    "image": "/gundam/jp-01_1291.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_2221_o_1e8985pbm1c3d3e0hkd1r1bb628.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1291/"
+  },
+  {
+    "id": "bc-3529",
+    "nameJa": "MG 1/100 RX-75ガンタンク",
+    "priceJpy": 5280,
+    "taxRate": 10,
+    "released": "2009-09-17",
+    "image": "/gundam/jp-01_1718.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_2627_o_1fgj5dskqoo51avs1v8e1cqs6ce23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1718/"
+  },
+  {
+    "id": "bc-3353",
+    "nameJa": "MG 1/100 WD-M01 ターンエーガンダム",
+    "priceJpy": 4840,
+    "taxRate": 10,
+    "released": "2007-08",
+    "image": "/gundam/jp-01_1663.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/tjuClSbwSh7OEveB/mRfl9MesHYhraE53.jpg?Expires=1792509606&Key-Pair-Id=K7AVJM1114TH7&Signature=PPTNixwu3VzbEDVZLFcw8i8GcK3Ui7MSYJbdxbBGe0ISkwGWq--qrDgsxs7VdPw-LmylBY9VzaKLwh9QVdAjgBtDF2BKSszYEcxd2y1lR4j2hEa9Tl3KFH7-pJC~fIM1FpmiBKSY1A87NZseTiU~J7UldHn6-7uYw~4IN9D31IKuaAKRmq3tX9TV0ekoyo4jShyblLhMgrrZIikFs7ovlFz-pnuGclIM1J8TJ8fGfMUoHXfuybPhwfBo1AZc2u2HeZ-JGsU2ejxGG3DfQUVOiyV0Uxtdd0UTb2euolxj9OycF39WNuHtWKqSgKORm1p0PBLcnGuzUlyU4WkTO0FNmQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_1663/"
+  },
+  {
+    "id": "bc-3466",
+    "nameJa": "MG 1/100 RX-78-4 ガンダム4号機",
+    "priceJpy": 3520,
+    "taxRate": 10,
+    "released": "2003-07",
+    "image": "/gundam/jp-01_1636.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_2546_o_1dt5f7rug9b213bh1edr1hd2km923.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1636/"
+  },
+  {
+    "id": "bc-3464",
+    "nameJa": "MG 1/100 ガンダム GP03S(ステイメン)",
+    "priceJpy": 4290,
+    "taxRate": 10,
+    "released": "2001-04",
+    "image": "/gundam/jp-01_1025.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_195_o_1ej9k1ko6vt9mo419j010cj1q6k23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1025/"
+  },
+  {
+    "id": "bc-3534",
+    "nameJa": "MG 1/100 RGM-79N ジムカスタム",
+    "priceJpy": 3300,
+    "taxRate": 10,
+    "released": "1999-12",
+    "image": "/gundam/jp-01_3317.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_4272_o_1ej9jggcn1n051nko1hegltk7vn23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_3317/"
+  },
+  {
+    "id": "bc-3352",
+    "nameJa": "MG 1/100 LM312V04 Vガンダム Ver.Ka",
+    "priceJpy": 4620,
+    "taxRate": 10,
+    "released": "2009-12-19",
+    "image": "/gundam/jp-01_1731.webp",
+    "imageUrl": "https://bandai-hobby.net/images/154_2653_s_rpzhxdpqxuapsvsf9jza724mcg0y.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1731/"
+  },
+  {
+    "id": "bc-653",
+    "nameJa": "HG 1/144 R14 ジャスティスガンダム",
+    "priceJpy": 1650,
+    "taxRate": 10,
+    "released": "2012-02-29",
+    "image": "/gundam/jp-01_4604.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_5500_o_1go0qgm4d1s851vm91hi11vg81qli23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_4604/"
   }
 ]

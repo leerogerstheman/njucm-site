@@ -149,7 +149,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3597"
@@ -188,7 +188,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3558",
@@ -220,7 +220,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3594"
@@ -250,7 +250,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-3521",
@@ -357,7 +357,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3511"
@@ -417,7 +417,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-451"
@@ -502,7 +502,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-3392",
@@ -748,7 +748,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-3238",
@@ -781,7 +781,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3236"
@@ -796,7 +796,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3428"
@@ -826,7 +826,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-3404"
@@ -962,7 +962,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-3163",
@@ -978,7 +978,7 @@
       "SD": 1
     },
     "series": [
-      "other"
+      "sd-gundam"
     ],
     "kits": [
       "pb-383"
@@ -1094,8 +1094,7 @@
     },
     "series": [
       "seed-destiny",
-      "seed-freedom",
-      "other"
+      "seed-freedom"
     ],
     "kits": [
       "mgsd-destiny-gundam",
@@ -1134,7 +1133,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-3157",
@@ -1150,7 +1149,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-355"
@@ -1195,7 +1194,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "sd-gundam"
     ],
     "kits": [
       "bc-3133",
@@ -1221,8 +1220,7 @@
     "series": [
       "seed-destiny",
       "seed-freedom",
-      "seed",
-      "other"
+      "seed"
     ],
     "kits": [
       "bc-3336",
@@ -1335,7 +1333,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-367",
@@ -1351,7 +1349,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3046"
@@ -1381,7 +1379,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-3052"
@@ -1532,7 +1530,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-3032",
@@ -1696,7 +1694,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3286",
@@ -1915,10 +1913,10 @@
       "Zaku II",
       "MS-06S"
     ],
-    "count": 18,
+    "count": 20,
     "grades": {
-      "RG": 7,
-      "MG": 5,
+      "RG": 8,
+      "MG": 6,
       "HG": 4,
       "SD": 2
     },
@@ -1929,6 +1927,7 @@
       "bc-3277",
       "bc-3205",
       "bc-2916",
+      "bc-2707",
       "mg-sazabi-collector-wt",
       "bc-312",
       "bc-523",
@@ -1936,6 +1935,7 @@
       "rg-sazabi",
       "bc-2034",
       "rg-zaku-ii-jagen",
+      "mg-sazabi-ver-ka",
       "hguc-sazabi",
       "bc-3067",
       "mg-zaku-ii",
@@ -2004,7 +2004,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3276",
@@ -2051,7 +2051,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2931",
@@ -2086,7 +2086,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3266",
@@ -2148,7 +2148,7 @@
       "MG": 2
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3265",
@@ -2164,7 +2164,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "gundam-00"
     ],
     "kits": [
       "bc-3268"
@@ -2253,7 +2253,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3260"
@@ -2371,7 +2371,7 @@
       "HG": 3
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3257",
@@ -2422,7 +2422,7 @@
       "HG": 3
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3253",
@@ -2439,7 +2439,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-2836"
@@ -2511,7 +2511,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "gundam-00"
     ],
     "kits": [
       "bc-3247",
@@ -2542,7 +2542,7 @@
       "HG": 3
     },
     "series": [
-      "other"
+      "gundam-duelists"
     ],
     "kits": [
       "bc-3250",
@@ -2574,7 +2574,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3242",
@@ -2620,7 +2620,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-00"
     ],
     "kits": [
       "bc-3243"
@@ -2732,7 +2732,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3004"
@@ -2747,7 +2747,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2782"
@@ -2765,7 +2765,7 @@
       "HG": 3
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3001",
@@ -2902,7 +2902,7 @@
       "HG": 3
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2991",
@@ -2922,7 +2922,7 @@
       "HG": 3
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-2992",
@@ -2939,7 +2939,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2765"
@@ -2954,7 +2954,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "sd-gundam"
     ],
     "kits": [
       "bc-2764"
@@ -2969,7 +2969,7 @@
       "MG": 2
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-2984",
@@ -3204,7 +3204,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2911",
@@ -3310,7 +3310,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-2712"
@@ -3356,7 +3356,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-2713"
@@ -3371,7 +3371,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-2719"
@@ -3386,7 +3386,7 @@
       "HG": 6
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-2901",
@@ -3406,7 +3406,7 @@
       "MR": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "mr-demibarding-anime"
@@ -3563,7 +3563,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-2896"
@@ -3593,7 +3593,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "sd-gundam"
     ],
     "kits": [
       "bc-2894",
@@ -3609,7 +3609,7 @@
       "MR": 1
     },
     "series": [
-      "other"
+      "wfm"
     ],
     "kits": [
       "mr-redeemer-anime"
@@ -3701,7 +3701,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2891",
@@ -3717,7 +3717,7 @@
       "EG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2657"
@@ -3793,7 +3793,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2882"
@@ -3824,7 +3824,7 @@
       "MR": 1
     },
     "series": [
-      "other"
+      "wfm"
     ],
     "kits": [
       "mr-aerial-rebuilt-anime"
@@ -3899,7 +3899,7 @@
       "MR": 1
     },
     "series": [
-      "other"
+      "wfm"
     ],
     "kits": [
       "mr-darilbalde-guel-anime"
@@ -3914,7 +3914,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "gundam-nt"
     ],
     "kits": [
       "bc-2077"
@@ -3929,7 +3929,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2074"
@@ -3944,7 +3944,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2075"
@@ -3974,7 +3974,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-2876",
@@ -3990,7 +3990,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2073"
@@ -4122,21 +4122,6 @@
       "bc-2705"
     ]
   },
-  "msn-04ff沙扎比": {
-    "label": "MSN-04FF 沙扎比",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "grades": {
-      "RG": 1
-    },
-    "series": [
-      "uc"
-    ],
-    "kits": [
-      "bc-2707"
-    ]
-  },
   "高机动型扎古地上用": {
     "label": "高机动型扎古 地上用",
     "en": "Zaku II (Ground Type)",
@@ -4242,7 +4227,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-2867",
@@ -4258,7 +4243,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "gundam-front"
     ],
     "kits": [
       "bc-2863"
@@ -4414,7 +4399,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-1450"
@@ -4474,7 +4459,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-1452"
@@ -4489,7 +4474,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "sd-gundam"
     ],
     "kits": [
       "bc-1486"
@@ -4564,7 +4549,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "sd-gundam"
     ],
     "kits": [
       "bc-601"
@@ -4630,7 +4615,6 @@
       "HG": 4
     },
     "series": [
-      "other",
       "uc",
       "pilot-season"
     ],
@@ -4725,7 +4709,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-602",
@@ -4741,7 +4725,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-607"
@@ -4824,7 +4808,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-build-divers"
     ],
     "kits": [
       "bc-425"
@@ -4869,7 +4853,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "gundam-moon"
     ],
     "kits": [
       "bc-691",
@@ -4915,7 +4899,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "sd-gundam"
     ],
     "kits": [
       "bc-401",
@@ -5004,7 +4988,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-277"
@@ -5072,7 +5056,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-268"
@@ -5117,7 +5101,7 @@
       "SD": 1
     },
     "series": [
-      "other"
+      "gundam-build-divers"
     ],
     "kits": [
       "bc-261"
@@ -5162,7 +5146,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-226"
@@ -5177,7 +5161,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-386"
@@ -5267,7 +5251,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-200"
@@ -5376,7 +5360,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-140"
@@ -5605,7 +5589,7 @@
       "SD": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-114",
@@ -5673,7 +5657,7 @@
       "MG": 4
     },
     "series": [
-      "other"
+      "gundam-front"
     ],
     "kits": [
       "bc-157",
@@ -5692,7 +5676,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-build-divers"
     ],
     "kits": [
       "bc-108",
@@ -5798,7 +5782,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "gundam-age"
     ],
     "kits": [
       "bc-155"
@@ -5880,7 +5864,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "gundam-age"
     ],
     "kits": [
       "bc-145"
@@ -5925,7 +5909,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-build-divers"
     ],
     "kits": [
       "bc-88"
@@ -6000,7 +5984,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-build-divers"
     ],
     "kits": [
       "bc-86"
@@ -6090,7 +6074,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-45"
@@ -6212,7 +6196,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-build-divers"
     ],
     "kits": [
       "bc-18",
@@ -6365,7 +6349,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-308"
@@ -6380,7 +6364,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-build-divers"
     ],
     "kits": [
       "bc-297"
@@ -6410,7 +6394,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-300"
@@ -6485,7 +6469,7 @@
       "HG": 3
     },
     "series": [
-      "other"
+      "gundam-00"
     ],
     "kits": [
       "bc-329",
@@ -6517,7 +6501,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-build-divers"
     ],
     "kits": [
       "bc-325"
@@ -6547,7 +6531,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-355"
@@ -6596,7 +6580,7 @@
       "SD": 2
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-337",
@@ -6703,7 +6687,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-build-divers"
     ],
     "kits": [
       "bc-364"
@@ -6718,7 +6702,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-384"
@@ -6779,7 +6763,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2628"
@@ -6824,7 +6808,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-2622"
@@ -6839,7 +6823,7 @@
       "EG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-1577"
@@ -7229,7 +7213,7 @@
       "EG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-1576"
@@ -7244,7 +7228,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "gundam-front"
     ],
     "kits": [
       "pb-174"
@@ -7457,7 +7441,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2538"
@@ -7705,7 +7689,7 @@
       "EG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-1575"
@@ -7825,7 +7809,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2486"
@@ -7840,7 +7824,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2484"
@@ -7931,7 +7915,7 @@
       "EG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-1574"
@@ -8045,7 +8029,7 @@
       "EG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-1573"
@@ -8060,7 +8044,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "gundam-front"
     ],
     "kits": [
       "pb-171"
@@ -8120,7 +8104,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2446"
@@ -8135,7 +8119,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2447"
@@ -8150,7 +8134,7 @@
       "SD": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-2444"
@@ -8376,7 +8360,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2399"
@@ -8391,7 +8375,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2400"
@@ -8424,7 +8408,7 @@
       "HG": 3
     },
     "series": [
-      "other"
+      "gundam-build-divers"
     ],
     "kits": [
       "bc-2390",
@@ -8441,7 +8425,7 @@
       "EG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-1572"
@@ -8456,7 +8440,7 @@
       "EG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-1571"
@@ -8471,7 +8455,7 @@
       "EG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-1570"
@@ -8503,7 +8487,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "sd-gundam"
     ],
     "kits": [
       "bc-2371"
@@ -8736,7 +8720,7 @@
       "SD": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2307",
@@ -8872,7 +8856,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "0080"
     ],
     "kits": [
       "bc-481"
@@ -8989,7 +8973,7 @@
       "SD": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2217"
@@ -9020,7 +9004,7 @@
       "SD": 1
     },
     "series": [
-      "other"
+      "crossbone-g"
     ],
     "kits": [
       "bc-2208",
@@ -9036,7 +9020,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-duelists"
     ],
     "kits": [
       "bc-2204"
@@ -9111,7 +9095,7 @@
       "SD": 2
     },
     "series": [
-      "other"
+      "gundam-00"
     ],
     "kits": [
       "bc-2198",
@@ -9161,7 +9145,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "0080"
     ],
     "kits": [
       "pb-271",
@@ -9192,7 +9176,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "sd-gundam"
     ],
     "kits": [
       "bc-2174"
@@ -9207,7 +9191,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2171"
@@ -9389,7 +9373,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-age"
     ],
     "kits": [
       "bc-2147"
@@ -9475,7 +9459,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2137",
@@ -9492,7 +9476,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-2136",
@@ -9945,7 +9929,7 @@
       "SD": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-2024"
@@ -10231,7 +10215,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3131"
@@ -10246,7 +10230,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "bc-3525"
@@ -10467,7 +10451,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-1915"
@@ -10982,7 +10966,7 @@
       "SD": 1
     },
     "series": [
-      "other"
+      "gundam-build"
     ],
     "kits": [
       "bc-1770"
@@ -10997,7 +10981,7 @@
       "SD": 1
     },
     "series": [
-      "other"
+      "w"
     ],
     "kits": [
       "bc-1769"
@@ -11216,7 +11200,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-1727"
@@ -12605,7 +12589,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-1216"
@@ -12740,7 +12724,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-1208"
@@ -12770,7 +12754,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "crossbone-g"
     ],
     "kits": [
       "bc-1202"
@@ -13206,7 +13190,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "crossbone-g"
     ],
     "kits": [
       "bc-1108",
@@ -13342,7 +13326,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-1088"
@@ -13508,7 +13492,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "gundam-x"
     ],
     "kits": [
       "bc-3527"
@@ -13584,7 +13568,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-993",
@@ -13847,7 +13831,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "gundam-x"
     ],
     "kits": [
       "bc-955"
@@ -13877,7 +13861,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "f91"
     ],
     "kits": [
       "bc-937"
@@ -13915,21 +13899,6 @@
       "bc-928"
     ]
   },
-  "msn-04沙扎比": {
-    "label": "MSN-04 沙扎比",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "grades": {
-      "MG": 1
-    },
-    "series": [
-      "uc"
-    ],
-    "kits": [
-      "mg-sazabi-ver-ka"
-    ]
-  },
   "流星机动艇": {
     "label": "流星机动艇",
     "en": null,
@@ -13954,7 +13923,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-904"
@@ -14074,7 +14043,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-x"
     ],
     "kits": [
       "bc-875"
@@ -14149,7 +14118,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-age"
     ],
     "kits": [
       "bc-863"
@@ -14179,7 +14148,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-841"
@@ -14374,7 +14343,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-787"
@@ -14434,7 +14403,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-778"
@@ -15029,8 +14998,7 @@
     },
     "series": [
       "uc",
-      "zeta",
-      "other"
+      "zeta"
     ],
     "kits": [
       "bc-668",
@@ -15460,7 +15428,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "gundam-duelists"
     ],
     "kits": [
       "bc-3102"
@@ -15520,7 +15488,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3013"
@@ -15569,7 +15537,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "gundam-duelists"
     ],
     "kits": [
       "bc-3098"
@@ -15599,7 +15567,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3072"
@@ -15676,7 +15644,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-x"
     ],
     "kits": [
       "bc-3058"
@@ -15738,7 +15706,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3458",
@@ -16046,7 +16014,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3528"
@@ -16076,7 +16044,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3526"
@@ -16106,7 +16074,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3068"
@@ -16138,7 +16106,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3530"
@@ -16183,7 +16151,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3353"
@@ -16258,7 +16226,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "crossbone-g"
     ],
     "kits": [
       "bc-3468"
@@ -16318,7 +16286,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3451"
@@ -16333,7 +16301,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-build"
     ],
     "kits": [
       "bc-3450"
@@ -16348,7 +16316,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3079"
@@ -16363,7 +16331,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "seed-freedom"
     ],
     "kits": [
       "bc-3433"
@@ -16659,7 +16627,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3466"
@@ -16689,7 +16657,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3100"
@@ -16813,7 +16781,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "gundam-build"
     ],
     "kits": [
       "bc-3464"
@@ -16844,7 +16812,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3309"
@@ -16904,7 +16872,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3111"
@@ -16919,7 +16887,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "bc-3534"
@@ -16964,7 +16932,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "gundam-build"
     ],
     "kits": [
       "bc-3463"
@@ -16979,7 +16947,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "gundam-build"
     ],
     "kits": [
       "bc-3462"
@@ -17009,7 +16977,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "0080"
     ],
     "kits": [
       "bc-3344"
@@ -17099,7 +17067,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-442",
@@ -17145,7 +17113,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-351"
@@ -17190,7 +17158,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-380"
@@ -17205,7 +17173,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-471"
@@ -17251,7 +17219,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "pb-312"
@@ -17266,7 +17234,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-369",
@@ -17282,7 +17250,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "0080"
     ],
     "kits": [
       "pb-348"
@@ -17297,7 +17265,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-465"
@@ -17312,7 +17280,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-207"
@@ -17342,7 +17310,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-250"
@@ -17357,7 +17325,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-412"
@@ -17372,7 +17340,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-359"
@@ -17387,7 +17355,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-181"
@@ -17448,7 +17416,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-305"
@@ -17478,7 +17446,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-469"
@@ -17493,7 +17461,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-449"
@@ -17568,7 +17536,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-duelists"
     ],
     "kits": [
       "pb-408"
@@ -17583,7 +17551,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-00"
     ],
     "kits": [
       "pb-358"
@@ -17598,7 +17566,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-303"
@@ -17688,7 +17656,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "pb-375"
@@ -17703,7 +17671,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "pb-454"
@@ -17718,7 +17686,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-318"
@@ -17748,7 +17716,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "pb-376"
@@ -17808,7 +17776,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-00"
     ],
     "kits": [
       "pb-311"
@@ -17827,7 +17795,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "0080"
     ],
     "kits": [
       "pb-402",
@@ -17859,7 +17827,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-444"
@@ -17874,7 +17842,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-149"
@@ -17904,7 +17872,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-120"
@@ -17919,7 +17887,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-152"
@@ -17934,7 +17902,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "gundam-00"
     ],
     "kits": [
       "pb-438",
@@ -17950,7 +17918,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "seed-freedom"
     ],
     "kits": [
       "pb-390"
@@ -17980,7 +17948,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "gundam-00"
     ],
     "kits": [
       "pb-440",
@@ -17997,7 +17965,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "0080"
     ],
     "kits": [
       "pb-300",
@@ -18013,7 +17981,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-437",
@@ -18029,7 +17997,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-424"
@@ -18044,7 +18012,7 @@
       "HG": 3
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-224",
@@ -18061,7 +18029,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-00"
     ],
     "kits": [
       "pb-341"
@@ -18076,7 +18044,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "pb-366"
@@ -18091,7 +18059,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "gundam-00"
     ],
     "kits": [
       "pb-259"
@@ -18106,7 +18074,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "pb-139"
@@ -18121,7 +18089,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "0083"
     ],
     "kits": [
       "pb-299"
@@ -18136,7 +18104,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-360"
@@ -18151,7 +18119,7 @@
       "HG": 2
     },
     "series": [
-      "other"
+      "0080"
     ],
     "kits": [
       "pb-296",
@@ -18167,7 +18135,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "0080"
     ],
     "kits": [
       "pb-295"
@@ -18182,7 +18150,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "0080"
     ],
     "kits": [
       "pb-298"
@@ -18197,7 +18165,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-343"
@@ -18212,7 +18180,7 @@
       "HG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-470"
@@ -18227,7 +18195,7 @@
       "SD": 2
     },
     "series": [
-      "other"
+      "sd-gundam"
     ],
     "kits": [
       "pb-417",
@@ -18243,7 +18211,7 @@
       "SD": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-477"
@@ -18258,7 +18226,7 @@
       "SD": 1
     },
     "series": [
-      "other"
+      "sd-gundam"
     ],
     "kits": [
       "pb-478"
@@ -18288,7 +18256,7 @@
       "SD": 1
     },
     "series": [
-      "other"
+      "sd-gundam"
     ],
     "kits": [
       "pb-418"
@@ -18303,7 +18271,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-281"
@@ -18394,7 +18362,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-140"
@@ -18409,7 +18377,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-215"
@@ -18424,7 +18392,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-415"
@@ -18439,7 +18407,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-410"
@@ -18469,7 +18437,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-384"
@@ -18499,7 +18467,7 @@
       "MG": 2
     },
     "series": [
-      "other"
+      "gundam-age"
     ],
     "kits": [
       "pb-335",
@@ -18515,7 +18483,7 @@
       "MG": 2
     },
     "series": [
-      "other"
+      "gundam-age"
     ],
     "kits": [
       "pb-389",
@@ -18561,7 +18529,7 @@
       "MG": 2
     },
     "series": [
-      "other"
+      "gundam-front"
     ],
     "kits": [
       "pb-193",
@@ -18577,7 +18545,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "gundam-front"
     ],
     "kits": [
       "pb-374"
@@ -18592,7 +18560,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-143"
@@ -18607,7 +18575,7 @@
       "MG": 2
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-144",
@@ -18638,7 +18606,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "pilot-season"
     ],
     "kits": [
       "pb-386"
@@ -18653,7 +18621,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "0080"
     ],
     "kits": [
       "pb-429"
@@ -18668,7 +18636,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-142"
@@ -18683,7 +18651,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "gundam-age"
     ],
     "kits": [
       "pb-126"
@@ -18698,7 +18666,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-156"
@@ -18713,7 +18681,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-141"
@@ -18728,7 +18696,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-411"
@@ -18758,7 +18726,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-468"
@@ -18773,7 +18741,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "pilot-season"
     ],
     "kits": [
       "pb-385"
@@ -18803,7 +18771,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "pb-147"
@@ -18818,7 +18786,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
       "pb-146"
@@ -18833,7 +18801,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-276"
@@ -18848,7 +18816,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-428"
@@ -18878,7 +18846,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-202"
@@ -18893,7 +18861,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-414"
@@ -18938,7 +18906,7 @@
       "PG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-333"
@@ -18953,7 +18921,7 @@
       "PG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-365"
@@ -18968,7 +18936,7 @@
       "PG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-332"
@@ -18998,7 +18966,7 @@
       "PG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-363"
@@ -19013,7 +18981,7 @@
       "PG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-364"
@@ -19043,7 +19011,7 @@
       "PG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-466"
@@ -19058,7 +19026,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-323"
@@ -19073,7 +19041,7 @@
       "MG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-446"
@@ -19088,7 +19056,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "gundam-build"
     ],
     "kits": [
       "pb-400"
@@ -19133,7 +19101,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "gundam-age"
     ],
     "kits": [
       "pb-464"
@@ -19148,7 +19116,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "seed"
     ],
     "kits": [
       "pb-419"
@@ -19178,7 +19146,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "seed-destiny"
     ],
     "kits": [
       "pb-308"
@@ -19193,7 +19161,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "seed-destiny"
     ],
     "kits": [
       "pb-420"
@@ -19208,7 +19176,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "gundam-00"
     ],
     "kits": [
       "pb-447"
@@ -19238,7 +19206,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "seed-freedom"
     ],
     "kits": [
       "pb-443"
@@ -19268,7 +19236,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "seed-freedom"
     ],
     "kits": [
       "pb-309"
@@ -19283,7 +19251,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "gundam-nt"
     ],
     "kits": [
       "pb-238"
@@ -19298,7 +19266,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "gundam-00"
     ],
     "kits": [
       "pb-254"
@@ -19313,7 +19281,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "gundam-age"
     ],
     "kits": [
       "pb-463"
@@ -19373,7 +19341,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-467"
@@ -19388,7 +19356,7 @@
       "RG": 1
     },
     "series": [
-      "other"
+      "uc"
     ],
     "kits": [
       "pb-237"
@@ -19448,7 +19416,7 @@
       "SD": 1
     },
     "series": [
-      "other"
+      "sd-gundam"
     ],
     "kits": [
       "pb-401"
@@ -19463,7 +19431,7 @@
       "SD": 2
     },
     "series": [
-      "other"
+      "sd-gundam"
     ],
     "kits": [
       "pb-475",

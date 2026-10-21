@@ -51,9 +51,62 @@ function skillHint(level: number): string {
 const description = `${kit.name}（${kit.grade} ${kit.scale}）· ${series.label} · ${releaseLabel(
   kit.released,
 )} · ${formatJPY(kit.priceJpy)}`;
+
+/*
+ * 结构化数据。
+ *
+ * 这是一个数据库，不是电商——但把条目按 schema.org/Product 描述出来，搜索引擎
+ * 就能把它当商品读懂（名称、型号、发售日、定价、图片），别人引用这份数据时
+ * 也不必再从页面里抠字段。
+ */
+const SITE = 'https://njucm.org';
+const offers = kit.priceJpy
+  ? { '@type': 'Offer', price: kit.priceJpy, priceCurrency: 'JPY', availability: 'https://schema.org/InStock', url: `${SITE}/data/gundam/${kit.id}/` }
+  : kit.priceCny
+    ? { '@type': 'Offer', price: kit.priceCny, priceCurrency: 'CNY', availability: 'https://schema.org/InStock', url: `${SITE}/data/gundam/${kit.id}/` }
+    : undefined;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: kit.name,
+  alternateName: kit.nameJa || undefined,
+  description,
+  sku: kit.id,
+  mpn: kit.id,
+  image: kit.image ? [`${SITE}${kit.image}`] : undefined,
+  brand: { '@type': 'Brand', name: kit.maker },
+  category: `${grade.label} ${kit.scale} · ${series.label}`,
+  releaseDate: kit.released,
+  material: kit.material ?? undefined,
+  weight: kit.heightMm
+    ? { '@type': 'QuantitativeValue', value: kit.heightMm, unitCode: 'MMT', name: '全高' }
+    : undefined,
+  numberOfItems: kit.parts ?? undefined,
+  offers,
+  additionalProperty: [
+    { '@type': 'PropertyValue', name: '等级', value: grade.full },
+    { '@type': 'PropertyValue', name: '比例', value: kit.scale },
+    { '@type': 'PropertyValue', name: '作品线', value: series.label },
+    { '@type': 'PropertyValue', name: '销售渠道', value: channel.label },
+    ...(kit.mech ? [{ '@type': 'PropertyValue', name: '机体', value: kit.mech }] : []),
+    ...(kit.aliases.length
+      ? [{ '@type': 'PropertyValue', name: '又名', value: kit.aliases.join(' · ') }]
+      : []),
+    ...(kit.parts !== null
+      ? [{ '@type': 'PropertyValue', name: '零件数', value: String(kit.parts) }]
+      : []),
+    ...(kit.skillLevel !== null
+      ? [{ '@type': 'PropertyValue', name: '拼装难度', value: `skill level ${kit.skillLevel} / 5` }]
+      : []),
+  ],
+  url: `${SITE}/data/gundam/${kit.id}/`,
+};
 ---
 
 <BaseLayout title={kit.name} description={description} isArticle scope="gundam">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
+
   <nav class="gbreadcrumb" aria-label="面包屑">
     <a href="/data/">Data</a>
     <span aria-hidden="true">/</span>

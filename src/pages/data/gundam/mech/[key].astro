@@ -41,6 +41,41 @@ versions.sort((a, b) => a.released.localeCompare(b.released) || a.grade.localeCo
 const knownSeries = [...new Set(mech.series.filter((s) => s && s !== 'other'))].map((s) => seriesMeta(s));
 const hasPrice = versions.some((v) => v.priceJpy > 0);
 const hasSize = versions.some((v) => v.heightMm !== null || v.parts !== null);
+
+/*
+ * 结构化数据：一台机体下的各个等级与配色版本，是一个 ProductGroup。
+ */
+const SITE = 'https://njucm.org';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProductGroup',
+  name: mech.label,
+  alternateName: mech.en ?? undefined,
+  description: `${mech.label} 在库里的 ${mech.count} 个版本：等级、比例、发售日、官方定价与渠道的横向对比。`,
+  productGroupID: key,
+  url: `${SITE}/data/gundam/mech/${key}/`,
+  additionalProperty: [
+    { '@type': 'PropertyValue', name: '版本数', value: String(mech.count) },
+    { '@type': 'PropertyValue', name: '等级数', value: String(Object.keys(mech.grades).length) },
+    ...(mech.alt.length ? [{ '@type': 'PropertyValue', name: '又名', value: mech.alt.join(' · ') }] : []),
+  ],
+  hasVariant: versions.map((v) => ({
+    '@type': 'Product',
+    name: v.name,
+    sku: v.id,
+    url: `${SITE}/data/gundam/${v.id}/`,
+    ...(v.image ? { image: [`${SITE}${v.image}`] } : {}),
+    ...(v.priceJpy
+      ? { offers: { '@type': 'Offer', price: v.priceJpy, priceCurrency: 'JPY' } }
+      : v.priceCny
+        ? { offers: { '@type': 'Offer', price: v.priceCny, priceCurrency: 'CNY' } }
+        : {}),
+    additionalProperty: [
+      { '@type': 'PropertyValue', name: '等级', value: v.grade },
+      { '@type': 'PropertyValue', name: '比例', value: v.scale },
+    ],
+  })),
+};
 ---
 
 <BaseLayout
@@ -48,6 +83,8 @@ const hasSize = versions.some((v) => v.heightMm !== null || v.parts !== null);
   description={`${mech.label}（${mech.en ?? ''}）在库里的 ${mech.count} 个版本：等级、比例、发售日、官方定价与渠道的横向对比。`}
   scope="gundam"
 >
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
+
   <nav class="gbreadcrumb" aria-label="面包屑">
     <a href="/data/">Data</a>
     <span aria-hidden="true">/</span>

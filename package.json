@@ -23,7 +23,8 @@
     "data:gundam:assemble": "node scripts/harvest-gundam-assemble.mjs",
     "data:gundam:assemble-facts": "node scripts/build-gundam-assemble-facts.mjs",
     "data:gundam:join-jp": "node scripts/join-gundam-jp.mjs",
-    "data:gundam:backfill": "node scripts/backfill-gundam-details.mjs"
+    "data:gundam:backfill": "node scripts/backfill-gundam-details.mjs",
+    "test:mech": "node scripts/test-mech.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.11",
