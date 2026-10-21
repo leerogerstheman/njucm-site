@@ -144,6 +144,46 @@
     background: #fbfbfa;
   }
 
+  /* 没有官方图的条目的占位封面。
+     列表页的卡片由客户端渲染（见 KitBrowser.astro），拿不到手绘线稿，
+     所以这里给一块体面的占位：作品线代号 + 一行说明。 */
+  .gcard__cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    aspect-ratio: 300 / 380;
+    padding: 1rem;
+    text-align: center;
+    background:
+      radial-gradient(120% 90% at 50% 0%, color-mix(in oklab, var(--accent) 9%, transparent), transparent 70%),
+      var(--surface-2);
+    color: var(--text-faint);
+  }
+
+  .gcard__coverEyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.5rem;
+    letter-spacing: 0.18em;
+    color: var(--text-faint);
+    opacity: 0.7;
+  }
+
+  .gcard__coverSeries {
+    font-family: var(--font-mono);
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+  }
+
+  .gcard__coverNote {
+    font-size: 0.6rem;
+    color: var(--text-faint);
+    opacity: 0.8;
+  }
+
   /* 限定渠道的标记。放在信息行而不是封面上——封面顶部已经有一枚等级徽章，
      再叠一枚会压住 "GUNDAM MODEL KIT" 那行字。 */
   .gcard__flag {
@@ -244,6 +284,37 @@
     overflow-wrap: anywhere;
   }
 
+  /* ---- 页头的工具行：按机体浏览 / 导出 / 字段口径 ------------------------ */
+  .gdb__tools {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 0.9rem 0 0;
+    font-size: var(--fs-xs);
+  }
+
+  .gdb__tools a {
+    padding: 0.2rem 0.6rem;
+    border: 1px solid var(--accent-line);
+    border-radius: var(--radius-pill);
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 600;
+    background-image: none;
+    transition: color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+  }
+
+  .gdb__tools a:hover {
+    background-image: none;
+    color: var(--accent-strong);
+    border-color: var(--accent);
+  }
+
+  .gdb__tools span[aria-hidden='true'] {
+    color: var(--text-faint);
+  }
+
   /* ---- 浏览器：工具条与分面 ---------------------------------------------- */
   .gdb__toolbar {
     display: grid;
@@ -333,6 +404,68 @@
     justify-content: space-between;
     gap: 1rem;
     margin-bottom: 0.8rem;
+  }
+
+  /* ---- 分页 -------------------------------------------------------------- */
+  .gdb__pager {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--line);
+  }
+
+  .gdb__pagerBtn {
+    padding: 0.35rem 0.9rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    color: var(--text-dim);
+    font-size: var(--fs-sm);
+    transition: color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease),
+      background var(--dur-fast) var(--ease);
+  }
+
+  .gdb__pagerBtn:hover:not(:disabled) {
+    color: var(--accent);
+    border-color: var(--accent-line);
+    background: var(--accent-soft);
+  }
+
+  .gdb__pagerBtn:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+
+  .gdb__pagerInfo {
+    font-family: var(--font-mono);
+    font-size: var(--fs-xs);
+    color: var(--text-faint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* 没有脚本时的兜底：全部条目的直达链接 */
+  .gdb__noscript {
+    margin: 1.2rem 0 0;
+    font-size: var(--fs-sm);
+    color: var(--text-dim);
+  }
+
+  .gdb__noscriptList {
+    margin: 0.8rem 0 0;
+    columns: 2 18rem;
+    gap: 0.2rem 1.5rem;
+    font-size: var(--fs-xs);
+  }
+
+  .gdb__noscriptList li {
+    break-inside: avoid;
+  }
+
+  .gdb__noscriptList a {
+    color: var(--accent);
   }
 
   /* ---- 网格 -------------------------------------------------------------- */

@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import KitCover from '../../../components/gundam/KitCover.astro';
 import KitCard from '../../../components/gundam/KitCard.astro';
 import { ART_VIEWS } from '../../../data/gundam.art';
+import MECHES from '../../../data/gundam.mechs.json';
 import {
   KITS,
   seriesMeta,
@@ -26,6 +27,16 @@ const series = seriesMeta(kit.series);
 const grade = gradeMeta(kit.grade);
 const channel = channelMeta(kit.channel);
 const related = relatedKits(kit, KITS, 6);
+
+/* 同一机体的其它版本 */
+const mechId = kit.mechId;
+const mechEntry = mechId ? (MECHES as Record<string, any>)[mechId] : null;
+const siblingKits = mechEntry
+  ? mechEntry.kits
+      .filter((id: string) => id !== kit.id)
+      .map((id: string) => KITS.find((k) => k.id === id))
+      .filter(Boolean)
+  : [];
 
 /** 官方 skill level 的简短说明，避免读者去猜 1–5 是什么意思 */
 function skillHint(level: number): string {
@@ -242,6 +253,46 @@ const description = `${kit.name}（${kit.grade} ${kit.scale}）· ${series.label
                 </li>
               ))}
             </ul>
+          </div>
+        )
+      }
+
+      {
+        kit.mech && (
+          <div class="gunits">
+            <h3 class="gunits__title">同一机体</h3>
+            <p class="gunits__desc">
+              {mechEntry && mechEntry.count > 1 ? (
+                <>
+                  <a href={`/data/gundam/mech/${mechId}/`}>{kit.mech}</a>
+                  　这台机体在库里共 {mechEntry.count} 个版本：
+                </>
+              ) : (
+                <>机体：{kit.mech}　</>
+              )}
+            </p>
+            {siblingKits.length > 0 && (
+              <ul class="gunits__list">
+                {siblingKits.map((v) => (
+                  <li class="gunits__item">
+                    <span class="gunits__code">{v.grade}</span>
+                    <a class="gunits__name" href={`/data/gundam/${v.id}/`}>
+                      {v.name}
+                    </a>
+                    <span class="gunits__designation">{v.scale}</span>
+                    <span class="gunits__ja">
+                      {v.released ? releaseLabel(v.released) : ''}
+                      {v.priceJpy > 0 ? ` · ${formatJPY(v.priceJpy)}` : ''}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {kit.aliases.length > 0 && (
+              <p class="gunits__desc" style="margin-top:0.6rem">
+                又名 {kit.aliases.join(' · ')}
+              </p>
+            )}
           </div>
         )
       }

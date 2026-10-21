@@ -1,0 +1,220 @@
+---
+/**
+ * 机体索引：按机体浏览
+ *
+ * 列表页的分面是「等级 / 系列 / 渠道 / 年代 / 定价」——都是商品的属性。
+ * 机体是另一个维度：同一台机器往往有好几个等级，玩家最先想知道的
+ * 通常是「这台机体还有哪些版本」。这里把多版本的机体排在前面。
+ */
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import MECHES from '../../../../data/gundam.mechs.json';
+import { seriesMeta, type GundamKit } from '../../../../data/gundam';
+import '../../../../styles/gundam.css';
+import '../../../../styles/gundam-theme.css';
+
+interface MechEntry {
+  label: string;
+  en: string | null;
+  alt: string[];
+  count: number;
+  grades: Record<string, number>;
+  series: string[];
+  kits: string[];
+}
+
+const mechs = Object.entries(MECHES as Record<string, MechEntry>)
+  .map(([key, m]) => ({ key, ...m }))
+  .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'zh-Hans-CN'));
+
+const multi = mechs.filter((m) => m.count > 1);
+const single = mechs.filter((m) => m.count === 1);
+
+/* 等级顺序：按规模从大到小，和列表页的排序一致 */
+const GRADE_ORDER = ['MG', 'RG', 'HG', 'PG', 'SD', 'FM', 'EG', 'MR', 'MGSD', 'GA'];
+
+function gradeLine(m: MechEntry): string {
+  return GRADE_ORDER.filter((g) => m.grades[g]).map((g) => `${g}×${m.grades[g]}`).join('　');
+}
+
+function seriesLabel(m: MechEntry): string {
+  const known = m.series.filter((s) => s && s !== 'other');
+  if (!known.length) return '作品线待考';
+  return [...new Set(known.map((s) => seriesMeta(s).label))].join(' / ');
+}
+---
+
+<BaseLayout
+  title="按机体浏览"
+  description="同一台高达机体有多个等级与多种配色，这里按机体把它们串起来。"
+  scope="gundam"
+>
+  <nav class="gbreadcrumb" aria-label="面包屑">
+    <a href="/data/">Data</a>
+    <span aria-hidden="true">/</span>
+    <a href="/data/gundam/">高达模型数据库</a>
+    <span aria-hidden="true">/</span>
+    <span class="faint">按机体浏览</span>
+  </nav>
+
+  <header class="page-head" data-reveal>
+    <p class="eyebrow">机体</p>
+    <h1>按机体浏览</h1>
+    <p class="page-head__desc">
+      同一台机体常常有多个等级与多种配色——RX-78-2 高达既有 RG 也有 MG。
+      这里把同一台机器的各个版本串在一起，附跨等级的横向对比。
+    </p>
+    <p class="count" style="margin:1rem 0 0">
+      {mechs.length} 台机体 · {multi.length} 台有两个以上版本
+    </p>
+  </header>
+
+  <section class="gmechs" data-reveal>
+    <h2 class="gmechs__title">多版本机体</h2>
+    <ul class="gmechs__list">
+      {
+        multi.map((m) => (
+          <li class="gmech">
+            <a class="gmech__link" href={`/data/gundam/mech/${m.key}/`}>
+              <span class="gmech__label">{m.label}</span>
+              {m.en && <span class="gmech__en">{m.en}</span>}
+              <span class="gmech__meta">
+                <span class="gmech__count">{m.count} 个版本</span>
+                <span class="gmech__grades">{gradeLine(m)}</span>
+              </span>
+              <span class="gmech__series">{seriesLabel(m)}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="gmechs gmechs--single" data-reveal>
+    <h2 class="gmechs__title">单一版本机体</h2>
+    <p class="gmechs__desc">
+      库里只收了一款的机体，{single.length} 台。
+    </p>
+    <ul class="gmechs__tags">
+      {
+        single.map((m) => (
+          <li>
+            <a href={`/data/gundam/mech/${m.key}/`}>{m.label}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>
+
+<style>
+  .gmechs {
+    margin: 2rem 0 0;
+  }
+
+  .gmechs__title {
+    font-size: var(--fs-lg);
+    margin: 0 0 0.8rem;
+  }
+
+  .gmechs__desc {
+    font-size: var(--fs-sm);
+    color: var(--text-dim);
+    margin: 0 0 0.8rem;
+  }
+
+  .gmechs__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: 0.6rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gmech {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+  }
+
+  .gmech__link {
+    display: grid;
+    gap: 0.2rem;
+    padding: 0.7rem 0.85rem;
+    color: var(--text);
+    background-image: none;
+  }
+
+  .gmech__link:hover {
+    background-image: none;
+    border-radius: var(--radius-sm);
+    background: var(--accent-soft);
+  }
+
+  .gmech__label {
+    font-size: var(--fs-sm);
+    font-weight: 640;
+    color: var(--text);
+  }
+
+  .gmech__link:hover .gmech__label {
+    color: var(--accent);
+  }
+
+  .gmech__en {
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    color: var(--text-faint);
+  }
+
+  .gmech__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.7rem;
+    font-size: var(--fs-xs);
+    color: var(--text-dim);
+  }
+
+  .gmech__count {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .gmech__grades {
+    font-family: var(--font-mono);
+  }
+
+  .gmech__series {
+    font-size: var(--fs-2xs);
+    color: var(--text-faint);
+  }
+
+  .gmechs--single {
+    margin-top: 2.5rem;
+  }
+
+  .gmechs__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gmechs__tags a {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-pill);
+    font-size: var(--fs-xs);
+    color: var(--text-dim);
+    background-image: none;
+  }
+
+  .gmechs__tags a:hover {
+    color: var(--accent);
+    border-color: var(--accent-line);
+    background: var(--accent-soft);
+  }
+</style>

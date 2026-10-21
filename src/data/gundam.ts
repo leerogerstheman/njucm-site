@@ -145,6 +145,22 @@ export interface GundamKit {
    * 一盒里装着哪几台机体是它的核心信息。
    */
   units?: AssembleUnit[];
+  /**
+   * 机体名。
+   *
+   * 同一个机体常有多个等级与多种配色，「RX-78-2 高达」既有 RG 也有 MG。
+   * 这个字段把品名归一成机体本身，用来把同一台机体的各版本串起来。
+   * 集结套装是产品而不是机体，这一项为空。
+   */
+  mech: string | null;
+  /**
+   * 机体的检索键，同时也是它的页面地址：/data/gundam/mech/<mechId>/。
+   *
+   * 键由规范名生成：小写、去空格、去掉 Windows 与 URL 上的非法字符。
+   */
+  mechId: string | null;
+  /** 其它常见写法：英文名、俗称、旧译、机体编号。检索时一并匹配。 */
+  aliases: string[];
 }
 
 /* -------------------------------------------------------------------------- */
@@ -365,6 +381,8 @@ export function searchHaystack(kit: GundamKit): string {
     seriesMeta(kit.series).short,
     channelMeta(kit.channel).label,
     kit.scale,
+    kit.mech ?? '',
+    ...kit.aliases,
     ...kit.tags,
   ]
     .join(' ')

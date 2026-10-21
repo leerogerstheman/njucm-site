@@ -26,6 +26,15 @@ const description =
     <p class="count" style="margin:1rem 0 0">
       {KITS.length} 条 · {grades} 个等级 · {seriesCount} 条作品线 · 发售年份 {span}
     </p>
+    <p class="gdb__tools">
+      <a href="/data/gundam/mech/">按机体浏览</a>
+      <span aria-hidden="true">·</span>
+      <a href="/data/gundam/export.json" download>导出 JSON</a>
+      <span aria-hidden="true">·</span>
+      <a href="/data/gundam/export.csv" download>导出 CSV</a>
+      <span aria-hidden="true">·</span>
+      <a href="/data/gundam-database/">字段口径</a>
+    </p>
   </header>
 
   <KitStats kits={KITS} />

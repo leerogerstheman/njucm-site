@@ -29,7 +29,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "重武装高达改 EW",
+    "mechId": "重武装高达改ew",
+    "aliases": []
   },
   {
     "id": "bc-3600",
@@ -54,7 +57,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3600.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/10/jMSMk1R1yTkZkBWI/95A3Kdz82Pa1zGf2.jpg?Expires=1792507395&Key-Pair-Id=K7AVJM1114TH7&Signature=O9TCWu~ftamLYhsQyBM4A8iNM8HD1KATd3gP7Vxyc9PeH-wiQbZ9EXprgLChAcgZg4cXGLW5XZUxkpY1NWFljNazDb40hzb2JTTZTe2TG7ClHNAWRUcL20zcyriwJ7iaBEF72AoFaCOc2VU8CqbogdaUDGC7z-I4eRZ-IK70GuaLlny1YD87Gvq9rYIEQq9W9IAMlcv-7CPsx6IvxOpXwDS~pU4iXWcwcZR3MlUFOB-nPp-bqU80yfjki32DIeYtKPhJ0YW1cUahHjRYr285L1Ms3pw~5VF3cDp3QCTgjy9MVkwGP2MmvCG23DHJKoaS5pkycR1pp-aN3~h71ZzczQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7435/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7435/",
+    "mech": "高达ZERO",
+    "mechId": "高达zero",
+    "aliases": []
   },
   {
     "id": "bc-3602",
@@ -79,7 +85,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3602.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/10/K8hgTmRTAXYF54mJ/Mc3UQDlIgzinZmkY.jpg?Expires=1792507362&Key-Pair-Id=K7AVJM1114TH7&Signature=G~LisQF7jXeExMByM69pkqoQ6Ne2X8TZZUaK1DulPJvrQvC0-qFsNTh62OqTbqZ5ITNEvig1yicaYH3iVeuTcL980InzPXf0~OguwbpPbBW-~fZ3NT~vWp2KBmXEtMTi~b0MYXI2XtTuWVxF9Ik49WSXje4sEmIb10mmr4UAEXrWA8L3C79kuG4VQKxLiTmUHGx6kefm6pUwbK3y3M4dtKvlg5atN7Jut5qcjt7TtZoFamSi6WShZwBpo5VdfKikFOQyp-tO2DGSt~b4SUa6GAxJ4N4eSO5~R3g9deNVqWjCC1mYLLqIyvvmdZKayBE7nyfG6XgWPPAfiXRI58dOWw__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7438/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7438/",
+    "mech": "老虎特装烈焰型",
+    "mechId": "老虎特装烈焰型",
+    "aliases": []
   },
   {
     "id": "bc-3601",
@@ -104,7 +113,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3601.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20261015/e374c1b93f90362681ba51f5ed9f0a2f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "机动战士高达RG XARX-ZERO 新商品A",
+    "mechId": "机动战士高达rgxarx-zero新商品a",
+    "aliases": []
   },
   {
     "id": "ga-dx03",
@@ -131,7 +143,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/jp-01_7332.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7332/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7332/",
+    "mech": null,
+    "mechId": null,
+    "aliases": []
   },
   {
     "id": "ga-ex09",
@@ -158,7 +173,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/jp-01_7331.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7331/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7331/",
+    "mech": null,
+    "mechId": null,
+    "aliases": []
   },
   {
     "id": "bc-3573",
@@ -183,7 +201,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3573.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/08/AqO0ifMN3E2G8x83/AEUOKDYuN0Q2M9av.jpg?Expires=1792507362&Key-Pair-Id=K7AVJM1114TH7&Signature=HhpR5wOkb~P8H3KcwmYDw6-vLuoJsJqmGqe35S074IDhlCTIL1WsJrm9toqLMlfVtI2B80M57JZYGwLfoDVKzdeQifN73CEdfr~YgN-XJL8o7zklRTkGD8o30gHlQ7r~ipbP9PjO9OHpVlvDOYznbrZCHpFlmIny4-PawjxGwBsjG2jDsF0s~BzgggKZLbpXhAozort8Awv~mcb8jU0yoPE8jiZKlg2YFHl89lK1Wae9xtjTsEiLStg-CaoLAsKCtdmhZpXe1-nr01AMTbK7mJz9vima9rci6~5pPBiPjrQ5AikfwHYTvRbjQ2o0B-ah4BjebUVctmCAigKeDj5FKw__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7377/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7377/",
+    "mech": "悍马‧悍马",
+    "mechId": "悍马‧悍马",
+    "aliases": []
   },
   {
     "id": "bc-3574",
@@ -208,7 +229,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3574.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/08/7ckUV24pmIyrgW4Z/1MXkN8o4Z0weZFjV.jpg?Expires=1792508440&Key-Pair-Id=K7AVJM1114TH7&Signature=cl~jDlUO8JdtRE8OT5lGhaCDJmfw7TYHAn1GhXneULHyAPx0UpesD7B-~ebhQDw7fIbcyz-niQVENlwUkS5tHi~ns0NCWoe662VDYF414LyB5ACYMhX2nqSoc0BIGvHb5Fh4tKWO9tDJci8SKT4opaypSQwW9sEV2DP6Ap~acLAE0-Lk-4mNjiwc1AuvQnx8AZyu4s4KsLRG1sSZHVvDVOeDCv4Kn5pMyBLPt~v2wAUVcSbwOeIBYcgZhjYW~1HVtrtnJwybyphbTBtET1dr~tqFr3jxZ6RQVuP2nYCUiSWAyI-7kV0zwQ7A0jWxWWfvfXEFXvPP0SoNmdoIZtMJ7A__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7378/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7378/",
+    "mech": "非凡强袭自由高达",
+    "mechId": "非凡强袭自由高达",
+    "aliases": [
+      "Strike Freedom Gundam (MGEX)",
+      "MGEX强袭自由",
+      "非凡强袭自由"
+    ]
   },
   {
     "id": "bc-3575",
@@ -233,7 +261,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3575.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260826/1cffbe803fcb3f9e9ee87f578e6c2764.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "00强化模组",
+    "mechId": "00强化模组",
+    "aliases": [
+      "Gundam Virtue",
+      "00高达",
+      "双头龙高达"
+    ]
   },
   {
     "id": "ga-sc01",
@@ -260,7 +295,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/jp-01_7330.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7330/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7330/",
+    "mech": null,
+    "mechId": null,
+    "aliases": []
   },
   {
     "id": "ga-ex08",
@@ -287,7 +325,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/jp-01_7329.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7329/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7329/",
+    "mech": null,
+    "mechId": null,
+    "aliases": []
   },
   {
     "id": "bc-3598",
@@ -312,7 +353,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3598.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20261015/db3466dd773be5e9db7d6751317aecc9.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "保巴拉姆",
+    "mechId": "保巴拉姆",
+    "aliases": []
   },
   {
     "id": "bc-3597",
@@ -337,7 +381,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3597.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20261015/6f3c09c1521861644d28157eb613dc94.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "凯利斯",
+    "mechId": "凯利斯",
+    "aliases": []
   },
   {
     "id": "bc-3599",
@@ -362,7 +409,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3599.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/10/clALdjHgGbySFJnr/qeLJikPWJ3bi6bo5.jpg?Expires=1792507395&Key-Pair-Id=K7AVJM1114TH7&Signature=gBN8pXM46xd8pW2MMluKHhkm4moScRPMXUSk1a3BRdFXq93qOhHsoB1chf5-oHvXeXmySOqS3gfzsyoZtG3vN50a4S0fq5rFXHh6CUoX0XFIbvv3CVCsiB5LId8F7qM9Q34s7zZLYqaOT~5cOvnUYodc7DmKBK0r2nNVSlByJs2Hy6ce6mCqwOocUyTrOMvV1C~1A86-YoozY2uGGafzNzH0ykwoa7T27ey2QLH3VQJyZLsbRKoKCk9BvGYomX3ZjwXneuGCcM0Bz~vjomFJy1GxK9ez8PW5~9IeusXc77UMWz3HGc4Y4i54PBYYhUvgj9aRhOnF2nUWtyj7DCoStw__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7434/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7434/",
+    "mech": "无限正义高达",
+    "mechId": "无限正义高达",
+    "aliases": []
   },
   {
     "id": "bc-3558",
@@ -387,7 +437,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3558.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/08/eR1oPGX54f1wklN4/GHYzMtJw3LozlCjH.jpg?Expires=1792508169&Key-Pair-Id=K7AVJM1114TH7&Signature=i5AP1hL2AGOlg5IT6z5VwbXpR~9PkIJzKsC-uIb3pYKYOt6J6H6oFJsoMCVopo2TuBkI4tTmrvK7NM9idbNVzO1piN8yZnNrh-tbRpLhPmhmGpPLsRm1DpGMSItR2HXrvzywVfCS1t11MbJuZVOhQmFy1ksDDpnyHjwoCr-EW7kR0VCPA-IEpvh9kAaM4o2JM7s2HaXQPN3-Su3LhH3CICZ8iU89UDmrxYOp10XBm8hcbR7bYQfwyIxzefLpOdcrTyIDPQaOYFKa2n9uGGEv9qOPtOWIcIzsj6TjhTQ7y~ObabNNIm4yPg3hINvGaKGXJfIZXgsAAhCfdUs5xG9quA__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7365/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7365/",
+    "mech": "陆战型高达",
+    "mechId": "陆战型高达",
+    "aliases": [
+      "Ground Type Gundam",
+      "陆战型",
+      "Ground Type"
+    ]
   },
   {
     "id": "ga-ex06",
@@ -414,7 +471,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/jp-01_7327.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7327/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7327/",
+    "mech": null,
+    "mechId": null,
+    "aliases": []
   },
   {
     "id": "ga-ex07",
@@ -441,7 +501,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/jp-01_7328.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7328/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7328/",
+    "mech": null,
+    "mechId": null,
+    "aliases": []
   },
   {
     "id": "bc-3544",
@@ -466,7 +529,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3544.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/08/ce1SQYgk1mWH0edG/Sr67NSAtObDWOReN.jpg?Expires=1792508395&Key-Pair-Id=K7AVJM1114TH7&Signature=cJvxe0sQPYKAVuJO5ufXbyMrdrJk5SFUhCDIBe2Nz~Fwiv5CM7gT0wC2zrCOlDPuZ09aahDgVbAihFRgBit3XZxgdUMImP1wAjM4QyS66HRuq5MNrwPcVJBgHi5TwnyVKXFquGzROneljcrNaCpgndpEQYvJ53pKtvwpY4fKJjojzUmsmpTdHdRP1X0tNtTMtcToRQaQpYVV8kIJCASwHEVZNhCdLLKLipGXYpji-Nxp5aS5OtAyF8BJkTGEIRAcbpPYKfyXcGprfMSfO3STdBRIA0oVieI9YoZ1pwabPR-3vplUD6zqzxjFPTMVnLuApgEX8YBlUwdvbfEtlO0k0A__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7353/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7353/",
+    "mech": "格雷兹·艾因",
+    "mechId": "格雷兹·艾因",
+    "aliases": []
   },
   {
     "id": "bc-3594",
@@ -491,7 +557,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3594.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/10/jscgW8WnMuOM17h9/n0vzSI7hBPvHSCbo.jpg?Expires=1792507264&Key-Pair-Id=K7AVJM1114TH7&Signature=TkxhK-uGYQk~6Cn8zw7-hnRKAU4twsjN4aRQWVzgkmMnIt1ao5YAVFFSnv84xsMroLdN2psv~K~atjFmt3KT101KpBYdf-vxyiaLSATSTkcZ-Of2FGqL69v3hLSWLqrMfVBZdnI1HtwYhs1zC9mYXs~6QPmvRdpktBTJ3CXXug-paOcvejG4sYwcJoa7ULZ4oRL2Wa-s1akFxHDd1lX5woJv28-ZSMCRk7h2FlRBS0eWRcg23-y9OxtezJiz5nWCMiHH0oVfyvTzJAcT9NAy7Y1vTDNL-zO~6y9SeP1Zncpi599yLJ4CdncdZw8NkbfjhMApI89LWxaZ9k59wD6b-w__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7429/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7429/",
+    "mech": "螺旋高达",
+    "mechId": "螺旋高达",
+    "aliases": []
   },
   {
     "id": "bc-3595",
@@ -516,7 +585,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3595.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/10/48oKXLY9uHnGF8mW/TjS7YWpwSqNfQRSk.jpg?Expires=1792507172&Key-Pair-Id=K7AVJM1114TH7&Signature=ZQQZ6CxwYtplit6Gb7J5Yo9TuyLxtnihYC6kcgSsjiDH-LhfUTlEw8x8lpGCifQUETgcHb~3PCmzicZcErvuW2rSruT~PuoTdAxbBW9X3f5y2OvFLaYD3Elm2OUlkpo6J5GNbu3XQcr7ktHaH2truoJ6ZzB1FjnmwmIaA3QLvxpyXkzPJkQVVmNTwxEd9tAtUmg9r22Hs89JQSEvCR3j1Saeo4kXE48Q3P8ECQsXwoUy6-N~ulGnOGqSAwvrWZEbSpWkdQc8c1T~ZgWxGSZvxFrg5fNbXul4dhB9tyI3dNHT8FwHVATqHv6KHKWNwZIESMMhKfuSE6NEH767wMmS8g__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7430/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7430/",
+    "mech": "强袭自由高达 SEED FREEDOM ZERO",
+    "mechId": "强袭自由高达seedfreedomzero",
+    "aliases": []
   },
   {
     "id": "ga-dx02",
@@ -543,7 +615,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/jp-01_7204.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7204/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7204/",
+    "mech": null,
+    "mechId": null,
+    "aliases": []
   },
   {
     "id": "ga-ex05",
@@ -570,7 +645,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/jp-01_7205.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7205/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7205/",
+    "mech": null,
+    "mechId": null,
+    "aliases": []
   },
   {
     "id": "bc-3521",
@@ -595,7 +673,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3521.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260529/efc850003a49939722ab7663a853b860.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-31F SIEGFRIED",
+    "mechId": "vf-31fsiegfried",
+    "aliases": [
+      "VF-31F"
+    ]
   },
   {
     "id": "bc-3523",
@@ -620,7 +703,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3523.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260529/2577f0d4dc70a05557c155fe377c90e1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-31F SIEGFRIED",
+    "mechId": "vf-31fsiegfried",
+    "aliases": [
+      "VF-31F"
+    ]
   },
   {
     "id": "bc-3593",
@@ -645,7 +733,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3593.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/10/xzBm4i5JZR0zpb0H/qi8JNMj2A6ot8Qm1.jpg?Expires=1792507403&Key-Pair-Id=K7AVJM1114TH7&Signature=lfyutAF0gEAkOrwOB6jB1IlEzvG5-6Smbg3QLzzT9VruAqtvSfvlQ4hNHGpkwih96C~iYUxFe5Px09~x4NiTNtFHplYKSNEYlpqV~tNmz0tnJoEiNULXdbiBCL0uwMixQl-7Y821dQOAhtPVxBKfHKrsNCOKXEQb6tU-LQFhup-k3ym0zE8m0m68fYvAAYxQSx9TQLi8c6GnHwHIydGTxBZHgLyKKjvc-KRkAadm61vPbhFuUFubUaJBpXGb8S1brHNcuUPUrzv7mbCjlIUuONy1NpU5Tp3fvNKpSqxvXyKpHhtnXPlOX52LlSPEnSvADAN36SQXjDMwYP3N6~G7Gw__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7428/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7428/",
+    "mech": "村雨改",
+    "mechId": "村雨改",
+    "aliases": []
   },
   {
     "id": "bc-3520",
@@ -670,7 +761,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3520.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260529/6b70b66a1e29115a7d715335c4f86986.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "古铁巨人",
+    "mechId": "古铁巨人",
+    "aliases": []
   },
   {
     "id": "mg-asw-g-xx-gundam-clear",
@@ -698,7 +792,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "残命高达",
+    "mechId": "残命高达",
+    "aliases": []
   },
   {
     "id": "mg-gundam-liberty-astray-red-frame",
@@ -727,7 +824,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-gundam-liberty-astray-red-frame.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/05/o8Kclgr2G5eaDGdj/hvRnCnzXMkGu7woY.jpg?Expires=1792507865&Key-Pair-Id=K7AVJM1114TH7&Signature=E-dTowBLVth0~1f~b8cPsgAv0kSiFVmPJZ2U~ZR4VzGhITl8a6GupeTrSPSHO3uQoz8ZY02-KYYqfhwJx4x2jCalpYCLR51PBHf3exUcZHs8aEhEqNlVTefdpq~PljV-XvIPEgAIabjnPz1lozhOpj9gbqOme8M3UivI1ohSqE4IKmxn2PylM3mYR6-s8D3bAvRrHiOvixUwi1TntCuEC2MMDhYPLBFwOy7UEIHRCQytc394HPRs9S-MBbynGQRmkhNJzlqwuta2oSxO6CGNcUm8PXcz5dzcLQbT8sY9Yty-Xxj0vIGR~7mMCVLKT5g~Qza0yKcgGgDz6DV2pdSguw__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7269/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7269/",
+    "mech": "自由异端高达红色机",
+    "mechId": "自由异端高达红色机",
+    "aliases": []
   },
   {
     "id": "mg-rgm-89d-jegan",
@@ -754,7 +854,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RGM-89D 杰根 D 型",
+    "mechId": "rgm-89d杰根d型",
+    "aliases": [
+      "RGM-89D"
+    ]
   },
   {
     "id": "ga-dx01",
@@ -781,7 +886,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/jp-01_7198.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7198/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7198/",
+    "mech": null,
+    "mechId": null,
+    "aliases": []
   },
   {
     "id": "ga-ex03",
@@ -808,7 +916,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/jp-01_7202.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7202/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7202/",
+    "mech": null,
+    "mechId": null,
+    "aliases": []
   },
   {
     "id": "ga-ex04",
@@ -835,7 +946,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/jp-01_7203.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7203/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7203/",
+    "mech": null,
+    "mechId": null,
+    "aliases": []
   },
   {
     "id": "hg-astral-gundam",
@@ -864,7 +978,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-astral-gundam.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/05/9dt9MTvTBglJqm1Y/GnSH3jJc7QzfJhSc.jpg?Expires=1792507300&Key-Pair-Id=K7AVJM1114TH7&Signature=FPrn6VxJ5~JLuPq07IcFT97YfeoiRJrymuPKfHjKN~SAlJnc1VC9ApFlo0uVUMLM-KdQir3218oMuFaoD4ozYHMboNmyJymgvH~iKJXkpIkamYchHakzu8D1u8pVpe6XgcjPEiJTzk5L36sySViDZJD0kVzqbsIgtsvIQYrD2eZ-LNvQ8DcB1EmwwBRGjMHlLe5U80TmoIY~5MGwLmJrkmLqe3MiA0B6ikeu2brIDQ5VMddQVs1-UoSMoZtO8Mb-qVTrFKJBk~JiiWmJfnzjDd3iXHuFtn3MhOn43k7toGJQa1hIrSXVSOqM-w8U6lAu2raTD0p1Co8OGPnsTqxM6w__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7253/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7253/",
+    "mech": "阿斯塔隆高达",
+    "mechId": "阿斯塔隆高达",
+    "aliases": []
   },
   {
     "id": "bc-3511",
@@ -889,7 +1006,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3511.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260529/4d2f17e6f8fcaec41edef9150dfa93ae.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "眼镜斗犬 灰色的魔女",
+    "mechId": "眼镜斗犬灰色的魔女",
+    "aliases": []
   },
   {
     "id": "mg-stark-jegan",
@@ -916,7 +1036,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "斯塔克·杰根",
+    "mechId": "斯塔克·杰根",
+    "aliases": []
   },
   {
     "id": "mg-zaku-phantom-heinemann",
@@ -945,7 +1068,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "幻影烈焰扎古",
+    "mechId": "幻影烈焰扎古",
+    "aliases": []
   },
   {
     "id": "ga-ex01",
@@ -972,7 +1098,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/jp-01_7199.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7199/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7199/",
+    "mech": null,
+    "mechId": null,
+    "aliases": []
   },
   {
     "id": "ga-ex02",
@@ -999,7 +1128,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/jp-01_7200.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7200/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7200/",
+    "mech": null,
+    "mechId": null,
+    "aliases": []
   },
   {
     "id": "ga-st01",
@@ -1075,7 +1207,10 @@ export const GUNDAM_KITS: GundamKit[] = [
         "nameJa": "ガンダム・ヴィダール",
         "series": "gundam-nt"
       }
-    ]
+    ],
+    "mech": null,
+    "mechId": null,
+    "aliases": []
   },
   {
     "id": "ga-pa01",
@@ -1102,7 +1237,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/jp-01_7201.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7201/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7201/",
+    "mech": null,
+    "mechId": null,
+    "aliases": []
   },
   {
     "id": "hg-visago-gundam",
@@ -1131,7 +1269,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-visago-gundam.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/05/gj3oTuGTO6q2VUOW/3eVec6ZtTo9w54C0.jpg?Expires=1792507386&Key-Pair-Id=K7AVJM1114TH7&Signature=MYuKHCRUSBdDT7AjU1CDhbvaPCNQlx-zMXKJc5SUjyVUpA3q4S8pq5WUsBfeZd6dbULsHgp90xkSi85JcUt-DnOZa8DHd4FXtXQMyGJ3PtOJgRN-2UU9WW5o0NAeg99-cC8exQuIvq0Nore6G4qQaAx26krJSUQHLbCVMObySKqc0Zrx1E8lmxBjIsCWJrB0fofXuXn-U7sFGyYwGbuGO50zwEobuvO4H~OiVFQ2zBK8FznafmVxj-9uDfLzRWe9U8SeCB1UPGmqgubv7olclauWiQWX9NClO9p91RaVZF8lZeYXFF7ASA7cTyVYWXThiT36H2ALjjRnP4xyP2wJrQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7249/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7249/",
+    "mech": "维萨戈高达",
+    "mechId": "维萨戈高达",
+    "aliases": []
   },
   {
     "id": "pb-451",
@@ -1159,7 +1300,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-451.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260529/b05c72ac85b89f3b1452ee16dc1a52c2.jpg",
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000253221/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000253221/",
+    "mech": "高达MK-Ⅴ",
+    "mechId": "高达mk-v",
+    "aliases": []
   },
   {
     "id": "bc-3592",
@@ -1184,7 +1328,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3592.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260930/20ad094825c1bb306f4d2b7d1df0b291.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "主天使高达",
+    "mechId": "主天使高达",
+    "aliases": [
+      "Archangel Gundam",
+      "主天使",
+      "Archangel"
+    ]
   },
   {
     "id": "bc-3590",
@@ -1209,7 +1360,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3590.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260921/b480b554b5fdc46e9b351cede7b59866.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "自由高达",
+    "mechId": "自由高达",
+    "aliases": [
+      "Freedom Gundam",
+      "ZGMF-X10A",
+      "自由高达"
+    ]
   },
   {
     "id": "bc-3533",
@@ -1234,7 +1392,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3533.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260804/fca25fef63c07c72a5c69d65723ccfbb.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "拂晓高达",
+    "mechId": "拂晓高达",
+    "aliases": []
   },
   {
     "id": "bc-3392",
@@ -1259,7 +1420,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3392.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/09/tOkHqg98ETipPO5f/lSRHnRCzIXlVLU4Z.jpg?Expires=1792510713&Key-Pair-Id=K7AVJM1114TH7&Signature=PMq8~oM0kzpY03MLjCczsRuSITJmEQCnAKWFC2iDsVP9nTYRU0g1KFhDIKHs0~3EhJRpYWcvK2-8thdaZWW9C9fzCdTp~YCCw9ax0p35jRr3l~Pv9eLtRIBGK-GWkoiJ-YoMoP4y88nxBgW0NBkXT~FN1yXksH7LB6fC8Vi1ro2ly6IJFNsRALuti9rPAvfpKTO8bX1V-16adIHlgMr2gyk1XzdyL6ENXipOBYtS2CHA10RWT-4JQEg4pDnL1kohUdp5~Yk4oGMLMvL21JXdRp~HkaBt1RBnFZh8sGSpkrVX5q9HX3dU7eW3bp2Ouzlrv8xLkcqics5CLJf5QjXirA__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7145/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7145/",
+    "mech": "VF-25G MESSIAH VALKYRIE MICHAEL CUSTOM",
+    "mechId": "vf-25gmessiahvalkyriemichaelcustom",
+    "aliases": [
+      "VF-25G"
+    ]
   },
   {
     "id": "bc-3394",
@@ -1284,7 +1450,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3394.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/09/JHOghmxSoi8ZVMIw/9teCnTT4FXSvGQXp.jpg?Expires=1792510714&Key-Pair-Id=K7AVJM1114TH7&Signature=dhmCcYyfMnadcfOoWi6K6Plr5IA8L81jRqGdflwXxdvMeGcEbYzpx7Fbm7vdl3-1L~ZmuanFSRgKiFXV~Cqe4ogI7Ai1ySSiNkWE~XAh2Zpt-zrLPxX51ettdseP9kqErh~i9gPrO7rEEmHl4zOQBDHQ98AjdxSaJ6BAHOs2RDsO4T4QvB6uMqNJAA1tw-XGW3dd9WfYSz-TEOSb~VvQp7AtlvIKHgRl08o1f~JH~6CrcBZiaMuUHP3DRaQ~LEDA-OCIKC9gNErjCZ6ZUsJEQZ6TyhPWA~jW-Uc6bw0USqA04-brSwtkFin5QEWNbTCXjvwnbheY5USg0hmqex7z0A__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7147/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7147/",
+    "mech": "VF-25G MESSIAH VALKYRIE MICHAEL CUSTOM",
+    "mechId": "vf-25gmessiahvalkyriemichaelcustom",
+    "aliases": [
+      "VF-25G"
+    ]
   },
   {
     "id": "mg-blaster-zaku-ghost-heine",
@@ -1312,7 +1483,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "瞬发型萨克斯幽灵",
+    "mechId": "瞬发型萨克斯幽灵",
+    "aliases": []
   },
   {
     "id": "mgsd-kushatoriya",
@@ -1341,7 +1515,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mgsd-kushatoriya.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20261008/b3099d9f16da49a25e36099e3d4cbcdb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "刹帝利",
+    "mechId": "刹帝利",
+    "aliases": []
   },
   {
     "id": "bc-3532",
@@ -1366,7 +1543,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3532.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260804/90ccb659abd1d01c71918cacc2dbb154.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "风灵高达",
+    "mechId": "风灵高达",
+    "aliases": [
+      "Windmakk",
+      "风灵"
+    ]
   },
   {
     "id": "bc-3531",
@@ -1391,7 +1574,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3531.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260804/2f7eed4cc44702773a41a5b4884d87c5.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞翼高达零式EW",
+    "mechId": "飞翼高达零式ew",
+    "aliases": [
+      "Wing Gundam Zero EW",
+      "飞翼零式EW",
+      "零EW",
+      "EW零式"
+    ]
   },
   {
     "id": "bc-3425",
@@ -1416,7 +1607,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3425.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260903/a9ca84077216e251b537caead23ac1b2.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞翼高达",
+    "mechId": "飞翼高达",
+    "aliases": [
+      "Wing Gundam",
+      "飞翼"
+    ]
   },
   {
     "id": "bc-3424",
@@ -1441,7 +1638,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3424.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260903/1078fd21d821aee905a81b4a99e17cf4.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强袭高达",
+    "mechId": "强袭高达",
+    "aliases": []
   },
   {
     "id": "bc-3423",
@@ -1466,7 +1666,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3423.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260903/85bbedcec3b417867609900b175fab0c.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "hg-gundam-leopard",
@@ -1495,7 +1705,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-gundam-leopard.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/08/r98IS6tzTm0i7mQr/9OQFSfJfbCpKODNL.jpeg?Expires=1792507241&Key-Pair-Id=K7AVJM1114TH7&Signature=EJNkBJ4GaQwf0Q1LiD~tHrdd0Q6xaX8iFH6x9f14yvcnyWV~zq750~iols-nQg9NsZ6wntymgEnfgL74nL-IVQIq3doisTUpe1Ft~xzw5NcPCY3QCQfWerXT4BNTpJMtW9BqTTVWfskmPYiZTXcddsyTgWIYFMHHKjaxMsG5ODqEVwG7LHGUGEsL2hs2wQsH~dh6yijDd2HBseloulmzGhRemZerlzjehSesrLlbJSoyHhpUyDG1kKwT8xvU36oCLenx~qdbloB2SBPXcgGx0PNFlmtuLAHvqqr4TQ0C9eRX8HNzT8bNUedhEW7z8d1Sa~Yex-4G-qtlEKccfdbVug__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7125/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7125/",
+    "mech": "斑豹高达",
+    "mechId": "斑豹高达",
+    "aliases": []
   },
   {
     "id": "mr-xi-gundam-ka-kirche",
@@ -1524,7 +1737,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Ξ高达",
+    "mechId": "ξ高达",
+    "aliases": [
+      "Xi Gundam",
+      "Xi",
+      "西高达"
+    ]
   },
   {
     "id": "hg-gufu-ignight-heine",
@@ -1553,7 +1773,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-gufu-ignight-heine.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/07/tMHGBMCt2ZoS2oPE/S22sJ9kuUuCDkIkw.jpeg?Expires=1792507443&Key-Pair-Id=K7AVJM1114TH7&Signature=NkphPZv6Pmo0~tV2l-kVYAdtX-TLrcd2k3hNYqAVkGBYZyD2MLXZO2DIvO4D9bQJ7dv1PRRQLILsfF2UAZ6spv4p2hSC-Icxuqy1t1yl0S00sduJYU6EWd~agXRmK3Jex0~HeYTE4FtdxqeyYVwZAt84VJaFOoill5O8Kj8bC2VA81VyzTGbnPFPF80YbYebzbSU2UFuVrfDOcixHrD-ZGws4hztva5XZIa43jM0XSaCbcLR7dS2VIyvMA3sZKb~yu2awMOXbVKo4EmXCMcboonODdfrfRKcAPGgYJBnnrsZVesxPc4fOEhXO6cToQVIWVHrpOztiSumXnaAkNbbfA__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7110/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7110/",
+    "mech": "古夫·伊格奈特",
+    "mechId": "古夫·伊格奈特",
+    "aliases": []
   },
   {
     "id": "bc-3238",
@@ -1578,7 +1801,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3238.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260612/48ad7caeff296434d236aee3578a7b00.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-31E SIEGFRIED",
+    "mechId": "vf-31esiegfried",
+    "aliases": [
+      "VF-31E"
+    ]
   },
   {
     "id": "bc-3240",
@@ -1603,7 +1831,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3240.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260612/3258eb3edabe2d3a4d557b4653882857.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-31E SIEGFRIED",
+    "mechId": "vf-31esiegfried",
+    "aliases": [
+      "VF-31E"
+    ]
   },
   {
     "id": "hg-hanlabai-gq",
@@ -1632,7 +1865,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-hanlabai-gq.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/06/QftaauEutRMiP9dk/cvBhy5eSClmxUtuB.jpeg?Expires=1792507207&Key-Pair-Id=K7AVJM1114TH7&Signature=i2EJSRfarQUwtPzNE0rp~tDYx6qJIoRN3thZ8Mzq3w0~vqKApyZTM9hQxngV8i2prs0KiFSDnupe11VziddZt6nEzXHtIgr~vcHTDfxcnOe~ITmwj6MNRgvtznAi88hBvEWsyI-sjZFfIhW6ks2JEEHhrmeHaYRZT5YOhSqHDmXf-xlrvwnddtcKeEFocp2OnRQrA8JFGguXvIO0md4a7OioKySAUmE5EMoUMugBKBVSXbgt1vjIqjSIoH64KAEDyN2YtGg~36cbdpZAN1gZ3aSyrhkwP~4kq4qaUedG4VihQfFgfR~rGykkPcBlqS6p8CGglks-m2KYorK-P6tLvg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7016/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7016/",
+    "mech": "汉布拉比",
+    "mechId": "汉布拉比",
+    "aliases": []
   },
   {
     "id": "bc-3236",
@@ -1657,7 +1893,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3236.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260602/70c3b45fcd3589cf0e85fe27a9eb7a95.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "沙漠高达改 EW",
+    "mechId": "沙漠高达改ew",
+    "aliases": []
   },
   {
     "id": "bc-3428",
@@ -1682,7 +1921,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3428.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260612/b5ed8e2a1b160acee9a79ccf49d44569.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "兽犬",
+    "mechId": "兽犬",
+    "aliases": []
   },
   {
     "id": "mr-hyper-gundam-gq",
@@ -1711,7 +1953,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "巨大化高达",
+    "mechId": "巨大化高达",
+    "aliases": []
   },
   {
     "id": "bc-3404",
@@ -1736,7 +1981,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3404.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/06/Prlj7F7CN13DuyZC/hpu53Zi4DWYisutE.jpeg?Expires=1792510515&Key-Pair-Id=K7AVJM1114TH7&Signature=ek8QNVUUxpQ8v3LdYhk94R~LVWdFjB-7n6ikinUti7-AMWecRMXz4e3Bgsskcap6D9iGiTHria6T1sIimmcC720RIRwFKmRBhAqTlsVSVtk09k2JfBqL2uFSTfaAxqt923C4pw-FV74w~C5pLb4IDrGqOZqNBQZnxaxbOuyuJ3mlRaInlD5NLc29~z-ZZjF5gfmv9rawbo~mEkbneuDGD6WU8fD2hYAC0HuDGB1GaxOc3NeiO4RlknEFPuynZZ02~SN4BzvR555r-qdG2iSRYuZN~rxgTjjr~YVwm4Z5YdVU6qijs7yKC1wkbA3271xmM7BdLtheO4Uv0KsqxXCOwg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7109/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7109/",
+    "mech": "AV-98Plus",
+    "mechId": "av-98plus",
+    "aliases": [
+      "AV-98P"
+    ]
   },
   {
     "id": "hg-maa-m01",
@@ -1765,7 +2015,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-maa-m01.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/05/WM8ViH44ewBPEeQR/4BvtcV88ab1qHeqH.jpeg?Expires=1792507247&Key-Pair-Id=K7AVJM1114TH7&Signature=EgUFGyr2PPVswzxJ-rKHJAQIrZpX7qNcxKEppfrcaS86cMbc0vmewo~cCLtpzN-0L4mNv5YO1COqSTgDSpBJQfx9JRDaHeZn3RaDRos0kgXxLNZaPP09vrV4SobPdAOT~xIHyLKiMFIOIdHmExBoD-9DWGTeBpuYDiseH-sq9FxTLvra9JPOozq8pcRX9yu5lVWBhOL-s1SJDL2s8HdHQWAoc9-o3qbkRVHOM23NpD3cGsqWJ~lhbewymHv1Sg3tMEhnQc5D8wRA4YVmY~6jJzeZCxausy3Icq6ABAKqGxu0rVrwydFQszgQ03P5SGC6MZuCFvKLQBDILNsv5gPQPg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7095/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7095/",
+    "mech": "梅萨M01型",
+    "mechId": "梅萨m01型",
+    "aliases": [
+      "M01"
+    ]
   },
   {
     "id": "pb-393",
@@ -1793,7 +2048,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-393.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260121/baf174162cdcd3296f0e811eb8bc6df3.jpg",
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000243714/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000243714/",
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "hg-arizeus",
@@ -1822,7 +2087,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-arizeus.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/04/wvoBheQUfqx28qzn/RTVOIPnkcNHLmgKN.jpeg?Expires=1792507202&Key-Pair-Id=K7AVJM1114TH7&Signature=eJotQWAuezyOSQElcOMdb0KacnkI2kzJ9Hi0LxsQIre9kSnBB3~8PPQ8hiOVfsfl4D4yEtDfuMnKEa3WgpDQO35B9TxlJswO9POpFHAL0tDihOcBDN0uFSKG4ozPSKmaSEZikzi4VZGpxn02ptZU8ZKSmk5d7jzFHSVerYLaA76DwSkHzeO5mQZ5GhhUR~tyhgPs231xhFkpRuYDzW2P26ms4Dgy9z2lGPCvHZ~gWAtSpfh9nccT3720E007r2ZZxnknxlGHnt5QglOxdng20QXLJ91iZNAkoMaNaUO~C0xJpoMkkbsmWRjSID80mSKbKdx2rG5TxFVK2uBogcRVDA__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7092/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7092/",
+    "mech": "阿利宙斯",
+    "mechId": "阿利宙斯",
+    "aliases": []
   },
   {
     "id": "hg-xi-gundam-kirche",
@@ -1851,7 +2119,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-xi-gundam-kirche.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/04/s2VGvpZe15V4FvFM/pSaitzZpxRmzee0T.jpeg?Expires=1792507202&Key-Pair-Id=K7AVJM1114TH7&Signature=cJP1clVBwcXh-~rIrwjdspJGZvxw222ZHLMXhZc4WbE7d0GGTk4iHYBjXvQjVHjzaa2-fSyj8dZ~~QyyZoovG-O139N5M1EdfloIzyqhS8TyXqQONvcWeUMt2ZrEi08UVJ37HrzJ9b~5ZLkkeTVvkz7668jG8pATdQg3hE2Z4KvRW2z4YHGrz-QBD8RaKRhQ3yscpxbFK5Qj7G9LVqwkf5WtL2vzEbJImTAzWzrJRTKdVliQFL1jy3JFOP1H5CpYnQbcrEWtEX4RbJPkqvykWJAFAkX9SgSngIzFAe31XvQbR~64O~-Rrec2~sm9K5jIktCoeubep1db7tevjLZ0uA__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_7093/"
+    "sourceJp": "https://bandai-hobby.net/item/01_7093/",
+    "mech": "Ξ高达",
+    "mechId": "ξ高达",
+    "aliases": [
+      "Xi Gundam",
+      "Xi",
+      "西高达"
+    ]
   },
   {
     "id": "mr-strike-freedom-final",
@@ -1880,7 +2155,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "非凡强袭自由高达 最终决战",
+    "mechId": "非凡强袭自由高达最终决战",
+    "aliases": []
   },
   {
     "id": "bc-3482",
@@ -1905,7 +2183,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3482.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260331/58b9e83ef8143eb4a9c3fea40a4abb01.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞翼零式高达EW",
+    "mechId": "飞翼零式高达ew",
+    "aliases": [
+      "Wing Gundam Zero EW",
+      "飞翼零式EW",
+      "EW零式"
+    ]
   },
   {
     "id": "bc-3483",
@@ -1930,7 +2215,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3483.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260331/47e66abb3569c4c0c1a0bef625aca86f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异端高达红色机",
+    "mechId": "异端高达红色机",
+    "aliases": []
   },
   {
     "id": "bc-3485",
@@ -1955,7 +2243,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3485.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260514/bdabc6eab9621c6ca938a4624f5ff7c2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "艾比安高达",
+    "mechId": "艾比安高达",
+    "aliases": []
   },
   {
     "id": "bc-3481",
@@ -1980,7 +2271,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3481.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260331/0d78ab72ec2892af397e22602d57ade0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "bc-3490",
@@ -2005,7 +2306,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3490.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260519/9f16d988469bdd7f1f81de964c95e0c5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ZGMF-X10A 自由高达",
+    "mechId": "zgmf-x10a自由高达",
+    "aliases": [
+      "X10A"
+    ]
   },
   {
     "id": "bc-3163",
@@ -2030,7 +2336,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3163.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260317/17197aea00f344393357abe543f16067.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-25F MESSIAH VALKYRIE ALTO CUSTOM",
+    "mechId": "vf-25fmessiahvalkyriealtocustom",
+    "aliases": [
+      "VF-25F"
+    ]
   },
   {
     "id": "bc-3165",
@@ -2055,7 +2366,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3165.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260317/a832ce949a01383018a5c33b0495fdbf.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-25F MESSIAH VALKYRIE ALTO CUSTOM",
+    "mechId": "vf-25fmessiahvalkyriealtocustom",
+    "aliases": [
+      "VF-25F"
+    ]
   },
   {
     "id": "pb-383",
@@ -2083,7 +2399,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-383.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251224/829924cb609669c26e11b039af5e0603.jpg",
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000242784/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000242784/",
+    "mech": "武者七人众",
+    "mechId": "武者七人众",
+    "aliases": []
   },
   {
     "id": "bc-3431",
@@ -2108,7 +2427,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3431.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260317/40ab0a6d5124a5e4212b20c240636a51.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆狙击特装型",
+    "mechId": "吉姆狙击特装型",
+    "aliases": []
   },
   {
     "id": "mg-jim-sniper-zeta",
@@ -2137,7 +2459,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆狙击特装型",
+    "mechId": "吉姆狙击特装型",
+    "aliases": []
   },
   {
     "id": "bc-3432",
@@ -2162,7 +2487,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3432.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260317/09f1849a881d09e9a4b2b4c8d02816f3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ν高达",
+    "mechId": "ν高达",
+    "aliases": [
+      "Nu Gundam",
+      "牛高达",
+      "牛"
+    ]
   },
   {
     "id": "hg-gustav-karl-00",
@@ -2191,7 +2523,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-gustav-karl-00.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/02/SACWkuuq5LRHCYau/drelTIHtNHuBdCLU.jpeg?Expires=1792507246&Key-Pair-Id=K7AVJM1114TH7&Signature=aSHHMvcL-9tGIebFhwRGXMUE-yAAPer4v~fxOC93~HytIUQpo3e2TEN4TEc6730eUNbdpIct0~QK4twAHB45HF~z7y7NSuaCbjfMhb-R8x3gT8xUGETJW-AjzIg5m~DGvcTY4nPWC99z6ntB88G7wrh-GcIcZ~SHKm5OmRhb7r-dR3ApiENkTP1N-KrZakntxO4~ObRSbP2GGWGWx915MGfMTyRIbzKqP3y3-g8gPbd6ySBbQNUWiBnFsCdWUb3cIcfaXBEjoszzfLbUn2VvHiH8zTcj8Q3srsUUste8C69CDWgIY3sKSni~s7jyLdKQEDvWktJITp8IuPqPrqjevw__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_6873/"
+    "sourceJp": "https://bandai-hobby.net/item/01_6873/",
+    "mech": "古斯塔夫·卡尔00型",
+    "mechId": "古斯塔夫·卡尔00型",
+    "aliases": []
   },
   {
     "id": "hg-charia-liker-doga-gq",
@@ -2220,7 +2555,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-charia-liker-doga-gq.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/02/ZnqdB2g4Dz03GgfY/cYhFAndx7lE48c2z.jpeg?Expires=1792507207&Key-Pair-Id=K7AVJM1114TH7&Signature=MeURtUf9kTTpAkgofmha19KOV066-O7KkYrNcrCDoOvILAMd097KACxRL7JJ9A4B2GEbpyfQWThEdth~sFeUeWGksncAfnCNseBwV8L3du8kETmCKugCxb9swE5pOBhDJptWo-shq9HHQkC76dwAQhinqcRpULOKLT8gvlR0n02JQxF68H0EABZoRwB3xAlI4Ig3dWNYvzyeQ1PEQmCfnTHdf5sIgUgXYDl9rryNtt4uwhq1pc2TyceMz4yRnd3rU5fxHHuaeZtNu~HhPnCmDK98DankqO6kvOXGJ6YB6IRPfr3hbZmGtq8a2jlD0lqlX2TsKjAcYd2es~04ePerNw__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_6872/"
+    "sourceJp": "https://bandai-hobby.net/item/01_6872/",
+    "mech": "夏里亚用力克·大魔",
+    "mechId": "夏里亚用力克·大魔",
+    "aliases": []
   },
   {
     "id": "bc-3148",
@@ -2245,7 +2583,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3148.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/02/7yc0l3pGPS6DaERS/i5vgeQWsOaaT6kh2.jpeg?Expires=1792507992&Key-Pair-Id=K7AVJM1114TH7&Signature=UrO3dls3hqAIOJrhN0Kho0oaMi85INMiV2iniPajp2r7BME37p-Xu-AtyNLnuoFL72srHJk2~jAafRmaX-OVPNMLYkjvdeVJ6j7PSZ3lnoA6lwf8nKLaD~gd8R~23BRHeo5d8Jy~ob5lsH1Qx0KR~Zjulb2BGOhh2Tolld5EGKfbm2QYjFVKdB5Gl27S36MJOxh20xPYlC4VTQQSgfbfhO0sFHJxPRpcM4SdhkB~GVFfZb6L45Ee~sF09K5FVqMD9vohWgSNmUOdK-TSn~GrLDGBuJybPGn1P8KaHyl32m9va0gL9MrjLrOGM~q0DtS4Pld5qpfodPHCOvfMbrRIZw__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_6875/"
+    "sourceJp": "https://bandai-hobby.net/item/01_6875/",
+    "mech": "全装甲ZZ高达",
+    "mechId": "全装甲zz高达",
+    "aliases": []
   },
   {
     "id": "mgsd-destiny-gundam",
@@ -2274,7 +2615,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mgsd-destiny-gundam.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260224/51bfdaea13b827be589fc44f6eb8ed39.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "命运高达",
+    "mechId": "命运高达",
+    "aliases": [
+      "Destiny Gundam",
+      "Destiny"
+    ]
   },
   {
     "id": "bc-3430",
@@ -2299,7 +2646,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3430.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260317/65e7fd1738442442d7810893f1694376.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "创制强袭高达 超银河",
+    "mechId": "创制强袭高达超银河",
+    "aliases": []
   },
   {
     "id": "bc-3157",
@@ -2324,7 +2674,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3157.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260113/97a7decb92eb29410e3481e1815f8795.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-31S SIEGFRIED",
+    "mechId": "vf-31ssiegfried",
+    "aliases": [
+      "VF-31S"
+    ]
   },
   {
     "id": "bc-3159",
@@ -2349,7 +2704,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3159.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260113/2d0a720c972d610eb823a4247781f89b.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-31S SIEGFRIED",
+    "mechId": "vf-31ssiegfried",
+    "aliases": [
+      "VF-31S"
+    ]
   },
   {
     "id": "pb-355",
@@ -2377,7 +2737,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-355.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251023/f56d3554ae46c8771f6dd8c386c67028.jpg",
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000249825/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000249825/",
+    "mech": "01高达",
+    "mechId": "01高达",
+    "aliases": []
   },
   {
     "id": "bc-3136",
@@ -2402,7 +2765,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3136.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/01/SSHINvSW6oNiRK9L/AEB9Zs1bKgtzyRr8.jpeg?Expires=1792507445&Key-Pair-Id=K7AVJM1114TH7&Signature=Hpe4CFpd8579wxS6Tm-45dllOYuhOn97HQCG-J2LKyEFiATBbfoKOyyrj~hn6IU~K7~ZaOPxg3a-scLa40AzNB0Rk0Er3lgs32Ga3ujLLenCE1BEhnAea5jInORzArDWPBVPJXCIG3km2mV8evqbB4vTpe7Z0ULbvVAeR1n6GBKdmlmjsZUZV1vfRFWwAC2iaWTgvo4Vblkvvjm0m0kbCh7vwQSDiNlsORx7UC9ePD-OrAEwP2X-MnvIBqyNRWzb7nNp~iDCNkgnPUiqUH58Ny1iXAc3vxde-WPILuWOq0wNDM0JpOJm6hyupf4CkOc0aklwcbevZqnY5YhCjCRIFA__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_6874/"
+    "sourceJp": "https://bandai-hobby.net/item/01_6874/",
+    "mech": "传说高达",
+    "mechId": "传说高达",
+    "aliases": []
   },
   {
     "id": "hg-gquuuuuux-endymion",
@@ -2431,7 +2797,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-gquuuuuux-endymion.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/01/HpMblsnPqcNzXpdn/o18RIyk7s170YFF0.jpeg?Expires=1792507207&Key-Pair-Id=K7AVJM1114TH7&Signature=cYKeOn3eVYdHZXnM6qHHDZYhlHDCvjiADGPJp0gqFBbWn2is-xJVi~3zZeizf5z1bUFc7bLABJpOxIU~mSTN90pI4xtqXEAP5b7UEuZhkeTSUTTcwW6o-zwQBiBo2sbh5LQfh29fjjVOsLf1Seg9o6MUFexpVuHFl3A7de-zlgWlRDOyHFl6eUgFo~YyjC5aISGK5cOPyEzRNCqT4HfmXlXD5572ux~VqYOgedAeZtLiq4or25qP41XoygAcWTcdqytmrWpqdq8mPx4fBhBMJeyu8q4nIuJQqma5mxDsMCc13MEgXp8ncJA9122x1oEwonilypc1YCQaKDKzTzcWJw__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_6865/"
+    "sourceJp": "https://bandai-hobby.net/item/01_6865/",
+    "mech": "GQuuuuuuX 恩底弥翁装置觉醒时",
+    "mechId": "gquuuuuux恩底弥翁装置觉醒时",
+    "aliases": []
   },
   {
     "id": "bc-3133",
@@ -2456,7 +2825,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3133.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260126/213c7a6e64cab454cb25b073484186ab.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "龙王丸",
+    "mechId": "龙王丸",
+    "aliases": []
   },
   {
     "id": "bc-3336",
@@ -2481,7 +2853,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3336.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260122/9f28a282bc2e4bcbb69f957b8c7951ab.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强袭自由高达",
+    "mechId": "强袭自由高达",
+    "aliases": [
+      "Strike Freedom Gundam",
+      "强袭自由",
+      "SF",
+      "Strike Freedom"
+    ]
   },
   {
     "id": "pg-unleashed-nu-gundam",
@@ -2511,7 +2891,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pg-unleashed-nu-gundam.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/01/b3CTYNZuzLyVAi1X/j5XlyShBIf4YiTr5.jpg?Expires=1792508063&Key-Pair-Id=K7AVJM1114TH7&Signature=cz6nGRyAh5fZCUF0OeBFpv-iZVrIlJylR1EUT7oqqFHM0Vp3L1maVhbpesU8qpjt~sfYDqo6xwdo3lsmJ8wtmYo~gSAnuCdOBlL8JF4M-VcgJL4yFeeJFDRXZH52yVe~R-V9hXlgzdsu1HilOjg1Jfyx0dirWRklaOMdKkA3mMMCrY68lHgIxvmhDW27OlVfk4Kh77W9WgQ~zCLOI0lYxmIbl76Z-6mWv1t79eYf~azzcl3DIWVtGXUE7FQnyzOrQTuL8lNN~lFfZ9rPZ6G7DgWg67sdATlgsBgCEfKM~a5BMF6lV7nz~n7~7vIdVmmqYNk6NROFVSPS-HyA94ZwPg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_6783/"
+    "sourceJp": "https://bandai-hobby.net/item/01_6783/",
+    "mech": "ν高达",
+    "mechId": "ν高达",
+    "aliases": [
+      "Nu Gundam",
+      "牛高达",
+      "牛"
+    ]
   },
   {
     "id": "bc-3057",
@@ -2536,7 +2923,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3057.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/06/tCoXmGuucvblAuwi/6kFh9JS8XzVRn1RY.jpg?Expires=1792507973&Key-Pair-Id=K7AVJM1114TH7&Signature=eQtrHK4EOQt2l1Rkrt4q5y~28VApC2GVcDG8MdEtwqgYM~CqIG02vU2GiECPzaKW92uTGA8lh19ZymrY~TSU93UA9uisxMJaMWBjwgXRsBAqBH5q-2ifycagtCkwosX0X~jaHxcfxkQihJErnY7cJRvKC286I8crVlIhBFrgtc2eSYjJ2tv9HzRAM0LUeMMQGUisNOtsBknu7r87DLll60se9b3XNZzJMuzX2uo8LdmrEbqKt6DAMb8b6lO07XjV0G6Z8HLu~O3TvQkE2ykGQgjFSMBdmeXbNhAelQyM5-3mYyyQPcDwFvmlK4nPucutxQzmVerSFvEdTpFolld5nQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_6784/"
+    "sourceJp": "https://bandai-hobby.net/item/01_6784/",
+    "mech": "ν高达用LED组件",
+    "mechId": "ν高达用led组件",
+    "aliases": []
   },
   {
     "id": "bc-3300",
@@ -2561,7 +2951,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3300.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251225/f6dd5c79b0754db0ce6e29c79cc9c741.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "德天使高达",
+    "mechId": "德天使高达",
+    "aliases": []
   },
   {
     "id": "bc-3299",
@@ -2586,7 +2979,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3299.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251225/0c8109384a3829d7f4e34e2f2dd09651.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "战国异端顽驮无",
+    "mechId": "战国异端顽驮无",
+    "aliases": []
   },
   {
     "id": "bc-3302",
@@ -2611,7 +3007,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3302.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251225/64ffd81411f9e767543223219e44fe81.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "乍得·多加",
+    "mechId": "乍得·多加",
+    "aliases": [
+      "Jesta",
+      "贾斯塔",
+      "渣爹"
+    ]
   },
   {
     "id": "hg-white-gundam-gq",
@@ -2641,7 +3044,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-white-gundam-gq.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251201/84b22f2f76b5ed565900bf7166510560.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "白色高达",
+    "mechId": "白色高达",
+    "aliases": []
   },
   {
     "id": "pb-367",
@@ -2669,7 +3075,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-367.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251107/ea9c398fa4fbabd994bbf4787023d471.jpg",
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000242742/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000242742/",
+    "mech": "高达7号机",
+    "mechId": "高达7号机",
+    "aliases": []
   },
   {
     "id": "pb-350",
@@ -2697,7 +3106,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-350.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251016/9bb2d38ff4908f67fa72e28a8cd766d5.jpg",
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000242742/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000242742/",
+    "mech": "高达7号机",
+    "mechId": "高达7号机",
+    "aliases": []
   },
   {
     "id": "bc-3046",
@@ -2722,7 +3134,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3046.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251201/677d0e6cebbae248425222dba1db86d1.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达扎冈",
+    "mechId": "高达扎冈",
+    "aliases": []
   },
   {
     "id": "hg-chara-zaku-gq",
@@ -2751,7 +3166,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-chara-zaku-gq.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251201/80209822b90c73ec9f03a0252e6d0060.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "夏亚专用扎古",
+    "mechId": "夏亚专用扎古",
+    "aliases": []
   },
   {
     "id": "bc-3052",
@@ -2776,7 +3194,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3052.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251211/9d56e6ff9e59cceb2380aaf92c6fd44b.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "凶鸟",
+    "mechId": "凶鸟",
+    "aliases": [
+      "PTX-08R"
+    ]
   },
   {
     "id": "mr-strike-freedom-recoord",
@@ -2805,7 +3228,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强袭自由高达",
+    "mechId": "强袭自由高达",
+    "aliases": [
+      "Strike Freedom Gundam",
+      "强袭自由",
+      "SF",
+      "Strike Freedom"
+    ]
   },
   {
     "id": "bc-3199",
@@ -2830,7 +3261,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3199.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251114/301a0e4ce485e5ff4a4fd902268bb783.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "百式",
+    "mechId": "百式",
+    "aliases": [
+      "Hyaku Shiki",
+      "百式高达"
+    ]
   },
   {
     "id": "bc-3208",
@@ -2855,7 +3292,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3208.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251118/a135fda30c5677900821527fd877fb61.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "无限正义高达二式",
+    "mechId": "无限正义高达二式",
+    "aliases": [
+      "Infinite Justice Gundam II",
+      "无限正义2号机",
+      "IJ2"
+    ]
   },
   {
     "id": "bc-3036",
@@ -2880,7 +3324,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3036.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/10/TYzvBiYogXtVRogr/F79n4STPSDHPyczZ.jpeg?Expires=1792507400&Key-Pair-Id=K7AVJM1114TH7&Signature=dUb8KrakOiPQTltFApWulTozip~OZ-egkTFYpZFbOU4OM1o8-y-AOyz3g3pKEpGebB6F2E1U9dJi7oBZxALnOzO4bolWa2ELMQ~jlItnDg~hnOJN37zp6gpm1FusBuW1N1DnoavJ6JCzE3QI7t11JCC01OUPy6YEUKAo8OuPkyUWMCERnNuYav1iPyS9xLE1vYyRor6lOt1kncrX5jjZJTJh5OaQnAlJegZ4bMEhbwukwlIAz13xa8E1TIWFAepUVrKyU9wkBnjM2PCi6oUuCtfOBKsRV3ZicdPDWrdh0sFyIvBI3Gj9cl3nQ0lpKvzK8h6zd7Cd6VL3ipofURJ1Ig__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_6763/"
+    "sourceJp": "https://bandai-hobby.net/item/01_6763/",
+    "mech": "猿式罗迪",
+    "mechId": "猿式罗迪",
+    "aliases": []
   },
   {
     "id": "hg-zaku-gq",
@@ -2909,7 +3356,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-zaku-gq.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/10/AuxSsUgr7CCbrtmI/AYckogyh4PmRHxdw.jpeg?Expires=1792507216&Key-Pair-Id=K7AVJM1114TH7&Signature=LafqjgWTjd8Rg8-nVdDc~iD~mNpgXoFL8hrKXV1MxpOSVM-FzZiVmhYMIXdaJZzKAIYRsIDfX37eTZXElGNRnDn52lO6ICNaT76o0Rb04MNRIfKjtQDEMHFp4GuPLHdoupURFZX5BQhXkbMpm40LhPT3MoRvoafTGGTthyGqRCbDNVlS~hzgYnau6Nx6H8xoNcIcKFSdMVTKIIkyLzqt7bqm~CVaUQ33XbzL9oG3X--yaPWTPdQh2Ct2p6qIvxSOVj1yBMEuud4tlE9iKwMBtckmF6YUh0WjngMTpMj7PJ85q-LItgH3o69EGoVED9XPYWZBsWkuER92lKV8yds4Rw__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_6772/"
+    "sourceJp": "https://bandai-hobby.net/item/01_6772/",
+    "mech": "渣古",
+    "mechId": "渣古",
+    "aliases": [
+      "Zaku",
+      "扎古"
+    ]
   },
   {
     "id": "bc-3037",
@@ -2934,7 +3387,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3037.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/11/g6ibYuiDzsnBNMnz/TtX5aZIg9HqLJK9f.jpeg?Expires=1792507735&Key-Pair-Id=K7AVJM1114TH7&Signature=DPp5sc6FrOz6SZmsoZUhJcAfi9Wm-BG8QwltTjkKkfn-R-uA1OMaKP9cSC3MqUtJjGIMsEGmv1pEORALNvqPvjE8SJyXLYQaPIUP0THBCuS3iSWleWam0sRHGPfTpboDQDvvzVAl45pIy8natYOQYWtuxUuR9ughqTHgTZeuVLJoloQq8XeGUbLz037J6uiMGwObCiys08VYcKAWwACli7H7Suc8odIYa3Ohx5DAy1MCMca5YIzBC7UoUbFFIQtCFUFkldyMKgtJzpaiMbiiX6PRELjBXsSZpJC3V0KXVHYL08HdeEYliFXYIdSm0wdMSlV~5RGR1-dkF55ZAIrVIg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_6764/"
+    "sourceJp": "https://bandai-hobby.net/item/01_6764/",
+    "mech": "高达巴巴托斯 天狼型",
+    "mechId": "高达巴巴托斯天狼型",
+    "aliases": [
+      "Gundam Barbatos (Lupus Rex)",
+      "巴巴托斯天狼型",
+      "天狼型",
+      "Lupus Rex"
+    ]
   },
   {
     "id": "bc-3209",
@@ -2959,7 +3420,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3209.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251118/6f40e1a57a79779d57435c5fec1eae9b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "老虎",
+    "mechId": "老虎",
+    "aliases": [
+      "Leo-R",
+      "老虎",
+      "Leo"
+    ]
   },
   {
     "id": "bc-3301",
@@ -2984,7 +3452,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3301.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251225/dcd6f8ce33ba2164e2c949ff98f2d55a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ν高达",
+    "mechId": "ν高达",
+    "aliases": [
+      "Nu Gundam",
+      "牛高达",
+      "牛"
+    ]
   },
   {
     "id": "bc-3195",
@@ -3009,7 +3484,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3195.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251020/48173b6af2e319f405ed59780563d633.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽高达3号机凤凰 金银电镀",
+    "mechId": "独角兽高达3号机凤凰金银电镀",
+    "aliases": []
   },
   {
     "id": "bc-3027",
@@ -3034,7 +3512,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3027.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/10/FqukCxZBdqmjWxCB/OJ0iH6QbdHlXcVZR.jpeg?Expires=1792508308&Key-Pair-Id=K7AVJM1114TH7&Signature=Qx8tqHTER9Y2i-kkl8TuaqE7XMeYJUHuyCY3fAe9n0-mpQn70chy7cZ-Av0cPCDPky3VZgOeVv6pL9dkQ8Ci3SaTMd7B6QEisDV0QZxGkvP5F3YQkWXeACQ1NkGdCdqoO3Fz~E5SJUhkrbPC9ikPwlRSUDTtKRQqQX~ka5qhafJaN1Y3Zhxd7n45UOOrPQT6DU-vLnsfBpC1aWYyssmFagHXBDWcObiRBwAgnS0FH2Jb4ejh8AC-kCjTEUOo9ar89kiz0CPzcR5bMJew~v41gm-U6QOcN2ZLh2KsvZmAefMVNr-JTTl3Ne4etbbBtz3SzueFPzqXpR~UkxlgUgWA7Q__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_6753/"
+    "sourceJp": "https://bandai-hobby.net/item/01_6753/",
+    "mech": "飞翼高达",
+    "mechId": "飞翼高达",
+    "aliases": [
+      "Wing Gundam",
+      "飞翼"
+    ]
   },
   {
     "id": "bc-3032",
@@ -3059,7 +3543,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3032.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250606/3e76b94aca5a7e8cfe2d93f682747a71.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-31C SIEGFRIED",
+    "mechId": "vf-31csiegfried",
+    "aliases": [
+      "VF-31C"
+    ]
   },
   {
     "id": "bc-3034",
@@ -3084,7 +3573,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3034.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250606/0f3528b7dd0bd38be4d8db6ddf5c38d8.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-31C SIEGFRIED",
+    "mechId": "vf-31csiegfried",
+    "aliases": [
+      "VF-31C"
+    ]
   },
   {
     "id": "bc-985",
@@ -3109,7 +3603,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-985.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/edeab4ae911af743ff8dda3a0a433250.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "暗物质能天使高达",
+    "mechId": "暗物质能天使高达",
+    "aliases": [
+      "Geymalk (Dark Matter)",
+      "暗物质能天使",
+      "Dark Matter Geymalk"
+    ]
   },
   {
     "id": "bc-910",
@@ -3134,7 +3635,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-910.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231106/4fa4136e2d3198fbf2dce53dd72b766e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "凤凰飞翼高达",
+    "mechId": "凤凰飞翼高达",
+    "aliases": []
   },
   {
     "id": "bc-1065",
@@ -3159,7 +3663,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1065.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231110/b085934dc0592d5638c1e7625183f340.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "惊异能天使高达",
+    "mechId": "惊异能天使高达",
+    "aliases": []
   },
   {
     "id": "bc-3287",
@@ -3184,7 +3691,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3287.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251203/ce66b48938126a7a55ca1d9b80843990.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "涅槃高达",
+    "mechId": "涅槃高达",
+    "aliases": []
   },
   {
     "id": "bc-871",
@@ -3209,7 +3719,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-871.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231106/2e9283a08d93fe2608d07065d965973d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "全装备型创制强袭高达",
+    "mechId": "全装备型创制强袭高达",
+    "aliases": [
+      "Full Armor Strike Gundam",
+      "全装备型强袭",
+      "FA强袭"
+    ]
   },
   {
     "id": "bc-1091",
@@ -3234,7 +3751,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1091.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231113/871c8a400b52e0e3730098b74901484f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "新生凤凰高达",
+    "mechId": "新生凤凰高达",
+    "aliases": []
   },
   {
     "id": "bc-945",
@@ -3259,7 +3779,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-945.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/8950cd82088806c398d022eb287dbbdd.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "星际创制强袭高达 帕拉夫斯基之翼",
+    "mechId": "星际创制强袭高达帕拉夫斯基之翼",
+    "aliases": []
   },
   {
     "id": "bc-909",
@@ -3284,7 +3807,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-909.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231106/924369c05d4b15451493b096a27bbe47.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "熊霸III",
+    "mechId": "熊霸iii",
+    "aliases": []
   },
   {
     "id": "bc-927",
@@ -3309,7 +3835,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-927.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231106/2d37454ae57cf926c251ac182e7c9b91.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "战国异端顽驮无",
+    "mechId": "战国异端顽驮无",
+    "aliases": []
   },
   {
     "id": "bc-3289",
@@ -3334,7 +3863,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3289.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251203/c54d741194627a2f0d5e5c3179baa516.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "格拉汉姆专用联合战旗特装型Ⅱ",
+    "mechId": "格拉汉姆专用联合战旗特装型ii",
+    "aliases": []
   },
   {
     "id": "bc-3286",
@@ -3359,7 +3891,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3286.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251203/6b7b6ac6b2f42cc70350451bc733c27b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "量产型亡灵Mk-II",
+    "mechId": "量产型亡灵mk-ii",
+    "aliases": []
   },
   {
     "id": "mr-white-gundam-gq",
@@ -3388,7 +3923,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "白色高达",
+    "mechId": "白色高达",
+    "aliases": []
   },
   {
     "id": "bc-3288",
@@ -3413,7 +3951,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3288.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251203/a6c16f76396345c2379ad9fd8e24e007.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "G-3高达",
+    "mechId": "g-3高达",
+    "aliases": [
+      "G-3",
+      "G-3 Gundam",
+      "G3高达"
+    ]
   },
   {
     "id": "bc-3193",
@@ -3438,7 +3983,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3193.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251020/5e0266a9a00e01769f7e143c56ddca18.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "瓦基尔(高达头",
+    "mechId": "瓦基尔高达头",
+    "aliases": []
   },
   {
     "id": "bc-3204",
@@ -3463,7 +4011,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3204.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251118/d887fce234d3d6369e3236dacaa53026.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达MK-Ⅲ",
+    "mechId": "高达mk-iii",
+    "aliases": []
   },
   {
     "id": "hg-liger-doga-gq",
@@ -3492,7 +4043,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-liger-doga-gq.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/09/7FImlQnBoRwfw2Lk/vyjK5DAI0CxfjzEE.jpeg?Expires=1792507191&Key-Pair-Id=K7AVJM1114TH7&Signature=SQS~Zk6gDmUao28tTfCbbz1cYEvdCfzuqRrBZpbwWVc-H~QtI1~LHMR7~O1GBWxTO-K5GfsOR3b6Qh~HmW3lWIUZrYNavf7EUN4OsNqG2XWocRtcNc-b8jwJqVaDyLnk~JumVc7dsjlFn-aDWZVQ-NSa3gNJWPNrfG4OCxKsJCgBNqlGBbOrN7alxPPW-c~R1u4NMQak9upaE1XPfe6swpS8gwlXnBr~q-3H6YnirGXyVipdjjQa435ijCMxXGO~fQiKtHJjhOk6aMdpR9wStqJKFfKKekBX2CICS5autRC-~FHnSFA47zkm8dVGQRoNLpWEX3tRJ4rgrgEMIJbizg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5986/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5986/",
+    "mech": "力克·大魔 盖亚机",
+    "mechId": "力克·大魔盖亚机",
+    "aliases": []
   },
   {
     "id": "bc-3283",
@@ -3517,7 +4071,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3283.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251203/be503141acf497572474f0b9da0ca223.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "梅萨F02型 布雷装备",
+    "mechId": "梅萨f02型布雷装备",
+    "aliases": [
+      "F02"
+    ]
   },
   {
     "id": "bc-3280",
@@ -3542,7 +4101,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3280.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251203/3eb17c5c395c3318f4ed6470f6c9ed32.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "命运高达",
+    "mechId": "命运高达",
+    "aliases": [
+      "Destiny Gundam",
+      "Destiny"
+    ]
   },
   {
     "id": "bc-3203",
@@ -3567,7 +4132,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3203.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251118/b4164af78781b69e84e90e51bafb5599.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MSN-04Ⅱ 夜莺",
+    "mechId": "msn-04ii夜莺",
+    "aliases": [
+      "MSN-04"
+    ]
   },
   {
     "id": "bc-3194",
@@ -3592,7 +4162,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3194.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251020/90ab66c7f4c4f5d4e36888c972dadf57.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "梅德",
+    "mechId": "梅德",
+    "aliases": []
   },
   {
     "id": "bc-3281",
@@ -3617,7 +4190,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3281.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251203/9fdc3b24dd3d390544eb7b70f0ee5cd8.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "瞬发扎古幻影",
+    "mechId": "瞬发扎古幻影",
+    "aliases": []
   },
   {
     "id": "bc-3282",
@@ -3642,7 +4218,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3282.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251203/188c65f76e65edae58f69f3fa24a87cf.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Ex-S高达",
+    "mechId": "ex-s高达",
+    "aliases": []
   },
   {
     "id": "bc-3278",
@@ -3667,7 +4246,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3278.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251203/fbd8630f84e22f16be9e9c925ac95cef.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆·指挥型",
+    "mechId": "吉姆·指挥型",
+    "aliases": [
+      "Gelgoog (Command Type)",
+      "指挥型吉姆",
+      "GM指挥型"
+    ]
   },
   {
     "id": "bc-2946",
@@ -3692,7 +4278,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2946.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/09/gKyYklWtO9rk6vFJ/7y0fW9YQ7PpGrpAm.jpeg?Expires=1792508081&Key-Pair-Id=K7AVJM1114TH7&Signature=LT2gBqXufFh-89krYk9o04eZ9meJKa-iLZk-ElIFml79rkHZjskvNPWYVI0Z-EbzZR873qc3DiGWdth1aqf6cesrVn9qTj45H2~PvIVaGh83MGGI35Pn4IbBEYzXoFvmVEokbtSnJLCawOsLMgWo1qr68Bk04ua1f5SMQzNMh6ijB9Ihs0UkugEDzEtv4xiOC2nIA5eBURR20hTHqNt26SeclD6RHGjJ2YIgiKooc~WCTO667fN85mkgiG1WLfpfnRzWMGP6qI6WBIXKjedpKtHMPMdCmozXfXLpej7bqkd3KfKtG72gLMJvIhArsX1HHNQXcfSY2BLUJd4yZcU-Fw__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5968/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5968/",
+    "mech": "飞翼高达零式",
+    "mechId": "飞翼高达零式",
+    "aliases": [
+      "Wing Gundam Zero",
+      "飞翼零式",
+      "Wing Zero"
+    ]
   },
   {
     "id": "bc-3167",
@@ -3717,7 +4310,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3167.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251001/1a3ae82d02399abc8059428f94f76527.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ZGMF-X10A 自由高达 Ver.GCP 未启动形态",
+    "mechId": "zgmf-x10a自由高达ver.gcp未启动形态",
+    "aliases": [
+      "X10A"
+    ]
   },
   {
     "id": "pb-306",
@@ -3725,7 +4323,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "RG 1/144 G-3ガンダム Ver.2.0",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/144",
     "released": "2025-09",
     "priceJpy": 4180,
@@ -3745,7 +4343,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-306.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250807/6f206fb2ec3db01e1af10fdf97bc428b.jpg",
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000235759/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000235759/",
+    "mech": "G-3高达",
+    "mechId": "g-3高达",
+    "aliases": [
+      "G-3",
+      "G-3 Gundam",
+      "G3高达"
+    ]
   },
   {
     "id": "bc-3277",
@@ -3753,7 +4358,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/144",
     "released": "2025-09",
     "priceJpy": 0,
@@ -3770,7 +4375,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3277.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251203/318e122034a7acbe6641921dec4c22f5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "MS-06S",
+      "Zaku II",
+      "扎古II",
+      "沙扎比"
+    ]
   },
   {
     "id": "mr-gquuuuuux",
@@ -3799,7 +4412,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "GQuuuuuuX",
+    "mechId": "gquuuuuux",
+    "aliases": []
   },
   {
     "id": "bc-3207",
@@ -3824,7 +4440,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3207.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251118/41b6167e0465f3395800b924d709694d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "非凡强袭自由高达",
+    "mechId": "非凡强袭自由高达",
+    "aliases": [
+      "Strike Freedom Gundam (MGEX)",
+      "MGEX强袭自由",
+      "非凡强袭自由"
+    ]
   },
   {
     "id": "bc-3271",
@@ -3849,7 +4472,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3271.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251203/4792e7b413bbde5fa98a2bcbbb756579.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "杰诺亚斯O特装型",
+    "mechId": "杰诺亚斯o特装型",
+    "aliases": [
+      "Geymalk",
+      "Geymalk O-Type",
+      "杰诺亚斯"
+    ]
   },
   {
     "id": "bc-2936",
@@ -3874,7 +4504,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2936.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/08/ZlMQAV6jKsqUqmpX/SVukf9fPOnDsnNGV.jpeg?Expires=1792507379&Key-Pair-Id=K7AVJM1114TH7&Signature=Dy7ixIuFPuWkl9A4L81X6YsutKz1lmQ-J9TD9E6FAk4a-wYaITvZfVLwXZJRpN37pTV172eE4zzKpBlCvi7tqy6fentu~XZGd0sose6k7NtjyvdlOYRCWCeXfX45hv3hJ-HuSJT46BYFYwWwcVFM-mx1fJF1Q55U0OuRPUfxaoEtA1V8JWQP-6dIy~~KA63OIo6M7BGt0-O90SCIK3uf2h5K5ArZr7Kpbd0r57Qb1hepvUP94U7vjAbme20ZQK2ojOH9Da6xWBGs4C-g7LyysecDaGv23dS2LsANhjbuG~JJYstiqyRW~tmFWrT-ug4bW4exFvm39R6zYozg16~gDQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5963/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5963/",
+    "mech": "卡尔斯Ｊ",
+    "mechId": "卡尔斯j",
+    "aliases": []
   },
   {
     "id": "pb-294",
@@ -3902,7 +4535,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-294.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250710/be503141acf497572474f0b9da0ca223.jpg",
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000250253/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000250253/",
+    "mech": "梅萨F02型 布雷装备",
+    "mechId": "梅萨f02型布雷装备",
+    "aliases": [
+      "F02"
+    ]
   },
   {
     "id": "pb-347",
@@ -3930,7 +4568,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-347.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251015/3eb17c5c395c3318f4ed6470f6c9ed32.jpg",
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000244468/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000244468/",
+    "mech": "命运高达",
+    "mechId": "命运高达",
+    "aliases": [
+      "Destiny Gundam",
+      "Destiny"
+    ]
   },
   {
     "id": "pb-290",
@@ -3958,7 +4602,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-290.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250613/3eb17c5c395c3318f4ed6470f6c9ed32.jpg",
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000244468/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000244468/",
+    "mech": "命运高达",
+    "mechId": "命运高达",
+    "aliases": [
+      "Destiny Gundam",
+      "Destiny"
+    ]
   },
   {
     "id": "bc-3276",
@@ -3983,7 +4633,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3276.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251203/1ae3f4f664d0b3ead75f6dd76a7417a5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "齐利乌斯高达",
+    "mechId": "齐利乌斯高达",
+    "aliases": []
   },
   {
     "id": "bc-3272",
@@ -4008,7 +4661,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3272.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251203/fdfb30b10911a62ce2d3eb35f0d862bb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "十字神殿 海尔密涅",
+    "mechId": "十字神殿海尔密涅",
+    "aliases": []
   },
   {
     "id": "hg-gfreed",
@@ -4037,7 +4693,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-gfreed.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/07/TtP6linseZXM2Jhv/oENOy3rEC3vTJcKc.jpeg?Expires=1792507379&Key-Pair-Id=K7AVJM1114TH7&Signature=LKSGe~3UBujph70PV2-3~ml~ZqSeoqAOoWbFSswBn1Mihc9CBwqZ-B09Vcu75eMo3TIzNhCKOEXXPlbiwuoLX-56Bd8eMFqfd-alqIMv~khHRDpbPcKMLln~EMdbJsjMY-J8jpZgxPM~yfckWHQorDUpuCwhCW~y8UBOKK7xXQPq7qQflOW1BFlkkRatRkwRAGe92Lv30hlNIy7djOJB~~7l1uMokxA3rA5IYepJ5~2xReeWMYSV18~vNjMQOjfGMHMghx79~LGyB6o-sJHYAQq1F0j6kWHz86VxiEbh3HJVZioNMSjJzmeeJlJ1rXXT0cCBnGpZJhixdkd139BIpw__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5961/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5961/",
+    "mech": "GFreD",
+    "mechId": "gfred",
+    "aliases": []
   },
   {
     "id": "bc-3205",
@@ -4062,7 +4721,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3205.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251118/71d3674e7bb309c8a8ac7c534a83c7af.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "Zaku II",
+      "扎古II",
+      "沙扎比",
+      "MS-06S"
+    ]
   },
   {
     "id": "bc-3206",
@@ -4087,7 +4754,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3206.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251118/aca7c8b884afe44edd9002ac630ba7c1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ν高达",
+    "mechId": "ν高达",
+    "aliases": [
+      "Nu Gundam",
+      "牛高达",
+      "牛"
+    ]
   },
   {
     "id": "mgsd-aerial",
@@ -4116,7 +4790,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mgsd-aerial.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250818/dbd02ad9d2fc7777079e0cdea5902482.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "风灵高达",
+    "mechId": "风灵高达",
+    "aliases": [
+      "Windmakk",
+      "风灵"
+    ]
   },
   {
     "id": "bc-2931",
@@ -4141,7 +4821,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2931.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250219/6e813056156e99424dbd05179a12e449.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-31J SIEGFRIED",
+    "mechId": "vf-31jsiegfried",
+    "aliases": [
+      "VF-31J"
+    ]
   },
   {
     "id": "bc-2933",
@@ -4166,7 +4851,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2933.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250219/d42606016b84ccd30e3d6420727f89cf.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-31J SIEGFRIED",
+    "mechId": "vf-31jsiegfried",
+    "aliases": [
+      "VF-31J"
+    ]
   },
   {
     "id": "bc-3269",
@@ -4191,7 +4881,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3269.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/ca8bb55605112759bb4c80b99051c8ce.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "黑色审判女神高达",
+    "mechId": "黑色审判女神高达",
+    "aliases": []
   },
   {
     "id": "bc-3266",
@@ -4216,7 +4909,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3266.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/167a23d3e840dc52d6cd4ade3b5dc4e7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "里奥-N",
+    "mechId": "里奥-n",
+    "aliases": [
+      "Leo-N",
+      "里奥N"
+    ]
   },
   {
     "id": "hg-light-cannon-gq",
@@ -4245,7 +4944,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-light-cannon-gq.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/06/Q4w22cbQnDunRrXK/Ya2s36TURjBxLhjX.jpeg?Expires=1792507245&Key-Pair-Id=K7AVJM1114TH7&Signature=DN8lb0Po5ob9ggts2JK8jiJO~dIrncBtu1mnpL1uLQAMDDOw4EG1SEa4yzKNeAy7gNikxqV4JVyzgnjPLobznLR0MZwJi5IsT44Brx9O7VKWcWrLeA56Zw0Tojy-Y8Q6yeHhrzGdgk-8icKGnly~Kc73RxIzaYSR2tqd0AZUVtiYsUp45831ixx8hCLXSTBBvaq9b2ILA8ZnqPPBeDsys3lNU1hwXIDFeVGg1Uir5ISg~08mpbIJ3ZvOSS2gE5~99gjujAjUpOR~cymwpHytEme0zIBnL0Xw7HNzy28-g1nk7tX4sLMphznjFwkobrpzWMx2V6yJ~vXq2lVPdVAg2Q__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5951/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5951/",
+    "mech": "轻加农",
+    "mechId": "轻加农",
+    "aliases": []
   },
   {
     "id": "hg-zeppelin-strongman-gq",
@@ -4274,7 +4976,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-zeppelin-strongman-gq.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250521/fadc64970a9b59cdad3e6ca629b0aa2a.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "泽维尔专用强人",
+    "mechId": "泽维尔专用强人",
+    "aliases": []
   },
   {
     "id": "bc-3267",
@@ -4299,7 +5004,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3267.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/4f69badf713bf30d5fd7dc0fd03b35fc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆 DOMINANCE",
+    "mechId": "吉姆dominance",
+    "aliases": []
   },
   {
     "id": "pb-346",
@@ -4307,7 +5015,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "ＭＧ 1/100 Ｅｘ-Ｓガンダム/Ｓガンダム (タスクフォースα Ｖｅｒ.)",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "gundam-front",
     "scale": "1/100",
     "released": "2025-07",
     "priceJpy": 16500,
@@ -4327,7 +5035,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-346.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251015/188c65f76e65edae58f69f3fa24a87cf.jpg",
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000242860/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000242860/",
+    "mech": "Ex-S高达",
+    "mechId": "ex-s高达",
+    "aliases": []
   },
   {
     "id": "bc-3265",
@@ -4352,7 +5063,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3265.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/cc12a273562533b5966bd746decb1a06.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "F80 钢瑞德",
+    "mechId": "f80钢瑞德",
+    "aliases": [
+      "F80"
+    ]
   },
   {
     "id": "pb-387",
@@ -4360,7 +5076,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "ＭＧ 1/100 Ｅｘ-Ｓガンダム/Ｓガンダム (タスクフォースα Ｖｅｒ.)",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "gundam-front",
     "scale": "1/100",
     "released": "2025-07",
     "priceJpy": 16500,
@@ -4380,7 +5096,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-387.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251226/188c65f76e65edae58f69f3fa24a87cf.jpg",
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000242860/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000242860/",
+    "mech": "Ex-S高达",
+    "mechId": "ex-s高达",
+    "aliases": []
   },
   {
     "id": "bc-3268",
@@ -4405,7 +5124,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3268.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/bf3eb0ac5ec67f20194df99d063625f5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "雪崩突进型能天使高达",
+    "mechId": "雪崩突进型能天使高达",
+    "aliases": []
   },
   {
     "id": "bc-3263",
@@ -4430,7 +5152,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3263.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/ae36f79484149a772db2660e0d2b56fe.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "能天使高达用战损部件套装REPAIR PARTS SET",
+    "mechId": "能天使高达用战损部件套装repairpartsset",
+    "aliases": []
   },
   {
     "id": "bc-3132",
@@ -4455,7 +5180,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3132.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250630/9cda319b7b27a986fc3d813815bc3d46.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达巴巴托斯",
+    "mechId": "高达巴巴托斯",
+    "aliases": [
+      "Gundam Barbatos",
+      "巴巴托斯",
+      "古夫",
+      "Barbatos"
+    ]
   },
   {
     "id": "hg-gelgoog-bokata-gq",
@@ -4484,7 +5217,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-gelgoog-bokata-gq.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/04/mU61aKEIImTL5PTx/JIj7YiRxG9wKdPVC.jpg?Expires=1792507474&Key-Pair-Id=K7AVJM1114TH7&Signature=l5aG5u02T9s3lBpNfGNZBqJVY3szreMvkrWKmXSl7e2xDbADxBdK1NfLfCi8QEHZRDusWj38yw3gu29b2M~FsJLyFkqvDIfKWu8ZafCSGZdpUoAZTjtOeDZej-PZuL7h7Re8KH38KU6r99eMYX1O~eVrHn~SU0C4~8bZlWqip3z2GRIjNa4JNCy72bs8Iu3u8Wq7Ip~ICTt~RXN22Vs52ZdolRU6TxVjIqn6pfCF~sS3~CrFHT8Pwo~QrKJFo3vzr8BQvVD9z-K1qOWFQbSkXmyorKLEm9sNE-L3GPiwPWm~NYgFExq6jZck-37JWyAN2gyv8qxHpNfyaq7E5J9RNA__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5935/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5935/",
+    "mech": "格尔古格 波卡塔机",
+    "mechId": "格尔古格波卡塔机",
+    "aliases": []
   },
   {
     "id": "bc-3258",
@@ -4509,7 +5245,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3258.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/4f5d047bdc8bb7f9f68863e96f045024.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "战斗机甲萨芬格尔 布拉卡利",
+    "mechId": "战斗机甲萨芬格尔布拉卡利",
+    "aliases": []
   },
   {
     "id": "bc-3260",
@@ -4534,7 +5273,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3260.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/312150b46a18da1612f894b93777c2b7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "重生狼",
+    "mechId": "重生狼",
+    "aliases": []
   },
   {
     "id": "bc-2859",
@@ -4559,7 +5301,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2859.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241219/f1c73432f6a4d5b68be04d5a1e911ff9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "灰烬救世主",
+    "mechId": "灰烬救世主",
+    "aliases": []
   },
   {
     "id": "pb-248",
@@ -4587,7 +5332,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-248.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250313/cc12a273562533b5966bd746decb1a06.jpg",
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000224327/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000224327/",
+    "mech": "F80 钢瑞德",
+    "mechId": "f80钢瑞德",
+    "aliases": [
+      "F80"
+    ]
   },
   {
     "id": "bc-2828",
@@ -4612,7 +5362,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2828.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/06/CfLj4alMZbsf3M2a/ufK2d5x3VJKy8ZYf.jpg?Expires=1792508122&Key-Pair-Id=K7AVJM1114TH7&Signature=b87WBYB7fnKhmBjyJRdpiR~6BttROh3Zbjpz2XFvOZkUGYuRI0trfLYrt-C-nG1O5m3aNZXebO6ONSe3J4WWmwlfxdMSstE8rtbU3rFPEVYsO88tHd59A7RH~1opPbAilrM4TdJ5gRtP~WP7ale7VYyn30XwLC8ROfX3BrJD28m1TLRCKya2FzoKi~pX9zK-ADhHGB7sJ8fKvzDZXn3T2MPwXohhu5z1MgdhmIJK~SGXuN1FA81Jps0ApDBhrlSeC~stdvr6UQSvNkOolAWZYLy0xDBM9xmCVFbCcCk2E~rO8oTUfgtZ6ANC02xeG5~Ckt5MBWL1BCPP5JIcOw~G9A__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5544/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5544/",
+    "mech": "闪光高达",
+    "mechId": "闪光高达",
+    "aliases": []
   },
   {
     "id": "bc-3026",
@@ -4637,7 +5390,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3026.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250522/c7ebb05fc8cf870154b4fd2499e02cfb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Z高达",
+    "mechId": "z高达",
+    "aliases": [
+      "Zeta Gundam",
+      "Zeta",
+      "泽塔"
+    ]
   },
   {
     "id": "hg-gelgoog-gq",
@@ -4666,7 +5426,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-gelgoog-gq.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/04/1qmJYVklXa6AoJQZ/rVWahv04BDlToqbc.jpg?Expires=1792507478&Key-Pair-Id=K7AVJM1114TH7&Signature=hONmPxngv-WWwNjTGZRH3Ievf-qJYjhBN7jshN-S9Vv8yxl-uzIUPSn0GSxba6p8Wz7cG~v3cWaHnTeYsIS2BW9Sr-ebpwlwSji1igqAhXMyLOn7hjmT0Rp7XbW17Jnwd3onYr87Ea3wfYGYWY3c2FLsNv38~9DAja2VR0~TFQtXUu7VUTATYlbZMHp~Swbx3yGFJjNbCME5Imb1ZQurofxceaHAnPAU8bIWaWYgsJgsmfZHOYREyfyp7IGr0XveFCT0uy9C86G~keIUZmRlQLlTk7XvlUCj7zNxWMHVXtYAH-XFF7Gkx3xDEIjJw0MB0~gqhEmIZyOQN4djWZmGRA__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5932/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5932/",
+    "mech": "格尔古格 菅井机",
+    "mechId": "格尔古格菅井机",
+    "aliases": []
   },
   {
     "id": "hg-red-gundam-gq",
@@ -4695,7 +5458,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-red-gundam-gq.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/05/Tnm3dLjq5KJ0zHp5/VzEiEV3rfMXex5Ws.jpg?Expires=1792507300&Key-Pair-Id=K7AVJM1114TH7&Signature=cLF-a2IugM5zek0Tu4tnT~Syz9rlI6Nr9G6SfdbJ4PVzQ2FS1UPEns7PLcN93Y-5XA2qqfsCWMnl4ax-5D-bDuU1mkgOdp2DCt28lgEyWskAtsODsJ1uYmBu74VI7Ts8VEpQMc52YD6iOCqf8kz9OViqX3EHDnRsDdR2KfFRo-OGU32cEbRUX15hlQHMiqu2jaTCATCYE-oQ3l2H1TgKoc3Jf8NdgcFmVBF9BoVeh-0ww6deF1ciSAAK~DnbfufxzIXKU69iOL8z74v7UeusZIaMSdnx2xi0KBXvNQXC7H6Ytp5nxzyantD040lp-T8D9cU5s6T9GWm9TvMbEjz-mg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5933/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5933/",
+    "mech": "红色高达",
+    "mechId": "红色高达",
+    "aliases": []
   },
   {
     "id": "bc-3256",
@@ -4720,7 +5486,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3256.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/7f9e90ef327851bd8bf342645654477f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "沙漠型扎古 粉红豹小队机",
+    "mechId": "沙漠型扎古粉红豹小队机",
+    "aliases": [
+      "Zaku Desert Type (Pink Panther)",
+      "粉红豹扎古",
+      "沙漠型扎古"
+    ]
   },
   {
     "id": "bc-3257",
@@ -4745,7 +5518,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3257.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/531d65d414c6577b73858a5eefed5cdd.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉莱轻装甲型",
+    "mechId": "吉莱轻装甲型",
+    "aliases": []
   },
   {
     "id": "bc-3019",
@@ -4770,7 +5546,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3019.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250423/23184b453d626b97f217a5941982152e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "神高达 超级模式",
+    "mechId": "神高达超级模式",
+    "aliases": []
   },
   {
     "id": "bc-2963",
@@ -4795,7 +5574,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2963.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/04/Wg6unwhE5MEwAyE6/f8poAJ7rmBGxxuZQ.jpg?Expires=1792507478&Key-Pair-Id=K7AVJM1114TH7&Signature=J7rs8tkb1BvMcH6731vb64TpPLTXlbYKPfTeEIc7fnb7geLfQNoFNabmnFt3eaTf2a3y51llgwfyq5ZyJ8Z6sd04x6SDF~ynVyPQ1~YD2uDiFjoAkVL0AnlfpBTKkPqf4c6RgZdrdYl3ac4gAVsYk72BX34jh11Yx3iAtj3Z5kniMZhdqAOUAxyYMpcyjEfPVQf642b8uRQfws6yxzfUDIyLed-Qv3TCwlqQ6qpo~Zb7fCcCykMeMu~r2IciqPbBfsJfwvxjA7RPzlBN8kNcw3BDdT5b-kuAAJ59T7w-53VBsb-dd2aqKSt83O1dUQR0O4WfnZLbfDkJPsAb0msPwQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5931/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5931/",
+    "mech": "军警扎古",
+    "mechId": "军警扎古",
+    "aliases": []
   },
   {
     "id": "bc-3253",
@@ -4820,7 +5602,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3253.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/782cf44a5a6a5b73f63a4792e1152d85.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "夏亚专用高机动型扎古II",
+    "mechId": "夏亚专用高机动型扎古ii",
+    "aliases": [
+      "Zaku II (Char Type)",
+      "夏亚扎古",
+      "沙扎比",
+      "Char's Zaku"
+    ]
   },
   {
     "id": "bc-2836",
@@ -4845,7 +5635,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2836.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241113/0e78c11778d606ca3f00a24d95751f11.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "眼镜斗犬 涡轮特装型",
+    "mechId": "眼镜斗犬涡轮特装型",
+    "aliases": []
   },
   {
     "id": "bc-3252",
@@ -4870,7 +5663,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3252.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/c0e2ffc10cca2ca9ec3eed28ffa07da4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "武者高达Mk-II 徳川家康 南蛮胴具足",
+    "mechId": "武者高达mk-ii徳川家康南蛮胴具足",
+    "aliases": []
   },
   {
     "id": "bc-3254",
@@ -4895,7 +5691,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3254.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/29b94efb417580644a5504c1c54637bc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "巨剑型脉冲高达",
+    "mechId": "巨剑型脉冲高达",
+    "aliases": [
+      "Impulse Gundam (Giant Sword)",
+      "巨剑脉冲",
+      "脉冲高达巨剑型"
+    ]
   },
   {
     "id": "bc-3248",
@@ -4920,7 +5723,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3248.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/81bb62b30b24fb987b24ac2ec884ad26.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "戴斯塔尔 Desultor",
+    "mechId": "戴斯塔尔desultor",
+    "aliases": []
   },
   {
     "id": "bc-3247",
@@ -4945,7 +5751,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3247.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/5ec95cc064da12c51eab43bed5fa0c0e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "德尔塔Zayin",
+    "mechId": "德尔塔zayin",
+    "aliases": []
   },
   {
     "id": "bc-2785",
@@ -4970,7 +5779,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2785.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/03/cdcsdXVLdjULIhOX/Nce1RjgrZwzk6hhn.jpeg?Expires=1792507281&Key-Pair-Id=K7AVJM1114TH7&Signature=CFc0Xkury4m258urrfqq1ghI9zo~hZ2j2yz7QoCQhmSI8kmagsGC9izz9vVDZuZFXeERXPJJ4Pb3Luz5Ny1FVwQ787MPmwebU6231wNByk2eEDx53aUdE2CPxqFtgOEoYl58A6K5uT3twgacptTxo9MA20IFce10VTRtNQBkJCAQjuj~D58Fpb97vleckK99OwCwf3kreNgrjNNtYU-6DhJ4Scbi0DQqRppofIGye6C-AaxkhGqrWh22r3y~AeudQXdGZkKqTyL2A4UC-qSdBXEMz~GjQP7cI4BYeonkq5Fv6upZ9T2YWvS~ZaYxWkIJBc7vcgaTwN88RSg6TgzcUQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5468/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5468/",
+    "mech": "精神感应高达Mk-II",
+    "mechId": "精神感应高达mk-ii",
+    "aliases": []
   },
   {
     "id": "bc-3250",
@@ -4995,7 +5807,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3250.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/2aa82429111e30e55c064c7b9c6486f5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "D高达First",
+    "mechId": "d高达first",
+    "aliases": []
   },
   {
     "id": "hg-gquuuuuux",
@@ -5025,7 +5840,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-gquuuuuux.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250516/9322fd619127e4252f5720d14e600aae.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "GQuuuuuuX 杰卡克斯高达",
+    "mechId": "gquuuuuux杰卡克斯高达",
+    "aliases": []
   },
   {
     "id": "bc-3242",
@@ -5050,7 +5868,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3242.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/d5ac902ca3a63fbb9c3f8b535f1466b3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "托卡马克丹拜因",
+    "mechId": "托卡马克丹拜因",
+    "aliases": []
   },
   {
     "id": "bc-3198",
@@ -5075,7 +5896,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3198.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251112/60569f3cd0b07329ecb060ecef81ae9a.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "白骑士",
+    "mechId": "白骑士",
+    "aliases": []
   },
   {
     "id": "bc-3245",
@@ -5100,7 +5924,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3245.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/b2a6359813c3f132bc7ab75d7617feac.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "查布斯机",
+    "mechId": "查布斯机",
+    "aliases": []
   },
   {
     "id": "bc-3243",
@@ -5125,7 +5952,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3243.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/4208bd48eed0d7bba3eca9c83c4f9a55.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "GN Arms TYPE-E武装战机E型真实色",
+    "mechId": "gnarmstype-e武装战机e型真实色",
+    "aliases": []
   },
   {
     "id": "bc-2786",
@@ -5150,7 +5980,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2786.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/03/lUihtDHsZuFbkbL1/kXMOhygmoI3TBb2W.jpeg?Expires=1792507736&Key-Pair-Id=K7AVJM1114TH7&Signature=IkE9BfyiPpjpiuQh3NXwUSAkZhD5H~yqWxVjMwJ0IcZbALOyo3JrLOk2USwycIMlsXnw6zEQ18HH2ingVqxTpDms25UF9N1q4GDaSHO~OOhW11bfQ53m3-RQUjQL7Mg9--BR6NuFETqJZVt9OaMB-Jab2dEcTw9YU6TWPo1qRC1eQzfkAw7UEW0a3uAEocVlO~fyMiC74duEjnOsx~VFMANFiPaZzbEYB4ft~O7QByRJJYFbZgvKQVgq0QSLsyAix~~UZWcZ5FrS1pL8XtruI~SSrHYCr3f6Pfo36mIVbGnU7uSfaMqz5IswZYid9NNXPtJ8cfNraeBqIUhgw1ZvYQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5469/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5469/",
+    "mech": "高达维达尔",
+    "mechId": "高达维达尔",
+    "aliases": [
+      "Gundam Vidar",
+      "维达尔",
+      "Vidar"
+    ]
   },
   {
     "id": "bc-3251",
@@ -5175,7 +6012,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3251.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/80e57a5fcb18e476e6e74185d855d9e5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "TRANS-AM强化模块 透明配色机身",
+    "mechId": "trans-am强化模块透明配色机身",
+    "aliases": []
   },
   {
     "id": "bc-3249",
@@ -5200,7 +6040,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3249.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251202/da947b3685569f4eeeb803210f14bfb7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "报丧女妖命运女神特殊涂层版",
+    "mechId": "报丧女妖命运女神特殊涂层版",
+    "aliases": []
   },
   {
     "id": "bc-2787",
@@ -5225,7 +6068,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2787.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240828/f5d90008554e494dfeeaa367c7cd462f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "队长量子型 GF",
+    "mechId": "队长量子型gf",
+    "aliases": []
   },
   {
     "id": "bc-2788",
@@ -5250,7 +6096,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2788.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240828/2038442b0da9c45467a82a3c0acb6a67.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "GF 正义女神高达B型",
+    "mechId": "gf正义女神高达b型",
+    "aliases": []
   },
   {
     "id": "bc-2789",
@@ -5275,7 +6124,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2789.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240828/732fef3bbe5e6f18de5fc16a44d28897.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "GF 正义女神高达F型",
+    "mechId": "gf正义女神高达f型",
+    "aliases": []
   },
   {
     "id": "bc-3004",
@@ -5300,7 +6152,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3004.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250304/44bff0e107588e2fde016fc2576cec38.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "扎古II F型",
+    "mechId": "扎古iif型",
+    "aliases": []
   },
   {
     "id": "bc-2782",
@@ -5325,7 +6180,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2782.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250214/8a11b929aa66d94271fea89b874c4890.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-22S STURMVOGEL Ⅱ MAXIMILIAN JENIUS USE",
+    "mechId": "vf-22ssturmvogeliimaximilianjeniususe",
+    "aliases": [
+      "VF-22S"
+    ]
   },
   {
     "id": "bc-3001",
@@ -5350,7 +6210,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3001.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250304/f0e2bb43568793f39e6c701d3f0c1e84.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "里奥-R",
+    "mechId": "里奥-r",
+    "aliases": [
+      "Leo-R",
+      "里奥R"
+    ]
   },
   {
     "id": "bc-2770",
@@ -5375,7 +6241,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2770.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/03/aY1KQzPHsJoE6Nqg/eqF0ZYs4abvyliEi.jpeg?Expires=1792507443&Key-Pair-Id=K7AVJM1114TH7&Signature=OoRMJWyKde9GNFiljnTpTgxi6TkFqZVDxyG4Z78vA5LGz5E5px5HDD7DMF5QcjK8WNeR~kH4li3MVPMpHz0vSpmPciDvyYVSJnKRyFKuQh35m2xmTK0K~zy4rTEP~CB2OH1ebEDbSkoxiLx97JYdm6QHsKyN3qaO3Oafe~sdNPFlg~DEdlp6oA~FDrqixiPaJEuEzXALtWjagQIokqK6pvn4uxPe52OWHv5j~t2KX-nf~H4Tb2hSbWgk6LLm~Hki7jWcDJNCUhHekIZMcNxewo4RhjKPEKAZR6TXQLXPbrV0SvHa9xMWIS9bss7gB8rq6qAG63LZv~lciouV8TtWSQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5452/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5452/",
+    "mech": "魔蟹",
+    "mechId": "魔蟹",
+    "aliases": [
+      "Gogg",
+      "蟹"
+    ]
   },
   {
     "id": "bc-3003",
@@ -5400,7 +6272,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3003.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250304/d9a03ca49ef381b72155f6ecc6ce5d15.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "重战机 L-GAIM",
+    "mechId": "重战机l-gaim",
+    "aliases": []
   },
   {
     "id": "bc-3002",
@@ -5425,7 +6300,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3002.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250304/3cd53f36596b3a6e3db1900282f966e6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "正义女神高达",
+    "mechId": "正义女神高达",
+    "aliases": []
   },
   {
     "id": "bc-2920",
@@ -5450,7 +6328,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2920.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250108/a21bea07fb5602cf1f6896f62c65a85b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ν高达用推进器踏板",
+    "mechId": "ν高达用推进器踏板",
+    "aliases": []
   },
   {
     "id": "bc-2917",
@@ -5475,7 +6356,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2917.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250108/8501909c43ffcacb7b5d34dac5fc2c57.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "灵格斯",
+    "mechId": "灵格斯",
+    "aliases": []
   },
   {
     "id": "bc-2916",
@@ -5500,7 +6384,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2916.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250108/8aedd3fd3513db0f37ca79d7d7ddd548.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "Zaku II",
+      "扎古II",
+      "沙扎比",
+      "MS-06S"
+    ]
   },
   {
     "id": "bc-2758",
@@ -5525,7 +6417,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2758.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_6285_o_1ihfam1ouv68ssh15s41l4i18gm28.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5440/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5440/",
+    "mech": "嫣红强袭高达",
+    "mechId": "嫣红强袭高达",
+    "aliases": []
   },
   {
     "id": "bc-2987",
@@ -5550,7 +6445,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2987.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250304/ce86b500055205f539cccef6744a960b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "推进型强夺高达",
+    "mechId": "推进型强夺高达",
+    "aliases": []
   },
   {
     "id": "bc-2991",
@@ -5575,7 +6473,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2991.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250304/7d1066e958c161a6eaeb3a1253a61da0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "超级机器人大战OG 凶鸟Mk-Ⅱ 龙卷",
+    "mechId": "超级机器人大战og凶鸟mk-ii龙卷",
+    "aliases": []
   },
   {
     "id": "bc-2992",
@@ -5600,7 +6501,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2992.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250304/ec519765ee4fbb8322dfb8803813038e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高扎古特装型",
+    "mechId": "高扎古特装型",
+    "aliases": [
+      "Blitz Gundam",
+      "高扎古",
+      "Blitz"
+    ]
   },
   {
     "id": "bc-2765",
@@ -5625,7 +6533,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2765.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240828/902102b7e0aef1ede46649412749f44e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-22S STURMVOGEL Ⅱ MILIA FARINA JENIUS USE",
+    "mechId": "vf-22ssturmvogeliimiliafarinajeniususe",
+    "aliases": [
+      "VF-22S"
+    ]
   },
   {
     "id": "bc-2997",
@@ -5650,7 +6563,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2997.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250304/9a1fb5365890d7802ac6c649de260587.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "bc-2764",
@@ -5675,7 +6598,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2764.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250122/d8684245b03ff030c9dd575b985eb977.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "超龙神",
+    "mechId": "超龙神",
+    "aliases": []
   },
   {
     "id": "bc-2984",
@@ -5700,7 +6626,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2984.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250304/6c9e055ed5eb4bcca9e7b1452b374bae.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "量产型璃子专用扎古",
+    "mechId": "量产型璃子专用扎古",
+    "aliases": []
   },
   {
     "id": "bc-2990",
@@ -5725,7 +6654,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2990.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250304/7c7268924e699e975b11609a53de8602.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达3.0版 扩充装备",
+    "mechId": "rx-78-2高达3.0版扩充装备",
+    "aliases": [
+      "RX-78-2"
+    ]
   },
   {
     "id": "bc-2993",
@@ -5750,7 +6684,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2993.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250304/e0b74ff1ddfb5280cb81254c29aa4356.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "拂晓高达不知火背包",
+    "mechId": "拂晓高达不知火背包",
+    "aliases": []
   },
   {
     "id": "bc-2989",
@@ -5775,7 +6712,16 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2989.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250304/9579b4c94511e9c0de8a53550f34d615.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-3 G-3高达",
+    "mechId": "rx-78-3g-3高达",
+    "aliases": [
+      "RX-78-3",
+      "G-3",
+      "Gundam G-3",
+      "G3高达",
+      "RX78-3"
+    ]
   },
   {
     "id": "mr-xi-gundam-ka",
@@ -5804,7 +6750,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Ξ高达",
+    "mechId": "ξ高达",
+    "aliases": [
+      "Xi Gundam",
+      "Xi",
+      "西高达"
+    ]
   },
   {
     "id": "bc-2872",
@@ -5829,7 +6782,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2872.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/173c3e26fc34e4f5596b4a9f7596b094.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆Ⅲ",
+    "mechId": "吉姆iii",
+    "aliases": []
   },
   {
     "id": "bc-2873",
@@ -5854,7 +6810,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2873.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/db155beb7c29f117ef004769c9f27739.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "能天使高达",
+    "mechId": "能天使高达",
+    "aliases": [
+      "Geymalk",
+      "能天使"
+    ]
   },
   {
     "id": "bc-2912",
@@ -5879,7 +6841,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2912.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/7ebafc57b268f0c0a338ebf88b8e3e1f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞龙高达",
+    "mechId": "飞龙高达",
+    "aliases": [
+      "Dragon Gundam",
+      "飞龙",
+      "Dragon"
+    ]
   },
   {
     "id": "bc-2995",
@@ -5904,7 +6873,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2995.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250304/7c65ca32f2bf288f7a72de393354e956.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达巴巴托斯",
+    "mechId": "高达巴巴托斯",
+    "aliases": [
+      "Gundam Barbatos",
+      "巴巴托斯",
+      "古夫",
+      "Barbatos"
+    ]
   },
   {
     "id": "bc-2994",
@@ -5929,7 +6906,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2994.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250304/878dd2ca1602264db1ebdcab12b935f4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "红色异端高达 改",
+    "mechId": "红色异端高达改",
+    "aliases": []
   },
   {
     "id": "bc-2913",
@@ -5954,7 +6934,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2913.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/8ffa75ba216ce121a1745cb2a28cbe57.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "NT高达 B装备",
+    "mechId": "nt高达b装备",
+    "aliases": [
+      "Gundam NT B-Type",
+      "NT高达B",
+      "NT B"
+    ]
   },
   {
     "id": "bc-2914",
@@ -5979,7 +6966,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2914.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/5d67f28e4c7f8648672615fc4793589e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "NT高达 C装备 Ver.Ka用B装备扩展",
+    "mechId": "nt高达c装备ver.ka用b装备扩展",
+    "aliases": []
   },
   {
     "id": "rg-dawn",
@@ -6008,7 +6998,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-dawn.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_6242_o_1iel63duucjpsta16na1pgscqs28.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5394/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5394/",
+    "mech": "拂晓高达",
+    "mechId": "拂晓高达",
+    "aliases": []
   },
   {
     "id": "bc-2826",
@@ -6033,7 +7026,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2826.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241108/2842f6b321816ac2fc9e7192cd000eab.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达FSD",
+    "mechId": "高达fsd",
+    "aliases": []
   },
   {
     "id": "bc-2827",
@@ -6058,7 +7054,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2827.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241108/9f5489adb02f72de893145ddd2ebd444.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "G-SELF",
+    "mechId": "g-self",
+    "aliases": []
   },
   {
     "id": "bc-2725",
@@ -6083,7 +7082,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2725.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241125/c0ac6f3e173e9e69736fcdf815b32711.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "波利诺克・沙曼",
+    "mechId": "波利诺克・沙曼",
+    "aliases": []
   },
   {
     "id": "bc-2911",
@@ -6108,7 +7110,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2911.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/f2ea6570717b7ff7ae3285902a010c9d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "机甲战记龙骑兵",
+    "mechId": "机甲战记龙骑兵",
+    "aliases": []
   },
   {
     "id": "bc-2910",
@@ -6133,7 +7138,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2910.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/4b4264dd0b020dfeb4810616140b50b9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "龙骑3号机 Lifter3装备型",
+    "mechId": "龙骑3号机lifter3装备型",
+    "aliases": []
   },
   {
     "id": "hg-destiny-spec2-zeus",
@@ -6162,7 +7170,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-destiny-spec2-zeus.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_6224_o_1icv41jjk1tvp10qdgl41r871ach28.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5374/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5374/",
+    "mech": "命运高达规格Ⅱ",
+    "mechId": "命运高达规格ii",
+    "aliases": []
   },
   {
     "id": "bc-2907",
@@ -6187,7 +7198,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2907.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/d564bfc34431d18019b548cef051be97.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "双头龙高达",
+    "mechId": "双头龙高达",
+    "aliases": [
+      "Double Dragon Gundam",
+      "双头龙",
+      "Double Dragon"
+    ]
   },
   {
     "id": "bc-2908",
@@ -6212,7 +7230,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2908.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/d28d58c83e2d24b5370b5db19b02f420.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异端审判者·火炬",
+    "mechId": "异端审判者·火炬",
+    "aliases": []
   },
   {
     "id": "bc-2909",
@@ -6237,7 +7258,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2909.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/98d1b4bf21378a0868d9c4decda896b7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "勇士险兆",
+    "mechId": "勇士险兆",
+    "aliases": [
+      "Gelgoog Menace",
+      "险兆勇士"
+    ]
   },
   {
     "id": "mgsd-zero-ew",
@@ -6266,7 +7293,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mgsd-zero-ew.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241127/59f53b00fe512afc4b77d633df41d17d.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞翼高达零式EW",
+    "mechId": "飞翼高达零式ew",
+    "aliases": [
+      "Wing Gundam Zero EW",
+      "飞翼零式EW",
+      "零EW",
+      "EW零式"
+    ]
   },
   {
     "id": "bc-2823",
@@ -6274,7 +7309,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/100",
     "released": "2024-10-25",
     "priceJpy": 0,
@@ -6291,7 +7326,16 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2823.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241025/6436340528ca7345a0aeb8f61d58e68d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-3 G-3高达",
+    "mechId": "rx-78-3g-3高达",
+    "aliases": [
+      "RX-78-3",
+      "G-3",
+      "Gundam G-3",
+      "G3高达",
+      "RX78-3"
+    ]
   },
   {
     "id": "bc-2711",
@@ -6316,7 +7360,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2711.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_6212_o_1iaq7r4cvma2ei566g1jjlv1s28.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5362/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5362/",
+    "mech": "村雨改",
+    "mechId": "村雨改",
+    "aliases": []
   },
   {
     "id": "bc-2712",
@@ -6341,7 +7388,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2712.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241014/117e66cc24e43484d1ad675b32ec0b6a.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达EX",
+    "mechId": "高达ex",
+    "aliases": []
   },
   {
     "id": "bc-2710",
@@ -6366,7 +7416,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2710.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241021/010ad6f3a653b405b87ae6653c380b12.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "黑骑士小队 神鸟",
+    "mechId": "黑骑士小队神鸟",
+    "aliases": []
   },
   {
     "id": "bc-2904",
@@ -6391,7 +7444,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2904.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/07e7fc80e1e2d16abc475afc29a6af75.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆夜巡者Ⅱ",
+    "mechId": "吉姆夜巡者ii",
+    "aliases": []
   },
   {
     "id": "bc-2713",
@@ -6416,7 +7472,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2713.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241015/d99aaeea8819ff720725a2b6945cce9c.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "扎古Ⅱ F型 索拉里机",
+    "mechId": "扎古iif型索拉里机",
+    "aliases": []
   },
   {
     "id": "bc-2719",
@@ -6441,7 +7500,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2719.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241024/ef9a1b807d934f8a52fe1da2ebf75205.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "钢狮子",
+    "mechId": "钢狮子",
+    "aliases": []
   },
   {
     "id": "bc-2901",
@@ -6466,7 +7528,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2901.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/21a247815c57872cdec3d61fbd36ef01.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "装甲骑兵 眼镜斗犬用扩张配件",
+    "mechId": "装甲骑兵眼镜斗犬用扩张配件",
+    "aliases": []
   },
   {
     "id": "bc-2902",
@@ -6491,7 +7556,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2902.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/34799522ee55147302395a1f3793f164.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "装甲骑兵 眼镜斗犬用扩张配件",
+    "mechId": "装甲骑兵眼镜斗犬用扩张配件",
+    "aliases": []
   },
   {
     "id": "bc-2903",
@@ -6516,7 +7584,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2903.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/b96a1d0e3802ca7c3c486cbe50df2cdb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "装甲骑兵 眼镜斗犬用扩张配件",
+    "mechId": "装甲骑兵眼镜斗犬用扩张配件",
+    "aliases": []
   },
   {
     "id": "mr-demibarding-anime",
@@ -6545,7 +7616,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "学院重骑机 剧中版",
+    "mechId": "学院重骑机剧中版",
+    "aliases": []
   },
   {
     "id": "bc-2996",
@@ -6570,7 +7644,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2996.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250304/985f4a104af599ca35e815970aa025ff.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "灵格斯 逆袭的夏亚配色",
+    "mechId": "灵格斯逆袭的夏亚配色",
+    "aliases": []
   },
   {
     "id": "bc-2906",
@@ -6595,7 +7672,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2906.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/1ddf3eda118334fb4bb13b5b0ff7fd12.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "轰击型脉冲高达规格Ⅱ",
+    "mechId": "轰击型脉冲高达规格ii",
+    "aliases": [
+      "Impulse Gundam Spec II",
+      "脉冲高达规格2",
+      "Impulse Spec II",
+      "轰击型脉冲"
+    ]
   },
   {
     "id": "bc-2817",
@@ -6620,7 +7705,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2817.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240927/cb71d31b2268a22c30c0560607796ddb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "基拉·多加",
+    "mechId": "基拉·多加",
+    "aliases": [
+      "Jesta",
+      "基拉多加"
+    ]
   },
   {
     "id": "bc-2818",
@@ -6645,7 +7736,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2818.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240927/d93ffa05913637f4e530a7b94b23df1e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "德莱克E",
+    "mechId": "德莱克e",
+    "aliases": []
   },
   {
     "id": "mg-destiny-heinemann",
@@ -6674,7 +7768,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-destiny-heinemann.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240927/7c9539f71ce016b0714b4831eb5511de.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "命运高达",
+    "mechId": "命运高达",
+    "aliases": [
+      "Destiny Gundam",
+      "Destiny"
+    ]
   },
   {
     "id": "bc-2819",
@@ -6699,7 +7799,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2819.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240927/8807469029a4728d4b25a7edf6dbe503.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉翁号",
+    "mechId": "吉翁号",
+    "aliases": []
   },
   {
     "id": "bc-2816",
@@ -6724,7 +7827,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2816.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240923/b038cac87a35f7e4d6e756e140a0241f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "凯列班高达",
+    "mechId": "凯列班高达",
+    "aliases": []
   },
   {
     "id": "bc-2821",
@@ -6749,7 +7855,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2821.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240927/c3fc0c86fa64b1c70557fb4420963204.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞升自由高达",
+    "mechId": "飞升自由高达",
+    "aliases": []
   },
   {
     "id": "bc-2822",
@@ -6774,7 +7883,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2822.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240927/17f3033bb54b6911335094d7b9b16515.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "命运高达规格Ⅱ",
+    "mechId": "命运高达规格ii",
+    "aliases": []
   },
   {
     "id": "bc-2699",
@@ -6799,7 +7911,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2699.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_6125_o_1i7st0v9o1bmp1kvd1b8k1ukf1rm128.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5274/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5274/",
+    "mech": "闪电暴风高达",
+    "mechId": "闪电暴风高达",
+    "aliases": []
   },
   {
     "id": "bc-2896",
@@ -6824,7 +7939,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2896.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/cf46bdaf7c6224b30cd3e0c12c9c4638.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达TR-6 巴扎姆2 RE-ZEON俘获机",
+    "mechId": "高达tr-6巴扎姆2re-zeon俘获机",
+    "aliases": [
+      "TR-6"
+    ]
   },
   {
     "id": "bc-2893",
@@ -6849,7 +7969,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2893.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/4a5915fe98e532f2bd39537ba8b0e118.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "龙神丸 DX",
+    "mechId": "龙神丸dx",
+    "aliases": []
   },
   {
     "id": "bc-2894",
@@ -6874,7 +7997,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2894.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/7280cbf232684f20a8185eb5fe1d884e.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "雪霸 Sirbine",
+    "mechId": "雪霸sirbine",
+    "aliases": []
   },
   {
     "id": "mr-redeemer-anime",
@@ -6903,7 +8029,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "战骑高达 剧中版",
+    "mechId": "战骑高达剧中版",
+    "aliases": []
   },
   {
     "id": "bc-2897",
@@ -6928,7 +8057,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2897.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/e9751a4feeba609cc66f9599c61b562d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "兴风者高达 P.F.",
+    "mechId": "兴风者高达p.f",
+    "aliases": []
   },
   {
     "id": "bc-2898",
@@ -6953,7 +8085,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2898.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/df7401ab5f9b88f032df869500517083.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达2.0 扩展武器包",
+    "mechId": "rx-78-2高达2.0扩展武器包",
+    "aliases": [
+      "RX-78-2"
+    ]
   },
   {
     "id": "bc-2663",
@@ -6978,7 +8115,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2663.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241121/1b6b6d2cf1ba34547af79ce3395cad3b.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "非凡强袭自由高达",
+    "mechId": "非凡强袭自由高达",
+    "aliases": [
+      "Strike Freedom Gundam (MGEX)",
+      "MGEX强袭自由",
+      "非凡强袭自由"
+    ]
   },
   {
     "id": "bc-2888",
@@ -7003,7 +8147,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2888.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/ff795fdf72732adcb90a4a319abe14b4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "风灵高达 帕梅特刻痕·6",
+    "mechId": "风灵高达帕梅特刻痕·6",
+    "aliases": []
   },
   {
     "id": "bc-2654",
@@ -7028,7 +8175,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2654.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_6091_o_1i3unng691h1k1tln35i1gqkgo728.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5236/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5236/",
+    "mech": "惊异高达巴巴托斯 天狼型",
+    "mechId": "惊异高达巴巴托斯天狼型",
+    "aliases": []
   },
   {
     "id": "bc-2889",
@@ -7053,7 +8203,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2889.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/b601bc415900ea2a09c956a980aaaad0.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达Burnlapius",
+    "mechId": "高达burnlapius",
+    "aliases": []
   },
   {
     "id": "bc-2890",
@@ -7078,7 +8231,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2890.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/64812723d0b75e46159df39e249415f3.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "楼陀罗 丽德拉德机",
+    "mechId": "楼陀罗丽德拉德机",
+    "aliases": []
   },
   {
     "id": "bc-2891",
@@ -7103,7 +8259,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2891.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/4f73800fbc6467612376b0005ec9a9bf.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "凶鸟 Boxer",
+    "mechId": "凶鸟boxer",
+    "aliases": []
   },
   {
     "id": "rg-rx78-2-ver2-0",
@@ -7132,7 +8291,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-rx78-2-ver2-0.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_6113_o_1i4gol3c210shjql10ug1ge31b1r28.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5261/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5261/",
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "pb-169",
@@ -7160,7 +8329,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-169.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240729/df7401ab5f9b88f032df869500517083.jpg",
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000209098/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000209098/",
+    "mech": "RX-78-2 高达2.0 扩展武器包",
+    "mechId": "rx-78-2高达2.0扩展武器包",
+    "aliases": [
+      "RX-78-2"
+    ]
   },
   {
     "id": "bc-2756",
@@ -7185,7 +8359,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2756.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240701/f6b3c3ad47bc7211496797e87df4d56e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "自由高达",
+    "mechId": "自由高达",
+    "aliases": [
+      "Freedom Gundam",
+      "ZGMF-X10A",
+      "自由高达"
+    ]
   },
   {
     "id": "bc-2657",
@@ -7210,7 +8391,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2657.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240319/35dca961a787edac281a15e4e25074c9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "奥特曼",
+    "mechId": "奥特曼",
+    "aliases": []
   },
   {
     "id": "bc-2655",
@@ -7235,7 +8419,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2655.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_6090_o_1i7t0lssv14q3ffj1m3pmii1npj23.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5235/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5235/",
+    "mech": "00量子高达 指挥官沙漠型",
+    "mechId": "00量子高达指挥官沙漠型",
+    "aliases": []
   },
   {
     "id": "bc-2689",
@@ -7260,7 +8447,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2689.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_6088_o_1i2t87m561d1hhla10bnqt81hdu28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5232/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5232/",
+    "mech": "决斗迅雷高达",
+    "mechId": "决斗迅雷高达",
+    "aliases": []
   },
   {
     "id": "bc-2887",
@@ -7285,7 +8475,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2887.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/d2abb1ca977c72b363305353b0f9e80d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "凯列班高达 帕梅特刻痕·5",
+    "mechId": "凯列班高达帕梅特刻痕·5",
+    "aliases": []
   },
   {
     "id": "bc-2884",
@@ -7310,7 +8503,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2884.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/3fb1acca07d3baee3cfcf79256a944e3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "重战机",
+    "mechId": "重战机",
+    "aliases": []
   },
   {
     "id": "bc-2882",
@@ -7335,7 +8531,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2882.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/6407aab7d0456f5d51130a787eacf31a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "BAT-SHU 宝爵",
+    "mechId": "bat-shu宝爵",
+    "aliases": []
   },
   {
     "id": "hg-gundnode",
@@ -7364,7 +8563,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-gundnode.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/086e393801d7ee8ee9e29d62dbbf7579.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Gundnode",
+    "mechId": "gundnode",
+    "aliases": []
   },
   {
     "id": "mr-aerial-rebuilt-anime",
@@ -7393,7 +8595,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "风灵高达 剧中版",
+    "mechId": "风灵高达剧中版",
+    "aliases": []
   },
   {
     "id": "bc-2879",
@@ -7418,7 +8623,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2879.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/feb51d1bb44d18b0f04ec1ba7ce5646c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "剑装灾厄高达",
+    "mechId": "剑装灾厄高达",
+    "aliases": []
   },
   {
     "id": "bc-2880",
@@ -7443,7 +8651,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2880.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/b03af425f29b7b4b6b56611472310515.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "海因格拉",
+    "mechId": "海因格拉",
+    "aliases": []
   },
   {
     "id": "bc-2878",
@@ -7468,7 +8679,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2878.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/4b2f369a9baf408d6bdf12081b7a890e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "魔灵高达 量产试作型",
+    "mechId": "魔灵高达量产试作型",
+    "aliases": []
   },
   {
     "id": "hg-infinite-justice-2",
@@ -7497,7 +8711,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-infinite-justice-2.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_6064_o_1i7sq47uh1mvmkuc1uun1qpq1bb123.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5208/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5208/",
+    "mech": "无限正义高达二式",
+    "mechId": "无限正义高达二式",
+    "aliases": [
+      "Infinite Justice Gundam II",
+      "无限正义2号机",
+      "IJ2"
+    ]
   },
   {
     "id": "bc-2877",
@@ -7522,7 +8743,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2877.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250903/f9c3af2340d3846dec6ae2b45364a399.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Engage高达",
+    "mechId": "engage高达",
+    "aliases": []
   },
   {
     "id": "mr-darilbalde-guel-anime",
@@ -7551,7 +8775,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "迪兰扎 盖尔专用机 剧中版",
+    "mechId": "迪兰扎盖尔专用机剧中版",
+    "aliases": []
   },
   {
     "id": "bc-2077",
@@ -7576,7 +8803,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2077.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_6044_o_1i7srk6ih1o5r18vvdtcpqssd423.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5187/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5187/",
+    "mech": "新安州·原石",
+    "mechId": "新安州·原石",
+    "aliases": []
   },
   {
     "id": "bc-2081",
@@ -7584,7 +8814,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "SD",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "wfm",
     "scale": "SD 比例",
     "released": "2024-06",
     "priceJpy": 1980,
@@ -7601,7 +8831,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2081.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240626/a0a04ba39c84ca210c92681004cf705b.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "凯列班高达",
+    "mechId": "凯列班高达",
+    "aliases": []
   },
   {
     "id": "bc-2074",
@@ -7626,7 +8859,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2074.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240513/4c44385c3227de0b8282aa8928982188.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-19 CUSTOM FIRE VALKYRIE WITH SOUND BOOSTER",
+    "mechId": "vf-19customfirevalkyriewithsoundbooster",
+    "aliases": [
+      "VF-19"
+    ]
   },
   {
     "id": "bc-2075",
@@ -7651,7 +8889,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2075.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231220/671faa73f63a59f3af75dec76b47c3c5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-19 CUSTOM FIRE VALKYRIE WITH SOUND BOOSTER WATER DECALS",
+    "mechId": "vf-19customfirevalkyriewithsoundboosterwaterdecals",
+    "aliases": [
+      "VF-19"
+    ]
   },
   {
     "id": "hg-strike-freedom",
@@ -7680,7 +8923,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-strike-freedom.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240523/c8af40cb2335a2a368f082692b89943a.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "非凡强袭自由高达",
+    "mechId": "非凡强袭自由高达",
+    "aliases": [
+      "Strike Freedom Gundam (MGEX)",
+      "MGEX强袭自由",
+      "非凡强袭自由"
+    ]
   },
   {
     "id": "bc-2874",
@@ -7705,7 +8955,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2874.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/fee558241a66115fd5c36f5f34a5be3b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "黑暗短剑L",
+    "mechId": "黑暗短剑l",
+    "aliases": []
   },
   {
     "id": "bc-2876",
@@ -7730,7 +8983,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2876.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/a16559b0ea07b4799efc9a25d86d89ff.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "加文",
+    "mechId": "加文",
+    "aliases": []
   },
   {
     "id": "bc-2076",
@@ -7755,7 +9011,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2076.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240517/bfd48f921e51d5e2eac644771cdc7107.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "龙王丸",
+    "mechId": "龙王丸",
+    "aliases": []
   },
   {
     "id": "bc-2073",
@@ -7780,7 +9039,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2073.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240516/d89beaef021dc26f5fb9e0573df81b0b.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "BURGLARYDOG",
+    "mechId": "burglarydog",
+    "aliases": []
   },
   {
     "id": "bc-2875",
@@ -7805,7 +9067,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2875.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/2437da21ec3f940a7bd18d77f7d55cdf.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "金恩",
+    "mechId": "金恩",
+    "aliases": []
   },
   {
     "id": "bc-1489",
@@ -7813,7 +9078,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed",
     "scale": "1/100",
     "released": "2024-05",
     "priceJpy": 0,
@@ -7830,7 +9095,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1489.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231019/58c19278226c4e5750528fd4ac685b15.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "神意高达",
+    "mechId": "神意高达",
+    "aliases": []
   },
   {
     "id": "bc-1488",
@@ -7838,7 +9106,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed",
     "scale": "1/100",
     "released": "2024-05",
     "priceJpy": 0,
@@ -7855,7 +9123,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1488.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231019/91650216157cb1d1237e8e7d7527fa6c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "正义高达",
+    "mechId": "正义高达",
+    "aliases": []
   },
   {
     "id": "bc-1487",
@@ -7863,7 +9134,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed",
     "scale": "1/100",
     "released": "2024-05",
     "priceJpy": 0,
@@ -7880,7 +9151,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1487.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231019/4ca3dd0fa711c80832225f57ff0032c5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "自由高达2.0",
+    "mechId": "自由高达2.0",
+    "aliases": []
   },
   {
     "id": "bc-1490",
@@ -7905,7 +9179,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1490.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231019/108d0fd9a0e9e62cdfe3a85741359944.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强袭自由高达",
+    "mechId": "强袭自由高达",
+    "aliases": [
+      "Strike Freedom Gundam",
+      "强袭自由",
+      "SF",
+      "Strike Freedom"
+    ]
   },
   {
     "id": "bc-2706",
@@ -7930,7 +9212,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2706.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240428/d1ab25a7e24c5341c7f028e2df627a32.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "拉赫高达 试作一型",
+    "mechId": "拉赫高达试作一型",
+    "aliases": []
   },
   {
     "id": "bc-2708",
@@ -7955,7 +9240,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2708.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240428/70f9b9ede5006d9d91b24473097d4284.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达MK-II【21世纪真实配色版】",
+    "mechId": "高达mk-ii21世纪真实配色版",
+    "aliases": []
   },
   {
     "id": "bc-2704",
@@ -7980,7 +9268,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2704.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240428/b59ef7eb872a287edd097daf21f0a46a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "民用型高扎古",
+    "mechId": "民用型高扎古",
+    "aliases": []
   },
   {
     "id": "bc-2705",
@@ -8005,7 +9296,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2705.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240428/ea4413c0105aaf4ae1eaea45625da87c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "扎古加农",
+    "mechId": "扎古加农",
+    "aliases": []
   },
   {
     "id": "rg-freedom-gcp-transparent",
@@ -8034,7 +9328,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-freedom-gcp-transparent.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240428/01201e82f31221e01f45c101a96cceec.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ZGMF-X10A 自由高达",
+    "mechId": "zgmf-x10a自由高达",
+    "aliases": [
+      "X10A"
+    ]
   },
   {
     "id": "bc-2707",
@@ -8059,7 +9358,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2707.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240430/e24f2335932d3461898e24e7761455de.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MSN-04FF 沙扎比",
+    "mechId": "msn-04ff沙扎比",
+    "aliases": [
+      "MSN-04F"
+    ]
   },
   {
     "id": "bc-2871",
@@ -8084,7 +9388,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2871.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/94c05a0ccf64c96c18c1a90e845cb642.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高机动型扎古 地上用",
+    "mechId": "高机动型扎古地上用",
+    "aliases": [
+      "Zaku II (Ground Type)",
+      "地上型扎古",
+      "Zaku Ground Type"
+    ]
   },
   {
     "id": "bc-2870",
@@ -8109,7 +9420,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2870.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/d16e302d09fbd591a95274b4f31ae21c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高机动型扎古 地上用",
+    "mechId": "高机动型扎古地上用",
+    "aliases": [
+      "Zaku II (Ground Type)",
+      "地上型扎古",
+      "Zaku Ground Type"
+    ]
   },
   {
     "id": "bc-2647",
@@ -8134,7 +9452,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2647.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_6062_o_1i7svrp451ot1tsm1c1j185fedg23.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5206/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5206/",
+    "mech": "强人奔流",
+    "mechId": "强人奔流",
+    "aliases": []
   },
   {
     "id": "bc-2869",
@@ -8159,7 +9480,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2869.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/c4892972109827423a91cf858728fa88.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "战斗机甲萨芬格尔 萨芬格尔",
+    "mechId": "战斗机甲萨芬格尔萨芬格尔",
+    "aliases": []
   },
   {
     "id": "bc-2866",
@@ -8184,7 +9508,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2866.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/7d3476e8534f4cff1aa3e7ae166edd53.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "维拉比",
+    "mechId": "维拉比",
+    "aliases": []
   },
   {
     "id": "bc-2864",
@@ -8209,7 +9536,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2864.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/81010da253a3d37e44ccfb5f75232c21.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "加普兰TR-5 巨臂组件装备",
+    "mechId": "加普兰tr-5巨臂组件装备",
+    "aliases": [
+      "TR-5"
+    ]
   },
   {
     "id": "bc-2865",
@@ -8234,7 +9566,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2865.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/c93c342f9515c8da9698519cea1fdf6c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "加普兰TR-5 提坦斯式样",
+    "mechId": "加普兰tr-5提坦斯式样",
+    "aliases": [
+      "TR-5"
+    ]
   },
   {
     "id": "bc-2867",
@@ -8259,7 +9596,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2867.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/19cb92b7867109810a95aa79231e6a8b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉莱装甲标准型",
+    "mechId": "吉莱装甲标准型",
+    "aliases": []
   },
   {
     "id": "bc-2863",
@@ -8284,7 +9624,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2863.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241212/863a0996d578f88d50cd80127cf36e1c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达F90 任务背包 A型",
+    "mechId": "高达f90任务背包a型",
+    "aliases": [
+      "F90"
+    ]
   },
   {
     "id": "bc-2059",
@@ -8292,7 +9637,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "MG 1/100 ナラティブガンダム C装備 Ver.Ka",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "gundam-nt",
     "scale": "1/100",
     "released": "2024-04-27",
     "priceJpy": 7700,
@@ -8309,7 +9654,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2059.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_6022_o_1i7svua437bb137613fe9c3kme23.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5164/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5164/",
+    "mech": "NT高达 C装备",
+    "mechId": "nt高达c装备",
+    "aliases": [
+      "Gundam NT C-Type",
+      "NT高达C",
+      "NT C"
+    ]
   },
   {
     "id": "fm-aerial-pametrench6",
@@ -8317,7 +9669,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "FULL MECHANICS 1/100 ガンダム・エアリアル パメトレンチ6",
     "grade": "FM",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "wfm",
     "scale": "1/100",
     "released": "2024-03",
     "priceJpy": 4620,
@@ -8338,7 +9690,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": null,
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "风灵高达 帕梅特刻痕·6",
+    "mechId": "风灵高达帕梅特刻痕·6",
+    "aliases": []
   },
   {
     "id": "bc-1479",
@@ -8363,7 +9718,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1479.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5962_o_1i7squtc599p1gspfnlsub15i223.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5099/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5099/",
+    "mech": "黑骑士小队 暴恶",
+    "mechId": "黑骑士小队暴恶",
+    "aliases": []
   },
   {
     "id": "bc-1484",
@@ -8388,7 +9746,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1484.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5960_o_1i7spcpdd1di01a8l1a31frk11op23.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5097/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5097/",
+    "mech": "毁灭高达",
+    "mechId": "毁灭高达",
+    "aliases": []
   },
   {
     "id": "bc-1480",
@@ -8413,7 +9774,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1480.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5963_o_1hp88t8i01j5177e15vt1scjjdd28.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5100/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5100/",
+    "mech": "勇士险兆",
+    "mechId": "勇士险兆",
+    "aliases": [
+      "Gelgoog Menace",
+      "险兆勇士"
+    ]
   },
   {
     "id": "bc-1448",
@@ -8438,7 +9805,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1448.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240401/a6e6822bc427e120d5961efdcb028c63.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "天下无双大将军",
+    "mechId": "天下无双大将军",
+    "aliases": []
   },
   {
     "id": "bc-1477",
@@ -8463,7 +9833,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1477.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5948_o_1i7sqcu671lc8jauc3u1s54p1723.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5084/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5084/",
+    "mech": "黑骑士小队 毁灭",
+    "mechId": "黑骑士小队毁灭",
+    "aliases": []
   },
   {
     "id": "bc-1483",
@@ -8488,7 +9861,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1483.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5947_o_1hls4imehfj11k8l1nrv1mlt34n28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5083/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5083/",
+    "mech": "熊霸家族",
+    "mechId": "熊霸家族",
+    "aliases": []
   },
   {
     "id": "rg-strike-pulse-spec2",
@@ -8517,7 +9893,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-strike-pulse-spec2.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5949_o_1i7t09a6341m14dd1qnd1v5u8l23.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5085/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5085/",
+    "mech": "强攻型脉冲高达规格Ⅱ",
+    "mechId": "强攻型脉冲高达规格ii",
+    "aliases": []
   },
   {
     "id": "bc-1447",
@@ -8542,7 +9921,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1447.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240226/b8f80da6d97dddf094bdd28fa07ef82d.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "第78代武者顽驮无",
+    "mechId": "第78代武者顽驮无",
+    "aliases": []
   },
   {
     "id": "bc-1446",
@@ -8567,7 +9949,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1446.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240221/de7057c75d746eece08462b5d5950b26.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "隐密风灵高达",
+    "mechId": "隐密风灵高达",
+    "aliases": []
   },
   {
     "id": "bc-1450",
@@ -8592,7 +9977,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1450.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230926/0a8570a9b8d2d33523e443aa2976cdd4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "YF-21",
+    "mechId": "yf-21",
+    "aliases": [
+      "YF-21"
+    ]
   },
   {
     "id": "bc-1475",
@@ -8617,7 +10007,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1475.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240122/b78949b56cc18172de746a88c4e7d4f4.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "不朽正义高达",
+    "mechId": "不朽正义高达",
+    "aliases": []
   },
   {
     "id": "bc-1474",
@@ -8642,7 +10035,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1474.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240122/229e998d7de0c4158ef9680b211febd3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞升自由高达",
+    "mechId": "飞升自由高达",
+    "aliases": []
   },
   {
     "id": "bc-1481",
@@ -8667,7 +10063,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1481.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5936_o_1i7t1jr5djmk1dl71qfgd4qb5g23.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5071/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5071/",
+    "mech": "完美强袭自由嫣红高达",
+    "mechId": "完美强袭自由嫣红高达",
+    "aliases": []
   },
   {
     "id": "bc-1449",
@@ -8692,7 +10091,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1449.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/3d6ac7f62b759340c6bb2e7238b884e9.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "黛西欧伽 Alter",
+    "mechId": "黛西欧伽alter",
+    "aliases": []
   },
   {
     "id": "bc-1452",
@@ -8717,7 +10119,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1452.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/f4dc1d5e1a9c29931c113d2dddab28ad.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "凶鸟MK-Ⅲ",
+    "mechId": "凶鸟mk-iii",
+    "aliases": []
   },
   {
     "id": "bc-1486",
@@ -8742,7 +10147,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1486.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231009/6ccbd0151425f3c9d25b095900b76bda.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "空神丸",
+    "mechId": "空神丸",
+    "aliases": []
   },
   {
     "id": "bc-1476",
@@ -8767,7 +10175,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1476.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240122/70b3abfbf11b02d25565bbbc2fd14bd6.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞升自由高达",
+    "mechId": "飞升自由高达",
+    "aliases": []
   },
   {
     "id": "bc-2088",
@@ -8792,7 +10203,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2088.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231220/dcee34c015356f87601c2ed8b5be5c79.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "创制突击高达 银河宇宙",
+    "mechId": "创制突击高达银河宇宙",
+    "aliases": []
   },
   {
     "id": "bc-596",
@@ -8817,7 +10231,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-596.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5890_o_1i7t1tf2ftrbu309h012t515aq23.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5023/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5023/",
+    "mech": "高达00潜行者弧光",
+    "mechId": "高达00潜行者弧光",
+    "aliases": []
   },
   {
     "id": "bc-597",
@@ -8842,7 +10259,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-597.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231204/2dd29cb1bc81691439975d30d3de973d.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "冥王星九型高达",
+    "mechId": "冥王星九型高达",
+    "aliases": []
   },
   {
     "id": "bc-598",
@@ -8867,7 +10287,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-598.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5892_o_1i7t1125pqfs1r9v118q15kl1u9723.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5025/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5025/",
+    "mech": "奇美拉堤丰高达",
+    "mechId": "奇美拉堤丰高达",
+    "aliases": []
   },
   {
     "id": "bc-601",
@@ -8892,7 +10315,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-601.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230620/758077383a524d2e1342d1d2739d4f5f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "邪虎丸",
+    "mechId": "邪虎丸",
+    "aliases": []
   },
   {
     "id": "bc-595",
@@ -8917,7 +10343,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-595.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230620/69232aa3112bfffb7aae707f6abc7284.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "信长专用军马",
+    "mechId": "信长专用军马",
+    "aliases": []
   },
   {
     "id": "bc-1568",
@@ -8942,7 +10371,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1568.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/c3bbde6101e36af901b6833ef07c3996.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "核心高达",
+    "mechId": "核心高达",
+    "aliases": []
   },
   {
     "id": "bc-1569",
@@ -8967,7 +10399,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1569.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/64da49135a1c6d929bbc0fbd2b197ca9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "纳德雷高达",
+    "mechId": "纳德雷高达",
+    "aliases": []
   },
   {
     "id": "bc-594",
@@ -8992,7 +10427,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-594.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231114/b408435f23d40c78d42c7b399e250984.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆",
+    "mechId": "吉姆",
+    "aliases": [
+      "GM",
+      "杰姆"
+    ]
   },
   {
     "id": "bc-593",
@@ -9017,7 +10458,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-593.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5882_o_1i7svh88f1n191frg6kd6ch3d023.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5015/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5015/",
+    "mech": "神燃焰高达",
+    "mechId": "神燃焰高达",
+    "aliases": []
   },
   {
     "id": "bc-599",
@@ -9042,7 +10486,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-599.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/1e7c1d814452d05d385f50a19075e9c7.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "F9之1改",
+    "mechId": "f9之1改",
+    "aliases": []
   },
   {
     "id": "bc-592",
@@ -9067,7 +10514,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-592.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/72cc57e8801bfd5de2f08ae60c09195e.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "英雄再临！ 复活的悟空脉冲高达",
+    "mechId": "英雄再临复活的悟空脉冲高达",
+    "aliases": []
   },
   {
     "id": "bc-590",
@@ -9092,7 +10542,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-590.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5862_o_1i7sug68d1qpb1j42u0s10j7kgl23.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4993/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4993/",
+    "mech": "创制强袭 超银河",
+    "mechId": "创制强袭超银河",
+    "aliases": []
   },
   {
     "id": "bc-589",
@@ -9117,7 +10570,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-589.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5861_o_1hbq7cm931vs5ohm1phu15ua1hoo2d.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4992/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4992/",
+    "mech": "拉赫高达",
+    "mechId": "拉赫高达",
+    "aliases": []
   },
   {
     "id": "bc-602",
@@ -9142,7 +10598,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-602.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230620/5e31a018142ed25dcf3b305661951a8b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "YF-29 杜兰达尔女武神",
+    "mechId": "yf-29杜兰达尔女武神",
+    "aliases": [
+      "YF-29"
+    ]
   },
   {
     "id": "bc-607",
@@ -9167,7 +10628,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-607.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230620/ad77b08176a66dcc144d919aa2980f97.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "眼镜斗犬",
+    "mechId": "眼镜斗犬",
+    "aliases": []
   },
   {
     "id": "mgsd-bort",
@@ -9196,7 +10660,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mgsd-bort.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231023/0ac2d4b7adc314be1d8c7f4d88a11731.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达巴巴托斯",
+    "mechId": "高达巴巴托斯",
+    "aliases": [
+      "Gundam Barbatos",
+      "巴巴托斯",
+      "古夫",
+      "Barbatos"
+    ]
   },
   {
     "id": "bc-1445",
@@ -9221,7 +10693,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1445.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230921/19a511cb89180cf95fc66ac16147a22e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "TOLRO-800 -特洛八-",
+    "mechId": "tolro-800-特洛八",
+    "aliases": [
+      "TOLRO-800"
+    ]
   },
   {
     "id": "rg-gundam-duelists-ebian",
@@ -9250,7 +10727,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-gundam-duelists-ebian.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5798_o_1i7sqg50f3671u6pqqd19o31km723.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4923/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4923/",
+    "mech": "艾比安高达",
+    "mechId": "艾比安高达",
+    "aliases": []
   },
   {
     "id": "bc-704",
@@ -9275,7 +10755,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-704.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230808/d2f512c3f964adc8a7d513207249ea57.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-0 独角兽高达",
+    "mechId": "rx-0独角兽高达",
+    "aliases": [
+      "RX-0",
+      "Unicorn Gundam",
+      "独角兽高达"
+    ]
   },
   {
     "id": "bc-701",
@@ -9300,7 +10787,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-701.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230803/0d684f49d38b33dc16ec596170c04422.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "精神力多加",
+    "mechId": "精神力多加",
+    "aliases": []
   },
   {
     "id": "bc-398",
@@ -9325,7 +10815,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-398.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5782_o_1i7t26heq1q90102o1dgc1d0nr7723.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4906/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4906/",
+    "mech": "禁断高达",
+    "mechId": "禁断高达",
+    "aliases": []
   },
   {
     "id": "bc-397",
@@ -9350,7 +10843,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-397.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230323/38976a7ea98c9ef0c39c24b0774f61fb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "YF-29 杜兰达尔女武神",
+    "mechId": "yf-29杜兰达尔女武神",
+    "aliases": [
+      "YF-29"
+    ]
   },
   {
     "id": "bc-425",
@@ -9375,7 +10873,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-425.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230323/322ded053c7e65bfc258c002a7273c9a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MAILeS 康应原型",
+    "mechId": "mailes康应原型",
+    "aliases": []
   },
   {
     "id": "bc-412",
@@ -9400,7 +10901,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-412.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230323/1eb580ac64800d33ce3542fb97f296e6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "大曾伽",
+    "mechId": "大曾伽",
+    "aliases": []
   },
   {
     "id": "bc-427",
@@ -9425,7 +10929,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-427.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240125/a481b38698c227ed435e854d8fbf8708.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉尔博尔",
+    "mechId": "吉尔博尔",
+    "aliases": []
   },
   {
     "id": "bc-692",
@@ -9450,7 +10957,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-692.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230628/15c58e62a7f96c49dcb1295173b5a8f8.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆",
+    "mechId": "吉姆",
+    "aliases": [
+      "GM",
+      "杰姆"
+    ]
   },
   {
     "id": "bc-691",
@@ -9475,7 +10988,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-691.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230628/664f6085135d8c130128a267edcd1545.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "月高达",
+    "mechId": "月高达",
+    "aliases": []
   },
   {
     "id": "hg-calibarn",
@@ -9504,7 +11020,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-calibarn.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5527_o_1i7srskn2p8h1u5117sg1o5ct23.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4633/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4633/",
+    "mech": "凯列班高达",
+    "mechId": "凯列班高达",
+    "aliases": []
   },
   {
     "id": "bc-280",
@@ -9529,7 +11048,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-280.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5308_o_1i7srqd9619ho59qdfqbdc1ln423.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4404/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4404/",
+    "mech": "战骑高达",
+    "mechId": "战骑高达",
+    "aliases": []
   },
   {
     "id": "bc-426",
@@ -9554,7 +11076,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-426.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240125/179cc9813b53db9450325d8b52d582f1.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "黛西欧伽",
+    "mechId": "黛西欧伽",
+    "aliases": []
   },
   {
     "id": "bc-401",
@@ -9579,7 +11104,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-401.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230713/2b698de05d62a3f230203e0ef7b9dd9c.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "龙神丸",
+    "mechId": "龙神丸",
+    "aliases": []
   },
   {
     "id": "bc-395",
@@ -9604,7 +11132,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-395.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230712/d9d12845ebabed2d935537734e172f12.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽高达2号机 报丧女妖",
+    "mechId": "独角兽高达2号机报丧女妖",
+    "aliases": [
+      "Banshee",
+      "报丧女妖",
+      "独角兽2号机"
+    ]
   },
   {
     "id": "bc-587",
@@ -9629,7 +11164,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-587.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230510/4a76d4e9c2a3089ea88b9ab1ea67bf67.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "大魔",
+    "mechId": "大魔",
+    "aliases": []
   },
   {
     "id": "bc-281",
@@ -9654,7 +11192,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-281.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5310_o_1i7t5djmo190q7vp1o3ahbrsvi23.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4405/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4405/",
+    "mech": "高沃尔瓦",
+    "mechId": "高沃尔瓦",
+    "aliases": []
   },
   {
     "id": "bc-273",
@@ -9679,7 +11220,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-273.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5307_o_1i7sqs5r3dnu1eqp1ron8611pva23.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4403/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4403/",
+    "mech": "学院重骑机",
+    "mechId": "学院重骑机",
+    "aliases": []
   },
   {
     "id": "bc-277",
@@ -9704,7 +11248,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-277.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230109/d389ce3c0d26f29794d7727408a1d649.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "境界战机武器套组5",
+    "mechId": "境界战机武器套组5",
+    "aliases": []
   },
   {
     "id": "bc-585",
@@ -9729,7 +11276,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-585.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230510/9bf6c1bcebd24c35e84ba267e1840381.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ν高达",
+    "mechId": "ν高达",
+    "aliases": [
+      "Nu Gundam",
+      "牛高达",
+      "牛"
+    ]
   },
   {
     "id": "bc-584",
@@ -9754,7 +11308,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-584.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230510/ce505fe23e66da0586f1534f17a96831.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Z高达",
+    "mechId": "z高达",
+    "aliases": [
+      "Zeta Gundam",
+      "Zeta",
+      "泽塔"
+    ]
   },
   {
     "id": "bc-588",
@@ -9779,7 +11340,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-588.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230510/ff7f8660bf60ae381489c6bb8f3bafdc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "杰刚",
+    "mechId": "杰刚",
+    "aliases": [
+      "Gelgoog",
+      "勇士",
+      "格鲁古古"
+    ]
   },
   {
     "id": "bc-272",
@@ -9804,7 +11372,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-272.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5306_o_1i7t2cs95phlvevje611s71oc023.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4402/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4402/",
+    "mech": "风暴海因德里",
+    "mechId": "风暴海因德里",
+    "aliases": []
   },
   {
     "id": "bc-263",
@@ -9829,7 +11400,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-263.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5287_o_1i7t2eeot1rcs17c96re1v6kmlg23.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4381/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4381/",
+    "mech": "钢加农",
+    "mechId": "钢加农",
+    "aliases": []
   },
   {
     "id": "bc-268",
@@ -9854,7 +11428,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-268.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230109/57c636bf20e49ef12951f444a541eadd.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "境界战机 武器套组4 多功能连接骨架",
+    "mechId": "境界战机武器套组4多功能连接骨架",
+    "aliases": []
   },
   {
     "id": "bc-241",
@@ -9879,7 +11456,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-241.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5239_o_1gtih98bjdblaq81r9u1pvm1eat28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4328/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4328/",
+    "mech": "风灵高达",
+    "mechId": "风灵高达",
+    "aliases": [
+      "Windmakk",
+      "风灵"
+    ]
   },
   {
     "id": "hg-darilbalde",
@@ -9908,7 +11491,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-darilbalde.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230406/c0148978114ddb20a8fea6284513352d.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "迪兰扎索尔",
+    "mechId": "迪兰扎索尔",
+    "aliases": []
   },
   {
     "id": "bc-257",
@@ -9933,7 +11519,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-257.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230404/d94837fb40c6af30c6cfa8e383b554b7.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "重型传令骑兵",
+    "mechId": "重型传令骑兵",
+    "aliases": []
   },
   {
     "id": "mg-zeta-ver-ka",
@@ -9962,7 +11551,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-zeta-ver-ka.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5223_o_1gdplnukh1lffod3nur8vl1emf28.jpeg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4311/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4311/",
+    "mech": "Z高达",
+    "mechId": "z高达",
+    "aliases": [
+      "Zeta Gundam",
+      "Zeta",
+      "泽塔"
+    ]
   },
   {
     "id": "bc-261",
@@ -9987,7 +11583,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-261.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230418/f457a856394e34699dcd2a47177a229a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "旋风高达",
+    "mechId": "旋风高达",
+    "aliases": []
   },
   {
     "id": "hg-aerial-rebuilt",
@@ -10016,7 +11615,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-aerial-rebuilt.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5238_o_1gob4hkhu1rg6rscubr112b6p328.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4327/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4327/",
+    "mech": "风灵高达",
+    "mechId": "风灵高达",
+    "aliases": [
+      "Windmakk",
+      "风灵"
+    ]
   },
   {
     "id": "hg-sohon-magin",
@@ -10045,7 +11650,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-sohon-magin.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5237_o_1gq16pi9464mja81enjf543732i.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4326/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4326/",
+    "mech": "索恩魔灵高达",
+    "mechId": "索恩魔灵高达",
+    "aliases": []
   },
   {
     "id": "hg-ulu-magin",
@@ -10074,7 +11682,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-ulu-magin.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5236_o_1gq16l1noqt65st3e7r91bcj28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4325/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4325/",
+    "mech": "乌尔魔灵高达",
+    "mechId": "乌尔魔灵高达",
+    "aliases": []
   },
   {
     "id": "bc-226",
@@ -10099,7 +11710,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-226.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230307/4841ce633a1ac5acdf89f104229ed310.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "凶鸟MK-Ⅱ",
+    "mechId": "凶鸟mk-ii",
+    "aliases": []
   },
   {
     "id": "bc-386",
@@ -10124,7 +11738,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-386.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230227/cb971504cd22b2a012933aa4cab1f9a3.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "BRADY FOX",
+    "mechId": "bradyfox",
+    "aliases": [
+      "HG1"
+    ]
   },
   {
     "id": "bc-222",
@@ -10149,7 +11768,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-222.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230321/f549c224f5a8fbf6d1d93c54a38240ce.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "主宰至暗飞龙",
+    "mechId": "主宰至暗飞龙",
+    "aliases": []
   },
   {
     "id": "hg-scout-horse",
@@ -10178,7 +11800,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-scout-horse.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230209/d4d7290ce68df07d3eb498b7b49f4bd2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "传令骑兵",
+    "mechId": "传令骑兵",
+    "aliases": []
   },
   {
     "id": "bc-236",
@@ -10203,7 +11828,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-236.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5222_o_1gob493mom581cp18ehs4i1tnr28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4310/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4310/",
+    "mech": "狄克巴兰",
+    "mechId": "狄克巴兰",
+    "aliases": []
   },
   {
     "id": "hg-heindree",
@@ -10232,7 +11860,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-heindree.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230215/32a853fccf8cb279b5fc2e5d93bca133.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "海因德里",
+    "mechId": "海因德里",
+    "aliases": []
   },
   {
     "id": "bc-206",
@@ -10257,7 +11888,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-206.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230223/dc4c73550c91bf53d08e0c8b77c26f8a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异变正义无限飞龙",
+    "mechId": "异变正义无限飞龙",
+    "aliases": []
   },
   {
     "id": "bc-286",
@@ -10282,7 +11916,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-286.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230112/e5c6f3199ab4075b5d9462489fa019ae.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞翼高达零式EW",
+    "mechId": "飞翼高达零式ew",
+    "aliases": [
+      "Wing Gundam Zero EW",
+      "飞翼零式EW",
+      "零EW",
+      "EW零式"
+    ]
   },
   {
     "id": "bc-285",
@@ -10307,7 +11949,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-285.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230112/c8ca55ae0eb632a85208e6735357ba89.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "主天使高达",
+    "mechId": "主天使高达",
+    "aliases": [
+      "Archangel Gundam",
+      "主天使",
+      "Archangel"
+    ]
   },
   {
     "id": "bc-200",
@@ -10332,7 +11981,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-200.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20221014/8fc030c2ebe97cc32dd00f7da89c2392.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "YF-19",
+    "mechId": "yf-19",
+    "aliases": [
+      "YF-19"
+    ]
   },
   {
     "id": "bc-231",
@@ -10357,7 +12011,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-231.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230106/90c2bc41105836934bc61707a07e699b.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "恶魔审判者",
+    "mechId": "恶魔审判者",
+    "aliases": []
   },
   {
     "id": "bc-233",
@@ -10382,7 +12039,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-233.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5204_o_1gm87g748169i1nhgfj31dtr117k28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4291/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4291/",
+    "mech": "米拉苏尔社制 飞行组件",
+    "mechId": "米拉苏尔社制飞行组件",
+    "aliases": []
   },
   {
     "id": "bc-232",
@@ -10407,7 +12067,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-232.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230106/9b836aaf74c8e96828dd21ac036a538d.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "五号审判者",
+    "mechId": "五号审判者",
+    "aliases": []
   },
   {
     "id": "mg-sazabi-collector-wt",
@@ -10436,7 +12099,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-sazabi-collector-wt.webp",
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "Zaku II",
+      "扎古II",
+      "沙扎比",
+      "MS-06S"
+    ]
   },
   {
     "id": "mgsd-freedom",
@@ -10465,7 +12136,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mgsd-freedom.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260928/e8de6bc1c5935c28b483ec1ced8ac380.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "自由高达",
+    "mechId": "自由高达",
+    "aliases": [
+      "Freedom Gundam",
+      "ZGMF-X10A",
+      "自由高达"
+    ]
   },
   {
     "id": "bc-192",
@@ -10490,7 +12168,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-192.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230124/f988f4d09399f2177861889ed756e2a6.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "至高强袭自由飞龙",
+    "mechId": "至高强袭自由飞龙",
+    "aliases": []
   },
   {
     "id": "bc-284",
@@ -10515,7 +12196,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-284.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230630/99a784458eaffcee737aa03b5aabfa4f.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "自由高达",
+    "mechId": "自由高达",
+    "aliases": [
+      "Freedom Gundam",
+      "ZGMF-X10A",
+      "自由高达"
+    ]
   },
   {
     "id": "bc-283",
@@ -10540,7 +12228,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-283.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230630/7d453d10e855e31c59852af309d5d598.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ZGMF-X10A 自由高达",
+    "mechId": "zgmf-x10a自由高达",
+    "aliases": [
+      "X10A"
+    ]
   },
   {
     "id": "bc-282",
@@ -10565,7 +12258,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-282.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230112/4d4eaf0ec4f363a44e1b149c94273ffb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "夏亚专用扎古Ⅱ",
+    "mechId": "夏亚专用扎古ii",
+    "aliases": []
   },
   {
     "id": "bc-168",
@@ -10590,7 +12286,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-168.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20221207/fbb8cbcba825c115d731465f11a185ce.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "达利尔巴尔德",
+    "mechId": "达利尔巴尔德",
+    "aliases": []
   },
   {
     "id": "bc-140",
@@ -10615,7 +12314,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-140.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220624/1a8496f6c3f12a311b6ba7ce21b1baf6.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "魔神ZERO",
+    "mechId": "魔神zero",
+    "aliases": []
   },
   {
     "id": "bc-167",
@@ -10640,7 +12342,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-167.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20221214/b020c8343ec0a17eb09bbc0365d765fe.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "铁骑高达",
+    "mechId": "铁骑高达",
+    "aliases": []
   },
   {
     "id": "bc-169",
@@ -10665,7 +12370,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-169.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5183_o_1gis2ceaukvi114m1lr0hgvj4i28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4267/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4267/",
+    "mech": "学院训练机",
+    "mechId": "学院训练机",
+    "aliases": []
   },
   {
     "id": "bc-170",
@@ -10690,7 +12398,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-170.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5184_o_1gis29anhe8u1a511ifl14gho6f28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4268/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4268/",
+    "mech": "学院训练机用扩展配件包",
+    "mechId": "学院训练机用扩展配件包",
+    "aliases": []
   },
   {
     "id": "bc-251",
@@ -10715,7 +12426,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-251.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20221118/5b0628b9a6a3d51196541a34b439b798.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Hi-ν高达",
+    "mechId": "hi-ν高达",
+    "aliases": [
+      "Hi-Nu Gundam",
+      "海牛",
+      "Hi牛",
+      "Hi-Nu"
+    ]
   },
   {
     "id": "bc-247",
@@ -10740,7 +12459,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-247.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20221118/680499958d715d2c49b3d8fbf53d6f90.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-93ff ν高达",
+    "mechId": "rx-93ffν高达",
+    "aliases": [
+      "RX-93"
+    ]
   },
   {
     "id": "bc-245",
@@ -10765,7 +12489,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-245.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20221118/0610752e51e4d0e9dcbdcfb8cea28601.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-93ff ν高达",
+    "mechId": "rx-93ffν高达",
+    "aliases": [
+      "RX-93"
+    ]
   },
   {
     "id": "bc-164",
@@ -10790,7 +12519,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-164.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5178_o_1ggk0300k1m05h2mqr4p6bjc28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4261/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4261/",
+    "mech": "迪兰扎",
+    "mechId": "迪兰扎",
+    "aliases": []
   },
   {
     "id": "bc-165",
@@ -10815,7 +12547,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-165.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5179_o_1ggk09l5vc12fm61u621cg11ok328.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4262/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4262/",
+    "mech": "学院训练机",
+    "mechId": "学院训练机",
+    "aliases": []
   },
   {
     "id": "bc-125",
@@ -10840,7 +12575,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-125.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5149_o_1gh093d101e4dl3vhv4149jnba28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4230/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4230/",
+    "mech": "强袭自由高达",
+    "mechId": "强袭自由高达",
+    "aliases": [
+      "Strike Freedom Gundam",
+      "强袭自由",
+      "SF",
+      "Strike Freedom"
+    ]
   },
   {
     "id": "bc-135",
@@ -10865,7 +12608,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-135.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20221121/340361a84ffd959be5076e98adbf80c1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "孙权异端高达 赫炎翔虎",
+    "mechId": "孙权异端高达赫炎翔虎",
+    "aliases": []
   },
   {
     "id": "bc-253",
@@ -10890,7 +12636,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-253.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20221118/69cf200d85b5b802d6fc0160f2a5374a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异端高达红色机红龙形态",
+    "mechId": "异端高达红色机红龙形态",
+    "aliases": []
   },
   {
     "id": "bc-252",
@@ -10915,7 +12664,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-252.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20221118/9655b1517ef328fc1478ead2d5b0fe49.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "全装备高达 VS 精神力扎古",
+    "mechId": "全装备高达vs精神力扎古",
+    "aliases": []
   },
   {
     "id": "bc-161",
@@ -10940,7 +12692,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-161.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220825/f9ee18b3b8b93829fdb6d94aff6f10eb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "迪兰扎",
+    "mechId": "迪兰扎",
+    "aliases": []
   },
   {
     "id": "bc-160",
@@ -10965,7 +12720,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-160.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220825/44d3a0bd4e4384cd8a76372028e7a47d.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "风灵高达",
+    "mechId": "风灵高达",
+    "aliases": [
+      "Windmakk",
+      "风灵"
+    ]
   },
   {
     "id": "bc-163",
@@ -10990,7 +12751,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-163.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220825/8e8bf539f632a9a37ea9281c3ca5b321.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "风灵高达",
+    "mechId": "风灵高达",
+    "aliases": [
+      "Windmakk",
+      "风灵"
+    ]
   },
   {
     "id": "bc-124",
@@ -11015,7 +12782,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-124.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220624/59a3da0ec46b0fbc6668fd0506cb14da.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "黑暗霸王飞龙",
+    "mechId": "黑暗霸王飞龙",
+    "aliases": []
   },
   {
     "id": "bc-182",
@@ -11040,7 +12810,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-182.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220910/fcf6852b02ddb02c7afc2d538a02531f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽",
+    "mechId": "独角兽",
+    "aliases": [
+      "Unicorn Gundam",
+      "独角兽高达",
+      "RX-0",
+      "Unicorn"
+    ]
   },
   {
     "id": "bc-183",
@@ -11065,7 +12843,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-183.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220910/bd9386d655832060b2394f57cb118fd4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "完美强袭高达",
+    "mechId": "完美强袭高达",
+    "aliases": []
   },
   {
     "id": "bc-116",
@@ -11090,7 +12871,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-116.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5100_o_1gc66rv8achg13fpakr1ild14g128.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4179/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4179/",
+    "mech": "神龙高达",
+    "mechId": "神龙高达",
+    "aliases": []
   },
   {
     "id": "bc-114",
@@ -11115,7 +12899,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-114.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220517/eb1f5585fd37bc0fd7b434c2ff1cb5fa.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "GaoGaiGar",
+    "mechId": "gaogaigar",
+    "aliases": []
   },
   {
     "id": "bc-115",
@@ -11140,7 +12927,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-115.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220517/0a38f5143edaa53c23bf506651ebeba3.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "赵云00高达 指挥官组件",
+    "mechId": "赵云00高达指挥官组件",
+    "aliases": []
   },
   {
     "id": "bc-159",
@@ -11165,7 +12955,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-159.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220818/d44840dc9d3853a3bc456629f8e134e6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强袭高达",
+    "mechId": "强袭高达",
+    "aliases": []
   },
   {
     "id": "bc-158",
@@ -11190,7 +12983,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-158.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220818/78074878b920b566937e926ae964bc8e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "翔翼型强袭高达",
+    "mechId": "翔翼型强袭高达",
+    "aliases": []
   },
   {
     "id": "bc-156",
@@ -11215,7 +13011,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-156.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220805/f8e5a39ac64d240588b16a32913630b1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "巴巴托斯高达用扩展零件",
+    "mechId": "巴巴托斯高达用扩展零件",
+    "aliases": []
   },
   {
     "id": "bc-157",
@@ -11240,7 +13039,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-157.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220805/6e5906de3b388db2ba46de6f27877421.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达F90",
+    "mechId": "高达f90",
+    "aliases": [
+      "F90",
+      "Gundam F90"
+    ]
   },
   {
     "id": "bc-108",
@@ -11265,7 +13070,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-108.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220517/90a318b45da61ef3c22b6a1d1d3557a2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MAILeS 建武斩",
+    "mechId": "mailes建武斩",
+    "aliases": []
   },
   {
     "id": "bc-143",
@@ -11290,7 +13098,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-143.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220802/d4e91d5ba21c3d57ff12b08663197d84.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "魔灵高达",
+    "mechId": "魔灵高达",
+    "aliases": []
   },
   {
     "id": "bc-144",
@@ -11315,7 +13126,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-144.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220802/3863e79d963ed826ec95da0fc60a00ec.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异端审判者",
+    "mechId": "异端审判者",
+    "aliases": []
   },
   {
     "id": "rg-gundam-duelists-gundam",
@@ -11344,7 +13158,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-gundam-duelists-gundam.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5028_o_1ga085rbj3s612eu1fs31pn21bus23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4104/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4104/",
+    "mech": "神高达",
+    "mechId": "神高达",
+    "aliases": []
   },
   {
     "id": "bc-369",
@@ -11369,7 +13186,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-369.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230224/0931fb20a1a9cad3bdbc5058bfe53bde.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "曹操飞翼高达 倚圣之装",
+    "mechId": "曹操飞翼高达倚圣之装",
+    "aliases": []
   },
   {
     "id": "bc-106",
@@ -11394,7 +13214,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-106.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220517/fb6bb267a18586fbd676ce8cfce4a88f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "莱夫高达GP04",
+    "mechId": "莱夫高达gp04",
+    "aliases": [
+      "GP04"
+    ]
   },
   {
     "id": "bc-107",
@@ -11419,7 +13244,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-107.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220517/dedc6cf219df29a83e064f551f5f75af.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "闪耀霸王飞龙",
+    "mechId": "闪耀霸王飞龙",
+    "aliases": []
   },
   {
     "id": "bc-155",
@@ -11444,7 +13272,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-155.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220727/f2d95a0ccd59378b41eb2800961abd70.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达AGE-1 换装系统",
+    "mechId": "高达age-1换装系统",
+    "aliases": [
+      "AGE-1"
+    ]
   },
   {
     "id": "eg-rx78-2-gb",
@@ -11473,7 +13306,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/eg-rx78-2-gb.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220727/477d9b1830286a1cd7f1856ba75cff0d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "bc-151",
@@ -11498,7 +13341,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-151.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220727/1dca369516c2d4002d9369a47f3deda3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "天蚀高达",
+    "mechId": "天蚀高达",
+    "aliases": []
   },
   {
     "id": "rg-freedom-ver-gcp-gb",
@@ -11527,7 +13373,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-freedom-ver-gcp-gb.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240605/3129da9a8d1ad835cd8f80c373197ca6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ZGMF-X10A 自由高达",
+    "mechId": "zgmf-x10a自由高达",
+    "aliases": [
+      "X10A"
+    ]
   },
   {
     "id": "bc-99",
@@ -11552,7 +13403,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-99.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220517/ee6fc3045ee8612815a6957f8924a1d4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "布雷迪幻影",
+    "mechId": "布雷迪幻影",
+    "aliases": []
   },
   {
     "id": "bc-90",
@@ -11577,7 +13431,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-90.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220517/a305e45e44ae7b00ed9b95d467ca7afe.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "龙神丸",
+    "mechId": "龙神丸",
+    "aliases": []
   },
   {
     "id": "bc-96",
@@ -11602,7 +13459,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-96.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220517/43ea5a8a449875e438be2d3a95a580ff.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "巫师圣盾高达",
+    "mechId": "巫师圣盾高达",
+    "aliases": []
   },
   {
     "id": "bc-146",
@@ -11627,7 +13487,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-146.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220627/ae46ba0b1c16a8d6688465580fbd8ca4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "力天使高达",
+    "mechId": "力天使高达",
+    "aliases": [
+      "Virtue Gundam",
+      "Virtue",
+      "力天使"
+    ]
   },
   {
     "id": "bc-145",
@@ -11652,7 +13519,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-145.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220627/6514437e46d4fd10b0a6116a9dbe84f6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异端高达红色机 飞行背包",
+    "mechId": "异端高达红色机飞行背包",
+    "aliases": []
   },
   {
     "id": "bc-147",
@@ -11677,7 +13547,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-147.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220627/005a85d0b476e8f816b77d81b3944bbc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "bc-75",
@@ -11702,7 +13582,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-75.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5027_o_1g5g0j4bjk361nnt3ll15kv1met23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4103/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4103/",
+    "mech": "希格露恩",
+    "mechId": "希格露恩",
+    "aliases": []
   },
   {
     "id": "bc-89",
@@ -11727,7 +13610,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-89.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220427/178ee348c596898a7c8a27261408b2ba.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "布雷迪狐狸",
+    "mechId": "布雷迪狐狸",
+    "aliases": []
   },
   {
     "id": "bc-88",
@@ -11752,7 +13638,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-88.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220427/963ad0acceaec838d148f94ce1050b1b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MAILeS 灵龟改",
+    "mechId": "mailes灵龟改",
+    "aliases": []
   },
   {
     "id": "bc-78",
@@ -11777,7 +13666,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-78.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220413/d534e445a9c001113c4d0cecf3e0feba.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "才藏德尔塔高达改",
+    "mechId": "才藏德尔塔高达改",
+    "aliases": []
   },
   {
     "id": "bc-77",
@@ -11802,7 +13694,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-77.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220413/e1a020fe40bd2dbfebd3587335b46f54.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "军马 骑士世界",
+    "mechId": "军马骑士世界",
+    "aliases": []
   },
   {
     "id": "bc-62",
@@ -11827,7 +13722,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-62.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5020_o_1g35rp4ss1c3neon1pdb1fn51kfc28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4096/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4096/",
+    "mech": "强夺高达",
+    "mechId": "强夺高达",
+    "aliases": []
   },
   {
     "id": "bc-63",
@@ -11852,7 +13750,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-63.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5018_o_1g35rmeka1arb19neal4kt1afv28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4094/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4094/",
+    "mech": "施瓦尔贝特制型",
+    "mechId": "施瓦尔贝特制型",
+    "aliases": []
   },
   {
     "id": "bc-86",
@@ -11877,7 +13778,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-86.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220427/7e8c37342dacc22c500a25fa357e3c5d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MAILeS 贞观改",
+    "mechId": "mailes贞观改",
+    "aliases": []
   },
   {
     "id": "bc-58",
@@ -11902,7 +13806,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-58.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251112/822397799d370b31f4d218583c965f55.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "亡灵",
+    "mechId": "亡灵",
+    "aliases": []
   },
   {
     "id": "bc-65",
@@ -11927,7 +13834,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-65.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220413/fd14d5623b40931aa8e4393827163892.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "罗宾汉高达AGE-2",
+    "mechId": "罗宾汉高达age-2",
+    "aliases": [
+      "AGE-2"
+    ]
   },
   {
     "id": "bc-64",
@@ -11952,7 +13864,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-64.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220413/fd66aee3a784b5af3d48b9ffcbb09699.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "骑士强袭高达",
+    "mechId": "骑士强袭高达",
+    "aliases": []
   },
   {
     "id": "eg-nu",
@@ -11981,7 +13896,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/eg-nu.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5007_o_1fvpocb9p2es12vp10o61df2hk728.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4082/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4082/",
+    "mech": "ν高达",
+    "mechId": "ν高达",
+    "aliases": [
+      "Nu Gundam",
+      "牛高达",
+      "牛"
+    ]
   },
   {
     "id": "bc-53",
@@ -12006,7 +13928,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-53.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5006_o_1g0boctghfap14r16cak2a2lh28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4081/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4081/",
+    "mech": "高达阿斯蒙蒂斯",
+    "mechId": "高达阿斯蒙蒂斯",
+    "aliases": []
   },
   {
     "id": "bc-46",
@@ -12031,7 +13956,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-46.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220413/f042fccef6789276bd5504c13a118056.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "兵猎犬",
+    "mechId": "兵猎犬",
+    "aliases": []
   },
   {
     "id": "bc-45",
@@ -12056,7 +13984,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-45.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220413/6093792569d32cb59d6b802b5ff2d976.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "境界战机 武器套组",
+    "mechId": "境界战机武器套组",
+    "aliases": []
   },
   {
     "id": "bc-85",
@@ -12081,7 +14012,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-85.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220427/decb0b029f541cb81fa2270ead9b04c0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MAILeS 建武斩",
+    "mechId": "mailes建武斩",
+    "aliases": []
   },
   {
     "id": "pb-172",
@@ -12109,7 +14043,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-1000223365.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000223365/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000223365/",
+    "mech": "高达F90",
+    "mechId": "高达f90",
+    "aliases": [
+      "F90",
+      "Gundam F90"
+    ]
   },
   {
     "id": "bc-54",
@@ -12134,7 +14074,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-54.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220413/6f4ab54d6e7e9a59e08847fd004d1147.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "凯撒传奇高达",
+    "mechId": "凯撒传奇高达",
+    "aliases": []
   },
   {
     "id": "bc-55",
@@ -12159,7 +14102,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-55.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220413/64ccf723107143169684ed052821cf37.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "亚瑟高达Mk-Ⅲ",
+    "mechId": "亚瑟高达mk-iii",
+    "aliases": []
   },
   {
     "id": "bc-30",
@@ -12184,7 +14130,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-30.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220413/8a8c0a9b4e607a16cf256ff462b1ee01.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "布雷迪猎犬",
+    "mechId": "布雷迪猎犬",
+    "aliases": []
   },
   {
     "id": "bc-33",
@@ -12209,7 +14158,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-33.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220413/18648977b940d01d7e3f383c0237895e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异端高达红色机 强力型装备",
+    "mechId": "异端高达红色机强力型装备",
+    "aliases": []
   },
   {
     "id": "bc-32",
@@ -12234,7 +14186,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-32.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4722_o_1fthof65q1f8c1i85vgq1r28bgd28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3772/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3772/",
+    "mech": "力克･大魔",
+    "mechId": "力克・大魔",
+    "aliases": []
   },
   {
     "id": "bc-24",
@@ -12259,7 +14214,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-24.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220413/37ab8d9e3c81acd603f23878493800e5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "牛人",
+    "mechId": "牛人",
+    "aliases": []
   },
   {
     "id": "mg-dougram",
@@ -12288,7 +14246,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-dougram.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4706_o_1fr9i2ir4bmbn19102bmsfg5328.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3754/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3754/",
+    "mech": "MS-14 大魔",
+    "mechId": "ms-14大魔",
+    "aliases": [
+      "MS-14"
+    ]
   },
   {
     "id": "eg-strike-freedom",
@@ -12317,7 +14280,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/eg-strike-freedom.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4698_o_1fp429i8r51rr0b6sn1s381j4o28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3744/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3744/",
+    "mech": "强袭高达",
+    "mechId": "强袭高达",
+    "aliases": []
   },
   {
     "id": "bc-18",
@@ -12342,7 +14308,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-18.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220413/9f53a30317acfffbca0e57efba19a24f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MAILeS 建武",
+    "mechId": "mailes建武",
+    "aliases": []
   },
   {
     "id": "bc-12",
@@ -12367,7 +14336,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-12.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4580_o_1fpthidgq1tqtbe1ege10tid2k23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3627/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3627/",
+    "mech": "00量子高达 指挥官型",
+    "mechId": "00量子高达指挥官型",
+    "aliases": []
   },
   {
     "id": "bc-13",
@@ -12392,7 +14364,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-13.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4577_o_1fpthhhts1t371qcc17g7rss192g23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3623/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3623/",
+    "mech": "巴巴托斯高达半人马座",
+    "mechId": "巴巴托斯高达半人马座",
+    "aliases": []
   },
   {
     "id": "bc-17",
@@ -12417,7 +14392,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-17.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220413/91408b0513954032d26fe353ccd706a3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "布雷迪猎犬",
+    "mechId": "布雷迪猎犬",
+    "aliases": []
   },
   {
     "id": "bc-16",
@@ -12442,7 +14420,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-16.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220413/6638165176e2f9681fd29ad2cc0d5995.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "V-33 白鹳运输机",
+    "mechId": "v-33白鹳运输机",
+    "aliases": [
+      "V-33"
+    ]
   },
   {
     "id": "bc-553",
@@ -12467,7 +14450,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-553.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230510/44e940d8cc9302fb8a18fc88a52d5fa4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "零式飞翼高达EW",
+    "mechId": "零式飞翼高达ew",
+    "aliases": []
   },
   {
     "id": "pb-261",
@@ -12495,7 +14481,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-1000163466.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000163466/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000163466/",
+    "mech": "真武者顽駄无 黑衣大铠",
+    "mechId": "真武者顽駄无黑衣大铠",
+    "aliases": []
   },
   {
     "id": "bc-14",
@@ -12520,7 +14509,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-14.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220413/81d95dfbd99bcaac1145fccf7f5ba447.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "龙尊刘备独角兽高达",
+    "mechId": "龙尊刘备独角兽高达",
+    "aliases": []
   },
   {
     "id": "bc-15",
@@ -12545,7 +14537,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-15.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20220413/2d7a08e18abcdc95680b9fa8da73f380.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "齐天大圣悟空脉冲高达 斗战胜佛",
+    "mechId": "齐天大圣悟空脉冲高达斗战胜佛",
+    "aliases": []
   },
   {
     "id": "bc-310",
@@ -12570,7 +14565,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-310.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4586_o_1flqfhcp015pa3gmljb1ngi1vaf28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3632/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3632/",
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "bc-303",
@@ -12595,7 +14600,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-303.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4579_o_1fi97fjt6k6f12st121h1p6j6ps28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3625/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3625/",
+    "mech": "炽热高达",
+    "mechId": "炽热高达",
+    "aliases": []
   },
   {
     "id": "bc-302",
@@ -12620,7 +14628,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-302.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4578_o_1fi97c4pr1b601vnm14l2r1hhvp28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3624/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3624/",
+    "mech": "完美强袭自由高达",
+    "mechId": "完美强袭自由高达",
+    "aliases": []
   },
   {
     "id": "bc-312",
@@ -12645,7 +14656,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-312.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4622_o_1flqfn9mh1qgu1gf9raf1u1b1vh728.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3669/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3669/",
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "Zaku II",
+      "扎古II",
+      "沙扎比",
+      "MS-06S"
+    ]
   },
   {
     "id": "bc-308",
@@ -12670,7 +14689,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-308.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230206/c85ed8a552a1e3a0efb0e22c1b351181.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "AMAIM 幽灵",
+    "mechId": "amaim幽灵",
+    "aliases": []
   },
   {
     "id": "bc-297",
@@ -12695,7 +14717,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-297.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230206/9ede4d7c2e9294f58ce869e226545f1e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MAILeS 灵龟",
+    "mechId": "mailes灵龟",
+    "aliases": []
   },
   {
     "id": "bc-309",
@@ -12720,7 +14745,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-309.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230206/b109495a5e317d1efd6aafa01108d2f1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "古铁",
+    "mechId": "古铁",
+    "aliases": []
   },
   {
     "id": "bc-300",
@@ -12745,7 +14773,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-300.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230206/88586f1b0e405691f1efc9bef82c0418.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "泛用人型决战兵器 人造人EVA 正规实用型 3号机 ESV盾装",
+    "mechId": "泛用人型决战兵器人造人eva正规实用型3号机esv盾装",
+    "aliases": []
   },
   {
     "id": "bc-304",
@@ -12770,7 +14801,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-304.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230206/dadf3f6abb265ebfe01a90a805c61baa.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "克莉奥帕特拉卡碧尼 黑暗面具",
+    "mechId": "克莉奥帕特拉卡碧尼黑暗面具",
+    "aliases": []
   },
   {
     "id": "bc-307",
@@ -12795,7 +14829,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-307.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230206/83df83c21f31c7aa8ec1323bfcd7f0d6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "穷奇强袭自由高达",
+    "mechId": "穷奇强袭自由高达",
+    "aliases": []
   },
   {
     "id": "bc-332",
@@ -12820,7 +14857,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-332.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4575_o_1fi96vr441ojp163f1ealole67a28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3621/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3621/",
+    "mech": "太阳神高达",
+    "mechId": "太阳神高达",
+    "aliases": []
   },
   {
     "id": "bc-331",
@@ -12845,7 +14885,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-331.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4576_o_1fi973kpt14dglailfp9ara9n28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3622/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3622/",
+    "mech": "天堂圣枪高达",
+    "mechId": "天堂圣枪高达",
+    "aliases": []
   },
   {
     "id": "bc-329",
@@ -12870,7 +14913,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-329.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230213/69c6ea9c304a87f5b1b279de2ade084f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "瑞吉蕾芙",
+    "mechId": "瑞吉蕾芙",
+    "aliases": []
   },
   {
     "id": "bc-326",
@@ -12895,7 +14941,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-326.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230213/9253057eccee3388076db4ee6c159742.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "特大型装甲特殊搬运车",
+    "mechId": "特大型装甲特殊搬运车",
+    "aliases": []
   },
   {
     "id": "bc-325",
@@ -12920,7 +14969,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-325.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230213/7af05c24e4033adc3c0b78a8e4a8df4e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MAILeS 贞观",
+    "mechId": "mailes贞观",
+    "aliases": []
   },
   {
     "id": "bc-317",
@@ -12945,7 +14997,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-317.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4610_o_1fl397t3uvpj1vb01fa9dmo1osi28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3656/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3656/",
+    "mech": "德天使高达",
+    "mechId": "德天使高达",
+    "aliases": []
   },
   {
     "id": "bc-552",
@@ -12970,7 +15025,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-552.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230510/6bb09f66d77a7d734b33291dce6b2ae1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉翁号",
+    "mechId": "吉翁号",
+    "aliases": []
   },
   {
     "id": "bc-346",
@@ -12995,7 +15053,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-346.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4597_o_1fhq05tl25ag91pr911d9n90e28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3642/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3642/",
+    "mech": "高达格莫瑞",
+    "mechId": "高达格莫瑞",
+    "aliases": []
   },
   {
     "id": "bc-350",
@@ -13020,7 +15081,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-350.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230214/f744e7cbf7cfc9c4569ce34c77724712.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "瑞吉蕾芙",
+    "mechId": "瑞吉蕾芙",
+    "aliases": []
   },
   {
     "id": "bc-349",
@@ -13045,7 +15109,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-349.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230214/dd05bfcda4dcd7ce7cbf291a34675a41.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "瑞吉蕾芙",
+    "mechId": "瑞吉蕾芙",
+    "aliases": []
   },
   {
     "id": "bc-355",
@@ -13070,7 +15137,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-355.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230214/6ac9d13e371afeb006389c5a839f9785.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "本耶普回旋镖",
+    "mechId": "本耶普回旋镖",
+    "aliases": []
   },
   {
     "id": "bc-343",
@@ -13095,7 +15165,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-343.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230214/23e405e5e3b300870af4e82621c61da5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "巨大托尼",
+    "mechId": "巨大托尼",
+    "aliases": []
   },
   {
     "id": "bc-352",
@@ -13120,7 +15193,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-352.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230214/2e41f914ad5abb2f65d6f50fa7ad23ac.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MAILeS 建武",
+    "mechId": "mailes建武",
+    "aliases": []
   },
   {
     "id": "bc-550",
@@ -13145,7 +15221,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-550.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230510/7985d260aaadffcf16241d8b44860b25.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "铁球",
+    "mechId": "铁球",
+    "aliases": [
+      "Ball"
+    ]
   },
   {
     "id": "bc-337",
@@ -13170,7 +15251,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-337.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230214/4f7986b1a9b98a38b71825f1fec75214.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "超时空要塞 女武神 特殊套装①",
+    "mechId": "超时空要塞女武神特殊套装1",
+    "aliases": []
   },
   {
     "id": "bc-338",
@@ -13195,7 +15279,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-338.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230214/753b09cafece8c1a824b6c4dd6a9dd3a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "超时空要塞 女武神 特殊套装②",
+    "mechId": "超时空要塞女武神特殊套装2",
+    "aliases": []
   },
   {
     "id": "bc-551",
@@ -13220,7 +15307,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-551.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230510/f1d8f1641238cca8be9c1c6a99965580.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78F00 高达",
+    "mechId": "rx-78f00高达",
+    "aliases": [
+      "RX-78F"
+    ]
   },
   {
     "id": "bc-335",
@@ -13245,7 +15337,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-335.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230214/3cdc82df0915bbce84baa5b2ae3a7e24.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "翠绿暴风队员",
+    "mechId": "翠绿暴风队员",
+    "aliases": []
   },
   {
     "id": "bc-345",
@@ -13270,7 +15365,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-345.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230214/53d12a9ba3533a269f1a54e1969f6817.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "警长翠绿暴风高达",
+    "mechId": "警长翠绿暴风高达",
+    "aliases": []
   },
   {
     "id": "bc-334",
@@ -13295,7 +15393,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-334.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230214/7662de66ebd8b209b21d6d2282f0c159.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "信长艾比安高达 黑暗面具",
+    "mechId": "信长艾比安高达黑暗面具",
+    "aliases": []
   },
   {
     "id": "bc-344",
@@ -13320,7 +15421,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-344.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230214/56024cf7b014d6ac65dd7593a38cb13c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "亚森高达X",
+    "mechId": "亚森高达x",
+    "aliases": []
   },
   {
     "id": "pb-396",
@@ -13348,7 +15452,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-1000157736.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000157736/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000157736/",
+    "mech": "梅萨F02型",
+    "mechId": "梅萨f02型",
+    "aliases": [
+      "F02"
+    ]
   },
   {
     "id": "bc-364",
@@ -13373,7 +15482,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-364.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230223/fd556404e6bb3af599016de14538a9b3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MAILeS 白雉",
+    "mechId": "mailes白雉",
+    "aliases": []
   },
   {
     "id": "bc-384",
@@ -13398,7 +15510,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-384.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230224/569f9170a076feb601137845681af9c9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "盖塔ARC",
+    "mechId": "盖塔arc",
+    "aliases": []
   },
   {
     "id": "bc-544",
@@ -13423,7 +15538,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-544.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230510/f5f1e4c46c0b4499fb1e7db3610bf1b0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "bc-368",
@@ -13448,7 +15573,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-368.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4475_o_1fet6678a19791gj218201lnrom28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3524/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3524/",
+    "mech": "Hi-ν高达",
+    "mechId": "hi-ν高达",
+    "aliases": [
+      "Hi-Nu Gundam",
+      "海牛",
+      "Hi牛",
+      "Hi-Nu"
+    ]
   },
   {
     "id": "bc-356",
@@ -13473,7 +15606,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-356.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230223/528a2d540bf27c96714225d232d25eca.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "零式飞翼高达",
+    "mechId": "零式飞翼高达",
+    "aliases": []
   },
   {
     "id": "bc-365",
@@ -13498,7 +15634,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-365.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230223/fa79650618c51c6fd76529701cb7f463.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "悟空脉冲高达",
+    "mechId": "悟空脉冲高达",
+    "aliases": []
   },
   {
     "id": "bc-378",
@@ -13523,7 +15662,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-378.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4474_o_1fd9ja01j147i1i6o134j1iobgjp28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3523/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3523/",
+    "mech": "天蚀高达",
+    "mechId": "天蚀高达",
+    "aliases": []
   },
   {
     "id": "hguc-nightingale",
@@ -13552,7 +15694,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hguc-nightingale.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4458_o_1fa0e72921k441adrtn6mv2tvk23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3506/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3506/",
+    "mech": "MSN-04Ⅱ 夜莺",
+    "mechId": "msn-04ii夜莺",
+    "aliases": [
+      "MSN-04I"
+    ]
   },
   {
     "id": "bc-2626",
@@ -13577,7 +15724,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2626.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4380_o_1f7nqvk443ic1vls1vlrsap1taa2d.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3426/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3426/",
+    "mech": "灾厄高达",
+    "mechId": "灾厄高达",
+    "aliases": []
   },
   {
     "id": "bc-2628",
@@ -13602,7 +15752,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2628.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/5d30df152173f3523de9d400da90d0e2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "泛用人型决战兵器 人造人EVA 正规实用型 6号机",
+    "mechId": "泛用人型决战兵器人造人eva正规实用型6号机",
+    "aliases": []
   },
   {
     "id": "bc-2625",
@@ -13610,7 +15763,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "RG 1/144 ウイングガンダム",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "w",
     "scale": "1/144",
     "released": "2021-06-19",
     "priceJpy": 3520,
@@ -13627,7 +15780,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2625.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4379_o_1f7nqub8ktho1brc104k1g3919jo28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3425/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3425/",
+    "mech": "飞翼高达",
+    "mechId": "飞翼高达",
+    "aliases": [
+      "Wing Gundam",
+      "飞翼"
+    ]
   },
   {
     "id": "bc-2624",
@@ -13652,7 +15811,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2624.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/f374011b7c226a2828b005ad901ab1bd.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "军马",
+    "mechId": "军马",
+    "aliases": []
   },
   {
     "id": "bc-2623",
@@ -13677,7 +15839,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2623.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/4ef200308ab5596094730582310b9f2e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "佐助德尔塔高达",
+    "mechId": "佐助德尔塔高达",
+    "aliases": []
   },
   {
     "id": "bc-2622",
@@ -13702,7 +15867,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2622.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/c0a65c3b962e3830206415ef38329940.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "塞巴斯塔",
+    "mechId": "塞巴斯塔",
+    "aliases": []
   },
   {
     "id": "bc-1577",
@@ -13727,7 +15895,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1577.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/f5c507232f931c0473fb97dda8a2d35f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "卡比",
+    "mechId": "卡比",
+    "aliases": []
   },
   {
     "id": "bc-535",
@@ -13752,7 +15923,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-535.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/b3345a1632bee59f62ae00c71d4636b9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "核心高达",
+    "mechId": "核心高达",
+    "aliases": []
   },
   {
     "id": "bc-532",
@@ -13777,7 +15951,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-532.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/9c7ca8205ea87b61e5484fc5e19e6394.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "自由高达",
+    "mechId": "自由高达",
+    "aliases": [
+      "Freedom Gundam",
+      "ZGMF-X10A",
+      "自由高达"
+    ]
   },
   {
     "id": "bc-2612",
@@ -13802,7 +15983,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2612.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/e080fed26f02676721f0832476f3a778.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "爱德华SECOND V",
+    "mechId": "爱德华secondv",
+    "aliases": []
   },
   {
     "id": "bc-2611",
@@ -13827,7 +16011,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2611.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/fc02fde805b22d98a446da8d4cb8454c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "本杰明V2高达",
+    "mechId": "本杰明v2高达",
+    "aliases": []
   },
   {
     "id": "bc-2608",
@@ -13852,7 +16039,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2608.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4517_o_1f3cm2ivivp8ugj1m0r3rv15bm2d.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3562/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3562/",
+    "mech": "死神高达",
+    "mechId": "死神高达",
+    "aliases": []
   },
   {
     "id": "bc-2602",
@@ -13877,7 +16067,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2602.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4340_o_1f2gs8v2u12o81ltf88o9ep190q28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3387/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3387/",
+    "mech": "Ξ高达VS佩涅罗佩 浮游炮导弹特效零件",
+    "mechId": "ξ高达vs佩涅罗佩浮游炮导弹特效零件",
+    "aliases": []
   },
   {
     "id": "bc-2600",
@@ -13902,7 +16095,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2600.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/73e202f01cef1875fb03f39c8490f59a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 武圣关羽云长ν高达",
+    "mechId": "三国创杰传武圣关羽云长ν高达",
+    "aliases": []
   },
   {
     "id": "bc-2599",
@@ -13927,7 +16123,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2599.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/7e913da8fe6ad0ccea591e4ec6d5fb04.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 炎皇张飞神高达",
+    "mechId": "三国创杰传炎皇张飞神高达",
+    "aliases": []
   },
   {
     "id": "bc-2593",
@@ -13952,7 +16151,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2593.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4342_o_1f2gsc1esum71ssh81n49hvdr23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3389/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3389/",
+    "mech": "金恩",
+    "mechId": "金恩",
+    "aliases": []
   },
   {
     "id": "bc-2597",
@@ -13977,7 +16179,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2597.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/f12d2359f513a02b38117958da091595.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 大乔月亮女神高达",
+    "mechId": "三国创杰传大乔月亮女神高达",
+    "aliases": []
   },
   {
     "id": "bc-2589",
@@ -14002,7 +16207,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2589.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/07c2dc841b651fa25ce4ca04e475a72c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 甘宁海盗高达",
+    "mechId": "三国创杰传甘宁海盗高达",
+    "aliases": []
   },
   {
     "id": "bc-2588",
@@ -14027,7 +16235,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2588.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/c4ecfa18c5966aa016c16ee5650f7157.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 天霸曹操飞翼高达",
+    "mechId": "三国创杰传天霸曹操飞翼高达",
+    "aliases": []
   },
   {
     "id": "bc-2587",
@@ -14052,7 +16263,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2587.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/6b8ad5eeadd6875414975e35d6d5f0f9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 徐晃死神高达",
+    "mechId": "三国创杰传徐晃死神高达",
+    "aliases": []
   },
   {
     "id": "bc-2592",
@@ -14077,7 +16291,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2592.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/e9b361867b7044c9d7e8169be5030aa2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "警长翠绿报风高达",
+    "mechId": "警长翠绿报风高达",
+    "aliases": []
   },
   {
     "id": "bc-2590",
@@ -14102,7 +16319,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2590.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/289735545facbacb29c3a7df0c40a8ef.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "悟空脉冲高达",
+    "mechId": "悟空脉冲高达",
+    "aliases": []
   },
   {
     "id": "bc-2591",
@@ -14127,7 +16347,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2591.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/88d851dc4f72a61dae4ba4c974121497.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "信长艾比安高达",
+    "mechId": "信长艾比安高达",
+    "aliases": []
   },
   {
     "id": "bc-2579",
@@ -14152,7 +16375,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2579.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4341_o_1f2gsb2eki2gnnl69211n31mi628.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3388/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3388/",
+    "mech": "短剑L",
+    "mechId": "短剑l",
+    "aliases": []
   },
   {
     "id": "bc-2586",
@@ -14177,7 +16403,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2586.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/18c4983f1974ba6ba0bdc4d6c17c3049.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 典韦尊者高达",
+    "mechId": "三国创杰传典韦尊者高达",
+    "aliases": []
   },
   {
     "id": "bc-529",
@@ -14202,7 +16431,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-529.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/5b7a1e0c793c1573b060cc2af4895edd.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "自由高达",
+    "mechId": "自由高达",
+    "aliases": [
+      "Freedom Gundam",
+      "ZGMF-X10A",
+      "自由高达"
+    ]
   },
   {
     "id": "bc-525",
@@ -14227,7 +16463,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-525.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/3ba003cf4b3b7856ca196a6928b3c149.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "hg-xi-gundam",
@@ -14256,7 +16502,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-xi-gundam.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4339_o_1f2gs7qdnbhr1mb7rtvuad1vri23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3386/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3386/",
+    "mech": "Ξ高达",
+    "mechId": "ξ高达",
+    "aliases": [
+      "Xi Gundam",
+      "Xi",
+      "西高达"
+    ]
   },
   {
     "id": "bc-526",
@@ -14281,7 +16534,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-526.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/72b435e5e1e33d987a1a8184a397f23c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "扎古勇士",
+    "mechId": "扎古勇士",
+    "aliases": []
   },
   {
     "id": "bc-528",
@@ -14306,7 +16562,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-528.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/be1f102c7cfc1edc9c2eba612aa3abca.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "嫣红强袭高达 大剑装备型",
+    "mechId": "嫣红强袭高达大剑装备型",
+    "aliases": []
   },
   {
     "id": "bc-527",
@@ -14331,7 +16590,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-527.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/8e21829f5f8cd6f24926eae38e17ead6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-0 独角兽高达",
+    "mechId": "rx-0独角兽高达",
+    "aliases": [
+      "RX-0",
+      "Unicorn Gundam",
+      "独角兽高达"
+    ]
   },
   {
     "id": "bc-3317",
@@ -14356,7 +16622,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3317.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260112/07c4b0863cfab01002ab0e5dbbd9656b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 龙贤刘备独角兽高达",
+    "mechId": "三国创杰传龙贤刘备独角兽高达",
+    "aliases": []
   },
   {
     "id": "bc-530",
@@ -14381,7 +16650,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-530.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/eab89cae5851881307288db96b88f0cf.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ZGMF-X10A 自由高达",
+    "mechId": "zgmf-x10a自由高达",
+    "aliases": [
+      "X10A"
+    ]
   },
   {
     "id": "bc-2577",
@@ -14406,7 +16680,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2577.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/a4fc714f3aaf62081a12498de14ff325.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 孙策异端高达",
+    "mechId": "三国创杰传孙策异端高达",
+    "aliases": []
   },
   {
     "id": "bc-2578",
@@ -14431,7 +16708,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2578.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/4597d4c185388c14e68a47350abe7dbf.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 太史慈决斗高达",
+    "mechId": "三国创杰传太史慈决斗高达",
+    "aliases": []
   },
   {
     "id": "bc-2576",
@@ -14456,7 +16736,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2576.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/05611630268a988dcf50ed577833be90.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 夏侯渊多鲁基斯",
+    "mechId": "三国创杰传夏侯渊多鲁基斯",
+    "aliases": []
   },
   {
     "id": "bc-2569",
@@ -14481,7 +16764,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2569.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/666e3b051e658e24baaa40b5382f4788.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 黄忠力天使高达",
+    "mechId": "三国创杰传黄忠力天使高达",
+    "aliases": []
   },
   {
     "id": "bc-2567",
@@ -14506,7 +16792,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2567.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/5555a3f25d0425b2abffb9257c4963f1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 马超高达巴巴托斯",
+    "mechId": "三国创杰传马超高达巴巴托斯",
+    "aliases": []
   },
   {
     "id": "bc-2568",
@@ -14531,7 +16820,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2568.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/bd272cf2e130155d389ce190a33eec1a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 孙权异端高达",
+    "mechId": "三国创杰传孙权异端高达",
+    "aliases": []
   },
   {
     "id": "bc-2571",
@@ -14556,7 +16848,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2571.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/b45c224e74f5177f3dca0bd0eff50431.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 夏侯淳多鲁基斯Ⅲ",
+    "mechId": "三国创杰传夏侯淳多鲁基斯iii",
+    "aliases": []
   },
   {
     "id": "bc-2570",
@@ -14581,7 +16876,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2570.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/2b18120c8d644c043f533e9a1f2ef622.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 张郃双头龙高达",
+    "mechId": "三国创杰传张郃双头龙高达",
+    "aliases": []
   },
   {
     "id": "bc-1576",
@@ -14606,7 +16904,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1576.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/b036f1befa67814c1baa07d8214e6234.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "江户川柯南",
+    "mechId": "江户川柯南",
+    "aliases": []
   },
   {
     "id": "pb-174",
@@ -14634,7 +16935,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-1000223364.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000223364/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000223364/",
+    "mech": "高达F90 2号机",
+    "mechId": "高达f902号机",
+    "aliases": [
+      "F90"
+    ]
   },
   {
     "id": "bc-2557",
@@ -14659,7 +16965,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2557.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/585d23151a27e6ab69bcf059d9798487.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 司马懿命运高达",
+    "mechId": "三国创杰传司马懿命运高达",
+    "aliases": []
   },
   {
     "id": "bc-2558",
@@ -14684,7 +16993,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2558.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/e952c939bb986570a35f9253e5f9cf36.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 荀彧强袭高达",
+    "mechId": "三国创杰传荀彧强袭高达",
+    "aliases": []
   },
   {
     "id": "bc-2554",
@@ -14709,7 +17021,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2554.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/7aae71bd2fbb4c5947cd004ed5fb43a4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 孙尚香嫣红强袭高达",
+    "mechId": "三国创杰传孙尚香嫣红强袭高达",
+    "aliases": []
   },
   {
     "id": "bc-2555",
@@ -14734,7 +17049,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2555.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/8dcf2ab4e99a0f23b14fd7feff856151.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 周瑜拂晓高达",
+    "mechId": "三国创杰传周瑜拂晓高达",
+    "aliases": []
   },
   {
     "id": "bc-2550",
@@ -14759,7 +17077,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2550.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/5b8385207701cca3d5d9160ad912572e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 貂蝉刹帝利",
+    "mechId": "三国创杰传貂蝉刹帝利",
+    "aliases": []
   },
   {
     "id": "bc-2549",
@@ -14784,7 +17105,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2549.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/dcd7a425a7392db8e8bdeedc75fb1cfe.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 吕布新安洲",
+    "mechId": "三国创杰传吕布新安洲",
+    "aliases": []
   },
   {
     "id": "bc-2552",
@@ -14809,7 +17133,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2552.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/e0b192ecaef61a8778b4343b440df264.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 张辽沙扎比",
+    "mechId": "三国创杰传张辽沙扎比",
+    "aliases": []
   },
   {
     "id": "bc-2548",
@@ -14834,7 +17161,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2548.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/01951b2edfecb4819ff6f150beddd1f0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 赵云00高达",
+    "mechId": "三国创杰传赵云00高达",
+    "aliases": []
   },
   {
     "id": "bc-2551",
@@ -14859,7 +17189,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2551.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/2fac7f3a2385870b2b210c9557c43078.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 诸葛亮自由高达",
+    "mechId": "三国创杰传诸葛亮自由高达",
+    "aliases": []
   },
   {
     "id": "bc-523",
@@ -14884,7 +17217,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-523.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/38bd78cd64253393eb2ec7af023eeca1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "Zaku II",
+      "扎古II",
+      "沙扎比",
+      "MS-06S"
+    ]
   },
   {
     "id": "bc-524",
@@ -14909,7 +17250,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-524.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/9aad3315e5e46391296afb3252350eef.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "艾比安高达EW",
+    "mechId": "艾比安高达ew",
+    "aliases": []
   },
   {
     "id": "bc-2543",
@@ -14934,7 +17278,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2543.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/474a1867d3da3cd93ccf7a589321abcc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "钢铁吉克",
+    "mechId": "钢铁吉克",
+    "aliases": []
   },
   {
     "id": "bc-2537",
@@ -14959,7 +17306,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2537.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4262_o_1err17ic11dp7r7onbpmlf1n0n23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3307/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3307/",
+    "mech": "机动战士高达 最终射击 吉翁号特效零件",
+    "mechId": "机动战士高达最终射击吉翁号特效零件",
+    "aliases": []
   },
   {
     "id": "rg-zillion",
@@ -14988,7 +17338,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-zillion.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4261_o_1err15n5uv5sfpp11md1t3v15gq23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3306/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3306/",
+    "mech": "MS-06Z 吉翁号",
+    "mechId": "ms-06z吉翁号",
+    "aliases": [
+      "MS-06Z"
+    ]
   },
   {
     "id": "bc-2538",
@@ -15013,7 +17368,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2538.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/ddec32a102462bc7ba57621058a34fb0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RG泛用人型决战兵器 人造人EVA 正规实用型8号机α",
+    "mechId": "rg泛用人型决战兵器人造人eva正规实用型8号机α",
+    "aliases": []
   },
   {
     "id": "bc-2539",
@@ -15038,7 +17396,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2539.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/1e5468b57587aa5ee20e76fcb94c8ae4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 曹操飞翼高达",
+    "mechId": "三国创杰传曹操飞翼高达",
+    "aliases": []
   },
   {
     "id": "bc-2541",
@@ -15063,7 +17424,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2541.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/5f65c1361869e6bfcca66bd683a8f501.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 董卓神意高达",
+    "mechId": "三国创杰传董卓神意高达",
+    "aliases": []
   },
   {
     "id": "bc-2540",
@@ -15088,7 +17452,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2540.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/e10fedd4d6aeed111c747fae9fb81364.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 孙坚异端高达",
+    "mechId": "三国创杰传孙坚异端高达",
+    "aliases": []
   },
   {
     "id": "bc-2532",
@@ -15113,7 +17480,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2532.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/3c75628160cbd59973d9e7d5ad6ed70a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 关羽云长ν高达",
+    "mechId": "三国创杰传关羽云长ν高达",
+    "aliases": []
   },
   {
     "id": "bc-2534",
@@ -15138,7 +17508,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2534.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/1f01f6e256bc40c45039445b8a51727f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 托立里提摩托车",
+    "mechId": "三国创杰传托立里提摩托车",
+    "aliases": []
   },
   {
     "id": "bc-2533",
@@ -15163,7 +17536,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2533.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/e728bca232c48ba50686c4e71187f1e5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 张飞神高达",
+    "mechId": "三国创杰传张飞神高达",
+    "aliases": []
   },
   {
     "id": "bc-2535",
@@ -15188,7 +17564,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2535.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/765bea4e2d0f8da0fed0b1b64b1a6aa2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 BUG",
+    "mechId": "三国创杰传bug",
+    "aliases": []
   },
   {
     "id": "bc-2531",
@@ -15213,7 +17592,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2531.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/faddab4b95a2101ee3c731dc12b57d08.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "三国创杰传 刘备独角兽高达",
+    "mechId": "三国创杰传刘备独角兽高达",
+    "aliases": []
   },
   {
     "id": "bc-521",
@@ -15238,7 +17620,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-521.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/1004664002113fdf82d0ef6108572fc9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2高达动画",
+    "mechId": "rx-78-2高达动画",
+    "aliases": [
+      "RX-78-2"
+    ]
   },
   {
     "id": "bc-522",
@@ -15263,7 +17650,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-522.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/701b518c916c65dd4453d84e9deec1c2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽",
+    "mechId": "独角兽",
+    "aliases": [
+      "Unicorn Gundam",
+      "独角兽高达",
+      "RX-0",
+      "Unicorn"
+    ]
   },
   {
     "id": "bc-2527",
@@ -15288,7 +17683,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2527.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/1a7f030b3d43e4e44ca6d0b79d8ab7b9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "核心高达Ⅱ",
+    "mechId": "核心高达ii",
+    "aliases": []
   },
   {
     "id": "bc-2526",
@@ -15313,7 +17711,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2526.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/3d53f6415abe67b81d05f088b85253b2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "核心高达Ⅱ",
+    "mechId": "核心高达ii",
+    "aliases": []
   },
   {
     "id": "bc-2524",
@@ -15338,7 +17739,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2524.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/abb0cc7c352f75fa07e84bed7adb7956.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "重锻二型步枪",
+    "mechId": "重锻二型步枪",
+    "aliases": []
   },
   {
     "id": "bc-2523",
@@ -15363,7 +17767,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2523.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240112/ea9ff0e8da741cbeb0e8149743be2d0a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "TRY拔刀剑",
+    "mechId": "try拔刀剑",
+    "aliases": []
   },
   {
     "id": "pg-unleashed-rx78-2",
@@ -15392,7 +17799,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pg-unleashed-rx78-2.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4283_o_1emt62hdj110d1nb21b84h6615s428.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3328/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3328/",
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "sd-ex-sazabi",
@@ -15421,7 +17838,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/sd-ex-sazabi.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/abb30b606303ce8f1213f32043578f5c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "Zaku II",
+      "扎古II",
+      "沙扎比",
+      "MS-06S"
+    ]
   },
   {
     "id": "bc-2516",
@@ -15446,7 +17871,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2516.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/b192733fb9bcd99b5124db8ca82ebf3d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ν高达",
+    "mechId": "ν高达",
+    "aliases": [
+      "Nu Gundam",
+      "牛高达",
+      "牛"
+    ]
   },
   {
     "id": "bc-2514",
@@ -15471,7 +17903,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2514.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4322_o_1eng6n98j1ncd1ne054n74f1cmk28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3370/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3370/",
+    "mech": "高达00天翔型莫比乌斯",
+    "mechId": "高达00天翔型莫比乌斯",
+    "aliases": []
   },
   {
     "id": "bc-518",
@@ -15496,7 +17931,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-518.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/07541c502c4c3a4acbcd9f4de929470c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "00强化模组",
+    "mechId": "00强化模组",
+    "aliases": [
+      "Gundam Virtue",
+      "00高达",
+      "双头龙高达"
+    ]
   },
   {
     "id": "bc-520",
@@ -15521,7 +17963,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-520.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/262facd05b3428e5fef83f82753d0745.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "量子型00高达",
+    "mechId": "量子型00高达",
+    "aliases": [
+      "Quant-Effy",
+      "量子00"
+    ]
   },
   {
     "id": "bc-519",
@@ -15546,7 +17994,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-519.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/d82864bf9b8ab31c4d48896b6966fcd9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "能天使高达",
+    "mechId": "能天使高达",
+    "aliases": [
+      "Geymalk",
+      "能天使"
+    ]
   },
   {
     "id": "mg-zero-wing-ew-ver-ka",
@@ -15576,7 +18030,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-zero-wing-ew-ver-ka.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3954_o_1enao0qh917j9nhi61n4rnqmg23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2981/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2981/",
+    "mech": "飞翼高达零式EW",
+    "mechId": "飞翼高达零式ew",
+    "aliases": [
+      "Wing Gundam Zero EW",
+      "飞翼零式EW",
+      "零EW",
+      "EW零式"
+    ]
   },
   {
     "id": "bc-2509",
@@ -15601,7 +18063,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2509.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/aa7dca932b3c0ed1a84d67fb21f5ed45.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "帝王异端重锻二型",
+    "mechId": "帝王异端重锻二型",
+    "aliases": []
   },
   {
     "id": "bc-1575",
@@ -15626,7 +18091,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1575.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/94b2eb4a30054a3fcb25336e340bb400.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "假面骑士圣刃",
+    "mechId": "假面骑士圣刃",
+    "aliases": []
   },
   {
     "id": "bc-515",
@@ -15651,7 +18119,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-515.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/4c1b0006806339ed3f1a5725049c27a0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达TR-6",
+    "mechId": "高达tr-6",
+    "aliases": [
+      "TR-6"
+    ]
   },
   {
     "id": "bc-514",
@@ -15676,7 +18149,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-514.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/c82e084e53130edb95268eda625f5a39.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "SECOND V",
+    "mechId": "secondv",
+    "aliases": []
   },
   {
     "id": "bc-2495",
@@ -15701,7 +18177,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2495.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/a9b86cb777ce07dc9b68c95f883698ad.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "重装高达",
+    "mechId": "重装高达",
+    "aliases": []
   },
   {
     "id": "bc-2496",
@@ -15726,7 +18205,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2496.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3831_o_1ekikaf5dm7f1vhe1ljetdn1en023.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2848/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2848/",
+    "mech": "猎犬",
+    "mechId": "猎犬",
+    "aliases": []
   },
   {
     "id": "bc-512",
@@ -15751,7 +18233,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-512.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/f5be928f28457e57cb8eb85ddd2edaea.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "苍白骑士",
+    "mechId": "苍白骑士",
+    "aliases": []
   },
   {
     "id": "bc-2491",
@@ -15776,7 +18261,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2491.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/4f1b6794eb09600aeb25187d6a156de2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "帝提姆武装臂组",
+    "mechId": "帝提姆武装臂组",
+    "aliases": []
   },
   {
     "id": "bc-2492",
@@ -15801,7 +18289,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2492.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/0ad768d7603e901ae2d087d0c8358223.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "再起高达",
+    "mechId": "再起高达",
+    "aliases": []
   },
   {
     "id": "bc-2487",
@@ -15826,7 +18317,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2487.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3982_o_1ebvc7rbl784n5k1hgk193dtvl28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3010/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3010/",
+    "mech": "独角兽",
+    "mechId": "独角兽",
+    "aliases": [
+      "Unicorn Gundam",
+      "独角兽高达",
+      "RX-0",
+      "Unicorn"
+    ]
   },
   {
     "id": "bc-2486",
@@ -15851,7 +18350,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2486.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/723488bc7f39d5e18c7bb52d17737475.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "泛用人型决战兵器 人造人EVA正规实用型2号机",
+    "mechId": "泛用人型决战兵器人造人eva正规实用型2号机",
+    "aliases": []
   },
   {
     "id": "bc-2484",
@@ -15876,7 +18378,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2484.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509922&Key-Pair-Id=K7AVJM1114TH7&Signature=UpagvTKdzRHtjUoftL5BHtuSOXypIy8YsNhDJANOwaGG8L4lQak5m0VAnkIrp5ockMwK8xaYIBlFZQS3z3N3YRbAx7piTC6w85V1NCPa2D5dZtqjR1mPx6O3kGHaV~ztlXjLL2mcGysGaXgr09HQGPJyQkvypMoZQLzDtgod18uxR8VAp2JRJVZM1MJNz5dWqzY045Owtv6jsKC~6FSK5q51z4HBWpirpMl0FxzzLugfEei3kNkfc~cX~EiVyDn9Ua96xsSKCk3qCXuK7xGBsUSp8frcfkRclqzftWylzi76tFOe436e-ZV872dOKH39920g3bcuF7ld8RSeOQzXfA__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2853/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2853/",
+    "mech": "盖塔龙",
+    "mechId": "盖塔龙",
+    "aliases": []
   },
   {
     "id": "bc-511",
@@ -15901,7 +18406,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-511.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/172cbd42d783daeca0af6613e9953654.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "FAZZ",
+    "mechId": "fazz",
+    "aliases": []
   },
   {
     "id": "bc-2482",
@@ -15926,7 +18434,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2482.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/d31c6ac5926907a9cc024a69cbca9616.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "阿吽Rize装甲",
+    "mechId": "阿吽rize装甲",
+    "aliases": []
   },
   {
     "id": "bc-2481",
@@ -15951,7 +18462,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2481.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/a3e1c54b769245cae832cf0c99542ec1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达兽魂Rize",
+    "mechId": "高达兽魂rize",
+    "aliases": []
   },
   {
     "id": "bc-2478",
@@ -15976,7 +18490,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2478.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3823_o_1eev0jj81sh611c31q3s52mfs23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2840/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2840/",
+    "mech": "高达端白星",
+    "mechId": "高达端白星",
+    "aliases": []
   },
   {
     "id": "bc-2477",
@@ -16001,7 +18518,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2477.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/e31926072845fad5f22f6d7fd872ed21.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "圣盾骑士高达",
+    "mechId": "圣盾骑士高达",
+    "aliases": []
   },
   {
     "id": "eg-rx78-2",
@@ -16030,7 +18550,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/eg-rx78-2.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/6e357980eb30fced587295750c1917d6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "bc-1574",
@@ -16055,7 +18585,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1574.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/75a659ebe1dedaa0eeb477666e407c6d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "赛罗奥特曼",
+    "mechId": "赛罗奥特曼",
+    "aliases": []
   },
   {
     "id": "bc-510",
@@ -16080,7 +18613,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-510.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/2cd2dc861f5f4d492ebcc0900f5bdfd5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽高达 完美形态",
+    "mechId": "独角兽高达完美形态",
+    "aliases": [
+      "Unicorn Gundam (Perfect Mode)",
+      "完美形态独角兽",
+      "完美形态"
+    ]
   },
   {
     "id": "bc-2472",
@@ -16105,7 +18645,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2472.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3791_o_1ecp4g8b11dc3l3j1huk1t0t1ooa23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2805/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2805/",
+    "mech": "夏亚专用扎古Ⅱ",
+    "mechId": "夏亚专用扎古ii",
+    "aliases": []
   },
   {
     "id": "bc-2471",
@@ -16130,7 +18673,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2471.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/79ac542b60212a62c0ddf753e1aa481d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "重力火型高达TRYAGE",
+    "mechId": "重力火型高达tryage",
+    "aliases": []
   },
   {
     "id": "bc-2465",
@@ -16155,7 +18701,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2465.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/2049677efb3174a787b707b41bd0bdaa.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "海王星八型武器",
+    "mechId": "海王星八型武器",
+    "aliases": []
   },
   {
     "id": "bc-2464",
@@ -16180,7 +18729,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2464.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/f0d511af05f43637cea97eb521ea8fda.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "海王星八型组件",
+    "mechId": "海王星八型组件",
+    "aliases": []
   },
   {
     "id": "bc-2459",
@@ -16205,7 +18757,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2459.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/7f9d943147e6a0d2482c74996d752a89.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX782 高达",
+    "mechId": "rx782高达",
+    "aliases": [
+      "RX782"
+    ]
   },
   {
     "id": "bc-2457",
@@ -16230,7 +18787,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2457.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3742_o_1ec7009ag14kv5rv1arg1c2j15jm23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2753/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2753/",
+    "mech": "梅萨F01型",
+    "mechId": "梅萨f01型",
+    "aliases": [
+      "F01"
+    ]
   },
   {
     "id": "bc-1573",
@@ -16255,7 +18817,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1573.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/b2473fd267eb5a4a593eae3bc03f4bc3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "哆啦A梦",
+    "mechId": "哆啦a梦",
+    "aliases": []
   },
   {
     "id": "pb-171",
@@ -16283,7 +18848,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-1000223363.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000223363/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000223363/",
+    "mech": "高达F90II",
+    "mechId": "高达f90ii",
+    "aliases": [
+      "F90I"
+    ]
   },
   {
     "id": "bc-503",
@@ -16308,7 +18878,16 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-503.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/d3d24a2a4da2346e77e148c5202ed6eb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达巴巴托斯",
+    "mechId": "高达巴巴托斯",
+    "aliases": [
+      "MG1",
+      "Gundam Barbatos",
+      "巴巴托斯",
+      "古夫",
+      "Barbatos"
+    ]
   },
   {
     "id": "bc-2453",
@@ -16333,7 +18912,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2453.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/0864e5495901ab49b8167dafd5c67191.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "伪ν装甲",
+    "mechId": "伪ν装甲",
+    "aliases": []
   },
   {
     "id": "bc-2452",
@@ -16358,7 +18940,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2452.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/6a69616924262bc1edfd1f57a1435282.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "伪ν组件",
+    "mechId": "伪ν组件",
+    "aliases": []
   },
   {
     "id": "bc-2451",
@@ -16383,7 +18968,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2451.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/1291d390d52e193adbad53d7178ce8a0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "沃多姆荚舱",
+    "mechId": "沃多姆荚舱",
+    "aliases": []
   },
   {
     "id": "bc-2446",
@@ -16408,7 +18996,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2446.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/a4ea19f8a393c4ab252eda7869a20cea.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "泛用人型决战兵器 人造人EVA试作零号机",
+    "mechId": "泛用人型决战兵器人造人eva试作零号机",
+    "aliases": []
   },
   {
     "id": "bc-2447",
@@ -16433,7 +19024,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2447.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/44fdfade0a2a371245a7fc450d43e7f1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "泛用人型决战兵器 人造人EVA试作零号机 DX 阳电子炮",
+    "mechId": "泛用人型决战兵器人造人eva试作零号机dx阳电子炮",
+    "aliases": []
   },
   {
     "id": "bc-2444",
@@ -16458,7 +19052,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2444.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/3d7da2d430b3d4c65382e09f4eb85299.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "菲尼克斯高达",
+    "mechId": "菲尼克斯高达",
+    "aliases": []
   },
   {
     "id": "bc-2433",
@@ -16483,7 +19080,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2433.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3736_o_1e9pm64rl11dp1g1drrr1qt11fi828.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2746/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2746/",
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "bc-501",
@@ -16508,7 +19115,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-501.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/c5ceba5fd3da08c6f14378cee6d9c90b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "扎古II TYPE C-6/R6",
+    "mechId": "扎古iitypec-6r6",
+    "aliases": [
+      "C-6"
+    ]
   },
   {
     "id": "bc-499",
@@ -16533,7 +19145,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-499.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/d17323d53f888c49d0d57a6272974dca.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "V2强袭破坏高达",
+    "mechId": "v2强袭破坏高达",
+    "aliases": [
+      "Gundam V2 Assault Buster",
+      "破坏高达",
+      "Assault Buster Gundam"
+    ]
   },
   {
     "id": "bc-502",
@@ -16558,7 +19177,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-502.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/587b90dedd7e4cba0f4322c91b27363f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "bc-498",
@@ -16583,7 +19212,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-498.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/ff2d6ea898e83ec5e68d854d8d5484c3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ν高达",
+    "mechId": "ν高达",
+    "aliases": [
+      "Nu Gundam",
+      "牛高达",
+      "牛"
+    ]
   },
   {
     "id": "bc-2426",
@@ -16608,7 +19244,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2426.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/9d392e0fc1826b0aa2e84ed0d7123a89.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "土星六型武器",
+    "mechId": "土星六型武器",
+    "aliases": []
   },
   {
     "id": "bc-2425",
@@ -16633,7 +19272,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2425.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/30726a6f3fd438a435a2fabda995ad2b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "土星六型组件",
+    "mechId": "土星六型组件",
+    "aliases": []
   },
   {
     "id": "bc-2424",
@@ -16658,7 +19300,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2424.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3772_o_1e7ke3u3gtrloa19p8b4i16i23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2785/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2785/",
+    "mech": "主天使高达",
+    "mechId": "主天使高达",
+    "aliases": [
+      "Archangel Gundam",
+      "主天使",
+      "Archangel"
+    ]
   },
   {
     "id": "bc-2423",
@@ -16683,7 +19332,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2423.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3774_o_1e7ke5et2sk6tt2sga1b0pjb723.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2787/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2787/",
+    "mech": "温达姆",
+    "mechId": "温达姆",
+    "aliases": []
   },
   {
     "id": "bc-2422",
@@ -16708,7 +19360,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2422.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/374ee36aec50983c2ac879097e50ba4f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "无限正义高达",
+    "mechId": "无限正义高达",
+    "aliases": []
   },
   {
     "id": "bc-2419",
@@ -16733,7 +19388,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2419.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/d7f4d3a266786cb0434165a48ae96096.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "天王星七型高达",
+    "mechId": "天王星七型高达",
+    "aliases": []
   },
   {
     "id": "bc-2413",
@@ -16758,7 +19416,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2413.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/427145fbf959ca1d3391f8fcacd3397b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "亚尔斯地球三式高达",
+    "mechId": "亚尔斯地球三式高达",
+    "aliases": []
   },
   {
     "id": "bc-2414",
@@ -16783,7 +19444,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2414.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3705_o_1e5p298om1jcmvlf1kd5loul2o23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2712/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2712/",
+    "mech": "强攻型脉冲高达",
+    "mechId": "强攻型脉冲高达",
+    "aliases": []
   },
   {
     "id": "bc-2412",
@@ -16808,7 +19472,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2412.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/f2128fa8fc349245097a9e6cb7b9f2db.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达巴巴托斯 天狼型",
+    "mechId": "高达巴巴托斯天狼型",
+    "aliases": [
+      "Gundam Barbatos (Lupus Rex)",
+      "巴巴托斯天狼型",
+      "天狼型",
+      "Lupus Rex"
+    ]
   },
   {
     "id": "bc-2406",
@@ -16833,7 +19505,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2406.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/6f2c30ddf4cdfe86e834860cd49b9282.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达GP罗煞天",
+    "mechId": "高达gp罗煞天",
+    "aliases": []
   },
   {
     "id": "bc-2402",
@@ -16858,7 +19533,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2402.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240111/d48f2b15ee74eac1768004a80ec81617.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达 G-ELSE",
+    "mechId": "高达g-else",
+    "aliases": []
   },
   {
     "id": "bc-2401",
@@ -16883,7 +19561,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2401.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3700_o_1e33p0lpsirv1joqarnp31tqf23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2707/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2707/",
+    "mech": "RX-78-02 高达",
+    "mechId": "rx-78-02高达",
+    "aliases": [
+      "RX-78-02",
+      "Gundam 02",
+      "高达02",
+      "RX78-02"
+    ]
   },
   {
     "id": "bc-2396",
@@ -16908,7 +19594,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2396.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/b4d4b80ed6bc793ca1f5c0e31bcd4cb1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "水星一型武器",
+    "mechId": "水星一型武器",
+    "aliases": []
   },
   {
     "id": "bc-2395",
@@ -16933,7 +19622,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2395.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/8e94dff6f47b699aa6953fc6f71cb5ef.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "正义骑士小熊霸",
+    "mechId": "正义骑士小熊霸",
+    "aliases": []
   },
   {
     "id": "bc-2399",
@@ -16958,7 +19650,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2399.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/0fb3d17f182caf8a77cbd1c88efd4da9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "泛用人型决战兵器 人造人EVA初号机",
+    "mechId": "泛用人型决战兵器人造人eva初号机",
+    "aliases": []
   },
   {
     "id": "bc-2400",
@@ -16983,7 +19678,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2400.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/365975e71f47990f8fc006876f36e216.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "泛用人型决战兵器 人造人EVA初号机DX 运输台",
+    "mechId": "泛用人型决战兵器人造人eva初号机dx运输台",
+    "aliases": []
   },
   {
     "id": "bc-2392",
@@ -17008,7 +19706,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2392.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3604_o_1e2l844ltfgkjlu1l971igsai728.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2681/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2681/",
+    "mech": "马可西亚斯高达",
+    "mechId": "马可西亚斯高达",
+    "aliases": []
   },
   {
     "id": "bc-2390",
@@ -17033,7 +19734,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2390.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792510267&Key-Pair-Id=K7AVJM1114TH7&Signature=Uu89rfmdtDHC5C0HMQYXn36pAJmaMXCBU4HZmwSaOo2wUDOJzNKQ6Ox0Pw7IrbA0Ve8UMm61akFlLh8ewk14xLd2XmamNtd2UkTGiPazJcirqVgNudqSxnpsO5JazmhHUIjie8zWQ-danDQZheupWHi85qJN~00AL7FVGPSiK57PYBV3lDMFWECQQNALw8up6yg0C3WJAUPJlqZ9MCui8klseCxEWzHUyb6hAAbcLzsunmLiDGutiknG6CWblrcecRv-51VeNhpDpa4OT3Ul-JBY4FvZLPRgoCGsnjxD-rHwcfoWdv27sg9ERVl41LlHowu5bNiXgYpaCQNOKvqDyA__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2636/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2636/",
+    "mech": "光武·改",
+    "mechId": "光武·改",
+    "aliases": [
+      "Kawada Special (Koubu)",
+      "光武",
+      "Koubu"
+    ]
   },
   {
     "id": "bc-1572",
@@ -17058,7 +19766,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1572.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/f619a87f57c5dc63fe8be9ef93aef6c3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "超级赛亚人之神超级赛亚人 贝吉塔",
+    "mechId": "超级赛亚人之神超级赛亚人贝吉塔",
+    "aliases": []
   },
   {
     "id": "bc-1571",
@@ -17083,7 +19794,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1571.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/b8f4dbb309a852cf70a27916c4b05132.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "超级赛亚人之神超级赛亚人 孙悟空",
+    "mechId": "超级赛亚人之神超级赛亚人孙悟空",
+    "aliases": []
   },
   {
     "id": "bc-1570",
@@ -17108,7 +19822,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1570.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/81ca4cb914ffa2f3bb5341733d75e249.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "假面骑士零一 高跃飞蝗",
+    "mechId": "假面骑士零一高跃飞蝗",
+    "aliases": []
   },
   {
     "id": "bc-2382",
@@ -17133,7 +19850,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2382.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/a74232789d3203ee6c55b6d554d9a496.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "地球三式高达",
+    "mechId": "地球三式高达",
+    "aliases": []
   },
   {
     "id": "pg-perfect-strike-freedom",
@@ -17162,7 +19882,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pg-perfect-strike-freedom.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3507_o_1ess0njgk171ge081dh613fak3u23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2583/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2583/",
+    "mech": "完美强袭高达",
+    "mechId": "完美强袭高达",
+    "aliases": []
   },
   {
     "id": "bc-2371",
@@ -17187,7 +19910,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2371.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/e505949493c6c076df9df00685827fdc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "苍流丸",
+    "mechId": "苍流丸",
+    "aliases": []
   },
   {
     "id": "bc-2372",
@@ -17195,7 +19921,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "MG 1/100 FAZZ Ver.Ka",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "gundam-front",
     "scale": "1/100",
     "released": "2020-02-15",
     "priceJpy": 12540,
@@ -17212,7 +19938,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2372.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3508_o_1esia8k5iing139ldpm1ooo16i723.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2584/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2584/",
+    "mech": "FAZZ",
+    "mechId": "fazz",
+    "aliases": []
   },
   {
     "id": "bc-2370",
@@ -17237,7 +19966,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2370.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/331777b4450e44223af33c451f9c5131.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "帝提姆高达",
+    "mechId": "帝提姆高达",
+    "aliases": []
   },
   {
     "id": "bc-2369",
@@ -17262,7 +19994,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2369.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/50b3f134b14b34fa2d1d5c957e081ebc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "水星一型组件",
+    "mechId": "水星一型组件",
+    "aliases": []
   },
   {
     "id": "bc-2365",
@@ -17287,7 +20022,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2365.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/2da9f5ff1a8362c4d3092aaf1fc0210d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "光武·改",
+    "mechId": "光武·改",
+    "aliases": [
+      "Kawada Special (Koubu)",
+      "光武",
+      "Koubu"
+    ]
   },
   {
     "id": "bc-2364",
@@ -17312,7 +20054,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2364.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/7565257a30011fe52db9a80a17f88e44.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "光武·改",
+    "mechId": "光武·改",
+    "aliases": [
+      "Kawada Special (Koubu)",
+      "光武",
+      "Koubu"
+    ]
   },
   {
     "id": "bc-2361",
@@ -17337,7 +20086,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2361.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/e8748f3334d678bf63dea5a4d8734a33.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "神怪武装",
+    "mechId": "神怪武装",
+    "aliases": []
   },
   {
     "id": "bc-2367",
@@ -17362,7 +20114,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2367.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/5a8e6a2838ed2a4d9badfdefe7a564f5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "机动人偶芽依",
+    "mechId": "机动人偶芽依",
+    "aliases": []
   },
   {
     "id": "bc-2356",
@@ -17387,7 +20142,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2356.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/03b6a0d285e3b9fb8c9e67c2e6b03b2d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "木星五式高达",
+    "mechId": "木星五式高达",
+    "aliases": []
   },
   {
     "id": "bc-2351",
@@ -17412,7 +20170,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2351.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/afdb6081bae95a8d43d08330819e97a5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "夏亚专用扎古Ⅱ",
+    "mechId": "夏亚专用扎古ii",
+    "aliases": []
   },
   {
     "id": "bc-2353",
@@ -17437,7 +20198,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2353.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/cf8abf6f814d1ee1fb30e782f9bf6ad6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "CROSS SILHOUETTE骨架",
+    "mechId": "crosssilhouette骨架",
+    "aliases": []
   },
   {
     "id": "bc-2352",
@@ -17462,7 +20226,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2352.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/fd2abfb64b6371988243cbab593f73d5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "CROSS SILHOUETTE骨架",
+    "mechId": "crosssilhouette骨架",
+    "aliases": []
   },
   {
     "id": "bc-492",
@@ -17487,7 +20254,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-492.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/14a392f03b5df2e25fbc308279d4c368.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "NT高达 B装备",
+    "mechId": "nt高达b装备",
+    "aliases": [
+      "Gundam NT B-Type",
+      "NT高达B",
+      "NT B"
+    ]
   },
   {
     "id": "bc-2349",
@@ -17512,7 +20286,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2349.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/e8f7201f569c4f649fe59f473d75fa11.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "艾多拉野兽",
+    "mechId": "艾多拉野兽",
+    "aliases": []
   },
   {
     "id": "bc-2350",
@@ -17537,7 +20314,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2350.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/bc0e02876a2584968bf936b98c50c0e3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "量产型吉翁之剑",
+    "mechId": "量产型吉翁之剑",
+    "aliases": []
   },
   {
     "id": "mg-barbatos",
@@ -17567,7 +20347,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-barbatos.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3419_o_1ds6l4i11ijs1dh5l010ua164j23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2492/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2492/",
+    "mech": "高达巴巴托斯",
+    "mechId": "高达巴巴托斯",
+    "aliases": [
+      "Gundam Barbatos",
+      "巴巴托斯",
+      "古夫",
+      "Barbatos"
+    ]
   },
   {
     "id": "bc-2341",
@@ -17592,7 +20380,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2341.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3478_o_1ds97nkp015021tf7uu5pfqkah23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2552/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2552/",
+    "mech": "高达G40",
+    "mechId": "高达g40",
+    "aliases": [
+      "G40"
+    ]
   },
   {
     "id": "bc-2336",
@@ -17617,7 +20410,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2336.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/1105bdd6d7d153c500331781f06806b3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "神怪高达",
+    "mechId": "神怪高达",
+    "aliases": []
   },
   {
     "id": "bc-2337",
@@ -17642,7 +20438,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2337.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/b215997bb5509b7d15a10e9f66c89535.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Injustice Weapons",
+    "mechId": "injusticeweapons",
+    "aliases": []
   },
   {
     "id": "bc-489",
@@ -17667,7 +20466,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-489.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/a718a8048d5bf923d1e141a831577061.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "NT高达 C装备",
+    "mechId": "nt高达c装备",
+    "aliases": [
+      "Gundam NT C-Type",
+      "NT高达C",
+      "NT C"
+    ]
   },
   {
     "id": "bc-490",
@@ -17692,7 +20498,18 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-490.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/abdeeae90e8a4b99126e58c230e4ded7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "MG1",
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "bc-491",
@@ -17717,7 +20534,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-491.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/e0b8793d484c838913c44fef53c66e20.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "量子型00高达 全刃式",
+    "mechId": "量子型00高达全刃式",
+    "aliases": [
+      "Quant-Effy (Full Blade)",
+      "全刃式00",
+      "Quant-Effy Full Blade"
+    ]
   },
   {
     "id": "bc-2322",
@@ -17742,7 +20566,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2322.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/54cff14d9f1124484cc2895f5d4528e0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "核心高达",
+    "mechId": "核心高达",
+    "aliases": []
   },
   {
     "id": "bc-2321",
@@ -17767,7 +20594,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2321.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/4a708055422bbf36ec0150f837488e8c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ν-吉翁高达",
+    "mechId": "ν-吉翁高达",
+    "aliases": []
   },
   {
     "id": "bc-2316",
@@ -17792,7 +20622,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2316.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/7102eaed28ae1ff47f826c02817cbb08.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "死亡军团",
+    "mechId": "死亡军团",
+    "aliases": []
   },
   {
     "id": "bc-2315",
@@ -17817,7 +20650,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2315.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/6ea5d6d346e58db35de5f5b477330e82.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "核心高达",
+    "mechId": "核心高达",
+    "aliases": []
   },
   {
     "id": "bc-2318",
@@ -17842,7 +20678,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2318.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/bbae3ff3a41d810726bb5b8ff0cee1bb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "GaoGaiGar",
+    "mechId": "gaogaigar",
+    "aliases": []
   },
   {
     "id": "bc-2317",
@@ -17867,7 +20706,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2317.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/a604916f7b1413b23d5a5eb1adb49d8a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "零式飞翼高达EW",
+    "mechId": "零式飞翼高达ew",
+    "aliases": []
   },
   {
     "id": "bc-2307",
@@ -17892,7 +20734,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2307.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792510584&Key-Pair-Id=K7AVJM1114TH7&Signature=F6qB3GOQhRidURUqeiPnainC7ow2QxdGo29zNgnhRcdOW1fOAUENYA6TFSjf2II2V3zO9Vn7IVe5ctMcRgwQ7NaWAuW21EN5PGktv93A1JytIKOMScxWYEk0mAap6jgY5pu~rrgXx9VgGzOxdSrJcORK7obgJa2WZKcc59G7lRHo-28e9KVeEPAElkAKKkZASbZOEol1e8lr0qlBmggr0n0UxgL3dLbymeb-gws7ifSPBqdU0se4SS3LAppsHcgO3qbD94DUAeGAUm2hWjmVSOXHvPD-G2wa1PDWLK73xcmLRnklO18T7N1hUOvltOYgCDs99P1TJx6Z8px5uqVvWQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2445/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2445/",
+    "mech": "魔神凯撒",
+    "mechId": "魔神凯撒",
+    "aliases": []
   },
   {
     "id": "bc-2304",
@@ -17917,7 +20762,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2304.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/651167ddf5e9c3307f666126f5088a0b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "正义骑士高达",
+    "mechId": "正义骑士高达",
+    "aliases": []
   },
   {
     "id": "bc-2298",
@@ -17942,7 +20790,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2298.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/f587ee3c11c3540e3a32c8a6ea64f26c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "地球三式高达",
+    "mechId": "地球三式高达",
+    "aliases": []
   },
   {
     "id": "bc-2300",
@@ -17967,7 +20818,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2300.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/82b69c8cb905c80b31ddfc340d42d711.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "火星四式高达组件",
+    "mechId": "火星四式高达组件",
+    "aliases": []
   },
   {
     "id": "bc-2299",
@@ -17992,7 +20846,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2299.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/97a3a724c5ef22c6ac86c455f6e1d00d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "金星二式高达组件",
+    "mechId": "金星二式高达组件",
+    "aliases": []
   },
   {
     "id": "hg-pene-rope",
@@ -18021,7 +20878,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hg-pene-rope.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3372_o_1ej9ikeqgmc21tpq1t8414c41an223.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2443/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2443/",
+    "mech": "佩涅罗佩",
+    "mechId": "佩涅罗佩",
+    "aliases": []
   },
   {
     "id": "bc-485",
@@ -18046,7 +20906,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-485.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/f53e742f10f4016825f4827826df1347.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "机动人偶莎拉",
+    "mechId": "机动人偶莎拉",
+    "aliases": []
   },
   {
     "id": "bc-2290",
@@ -18071,7 +20934,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2290.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/c6a0983224fecd7300e078414a06ce66.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "炮击型扎古勇士",
+    "mechId": "炮击型扎古勇士",
+    "aliases": []
   },
   {
     "id": "bc-2279",
@@ -18096,7 +20962,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2279.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240110/294caaff02c89af4e72fee6101fc29ed.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "沙漠高达",
+    "mechId": "沙漠高达",
+    "aliases": []
   },
   {
     "id": "bc-2278",
@@ -18121,7 +20990,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2278.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3336_o_1dl9l3e1nsg1613prp5v61j8o23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2403/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2403/",
+    "mech": "小熊霸 角色熊霸 萨拉",
+    "mechId": "小熊霸角色熊霸萨拉",
+    "aliases": []
   },
   {
     "id": "bc-481",
@@ -18146,7 +21018,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-481.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/d0c33af41ab56c68a1b25a9f27774328.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞行老虎 21世纪拟真配色",
+    "mechId": "飞行老虎21世纪拟真配色",
+    "aliases": []
   },
   {
     "id": "bc-482",
@@ -18171,7 +21046,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-482.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/e096a95ac240fe1b8034be43dea1f1a3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-3 G3高达",
+    "mechId": "rx-78-3g3高达",
+    "aliases": [
+      "RX-78-3"
+    ]
   },
   {
     "id": "rg-nu",
@@ -18200,7 +21080,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-nu.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3280_o_1dhnrkuji16gd92gfhm5uq1gt528.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2343/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2343/",
+    "mech": "ν高达",
+    "mechId": "ν高达",
+    "aliases": [
+      "Nu Gundam",
+      "牛高达",
+      "牛"
+    ]
   },
   {
     "id": "bc-2258",
@@ -18225,7 +21112,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2258.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3244_o_1dht3kuhnf2od6tjrf8u4vhi23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2305/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2305/",
+    "mech": "独角兽高达3号机 菲尼克斯",
+    "mechId": "独角兽高达3号机菲尼克斯",
+    "aliases": [
+      "Phenex",
+      "菲尼克斯"
+    ]
   },
   {
     "id": "bc-2259",
@@ -18250,7 +21143,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2259.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240109/9f1072f1c02623eaa7a5e20809f8c344.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽",
+    "mechId": "独角兽",
+    "aliases": [
+      "Unicorn Gundam",
+      "独角兽高达",
+      "RX-0",
+      "Unicorn"
+    ]
   },
   {
     "id": "bc-479",
@@ -18275,7 +21176,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-479.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/48e28fdb04b05344a86f02594f9e5df3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽高达 完美形态",
+    "mechId": "独角兽高达完美形态",
+    "aliases": [
+      "Unicorn Gundam (Perfect Mode)",
+      "完美形态独角兽",
+      "完美形态"
+    ]
   },
   {
     "id": "bc-2243",
@@ -18300,7 +21208,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2243.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240109/f9d2f43acb6d75e8eefae01c2d8ee30f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "超强修罗",
+    "mechId": "超强修罗",
+    "aliases": []
   },
   {
     "id": "bc-2242",
@@ -18325,7 +21236,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2242.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3203_o_1dgc9gku0c2p151bls510lbo2s23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2260/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2260/",
+    "mech": "扎古II改",
+    "mechId": "扎古ii改",
+    "aliases": []
   },
   {
     "id": "bc-2238",
@@ -18350,7 +21264,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2238.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240109/b37814ca3782208f72bd834a3810e54c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "命运高达",
+    "mechId": "命运高达",
+    "aliases": [
+      "Destiny Gundam",
+      "Destiny"
+    ]
   },
   {
     "id": "bc-476",
@@ -18375,7 +21295,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-476.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/e7e9f4428d45a86cef7f2bd60687a283.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达00潜行者",
+    "mechId": "高达00潜行者",
+    "aliases": []
   },
   {
     "id": "mg-nt1-ver2-0",
@@ -18404,7 +21327,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-nt1-ver2-0.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3199_o_1esia665n1p1u1r3sf44vb1qpq23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2254/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2254/",
+    "mech": "高达NT-1",
+    "mechId": "高达nt-1",
+    "aliases": [
+      "NT-1"
+    ]
   },
   {
     "id": "bc-2218",
@@ -18429,7 +21357,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2218.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3238_o_1de4an00b1eeap5o1hlvinjbnr23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2298/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2298/",
+    "mech": "银弹镇压者",
+    "mechId": "银弹镇压者",
+    "aliases": []
   },
   {
     "id": "bc-2216",
@@ -18454,7 +21385,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2216.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240108/a4a5a5ebc4922d89429be8dda79349e0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "魔神凯撒",
+    "mechId": "魔神凯撒",
+    "aliases": []
   },
   {
     "id": "bc-2217",
@@ -18479,7 +21413,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2217.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240108/3b0d06373f85ec8195923546be52dc45.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "真盖塔",
+    "mechId": "真盖塔",
+    "aliases": []
   },
   {
     "id": "bc-2214",
@@ -18504,7 +21441,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2214.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240108/9f13b7f970a571f19e70e84d17b7cd94.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "命运高达",
+    "mechId": "命运高达",
+    "aliases": [
+      "Destiny Gundam",
+      "Destiny"
+    ]
   },
   {
     "id": "bc-2215",
@@ -18529,7 +21472,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2215.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3197_o_1dao3dt4o3l2adi1i21v1db823.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2252/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2252/",
+    "mech": "比基娜·基纳II",
+    "mechId": "比基娜·基纳ii",
+    "aliases": []
   },
   {
     "id": "bc-2208",
@@ -18554,7 +21500,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2208.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240108/08d887a3f3518ad1d10e322f50a0ee9b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "海盗高达X1",
+    "mechId": "海盗高达x1",
+    "aliases": []
   },
   {
     "id": "bc-2204",
@@ -18579,7 +21528,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2204.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792510584&Key-Pair-Id=K7AVJM1114TH7&Signature=F6qB3GOQhRidURUqeiPnainC7ow2QxdGo29zNgnhRcdOW1fOAUENYA6TFSjf2II2V3zO9Vn7IVe5ctMcRgwQ7NaWAuW21EN5PGktv93A1JytIKOMScxWYEk0mAap6jgY5pu~rrgXx9VgGzOxdSrJcORK7obgJa2WZKcc59G7lRHo-28e9KVeEPAElkAKKkZASbZOEol1e8lr0qlBmggr0n0UxgL3dLbymeb-gws7ifSPBqdU0se4SS3LAppsHcgO3qbD94DUAeGAUm2hWjmVSOXHvPD-G2wa1PDWLK73xcmLRnklO18T7N1hUOvltOYgCDs99P1TJx6Z8px5uqVvWQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2186/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2186/",
+    "mech": "M9D 鹰隼",
+    "mechId": "m9d鹰隼",
+    "aliases": [
+      "M9D"
+    ]
   },
   {
     "id": "bc-2205",
@@ -18604,7 +21558,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2205.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240108/523289f9bdea5d7b05c9e1cf7faee002.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "陆战型高达",
+    "mechId": "陆战型高达",
+    "aliases": [
+      "Ground Type Gundam",
+      "陆战型",
+      "Ground Type"
+    ]
   },
   {
     "id": "bc-472",
@@ -18629,7 +21590,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-472.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/35509ba828808e1d19b1dcd039ac3afa.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽高达2号机 报丧女妖 复仇女神亮灯版",
+    "mechId": "独角兽高达2号机报丧女妖复仇女神亮灯版",
+    "aliases": []
   },
   {
     "id": "bc-2201",
@@ -18654,7 +21618,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2201.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792510584&Key-Pair-Id=K7AVJM1114TH7&Signature=F6qB3GOQhRidURUqeiPnainC7ow2QxdGo29zNgnhRcdOW1fOAUENYA6TFSjf2II2V3zO9Vn7IVe5ctMcRgwQ7NaWAuW21EN5PGktv93A1JytIKOMScxWYEk0mAap6jgY5pu~rrgXx9VgGzOxdSrJcORK7obgJa2WZKcc59G7lRHo-28e9KVeEPAElkAKKkZASbZOEol1e8lr0qlBmggr0n0UxgL3dLbymeb-gws7ifSPBqdU0se4SS3LAppsHcgO3qbD94DUAeGAUm2hWjmVSOXHvPD-G2wa1PDWLK73xcmLRnklO18T7N1hUOvltOYgCDs99P1TJx6Z8px5uqVvWQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2181/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2181/",
+    "mech": "古连泰沙",
+    "mechId": "古连泰沙",
+    "aliases": []
   },
   {
     "id": "bc-2196",
@@ -18679,7 +21646,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2196.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240108/ce449a642c353597bd7dddd67fd800ad.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "夏亚专用扎古II 红色彗星",
+    "mechId": "夏亚专用扎古ii红色彗星",
+    "aliases": []
   },
   {
     "id": "bc-2197",
@@ -18704,7 +21674,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2197.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240108/2326e95950f053baa8eacd1a5b300351.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "扎古II C6/R6型",
+    "mechId": "扎古iic6r6型",
+    "aliases": []
   },
   {
     "id": "bc-2198",
@@ -18729,7 +21702,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2198.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240108/489dc04eafaab80abb6b9603b1116d07.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "西斯奎德",
+    "mechId": "西斯奎德",
+    "aliases": []
   },
   {
     "id": "bc-2199",
@@ -18754,7 +21730,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2199.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240108/52ac50bb96c9c532e734f90bfed741d5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "西斯奎德",
+    "mechId": "西斯奎德",
+    "aliases": []
   },
   {
     "id": "bc-2195",
@@ -18779,7 +21758,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2195.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240108/00ae0f9a70b02f3c7ded0f0f65d82274.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "马格纳克",
+    "mechId": "马格纳克",
+    "aliases": []
   },
   {
     "id": "bc-2194",
@@ -18787,7 +21769,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "MG 1/100 Ex-Sガンダム/Sガンダム",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "gundam-front",
     "scale": "1/100",
     "released": "2019-04-20",
     "priceJpy": 14080,
@@ -18804,7 +21786,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2194.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3124_o_1d85b0g6dm5h1kmq54c5lc70f23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2176/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2176/",
+    "mech": "Ex-S高达",
+    "mechId": "ex-s高达",
+    "aliases": []
   },
   {
     "id": "bc-468",
@@ -18829,7 +21814,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-468.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/32de7d753401c7489b0002aebd1ba3cb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "新安洲原石",
+    "mechId": "新安洲原石",
+    "aliases": [
+      "Providence Gundam (Orthros)",
+      "原石",
+      "Orthros"
+    ]
   },
   {
     "id": "pb-271",
@@ -18857,7 +21849,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-1000131841.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000131841"
+    "sourceJp": "https://p-bandai.jp/item/item-1000131841",
+    "mech": "杰刚D型",
+    "mechId": "杰刚d型",
+    "aliases": []
   },
   {
     "id": "bc-2186",
@@ -18882,7 +21877,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2186.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3079_o_1d5beojur1pvg1cpebfnlc4h1u23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2125/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2125/",
+    "mech": "高达AGE-II马格南",
+    "mechId": "高达age-ii马格南",
+    "aliases": []
   },
   {
     "id": "bc-2179",
@@ -18907,7 +21905,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2179.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3080_o_1d5bepts5o5f138tmlqiae11ic23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2127/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2127/",
+    "mech": "力天使高达",
+    "mechId": "力天使高达",
+    "aliases": [
+      "Virtue Gundam",
+      "Virtue",
+      "力天使"
+    ]
   },
   {
     "id": "bc-2174",
@@ -18932,7 +21937,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2174.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792510584&Key-Pair-Id=K7AVJM1114TH7&Signature=F6qB3GOQhRidURUqeiPnainC7ow2QxdGo29zNgnhRcdOW1fOAUENYA6TFSjf2II2V3zO9Vn7IVe5ctMcRgwQ7NaWAuW21EN5PGktv93A1JytIKOMScxWYEk0mAap6jgY5pu~rrgXx9VgGzOxdSrJcORK7obgJa2WZKcc59G7lRHo-28e9KVeEPAElkAKKkZASbZOEol1e8lr0qlBmggr0n0UxgL3dLbymeb-gws7ifSPBqdU0se4SS3LAppsHcgO3qbD94DUAeGAUm2hWjmVSOXHvPD-G2wa1PDWLK73xcmLRnklO18T7N1hUOvltOYgCDs99P1TJx6Z8px5uqVvWQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2128/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2128/",
+    "mech": "卡恩兹巴克",
+    "mechId": "卡恩兹巴克",
+    "aliases": []
   },
   {
     "id": "bc-2175",
@@ -18957,7 +21965,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2175.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3107_o_1d5beu9tvc88lkeuh7ca1u9823.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2157/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2157/",
+    "mech": "NT高达 C装备",
+    "mechId": "nt高达c装备",
+    "aliases": [
+      "Gundam NT C-Type",
+      "NT高达C",
+      "NT C"
+    ]
   },
   {
     "id": "bc-2171",
@@ -18982,7 +21997,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2171.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792510586&Key-Pair-Id=K7AVJM1114TH7&Signature=W~IT38X0iqiISuJ3IlRSA3DDJ3sf~xH4z7dui1YiDKjMFIQRqp~xELKgSHsZDecyHxbPaSZFXk8sgTNjRRcaM1udxoynJTdCJMexm-bfHFVk-Gi8O6hzNVtc1t-OwHLglNa7wYjgQP-R2Ydy8lkrTjbebX903edWATwcLpZFb38pv2ysG2g~d4Nt8egdRZmaNwBQu~48TwfiliHdIixf-w91WaP4eTKxn~i9nJXaLmMBQXJp8WMXW1atN0y88CyAkdqXlCzlkRm2dNodsQC7hvqiWttFO87X~thqBh2AAxFsHXLHhtPI2B8UyEpOGcUJfEpQFcOkXivNPxxjDw2feQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2119/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2119/",
+    "mech": "ARX-7强弩",
+    "mechId": "arx-7强弩",
+    "aliases": [
+      "ARX-7"
+    ]
   },
   {
     "id": "bc-2166",
@@ -19007,7 +22027,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2166.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240108/6131d190a2b23a91aabcd680ef57d31b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "自由高达",
+    "mechId": "自由高达",
+    "aliases": [
+      "Freedom Gundam",
+      "ZGMF-X10A",
+      "自由高达"
+    ]
   },
   {
     "id": "bc-2165",
@@ -19032,7 +22059,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2165.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3041_o_1d30q32hp1v9k157p1d0lsee8k23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2093/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2093/",
+    "mech": "古斯塔夫·卡尔",
+    "mechId": "古斯塔夫·卡尔",
+    "aliases": []
   },
   {
     "id": "bc-2164",
@@ -19057,7 +22087,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2164.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3072_o_1d2tncrho6g91o3n1ujdfk7vfs23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2118/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2118/",
+    "mech": "泽拉谢尔高达",
+    "mechId": "泽拉谢尔高达",
+    "aliases": []
   },
   {
     "id": "bc-467",
@@ -19082,7 +22115,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-467.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/79823401058c8b5864ba8341535faa1a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "伊弗利特改",
+    "mechId": "伊弗利特改",
+    "aliases": []
   },
   {
     "id": "bc-2159",
@@ -19107,7 +22143,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2159.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240105/0ac77371b7bf8103b422305d52ded5c3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "复仇流浪者",
+    "mechId": "复仇流浪者",
+    "aliases": []
   },
   {
     "id": "bc-2158",
@@ -19132,7 +22171,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2158.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240105/f23ed540dbac7b8efd5ef222d74f8d32.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "HWS",
+    "mechId": "hws",
+    "aliases": []
   },
   {
     "id": "bc-2156",
@@ -19157,7 +22199,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2156.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240105/0841fa360d100eb2533207f5adb7b2e2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "GBN-Base高达",
+    "mechId": "gbn-base高达",
+    "aliases": []
   },
   {
     "id": "bc-2157",
@@ -19182,7 +22227,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2157.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3031_o_1esia49mik5k19ft1g25qjg1j5f23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2082/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2082/",
+    "mech": "新安洲·原石",
+    "mechId": "新安洲·原石",
+    "aliases": []
   },
   {
     "id": "bc-2153",
@@ -19207,7 +22255,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2153.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240105/24486caa3a2d7c0318be32c8e62e9b40.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 菖蒲",
+    "mechId": "小熊霸菖蒲",
+    "aliases": []
   },
   {
     "id": "bc-2154",
@@ -19232,7 +22283,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2154.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3029_o_1d1dhvapi1mv09216lt1boq1q2523.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2079/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2079/",
+    "mech": "R・贾贾",
+    "mechId": "r・贾贾",
+    "aliases": []
   },
   {
     "id": "bc-465",
@@ -19257,7 +22311,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-465.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/dd260128db8dfc53678edb1ebd1bf4fa.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "量子型00高达 全刃式",
+    "mechId": "量子型00高达全刃式",
+    "aliases": [
+      "Quant-Effy (Full Blade)",
+      "全刃式00",
+      "Quant-Effy Full Blade"
+    ]
   },
   {
     "id": "bc-2150",
@@ -19282,7 +22343,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2150.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3006_o_1cut46dpt17u5gf71mefri91op823.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2057/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2057/",
+    "mech": "能天使高达用LED发光组件",
+    "mechId": "能天使高达用led发光组件",
+    "aliases": []
   },
   {
     "id": "bc-2148",
@@ -19307,7 +22371,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2148.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2971_o_1cubl3l9dt2vcpdhea13ud17sd23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2029/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2029/",
+    "mech": "钢伊吉",
+    "mechId": "钢伊吉",
+    "aliases": []
   },
   {
     "id": "bc-2147",
@@ -19332,7 +22399,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2147.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240105/a752e4878526bac12b0154c9eb93ee68.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达AGE-II 马格南 SV",
+    "mechId": "高达age-ii马格南sv",
+    "aliases": []
   },
   {
     "id": "rg-unicorn-full",
@@ -19361,7 +22431,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-unicorn-full.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2970_o_1cubl5dkgch5arg628iu2fst23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2028/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2028/",
+    "mech": "全装备独角兽高达",
+    "mechId": "全装备独角兽高达",
+    "aliases": [
+      "Unicorn Gundam (Full Armor Mode)",
+      "全装备独角兽",
+      "全装备型独角兽"
+    ]
   },
   {
     "id": "bc-2140",
@@ -19386,7 +22463,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2140.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240105/c30731d0e5898eb93ed6acb3ea53c076.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "闪光破坏者高达",
+    "mechId": "闪光破坏者高达",
+    "aliases": []
   },
   {
     "id": "bc-2142",
@@ -19411,7 +22491,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2142.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240105/1a7e15338d480f7010d8370aa94fd865.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "机动人偶沙拉",
+    "mechId": "机动人偶沙拉",
+    "aliases": []
   },
   {
     "id": "bc-2134",
@@ -19436,7 +22519,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2134.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2968_o_1cubke59mclk1plqgddmai1odj23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2025/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2025/",
+    "mech": "迪杰",
+    "mechId": "迪杰",
+    "aliases": []
   },
   {
     "id": "bc-2137",
@@ -19461,7 +22547,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2137.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240104/5afce7d703c586cd1647b94fe73d6ce4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "大魔神",
+    "mechId": "大魔神",
+    "aliases": []
   },
   {
     "id": "bc-2136",
@@ -19486,7 +22575,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2136.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240104/796caf04fa57172f0de13670dc0b4b57.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "魔神Z",
+    "mechId": "魔神z",
+    "aliases": []
   },
   {
     "id": "bc-2135",
@@ -19511,7 +22603,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2135.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240104/3722e54e4d03e8f45185366aeb997f78.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽高达3号机 菲尼克斯",
+    "mechId": "独角兽高达3号机菲尼克斯",
+    "aliases": [
+      "Phenex",
+      "菲尼克斯"
+    ]
   },
   {
     "id": "bc-2133",
@@ -19536,7 +22634,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2133.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2999_o_1cs3muive1vvs10np9pud5j1bon23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2048/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2048/",
+    "mech": "NT高达 A装备",
+    "mechId": "nt高达a装备",
+    "aliases": []
   },
   {
     "id": "bc-2124",
@@ -19561,7 +22662,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2124.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240104/b75041e9a22c056f96188062a022f07d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "00高达 天翔型HWS",
+    "mechId": "00高达天翔型hws",
+    "aliases": []
   },
   {
     "id": "bc-2122",
@@ -19586,7 +22690,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2122.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240104/8bc441c397ed7a94cf636f40649202a5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "GBN警卫机",
+    "mechId": "gbn警卫机",
+    "aliases": []
   },
   {
     "id": "bc-2120",
@@ -19611,7 +22718,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2120.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2911_o_1csaq4k52slu1a7ba8nakp1ni123.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1982/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1982/",
+    "mech": "拦截特装型吉姆",
+    "mechId": "拦截特装型吉姆",
+    "aliases": []
   },
   {
     "id": "bc-462",
@@ -19636,7 +22746,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-462.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/65b31d395d812a9a5a9a259472b03920.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "百式",
+    "mechId": "百式",
+    "aliases": [
+      "Hyaku Shiki",
+      "百式高达"
+    ]
   },
   {
     "id": "bc-2118",
@@ -19661,7 +22777,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2118.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792510267&Key-Pair-Id=K7AVJM1114TH7&Signature=Uu89rfmdtDHC5C0HMQYXn36pAJmaMXCBU4HZmwSaOo2wUDOJzNKQ6Ox0Pw7IrbA0Ve8UMm61akFlLh8ewk14xLd2XmamNtd2UkTGiPazJcirqVgNudqSxnpsO5JazmhHUIjie8zWQ-danDQZheupWHi85qJN~00AL7FVGPSiK57PYBV3lDMFWECQQNALw8up6yg0C3WJAUPJlqZ9MCui8klseCxEWzHUyb6hAAbcLzsunmLiDGutiknG6CWblrcecRv-51VeNhpDpa4OT3Ul-JBY4FvZLPRgoCGsnjxD-rHwcfoWdv27sg9ERVl41LlHowu5bNiXgYpaCQNOKvqDyA__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1889/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1889/",
+    "mech": "烈焰魔剑",
+    "mechId": "烈焰魔剑",
+    "aliases": []
   },
   {
     "id": "bc-2119",
@@ -19686,7 +22805,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2119.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2916_o_1cp42vot51r4310lh1upb15br1p2823.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1987/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1987/",
+    "mech": "新安洲·原石",
+    "mechId": "新安洲·原石",
+    "aliases": []
   },
   {
     "id": "bc-2111",
@@ -19711,7 +22833,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2111.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240104/9eeb996b685b19f098e9b72d33639997.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "爱幻影高达",
+    "mechId": "爱幻影高达",
+    "aliases": []
   },
   {
     "id": "bc-2112",
@@ -19736,7 +22861,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2112.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240104/5d47d175723136ef7a178207f3234b24.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达00潜行者ACE",
+    "mechId": "高达00潜行者ace",
+    "aliases": []
   },
   {
     "id": "bc-2110",
@@ -19761,7 +22889,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2110.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2915_o_1g21u252ma5iod1kun9h71a7r28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1986/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1986/",
+    "mech": "独角兽高达3号机 菲尼克斯NT版",
+    "mechId": "独角兽高达3号机菲尼克斯nt版",
+    "aliases": []
   },
   {
     "id": "bc-2105",
@@ -19786,7 +22917,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2105.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240104/77abe2cd0e45664d8f1eee8193bf195d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "大魔神",
+    "mechId": "大魔神",
+    "aliases": []
   },
   {
     "id": "bc-2106",
@@ -19811,7 +22945,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2106.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240104/234732dc8b8df9c1d1a359f9d9300336.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "脉冲高达Ark",
+    "mechId": "脉冲高达ark",
+    "aliases": []
   },
   {
     "id": "bc-2107",
@@ -19836,7 +22973,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2107.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240104/be5ea0490a1df25d26b5e2c2c5b091b3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "枪兵型脉冲高达",
+    "mechId": "枪兵型脉冲高达",
+    "aliases": []
   },
   {
     "id": "bc-3018",
@@ -19861,7 +23001,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3018.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250401/30a5c367c9007065291d92955dac2b59.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽高达 完美形态",
+    "mechId": "独角兽高达完美形态",
+    "aliases": [
+      "Unicorn Gundam (Perfect Mode)",
+      "完美形态独角兽",
+      "完美形态"
+    ]
   },
   {
     "id": "bc-2100",
@@ -19886,7 +23033,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2100.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2813_o_1copq52mhbgh175pd7potp180623.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1881/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1881/",
+    "mech": "月高达",
+    "mechId": "月高达",
+    "aliases": []
   },
   {
     "id": "bc-2101",
@@ -19911,7 +23061,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2101.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2814_o_1f08am2hhqjfbtlsv51laglqk23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1882/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1882/",
+    "mech": "亚克托・德卡",
+    "mechId": "亚克托・德卡",
+    "aliases": []
   },
   {
     "id": "bc-2099",
@@ -19936,7 +23089,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2099.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2815_o_1dt5dr26a1p9t6q819gm2u7okd23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1883/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1883/",
+    "mech": "量子型00高达 全刃式",
+    "mechId": "量子型00高达全刃式",
+    "aliases": [
+      "Quant-Effy (Full Blade)",
+      "全刃式00",
+      "Quant-Effy Full Blade"
+    ]
   },
   {
     "id": "bc-2097",
@@ -19961,7 +23121,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2097.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260821/600b054f03678810dce824e6e4434681.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "无名步枪",
+    "mechId": "无名步枪",
+    "aliases": []
   },
   {
     "id": "bc-2098",
@@ -19986,7 +23149,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2098.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260821/a5f1f09894616e0c84eafbd4020e730b.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "杰刚爆破大师",
+    "mechId": "杰刚爆破大师",
+    "aliases": []
   },
   {
     "id": "bc-456",
@@ -20011,7 +23177,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-456.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230508/96f7b5add3e12050d6112645f402e4df.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "巴巴托斯",
+    "mechId": "巴巴托斯",
+    "aliases": []
   },
   {
     "id": "bc-2092",
@@ -20036,7 +23205,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2092.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240104/d976a0f17dca6c2fb79eade18524251c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "SKY HIGH WINGS配件包",
+    "mechId": "skyhighwings配件包",
+    "aliases": []
   },
   {
     "id": "bc-2058",
@@ -20061,7 +23233,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2058.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/59de2003f918ce59e0ebb50c9207bec2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达00天翔型",
+    "mechId": "高达00天翔型",
+    "aliases": []
   },
   {
     "id": "bc-2091",
@@ -20086,7 +23261,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2091.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240104/aad5aa4684db4347547a8cc765cd2cc4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达00天翔型",
+    "mechId": "高达00天翔型",
+    "aliases": []
   },
   {
     "id": "bc-2056",
@@ -20111,7 +23289,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2056.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509641&Key-Pair-Id=K7AVJM1114TH7&Signature=HMCfgI6qbma6U~2Tvu1qlom-Ji0SU5AFQJQQWXIhnpCSXHJXYQwa8lp77gWeZQQ9JV-EwaRtOT6TpnWV2xAsOWT69OH5XG6XMwCm9qLCUeSnTRmIx1adCZWKvA4x9xekezE8guEVp~8mayvXY9kf7242rSCn1yIA1ypRpK0szpuJudeCHSANZp2IcLso12p66p5DEnGC0by~sCqqccm-DrxsLnuEiZGOXJ~jpKsghFNBTQ15fJ4LH7JLZrly-IdaifXB28nJjq3DrqNrl2Vylaa~-s3JgR2DLNhSvKmdBK56w7VURHznTWJvWqYRYC7Es9YxvL-LRBTWQEG1Oh1xJQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1435/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1435/",
+    "mech": "魔神Z",
+    "mechId": "魔神z",
+    "aliases": []
   },
   {
     "id": "bc-2053",
@@ -20136,7 +23317,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2053.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/9f934912f661d58df97fcee2ebc2dbef.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "机械骑士",
+    "mechId": "机械骑士",
+    "aliases": []
   },
   {
     "id": "rg-sazabi",
@@ -20165,7 +23349,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-sazabi.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_2947_s_7dw2p9ybqijv149jdhm7rxupbf3z.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1408/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1408/",
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "Zaku II",
+      "扎古II",
+      "沙扎比",
+      "MS-06S"
+    ]
   },
   {
     "id": "bc-2045",
@@ -20190,7 +23382,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2045.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/679e2e3b66fd75e406b27eb22b0ddec9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "创制造型手 方【S、M、L】",
+    "mechId": "创制造型手方s、m、l",
+    "aliases": []
   },
   {
     "id": "bc-2046",
@@ -20215,7 +23410,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2046.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/90cb2dd559b8d07b6ba4e8fb4230ff8e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "创制造型手 圆【S、M、L】",
+    "mechId": "创制造型手圆s、m、l",
+    "aliases": []
   },
   {
     "id": "bc-2044",
@@ -20240,7 +23438,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2044.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/9396d1f47546eb24e93f9b513b77e17c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "无名异端高达",
+    "mechId": "无名异端高达",
+    "aliases": []
   },
   {
     "id": "bc-436",
@@ -20265,7 +23466,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-436.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230508/843ba5836cb3b77a54294c101263920c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽",
+    "mechId": "独角兽",
+    "aliases": [
+      "Unicorn Gundam",
+      "独角兽高达",
+      "RX-0",
+      "Unicorn"
+    ]
   },
   {
     "id": "bc-439",
@@ -20290,7 +23499,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-439.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230508/3d9baea044718c3b6d4a3e5340a123e6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸",
+    "mechId": "小熊霸",
+    "aliases": []
   },
   {
     "id": "bc-440",
@@ -20315,7 +23527,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-440.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230508/6a2ff1b7e5a099eb2be30221eb612d7d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸",
+    "mechId": "小熊霸",
+    "aliases": []
   },
   {
     "id": "bc-441",
@@ -20340,7 +23555,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-441.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230508/4f22c3a3ce591eec881127ed783c3e84.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "自由高达",
+    "mechId": "自由高达",
+    "aliases": [
+      "Freedom Gundam",
+      "ZGMF-X10A",
+      "自由高达"
+    ]
   },
   {
     "id": "bc-435",
@@ -20365,7 +23587,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-435.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230508/a1eb8b2b8628df6f7fbd3fa3763b3622.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Z高达3号机",
+    "mechId": "z高达3号机",
+    "aliases": []
   },
   {
     "id": "bc-442",
@@ -20390,7 +23615,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-442.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230508/4b0451006317003dc4edb54ef32f30d1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "00强化模组",
+    "mechId": "00强化模组",
+    "aliases": [
+      "Gundam Virtue",
+      "00高达",
+      "双头龙高达"
+    ]
   },
   {
     "id": "bc-446",
@@ -20415,7 +23647,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-446.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230510/6afd69de25302aa1be83e0e707805cd2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "自由高达2.0",
+    "mechId": "自由高达2.0",
+    "aliases": []
   },
   {
     "id": "bc-451",
@@ -20440,7 +23675,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-451.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230508/32dafa70406645a73b99c01872cbb38e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞翼高达零式EW",
+    "mechId": "飞翼高达零式ew",
+    "aliases": [
+      "Wing Gundam Zero EW",
+      "飞翼零式EW",
+      "零EW",
+      "EW零式"
+    ]
   },
   {
     "id": "bc-2039",
@@ -20465,7 +23708,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2039.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/7aa081415157f96dc90e4ccb2df556fd.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆防御特装型",
+    "mechId": "吉姆防御特装型",
+    "aliases": []
   },
   {
     "id": "bc-2040",
@@ -20490,7 +23736,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2040.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/07ade576ba33a845eaad200a612524ad.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "激炎双头龙高达",
+    "mechId": "激炎双头龙高达",
+    "aliases": []
   },
   {
     "id": "bc-2033",
@@ -20515,7 +23764,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2033.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/555898b77214c5ff66d15cf7cb3c9b75.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达00潜行者王牌",
+    "mechId": "高达00潜行者王牌",
+    "aliases": []
   },
   {
     "id": "bc-2034",
@@ -20540,7 +23792,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2034.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/b4fe6db016dde3157a1dc49917f315e7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "Zaku II",
+      "扎古II",
+      "沙扎比",
+      "MS-06S"
+    ]
   },
   {
     "id": "bc-2035",
@@ -20565,7 +23825,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2035.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/f308daacfb107bbc13e751746cf878ee.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "骨架【灰】",
+    "mechId": "骨架灰",
+    "aliases": []
   },
   {
     "id": "bc-2032",
@@ -20590,7 +23853,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2032.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/63b3f7b2d06273961df61dade6bb02c4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "加里波第重锻型",
+    "mechId": "加里波第重锻型",
+    "aliases": []
   },
   {
     "id": "bc-2031",
@@ -20615,7 +23881,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2031.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2318_o_1ci763hbp1lds1pd878338spi328.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1394/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1394/",
+    "mech": "杰刚",
+    "mechId": "杰刚",
+    "aliases": [
+      "Gelgoog",
+      "勇士",
+      "格鲁古古"
+    ]
   },
   {
     "id": "bc-2030",
@@ -20640,7 +23913,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2030.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/9197918030121e9a83dc79eb0dad0c1f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "活页组合枪",
+    "mechId": "活页组合枪",
+    "aliases": []
   },
   {
     "id": "bc-2029",
@@ -20665,7 +23941,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2029.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2319_o_1chn8a4rb1isd1c4gdt1qlrics28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1395/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1395/",
+    "mech": "拜亚兰",
+    "mechId": "拜亚兰",
+    "aliases": []
   },
   {
     "id": "bc-2027",
@@ -20690,7 +23969,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2027.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/89bf4e9b9a763c361782e257906c1bc0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "普特雷玛奥斯武装",
+    "mechId": "普特雷玛奥斯武装",
+    "aliases": []
   },
   {
     "id": "sd-cs-rx78-2",
@@ -20719,7 +24001,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/sd-cs-rx78-2.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/59ddb011bf14a58443b37f65d1eecbfb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "bc-2023",
@@ -20744,7 +24036,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2023.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/ae960fcb92e1916aeaa9a49cd30bae08.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "海盗高达X1",
+    "mechId": "海盗高达x1",
+    "aliases": []
   },
   {
     "id": "bc-2024",
@@ -20769,7 +24064,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2024.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/8bcdb9d57c760baa3a6f11d326adddec.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "夜莺",
+    "mechId": "夜莺",
+    "aliases": []
   },
   {
     "id": "bc-2025",
@@ -20794,7 +24092,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2025.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/4dd4aeeb84c5328f906e310c5561f7e9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "CS骨架",
+    "mechId": "cs骨架",
+    "aliases": []
   },
   {
     "id": "bc-2026",
@@ -20802,7 +24103,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "SD",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "SD 比例",
     "released": "2018-06-30",
     "priceJpy": 1540,
@@ -20819,7 +24120,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2026.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/79ac2c01021eb4a319b9d203891717db.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "bc-2018",
@@ -20844,7 +24155,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2018.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/9d5b31b3bacac9919aff1c80040c7746.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "煌·基拉加",
+    "mechId": "煌·基拉加",
+    "aliases": []
   },
   {
     "id": "bc-2019",
@@ -20869,7 +24183,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2019.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/f70c590d2724f09c9e24386818d047f9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "里奥NPD",
+    "mechId": "里奥npd",
+    "aliases": []
   },
   {
     "id": "bc-2021",
@@ -20894,7 +24211,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2021.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2316_o_1cfmnfdaf1flu9ui15r81b7sq8323.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1392/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1392/",
+    "mech": "独角兽高达3号机 菲尼克斯",
+    "mechId": "独角兽高达3号机菲尼克斯",
+    "aliases": [
+      "Phenex",
+      "菲尼克斯"
+    ]
   },
   {
     "id": "bc-2014",
@@ -20919,7 +24242,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2014.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/f2f11b46456b922665a2517fc60885a1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "比基娜·基纳",
+    "mechId": "比基娜·基纳",
+    "aliases": []
   },
   {
     "id": "bc-2012",
@@ -20944,7 +24270,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2012.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/f54d1f69598c70039235fc81b66c9886.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "加里波第β",
+    "mechId": "加里波第β",
+    "aliases": []
   },
   {
     "id": "bc-2010",
@@ -20969,7 +24298,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2010.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/32fcaade58ab4464fd1320ac45055928.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "旋转爆裂枪",
+    "mechId": "旋转爆裂枪",
+    "aliases": []
   },
   {
     "id": "bc-2003",
@@ -20994,7 +24326,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2003.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/27b1c05e6ebe7bdf0e594d6c368e82dd.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "倾转旋翼背包",
+    "mechId": "倾转旋翼背包",
+    "aliases": []
   },
   {
     "id": "bc-1998",
@@ -21019,7 +24354,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1998.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/6ff08b84071db4a6b31261290c866fa1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "炽天使高达山鲁佐德",
+    "mechId": "炽天使高达山鲁佐德",
+    "aliases": []
   },
   {
     "id": "bc-1997",
@@ -21044,7 +24382,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1997.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/3b60914afee541336ab5876c390f61f9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "食人魔 刃-X",
+    "mechId": "食人魔刃-x",
+    "aliases": []
   },
   {
     "id": "bc-1996",
@@ -21069,7 +24410,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1996.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/8b486ee055359fedb0808ac59b950d4c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "桃桃卡普尔",
+    "mechId": "桃桃卡普尔",
+    "aliases": []
   },
   {
     "id": "bc-1999",
@@ -21094,7 +24438,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1999.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/425e33ef59945b4789056ece73b72b7e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 角色小熊 桃桃",
+    "mechId": "小熊霸角色小熊桃桃",
+    "aliases": []
   },
   {
     "id": "mg-f91-ver2-0",
@@ -21123,7 +24470,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-f91-ver2-0.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2277_o_1cdelvovqppi1s2sb6i1doc143828.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1349/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1349/",
+    "mech": "高达F91 2.0版",
+    "mechId": "高达f912.0版",
+    "aliases": [
+      "F91"
+    ]
   },
   {
     "id": "bc-1994",
@@ -21148,7 +24500,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1994.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/30a320770b2d76bf33c56e01961637cc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "里奥",
+    "mechId": "里奥",
+    "aliases": []
   },
   {
     "id": "bc-1995",
@@ -21173,7 +24528,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1995.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/f1db8dd3882ffcd9a278d6673eb64e29.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "潜行者王牌配件包",
+    "mechId": "潜行者王牌配件包",
+    "aliases": []
   },
   {
     "id": "bc-1993",
@@ -21198,7 +24556,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1993.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231219/9eb1d0788db2582bc489500bb120dc03.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "格里摩亚红色贝雷帽",
+    "mechId": "格里摩亚红色贝雷帽",
+    "aliases": []
   },
   {
     "id": "bc-1991",
@@ -21223,7 +24584,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1991.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2229_o_1caaqrn8sjfvgs01j9obqj1dro28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1299/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1299/",
+    "mech": "多鲁基斯EW版",
+    "mechId": "多鲁基斯ew版",
+    "aliases": []
   },
   {
     "id": "bc-1983",
@@ -21248,7 +24612,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1983.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231218/7e0d854f615d72f1b7bd4e33987b0d9f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 潜行者主题蓝",
+    "mechId": "小熊霸潜行者主题蓝",
+    "aliases": []
   },
   {
     "id": "bc-1976",
@@ -21273,7 +24640,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1976.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2228_o_1caaqdr6o1ctq1mt31ehq19mmfi28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1298/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1298/",
+    "mech": "陆战型高达",
+    "mechId": "陆战型高达",
+    "aliases": [
+      "Ground Type Gundam",
+      "陆战型",
+      "Ground Type"
+    ]
   },
   {
     "id": "bc-1974",
@@ -21298,7 +24672,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1974.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231218/d2532bdf5ad42e0def69215ce3ad6f12.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "模块切换步枪",
+    "mechId": "模块切换步枪",
+    "aliases": []
   },
   {
     "id": "bc-1973",
@@ -21323,7 +24700,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1973.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231218/8ccb7aaf18e7040330de0b54679d21f7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆Ⅲ光束大师",
+    "mechId": "吉姆iii光束大师",
+    "aliases": []
   },
   {
     "id": "bc-1967",
@@ -21348,7 +24728,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1967.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2227_o_1caa16og6ppm1s4d1s5m1agbevf28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1297/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1297/",
+    "mech": "高达FSD",
+    "mechId": "高达fsd",
+    "aliases": []
   },
   {
     "id": "bc-1968",
@@ -21373,7 +24756,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1968.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231218/ed0ba25dfd03197c9b93085db223cdee.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达00潜行者",
+    "mechId": "高达00潜行者",
+    "aliases": []
   },
   {
     "id": "mg-banshee-ver-ka",
@@ -21402,7 +24788,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-banshee-ver-ka.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2222_o_1esia2gikucka5upkn18ome9323.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1292/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1292/",
+    "mech": "独角兽高达2号机 报丧女妖",
+    "mechId": "独角兽高达2号机报丧女妖",
+    "aliases": [
+      "Banshee",
+      "报丧女妖",
+      "独角兽2号机"
+    ]
   },
   {
     "id": "bc-3131",
@@ -21427,7 +24820,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3131.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250627/464cb99a32468737a7c7a4d113ffa9ac.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "夏亚专用渣古II",
+    "mechId": "夏亚专用渣古ii",
+    "aliases": []
   },
   {
     "id": "bc-3525",
@@ -21452,7 +24848,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3525.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260722/8edaa5e475a233551aab9781de626760.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "PLAN303E 深度强袭",
+    "mechId": "plan303e深度强袭",
+    "aliases": [
+      "PLAN303E"
+    ]
   },
   {
     "id": "bc-1965",
@@ -21477,7 +24878,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1965.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231218/f8442f10a11ae769188e74b377bf5721.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "银河推进器",
+    "mechId": "银河推进器",
+    "aliases": []
   },
   {
     "id": "bc-1964",
@@ -21502,7 +24906,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1964.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231218/8159c4c52b9c0cf32f96085f06da11a8.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "创制强袭银河宇宙",
+    "mechId": "创制强袭银河宇宙",
+    "aliases": []
   },
   {
     "id": "bc-1966",
@@ -21527,7 +24934,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1966.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231218/f7e2e7db9e22e93fe5ae7170ad4de246.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 提耶利亚·厄德",
+    "mechId": "小熊霸提耶利亚·厄德",
+    "aliases": []
   },
   {
     "id": "bc-1953",
@@ -21552,7 +24962,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1953.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231215/fb8cee64126a50d45dcdeeb3d9e02dbb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽",
+    "mechId": "独角兽",
+    "aliases": [
+      "Unicorn Gundam",
+      "独角兽高达",
+      "RX-0",
+      "Unicorn"
+    ]
   },
   {
     "id": "rg-banshee-n",
@@ -21581,7 +24999,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-banshee-n.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2191_o_1c6c4or5g1scm65s1sbhosv1sg628.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1259/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1259/",
+    "mech": "独角兽高达2号机 报丧女妖·命运女神",
+    "mechId": "独角兽高达2号机报丧女妖·命运女神",
+    "aliases": [
+      "Banshee Norn",
+      "命运女神",
+      "报丧女妖命运女神"
+    ]
   },
   {
     "id": "bc-1952",
@@ -21606,7 +25031,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1952.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231215/18808940fac2d7a9fcfa3cd5227746cc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽高达2号机 报丧女妖·命运女神【Premium“独角兽模式”包装版】",
+    "mechId": "独角兽高达2号机报丧女妖·命运女神premium“独角兽模式”包装版",
+    "aliases": []
   },
   {
     "id": "bc-1948",
@@ -21631,7 +25059,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1948.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2183_o_1c6c45gmsko91a0a1dro401t7s28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1251/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1251/",
+    "mech": "钢加农DT",
+    "mechId": "钢加农dt",
+    "aliases": []
   },
   {
     "id": "bc-1931",
@@ -21656,7 +25087,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1931.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231214/59538c90a07b90ada98ba6b189228715.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "A-Z高达",
+    "mechId": "a-z高达",
+    "aliases": []
   },
   {
     "id": "bc-1941",
@@ -21681,7 +25115,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1941.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231214/318e1dcf8ed45b6dbd0e535b7982ffdf.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 阿雷路亚·哈普提森主题橙",
+    "mechId": "小熊霸阿雷路亚·哈普提森主题橙",
+    "aliases": []
   },
   {
     "id": "bc-1939",
@@ -21706,7 +25143,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1939.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231214/6cbec7fa0dc950ea41d1f3d508a6ef46.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ACT扎古",
+    "mechId": "act扎古",
+    "aliases": []
   },
   {
     "id": "bc-1938",
@@ -21731,7 +25171,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1938.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231214/83ee30ebbc901c8752463d10fc43f6e4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强袭型GN-X",
+    "mechId": "强袭型gn-x",
+    "aliases": []
   },
   {
     "id": "bc-1930",
@@ -21756,7 +25199,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1930.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231214/b5295265e3c0673bc99d013edb9a9083.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 格拉汉姆·艾卡主题白",
+    "mechId": "小熊霸格拉汉姆·艾卡主题白",
+    "aliases": []
   },
   {
     "id": "bc-1929",
@@ -21781,7 +25227,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1929.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2180_o_1c2dm7bc6h4q1ln819sa17di6n928.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1248/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1248/",
+    "mech": "吉姆指挥官型",
+    "mechId": "吉姆指挥官型",
+    "aliases": []
   },
   {
     "id": "bc-1914",
@@ -21806,7 +25255,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1914.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231213/34b6256e7e9d25decec46f3cfaa6eb88.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 洛克昂·史特拉托斯主题绿",
+    "mechId": "小熊霸洛克昂·史特拉托斯主题绿",
+    "aliases": []
   },
   {
     "id": "bc-1915",
@@ -21831,7 +25283,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1915.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2094_o_1c0nmd6tao6i3e4d671s9556728.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1164/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1164/",
+    "mech": "蓝色命运2号机“EXAM”",
+    "mechId": "蓝色命运2号机“exam”",
+    "aliases": []
   },
   {
     "id": "bc-1913",
@@ -21856,7 +25311,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1913.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2131_o_1bvu5hqe9qr37avfhr18a5rtd23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1203/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1203/",
+    "mech": "能天使高达",
+    "mechId": "能天使高达",
+    "aliases": [
+      "Geymalk",
+      "能天使"
+    ]
   },
   {
     "id": "bc-1912",
@@ -21881,7 +25342,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1912.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2130_o_1bvu5gij016cbvb11u2stoismg23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1202/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1202/",
+    "mech": "能天使高达",
+    "mechId": "能天使高达",
+    "aliases": [
+      "Geymalk",
+      "能天使"
+    ]
   },
   {
     "id": "mg-zz-ver-ka",
@@ -21911,7 +25378,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-zz-ver-ka.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4658_o_1fgj0u1k7vsvumguolvt0f5c23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3704/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3704/",
+    "mech": "ZZ高达",
+    "mechId": "zz高达",
+    "aliases": []
   },
   {
     "id": "rg-zaku-ii-jagen",
@@ -21940,7 +25410,16 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-zaku-ii-jagen.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2089_o_1bt3te68q1m6s1hj1seo1s3l12ja28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1158/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1158/",
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "MS-06R",
+      "Zaku II",
+      "扎古II",
+      "沙扎比",
+      "MS-06S"
+    ]
   },
   {
     "id": "bc-1899",
@@ -21965,7 +25444,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1899.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231213/d7621221ee75b4ef7e7d54fcfe218dae.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "扎古半加农型",
+    "mechId": "扎古半加农型",
+    "aliases": []
   },
   {
     "id": "bc-1902",
@@ -21990,7 +25472,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1902.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260421/de78282d736a9378c2b0a5c2a37de99e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "24世纪武器配件包",
+    "mechId": "24世纪武器配件包",
+    "aliases": []
   },
   {
     "id": "bc-1901",
@@ -22015,7 +25500,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1901.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231213/82f8a6ea61b2e2051d067cd6248b9cdf.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "智天使SAGA TYPE.GBF",
+    "mechId": "智天使sagatype.gbf",
+    "aliases": []
   },
   {
     "id": "bc-1900",
@@ -22040,7 +25528,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1900.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2088_o_1bt3tb692f4n1q0ch624rthto28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1157/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1157/",
+    "mech": "吉姆狙击特装型",
+    "mechId": "吉姆狙击特装型",
+    "aliases": []
   },
   {
     "id": "bc-1897",
@@ -22065,7 +25556,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1897.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2085_o_1bt3t48lg13j03am171kf4cgt28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1154/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1154/",
+    "mech": "扎古Ⅰ",
+    "mechId": "扎古i",
+    "aliases": []
   },
   {
     "id": "bc-1896",
@@ -22090,7 +25584,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1896.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231213/6de9d763b389868832f69e779cf49b7e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 刹那·F·清英主题蓝色",
+    "mechId": "小熊霸刹那·f·清英主题蓝色",
+    "aliases": []
   },
   {
     "id": "bc-1883",
@@ -22115,7 +25612,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1883.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231213/3cfc354f06e88f1cc4093c2884434fd6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "弹道武器配件包",
+    "mechId": "弹道武器配件包",
+    "aliases": []
   },
   {
     "id": "bc-1882",
@@ -22140,7 +25640,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1882.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231213/2ce1cb85f3a9f38149f1abb0f26c2d87.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "逆生高达",
+    "mechId": "逆生高达",
+    "aliases": []
   },
   {
     "id": "bc-1881",
@@ -22165,7 +25668,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1881.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2062_o_1brdttvv81tqtb5s3sr7fl7je28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1130/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1130/",
+    "mech": "局地型高达",
+    "mechId": "局地型高达",
+    "aliases": []
   },
   {
     "id": "bc-1880",
@@ -22190,7 +25696,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1880.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231213/09d540c01c68c0735d0d65ab1781c041.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达 闪电黑战士",
+    "mechId": "高达闪电黑战士",
+    "aliases": []
   },
   {
     "id": "bc-1879",
@@ -22215,7 +25724,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1879.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231213/bbc41b3d0a22bf94194a2903b0ddd3d3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "凯旋文奈",
+    "mechId": "凯旋文奈",
+    "aliases": []
   },
   {
     "id": "bc-1869",
@@ -22240,7 +25752,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1869.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231213/7706c3301c7d40e7603d486695df1a1d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "扎古Ⅱ C型/C5型",
+    "mechId": "扎古iic型c5型",
+    "aliases": []
   },
   {
     "id": "bc-1857",
@@ -22265,7 +25780,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1857.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231213/d5b19f026077666ff11e17c5fb22dc7c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "GM",
+    "mechId": "gm",
+    "aliases": []
   },
   {
     "id": "bc-1858",
@@ -22290,7 +25808,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1858.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231213/f0b654ec8001c118b5de945b0305a871.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "超绝强子",
+    "mechId": "超绝强子",
+    "aliases": []
   },
   {
     "id": "bc-1855",
@@ -22315,7 +25836,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1855.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/93b551fd66abf6177bb5cebf7ee56ec7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "星际燃炎高达",
+    "mechId": "星际燃炎高达",
+    "aliases": []
   },
   {
     "id": "bc-1856",
@@ -22340,7 +25864,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1856.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/3eec68f43ed1c9112d6456613972a889.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "GM",
+    "mechId": "gm",
+    "aliases": []
   },
   {
     "id": "bc-1851",
@@ -22365,7 +25892,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1851.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/b746b1c800c8ada126a7874f2b5fbb0c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "忍者脉冲光束配件包",
+    "mechId": "忍者脉冲光束配件包",
+    "aliases": []
   },
   {
     "id": "bc-1850",
@@ -22390,7 +25920,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1850.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/e23bd741b56094dd979acdd9d40d387e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "忍者脉冲高达",
+    "mechId": "忍者脉冲高达",
+    "aliases": []
   },
   {
     "id": "bc-1847",
@@ -22415,7 +25948,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1847.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/f3d15f669b68c964b4e2a1e9e9e0e9f0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "蓝色命运1号机“EXAM”",
+    "mechId": "蓝色命运1号机“exam”",
+    "aliases": []
   },
   {
     "id": "rg-unicorn",
@@ -22444,7 +25980,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-unicorn.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2017_o_1bmccqtnd1jrf186m1pc0or616bh28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1085/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1085/",
+    "mech": "独角兽",
+    "mechId": "独角兽",
+    "aliases": [
+      "Unicorn Gundam",
+      "独角兽高达",
+      "RX-0",
+      "Unicorn"
+    ]
   },
   {
     "id": "bc-1846",
@@ -22469,7 +26013,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1846.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2018_o_1bmccv8451enqsg1qpgi19tqn28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1086/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1086/",
+    "mech": "独角兽高达【豪华“独角兽模式”包装版】",
+    "mechId": "独角兽高达豪华“独角兽模式”包装版",
+    "aliases": []
   },
   {
     "id": "bc-1840",
@@ -22494,7 +26041,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1840.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2001_o_1bfr1r3be1rit1m8kvac1jjj1k4j28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1069/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1069/",
+    "mech": "千奈熊霸",
+    "mechId": "千奈熊霸",
+    "aliases": []
   },
   {
     "id": "bc-1838",
@@ -22519,7 +26069,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1838.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1989_o_1bk3npjp3d9md1nbuv17fs1b0v23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1054/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1054/",
+    "mech": "悍马·悍马",
+    "mechId": "悍马·悍马",
+    "aliases": []
   },
   {
     "id": "bc-1835",
@@ -22544,7 +26097,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1835.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1987_o_1bk3no74iquj1ladil810jbvda23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1052/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1052/",
+    "mech": "高达亚斯塔禄复兴型",
+    "mechId": "高达亚斯塔禄复兴型",
+    "aliases": []
   },
   {
     "id": "bc-1830",
@@ -22569,7 +26125,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1830.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1988_o_1bk3nlq071kfe1mse1o85n19deb23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1053/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1053/",
+    "mech": "伊芙利特·斩",
+    "mechId": "伊芙利特·斩",
+    "aliases": []
   },
   {
     "id": "bc-1817",
@@ -22594,7 +26153,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1817.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1953_o_1bbr5ji677ah1d1p1moo1c1mu0c28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1018/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1018/",
+    "mech": "高达但他林",
+    "mechId": "高达但他林",
+    "aliases": []
   },
   {
     "id": "bc-1820",
@@ -22619,7 +26181,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1820.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/9d6c938ce148d90e45a6d792658c2a90.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 角色小熊 强子",
+    "mechId": "小熊霸角色小熊强子",
+    "aliases": []
   },
   {
     "id": "bc-1819",
@@ -22644,7 +26209,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1819.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/79543e04652dee745aeebed1a73a52a6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 角色小熊 文奈",
+    "mechId": "小熊霸角色小熊文奈",
+    "aliases": []
   },
   {
     "id": "bc-1818",
@@ -22669,7 +26237,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1818.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1954_o_1esi9tvrk9ag14j91dd31l6p1p9923.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1019/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1019/",
+    "mech": "正义高达",
+    "mechId": "正义高达",
+    "aliases": []
   },
   {
     "id": "bc-1810",
@@ -22694,7 +26265,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1810.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1948_o_1bhh76f0tl371n3lts0t011q4h23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1012/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1012/",
+    "mech": "高达AN-01 崔斯坦",
+    "mechId": "高达an-01崔斯坦",
+    "aliases": [
+      "AN-01"
+    ]
   },
   {
     "id": "bc-1805",
@@ -22719,7 +26295,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1805.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1935_o_1bef70f7t1rvn2091rvl1mlckes23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_998/"
+    "sourceJp": "https://bandai-hobby.net/item/01_998/",
+    "mech": "陆战型高达S型",
+    "mechId": "陆战型高达s型",
+    "aliases": []
   },
   {
     "id": "bc-1806",
@@ -22744,7 +26323,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1806.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/8ec3ff2d7ff9d3968612fa644e609986.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 复古橙",
+    "mechId": "小熊霸复古橙",
+    "aliases": []
   },
   {
     "id": "bc-1807",
@@ -22769,7 +26351,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1807.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/52a53218003a12070de145a4d779f51d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 原型灰",
+    "mechId": "小熊霸原型灰",
+    "aliases": []
   },
   {
     "id": "bc-1799",
@@ -22794,7 +26379,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1799.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/18f69d2999632e8a2f0d274f6cf83023.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "漆黑骑士高达",
+    "mechId": "漆黑骑士高达",
+    "aliases": []
   },
   {
     "id": "bc-1798",
@@ -22819,7 +26407,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1798.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/9feffdc629de7fdd2c8fa050600ef7c2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "巴扎姆",
+    "mechId": "巴扎姆",
+    "aliases": []
   },
   {
     "id": "bc-1791",
@@ -22844,7 +26435,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1791.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1802_o_1bccocc7makd1m6pv4rrevqhv23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_860/"
+    "sourceJp": "https://bandai-hobby.net/item/01_860/",
+    "mech": "Z高达",
+    "mechId": "z高达",
+    "aliases": [
+      "Zeta Gundam",
+      "Zeta",
+      "泽塔"
+    ]
   },
   {
     "id": "bc-1785",
@@ -22869,7 +26467,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1785.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1803_o_1bbds0sglibo1cq4k1edl1oi523.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_861/"
+    "sourceJp": "https://bandai-hobby.net/item/01_861/",
+    "mech": "高达化勒",
+    "mechId": "高达化勒",
+    "aliases": []
   },
   {
     "id": "bc-1775",
@@ -22894,7 +26495,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1775.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/eae09646bfa06c36a761f00a126f103f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "超级文奈 阿克西斯天使版",
+    "mechId": "超级文奈阿克西斯天使版",
+    "aliases": []
   },
   {
     "id": "bc-1777",
@@ -22919,7 +26523,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1777.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1780_o_1bajsoqu01of66vl1ufs15dl18mi23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_837/"
+    "sourceJp": "https://bandai-hobby.net/item/01_837/",
+    "mech": "RX-78-02 高达",
+    "mechId": "rx-78-02高达",
+    "aliases": [
+      "RX-78-02",
+      "Gundam 02",
+      "高达02",
+      "RX78-02"
+    ]
   },
   {
     "id": "bc-1776",
@@ -22944,7 +26556,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1776.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1777_o_1bahsoj2dgh8191s1fane3a64s28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_833/"
+    "sourceJp": "https://bandai-hobby.net/item/01_833/",
+    "mech": "异端高达金色机天蜜娜",
+    "mechId": "异端高达金色机天蜜娜",
+    "aliases": []
   },
   {
     "id": "bc-1762",
@@ -22969,7 +26584,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1762.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1773_o_1esi9auqp1kg5128d1juei4hj1823.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_829/"
+    "sourceJp": "https://bandai-hobby.net/item/01_829/",
+    "mech": "神意高达",
+    "mechId": "神意高达",
+    "aliases": []
   },
   {
     "id": "bc-1763",
@@ -22994,7 +26612,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1763.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1781_o_1b9kl7lcu11a812mngpi1ck41k1728.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_838/"
+    "sourceJp": "https://bandai-hobby.net/item/01_838/",
+    "mech": "神意高达 G.U.N.D.A.M. 特别套装版",
+    "mechId": "神意高达g.u.n.d.a.m.特别套装版",
+    "aliases": []
   },
   {
     "id": "bc-1771",
@@ -23019,7 +26640,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1771.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/6c6fc34b2103ffc62dbf1a534075527c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "命运高达",
+    "mechId": "命运高达",
+    "aliases": [
+      "Destiny Gundam",
+      "Destiny"
+    ]
   },
   {
     "id": "bc-1770",
@@ -23044,7 +26671,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1770.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/e13f8aacf413c09141eb77242533a4a8.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "TRY燃炎高达",
+    "mechId": "try燃炎高达",
+    "aliases": []
   },
   {
     "id": "bc-1769",
@@ -23069,7 +26699,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1769.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/fc9e6db4a96a37367a769edad120b644.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "地狱死神高达EW版",
+    "mechId": "地狱死神高达ew版",
+    "aliases": []
   },
   {
     "id": "bc-1767",
@@ -23094,7 +26727,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1767.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/86a1d8988279d63bffb9beceb354414a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "新安洲",
+    "mechId": "新安洲",
+    "aliases": [
+      "Providence Gundam",
+      "新安洲高达",
+      "Providence"
+    ]
   },
   {
     "id": "bc-1768",
@@ -23102,7 +26742,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "SD",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "SD 比例",
     "released": "2017-03-18",
     "priceJpy": 660,
@@ -23119,7 +26759,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1768.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/0adbfd43d382a89110990527f2f163dc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽高达2号机 报丧女妖・命运女神",
+    "mechId": "独角兽高达2号机报丧女妖・命运女神",
+    "aliases": []
   },
   {
     "id": "bc-1759",
@@ -23144,7 +26787,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1759.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1774_o_1b9kl37u91i481tc61t54ovjd7a28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_830/"
+    "sourceJp": "https://bandai-hobby.net/item/01_830/",
+    "mech": "阿特拉斯高达",
+    "mechId": "阿特拉斯高达",
+    "aliases": []
   },
   {
     "id": "bc-1761",
@@ -23169,7 +26815,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1761.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1776_o_1b9kku5j4te510ihub21rqnjcg28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_832/"
+    "sourceJp": "https://bandai-hobby.net/item/01_832/",
+    "mech": "扎古Ⅰ",
+    "mechId": "扎古i",
+    "aliases": []
   },
   {
     "id": "bc-1758",
@@ -23194,7 +26843,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1758.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1766_o_1bahfipc31ftq14g41co27i61iu623.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_821/"
+    "sourceJp": "https://bandai-hobby.net/item/01_821/",
+    "mech": "MS配件包9",
+    "mechId": "ms配件包9",
+    "aliases": []
   },
   {
     "id": "bc-1760",
@@ -23219,7 +26871,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1760.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/5d6cf2efe12c96bd4ec8849aa48acc3a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "惊异强袭自由高达",
+    "mechId": "惊异强袭自由高达",
+    "aliases": []
   },
   {
     "id": "bc-1757",
@@ -23244,7 +26899,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1757.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/d8886085967c997ab913c83c9936f818.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达巴耶力",
+    "mechId": "高达巴耶力",
+    "aliases": []
   },
   {
     "id": "bc-1755",
@@ -23269,7 +26927,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1755.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/1e6d95c8c4d44eba605058854a15757c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达锡蒙力·维达尔",
+    "mechId": "高达锡蒙力·维达尔",
+    "aliases": []
   },
   {
     "id": "bc-1756",
@@ -23294,7 +26955,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1756.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/67befc6352359f7d44d47f3bcaa656f4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "可爱粉色小熊霸",
+    "mechId": "可爱粉色小熊霸",
+    "aliases": []
   },
   {
     "id": "bc-1744",
@@ -23319,7 +26983,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1744.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1742_o_1b8tfaluqeai11bk16s2k9af1923.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_795/"
+    "sourceJp": "https://bandai-hobby.net/item/01_795/",
+    "mech": "雷金雷兹朱丽雅",
+    "mechId": "雷金雷兹朱丽雅",
+    "aliases": []
   },
   {
     "id": "bc-1737",
@@ -23344,7 +27011,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1737.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1743_o_1b8tfg31cju78jogveirn1kpk23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_796/"
+    "sourceJp": "https://bandai-hobby.net/item/01_796/",
+    "mech": "高达巴巴托斯 天狼型 帝王形态",
+    "mechId": "高达巴巴托斯天狼型帝王形态",
+    "aliases": []
   },
   {
     "id": "bc-1738",
@@ -23369,7 +27039,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1738.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1745_o_1e6bcai5oqil156d1n72b9gm7h23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_798/"
+    "sourceJp": "https://bandai-hobby.net/item/01_798/",
+    "mech": "MS配件包8",
+    "mechId": "ms配件包8",
+    "aliases": []
   },
   {
     "id": "bc-1739",
@@ -23394,7 +27067,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1739.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/824bdef0dbfdc64fd184bd3c8beb9023.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "熊霸爸爸",
+    "mechId": "熊霸爸爸",
+    "aliases": []
   },
   {
     "id": "bc-1740",
@@ -23419,7 +27095,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1740.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/523af81fc0c9a3aeacff8031cc6b304b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 苦甜棕",
+    "mechId": "小熊霸苦甜棕",
+    "aliases": []
   },
   {
     "id": "bc-1741",
@@ -23444,7 +27123,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1741.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/4937ce9a3891fe264cab7534a3562720.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 苏打汽水蓝",
+    "mechId": "小熊霸苏打汽水蓝",
+    "aliases": []
   },
   {
     "id": "bc-1731",
@@ -23469,7 +27151,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1731.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1733_o_1b7narl7hoeh1vu911b119gmuo123.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_787/"
+    "sourceJp": "https://bandai-hobby.net/item/01_787/",
+    "mech": "荷姆薇洁·转生式",
+    "mechId": "荷姆薇洁·转生式",
+    "aliases": []
   },
   {
     "id": "bc-1730",
@@ -23494,7 +27179,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1730.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1738_o_1b7na4n9c1n6j1ua6fo0pia1jat23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_790/"
+    "sourceJp": "https://bandai-hobby.net/item/01_790/",
+    "mech": "漏影",
+    "mechId": "漏影",
+    "aliases": []
   },
   {
     "id": "bc-1727",
@@ -23519,7 +27207,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1727.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1728_o_1ebdbgkba1ctjmj51hp595g18cv28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_782/"
+    "sourceJp": "https://bandai-hobby.net/item/01_782/",
+    "mech": "陆战型吉姆",
+    "mechId": "陆战型吉姆",
+    "aliases": []
   },
   {
     "id": "bc-1726",
@@ -23544,7 +27235,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1726.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1729_o_1d7ektji51fte12qti8k4lv1olf23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_783/"
+    "sourceJp": "https://bandai-hobby.net/item/01_783/",
+    "mech": "狙击型吉姆Ⅱ",
+    "mechId": "狙击型吉姆ii",
+    "aliases": []
   },
   {
     "id": "bc-1723",
@@ -23569,7 +27263,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1723.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1724_o_1d7ekgobv1cl99tt3glq8a17aa23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_778/"
+    "sourceJp": "https://bandai-hobby.net/item/01_778/",
+    "mech": "钢加农 机动试验型",
+    "mechId": "钢加农机动试验型",
+    "aliases": []
   },
   {
     "id": "bc-1721",
@@ -23594,7 +27291,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1721.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1727_o_1b7nbe50r1p4dfriojt919n923.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_781/"
+    "sourceJp": "https://bandai-hobby.net/item/01_781/",
+    "mech": "辟邪",
+    "mechId": "辟邪",
+    "aliases": []
   },
   {
     "id": "bc-1722",
@@ -23619,7 +27319,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1722.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/8507ca36dbd6a4f907c12ad94c2178af.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "观月者高达",
+    "mechId": "观月者高达",
+    "aliases": []
   },
   {
     "id": "bc-1719",
@@ -23644,7 +27347,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1719.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1722_s_qwrxgen9c6wtfamcvsldnsv4x0cb.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_776/"
+    "sourceJp": "https://bandai-hobby.net/item/01_776/",
+    "mech": "独角兽高达钛合金涂装版",
+    "mechId": "独角兽高达钛合金涂装版",
+    "aliases": []
   },
   {
     "id": "bc-1713",
@@ -23669,7 +27375,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1713.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1718_s_w9rpc4u2b491ub7okpo2i9k8rba4.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_771/"
+    "sourceJp": "https://bandai-hobby.net/item/01_771/",
+    "mech": "MA哈斯蒙",
+    "mechId": "ma哈斯蒙",
+    "aliases": []
   },
   {
     "id": "bc-1712",
@@ -23694,7 +27403,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1712.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1714_o_1d7mk1rfm15ovenj3mm1kal17co23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_767/"
+    "sourceJp": "https://bandai-hobby.net/item/01_767/",
+    "mech": "高机动型扎古“精神力扎古”",
+    "mechId": "高机动型扎古“精神力扎古”",
+    "aliases": []
   },
   {
     "id": "bc-1702",
@@ -23719,7 +27431,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1702.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1712_o_1d6t5usatie615i1lcgve0de023.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_765/"
+    "sourceJp": "https://bandai-hobby.net/item/01_765/",
+    "mech": "MS-05S 夏亚专用扎古Ⅰ",
+    "mechId": "ms-05s夏亚专用扎古i",
+    "aliases": [
+      "MS-05S"
+    ]
   },
   {
     "id": "bc-1701",
@@ -23744,7 +27461,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1701.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1709_s_sjeksp27dmd9ztvak75rffsnjccq.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_761/"
+    "sourceJp": "https://bandai-hobby.net/item/01_761/",
+    "mech": "MS配件包7",
+    "mechId": "ms配件包7",
+    "aliases": []
   },
   {
     "id": "bc-1703",
@@ -23769,7 +27489,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1703.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231211/7dc0a9a1c2540679034f722bc8788064.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 迷路黑",
+    "mechId": "小熊霸迷路黑",
+    "aliases": []
   },
   {
     "id": "bc-1704",
@@ -23794,7 +27517,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1704.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231211/e0c95d0188eaad4bd5aa9b40cc1a0af1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 汪汪白",
+    "mechId": "小熊霸汪汪白",
+    "aliases": []
   },
   {
     "id": "bc-1705",
@@ -23819,7 +27545,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1705.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1704_o_1e6j1911m2nvf1t1h7g1tr0lbd23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_756/"
+    "sourceJp": "https://bandai-hobby.net/item/01_756/",
+    "mech": "GAT-X105B",
+    "mechId": "gat-x105b",
+    "aliases": [
+      "X105B"
+    ]
   },
   {
     "id": "bc-1697",
@@ -23844,7 +27575,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1697.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231211/a8571e9e69be7194029c821c2332dfcc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达维达尔",
+    "mechId": "高达维达尔",
+    "aliases": [
+      "Gundam Vidar",
+      "维达尔",
+      "Vidar"
+    ]
   },
   {
     "id": "bc-1698",
@@ -23869,7 +27607,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1698.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231211/0ab6b3fe8f9abfcb9ea3ecd04c8efcf4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MS-04 布古",
+    "mechId": "ms-04布古",
+    "aliases": [
+      "MS-04"
+    ]
   },
   {
     "id": "bc-1699",
@@ -23894,7 +27637,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1699.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231211/e3c8ca4fd01788f119e512f3d3785882.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达巴巴托斯 天狼型",
+    "mechId": "高达巴巴托斯天狼型",
+    "aliases": [
+      "Gundam Barbatos (Lupus Rex)",
+      "巴巴托斯天狼型",
+      "天狼型",
+      "Lupus Rex"
+    ]
   },
   {
     "id": "bc-1700",
@@ -23919,7 +27670,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1700.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231211/cafa7ccaa1a966cdf5723ffd442f01b4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达弗劳洛斯",
+    "mechId": "高达弗劳洛斯",
+    "aliases": []
   },
   {
     "id": "bc-1690",
@@ -23944,7 +27698,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1690.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231211/c8b8a24b76c863c4fabd83339076d214.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "冰川瞬变高达",
+    "mechId": "冰川瞬变高达",
+    "aliases": []
   },
   {
     "id": "bc-1691",
@@ -23969,7 +27726,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1691.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1696_o_1eah8unvq1dj85susqp1prv1im723.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_746/"
+    "sourceJp": "https://bandai-hobby.net/item/01_746/",
+    "mech": "AMX-107 龙飞",
+    "mechId": "amx-107龙飞",
+    "aliases": [
+      "AMX-107"
+    ]
   },
   {
     "id": "bc-1684",
@@ -23994,7 +27756,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1684.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1688_o_1d7ejv3tvtfp1gn49o65s81iap23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_737/"
+    "sourceJp": "https://bandai-hobby.net/item/01_737/",
+    "mech": "钢加农初期型",
+    "mechId": "钢加农初期型",
+    "aliases": []
   },
   {
     "id": "bc-1674",
@@ -24019,7 +27784,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1674.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1681_s_tly6zhlc6xcvuw958ike6frvakj5.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_730/"
+    "sourceJp": "https://bandai-hobby.net/item/01_730/",
+    "mech": "盖雷尔",
+    "mechId": "盖雷尔",
+    "aliases": []
   },
   {
     "id": "bc-1673",
@@ -24044,7 +27812,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1673.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1682_s_dlxbdq113lltl2fjb00psy2qmu5b.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_731/"
+    "sourceJp": "https://bandai-hobby.net/item/01_731/",
+    "mech": "伊欧骨架 狮电",
+    "mechId": "伊欧骨架狮电",
+    "aliases": []
   },
   {
     "id": "bc-1675",
@@ -24069,7 +27840,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1675.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1685_s_pgmoafn21y02liutdpuvdihda67m.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_734/"
+    "sourceJp": "https://bandai-hobby.net/item/01_734/",
+    "mech": "MS配件包6",
+    "mechId": "ms配件包6",
+    "aliases": []
   },
   {
     "id": "bc-1676",
@@ -24094,7 +27868,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1676.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231208/94430cae273f87bd2f4caec5372831ce.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强袭自由高达",
+    "mechId": "强袭自由高达",
+    "aliases": [
+      "Strike Freedom Gundam",
+      "强袭自由",
+      "SF",
+      "Strike Freedom"
+    ]
   },
   {
     "id": "bc-1666",
@@ -24119,7 +27901,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1666.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1671_s_tu11swiw4l50qwkjeks2b2dw5wye.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_721/"
+    "sourceJp": "https://bandai-hobby.net/item/01_721/",
+    "mech": "列金雷兹",
+    "mechId": "列金雷兹",
+    "aliases": []
   },
   {
     "id": "bc-1660",
@@ -24144,7 +27929,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1660.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1667_s_xnwmb9zk7y8pqafzp3n2vs97aogt.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_716/"
+    "sourceJp": "https://bandai-hobby.net/item/01_716/",
+    "mech": "高达古辛 深度重锻型",
+    "mechId": "高达古辛深度重锻型",
+    "aliases": []
   },
   {
     "id": "bc-1659",
@@ -24169,7 +27957,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1659.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1660_s_gmvgnt0hu6a0aruam09i2jktka3c.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_710/"
+    "sourceJp": "https://bandai-hobby.net/item/01_710/",
+    "mech": "雨果",
+    "mechId": "雨果",
+    "aliases": []
   },
   {
     "id": "bc-1654",
@@ -24194,7 +27985,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1654.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1655_s_e4z10ykto1f1ewo9rf5lq2hhxjza.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_704/"
+    "sourceJp": "https://bandai-hobby.net/item/01_704/",
+    "mech": "高达巴巴托斯 天狼型",
+    "mechId": "高达巴巴托斯天狼型",
+    "aliases": [
+      "Gundam Barbatos (Lupus Rex)",
+      "巴巴托斯天狼型",
+      "天狼型",
+      "Lupus Rex"
+    ]
   },
   {
     "id": "bc-1655",
@@ -24219,7 +28018,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1655.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1659_s_dbds24yc1nsd41u5q3r6wuydbqxf.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_708/"
+    "sourceJp": "https://bandai-hobby.net/item/01_708/",
+    "mech": "MS配件包5",
+    "mechId": "ms配件包5",
+    "aliases": []
   },
   {
     "id": "bc-1656",
@@ -24244,7 +28046,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1656.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231208/3a5401887a425ba5506f699a104c4399.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "湖绿色小熊霸",
+    "mechId": "湖绿色小熊霸",
+    "aliases": []
   },
   {
     "id": "bc-1657",
@@ -24269,7 +28074,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1657.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231208/3e59bc3a84167f2c1f9d8c78be1f5f7a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "嗙嗙紫色小熊霸",
+    "mechId": "嗙嗙紫色小熊霸",
+    "aliases": []
   },
   {
     "id": "bc-1641",
@@ -24294,7 +28102,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1641.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231206/865984ba27cc6fc56a3a4d0a234affb8.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "西亚00量子高达",
+    "mechId": "西亚00量子高达",
+    "aliases": []
   },
   {
     "id": "bc-1635",
@@ -24319,7 +28130,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1635.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231205/dd3635ec8b238c5da0ae0595d66c3dd3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "闪电背包武器系统Mk-Ⅲ",
+    "mechId": "闪电背包武器系统mk-iii",
+    "aliases": []
   },
   {
     "id": "bc-1634",
@@ -24344,7 +28158,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1634.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_4965_s_dyd809d4w5smsttntphcj60sw5l8.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4035/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4035/",
+    "mech": "熊霸P",
+    "mechId": "熊霸p",
+    "aliases": []
   },
   {
     "id": "bc-1633",
@@ -24369,7 +28186,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1633.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231205/5f27dd42ce17b7f840bafbc8a7ff1867.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "争夺高达",
+    "mechId": "争夺高达",
+    "aliases": []
   },
   {
     "id": "bc-1628",
@@ -24394,7 +28214,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1628.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1630_s_nnluctd0kiv0vdq9774hh239f9s9.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_679/"
+    "sourceJp": "https://bandai-hobby.net/item/01_679/",
+    "mech": "高达亚斯塔禄 初始形态",
+    "mechId": "高达亚斯塔禄初始形态",
+    "aliases": []
   },
   {
     "id": "hguc-hyaku-shiki",
@@ -24423,7 +28246,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hguc-hyaku-shiki.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1620_o_1db9pndr417n0hh4mgne76m6m23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_668/"
+    "sourceJp": "https://bandai-hobby.net/item/01_668/",
+    "mech": "百式",
+    "mechId": "百式",
+    "aliases": [
+      "Hyaku Shiki",
+      "百式高达"
+    ]
   },
   {
     "id": "bc-1613",
@@ -24448,7 +28277,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1613.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231205/2f24be2aaa290f07cf0945e22e8e63c3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "北方武器舱",
+    "mechId": "北方武器舱",
+    "aliases": []
   },
   {
     "id": "bc-1612",
@@ -24473,7 +28305,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1612.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231205/7deb4d58fca9de5d006ec89d09dba5f9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强子 东方武器组",
+    "mechId": "强子东方武器组",
+    "aliases": []
   },
   {
     "id": "bc-1611",
@@ -24498,7 +28333,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1611.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231205/be4c1e8290332425c3a425e9b5a9ee82.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强人骑士",
+    "mechId": "强人骑士",
+    "aliases": []
   },
   {
     "id": "bc-1610",
@@ -24523,7 +28361,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1610.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231205/c75789f2066d788fd4d1d0550868d603.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ZZⅡ",
+    "mechId": "zzii",
+    "aliases": []
   },
   {
     "id": "bc-1614",
@@ -24548,7 +28389,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1614.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231205/50b701ae80ef703b01d3495b3b3843f7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "熊猫霸",
+    "mechId": "熊猫霸",
+    "aliases": []
   },
   {
     "id": "bc-1615",
@@ -24573,7 +28417,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1615.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231205/a44f96b99ba68879cd70a13a3d6a2d0b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MSN-06S 新安洲",
+    "mechId": "msn-06s新安洲",
+    "aliases": [
+      "MSN-06S"
+    ]
   },
   {
     "id": "bc-1595",
@@ -24598,7 +28447,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1595.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1564_o_1d7mjs7ds127l1ic61dks1q48o4f23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_608/"
+    "sourceJp": "https://bandai-hobby.net/item/01_608/",
+    "mech": "全装甲高达",
+    "mechId": "全装甲高达",
+    "aliases": [
+      "Full Armor Gundam",
+      "全装甲高达",
+      "FA高达"
+    ]
   },
   {
     "id": "sd-ex-rx78-2",
@@ -24627,7 +28483,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/sd-ex-rx78-2.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231201/48a86fe19200335930acd46778b748f4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "sd-ex-unicorn",
@@ -24656,7 +28522,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/sd-ex-unicorn.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231201/b77fbe2584be1da64549dc5e067ee402.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽",
+    "mechId": "独角兽",
+    "aliases": [
+      "Unicorn Gundam",
+      "独角兽高达",
+      "RX-0",
+      "Unicorn"
+    ]
   },
   {
     "id": "sd-ex-strike-freedom",
@@ -24685,7 +28559,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/sd-ex-strike-freedom.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231201/f878964d2c32303be815a492ce870c6c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强袭自由高达",
+    "mechId": "强袭自由高达",
+    "aliases": [
+      "Strike Freedom Gundam",
+      "强袭自由",
+      "SF",
+      "Strike Freedom"
+    ]
   },
   {
     "id": "bc-1597",
@@ -24710,7 +28592,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1597.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231201/60f0c33dbd6d942137de2bf00bb2b8b7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "STANDARD 002 翔翼型强袭高达",
+    "mechId": "standard002翔翼型强袭高达",
+    "aliases": []
   },
   {
     "id": "bc-1598",
@@ -24735,7 +28620,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1598.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231201/9d06268780cfe247bc6f779eb12339df.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "STANDARD 003 能天使高达",
+    "mechId": "standard003能天使高达",
+    "aliases": []
   },
   {
     "id": "bc-1599",
@@ -24760,7 +28648,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1599.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231201/b90f66f39dc0027b3c560298feee0f24.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "STANDARD 004 飞翼高达零式 EW",
+    "mechId": "standard004飞翼高达零式ew",
+    "aliases": []
   },
   {
     "id": "bc-1602",
@@ -24785,7 +28676,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1602.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231201/634d5f17f7b4e0ebd1faabc07b21fd20.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "STANDARD 007 异端高达红色机",
+    "mechId": "standard007异端高达红色机",
+    "aliases": []
   },
   {
     "id": "bc-1603",
@@ -24810,7 +28704,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1603.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231201/4d3f3530d1bad756f7ef1e0e73c7e143.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "STANDARD 008 00高达",
+    "mechId": "standard00800高达",
+    "aliases": []
   },
   {
     "id": "bc-1589",
@@ -24835,7 +28732,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1589.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231124/f5d56662f7c1cd0628f2cf86d7e6d629.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "次元创制拳掌组",
+    "mechId": "次元创制拳掌组",
+    "aliases": []
   },
   {
     "id": "bc-1583",
@@ -24860,7 +28760,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1583.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1548_o_1d7ejsipq1leg1r0g1alkk4r125323.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_590/"
+    "sourceJp": "https://bandai-hobby.net/item/01_590/",
+    "mech": "局地型高达",
+    "mechId": "局地型高达",
+    "aliases": []
   },
   {
     "id": "bc-1585",
@@ -24885,7 +28788,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1585.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231124/e4d011b67dcef917276eafe6f0d0bdad.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "咖啡棕色小熊霸",
+    "mechId": "咖啡棕色小熊霸",
+    "aliases": []
   },
   {
     "id": "bc-1584",
@@ -24910,7 +28816,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1584.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231124/f96721edcdddc92988000064dd4bcd31.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "奶白色小熊霸",
+    "mechId": "奶白色小熊霸",
+    "aliases": []
   },
   {
     "id": "bc-1432",
@@ -24935,7 +28844,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1432.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/c33c35adcd0c3a6faf61640c841de6fd.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强攻型脉冲高达",
+    "mechId": "强攻型脉冲高达",
+    "aliases": []
   },
   {
     "id": "bc-1431",
@@ -24960,7 +28872,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1431.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1529_o_1ec7a0lccn4qvsss3vhqp13ek23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_571/"
+    "sourceJp": "https://bandai-hobby.net/item/01_571/",
+    "mech": "全装备独角兽高达",
+    "mechId": "全装备独角兽高达",
+    "aliases": [
+      "Unicorn Gundam (Full Armor Mode)",
+      "全装备独角兽",
+      "全装备型独角兽"
+    ]
   },
   {
     "id": "bc-1428",
@@ -24985,7 +28904,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1428.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/5468e07f6f65ee8ea1bb1026db641515.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "扎古Ｉ 旧扎古",
+    "mechId": "扎古i旧扎古",
+    "aliases": []
   },
   {
     "id": "bc-1423",
@@ -25010,7 +28932,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1423.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1517_o_1bbvf2262slf1jme1drd3ehmv4e.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_558/"
+    "sourceJp": "https://bandai-hobby.net/item/01_558/",
+    "mech": "GNT0000 00量子型",
+    "mechId": "gnt000000量子型",
+    "aliases": [
+      "GNT0000"
+    ]
   },
   {
     "id": "bc-1419",
@@ -25035,7 +28962,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1419.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1513_o_1d6t5mpfp10vr5p710811m33ngu23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_554/"
+    "sourceJp": "https://bandai-hobby.net/item/01_554/",
+    "mech": "扎古Ⅰ",
+    "mechId": "扎古i",
+    "aliases": []
   },
   {
     "id": "bc-1420",
@@ -25060,7 +28990,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1420.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/51a9c3df2649264940b69441a8c01b7c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强人",
+    "mechId": "强人",
+    "aliases": []
   },
   {
     "id": "bc-1414",
@@ -25085,7 +29018,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1414.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1510_s_et1jiqxgrcl09zcoru4kmor5nhys.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_551/"
+    "sourceJp": "https://bandai-hobby.net/item/01_551/",
+    "mech": "高达阿斯塔罗特",
+    "mechId": "高达阿斯塔罗特",
+    "aliases": []
   },
   {
     "id": "bc-1413",
@@ -25110,7 +29046,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1413.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1509_o_1d7mjhtke11ioq13126l14n65jm23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_549/"
+    "sourceJp": "https://bandai-hobby.net/item/01_549/",
+    "mech": "高机动型扎古“精神感应扎古”",
+    "mechId": "高机动型扎古“精神感应扎古”",
+    "aliases": []
   },
   {
     "id": "bc-1412",
@@ -25135,7 +29074,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1412.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1512_o_1d7mjk2ii1haj12u31gtl2gjerb23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_553/"
+    "sourceJp": "https://bandai-hobby.net/item/01_553/",
+    "mech": "吉姆",
+    "mechId": "吉姆",
+    "aliases": [
+      "GM",
+      "杰姆"
+    ]
   },
   {
     "id": "mg-freedom-ver2-0",
@@ -25164,7 +29109,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-freedom-ver2-0.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1502_o_1esi98rdenct1ntke2g6c1hn523.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_542/"
+    "sourceJp": "https://bandai-hobby.net/item/01_542/",
+    "mech": "自由高达",
+    "mechId": "自由高达",
+    "aliases": [
+      "Freedom Gundam",
+      "ZGMF-X10A",
+      "自由高达"
+    ]
   },
   {
     "id": "bc-1406",
@@ -25189,7 +29141,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1406.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1500_o_1eah8r8ec1rtnp3m1cq1abud923.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_540/"
+    "sourceJp": "https://bandai-hobby.net/item/01_540/",
+    "mech": "伊芙利特改",
+    "mechId": "伊芙利特改",
+    "aliases": []
   },
   {
     "id": "bc-1396",
@@ -25214,7 +29169,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1396.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/36f86e326a115f7394fc299bb1ad4936.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "YMS03 瓦夫",
+    "mechId": "yms03瓦夫",
+    "aliases": [
+      "YMS03"
+    ]
   },
   {
     "id": "bc-1397",
@@ -25239,7 +29199,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1397.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/f80c9ddb18d5cbbc7ba96f09d8788c65.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "老虎",
+    "mechId": "老虎",
+    "aliases": [
+      "Leo-R",
+      "老虎",
+      "Leo"
+    ]
   },
   {
     "id": "bc-1394",
@@ -25264,7 +29231,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1394.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/b0bfdbc21399522efffe4dfed55c3f40.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "格雷兹 艾因",
+    "mechId": "格雷兹艾因",
+    "aliases": []
   },
   {
     "id": "bc-1393",
@@ -25289,7 +29259,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1393.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1489_o_1d7mjfd6b18413j412ufdu75jv23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_526/"
+    "sourceJp": "https://bandai-hobby.net/item/01_526/",
+    "mech": "量产型扎古",
+    "mechId": "量产型扎古",
+    "aliases": []
   },
   {
     "id": "bc-1392",
@@ -25314,7 +29287,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1392.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1488_o_1d7mjcljg1oia128i1i2q1bd7127t23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_525/"
+    "sourceJp": "https://bandai-hobby.net/item/01_525/",
+    "mech": "全装甲高达",
+    "mechId": "全装甲高达",
+    "aliases": [
+      "Full Armor Gundam",
+      "全装甲高达",
+      "FA高达"
+    ]
   },
   {
     "id": "bc-1374",
@@ -25339,7 +29319,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1374.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/2e542e0f390af4e1f7ca8b671a6e6c64.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达锡蒙力骑兵",
+    "mechId": "高达锡蒙力骑兵",
+    "aliases": []
   },
   {
     "id": "bc-1375",
@@ -25364,7 +29347,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1375.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231120/87e0f4a3f69ba0f68b6a4d134346d590.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "格雷兹骑士型",
+    "mechId": "格雷兹骑士型",
+    "aliases": []
   },
   {
     "id": "bc-1371",
@@ -25389,7 +29375,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1371.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1464_o_1d7ejpdic4f2fbt1hi912brtdr23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_500/"
+    "sourceJp": "https://bandai-hobby.net/item/01_500/",
+    "mech": "大魔试作实验机",
+    "mechId": "大魔试作实验机",
+    "aliases": []
   },
   {
     "id": "bc-1370",
@@ -25414,7 +29403,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1370.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231117/4c288fda7f5e6e542c6024ae3a83c3a0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达巴巴托斯 第6形态",
+    "mechId": "高达巴巴托斯第6形态",
+    "aliases": []
   },
   {
     "id": "bc-1366",
@@ -25439,7 +29431,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1366.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1460_o_1e6bc5hidp2c16o1re4sg1ftj23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_496/"
+    "sourceJp": "https://bandai-hobby.net/item/01_496/",
+    "mech": "MS配件",
+    "mechId": "ms配件",
+    "aliases": []
   },
   {
     "id": "bc-1363",
@@ -25464,7 +29459,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1363.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231117/02b8af85397469f54c2c4853a4e642e7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "葛琳洁德",
+    "mechId": "葛琳洁德",
+    "aliases": []
   },
   {
     "id": "bc-1357",
@@ -25489,7 +29487,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1357.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231117/7f0e67c4f3ce293c4791b0c2b13b4971.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达古辛重锻型",
+    "mechId": "高达古辛重锻型",
+    "aliases": []
   },
   {
     "id": "bc-1356",
@@ -25514,7 +29515,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1356.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231117/9685dafaedca783a75adeed9771991d4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "流星号",
+    "mechId": "流星号",
+    "aliases": []
   },
   {
     "id": "bc-1340",
@@ -25539,7 +29543,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1340.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1437_s_21s427je4hjbevdm488sfnoklyuq.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_470/"
+    "sourceJp": "https://bandai-hobby.net/item/01_470/",
+    "mech": "高达锡蒙力",
+    "mechId": "高达锡蒙力",
+    "aliases": []
   },
   {
     "id": "bc-1341",
@@ -25564,7 +29571,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1341.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1438_s_b8thhiy2v35z947bcacxrz7j1xmy.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_471/"
+    "sourceJp": "https://bandai-hobby.net/item/01_471/",
+    "mech": "MS配件",
+    "mechId": "ms配件",
+    "aliases": []
   },
   {
     "id": "rg-wing-ew",
@@ -25593,7 +29603,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-wing-ew.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1432_o_1dhb1vu0r8v0qrm12h5ccidn423.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_466/"
+    "sourceJp": "https://bandai-hobby.net/item/01_466/",
+    "mech": "飞翼高达 EW",
+    "mechId": "飞翼高达ew",
+    "aliases": []
   },
   {
     "id": "bc-1335",
@@ -25618,7 +29631,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1335.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1430_o_1cosc896ao0jvtii9o1ecafdm23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_464/"
+    "sourceJp": "https://bandai-hobby.net/item/01_464/",
+    "mech": "V2高达",
+    "mechId": "v2高达",
+    "aliases": []
   },
   {
     "id": "bc-1332",
@@ -25643,7 +29659,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1332.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1424_o_1e7n481e27nut9oe316bp13o823.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_457/"
+    "sourceJp": "https://bandai-hobby.net/item/01_457/",
+    "mech": "卡碧尼",
+    "mechId": "卡碧尼",
+    "aliases": []
   },
   {
     "id": "bc-1325",
@@ -25668,7 +29687,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1325.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231117/767b8400e661a0334111ec12c5ce379e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "百炼",
+    "mechId": "百炼",
+    "aliases": []
   },
   {
     "id": "bc-1328",
@@ -25693,7 +29715,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1328.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1419_s_hjj0v19o9femho2cdtuz9z4hp122.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_451/"
+    "sourceJp": "https://bandai-hobby.net/item/01_451/",
+    "mech": "高达巴巴托斯",
+    "mechId": "高达巴巴托斯",
+    "aliases": [
+      "Gundam Barbatos",
+      "巴巴托斯",
+      "古夫",
+      "Barbatos"
+    ]
   },
   {
     "id": "bc-1326",
@@ -25718,7 +29748,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1326.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231117/5b50de75641846cbe832efa26c60d666.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达古辛",
+    "mechId": "高达古辛",
+    "aliases": []
   },
   {
     "id": "bc-1327",
@@ -25743,7 +29776,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1327.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1421_s_qia7dg7fzvkvakj71evbqy6zi5f9.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_454/"
+    "sourceJp": "https://bandai-hobby.net/item/01_454/",
+    "mech": "曼·罗迪",
+    "mechId": "曼·罗迪",
+    "aliases": []
   },
   {
     "id": "bc-1315",
@@ -25768,7 +29804,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1315.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231117/1143d23c88220c23ec6283a73a819db5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达Mk-Ⅱ",
+    "mechId": "高达mk-ii",
+    "aliases": [
+      "Gundam Mk-II",
+      "Mk2",
+      "MK-II",
+      "高达2号机"
+    ]
   },
   {
     "id": "bc-1314",
@@ -25793,7 +29837,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1314.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231117/b1542b9bb771d8dd3cfd47eebe39ac7d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达Mk-Ⅱ",
+    "mechId": "高达mk-ii",
+    "aliases": [
+      "Gundam Mk-II",
+      "Mk2",
+      "MK-II",
+      "高达2号机"
+    ]
   },
   {
     "id": "bc-1310",
@@ -25818,7 +29870,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1310.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1404_o_1d6t638vc1hg5ohk1uq5unq1jcj23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_435/"
+    "sourceJp": "https://bandai-hobby.net/item/01_435/",
+    "mech": "RX-78-02 高达",
+    "mechId": "rx-78-02高达",
+    "aliases": [
+      "RX-78-02",
+      "Gundam 02",
+      "高达02",
+      "RX78-02"
+    ]
   },
   {
     "id": "bc-1308",
@@ -25843,7 +29903,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1308.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1401_s_eyjgx5hf9tspmme4ep7mhp10al4e.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_432/"
+    "sourceJp": "https://bandai-hobby.net/item/01_432/",
+    "mech": "百里",
+    "mechId": "百里",
+    "aliases": []
   },
   {
     "id": "bc-1309",
@@ -25868,7 +29931,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1309.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1402_s_ynin01rihjj153g8nxu53r7dmzso.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_433/"
+    "sourceJp": "https://bandai-hobby.net/item/01_433/",
+    "mech": "百炼",
+    "mechId": "百炼",
+    "aliases": []
   },
   {
     "id": "bc-1301",
@@ -25893,7 +29959,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1301.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231117/aa5ab25d67f933fa8315802c144e1b08.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "格雷兹改",
+    "mechId": "格雷兹改",
+    "aliases": []
   },
   {
     "id": "bc-1300",
@@ -25918,7 +29987,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1300.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1400_s_bqr5czubq1k18jioviewi9mznvdv.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_431/"
+    "sourceJp": "https://bandai-hobby.net/item/01_431/",
+    "mech": "MS配件",
+    "mechId": "ms配件",
+    "aliases": []
   },
   {
     "id": "bc-1302",
@@ -25943,7 +30015,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1302.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231117/a6c6dfe1ee9ce110699f1f1bb10acf30.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "超级文奈",
+    "mechId": "超级文奈",
+    "aliases": []
   },
   {
     "id": "bc-1297",
@@ -25968,7 +30043,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1297.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1390_o_1d6t5jrslhbf4nfoi11i56191u23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_419/"
+    "sourceJp": "https://bandai-hobby.net/item/01_419/",
+    "mech": "机动工兵MW01 01式后期型",
+    "mechId": "机动工兵mw0101式后期型",
+    "aliases": [
+      "MW01"
+    ]
   },
   {
     "id": "bc-1294",
@@ -25993,7 +30073,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1294.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231117/c67d073160969337543ada3cde2c63da.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "施瓦尔贝格雷兹",
+    "mechId": "施瓦尔贝格雷兹",
+    "aliases": []
   },
   {
     "id": "bc-1290",
@@ -26018,7 +30101,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1290.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231117/63bac9ad903f13617f502096a1c1e604.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "格雷兹",
+    "mechId": "格雷兹",
+    "aliases": []
   },
   {
     "id": "bc-1291",
@@ -26043,7 +30129,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1291.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1386_s_2k1w2bmeg3fro0d7ihmwmf8vcore.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_415/"
+    "sourceJp": "https://bandai-hobby.net/item/01_415/",
+    "mech": "MS配件",
+    "mechId": "ms配件",
+    "aliases": []
   },
   {
     "id": "bc-1289",
@@ -26068,7 +30157,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1289.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231117/5ec8fce8b25cfbbf08ce14f91ccc1b91.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达巴巴托斯",
+    "mechId": "高达巴巴托斯",
+    "aliases": [
+      "Gundam Barbatos",
+      "巴巴托斯",
+      "古夫",
+      "Barbatos"
+    ]
   },
   {
     "id": "pg-banshee-n",
@@ -26097,7 +30194,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pg-banshee-n.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1379_o_1bqu23pkm1dcqko6f9k1okr189r23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_407/"
+    "sourceJp": "https://bandai-hobby.net/item/01_407/",
+    "mech": "独角兽高达2号机 报丧女妖·命运女神",
+    "mechId": "独角兽高达2号机报丧女妖·命运女神",
+    "aliases": [
+      "Banshee Norn",
+      "命运女神",
+      "报丧女妖命运女神"
+    ]
   },
   {
     "id": "bc-1285",
@@ -26122,7 +30226,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1285.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1373_o_1d6t5i02j13ua1un21d251jsb12cp23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_401/"
+    "sourceJp": "https://bandai-hobby.net/item/01_401/",
+    "mech": "高机动型扎古II 奥尔提加专用机",
+    "mechId": "高机动型扎古ii奥尔提加专用机",
+    "aliases": []
   },
   {
     "id": "bc-1284",
@@ -26147,7 +30254,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1284.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1374_o_1d6t5h07d103s1j3c4ho15gtg5223.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_402/"
+    "sourceJp": "https://bandai-hobby.net/item/01_402/",
+    "mech": "原型老虎",
+    "mechId": "原型老虎",
+    "aliases": []
   },
   {
     "id": "bc-2824",
@@ -26172,7 +30282,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2824.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241107/083f6f714d174da34529794c9708b131.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "神木燃焰高达",
+    "mechId": "神木燃焰高达",
+    "aliases": []
   },
   {
     "id": "bc-1274",
@@ -26197,7 +30310,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1274.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1368_o_1fu917nurk533c9t7c1gd7t0t23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_395/"
+    "sourceJp": "https://bandai-hobby.net/item/01_395/",
+    "mech": "惊异高达红战士",
+    "mechId": "惊异高达红战士",
+    "aliases": []
   },
   {
     "id": "bc-1271",
@@ -26222,7 +30338,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1271.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/foQEan8DCO2UkL2d/uTVSXnOSoKVJ4k6b.jpg?Expires=1792509400&Key-Pair-Id=K7AVJM1114TH7&Signature=cZZkMnLH2~jRRUnIoE6oQSfGQM3leNIttl0Mi4bq5bA6REhV-Ec1j~UwW2BRb291ErgIzEyUXQW6IIaqKOSzE7-6rGwg7JwqDJ32tSCkjn3Zli3Il~Ejw5GYicjxBER5e5OU5PIEu6QA~1yh~rAjWcyfgLygktVO6Kz2PpA12fvXWr6sdFJiZRUx5tGAuWrdLComleoQXT~e9E3k0OPGriPS-W5RE6aQTZkNQTmzbAXql6wtnsOtYpj~kfkkewNigJLqK6gVjNT0YzAZt0E7XXnU1J8v1nlcJMeWHL4UDxY7mBWmqHXXrKgsWAj0aO5X-o3m1przjyczgV3gb2TPIA__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_390/"
+    "sourceJp": "https://bandai-hobby.net/item/01_390/",
+    "mech": "高达 G-SELF",
+    "mechId": "高达g-self",
+    "aliases": []
   },
   {
     "id": "bc-1263",
@@ -26247,7 +30366,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1263.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231117/345da3c4e963ed7d08c1112d06772c23.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "斑豹达芬奇高达",
+    "mechId": "斑豹达芬奇高达",
+    "aliases": []
   },
   {
     "id": "bc-1262",
@@ -26272,7 +30394,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1262.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231117/c86e386c350f25c1bfee6fa0fcc65a5d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "自由高达",
+    "mechId": "自由高达",
+    "aliases": [
+      "Freedom Gundam",
+      "ZGMF-X10A",
+      "自由高达"
+    ]
   },
   {
     "id": "bc-1261",
@@ -26297,7 +30426,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1261.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1360_s_i1s5mef2l1pq74uww1ix2qzsxppb.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_387/"
+    "sourceJp": "https://bandai-hobby.net/item/01_387/",
+    "mech": "MBFP02 异端高达红色机",
+    "mechId": "mbfp02异端高达红色机",
+    "aliases": [
+      "MBFP02"
+    ]
   },
   {
     "id": "bc-1255",
@@ -26322,7 +30456,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1255.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1345_o_1ebdk2of21dl81gr6n8q182l1f3623.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_370/"
+    "sourceJp": "https://bandai-hobby.net/item/01_370/",
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "bc-1252",
@@ -26347,7 +30491,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1252.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1339_o_1dpcis3dp144c11cq1n8e1jqn116223.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_363/"
+    "sourceJp": "https://bandai-hobby.net/item/01_363/",
+    "mech": "克巴迦利",
+    "mechId": "克巴迦利",
+    "aliases": []
   },
   {
     "id": "bc-1251",
@@ -26372,7 +30519,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1251.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/1819c1dca8026eb1858ef68318221984.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "闪电Z高达",
+    "mechId": "闪电z高达",
+    "aliases": []
   },
   {
     "id": "bc-1245",
@@ -26397,7 +30547,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1245.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/0aa5908a6e77d110bd12943de9951adf.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "次元创制拳掌组“方形指”",
+    "mechId": "次元创制拳掌组“方形指”",
+    "aliases": []
   },
   {
     "id": "bc-1244",
@@ -26422,7 +30575,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1244.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/40f7bb937cc9724af08a35b2ab16b316.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "大魔R35",
+    "mechId": "大魔r35",
+    "aliases": [
+      "R35"
+    ]
   },
   {
     "id": "bc-1240",
@@ -26447,7 +30605,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1240.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1332_o_1esi93b4ksgt8q01dbofjj5lq23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_356/"
+    "sourceJp": "https://bandai-hobby.net/item/01_356/",
+    "mech": "新生凤凰高达",
+    "mechId": "新生凤凰高达",
+    "aliases": []
   },
   {
     "id": "bc-1235",
@@ -26472,7 +30633,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1235.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1330_o_1e7n42jp7h3t1g6g1i0nrcq12td23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_354/"
+    "sourceJp": "https://bandai-hobby.net/item/01_354/",
+    "mech": "钢加农",
+    "mechId": "钢加农",
+    "aliases": []
   },
   {
     "id": "bc-1236",
@@ -26497,7 +30661,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1236.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/02869e3225f59cb151ca0d1f55598983.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "迪杰",
+    "mechId": "迪杰",
+    "aliases": []
   },
   {
     "id": "bc-1233",
@@ -26522,7 +30689,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1233.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1325_o_1d6t5fjdi1ivm1dt210fr4c21gv223.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_348/"
+    "sourceJp": "https://bandai-hobby.net/item/01_348/",
+    "mech": "高机动型扎古II",
+    "mechId": "高机动型扎古ii",
+    "aliases": []
   },
   {
     "id": "bc-1234",
@@ -26547,7 +30717,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1234.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1324_o_1dpciqikd1tfs1tdh8dfqls1g1523.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_347/"
+    "sourceJp": "https://bandai-hobby.net/item/01_347/",
+    "mech": "G-阿斯提玛",
+    "mechId": "g-阿斯提玛",
+    "aliases": []
   },
   {
     "id": "bc-1227",
@@ -26572,7 +30745,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1227.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/7ba8ec935a8e037aeec60053f8e5f084.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "巨型格林机炮",
+    "mechId": "巨型格林机炮",
+    "aliases": []
   },
   {
     "id": "bc-1228",
@@ -26597,7 +30773,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1228.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/4b3ca4f2befa113d28259439743c2818.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达泰伦3",
+    "mechId": "高达泰伦3",
+    "aliases": []
   },
   {
     "id": "mg-hyaku-shiki-ver2-0",
@@ -26627,7 +30806,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-hyaku-shiki-ver2-0.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1316_o_1e897i6lsh9865lbl61a7h1f4q23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_338/"
+    "sourceJp": "https://bandai-hobby.net/item/01_338/",
+    "mech": "百式",
+    "mechId": "百式",
+    "aliases": [
+      "Hyaku Shiki",
+      "百式高达"
+    ]
   },
   {
     "id": "bc-1220",
@@ -26652,7 +30837,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1220.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3882_o_1e7moqh4n1o1r8lh12pb26m1qse28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000125968/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000125968/",
+    "mech": "绝斥高达",
+    "mechId": "绝斥高达",
+    "aliases": []
   },
   {
     "id": "bc-1221",
@@ -26677,7 +30865,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1221.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1311_s_zo9cn1mkbhx9uh1hqy7bdr0t6n7b.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_333/"
+    "sourceJp": "https://bandai-hobby.net/item/01_333/",
+    "mech": "V2强袭破坏高达",
+    "mechId": "v2强袭破坏高达",
+    "aliases": [
+      "Gundam V2 Assault Buster",
+      "破坏高达",
+      "Assault Buster Gundam"
+    ]
   },
   {
     "id": "bc-1216",
@@ -26702,7 +30897,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1216.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1304_o_1dpciofjkfb17o81srh1hkpfoe23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_325/"
+    "sourceJp": "https://bandai-hobby.net/item/01_325/",
+    "mech": "达哈克",
+    "mechId": "达哈克",
+    "aliases": []
   },
   {
     "id": "bc-1215",
@@ -26727,7 +30925,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1215.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1303_o_1d6t5ee441v1tfsb1kfsap0l3f23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_324/"
+    "sourceJp": "https://bandai-hobby.net/item/01_324/",
+    "mech": "钢坦克初期型",
+    "mechId": "钢坦克初期型",
+    "aliases": []
   },
   {
     "id": "bc-1214",
@@ -26752,7 +30953,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1214.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/5cb48eb878e2bd811ff80df3f41ebccd.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高可动性连接臂武装",
+    "mechId": "高可动性连接臂武装",
+    "aliases": []
   },
   {
     "id": "bc-1213",
@@ -26777,7 +30981,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1213.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/0666c90df74683cb9c350821ea50c225.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "终结高达",
+    "mechId": "终结高达",
+    "aliases": []
   },
   {
     "id": "bc-1211",
@@ -26802,7 +31009,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1211.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/bee1b225a08d9237f41f9942fb481e01.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 凯旋黄",
+    "mechId": "小熊霸凯旋黄",
+    "aliases": []
   },
   {
     "id": "bc-1209",
@@ -26827,7 +31037,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1209.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/ab54521a5633a83d09502c694cfc79c5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 燃焰红",
+    "mechId": "小熊霸燃焰红",
+    "aliases": []
   },
   {
     "id": "bc-1210",
@@ -26852,7 +31065,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1210.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/58bb4cc2104df0edf80f2930414d1238.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 闪电蓝",
+    "mechId": "小熊霸闪电蓝",
+    "aliases": []
   },
   {
     "id": "bc-1212",
@@ -26877,7 +31093,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1212.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/395d4d9ec2ed518b4a85923d4ed092dd.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "小熊霸 未来粉",
+    "mechId": "小熊霸未来粉",
+    "aliases": []
   },
   {
     "id": "bc-1207",
@@ -26902,7 +31121,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1207.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1299_o_1dpcimc733131tjn1akc1smoreh23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_318/"
+    "sourceJp": "https://bandai-hobby.net/item/01_318/",
+    "mech": "卡多西",
+    "mechId": "卡多西",
+    "aliases": []
   },
   {
     "id": "bc-1208",
@@ -26927,7 +31149,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1208.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1297_o_1eah8o5bekat1narmu0156s1fd23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_316/"
+    "sourceJp": "https://bandai-hobby.net/item/01_316/",
+    "mech": "高达试作4号机 加贝拉",
+    "mechId": "高达试作4号机加贝拉",
+    "aliases": []
   },
   {
     "id": "bc-1206",
@@ -26952,7 +31177,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1206.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1298_o_1dpkj74hq6l9q01bh41f541o3223.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_317/"
+    "sourceJp": "https://bandai-hobby.net/item/01_317/",
+    "mech": "GN0000",
+    "mechId": "gn0000",
+    "aliases": [
+      "GN0000",
+      "GNR010"
+    ]
   },
   {
     "id": "bc-1201",
@@ -26977,7 +31208,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1201.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1293_o_1d6t5dg8612f41pcoj8q1nmr17a623.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_312/"
+    "sourceJp": "https://bandai-hobby.net/item/01_312/",
+    "mech": "夏亚专用扎古Ⅱ",
+    "mechId": "夏亚专用扎古ii",
+    "aliases": []
   },
   {
     "id": "bc-1202",
@@ -27002,7 +31236,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1202.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/64f6567470d0f31959b03e08d4f70663.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "海盗高达X1 全武装 TYPE.GBFT",
+    "mechId": "海盗高达x1全武装type.gbft",
+    "aliases": []
   },
   {
     "id": "bc-1199",
@@ -27027,7 +31264,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1199.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1290_o_1dpcikbdpula1tll15re197ffia28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_309/"
+    "sourceJp": "https://bandai-hobby.net/item/01_309/",
+    "mech": "高达 G-SELF",
+    "mechId": "高达g-self",
+    "aliases": []
   },
   {
     "id": "bc-1192",
@@ -27052,7 +31292,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1192.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/03/qQP1Xn1xrW807R7h/AjpaBv9l0LUAzXE1.jpg?Expires=1792507795&Key-Pair-Id=K7AVJM1114TH7&Signature=VqWJ5-aOBPaldPypqY2mw8ygvz1CigIltxJS7nP3N0VZC~cN5EDlLhzQza0Oq8W~x81Ae7I4kkV4S9saz9CoAcGS7AKwXuvUIDMNZJfzv1Pt1zs2vY56Pidc3T5YL1sCv0bYll~YPNsE95JDelRO08DQHh5ZmZVt81a-RT5Z5LjfeFaVTWS-XC4Nc-keyFw6plMm2-1dbLiP-Jo6h-GhYcyjWKyaSFNuXeOjOSOpkrP9kanKnKBQRMCg4gyb6uR4e1kr63Cuf63nAqbRqaSJ3Noj7eqUSs90VcwGr9bVO7tLp00kywByfXSZvD74LZf-MhuD-HRgH1nIc~Ggy3Fn0Q__",
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000153387/"
+    "sourceJp": "https://p-bandai.jp/item/item-1000153387/",
+    "mech": "瞬变高达",
+    "mechId": "瞬变高达",
+    "aliases": []
   },
   {
     "id": "pb-186",
@@ -27080,7 +31323,16 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-1000095901.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000095901"
+    "sourceJp": "https://p-bandai.jp/item/item-1000095901",
+    "mech": "RX-78-3 G-3高达",
+    "mechId": "rx-78-3g-3高达",
+    "aliases": [
+      "RX-78-3",
+      "G-3",
+      "Gundam G-3",
+      "G3高达",
+      "RX78-3"
+    ]
   },
   {
     "id": "bc-1189",
@@ -27105,7 +31357,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1189.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1280_o_1esi8v2n216np1o11f621emk7mj23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_298/"
+    "sourceJp": "https://bandai-hobby.net/item/01_298/",
+    "mech": "高达DX",
+    "mechId": "高达dx",
+    "aliases": []
   },
   {
     "id": "bc-1186",
@@ -27130,7 +31385,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1186.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/7265cdd3f5af3b04019fc66675de9ece.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞翼高达零式炎",
+    "mechId": "飞翼高达零式炎",
+    "aliases": []
   },
   {
     "id": "bc-1182",
@@ -27155,7 +31413,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1182.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/676c5e3a96febcb081137e23eeaefc5a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达 Ｇ路西法",
+    "mechId": "高达g路西法",
+    "aliases": []
   },
   {
     "id": "bc-1184",
@@ -27180,7 +31441,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1184.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1274_s_9iva06b52x7ca7jkv0lx0c5agor7.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_291/"
+    "sourceJp": "https://bandai-hobby.net/item/01_291/",
+    "mech": "V DASH高达",
+    "mechId": "vdash高达",
+    "aliases": []
   },
   {
     "id": "bc-1175",
@@ -27205,7 +31469,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1175.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1272_o_1dpchs5881mre1jfb2887tq1r8s23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_289/"
+    "sourceJp": "https://bandai-hobby.net/item/01_289/",
+    "mech": "马克刀",
+    "mechId": "马克刀",
+    "aliases": []
   },
   {
     "id": "bc-1177",
@@ -27230,7 +31497,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1177.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/19acb17b3e5f74621fa3a30800313463.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "恶兆飞行器",
+    "mechId": "恶兆飞行器",
+    "aliases": []
   },
   {
     "id": "bc-1176",
@@ -27255,7 +31525,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1176.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/ac1109e52a657f5dac0dbe2acf6af7ff.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "恶兆高达",
+    "mechId": "恶兆高达",
+    "aliases": []
   },
   {
     "id": "bc-1168",
@@ -27280,7 +31553,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1168.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/c2b6ff75f2af4b281ca09c99b8f77091.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Hi-ν高达VRABE",
+    "mechId": "hi-ν高达vrabe",
+    "aliases": []
   },
   {
     "id": "bc-1169",
@@ -27305,7 +31581,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1169.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1260_o_1esi8pu6c2pndgoc5q1bomor623.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_276/"
+    "sourceJp": "https://bandai-hobby.net/item/01_276/",
+    "mech": "暗物质能天使高达",
+    "mechId": "暗物质能天使高达",
+    "aliases": [
+      "Geymalk (Dark Matter)",
+      "暗物质能天使",
+      "Dark Matter Geymalk"
+    ]
   },
   {
     "id": "bc-1165",
@@ -27330,7 +31613,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1165.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1258_o_1dpchpmu64e8ou0tdafldi4223.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_273/"
+    "sourceJp": "https://bandai-hobby.net/item/01_273/",
+    "mech": "G-时神",
+    "mechId": "g-时神",
+    "aliases": []
   },
   {
     "id": "bc-1166",
@@ -27355,7 +31641,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1166.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/735e39588d04c67965a249cf165af54f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "闪电背部武器系统MkII",
+    "mechId": "闪电背部武器系统mkii",
+    "aliases": []
   },
   {
     "id": "bc-1162",
@@ -27380,7 +31669,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1162.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/cee52d754ed303ac0f08e76ae81f20f9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "艾尔夫·普露克",
+    "mechId": "艾尔夫·普露克",
+    "aliases": []
   },
   {
     "id": "bc-1163",
@@ -27405,7 +31697,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1163.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/1d59936661ae2581c8ba4371c1ffda9c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "TRY燃焰高达",
+    "mechId": "try燃焰高达",
+    "aliases": []
   },
   {
     "id": "bc-1152",
@@ -27430,7 +31725,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1152.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/88c98d4683b0fd00b6a74b93bce0730d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "莫古军武",
+    "mechId": "莫古军武",
+    "aliases": []
   },
   {
     "id": "bc-1151",
@@ -27455,7 +31753,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1151.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/9291ac0227b034ae8ee3488ea5baaa22.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高莫古",
+    "mechId": "高莫古",
+    "aliases": []
   },
   {
     "id": "bc-1153",
@@ -27480,7 +31781,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1153.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231116/f96ad7d5516cc02bbd6982057d555209.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达MK-Ⅲ",
+    "mechId": "高达mk-iii",
+    "aliases": []
   },
   {
     "id": "bc-1149",
@@ -27505,7 +31809,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1149.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1241_o_1dpchdql01tpefv1926g2pqps23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_255/"
+    "sourceJp": "https://bandai-hobby.net/item/01_255/",
+    "mech": "宇宙用哲罕南",
+    "mechId": "宇宙用哲罕南",
+    "aliases": []
   },
   {
     "id": "bc-1148",
@@ -27530,7 +31837,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1148.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231115/55a9d74bd60441d8222d26bd5361bcde.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "红武器",
+    "mechId": "红武器",
+    "aliases": []
   },
   {
     "id": "bc-1147",
@@ -27555,7 +31865,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1147.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231115/02f89a7309acaf54141bcb29e1dfa21a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "惊异红战士高达",
+    "mechId": "惊异红战士高达",
+    "aliases": []
   },
   {
     "id": "rg-zero-wing-ew",
@@ -27584,7 +31897,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-zero-wing-ew.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1237_o_1e6j0pqcehiq2sq4hn1c0116ma23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_251/"
+    "sourceJp": "https://bandai-hobby.net/item/01_251/",
+    "mech": "飞翼高达零式EW",
+    "mechId": "飞翼高达零式ew",
+    "aliases": [
+      "Wing Gundam Zero EW",
+      "飞翼零式EW",
+      "零EW",
+      "EW零式"
+    ]
   },
   {
     "id": "bc-1139",
@@ -27609,7 +31930,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1139.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1235_o_1dpchbjrnh7j11jh1g9k1nuq1ot323.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_249/"
+    "sourceJp": "https://bandai-hobby.net/item/01_249/",
+    "mech": "哲罕南宇宙型",
+    "mechId": "哲罕南宇宙型",
+    "aliases": []
   },
   {
     "id": "bc-1138",
@@ -27634,7 +31958,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1138.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231115/ccad395bba41ff0e8198919c2e6c57c2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MEGA RIDE LAUNCHER",
+    "mechId": "megaridelauncher",
+    "aliases": []
   },
   {
     "id": "bc-1137",
@@ -27659,7 +31986,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1137.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231115/bad64796ea5b8639eb2b3616a7f29584.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "百万式",
+    "mechId": "百万式",
+    "aliases": []
   },
   {
     "id": "bc-1134",
@@ -27684,7 +32014,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1134.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1227_o_1dpch7ahh1vs4imomrrsp3ui223.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_240/"
+    "sourceJp": "https://bandai-hobby.net/item/01_240/",
+    "mech": "高达G-Self 宇宙用背包配件包",
+    "mechId": "高达g-self宇宙用背包配件包",
+    "aliases": []
   },
   {
     "id": "bc-1133",
@@ -27709,7 +32042,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1133.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231115/7bc76900420cefcb697187ccaa0c6c75.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "R强人",
+    "mechId": "r强人",
+    "aliases": []
   },
   {
     "id": "pg-unicorn",
@@ -27738,7 +32074,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pg-unicorn.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231115/7b533c2a88018fe292b107a4c58eda01.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-0 独角兽高达",
+    "mechId": "rx-0独角兽高达",
+    "aliases": [
+      "RX-0",
+      "Unicorn Gundam",
+      "独角兽高达"
+    ]
   },
   {
     "id": "bc-1136",
@@ -27763,7 +32106,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1136.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231115/b8a584b346cf98dd0d235fb6db0f23af.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-0 独角兽高达用LED组件",
+    "mechId": "rx-0独角兽高达用led组件",
+    "aliases": [
+      "RX-0"
+    ]
   },
   {
     "id": "bc-1124",
@@ -27788,7 +32136,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1124.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231115/f61b9b0aa11488599d7c22b6876fff61.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "熊霸F",
+    "mechId": "熊霸f",
+    "aliases": []
   },
   {
     "id": "bc-1113",
@@ -27813,7 +32164,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1113.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1210_o_1dpch4vso1bu414b9g8s14k218oi23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_224/"
+    "sourceJp": "https://bandai-hobby.net/item/01_224/",
+    "mech": "G奥秘",
+    "mechId": "g奥秘",
+    "aliases": []
   },
   {
     "id": "bc-1114",
@@ -27838,7 +32192,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1114.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1212_o_1eftfqsce1g8911rf1h6u7gaf5q23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_226/"
+    "sourceJp": "https://bandai-hobby.net/item/01_226/",
+    "mech": "异端高达蓝色机D",
+    "mechId": "异端高达蓝色机d",
+    "aliases": []
   },
   {
     "id": "bc-1110",
@@ -27863,7 +32220,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1110.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231115/c30616d0c5e281a7cf3c067d53343f1a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Ez-ARMS",
+    "mechId": "ez-arms",
+    "aliases": []
   },
   {
     "id": "bc-1109",
@@ -27888,7 +32248,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1109.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231115/8c6b28c2d2e22d8fc26abbc9fd875e0b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达Ez-SR",
+    "mechId": "高达ez-sr",
+    "aliases": []
   },
   {
     "id": "bc-1108",
@@ -27913,7 +32276,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1108.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231115/12c0e08c5312c69e2cc0e0c06c35c96e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "海盗高达X-1",
+    "mechId": "海盗高达x-1",
+    "aliases": [
+      "X-1"
+    ]
   },
   {
     "id": "bc-1105",
@@ -27938,7 +32306,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1105.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231115/943eeee735c59ed1b74c8d718432b0ad.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "蒙特罗",
+    "mechId": "蒙特罗",
+    "aliases": []
   },
   {
     "id": "bc-1107",
@@ -27963,7 +32334,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1107.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231115/493de470cd38cc334c09110ed4188617.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "闪电背包武器系统",
+    "mechId": "闪电背包武器系统",
+    "aliases": []
   },
   {
     "id": "bc-1106",
@@ -27988,7 +32362,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1106.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231115/eb97153613e73d26065b51a7817e2002.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "闪电高达",
+    "mechId": "闪电高达",
+    "aliases": []
   },
   {
     "id": "bc-1099",
@@ -28013,7 +32390,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1099.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1193_o_1dpcguqvq164p11l81qe73u05pi23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_204/"
+    "sourceJp": "https://bandai-hobby.net/item/01_204/",
+    "mech": "格里摩尔",
+    "mechId": "格里摩尔",
+    "aliases": []
   },
   {
     "id": "bc-1096",
@@ -28038,7 +32418,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1096.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231114/118d8bcd9b456b662f5be077f54e006b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强化型武器库背包",
+    "mechId": "强化型武器库背包",
+    "aliases": []
   },
   {
     "id": "bc-1094",
@@ -28063,7 +32446,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1094.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231114/9a9c50725f60d6952aac9286819f5ae0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "创制燃焰高达",
+    "mechId": "创制燃焰高达",
+    "aliases": []
   },
   {
     "id": "bc-1095",
@@ -28088,7 +32474,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1095.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5834_o_1gsonjvdm1hsn1b9ltu0vti17ai23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4963/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4963/",
+    "mech": "强化吉姆卡迪甘",
+    "mechId": "强化吉姆卡迪甘",
+    "aliases": []
   },
   {
     "id": "bc-1092",
@@ -28113,7 +32502,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1092.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1181_o_1dpcgs7kq11ig1f7o1bc2cjj1amd23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_192/"
+    "sourceJp": "https://bandai-hobby.net/item/01_192/",
+    "mech": "G-SELF",
+    "mechId": "g-self",
+    "aliases": []
   },
   {
     "id": "bc-1089",
@@ -28138,7 +32530,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1089.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1178_o_1ghqcou2cjbc1h9g1su46855ls23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_188/"
+    "sourceJp": "https://bandai-hobby.net/item/01_188/",
+    "mech": "ZⅡ",
+    "mechId": "zii",
+    "aliases": []
   },
   {
     "id": "bc-1088",
@@ -28163,7 +32558,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1088.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1177_s_1ft5kjuje8jckn9czxnrl7s00tlj.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_187/"
+    "sourceJp": "https://bandai-hobby.net/item/01_187/",
+    "mech": "MSN04Ⅱ夜莺",
+    "mechId": "msn04ii夜莺",
+    "aliases": [
+      "MSN04"
+    ]
   },
   {
     "id": "mg-hi-nu-ver-ka",
@@ -28192,7 +32592,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-hi-nu-ver-ka.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1172_s_bnfutbhunjw0tvomjpoy8ia4s1x1.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_183/"
+    "sourceJp": "https://bandai-hobby.net/item/01_183/",
+    "mech": "Hi-ν高达",
+    "mechId": "hi-ν高达",
+    "aliases": [
+      "Hi-Nu Gundam",
+      "海牛",
+      "Hi牛",
+      "Hi-Nu"
+    ]
   },
   {
     "id": "bc-1064",
@@ -28217,7 +32625,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1064.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1162_s_ujfrd515lzky75otd3r2bb90xv1h.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_172/"
+    "sourceJp": "https://bandai-hobby.net/item/01_172/",
+    "mech": "玫瑰·祖鲁",
+    "mechId": "玫瑰·祖鲁",
+    "aliases": []
   },
   {
     "id": "bc-1059",
@@ -28242,7 +32653,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1059.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231110/c69cbd38f134e30e6a641d6d5c3bee50.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "空中霸王高达",
+    "mechId": "空中霸王高达",
+    "aliases": []
   },
   {
     "id": "bc-1052",
@@ -28267,7 +32681,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1052.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1141_o_1ess1d1aa1ieqoce1u0o1hr5jhn28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_151/"
+    "sourceJp": "https://bandai-hobby.net/item/01_151/",
+    "mech": "MSM-07S 魔蟹",
+    "mechId": "msm-07s魔蟹",
+    "aliases": [
+      "MSM-07S"
+    ]
   },
   {
     "id": "bc-1045",
@@ -28292,7 +32711,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1045.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231110/60fd45409c3d7a753119b947c1ed8a33.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "究极强人 火神型背包VALUABLE POD",
+    "mechId": "究极强人火神型背包valuablepod",
+    "aliases": []
   },
   {
     "id": "bc-1043",
@@ -28317,7 +32739,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1043.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231110/917c191b3ba1672336938508ee7515e8.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "狂飙卡尔斯",
+    "mechId": "狂飙卡尔斯",
+    "aliases": []
   },
   {
     "id": "bc-1044",
@@ -28342,7 +32767,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1044.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231110/b306e8c8e73d74945649be84e314950d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Z PLUS",
+    "mechId": "zplus",
+    "aliases": []
   },
   {
     "id": "bc-1033",
@@ -28367,7 +32795,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1033.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1124_s_byz2qjnzl8g9af7pxgw05zcj8kaw.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_132/"
+    "sourceJp": "https://bandai-hobby.net/item/01_132/",
+    "mech": "新吉翁号",
+    "mechId": "新吉翁号",
+    "aliases": []
   },
   {
     "id": "bc-1027",
@@ -28392,7 +32823,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1027.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1118_o_1d7mjalekd5ej41vtk6rc5d923.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_125/"
+    "sourceJp": "https://bandai-hobby.net/item/01_125/",
+    "mech": "1.144 扎古Ⅰ“旧扎古”",
+    "mechId": "1.144扎古i“旧扎古”",
+    "aliases": []
   },
   {
     "id": "bc-1026",
@@ -28417,7 +32851,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1026.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1116_o_1f1uajus7rn51dta1n231o5g1kug23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_123/"
+    "sourceJp": "https://bandai-hobby.net/item/01_123/",
+    "mech": "兹萨",
+    "mechId": "兹萨",
+    "aliases": []
   },
   {
     "id": "bc-1023",
@@ -28442,7 +32879,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1023.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231109/635aa35856f676d7e6b153ae9b6849a1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "老虎R35",
+    "mechId": "老虎r35",
+    "aliases": [
+      "R35"
+    ]
   },
   {
     "id": "bc-3527",
@@ -28467,7 +32909,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3527.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260722/44942c4fb401a017a07baa472e2aaba1.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Concept-X 6-1-2 Turn-X",
+    "mechId": "concept-x6-1-2turn-x",
+    "aliases": []
   },
   {
     "id": "bc-1011",
@@ -28492,7 +32937,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1011.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231109/314bcf542cc233bb9ec85250f4ec64ac.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "刹帝利修复型",
+    "mechId": "刹帝利修复型",
+    "aliases": []
   },
   {
     "id": "bc-1008",
@@ -28517,7 +32965,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1008.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231109/b70f58093c2262d6b175178d46f07744.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "骷髅武装",
+    "mechId": "骷髅武装",
+    "aliases": []
   },
   {
     "id": "bc-1003",
@@ -28542,7 +32993,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1003.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1091_o_1dt5e267q1m7vgi61roe37g15q823.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_96/"
+    "sourceJp": "https://bandai-hobby.net/item/01_96/",
+    "mech": "GN001 能天使高达",
+    "mechId": "gn001能天使高达",
+    "aliases": [
+      "GN001"
+    ]
   },
   {
     "id": "bc-1001",
@@ -28567,7 +33023,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-1001.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1089_o_1ebdjmdvi13mpdr01tuelb213f423.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_94/"
+    "sourceJp": "https://bandai-hobby.net/item/01_94/",
+    "mech": "全装备独角兽高达",
+    "mechId": "全装备独角兽高达",
+    "aliases": [
+      "Unicorn Gundam (Full Armor Mode)",
+      "全装备独角兽",
+      "全装备型独角兽"
+    ]
   },
   {
     "id": "bc-994",
@@ -28592,7 +33055,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-994.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1087_s_yegxfjjoeqqfewv6h2iodoqgvs56.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_92/"
+    "sourceJp": "https://bandai-hobby.net/item/01_92/",
+    "mech": "海盗高达魔王",
+    "mechId": "海盗高达魔王",
+    "aliases": []
   },
   {
     "id": "bc-993",
@@ -28617,7 +33083,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-993.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/da9e1828952cb1a8483a51fc2ed5d36a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "∀高达",
+    "mechId": "∀高达",
+    "aliases": []
   },
   {
     "id": "bc-992",
@@ -28642,7 +33111,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-992.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/1aee21391d4dbe10ebc71752b7c4e925.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "嫣红强袭高达",
+    "mechId": "嫣红强袭高达",
+    "aliases": []
   },
   {
     "id": "bc-986",
@@ -28667,7 +33139,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-986.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/67d7673605df7c799995f982c3d20eaa.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "暗物质推进器",
+    "mechId": "暗物质推进器",
+    "aliases": []
   },
   {
     "id": "bc-984",
@@ -28692,7 +33167,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-984.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1078_o_1ebdjhf8618n7l1416gb7vm4d28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_82/"
+    "sourceJp": "https://bandai-hobby.net/item/01_82/",
+    "mech": "独角兽高达2号机 报丧女妖・命运女神",
+    "mechId": "独角兽高达2号机报丧女妖・命运女神",
+    "aliases": []
   },
   {
     "id": "bc-978",
@@ -28717,7 +33195,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-978.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/94cad310cd83dcc82801b18086e23d83.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达模型对战武器库",
+    "mechId": "高达模型对战武器库",
+    "aliases": []
   },
   {
     "id": "bc-976",
@@ -28742,7 +33223,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-976.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1065_s_xwponwwft2meay5hwkvn7cdgsrt2.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_68/"
+    "sourceJp": "https://bandai-hobby.net/item/01_68/",
+    "mech": "宇宙推进器",
+    "mechId": "宇宙推进器",
+    "aliases": []
   },
   {
     "id": "bc-973",
@@ -28767,7 +33251,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-973.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/197e6356f4617f1c1d4d2c6f683c2492.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞翼高达零式",
+    "mechId": "飞翼高达零式",
+    "aliases": [
+      "Wing Gundam Zero",
+      "飞翼零式",
+      "Wing Zero"
+    ]
   },
   {
     "id": "bc-977",
@@ -28792,7 +33283,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-977.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/376540236620c1b492b5050e515c613b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "淑女沙扎比",
+    "mechId": "淑女沙扎比",
+    "aliases": []
   },
   {
     "id": "bc-975",
@@ -28817,7 +33311,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-975.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1062_o_1dpkj445p116f4h3hl5ih12fh23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_65/"
+    "sourceJp": "https://bandai-hobby.net/item/01_65/",
+    "mech": "创制高达Mk-Ⅱ",
+    "mechId": "创制高达mk-ii",
+    "aliases": []
   },
   {
     "id": "bc-968",
@@ -28842,7 +33339,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-968.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1057_o_1d7mj8tair2q13bv1mtu41p16rg23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_60/"
+    "sourceJp": "https://bandai-hobby.net/item/01_60/",
+    "mech": "高机动扎古“精神力扎古”",
+    "mechId": "高机动扎古“精神力扎古”",
+    "aliases": []
   },
   {
     "id": "bc-969",
@@ -28867,7 +33367,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-969.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1058_o_1d7mj6vlid8r8lmgf12a8jkv23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_61/"
+    "sourceJp": "https://bandai-hobby.net/item/01_61/",
+    "mech": "量产型扎古",
+    "mechId": "量产型扎古",
+    "aliases": []
   },
   {
     "id": "bc-961",
@@ -28892,7 +33395,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-961.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/e668f4cc1618e6067753d2f58fb73a22.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "K9猎犬背包",
+    "mechId": "k9猎犬背包",
+    "aliases": []
   },
   {
     "id": "bc-960",
@@ -28917,7 +33423,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-960.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/9472831861e305c2dd27eea45781cf79.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "狙击型吉姆K9",
+    "mechId": "狙击型吉姆k9",
+    "aliases": []
   },
   {
     "id": "bc-963",
@@ -28942,7 +33451,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-963.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/ac23ab7178732f1f266268ffeb58590b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飙狼",
+    "mechId": "飙狼",
+    "aliases": []
   },
   {
     "id": "bc-964",
@@ -28967,7 +33479,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-964.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/0c7eccb62395c727827a2191f3b19896.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "德莱森",
+    "mechId": "德莱森",
+    "aliases": []
   },
   {
     "id": "bc-966",
@@ -28992,7 +33507,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-966.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1052_o_1ghqchaao1cgj1tuqnqaqkv16fl23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_55/"
+    "sourceJp": "https://bandai-hobby.net/item/01_55/",
+    "mech": "战国异端顽驮无",
+    "mechId": "战国异端顽驮无",
+    "aliases": []
   },
   {
     "id": "bc-965",
@@ -29017,7 +33535,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-965.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/481d183cf2263051b74d725e95e9d0fe.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "蝶影卡碧尼",
+    "mechId": "蝶影卡碧尼",
+    "aliases": []
   },
   {
     "id": "mg-phoenix",
@@ -29046,7 +33567,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-phoenix.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1047_o_1esi8nv6og7l1rbdec621l11ub23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_50/"
+    "sourceJp": "https://bandai-hobby.net/item/01_50/",
+    "mech": "独角兽高达3号机 菲尼克斯",
+    "mechId": "独角兽高达3号机菲尼克斯",
+    "aliases": [
+      "Phenex",
+      "菲尼克斯"
+    ]
   },
   {
     "id": "bc-958",
@@ -29071,7 +33598,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-958.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/6cc832b9c34779899ae676b6a8ddccf3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "翔翼型强袭高达",
+    "mechId": "翔翼型强袭高达",
+    "aliases": []
   },
   {
     "id": "bc-957",
@@ -29096,7 +33626,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-957.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/6oLAoP8I5LvLrp55/GR1Hzfn4PP3z77nF.jpg?Expires=1792509593&Key-Pair-Id=K7AVJM1114TH7&Signature=OBkLsYr721be6aAD~BGUyK2ZORheI44mwiRZKvo-Exnyqb34lsRnzY3Yb8UDucjXVe9rByWoE~eMXRwjwE7xBkV~C4HKMfjTXh0c6feWqB7FrcDFahwg2feIGqPrcBbDEb5hZFdFSiYN1nBPliYR2zHextO9zX12MJU2kSPnXQtVOmLrI8vxb2PkqtMyxF-xi6AcBh~J6NLMtcDDmkBKIBXwD~H~ZRGijCAp1fi5X1hjxLXb1z-zKx3dX8N5CztXM7uj5~PUQpZji26qNDCctwAWIsjEKzikF6Qu0xRnw6usVBuatLVbXSxwMQutXL7lYM2bkPWSu56FmLp1Ssi6qg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_41/"
+    "sourceJp": "https://bandai-hobby.net/item/01_41/",
+    "mech": "银弹",
+    "mechId": "银弹",
+    "aliases": []
   },
   {
     "id": "bc-952",
@@ -29121,7 +33654,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-952.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1040_s_rl8hd45frbor2j2kpl98y9c8c0ww.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_43/"
+    "sourceJp": "https://bandai-hobby.net/item/01_43/",
+    "mech": "V2高达",
+    "mechId": "v2高达",
+    "aliases": []
   },
   {
     "id": "bc-953",
@@ -29146,7 +33682,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-953.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1041_o_1dpkj2bp9s911doq1faavciuvp23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_44/"
+    "sourceJp": "https://bandai-hobby.net/item/01_44/",
+    "mech": "全装备型创制强袭高达",
+    "mechId": "全装备型创制强袭高达",
+    "aliases": [
+      "Full Armor Strike Gundam",
+      "全装备型强袭",
+      "FA强袭"
+    ]
   },
   {
     "id": "bc-946",
@@ -29171,7 +33714,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-946.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/6d1d7423e87fa3c7743065c4716b60e6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "宇宙推进器帕拉夫斯基能量之门",
+    "mechId": "宇宙推进器帕拉夫斯基能量之门",
+    "aliases": []
   },
   {
     "id": "bc-944",
@@ -29196,7 +33742,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-944.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/78425a10587ec04a3faf769719cfc805.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "超级高达模型对战武器库",
+    "mechId": "超级高达模型对战武器库",
+    "aliases": []
   },
   {
     "id": "bc-943",
@@ -29221,7 +33770,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-943.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/12a063d6427f11c5f6e3a4b44c315d27.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "惊异武器箱",
+    "mechId": "惊异武器箱",
+    "aliases": []
   },
   {
     "id": "bc-942",
@@ -29246,7 +33798,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-942.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/5826b41cc8c8d672123da5269f8f21ba.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "惊异京宝梵",
+    "mechId": "惊异京宝梵",
+    "aliases": []
   },
   {
     "id": "bc-955",
@@ -29271,7 +33826,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-955.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231108/3186ae8aaa946b4b2066f67a5f951593.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "GX9900 高达X",
+    "mechId": "gx9900高达x",
+    "aliases": [
+      "GX9900"
+    ]
   },
   {
     "id": "bc-940",
@@ -29296,7 +33856,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-940.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1024_o_1d7mj4tc54cj1m8nqij1qtrnvg23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_26/"
+    "sourceJp": "https://bandai-hobby.net/item/01_26/",
+    "mech": "吉姆",
+    "mechId": "吉姆",
+    "aliases": [
+      "GM",
+      "杰姆"
+    ]
   },
   {
     "id": "bc-939",
@@ -29321,7 +33887,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-939.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1022_o_1d7mj01rpn8j1uev1ct1142s1i3r23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_24/"
+    "sourceJp": "https://bandai-hobby.net/item/01_24/",
+    "mech": "量产型扎古II",
+    "mechId": "量产型扎古ii",
+    "aliases": []
   },
   {
     "id": "bc-938",
@@ -29346,7 +33915,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-938.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1023_o_1d7mj2gofo6r17p21art1of86de23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_25/"
+    "sourceJp": "https://bandai-hobby.net/item/01_25/",
+    "mech": "全装甲高达",
+    "mechId": "全装甲高达",
+    "aliases": [
+      "Full Armor Gundam",
+      "全装甲高达",
+      "FA高达"
+    ]
   },
   {
     "id": "bc-937",
@@ -29371,7 +33947,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-937.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1026_o_1fl33ibsc1pkk15jb1dsd1kkjb723.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_28/"
+    "sourceJp": "https://bandai-hobby.net/item/01_28/",
+    "mech": "高达F91 哈里森·马丁专用机",
+    "mechId": "高达f91哈里森·马丁专用机",
+    "aliases": [
+      "F91"
+    ]
   },
   {
     "id": "bc-934",
@@ -29396,7 +33977,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-934.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1020_o_1ebdj46f6equ1nlb9ort8n9kb28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_23/"
+    "sourceJp": "https://bandai-hobby.net/item/01_23/",
+    "mech": "高达F91",
+    "mechId": "高达f91",
+    "aliases": [
+      "F91"
+    ]
   },
   {
     "id": "bc-928",
@@ -29421,7 +34007,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-928.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231106/b4b3e6687646d817f321904984603573.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "祭典武器组",
+    "mechId": "祭典武器组",
+    "aliases": []
   },
   {
     "id": "mg-sazabi-ver-ka",
@@ -29451,7 +34040,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-sazabi-ver-ka.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_1012_s_zpsoszjyngm1d2bhh4nuipbh6kos.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_15/"
+    "sourceJp": "https://bandai-hobby.net/item/01_15/",
+    "mech": "MSN-04 沙扎比",
+    "mechId": "msn-04沙扎比",
+    "aliases": [
+      "MSN-04"
+    ]
   },
   {
     "id": "bc-911",
@@ -29476,7 +34070,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-911.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231106/5e93dc8c7e7d2ce3f69c472761e03ad1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "流星机动艇",
+    "mechId": "流星机动艇",
+    "aliases": []
   },
   {
     "id": "bc-904",
@@ -29501,7 +34098,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-904.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_990_o_1ebdhvlgg1b7m1eq9p8a1dn6mo723.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5912/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5912/",
+    "mech": "MS06R2 强尼·莱丁专用扎古",
+    "mechId": "ms06r2强尼·莱丁专用扎古",
+    "aliases": [
+      "MS06R"
+    ]
   },
   {
     "id": "bc-903",
@@ -29526,7 +34128,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-903.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_991_o_1f1u7t54l11vo141n1rvi16206em23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5913/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5913/",
+    "mech": "RX-93 ν高达 Ver.Ka 钛合金电镀版",
+    "mechId": "rx-93ν高达ver.ka钛合金电镀版",
+    "aliases": [
+      "RX-93"
+    ]
   },
   {
     "id": "hguc-v-gundam",
@@ -29555,7 +34162,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hguc-v-gundam.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_974_s_b5sc6j7g7snoloab1jfj81ui16ym.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5896/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5896/",
+    "mech": "V高达",
+    "mechId": "v高达",
+    "aliases": []
   },
   {
     "id": "bc-893",
@@ -29580,7 +34190,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-893.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_973_o_1ddkv6v841dg08mi1jn31ququ4623.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5895/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5895/",
+    "mech": "ZGMFX20A 强袭自由高达",
+    "mechId": "zgmfx20a强袭自由高达",
+    "aliases": [
+      "ZGMFX20A"
+    ]
   },
   {
     "id": "bc-889",
@@ -29605,7 +34220,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-889.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231106/18f7006431e03d44af62eb878c167576.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "创制推进器Mk-Ⅱ",
+    "mechId": "创制推进器mk-ii",
+    "aliases": []
   },
   {
     "id": "bc-888",
@@ -29630,7 +34248,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-888.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231106/a16d21a225a12bacdba3accb302512ea.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "创制高达Mk-Ⅱ",
+    "mechId": "创制高达mk-ii",
+    "aliases": [
+      "HGBF1"
+    ]
   },
   {
     "id": "bc-3081",
@@ -29655,7 +34278,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3081.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_967_o_1ebdhlvu6k3t19hn1cp0d4c126h28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5889/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5889/",
+    "mech": "MSA-003 雷姆",
+    "mechId": "msa-003雷姆",
+    "aliases": [
+      "MSA-003"
+    ]
   },
   {
     "id": "bc-885",
@@ -29680,7 +34308,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-885.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231106/b09df98af1cdadfb5067e2789ce21efc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "魔王X高达",
+    "mechId": "魔王x高达",
+    "aliases": []
   },
   {
     "id": "bc-878",
@@ -29705,7 +34336,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-878.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_960_o_1esi8kg0rlma13i9qln100t1crn23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5882/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5882/",
+    "mech": "零式飞翼高达原型EW",
+    "mechId": "零式飞翼高达原型ew",
+    "aliases": []
   },
   {
     "id": "bc-875",
@@ -29730,7 +34364,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-875.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231106/0d79bfe72fd1028d3477e1678fcb2b7d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达Double X",
+    "mechId": "高达doublex",
+    "aliases": []
   },
   {
     "id": "bc-873",
@@ -29755,7 +34392,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-873.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231106/29073cdfb3ca31afbcf68646e6fe32b6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "创制推进器",
+    "mechId": "创制推进器",
+    "aliases": []
   },
   {
     "id": "bc-874",
@@ -29780,7 +34420,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-874.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231106/f95ba9477507eed0e3077133bfec0cd2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "惊异推进器",
+    "mechId": "惊异推进器",
+    "aliases": []
   },
   {
     "id": "bc-872",
@@ -29805,7 +34448,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-872.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231106/2d079d23278ae1f23399c100c5955216.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "惊异扎古",
+    "mechId": "惊异扎古",
+    "aliases": []
   },
   {
     "id": "bc-869",
@@ -29830,7 +34476,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-869.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_948_o_1eftfdmbf5a210q10341tve1mac23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5869/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5869/",
+    "mech": "嫣红强袭 凤装备",
+    "mechId": "嫣红强袭凤装备",
+    "aliases": []
   },
   {
     "id": "bc-863",
@@ -29855,7 +34504,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-863.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231106/931c879c91d2eaefc9061ea0053deddb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异端高达金色机·天蜜娜",
+    "mechId": "异端高达金色机·天蜜娜",
+    "aliases": []
   },
   {
     "id": "hgac-wing",
@@ -29884,7 +34536,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hgac-wing.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231031/2e13682045a63082a5c246fa17ad5380.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞翼高达",
+    "mechId": "飞翼高达",
+    "aliases": [
+      "Wing Gundam",
+      "飞翼"
+    ]
   },
   {
     "id": "bc-855",
@@ -29909,7 +34567,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-855.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_932_o_1fl32q89s11eg1uo0jc3nv11j223.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5854/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5854/",
+    "mech": "佐寇克",
+    "mechId": "佐寇克",
+    "aliases": []
   },
   {
     "id": "bc-852",
@@ -29934,7 +34595,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-852.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_928_o_1e74tbfe7818143449g1nqkirf28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5852/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5852/",
+    "mech": "异端高达红色机",
+    "mechId": "异端高达红色机",
+    "aliases": []
   },
   {
     "id": "bc-847",
@@ -29959,7 +34623,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-847.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/2rybsIriHOWsxrgn/FTtbUxy1x7LZxG6f.jpg?Expires=1792509482&Key-Pair-Id=K7AVJM1114TH7&Signature=aE0ZJYILsHjqdriiVOuwpbWn0ND4MLrBr6yx4BckGgTic-HGDRZXXj26p8qE0UIBp3SLWsWF3egMxsSfDkEKQApiZ6o-nlk0LmozKt0NkySXtMcWHSDjC-zQEEMTfkOJpWIIpY4t5okF0K8cArn2LyJ63i8P32j6YWCiNIGRZn7hfCcNwMQraty-EMDb7eGbHxOwheLPxa0Nr4xKp7IZbXhuGTX72Kb6-Wf2SOPXHHlIz7brcyyZ2UFBwxL9PYzG--ZN8joYVfh9kp1WLN-kHYrnznvQyP9N27e50YxlF5BMBDr~YLVdy3u6sGzmCYpY~j49vhFXgmj~F0~hrr4qZg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5849/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5849/",
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "bc-845",
@@ -29984,7 +34658,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-845.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_918_o_1f1uahsds13611kto1kde2kbrgm23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5844/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5844/",
+    "mech": "飙狼",
+    "mechId": "飙狼",
+    "aliases": []
   },
   {
     "id": "bc-841",
@@ -30009,7 +34686,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-841.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231017/510d9b0a861ab631792d9ee1577da33d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "加贝拉·迪特拉",
+    "mechId": "加贝拉·迪特拉",
+    "aliases": []
   },
   {
     "id": "rg-gp01",
@@ -30038,7 +34718,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-gp01.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_913_o_1e7fbdkuqopbio31td3ked1lef28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5840/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5840/",
+    "mech": "RX-78GP01 高达 试作1号机 玉帘",
+    "mechId": "rx-78gp01高达试作1号机玉帘",
+    "aliases": [
+      "RX-78G",
+      "P01"
+    ]
   },
   {
     "id": "rg-gp01fb",
@@ -30067,7 +34753,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-gp01fb.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_914_o_1e7fbhhoc1otk1vbf1ipb12mg1hli28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5841/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5841/",
+    "mech": "RX-78GP01Fb 高达 试作1号机 全方位推进型",
+    "mechId": "rx-78gp01fb高达试作1号机全方位推进型",
+    "aliases": [
+      "RX-78G",
+      "P01F"
+    ]
   },
   {
     "id": "bc-834",
@@ -30092,7 +34784,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-834.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_908_o_1esi8im8l1lk81jl1ivj11tf1l3323.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5837/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5837/",
+    "mech": "基拉·多加",
+    "mechId": "基拉·多加",
+    "aliases": [
+      "Jesta",
+      "基拉多加"
+    ]
   },
   {
     "id": "bc-821",
@@ -30117,7 +34815,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-821.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_893_o_1f6hn484c12comfct1v41n1ubu23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5821/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5821/",
+    "mech": "高达AGE-2 双炮型",
+    "mechId": "高达age-2双炮型",
+    "aliases": [
+      "AGE-2"
+    ]
   },
   {
     "id": "bc-817",
@@ -30142,7 +34845,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-817.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_888_o_1fvuu7i6o1t00lh81c3i1g3amqh23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5816/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5816/",
+    "mech": "梅萨拉",
+    "mechId": "梅萨拉",
+    "aliases": []
   },
   {
     "id": "bc-810",
@@ -30167,7 +34873,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-810.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_883_o_1e74t0884ar8cv5rtae2l8ah28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5811/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5811/",
+    "mech": "异端高达 蓝色机二型L",
+    "mechId": "异端高达蓝色机二型l",
+    "aliases": []
   },
   {
     "id": "bc-809",
@@ -30192,7 +34901,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-809.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231016/3a97f29a613428e556d0744496320faf.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "翔翼型强袭高达",
+    "mechId": "翔翼型强袭高达",
+    "aliases": []
   },
   {
     "id": "bc-808",
@@ -30217,7 +34929,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-808.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_874_o_1fu911ntu9sj157lk9dnsp1djk23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5804/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5804/",
+    "mech": "全武装型独角兽高达",
+    "mechId": "全武装型独角兽高达",
+    "aliases": []
   },
   {
     "id": "bc-804",
@@ -30242,7 +34957,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-804.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_872_o_1ddksf50u1lsqnv94rhrcp9oq28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5802/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5802/",
+    "mech": "ZGMF-X42S 命运高达",
+    "mechId": "zgmf-x42s命运高达",
+    "aliases": [
+      "X42S"
+    ]
   },
   {
     "id": "bc-799",
@@ -30267,7 +34987,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-799.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_862_o_1esi8fqc41fcr1nob19c0ber1fir23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5797/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5797/",
+    "mech": "杰斯塔",
+    "mechId": "杰斯塔",
+    "aliases": []
   },
   {
     "id": "bc-794",
@@ -30292,7 +35015,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-794.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_855_o_1f67g3ans11lvh5ocgo1n8ihvs23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5789/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5789/",
+    "mech": "高达AGE-1 全装备光辉型",
+    "mechId": "高达age-1全装备光辉型",
+    "aliases": [
+      "AGE-1"
+    ]
   },
   {
     "id": "bc-795",
@@ -30317,7 +35045,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-795.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230921/4b6525bf7fb1296ffe068a58ab6d70cf.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达Ez8",
+    "mechId": "高达ez8",
+    "aliases": []
   },
   {
     "id": "bc-792",
@@ -30342,7 +35073,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-792.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/6oLAoP8I5LvLrp55/GR1Hzfn4PP3z77nF.jpg?Expires=1792509593&Key-Pair-Id=K7AVJM1114TH7&Signature=OBkLsYr721be6aAD~BGUyK2ZORheI44mwiRZKvo-Exnyqb34lsRnzY3Yb8UDucjXVe9rByWoE~eMXRwjwE7xBkV~C4HKMfjTXh0c6feWqB7FrcDFahwg2feIGqPrcBbDEb5hZFdFSiYN1nBPliYR2zHextO9zX12MJU2kSPnXQtVOmLrI8vxb2PkqtMyxF-xi6AcBh~J6NLMtcDDmkBKIBXwD~H~ZRGijCAp1fi5X1hjxLXb1z-zKx3dX8N5CztXM7uj5~PUQpZji26qNDCctwAWIsjEKzikF6Qu0xRnw6usVBuatLVbXSxwMQutXL7lYM2bkPWSu56FmLp1Ssi6qg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5788/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5788/",
+    "mech": "新安洲",
+    "mechId": "新安洲",
+    "aliases": [
+      "Providence Gundam",
+      "新安洲高达",
+      "Providence"
+    ]
   },
   {
     "id": "bc-791",
@@ -30367,7 +35105,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-791.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_852_o_1fu91q1vc10r91rvufei1uo3dni23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5786/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5786/",
+    "mech": "RGZ95C 里歇尔C型(防御者a",
+    "mechId": "rgz95c里歇尔c型防御者a",
+    "aliases": [
+      "RGZ95C"
+    ]
   },
   {
     "id": "bc-789",
@@ -30392,7 +35135,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-789.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_846_o_1f6hmjr5j10he1na11d3c1dcjqtf23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5783/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5783/",
+    "mech": "G-西福斯",
+    "mechId": "g-西福斯",
+    "aliases": []
   },
   {
     "id": "bc-786",
@@ -30417,7 +35163,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-786.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_841_s_upe6klmbytsmx603jl7v0hwjxnip.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5780/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5780/",
+    "mech": "独角兽高达2号机 报丧女妖·命运女神",
+    "mechId": "独角兽高达2号机报丧女妖·命运女神",
+    "aliases": [
+      "Banshee Norn",
+      "命运女神",
+      "报丧女妖命运女神"
+    ]
   },
   {
     "id": "bc-787",
@@ -30442,7 +35195,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-787.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230921/5601fee3c38a7bd9004b7792cc13a1d6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MS06R1A 松永真专用扎古",
+    "mechId": "ms06r1a松永真专用扎古",
+    "aliases": [
+      "MS06R"
+    ]
   },
   {
     "id": "bc-783",
@@ -30467,7 +35225,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-783.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230921/96f71d7a733cb156c2431142993e939f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "R17 完美强袭高达",
+    "mechId": "r17完美强袭高达",
+    "aliases": [
+      "R17"
+    ]
   },
   {
     "id": "bc-782",
@@ -30492,7 +35255,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-782.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_840_o_1f089pg8tosmf1464q1u11ft623.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5779/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5779/",
+    "mech": "MSN06S 新安洲·原石",
+    "mechId": "msn06s新安洲·原石",
+    "aliases": [
+      "MSN06S"
+    ]
   },
   {
     "id": "bc-779",
@@ -30517,7 +35285,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-779.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230921/235b3385142511f26ee6d457643df029.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "杰斯塔加农",
+    "mechId": "杰斯塔加农",
+    "aliases": []
   },
   {
     "id": "bc-778",
@@ -30542,7 +35313,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-778.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230921/c2cc93ddbdbcfdc9c3e4adf57eb4591c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MS-06R-1A 黑色三连星扎古",
+    "mechId": "ms-06r-1a黑色三连星扎古",
+    "aliases": [
+      "MS-06R"
+    ]
   },
   {
     "id": "bc-775",
@@ -30567,7 +35343,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-775.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4568_o_1f98t7lbb1lvdn17jmf17iu1qpm23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3613/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3613/",
+    "mech": "夏多鲁 恶徒",
+    "mechId": "夏多鲁恶徒",
+    "aliases": []
   },
   {
     "id": "bc-771",
@@ -30592,7 +35371,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-771.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2740_o_1db9pfht91ucv1sq31395dlmrr28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1802/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1802/",
+    "mech": "雷姆",
+    "mechId": "雷姆",
+    "aliases": []
   },
   {
     "id": "bc-770",
@@ -30617,7 +35399,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-770.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_836_o_1dhb1ugio1ep976j1g2ju791d4h23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5774/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5774/",
+    "mech": "多鲁基斯EW",
+    "mechId": "多鲁基斯ew",
+    "aliases": []
   },
   {
     "id": "bc-769",
@@ -30642,7 +35427,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-769.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4565_o_1f98t5ejr1jtt90s6b1dtn3v023.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3610/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3610/",
+    "mech": "高达AGE-FX 爆发型",
+    "mechId": "高达age-fx爆发型",
+    "aliases": []
   },
   {
     "id": "bc-765",
@@ -30667,7 +35455,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-765.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_835_o_1fvuu06q75197pumcp7vn3ip23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5773/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5773/",
+    "mech": "玫瑰·祖鲁",
+    "mechId": "玫瑰·祖鲁",
+    "aliases": []
   },
   {
     "id": "bc-766",
@@ -30692,7 +35483,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-766.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_2738_s_owunx96v086d8rv32mvl395y48qy.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1799/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1799/",
+    "mech": "RX-0 独角兽高达2号机 报丧女妖 钛合金电镀版",
+    "mechId": "rx-0独角兽高达2号机报丧女妖钛合金电镀版",
+    "aliases": [
+      "RX-0"
+    ]
   },
   {
     "id": "mg-nu-ver-ka",
@@ -30722,7 +35518,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-nu-ver-ka.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_2737_s_ixxz870oila45hugis1xtsrrso5e.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1798/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1798/",
+    "mech": "RX-93 ν高达",
+    "mechId": "rx-93ν高达",
+    "aliases": [
+      "RX-93"
+    ]
   },
   {
     "id": "hguc-delta-pl",
@@ -30751,7 +35552,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hguc-delta-pl.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_834_o_1ej9i7to51j3u12q51qu6mc9k7u23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5772/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5772/",
+    "mech": "德尔塔高达 PL",
+    "mechId": "德尔塔高达pl",
+    "aliases": []
   },
   {
     "id": "bc-763",
@@ -30776,7 +35580,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-763.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_833_o_1f6hmmfm61fep9ku8651jv01k6n23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5771/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5771/",
+    "mech": "克兰雪特装型",
+    "mechId": "克兰雪特装型",
+    "aliases": []
   },
   {
     "id": "bc-760",
@@ -30801,7 +35608,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-760.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4564_o_1f98t24j41pl1j55j73i1lt7323.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3609/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3609/",
+    "mech": "高达AGE-3 要塞型",
+    "mechId": "高达age-3要塞型",
+    "aliases": [
+      "AGE-3"
+    ]
   },
   {
     "id": "rg-zeta",
@@ -30830,7 +35642,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-zeta.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3863_o_1e7k1muac12t915u41i0r1kof6fp23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2883/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2883/",
+    "mech": "Z高达",
+    "mechId": "z高达",
+    "aliases": [
+      "Zeta Gundam",
+      "Zeta",
+      "泽塔"
+    ]
   },
   {
     "id": "bc-753",
@@ -30855,7 +35674,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-753.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2736_o_1f6hmqjla1i5e15bdj7rrff1vru23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1797/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1797/",
+    "mech": "高达AGE-2 暗黑猎犬",
+    "mechId": "高达age-2暗黑猎犬",
+    "aliases": [
+      "AGE-2"
+    ]
   },
   {
     "id": "bc-750",
@@ -30880,7 +35704,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-750.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230912/77fa8cd7b93b221373530b388c03ea6f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "拜亚兰·特装型",
+    "mechId": "拜亚兰·特装型",
+    "aliases": []
   },
   {
     "id": "bc-749",
@@ -30905,7 +35732,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-749.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_2735_s_7lbxwsetkgjktnp8uymk8gyxd9gm.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1796/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1796/",
+    "mech": "圣盾高达",
+    "mechId": "圣盾高达",
+    "aliases": []
   },
   {
     "id": "bc-747",
@@ -30930,7 +35760,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-747.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4560_o_1f98svsb71t8lhb133n2u3bh523.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3605/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3605/",
+    "mech": "高达列基鲁斯",
+    "mechId": "高达列基鲁斯",
+    "aliases": []
   },
   {
     "id": "bc-746",
@@ -30955,7 +35788,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-746.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2733_o_1esi8aqovtj81r611fgbv7iipm23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1794/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1794/",
+    "mech": "暴风高达",
+    "mechId": "暴风高达",
+    "aliases": []
   },
   {
     "id": "bc-745",
@@ -30980,7 +35816,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-745.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_830_o_1ej9i3j6d1jq49061gn5dv51ego23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5768/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5768/",
+    "mech": "吉姆狙击型Ⅱ",
+    "mechId": "吉姆狙击型ii",
+    "aliases": []
   },
   {
     "id": "bc-743",
@@ -31005,7 +35844,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-743.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4559_o_1f98stb671smrjfnhlbvu11lr823.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3604/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3604/",
+    "mech": "克兰雪",
+    "mechId": "克兰雪",
+    "aliases": []
   },
   {
     "id": "bc-741",
@@ -31030,7 +35872,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-741.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230912/f8cc5125ed6f55db1bd5cef770e34930.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达AGE-FX",
+    "mechId": "高达age-fx",
+    "aliases": []
   },
   {
     "id": "bc-740",
@@ -31055,7 +35900,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-740.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230912/98514aa6adc2b3cf8d392d43b125e068.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "汉布拉比",
+    "mechId": "汉布拉比",
+    "aliases": []
   },
   {
     "id": "bc-738",
@@ -31080,7 +35928,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-738.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3221_o_1d5bac6u51rchdthoosp5v1nr228.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2280/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2280/",
+    "mech": "高达AGE-2 基本型",
+    "mechId": "高达age-2基本型",
+    "aliases": [
+      "AGE-2"
+    ]
   },
   {
     "id": "bc-736",
@@ -31105,7 +35958,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-736.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4558_o_1f98slce0fuq1i5krrphlm29j23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3603/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3603/",
+    "mech": "高达AGE-3 轨道型",
+    "mechId": "高达age-3轨道型",
+    "aliases": [
+      "AGE-3"
+    ]
   },
   {
     "id": "bc-723",
@@ -31130,7 +35988,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-723.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4554_o_1f98si1u1ob6ud71o3htbi1p7v23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3599/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3599/",
+    "mech": "G-EXES 杰克戟",
+    "mechId": "g-exes杰克戟",
+    "aliases": []
   },
   {
     "id": "bc-724",
@@ -31155,7 +36016,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-724.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_4678_s_zq2bm706v8qgfhuqrkmr58k1j02p.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3726/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3726/",
+    "mech": "正义高达",
+    "mechId": "正义高达",
+    "aliases": []
   },
   {
     "id": "bc-718",
@@ -31180,7 +36044,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-718.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5515_o_1go0vs4if1pia6ej3r71rb116t23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4620/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4620/",
+    "mech": "高达AGE-2 黑暗猎犬",
+    "mechId": "高达age-2黑暗猎犬",
+    "aliases": [
+      "AGE-2"
+    ]
   },
   {
     "id": "hguc-aqua-zaku",
@@ -31209,7 +36078,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hguc-aqua-zaku.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_824_o_1fvuu4v4m15t1c7ujh7lcfnm123.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5761/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5761/",
+    "mech": "MS-06S 水中型扎古",
+    "mechId": "ms-06s水中型扎古",
+    "aliases": [
+      "MS-06S"
+    ]
   },
   {
     "id": "bc-711",
@@ -31234,7 +36108,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-711.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230912/ed408623c4353748b37ebe5b05f319aa.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "R16 M1异端高达",
+    "mechId": "r16m1异端高达",
+    "aliases": [
+      "R16"
+    ]
   },
   {
     "id": "bc-712",
@@ -31259,7 +36138,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-712.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2731_o_1esi88td813cp1tjn1bavv1l1p6423.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1792/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1792/",
+    "mech": "迅雷高达",
+    "mechId": "迅雷高达",
+    "aliases": []
   },
   {
     "id": "bc-709",
@@ -31284,7 +36166,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-709.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230912/0403b29011aa80d422dc4ffae56a98db.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "奇拉格",
+    "mechId": "奇拉格",
+    "aliases": []
   },
   {
     "id": "bc-710",
@@ -31309,7 +36194,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-710.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_820_o_1f0892mp9q2j1731ejuaqh1bmr23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5757/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5757/",
+    "mech": "里歇尔C型",
+    "mechId": "里歇尔c型",
+    "aliases": []
   },
   {
     "id": "bc-706",
@@ -31334,7 +36222,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-706.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_818_o_1e1go7q8l285ok9r5fsiasb623.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5754/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5754/",
+    "mech": "RAS-96安克夏",
+    "mechId": "ras-96安克夏",
+    "aliases": [
+      "RAS-96"
+    ]
   },
   {
     "id": "bc-705",
@@ -31359,7 +36252,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-705.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230911/da281eaa505fe5d47e834f89f273c81c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RMS108 玛拉塞",
+    "mechId": "rms108玛拉塞",
+    "aliases": [
+      "RMS108"
+    ]
   },
   {
     "id": "bc-686",
@@ -31384,7 +36282,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-686.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4553_o_1f98s8gc218ss1a4lrf1f1111ud23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3598/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3598/",
+    "mech": "达纳金",
+    "mechId": "达纳金",
+    "aliases": []
   },
   {
     "id": "bc-685",
@@ -31409,7 +36310,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-685.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5509_o_1go0vq1rm1cet1ism1c171cec116r23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4613/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4613/",
+    "mech": "高达AGE-3 基本型",
+    "mechId": "高达age-3基本型",
+    "aliases": [
+      "AGE-3"
+    ]
   },
   {
     "id": "bc-687",
@@ -31434,7 +36340,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-687.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3862_o_1e7k1ladpol21k7a1eib9bl12m123.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2882/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2882/",
+    "mech": "RX-178 高达Mk-Ⅱ",
+    "mechId": "rx-178高达mk-ii",
+    "aliases": [
+      "RX-178"
+    ]
   },
   {
     "id": "bc-680",
@@ -31459,7 +36370,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-680.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230629/ce1817ceb5b2b03cda46d6e2e7da4a36.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "法西亚",
+    "mechId": "法西亚",
+    "aliases": []
   },
   {
     "id": "bc-682",
@@ -31484,7 +36398,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-682.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4551_o_1f98tfkeo2idoh5lpb19d011ng23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3596/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3596/",
+    "mech": "高达AGE-1 飞雀型",
+    "mechId": "高达age-1飞雀型",
+    "aliases": [
+      "AGE-1"
+    ]
   },
   {
     "id": "bc-681",
@@ -31509,7 +36428,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-681.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230629/206ab2239785c80aeab9a80753bb869d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-178 高达Mk-Ⅱ",
+    "mechId": "rx-178高达mk-ii",
+    "aliases": [
+      "RX-178"
+    ]
   },
   {
     "id": "bc-679",
@@ -31534,7 +36458,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-679.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230629/b3ed9a0b2ce14b5098bb036e6091f284.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "艾迪鲁",
+    "mechId": "艾迪鲁",
+    "aliases": []
   },
   {
     "id": "bc-678",
@@ -31559,7 +36486,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-678.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_816_o_1fvuu2aih9vmj9hl7v1v9f1kfi23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5752/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5752/",
+    "mech": "尼莫",
+    "mechId": "尼莫",
+    "aliases": []
   },
   {
     "id": "bc-674",
@@ -31584,7 +36514,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-674.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230629/e35c29a3db72f2ed2fd4f2927f8d6506.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "夏多鲁改",
+    "mechId": "夏多鲁改",
+    "aliases": []
   },
   {
     "id": "bc-671",
@@ -31609,7 +36542,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-671.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_814_o_1ebdgrp9qen2qem5ds1e3c1eif23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5750/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5750/",
+    "mech": "玖阿格",
+    "mechId": "玖阿格",
+    "aliases": []
   },
   {
     "id": "bc-667",
@@ -31634,7 +36570,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-667.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5506_o_1go0vo90psdl7ucfj1g1oocc23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4610/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4610/",
+    "mech": "高达AGE-2 双枪模式",
+    "mechId": "高达age-2双枪模式",
+    "aliases": [
+      "AGE-2"
+    ]
   },
   {
     "id": "bc-668",
@@ -31659,7 +36600,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-668.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230629/ebca6a95e8bbcdb5664c2ec258b29f13.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "玛拉塞",
+    "mechId": "玛拉塞",
+    "aliases": []
   },
   {
     "id": "bc-669",
@@ -31684,7 +36628,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-669.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230629/1eaa13663366d93357a837be0e1f0952.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "扎古狙击型",
+    "mechId": "扎古狙击型",
+    "aliases": []
   },
   {
     "id": "mg-banshee-n",
@@ -31713,7 +36660,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-banshee-n.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_810_o_1esi8691f1rjnblb1hpcl8s1v1023.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5746/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5746/",
+    "mech": "独角兽高达2号机 报丧女妖",
+    "mechId": "独角兽高达2号机报丧女妖",
+    "aliases": [
+      "Banshee",
+      "报丧女妖",
+      "独角兽2号机"
+    ]
   },
   {
     "id": "bc-665",
@@ -31738,7 +36692,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-665.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4548_o_1f98rt04n1hblsca17tf5uul7k23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3593/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3593/",
+    "mech": "杰诺亚斯Ⅱ",
+    "mechId": "杰诺亚斯ii",
+    "aliases": []
   },
   {
     "id": "bc-666",
@@ -31763,7 +36720,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-666.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4547_o_1f98tdi101hgd16ot1gg616c6uoj23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3592/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3592/",
+    "mech": "高达AGE-1 勇将型",
+    "mechId": "高达age-1勇将型",
+    "aliases": [
+      "AGE-1"
+    ]
   },
   {
     "id": "bc-657",
@@ -31788,7 +36750,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-657.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_807_s_d8fnm3yi6fygxvlcszkcmpazlywk.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5742/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5742/",
+    "mech": "德尔塔高达",
+    "mechId": "德尔塔高达",
+    "aliases": []
   },
   {
     "id": "bc-653",
@@ -31813,7 +36778,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-653.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230629/476f14e7f0cbb092b905d021528fe4fd.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "R14 正义高达",
+    "mechId": "r14正义高达",
+    "aliases": [
+      "R14"
+    ]
   },
   {
     "id": "bc-654",
@@ -31838,7 +36808,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-654.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_804_s_5cwxa38v0fio8d4ky6ycsckl1eu3.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5739/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5739/",
+    "mech": "R15 自由高达",
+    "mechId": "r15自由高达",
+    "aliases": [
+      "R15"
+    ]
   },
   {
     "id": "bc-655",
@@ -31863,7 +36838,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-655.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230629/11c297145bcbbb2e1916d23ea37b6899.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "空中霸王",
+    "mechId": "空中霸王",
+    "aliases": []
   },
   {
     "id": "bc-649",
@@ -31888,7 +36866,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-649.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4545_o_1f98rqsh83gf1pp5p6g1dkk2on23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3590/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3590/",
+    "mech": "皆德拉",
+    "mechId": "皆德拉",
+    "aliases": []
   },
   {
     "id": "bc-650",
@@ -31913,7 +36894,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-650.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230629/07324b736c4eba7d034223932d9ae775.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "R11 拉古",
+    "mechId": "r11拉古",
+    "aliases": [
+      "R11"
+    ]
   },
   {
     "id": "bc-651",
@@ -31938,7 +36924,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-651.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230629/72edd5542126eea4c22058ebfdaa6cfd.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "R12 巴库",
+    "mechId": "r12巴库",
+    "aliases": [
+      "R12"
+    ]
   },
   {
     "id": "bc-652",
@@ -31963,7 +36954,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-652.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5499_o_1go0qdr05js94r7b8g17kn32v23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4601/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4601/",
+    "mech": "R13 神意高达",
+    "mechId": "r13神意高达",
+    "aliases": [
+      "R13"
+    ]
   },
   {
     "id": "bc-648",
@@ -31988,7 +36984,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-648.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4546_o_1f98tau7uh0e1lpf1baon2k723.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3591/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3591/",
+    "mech": "高达AGE-1 基本型",
+    "mechId": "高达age-1基本型",
+    "aliases": [
+      "AGE-1"
+    ]
   },
   {
     "id": "bc-647",
@@ -32013,7 +37014,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-647.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2728_o_1esi7v9qt1ksj1t8813of1m7gom923.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1789/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1789/",
+    "mech": "决斗高达 强袭尸装",
+    "mechId": "决斗高达强袭尸装",
+    "aliases": []
   },
   {
     "id": "bc-642",
@@ -32038,7 +37042,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-642.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4544_o_1f98rp9st1qukuqur7475s1kk823.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3589/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3589/",
+    "mech": "艾迪鲁",
+    "mechId": "艾迪鲁",
+    "aliases": []
   },
   {
     "id": "bc-643",
@@ -32063,7 +37070,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-643.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230629/a478aa36c7dd6916d98c5068b026da4b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "G-巨人",
+    "mechId": "g-巨人",
+    "aliases": []
   },
   {
     "id": "bc-634",
@@ -32088,7 +37098,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-634.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5494_o_1go0vgseveb8177217t21h4059i23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4596/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4596/",
+    "mech": "多拉多",
+    "mechId": "多拉多",
+    "aliases": []
   },
   {
     "id": "bc-635",
@@ -32113,7 +37126,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-635.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230627/e1cb51dbe253e85200ec4dc770057a53.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "捷达斯R",
+    "mechId": "捷达斯r",
+    "aliases": []
   },
   {
     "id": "bc-636",
@@ -32138,7 +37154,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-636.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2727_o_1esi7mjdkk6j17dc6onk0s196p23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1788/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1788/",
+    "mech": "重装高达 EW版",
+    "mechId": "重装高达ew版",
+    "aliases": []
   },
   {
     "id": "bc-626",
@@ -32163,7 +37182,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-626.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230627/cf0ed395fcc24046dd678b817c417cc8.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "AGE-2高达 基本型",
+    "mechId": "age-2高达基本型",
+    "aliases": [
+      "AGE-2"
+    ]
   },
   {
     "id": "bc-627",
@@ -32188,7 +37212,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-627.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230627/40995a35d785b3bb7eec4b48aecfce32.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "R07 西古",
+    "mechId": "r07西古",
+    "aliases": [
+      "R07"
+    ]
   },
   {
     "id": "bc-628",
@@ -32213,7 +37242,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-628.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230627/ba8e7e1d996835cf148eed9f6ac841d9.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "R08 灾厄高达",
+    "mechId": "r08灾厄高达",
+    "aliases": [
+      "R08"
+    ]
   },
   {
     "id": "bc-629",
@@ -32238,7 +37272,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-629.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230627/9f844ca9a9369e3848f6a79eed37eda9.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "R09 禁断高达",
+    "mechId": "r09禁断高达",
+    "aliases": [
+      "R09"
+    ]
   },
   {
     "id": "bc-630",
@@ -32263,7 +37302,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-630.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230627/4e6aea3c52e90ac24aec125d409c7392.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "R10 强夺高达",
+    "mechId": "r10强夺高达",
+    "aliases": [
+      "R10"
+    ]
   },
   {
     "id": "hguc-banshee-n",
@@ -32292,7 +37336,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hguc-banshee-n.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/6oLAoP8I5LvLrp55/GR1Hzfn4PP3z77nF.jpg?Expires=1792509593&Key-Pair-Id=K7AVJM1114TH7&Signature=OBkLsYr721be6aAD~BGUyK2ZORheI44mwiRZKvo-Exnyqb34lsRnzY3Yb8UDucjXVe9rByWoE~eMXRwjwE7xBkV~C4HKMfjTXh0c6feWqB7FrcDFahwg2feIGqPrcBbDEb5hZFdFSiYN1nBPliYR2zHextO9zX12MJU2kSPnXQtVOmLrI8vxb2PkqtMyxF-xi6AcBh~J6NLMtcDDmkBKIBXwD~H~ZRGijCAp1fi5X1hjxLXb1z-zKx3dX8N5CztXM7uj5~PUQpZji26qNDCctwAWIsjEKzikF6Qu0xRnw6usVBuatLVbXSxwMQutXL7lYM2bkPWSu56FmLp1Ssi6qg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5727/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5727/",
+    "mech": "独角兽高达2号机 报丧女妖",
+    "mechId": "独角兽高达2号机报丧女妖",
+    "aliases": [
+      "Banshee",
+      "报丧女妖",
+      "独角兽2号机"
+    ]
   },
   {
     "id": "bc-622",
@@ -32317,7 +37368,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-622.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_795_o_1fu90sjifluu1pitk71glr1bo523.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5728/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5728/",
+    "mech": "独角兽高达2号机 报丧女妖",
+    "mechId": "独角兽高达2号机报丧女妖",
+    "aliases": [
+      "Banshee",
+      "报丧女妖",
+      "独角兽2号机"
+    ]
   },
   {
     "id": "pb-214",
@@ -32345,7 +37403,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-1000006380.webp",
     "imageUrl": null,
     "taxRate": 10,
-    "sourceJp": "https://p-bandai.jp/item/item-1000006380"
+    "sourceJp": "https://p-bandai.jp/item/item-1000006380",
+    "mech": "武者高达Mk-II 徳川家康 南蛮胴具足",
+    "mechId": "武者高达mk-ii徳川家康南蛮胴具足",
+    "aliases": []
   },
   {
     "id": "bc-3321",
@@ -32370,7 +37431,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3321.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260112/59ab629aa6be65b0b0084c7a242ebd8e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达AGE-1 飞雀型",
+    "mechId": "高达age-1飞雀型",
+    "aliases": [
+      "AGE-1"
+    ]
   },
   {
     "id": "mg-unicorn-ver-ka",
@@ -32400,7 +37466,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-unicorn-ver-ka.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_793_o_1esi7juq55ui1gockob1v6b1neg23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5726/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5726/",
+    "mech": "全装备独角兽高达",
+    "mechId": "全装备独角兽高达",
+    "aliases": [
+      "Unicorn Gundam (Full Armor Mode)",
+      "全装备独角兽",
+      "全装备型独角兽"
+    ]
   },
   {
     "id": "bc-3320",
@@ -32425,7 +37498,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3320.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260112/c79bf26aa1f5cd39b5c1504de5c20732.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达AGE-1 勇将型",
+    "mechId": "高达age-1勇将型",
+    "aliases": [
+      "AGE-1"
+    ]
   },
   {
     "id": "bc-2653",
@@ -32450,7 +37528,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2653.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_4673_o_1fpc2fe132mp1olppv51tlenud23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3721/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3721/",
+    "mech": "ZGMF-X10A 自由高达",
+    "mechId": "zgmf-x10a自由高达",
+    "aliases": [
+      "X10A"
+    ]
   },
   {
     "id": "bc-3097",
@@ -32475,7 +37558,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3097.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2725_o_1f1uat05u6s8arcdefacl6bv23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1786/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1786/",
+    "mech": "XXXG-01SR 沙漠高达EW",
+    "mechId": "xxxg-01sr沙漠高达ew",
+    "aliases": [
+      "XXXG-01S"
+    ]
   },
   {
     "id": "bc-3104",
@@ -32500,7 +37588,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3104.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/W1nhNP0xPlgTpn3l/wvpXZhx3spUIqZja.jpg?Expires=1792509330&Key-Pair-Id=K7AVJM1114TH7&Signature=FdUsGg61-ZOP00JtDzaGjfQJmBkqAd8miZVf1Z8iqHhRd96ZbkjttmVJqweOpsVJyu4DuqTDSudXHaaWAmH9M7gH5eP4CtkcFgZGZf0rb0wKwvS-5-FsYu55ncMiacOIcMptmLAzmA~h-6RSyOQFy4oFB5UlUrBTs2P61ekp7wD8c-OXqDtAJtbn1zKByPuKKWmAa~USBsTKdw72s7WxFy2E4hjewdZAWV4Br~YZRt6IZ18NWgOSONmhXj1l23IY58b6Ya1jZvAmb29hG1WFpVDvmoErLBdM0BUU-u7AfItfCwPpygGZZdCgK~GrIZ4RS9jCzxiNeNRuxF8FZK~K1w__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_987/"
+    "sourceJp": "https://bandai-hobby.net/item/01_987/",
+    "mech": "00高达 七剑",
+    "mechId": "00高达七剑",
+    "aliases": []
   },
   {
     "id": "bc-3319",
@@ -32525,7 +37616,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3319.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5470_o_1go0v719i1o0habs1agabp8c6023.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4572/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4572/",
+    "mech": "高达AGE-1 基本型",
+    "mechId": "高达age-1基本型",
+    "aliases": [
+      "AGE-1"
+    ]
   },
   {
     "id": "bc-3460",
@@ -32550,7 +37646,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3460.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260324/99fbc584f87b2c4971426e203f0719f5.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "尊者高达",
+    "mechId": "尊者高达",
+    "aliases": []
   },
   {
     "id": "bc-3350",
@@ -32575,7 +37674,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3350.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_780_o_1esi7f8cn169e7271593vke1bua23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5713/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5713/",
+    "mech": "德尔塔PLUS",
+    "mechId": "德尔塔plus",
+    "aliases": []
   },
   {
     "id": "rg-zaku-mass",
@@ -32604,7 +37706,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-zaku-mass.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3168_o_1d3lseg2p1i851h1fvkp7i41t5028.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2224/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2224/",
+    "mech": "MS-06F 量产型扎古",
+    "mechId": "ms-06f量产型扎古",
+    "aliases": [
+      "MS-06F"
+    ]
   },
   {
     "id": "bc-3096",
@@ -32612,7 +37719,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "MG 1/100 ガンダムエピオン EW",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "w",
     "scale": "1/100",
     "released": "2011-06-25",
     "priceJpy": 5720,
@@ -32629,7 +37736,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3096.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2719_o_1esi79ki3204dhk1bj292pjic23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1779/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1779/",
+    "mech": "艾比安高达EW",
+    "mechId": "艾比安高达ew",
+    "aliases": []
   },
   {
     "id": "bc-3080",
@@ -32654,7 +37764,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3080.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_768_o_1fvutu60a1cf21s7r1bbu11r7if223.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5702/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5702/",
+    "mech": "德莱森",
+    "mechId": "德莱森",
+    "aliases": []
   },
   {
     "id": "bc-3478",
@@ -32662,7 +37775,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "gundam-00",
     "scale": "1/100",
     "released": "2011-05",
     "priceJpy": 7590,
@@ -32679,7 +37792,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3478.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260324/336c2afe6b54804b991c7ce34b1f0206.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "00强化模组",
+    "mechId": "00强化模组",
+    "aliases": [
+      "Gundam Virtue",
+      "00高达",
+      "双头龙高达"
+    ]
   },
   {
     "id": "bc-2651",
@@ -32704,7 +37824,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-2651.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_4672_s_60ebj91tnc800dw8xtqf7tovz1r2.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3720/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3720/",
+    "mech": "翔翼型强袭高达",
+    "mechId": "翔翼型强袭高达",
+    "aliases": []
   },
   {
     "id": "bc-3102",
@@ -32729,7 +37852,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3102.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250619/340076c056ae93b11ad5becec182845a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "XXXG-01S 神龙高达 EW",
+    "mechId": "xxxg-01s神龙高达ew",
+    "aliases": [
+      "XXXG-01S"
+    ]
   },
   {
     "id": "mg-wing-ew",
@@ -32758,7 +37886,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-wing-ew.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/05/foU92GTR8ymgrGQX/uLUGRrPWpjFryOoN.jpg?Expires=1792509545&Key-Pair-Id=K7AVJM1114TH7&Signature=NTFvYwkelrq2BvoVsQVm~qBBGKx~~DIE-L6FQZuplHkH7LjH4neoD1WiMuYmRHnrL3pQw7pu5T7kv77WJ2-lfRekfECWf1-4QJtiHNOZPVWIzhOWcg-OOGXulIsC1BGf8xAtk3Ei~nFiOWJjvJpCFFRPcmSRi9rFWTcP0DLQXjV16p2W25wyUbjFm3xuRx6k0GBtLin01j3NiLqYNZ32eZKzkVDPy48SzJeisYPsHpzNuCaOzbo0jrtnM2UUHfSoMrf4upeeY6ahHgf8pdozMFpk9GM9Km0YdKgqorXn-60ySUGqS-qdBHAxrgPaiSAX-beaJ~McKRAPo-oK9Yf-OQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1777/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1777/",
+    "mech": "飞翼高达 EW",
+    "mechId": "飞翼高达ew",
+    "aliases": []
   },
   {
     "id": "bc-3358",
@@ -32783,7 +37914,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3358.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2715_o_1ec1qlmqtt491p6r1t6dv2e1fh923.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1775/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1775/",
+    "mech": "地狱死神高达 EW",
+    "mechId": "地狱死神高达ew",
+    "aliases": []
   },
   {
     "id": "bc-3059",
@@ -32808,7 +37942,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3059.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250612/63d1b341d69f015715d3d1f84d7affb6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "诺贝尔高达",
+    "mechId": "诺贝尔高达",
+    "aliases": []
   },
   {
     "id": "bc-3349",
@@ -32833,7 +37970,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3349.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_753_o_1fu91or01ra515nbi2e18aah7r23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5687/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5687/",
+    "mech": "RGZ-95C 里歇尔",
+    "mechId": "rgz-95c里歇尔",
+    "aliases": [
+      "RGZ-95C"
+    ]
   },
   {
     "id": "pg-strike-freedom",
@@ -32862,7 +38004,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pg-strike-freedom.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3859_o_1ess0jeb912u7159toqa1gqc1ld823.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2878/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2878/",
+    "mech": "强袭自由高达",
+    "mechId": "强袭自由高达",
+    "aliases": [
+      "Strike Freedom Gundam",
+      "强袭自由",
+      "SF",
+      "Strike Freedom"
+    ]
   },
   {
     "id": "bc-3105",
@@ -32887,7 +38037,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3105.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1922_o_1bbm4df45dci1362drbjfd1n5d28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_985/"
+    "sourceJp": "https://bandai-hobby.net/item/01_985/",
+    "mech": "量子型00高达",
+    "mechId": "量子型00高达",
+    "aliases": [
+      "Quant-Effy",
+      "量子00"
+    ]
   },
   {
     "id": "bc-3013",
@@ -32912,7 +38068,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3013.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250401/7a073aacbfbab7d5de7abc1f39b0a155.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "老虎特装型",
+    "mechId": "老虎特装型",
+    "aliases": []
   },
   {
     "id": "rg-zaku-char",
@@ -32941,7 +38100,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-zaku-char.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3175_o_1d3t6e65m18igok1ht9srn18fm28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2230/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2230/",
+    "mech": "MS-06S 夏亚专用扎古",
+    "mechId": "ms-06s夏亚专用扎古",
+    "aliases": [
+      "MS-06S"
+    ]
   },
   {
     "id": "bc-3012",
@@ -32966,7 +38130,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3012.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_742_o_1eb337jfh48r14lo1mjp1c2s11df23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5676/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5676/",
+    "mech": "新安洲",
+    "mechId": "新安洲",
+    "aliases": [
+      "Providence Gundam",
+      "新安洲高达",
+      "Providence"
+    ]
   },
   {
     "id": "bc-3109",
@@ -32991,7 +38162,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3109.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_743_o_1fu90q9ji17273fdf9ce361b6323.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5677/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5677/",
+    "mech": "RGZ-95 里歇尔",
+    "mechId": "rgz-95里歇尔",
+    "aliases": [
+      "RGZ-95"
+    ]
   },
   {
     "id": "bc-3098",
@@ -33016,7 +38192,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3098.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250619/1dad66377416d5060a22c4f519c5b410.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "XXXG-01D 死神高达EW",
+    "mechId": "xxxg-01d死神高达ew",
+    "aliases": [
+      "XXXG-01D"
+    ]
   },
   {
     "id": "bc-3085",
@@ -33041,7 +38222,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3085.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/2rybsIriHOWsxrgn/FTtbUxy1x7LZxG6f.jpg?Expires=1792509760&Key-Pair-Id=K7AVJM1114TH7&Signature=VQH~szEXjoaCBvLhPulUq0S5~5qnIZuUZn~KysjLcei79O3llzp0C9C4lu0PRA3nXLtuE60SawJHTydVahFGSs~vM8VJl43KbgAqucDkLNowh6-Jn-cKqD-TsP1iXKpsz5l6i6u0tK4~63l85HBDGmZfeHmLmWkcThCWnWqs2aYeccVZJWZ1e4i29uOCfJKWLBjx2Lt3kCM1fWVm2yELQLGhRUC8uKWhjdhnR-wEYRv74WEydbvTz3czQaHeDX2br5vBgBQwT7Qr3zAG8QYxlR9Abfouyc-N6j~0k7~uR8d2Y5pbiwvYpfuGQP9a9z79E4DfyUucTFjh216iIWatMQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1764/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1764/",
+    "mech": "RB-79 铁球 双机",
+    "mechId": "rb-79铁球双机",
+    "aliases": [
+      "RB-79"
+    ]
   },
   {
     "id": "bc-3072",
@@ -33066,7 +38252,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3072.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250612/94f127b2e44f37faf2431ea6663865d4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RGM-79C 吉姆改",
+    "mechId": "rgm-79c吉姆改",
+    "aliases": [
+      "RGM-79C"
+    ]
   },
   {
     "id": "bc-3101",
@@ -33091,7 +38282,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3101.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2386_o_1fgj5ljvd5c411gf1j7ko1qbt523.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1463/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1463/",
+    "mech": "PMX-003 The・Ｏ",
+    "mechId": "pmx-003the・o",
+    "aliases": [
+      "PMX-003"
+    ]
   },
   {
     "id": "bc-3323",
@@ -33116,7 +38312,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3323.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1890_o_1bbm1i3u2tgie641jsq1kcc22628.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_952/"
+    "sourceJp": "https://bandai-hobby.net/item/01_952/",
+    "mech": "量子型00高达",
+    "mechId": "量子型00高达",
+    "aliases": [
+      "Quant-Effy",
+      "量子00"
+    ]
   },
   {
     "id": "bc-3315",
@@ -33141,7 +38343,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3315.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_2703_s_4jjeyel0r7c9qyrya8i6ngs50hnu.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1762/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1762/",
+    "mech": "V-Dash 高达",
+    "mechId": "v-dash高达",
+    "aliases": []
   },
   {
     "id": "rg-rx78-2",
@@ -33170,7 +38375,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/rg-rx78-2.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_3172_o_1d3oms1mb1is6137c1aenhac89a28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2228/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2228/",
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "hguc-zz",
@@ -33199,7 +38414,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hguc-zz.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2701_o_1ej9hv4ip172mf2n2bdurdc5b23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1760/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1760/",
+    "mech": "ZZ高达",
+    "mechId": "zz高达",
+    "aliases": []
   },
   {
     "id": "bc-3295",
@@ -33224,7 +38442,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3295.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251216/adea5bef4d33c7511a1e2ca5772fa9ea.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "G高达",
+    "mechId": "g高达",
+    "aliases": []
   },
   {
     "id": "bc-3362",
@@ -33249,7 +38470,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3362.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2695_o_1esi766ic151k1g2g1qs114th1dhi23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1753/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1753/",
+    "mech": "武者高达Mk-II",
+    "mechId": "武者高达mk-ii",
+    "aliases": []
   },
   {
     "id": "bc-3058",
@@ -33274,7 +38498,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3058.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250612/799d389cec49a27f23f2e7c365644e6c.jpeg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达X",
+    "mechId": "高达x",
+    "aliases": []
   },
   {
     "id": "mg-wing",
@@ -33303,7 +38530,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-wing.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/05/foU92GTR8ymgrGQX/uLUGRrPWpjFryOoN.jpg?Expires=1792509545&Key-Pair-Id=K7AVJM1114TH7&Signature=NTFvYwkelrq2BvoVsQVm~qBBGKx~~DIE-L6FQZuplHkH7LjH4neoD1WiMuYmRHnrL3pQw7pu5T7kv77WJ2-lfRekfECWf1-4QJtiHNOZPVWIzhOWcg-OOGXulIsC1BGf8xAtk3Ei~nFiOWJjvJpCFFRPcmSRi9rFWTcP0DLQXjV16p2W25wyUbjFm3xuRx6k0GBtLin01j3NiLqYNZ32eZKzkVDPy48SzJeisYPsHpzNuCaOzbo0jrtnM2UUHfSoMrf4upeeY6ahHgf8pdozMFpk9GM9Km0YdKgqorXn-60ySUGqS-qdBHAxrgPaiSAX-beaJ~McKRAPo-oK9Yf-OQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1751/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1751/",
+    "mech": "飞翼高达",
+    "mechId": "飞翼高达",
+    "aliases": [
+      "Wing Gundam",
+      "飞翼"
+    ]
   },
   {
     "id": "bc-3016",
@@ -33328,7 +38561,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3016.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_737_o_1esi73eal6akpnaa881em92qp23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5670/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5670/",
+    "mech": "独角兽高达 HD配色",
+    "mechId": "独角兽高达hd配色",
+    "aliases": []
   },
   {
     "id": "bc-3459",
@@ -33353,7 +38589,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3459.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_739_o_1fvutocr81dqairc15d2vtv17pn23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5672/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5672/",
+    "mech": "里歇尔",
+    "mechId": "里歇尔",
+    "aliases": []
   },
   {
     "id": "bc-3457",
@@ -33378,7 +38617,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3457.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_736_o_1eb32u14vh7b1fl3nka1isq4m23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5669/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5669/",
+    "mech": "洛特 双",
+    "mechId": "洛特双",
+    "aliases": []
   },
   {
     "id": "bc-3458",
@@ -33403,7 +38645,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3458.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260324/003bf5efa7cf7e80b9a03f768319283d.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MS-06F-2 扎古II",
+    "mechId": "ms-06f-2扎古ii",
+    "aliases": [
+      "MS-06F"
+    ]
   },
   {
     "id": "mg-rx-0-unicorn",
@@ -33432,7 +38679,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-rx-0-unicorn.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_738_o_1esi71c221lo8eg573qse8npf23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5671/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5671/",
+    "mech": "RX-0 独角兽高达",
+    "mechId": "rx-0独角兽高达",
+    "aliases": [
+      "RX-0",
+      "Unicorn Gundam",
+      "独角兽高达"
+    ]
   },
   {
     "id": "bc-3456",
@@ -33457,7 +38711,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3456.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260324/55cab8bc6ac40a84ad51b4ba202e5b83.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MS-06F-2 扎古II",
+    "mechId": "ms-06f-2扎古ii",
+    "aliases": [
+      "MS-06F"
+    ]
   },
   {
     "id": "bc-3314",
@@ -33482,7 +38741,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3314.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_2676_s_5rssyxtwnovi0e8mfu75bvap6fhz.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1744/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1744/",
+    "mech": "异端高达红色机改",
+    "mechId": "异端高达红色机改",
+    "aliases": []
   },
   {
     "id": "bc-3088",
@@ -33507,7 +38769,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3088.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/6oLAoP8I5LvLrp55/GR1Hzfn4PP3z77nF.jpg?Expires=1792509593&Key-Pair-Id=K7AVJM1114TH7&Signature=OBkLsYr721be6aAD~BGUyK2ZORheI44mwiRZKvo-Exnyqb34lsRnzY3Yb8UDucjXVe9rByWoE~eMXRwjwE7xBkV~C4HKMfjTXh0c6feWqB7FrcDFahwg2feIGqPrcBbDEb5hZFdFSiYN1nBPliYR2zHextO9zX12MJU2kSPnXQtVOmLrI8vxb2PkqtMyxF-xi6AcBh~J6NLMtcDDmkBKIBXwD~H~ZRGijCAp1fi5X1hjxLXb1z-zKx3dX8N5CztXM7uj5~PUQpZji26qNDCctwAWIsjEKzikF6Qu0xRnw6usVBuatLVbXSxwMQutXL7lYM2bkPWSu56FmLp1Ssi6qg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5665/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5665/",
+    "mech": "里歇尔",
+    "mechId": "里歇尔",
+    "aliases": []
   },
   {
     "id": "bc-3473",
@@ -33532,7 +38797,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3473.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1920_o_1bbm474nn9ht11vtclftg4ftv28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_983/"
+    "sourceJp": "https://bandai-hobby.net/item/01_983/",
+    "mech": "GN-X",
+    "mechId": "gn-x",
+    "aliases": []
   },
   {
     "id": "bc-3455",
@@ -33557,7 +38825,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3455.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_731_o_1fvutmii612s0861r1ksfi18kh23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5664/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5664/",
+    "mech": "基拉·祖鲁",
+    "mechId": "基拉·祖鲁",
+    "aliases": [
+      "J-Zulu",
+      "祖鲁"
+    ]
   },
   {
     "id": "bc-3352",
@@ -33582,7 +38856,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3352.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260123/fabe26b5d85463dc8aac9b35b3146cd8.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "LM312V04 V高达",
+    "mechId": "lm312v04v高达",
+    "aliases": [
+      "LM312V"
+    ]
   },
   {
     "id": "bc-3113",
@@ -33607,7 +38886,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3113.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1925_o_1bbm4kpmj8ch1ivaokh1e71idr28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_988/"
+    "sourceJp": "https://bandai-hobby.net/item/01_988/",
+    "mech": "00强化模组",
+    "mechId": "00强化模组",
+    "aliases": [
+      "Gundam Virtue",
+      "00高达",
+      "双头龙高达"
+    ]
   },
   {
     "id": "hguc-unicorn",
@@ -33636,7 +38922,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hguc-unicorn.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_729_o_1eb32o3q71n11rfv1bej1q6p9ot23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5661/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5661/",
+    "mech": "独角兽",
+    "mechId": "独角兽",
+    "aliases": [
+      "Unicorn Gundam",
+      "独角兽高达",
+      "RX-0",
+      "Unicorn"
+    ]
   },
   {
     "id": "bc-3454",
@@ -33661,7 +38955,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3454.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_730_o_1eb32q9u82c618ct8letobpi23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5663/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5663/",
+    "mech": "独角兽高达 独角兽模式",
+    "mechId": "独角兽高达独角兽模式",
+    "aliases": []
   },
   {
     "id": "bc-3448",
@@ -33686,7 +38983,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3448.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1878_o_1bbm0bcv11bfp1pg815ptkjf64q28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_938/"
+    "sourceJp": "https://bandai-hobby.net/item/01_938/",
+    "mech": "00强化模组",
+    "mechId": "00强化模组",
+    "aliases": [
+      "Gundam Virtue",
+      "00高达",
+      "双头龙高达"
+    ]
   },
   {
     "id": "bc-3334",
@@ -33711,7 +39015,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3334.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_728_o_1eb32llh21d433351c1t1pobnl623.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5660/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5660/",
+    "mech": "刹帝利",
+    "mechId": "刹帝利",
+    "aliases": []
   },
   {
     "id": "bc-3446",
@@ -33736,7 +39043,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3446.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260320/aa86e0a725c3d08582725ad885a2cfc3.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "炽天使高达 GNHW",
+    "mechId": "炽天使高达gnhw",
+    "aliases": []
   },
   {
     "id": "bc-3447",
@@ -33761,7 +39071,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3447.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260320/8101419fd82f5a16e2d729e1ae3057e7.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "再生高达",
+    "mechId": "再生高达",
+    "aliases": []
   },
   {
     "id": "bc-3529",
@@ -33769,7 +39082,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/100",
     "released": "2009-09",
     "priceJpy": 5280,
@@ -33786,7 +39099,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3529.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260722/de68d946c302ca9123852fe067af1b53.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-75 钢坦克",
+    "mechId": "rx-75钢坦克",
+    "aliases": [
+      "RX-75"
+    ]
   },
   {
     "id": "bc-3445",
@@ -33811,7 +39129,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3445.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1874_o_1bbm00sc21u5j1jhv1rgo16hl17lb28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_934/"
+    "sourceJp": "https://bandai-hobby.net/item/01_934/",
+    "mech": "堕天使高达 GNHW",
+    "mechId": "堕天使高达gnhw",
+    "aliases": []
   },
   {
     "id": "bc-3453",
@@ -33836,7 +39157,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3453.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_2620_s_lz0a7mv4alox8lmltzhqwtpjzq5o.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1711/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1711/",
+    "mech": "杰刚",
+    "mechId": "杰刚",
+    "aliases": [
+      "Gelgoog",
+      "勇士",
+      "格鲁古古"
+    ]
   },
   {
     "id": "bc-3444",
@@ -33861,7 +39189,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3444.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1872_o_1bblvruv6eeubn0ennqi81amb28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_932/"
+    "sourceJp": "https://bandai-hobby.net/item/01_932/",
+    "mech": "智天使高达 GNHW",
+    "mechId": "智天使高达gnhw",
+    "aliases": []
   },
   {
     "id": "bc-3472",
@@ -33886,7 +39217,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3472.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1918_o_1bbm416bt1nbrpv31p161do81ps028.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_981/"
+    "sourceJp": "https://bandai-hobby.net/item/01_981/",
+    "mech": "能天使高达",
+    "mechId": "能天使高达",
+    "aliases": [
+      "Geymalk",
+      "能天使"
+    ]
   },
   {
     "id": "bc-3442",
@@ -33911,7 +39248,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3442.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260320/e14ebd93f1bacefa4e4486459808c8b1.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "0高达",
+    "mechId": "0高达",
+    "aliases": []
   },
   {
     "id": "bc-3441",
@@ -33936,7 +39276,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3441.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260320/f4f3601d5f0d6f2606076e7bb544fc46.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "能天使高达RⅡ",
+    "mechId": "能天使高达rii",
+    "aliases": []
   },
   {
     "id": "bc-3443",
@@ -33961,7 +39304,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3443.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1870_o_1bblvlv6v13bm1u7v19k2k0u1e1o28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_930/"
+    "sourceJp": "https://bandai-hobby.net/item/01_930/",
+    "mech": "须佐之男",
+    "mechId": "须佐之男",
+    "aliases": []
   },
   {
     "id": "bc-3333",
@@ -33986,7 +39332,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3333.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2613_o_1eb32f01b10p11g0ik0d1rh71aum23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1704/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1704/",
+    "mech": "Hi-ν高达",
+    "mechId": "hi-ν高达",
+    "aliases": [
+      "Hi-Nu Gundam",
+      "海牛",
+      "Hi牛",
+      "Hi-Nu"
+    ]
   },
   {
     "id": "bc-3476",
@@ -34011,7 +39365,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3476.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2614_o_1fu90ll7b1n7aj04si0jvq1mpq23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1705/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1705/",
+    "mech": "G武装战机 真实风格配色",
+    "mechId": "g武装战机真实风格配色",
+    "aliases": []
   },
   {
     "id": "bc-3440",
@@ -34036,7 +39393,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3440.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_3660_s_b69kgwns66s2whampz7rfpydhe8u.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_926/"
+    "sourceJp": "https://bandai-hobby.net/item/01_926/",
+    "mech": "权天使高达",
+    "mechId": "权天使高达",
+    "aliases": []
   },
   {
     "id": "bc-3342",
@@ -34061,7 +39421,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3342.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2610_o_1e896umj114i9bj6l181ikm1o3p23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1701/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1701/",
+    "mech": "MS-07B 老虎",
+    "mechId": "ms-07b老虎",
+    "aliases": [
+      "MS-07B"
+    ]
   },
   {
     "id": "bc-3361",
@@ -34069,7 +39434,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed-freedom",
     "scale": "1/100",
     "released": "2009-04",
     "priceJpy": 5390,
@@ -34086,7 +39451,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3361.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260123/9aa40e34c4cc343b6177be839dbbeba7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "巨剑型脉冲高达",
+    "mechId": "巨剑型脉冲高达",
+    "aliases": [
+      "Impulse Gundam (Giant Sword)",
+      "巨剑脉冲",
+      "脉冲高达巨剑型"
+    ]
   },
   {
     "id": "bc-3439",
@@ -34111,7 +39483,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3439.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1861_o_1bblusmmfpad145o1vjcm2ptg628.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_921/"
+    "sourceJp": "https://bandai-hobby.net/item/01_921/",
+    "mech": "天使长高达",
+    "mechId": "天使长高达",
+    "aliases": []
   },
   {
     "id": "bc-3452",
@@ -34136,7 +39511,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3452.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_2748_s_lrkuobkynylxde2whksolo1wdk5q.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1810/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1810/",
+    "mech": "基拉·多加",
+    "mechId": "基拉·多加",
+    "aliases": [
+      "Jesta",
+      "基拉多加"
+    ]
   },
   {
     "id": "bc-3475",
@@ -34161,7 +39542,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3475.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2600_o_1f67fpthd1a9ernk1r4k1vv1c7l23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1692/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1692/",
+    "mech": "Ｇ战机",
+    "mechId": "g战机",
+    "aliases": []
   },
   {
     "id": "bc-3065",
@@ -34186,7 +39570,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3065.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_2747_s_iapbalk74zbwb9xaiyghpbmkaf81.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1809/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1809/",
+    "mech": "基拉·德卡",
+    "mechId": "基拉·德卡",
+    "aliases": []
   },
   {
     "id": "bc-3528",
@@ -34211,7 +39598,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3528.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260722/638e6e381b06042c2c499e96ffb582c6.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MS-06R-1A 松永真专用扎古",
+    "mechId": "ms-06r-1a松永真专用扎古",
+    "aliases": [
+      "MS-06R"
+    ]
   },
   {
     "id": "mg-infinite-justice",
@@ -34240,7 +39632,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-infinite-justice.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2595_o_1esi6gfoaot41anbung1qlv14ku28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1688/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1688/",
+    "mech": "无限正义高达",
+    "mechId": "无限正义高达",
+    "aliases": []
   },
   {
     "id": "bc-3322",
@@ -34265,7 +39660,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3322.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1846_o_1bblt6jqr12hp11pf1ns9shdjdg28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_904/"
+    "sourceJp": "https://bandai-hobby.net/item/01_904/",
+    "mech": "00高达",
+    "mechId": "00高达",
+    "aliases": []
   },
   {
     "id": "bc-3526",
@@ -34290,7 +39688,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3526.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260722/f1810f8bba83e8dc72de872883eff777.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MS-06R-2 强尼·莱汀专用扎古",
+    "mechId": "ms-06r-2强尼·莱汀专用扎古",
+    "aliases": [
+      "MS-06R"
+    ]
   },
   {
     "id": "bc-3328",
@@ -34315,7 +39718,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3328.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2593_o_1eb32a12bu3ohu01id010ki11no23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1686/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1686/",
+    "mech": "京宝梵",
+    "mechId": "京宝梵",
+    "aliases": []
   },
   {
     "id": "bc-3471",
@@ -34340,7 +39746,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3471.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2376_o_1esi690vu3kb14f71jrt2kjch23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1453/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1453/",
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "hguc-sazabi",
@@ -34369,7 +39785,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hguc-sazabi.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_2590_s_bu7p74goegdra1smf6dcge0rjpvc.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1683/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1683/",
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "Zaku II",
+      "扎古II",
+      "沙扎比",
+      "MS-06S"
+    ]
   },
   {
     "id": "bc-3068",
@@ -34394,7 +39818,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3068.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250612/2c2473f7095db4c03a10d316991bcf7e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MS-06Fz 扎古II改",
+    "mechId": "ms-06fz扎古ii改",
+    "aliases": [
+      "MS-06F"
+    ]
   },
   {
     "id": "bc-3107",
@@ -34419,7 +39848,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3107.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2588_o_1ddkuul9i12kk10c81q3782i1iih23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1681/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1681/",
+    "mech": "强攻型脉冲高达",
+    "mechId": "强攻型脉冲高达",
+    "aliases": []
   },
   {
     "id": "bc-3535",
@@ -34427,7 +39859,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/100",
     "released": "2008-04",
     "priceJpy": 4950,
@@ -34444,7 +39876,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3535.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260818/a66953aceaf5109f56aa8e7e890be331.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "量产型格鲁古古",
+    "mechId": "量产型格鲁古古",
+    "aliases": []
   },
   {
     "id": "hguc-nu",
@@ -34473,7 +39908,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hguc-nu.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_2582_s_nn4btkr1f5wbw7usdcncywmpe1hr.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1675/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1675/",
+    "mech": "RX-93 ν高达",
+    "mechId": "rx-93ν高达",
+    "aliases": [
+      "RX-93"
+    ]
   },
   {
     "id": "bc-3530",
@@ -34498,7 +39938,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3530.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260722/45ff6a75b53472901020b4476e32b28e.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "扎古布雷型",
+    "mechId": "扎古布雷型",
+    "aliases": []
   },
   {
     "id": "bc-3438",
@@ -34523,7 +39966,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3438.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1833_o_1bblrc0st1i701ikea1qs74uvf28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_891/"
+    "sourceJp": "https://bandai-hobby.net/item/01_891/",
+    "mech": "座天使高达一型",
+    "mechId": "座天使高达一型",
+    "aliases": []
   },
   {
     "id": "hguc-crossbone",
@@ -34552,7 +39998,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hguc-crossbone.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_2746_s_fkot4m6sr50vej6w8q9ppodlath5.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1808/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1808/",
+    "mech": "灵格斯",
+    "mechId": "灵格斯",
+    "aliases": [
+      "X-1"
+    ]
   },
   {
     "id": "bc-3437",
@@ -34577,7 +40028,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3437.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1831_o_1bblr64hr1htg1gp81muqc1q1rbb28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_889/"
+    "sourceJp": "https://bandai-hobby.net/item/01_889/",
+    "mech": "格拉汉姆专用联合旗帜式特装型",
+    "mechId": "格拉汉姆专用联合旗帜式特装型",
+    "aliases": []
   },
   {
     "id": "bc-3435",
@@ -34602,7 +40056,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3435.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_722_o_1bi3jqs2o13l6foc7si59213q923.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5655/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5655/",
+    "mech": "力天使高达",
+    "mechId": "力天使高达",
+    "aliases": [
+      "Virtue Gundam",
+      "Virtue",
+      "力天使"
+    ]
   },
   {
     "id": "bc-3436",
@@ -34627,7 +40088,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3436.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_723_o_1bblq1t013ho1tik1miel6q9b828.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5656/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5656/",
+    "mech": "主天使高达",
+    "mechId": "主天使高达",
+    "aliases": [
+      "Archangel Gundam",
+      "主天使",
+      "Archangel"
+    ]
   },
   {
     "id": "bc-3087",
@@ -34652,7 +40120,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3087.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250619/40e43f3d7843fbfafafafaedd325f52d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "乍得·多加",
+    "mechId": "乍得·多加",
+    "aliases": [
+      "Jesta",
+      "贾斯塔",
+      "渣爹"
+    ]
   },
   {
     "id": "bc-3008",
@@ -34677,7 +40152,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3008.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_720_o_1bblq9q7f1ff31333ti0gfnlsg28.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5654/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5654/",
+    "mech": "能天使高达",
+    "mechId": "能天使高达",
+    "aliases": [
+      "Geymalk",
+      "能天使"
+    ]
   },
   {
     "id": "bc-3304",
@@ -34702,7 +40183,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3304.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260109/c3072ef5868f1ac7bdcf958a25c60947.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "乍得·多加",
+    "mechId": "乍得·多加",
+    "aliases": [
+      "Jesta",
+      "贾斯塔",
+      "渣爹"
+    ]
   },
   {
     "id": "mg-destiny",
@@ -34731,7 +40219,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-destiny.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/eEH0s0g2y32kTRhu/wP6mwqy6DcfJs92y.jpg?Expires=1792509302&Key-Pair-Id=K7AVJM1114TH7&Signature=SuZTONUcQjiKtDO4YRobJMKQr5SGpnEDg8qn01HcjT0YD9yRiJp0Lbh3MFRdNvak2R8zd-7YkBu5-bvrnZ1avrloy0SJrptZvAEci15bpo31FLvcvwCaUFqfJCg0PJDFaprfYhja47NV14I3Jco9DHZ05T1xBVr4TQcHUNnOGFFFLb-28FLSRVaVZEK-zD~jX84CPwqk2cKOhQehldF1JwehLgc1fsstoxYkafg3AgIZoUrYob0ptPhoRkoBWDBAB3WYin46E9NlXPPB379zE2fYF6JvhPx2ETe5FPq8fWfCQuw0-eUc9feRJDir6Ga-nCBg0KMPDcreaiGIVbDc4Q__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1667/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1667/",
+    "mech": "命运高达",
+    "mechId": "命运高达",
+    "aliases": [
+      "Destiny Gundam",
+      "Destiny"
+    ]
   },
   {
     "id": "bc-3353",
@@ -34756,7 +40250,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3353.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260123/1403e59cd3e0a341bdd276707250b282.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "WD-M01 Turn-A高达",
+    "mechId": "wd-m01turn-a高达",
+    "aliases": [
+      "M01"
+    ]
   },
   {
     "id": "bc-3078",
@@ -34781,7 +40280,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3078.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/2rybsIriHOWsxrgn/FTtbUxy1x7LZxG6f.jpg?Expires=1792509760&Key-Pair-Id=K7AVJM1114TH7&Signature=VQH~szEXjoaCBvLhPulUq0S5~5qnIZuUZn~KysjLcei79O3llzp0C9C4lu0PRA3nXLtuE60SawJHTydVahFGSs~vM8VJl43KbgAqucDkLNowh6-Jn-cKqD-TsP1iXKpsz5l6i6u0tK4~63l85HBDGmZfeHmLmWkcThCWnWqs2aYeccVZJWZ1e4i29uOCfJKWLBjx2Lt3kCM1fWVm2yELQLGhRUC8uKWhjdhnR-wEYRv74WEydbvTz3czQaHeDX2br5vBgBQwT7Qr3zAG8QYxlR9Abfouyc-N6j~0k7~uR8d2Y5pbiwvYpfuGQP9a9z79E4DfyUucTFjh216iIWatMQ__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1658/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1658/",
+    "mech": "MSM-10 双面魔蟹",
+    "mechId": "msm-10双面魔蟹",
+    "aliases": [
+      "MSM-10"
+    ]
   },
   {
     "id": "bc-3470",
@@ -34806,7 +40310,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3470.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2568_o_1fgj5b79d192r1mnb17ubpo0obu23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1659/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1659/",
+    "mech": "夏亚专用格鲁古古",
+    "mechId": "夏亚专用格鲁古古",
+    "aliases": []
   },
   {
     "id": "bc-3340",
@@ -34831,7 +40338,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3340.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2560_o_1e896nmul1b4pgiff55195v162n23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1651/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1651/",
+    "mech": "MS-06S 夏亚专用扎古",
+    "mechId": "ms-06s夏亚专用扎古",
+    "aliases": [
+      "MS-06S"
+    ]
   },
   {
     "id": "bc-3327",
@@ -34856,7 +40368,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3327.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2559_o_1e7n3t0qjvnamdf169ib9b86s23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1649/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1649/",
+    "mech": "龟霸",
+    "mechId": "龟霸",
+    "aliases": []
   },
   {
     "id": "bc-3469",
@@ -34881,7 +40396,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3469.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2556_o_1fgj0rk2pd3okm0n221tnccnr23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1646/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1646/",
+    "mech": "MS-06J 量产型扎古",
+    "mechId": "ms-06j量产型扎古",
+    "aliases": [
+      "MS-06J"
+    ]
   },
   {
     "id": "bc-3091",
@@ -34906,7 +40426,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3091.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2553_o_1ebdg2so3l971k87ugf69dic623.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1644/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1644/",
+    "mech": "量产型格鲁古古",
+    "mechId": "量产型格鲁古古",
+    "aliases": []
   },
   {
     "id": "bc-3468",
@@ -34931,7 +40454,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3468.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260324/99f3f901d1c2c45dfbead8503b6f4ec3.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "海盗高达X1全装备型",
+    "mechId": "海盗高达x1全装备型",
+    "aliases": []
   },
   {
     "id": "bc-3071",
@@ -34956,7 +40482,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3071.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250612/7ff739019644dcb6e4900db82477eaa2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆强袭型",
+    "mechId": "吉姆强袭型",
+    "aliases": []
   },
   {
     "id": "mg-strike-freedom",
@@ -34985,7 +40514,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-strike-freedom.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_705_o_1ej9oo4p996v7r1gg170d1ems23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5643/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5643/",
+    "mech": "强袭自由高达",
+    "mechId": "强袭自由高达",
+    "aliases": [
+      "Strike Freedom Gundam",
+      "强袭自由",
+      "SF",
+      "Strike Freedom"
+    ]
   },
   {
     "id": "bc-3359",
@@ -35010,7 +40547,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3359.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_704_o_1ej9orrjm1cv21qn42013om10q423.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5642/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5642/",
+    "mech": "强袭自由高达 全炮门爆发模式",
+    "mechId": "强袭自由高达全炮门爆发模式",
+    "aliases": []
   },
   {
     "id": "bc-3434",
@@ -35035,7 +40575,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3434.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260320/27c23fcf3c0196bfcf01424a9ff96a20.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "观星者高达",
+    "mechId": "观星者高达",
+    "aliases": []
   },
   {
     "id": "bc-3351",
@@ -35060,7 +40603,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3351.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260123/e18db771eeb48e25c58013b4c1af32b5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "海盗高达X-1",
+    "mechId": "海盗高达x-1",
+    "aliases": [
+      "X-1"
+    ]
   },
   {
     "id": "bc-3451",
@@ -35085,7 +40633,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3451.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260323/eddf4ce7639363d854e91846e6fe2228.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "扎古I 黑色三连星式样",
+    "mechId": "扎古i黑色三连星式样",
+    "aliases": []
   },
   {
     "id": "bc-3450",
@@ -35110,7 +40661,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3450.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260323/39ad47138c47fe2e1607cc0d5e53e3a1.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达GP02A 酸浆果",
+    "mechId": "高达gp02a酸浆果",
+    "aliases": [
+      "GP02A"
+    ]
   },
   {
     "id": "bc-3079",
@@ -35135,7 +40691,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3079.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250619/02386ed21efe30b36b0fc86a240191de.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "兹达",
+    "mechId": "兹达",
+    "aliases": []
   },
   {
     "id": "bc-3433",
@@ -35160,7 +40719,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3433.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260320/f0ed2b1b8eb9f74ea1b6e73cf430bb05.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "漆黑强袭高达",
+    "mechId": "漆黑强袭高达",
+    "aliases": []
   },
   {
     "id": "bc-3099",
@@ -35185,7 +40747,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3099.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_643_o_1f089nl94j1p7un1btl3pk1j6p23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5597/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5597/",
+    "mech": "YMS-15 强人",
+    "mechId": "yms-15强人",
+    "aliases": [
+      "YMS-15"
+    ]
   },
   {
     "id": "bc-3061",
@@ -35210,7 +40777,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3061.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_633_o_1e7n3n8ug149kdon1ahqbm09pk23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5499/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5499/",
+    "mech": "加萨C 哈曼专用机",
+    "mechId": "加萨c哈曼专用机",
+    "aliases": []
   },
   {
     "id": "mg-rem",
@@ -35239,7 +40809,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-rem.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/FrFuR72l9kxJv8bI/YNKmgwxk1N1JhGVY.jpg?Expires=1792509278&Key-Pair-Id=K7AVJM1114TH7&Signature=bt1PPvpHYZIbu7UZyeBxpC-B1zKXZhY8qRdGNDIvolvVdOtQRId-WHSyIyKrb-UA39c8rx5q7fUKFAX~MRILWFjFwY2Qz99KE0YaOL8r6QX-q-vBaIafXXXlV~JFMAAaXRv4KPEN5PR1MYgMXTH3CUDaKdVEWhTojdNkDPbL0O-ExiYc5KMOYio9WJzF5N0jsN1LN1UdvM5yPSnLqTm7KC8tX0j0O3EgfrGmsqHvlktTrQCIVPVUaH3lfTrThJpj8DQBVzGGj7B0EccMTz6p1acJp2-cVIPgWlWhVwpgRZIj4uoji~S1n4gapaUElaNZvVY0m-e0zYEJ6lHi4EeT5A__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5318/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5318/",
+    "mech": "雷姆",
+    "mechId": "雷姆",
+    "aliases": [
+      "RGM-89"
+    ]
   },
   {
     "id": "bc-3326",
@@ -35264,7 +40839,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3326.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_611_o_1e7n3e5f6mf8131l1liu6mn1lv223.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5268/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5268/",
+    "mech": "大魔",
+    "mechId": "大魔",
+    "aliases": []
   },
   {
     "id": "mg-mk2-ver2-0-aigu",
@@ -35293,7 +40871,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-mk2-ver2-0-aigu.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/FrFuR72l9kxJv8bI/YNKmgwxk1N1JhGVY.jpg?Expires=1792509278&Key-Pair-Id=K7AVJM1114TH7&Signature=bt1PPvpHYZIbu7UZyeBxpC-B1zKXZhY8qRdGNDIvolvVdOtQRId-WHSyIyKrb-UA39c8rx5q7fUKFAX~MRILWFjFwY2Qz99KE0YaOL8r6QX-q-vBaIafXXXlV~JFMAAaXRv4KPEN5PR1MYgMXTH3CUDaKdVEWhTojdNkDPbL0O-ExiYc5KMOYio9WJzF5N0jsN1LN1UdvM5yPSnLqTm7KC8tX0j0O3EgfrGmsqHvlktTrQCIVPVUaH3lfTrThJpj8DQBVzGGj7B0EccMTz6p1acJp2-cVIPgWlWhVwpgRZIj4uoji~S1n4gapaUElaNZvVY0m-e0zYEJ6lHi4EeT5A__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_5064/"
+    "sourceJp": "https://bandai-hobby.net/item/01_5064/",
+    "mech": "高达Mk-Ⅱ",
+    "mechId": "高达mk-ii",
+    "aliases": [
+      "Gundam Mk-II",
+      "Mk2",
+      "MK-II",
+      "高达2号机"
+    ]
   },
   {
     "id": "bc-3015",
@@ -35318,7 +40904,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3015.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250401/b4532ce851da594ce229491f85ac6b2e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MSM-04 龟霸",
+    "mechId": "msm-04龟霸",
+    "aliases": [
+      "MSM-04"
+    ]
   },
   {
     "id": "bc-3084",
@@ -35343,7 +40934,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3084.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250619/9f6c5dba173d34cbc9c4ae97fe64183a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高扎古 联邦军配色",
+    "mechId": "高扎古联邦军配色",
+    "aliases": []
   },
   {
     "id": "bc-3060",
@@ -35368,7 +40962,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3060.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_558_o_1e1go4vktj6ebnvko51tb31r1i23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4701/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4701/",
+    "mech": "亚希玛",
+    "mechId": "亚希玛",
+    "aliases": []
   },
   {
     "id": "bc-3338",
@@ -35376,7 +40973,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/100",
     "released": "2005-05",
     "priceJpy": 3300,
@@ -35393,7 +40990,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3338.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260123/31a5a5d916df8dff4f3ae66e257e7166.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "铁球",
+    "mechId": "铁球",
+    "aliases": [
+      "Ball"
+    ]
   },
   {
     "id": "bc-3086",
@@ -35418,7 +41020,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3086.webp",
     "imageUrl": "https://bandai-hobby.net/images/154_516_s_75qajwel9pzrwgnirqfnjgsxjm1a.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4252/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4252/",
+    "mech": "玛拉塞",
+    "mechId": "玛拉塞",
+    "aliases": []
   },
   {
     "id": "bc-3474",
@@ -35443,7 +41048,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3474.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_509_o_1fu91h32f19h2n601i2j1l5ul9v23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4177/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4177/",
+    "mech": "里克迪亚斯",
+    "mechId": "里克迪亚斯",
+    "aliases": []
   },
   {
     "id": "bc-3337",
@@ -35468,7 +41076,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3337.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_508_o_1e89611ik1dupa3q1l84p6q1mjm23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4166/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4166/",
+    "mech": "铁球",
+    "mechId": "铁球",
+    "aliases": [
+      "Ball"
+    ]
   },
   {
     "id": "bc-3070",
@@ -35493,7 +41106,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3070.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_498_o_1ddsu2rh51bo31cjgn9685s1qqo23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_4061/"
+    "sourceJp": "https://bandai-hobby.net/item/01_4061/",
+    "mech": "吉姆指挥型",
+    "mechId": "吉姆指挥型",
+    "aliases": []
   },
   {
     "id": "bc-3093",
@@ -35501,7 +41117,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "w",
     "scale": "1/100",
     "released": "2004-10",
     "priceJpy": 4620,
@@ -35518,7 +41134,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3093.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250619/cb582635c21a4a2cd74d0ddd0e95c50b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞翼高达零式",
+    "mechId": "飞翼高达零式",
+    "aliases": [
+      "Wing Gundam Zero",
+      "飞翼零式",
+      "Wing Zero"
+    ]
   },
   {
     "id": "bc-3346",
@@ -35543,7 +41166,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3346.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_473_o_1f089k2umps5qe515tg2fi1r2823.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3790/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3790/",
+    "mech": "高扎古",
+    "mechId": "高扎古",
+    "aliases": []
   },
   {
     "id": "bc-3063",
@@ -35551,7 +41177,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "0080",
     "scale": "1/144",
     "released": "2004-06",
     "priceJpy": 1980,
@@ -35568,7 +41194,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3063.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250612/dc35f544763b2f6e78fdb8f93f0a1163.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达NT-1",
+    "mechId": "高达nt-1",
+    "aliases": [
+      "NT-1"
+    ]
   },
   {
     "id": "bc-3312",
@@ -35593,7 +41224,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3312.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_456_o_1f1u8711fcir17chjg41okc1t2t23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3615/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3615/",
+    "mech": "完美吉翁号",
+    "mechId": "完美吉翁号",
+    "aliases": []
   },
   {
     "id": "bc-3069",
@@ -35618,7 +41252,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3069.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_428_o_1ddstv54h5jl1r2brka1pk31vh223.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3335/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3335/",
+    "mech": "吉姆指挥型",
+    "mechId": "吉姆指挥型",
+    "aliases": []
   },
   {
     "id": "mg-rick-dias",
@@ -35647,7 +41284,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-rick-dias.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/FrFuR72l9kxJv8bI/YNKmgwxk1N1JhGVY.jpg?Expires=1792509585&Key-Pair-Id=K7AVJM1114TH7&Signature=eVk-kU~bb91zVixlPKD0espLkBvcyNhfhl0BTPPom8WxMk6LJOFcDeuXiSS0GK7zkuljfCK2vqDKRyeLfFr-Rb~o7F5~U4IsELgKgzvRZm4CQYBiDA1NEKVjF-QGLVhPjyn66hMZopMa6y7lhJ~jsVREhVgOGI8iFpVFvlMNJ9GpsJv4ETQqAc6K4HSxRQXP9DvuaG2J~KN2zaIzZz0rOTxniCpRR9lWM00GiaSl2LCpUBwIoLOXr7CB032uynf41BOIIrIT2LQTRzUvAJX7DzvR9qliIJm-ZxbV5d60STKJQaH0RtW7mYmryTXziOLHBMmAb4AnZzU09rRMl04Dcg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3279/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3279/",
+    "mech": "里克·迪亚斯",
+    "mechId": "里克·迪亚斯",
+    "aliases": []
   },
   {
     "id": "bc-3066",
@@ -35672,7 +41312,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3066.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_418_o_1ddstsrpompqb5f1lu71mei1n9s23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3235/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3235/",
+    "mech": "格鲁古古J",
+    "mechId": "格鲁古古j",
+    "aliases": []
   },
   {
     "id": "mg-wing-ver-ka",
@@ -35701,7 +41344,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-wing-ver-ka.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260123/932413702fb236eaee705e6b3a8a1e21.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞翼高达",
+    "mechId": "飞翼高达",
+    "aliases": [
+      "Wing Gundam",
+      "飞翼"
+    ]
   },
   {
     "id": "bc-3062",
@@ -35726,7 +41375,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3062.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/tDOyVZkDuOAiZVKJ/w3ysDLzh7ZP9O8RH.jpg?Expires=1792509598&Key-Pair-Id=K7AVJM1114TH7&Signature=Bkgp8wzJj9sSdVrnTMrJL2edz-lIZ3AN6pqB019C5x5I4jKiPa-8PhAJ-F1rfpxsTNB3OJNaebah0VKIauQJQtbArhHZ5hxGMQyexwM9bN7ocz43TKZ8l13GVl8c9BrQx3RwY9yS~qVP7bBtd4T1J3Mfn6-coTjR6arJ-GgRAKURQQ5CISt9cdWN0Kg2e6HfBmTxiGfCMAmLSpl9DiYxYaShU2G3FWniSC2GGEFxQqEuLyy2mbrraxfX5cYflKa0c2Ui8zdOTusZ2WoU1hi1Ygf96hG6NxalgoTYS7~ICMWR4Ht10WvtdRAC8DE7mk~-VyOJLE5ieJkFaM48RavTDg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3081/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3081/",
+    "mech": "钢加农量产型",
+    "mechId": "钢加农量产型",
+    "aliases": []
   },
   {
     "id": "bc-3311",
@@ -35751,7 +41403,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3311.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_410_o_1e895nnpo1mkg1tvpiineoi93223.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3147/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3147/",
+    "mech": "卡碧尼Mk-II",
+    "mechId": "卡碧尼mk-ii",
+    "aliases": []
   },
   {
     "id": "bc-3089",
@@ -35776,7 +41431,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3089.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_397_o_1h07fdqobut11gaj17ot1nomq0m23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_3007/"
+    "sourceJp": "https://bandai-hobby.net/item/01_3007/",
+    "mech": "力克･大魔Ⅱ",
+    "mechId": "力克・大魔ii",
+    "aliases": []
   },
   {
     "id": "mg-perfect-gundam",
@@ -35805,7 +41463,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-perfect-gundam.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_394_o_1f1u8aofrpugl3hel7litrlt23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2976/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2976/",
+    "mech": "完美高达",
+    "mechId": "完美高达",
+    "aliases": []
   },
   {
     "id": "bc-3330",
@@ -35830,7 +41491,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3330.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_385_o_1fv7nh6hrmif1mnq1u47puc1roe23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2879/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2879/",
+    "mech": "加布兰",
+    "mechId": "加布兰",
+    "aliases": []
   },
   {
     "id": "bc-3343",
@@ -35855,7 +41519,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3343.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/2rybsIriHOWsxrgn/FTtbUxy1x7LZxG6f.jpg?Expires=1792509425&Key-Pair-Id=K7AVJM1114TH7&Signature=P9UlPuo2KMEgEhyHEyyEMEWkXEklGzuTtFKMcq7Mlbv4szz4VdBtK2boFPD2oZs~KmEiDVYv2reAgGDsN7lnID62E-HbdaSuk0BO~YkaN-r2KyMk8OEcME3UjJt0dzd6lnhYfnAzHxNMTCFO4BqmU3ldXaDS2qmnVddlTMyLjMhmT9r2upnfT5M8MWmpNLR5bcGYHDyW2-B7z0SDkP3cAajF1Ldp-sz1b~yeWCmt3Q8TwJC~4GLBagBOrAGmaj6y3Pnrz~9BILrK63~H6O5LGaBRQxFyyKD3~zor7sE3jinfQWqhaWQXBIvqWxvZcrZ3OCAYlaytm6DKEOdXM8WFug__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2901/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2901/",
+    "mech": "夏亚专用魔蟹",
+    "mechId": "夏亚专用魔蟹",
+    "aliases": []
   },
   {
     "id": "hguc-zaku-mass",
@@ -35884,7 +41551,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hguc-zaku-mass.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_372_o_1e7n2rgs210f87apaplco0pac23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2739/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2739/",
+    "mech": "MS-06F 量产型扎古",
+    "mechId": "ms-06f量产型扎古",
+    "aliases": [
+      "MS-06F"
+    ]
   },
   {
     "id": "bc-3073",
@@ -35909,7 +41581,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3073.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2545_o_1ddsti5gq1rg8eh91is7getaa923.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1635/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1635/",
+    "mech": "吉姆寒冷地式样",
+    "mechId": "吉姆寒冷地式样",
+    "aliases": []
   },
   {
     "id": "bc-3466",
@@ -35934,7 +41609,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3466.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260324/b084c6cfea6e0881043027fc63d3311d.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-4 高达4号机",
+    "mechId": "rx-78-4高达4号机",
+    "aliases": [
+      "RX-78-4"
+    ]
   },
   {
     "id": "bc-3082",
@@ -35959,7 +41639,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3082.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250619/e08ef200571a313c3977e067dfa7b308.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高战蟹",
+    "mechId": "高战蟹",
+    "aliases": []
   },
   {
     "id": "bc-3100",
@@ -35984,7 +41667,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3100.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250619/a2c6e04a3795bffee5ae64c852f2b732.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "战蟹",
+    "mechId": "战蟹",
+    "aliases": []
   },
   {
     "id": "mg-gelgoog",
@@ -36013,7 +41699,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-gelgoog.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_351_o_1fu8ujr0bukit6k1nuemi81t9f23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2597/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2597/",
+    "mech": "量产型魔蟹",
+    "mechId": "量产型魔蟹",
+    "aliases": []
   },
   {
     "id": "bc-3449",
@@ -36038,7 +41727,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3449.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_314_o_1e7n2o86j1uf1j0f1p78e5v18gc23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2204/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2204/",
+    "mech": "铁奥",
+    "mechId": "铁奥",
+    "aliases": []
   },
   {
     "id": "mg-rx78-2-ver-ka",
@@ -36067,7 +41759,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-rx78-2-ver-ka.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_316_o_1e7n61krhiblelvv3pfq6ce23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_2226/"
+    "sourceJp": "https://bandai-hobby.net/item/01_2226/",
+    "mech": "RX-78-2 元祖高达",
+    "mechId": "rx-78-2元祖高达",
+    "aliases": [
+      "RX-78-2"
+    ]
   },
   {
     "id": "bc-3077",
@@ -36092,7 +41789,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3077.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250619/60e1d8d887123584c523a5cada2db03b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "超级高达",
+    "mechId": "超级高达",
+    "aliases": []
   },
   {
     "id": "bc-3067",
@@ -36117,7 +41817,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3067.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250612/2c2473f7095db4c03a10d316991bcf7e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "Zaku II",
+      "扎古II",
+      "沙扎比",
+      "MS-06S"
+    ]
   },
   {
     "id": "hguc-zaku-char",
@@ -36146,7 +41854,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hguc-zaku-char.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_279_o_1f088r09a1cgg1fr3hct3tmab23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1865/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1865/",
+    "mech": "MS-06S 夏亚专用扎古II",
+    "mechId": "ms-06s夏亚专用扎古ii",
+    "aliases": [
+      "MS-06S"
+    ]
   },
   {
     "id": "mg-zillion",
@@ -36175,7 +41888,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-zillion.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/2rybsIriHOWsxrgn/FTtbUxy1x7LZxG6f.jpg?Expires=1792509482&Key-Pair-Id=K7AVJM1114TH7&Signature=aE0ZJYILsHjqdriiVOuwpbWn0ND4MLrBr6yx4BckGgTic-HGDRZXXj26p8qE0UIBp3SLWsWF3egMxsSfDkEKQApiZ6o-nlk0LmozKt0NkySXtMcWHSDjC-zQEEMTfkOJpWIIpY4t5okF0K8cArn2LyJ63i8P32j6YWCiNIGRZn7hfCcNwMQraty-EMDb7eGbHxOwheLPxa0Nr4xKp7IZbXhuGTX72Kb6-Wf2SOPXHHlIz7brcyyZ2UFBwxL9PYzG--ZN8joYVfh9kp1WLN-kHYrnznvQyP9N27e50YxlF5BMBDr~YLVdy3u6sGzmCYpY~j49vhFXgmj~F0~hrr4qZg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1877/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1877/",
+    "mech": "MS-06Z 吉翁号",
+    "mechId": "ms-06z吉翁号",
+    "aliases": [
+      "MS-06Z"
+    ]
   },
   {
     "id": "bc-3332",
@@ -36200,7 +41918,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3332.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_270_o_1fv7namqh1tui40pa25914i923.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1769/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1769/",
+    "mech": "龙飞量产型",
+    "mechId": "龙飞量产型",
+    "aliases": []
   },
   {
     "id": "mg-master-gundam",
@@ -36229,7 +41950,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-master-gundam.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_253_o_1dk3egar927p11nq947hbo1v9e23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1629/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1629/",
+    "mech": "尊者高达",
+    "mechId": "尊者高达",
+    "aliases": []
   },
   {
     "id": "mg-gundam-g",
@@ -36258,7 +41982,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-gundam-g.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_230_o_1dk3efebgfcd16ee11ou1g4317qg23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1385/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1385/",
+    "mech": "G高达",
+    "mechId": "g高达",
+    "aliases": []
   },
   {
     "id": "bc-3347",
@@ -36283,7 +42010,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3347.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_212_o_1fu8u204gdej1k8e1r2g10aqmg623.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1201/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1201/",
+    "mech": "AMX-004 卡碧尼",
+    "mechId": "amx-004卡碧尼",
+    "aliases": [
+      "AMX-004"
+    ]
   },
   {
     "id": "bc-3014",
@@ -36291,7 +42023,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/100",
     "released": "2001-07",
     "priceJpy": 3740,
@@ -36308,7 +42040,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3014.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250401/3de12bb8851478de247f27cec796fbeb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RGM-79 吉姆",
+    "mechId": "rgm-79吉姆",
+    "aliases": [
+      "RGM-79"
+    ]
   },
   {
     "id": "bc-3325",
@@ -36333,7 +42070,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3325.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_194_o_1e7n2iu4odih1h502701raf1m1q23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1014/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1014/",
+    "mech": "RGM-79 吉姆",
+    "mechId": "rgm-79吉姆",
+    "aliases": [
+      "RGM-79"
+    ]
   },
   {
     "id": "bc-3464",
@@ -36358,7 +42100,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3464.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260324/bed27a073f0a52844b311e97f7ffb9ed.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达GP03S",
+    "mechId": "高达gp03s",
+    "aliases": [
+      "GP03S"
+    ]
   },
   {
     "id": "bc-3011",
@@ -36366,7 +42113,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/144",
     "released": "2001-02",
     "priceJpy": 1100,
@@ -36383,7 +42130,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3011.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250401/67348a19fd9bdf4dcefdad55f00623ae.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MSM-07 魔蟹",
+    "mechId": "msm-07魔蟹",
+    "aliases": [
+      "MSM-07"
+    ]
   },
   {
     "id": "bc-3309",
@@ -36408,7 +42160,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3309.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260109/7b91d314ef35603e0d03709aa3eb76a2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MS-07B3 老虎特装型",
+    "mechId": "ms-07b3老虎特装型",
+    "aliases": [
+      "MS-07B"
+    ]
   },
   {
     "id": "bc-3345",
@@ -36433,7 +42190,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3345.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_185_o_1d7ec08p3msn1fuu7oeqp10vo23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_919/"
+    "sourceJp": "https://bandai-hobby.net/item/01_919/",
+    "mech": "MS-18E 京宝梵",
+    "mechId": "ms-18e京宝梵",
+    "aliases": [
+      "MS-18E"
+    ]
   },
   {
     "id": "hguc-gp01fb",
@@ -36462,7 +42224,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/hguc-gp01fb.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_181_o_1ej9h3k2iem4b2ptm76abca023.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_876/"
+    "sourceJp": "https://bandai-hobby.net/item/01_876/",
+    "mech": "高达 GP-01Fb",
+    "mechId": "高达gp-01fb",
+    "aliases": [
+      "GP-01F"
+    ]
   },
   {
     "id": "mg-rx79g-ez8",
@@ -36491,7 +42258,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-rx79g-ez8.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/03/lUihtDHsZuFbkbL1/kXMOhygmoI3TBb2W.jpeg?Expires=1792509446&Key-Pair-Id=K7AVJM1114TH7&Signature=BJqFSJ0HtcG4L5FeZeQnCV6g5MaYxqX7UAtA65GuOJ6LKaODHGphniaopPW~gEAySaATZA-pzcRNuJ0R4YlrvdxPSJNdfSmE~DYa9rUoXvhokM37M-bg5oDu2rNiejVLT3f3hjv2nOguqvhLV5t9lweiGUeZcUoZ6vW6QNuASn02dLcFbFuD75KI295tJB7~phjBMqonC5ykY7yfrdQl7OqFjQlC9EtXE0-ZZt1ldljFC5ajiyAnopcoWlZoXq3BFsCv4fUrQ6XbtL8EEAixGX-xUoI~YlHl-QGf1vEeYFcgCzwyzbqaOLuxR9g~z~87~Q88YCznwc0XiuNxq1JjLg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_750/"
+    "sourceJp": "https://bandai-hobby.net/item/01_750/",
+    "mech": "RX-79 高达Ez-8",
+    "mechId": "rx-79高达ez-8",
+    "aliases": [
+      "RX-79"
+    ]
   },
   {
     "id": "bc-3083",
@@ -36516,7 +42288,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3083.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/FrFuR72l9kxJv8bI/YNKmgwxk1N1JhGVY.jpg?Expires=1792509565&Key-Pair-Id=K7AVJM1114TH7&Signature=PNx6seqbAwuRbFhnuMZ1xZK0BeLk1vVBCndx379GgiJ1D6bDoPf6xDrBwycOANICWKd00DR7YqLSHWYMUTQUVfONmXw-5aqDfOQ4XBF4gzcYD5bnOB59zcoqMCl4ATTrWeIAtuo9kkal6HpoQsm6x28kET4Rpn9MDStfvHS~I9a~Mc3n-cN30aqk4rHFM6bnOoutlpAZDwWdioY2MKh5cnwzSVNVVitUId4mIK3tVWeY9jg1ENmnseakE6MugJdbCrfKcafe76PBk4VzXJ7FoKWmoVyjCICi7-Ddo4H-jCWZQ5iw99rGiuunVlKrUSM42YPHff92Os5fU6sM6z453Q__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_592/"
+    "sourceJp": "https://bandai-hobby.net/item/01_592/",
+    "mech": "高扎古",
+    "mechId": "高扎古",
+    "aliases": []
   },
   {
     "id": "bc-3064",
@@ -36541,7 +42316,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3064.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/YmSdaLNOoINyVWXG/AmU1NcQu1JTvbOuC.jpg?Expires=1792509484&Key-Pair-Id=K7AVJM1114TH7&Signature=BYKU6Raz3EeWQxur51VhwN-jalcbeIEmwBbw05aiuCoKLvzcAoMuGeISoJUDb6WT2UIA27asLwsKTxqbN~i~6EhmTAD1CiVJjF5KNUWkUvBqBL~x-mt6UD25kqu0fd1VxFJr-bdTv8JIXhn21wZcn3Y0YRF48X56KO5WRL5btC2wdSYtl52tHGDpYdMjgDLIeALGarx0FgSxovdRUwuBoTG383H9bMZfw8guiTB2ZFoGP-rBqkVqaVHFn8IrHuNpxaEwU9vw5K4Oar4wFRWPtN0rsLHOgHGo9rYR9Wi-QkTDaCtsi~MRtqOj01ZVD5vlXpnNd1ZpTgJLoUEQQh7oxw__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_561/"
+    "sourceJp": "https://bandai-hobby.net/item/01_561/",
+    "mech": "卡碧尼Mk-II",
+    "mechId": "卡碧尼mk-ii",
+    "aliases": []
   },
   {
     "id": "bc-3090",
@@ -36566,7 +42344,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3090.webp",
     "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/FrFuR72l9kxJv8bI/YNKmgwxk1N1JhGVY.jpg?Expires=1792509585&Key-Pair-Id=K7AVJM1114TH7&Signature=eVk-kU~bb91zVixlPKD0espLkBvcyNhfhl0BTPPom8WxMk6LJOFcDeuXiSS0GK7zkuljfCK2vqDKRyeLfFr-Rb~o7F5~U4IsELgKgzvRZm4CQYBiDA1NEKVjF-QGLVhPjyn66hMZopMa6y7lhJ~jsVREhVgOGI8iFpVFvlMNJ9GpsJv4ETQqAc6K4HSxRQXP9DvuaG2J~KN2zaIzZz0rOTxniCpRR9lWM00GiaSl2LCpUBwIoLOXr7CB032uynf41BOIIrIT2LQTRzUvAJX7DzvR9qliIJm-ZxbV5d60STKJQaH0RtW7mYmryTXziOLHBMmAb4AnZzU09rRMl04Dcg__",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_550/"
+    "sourceJp": "https://bandai-hobby.net/item/01_550/",
+    "mech": "里克·迪亚斯",
+    "mechId": "里克·迪亚斯",
+    "aliases": []
   },
   {
     "id": "fg-zaku-char",
@@ -36595,7 +42376,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/fg-zaku-char.webp",
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MS-06S 夏亚专用扎古",
+    "mechId": "ms-06s夏亚专用扎古",
+    "aliases": [
+      "MS-06S"
+    ]
   },
   {
     "id": "bc-3111",
@@ -36620,7 +42406,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3111.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250619/24b16eb016d47ad142d9a63b5442add3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-79 陆战型高达",
+    "mechId": "rx-79陆战型高达",
+    "aliases": [
+      "RX-79"
+    ]
   },
   {
     "id": "bc-3324",
@@ -36645,7 +42436,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3324.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2539_o_1e7n2a6111b2u77s1ce1cnk150e23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1628/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1628/",
+    "mech": "RX-75 钢坦克",
+    "mechId": "rx-75钢坦克",
+    "aliases": [
+      "RX-75"
+    ]
   },
   {
     "id": "bc-3534",
@@ -36670,7 +42466,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3534.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260818/2600b98fbd89aa69c3f0ebceca500457.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RGM-79N 吉姆特装型",
+    "mechId": "rgm-79n吉姆特装型",
+    "aliases": [
+      "RGM-79N"
+    ]
   },
   {
     "id": "fg-zaku-ii",
@@ -36699,7 +42500,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/fg-zaku-ii.webp",
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MS-06F 扎古II",
+    "mechId": "ms-06f扎古ii",
+    "aliases": [
+      "MS-06F"
+    ]
   },
   {
     "id": "bc-3010",
@@ -36724,7 +42530,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3010.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2534_o_1e7n2251g12iamue1s6e12f38v523.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1623/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1623/",
+    "mech": "MSM-07 魔蟹",
+    "mechId": "msm-07魔蟹",
+    "aliases": [
+      "MSM-07"
+    ]
   },
   {
     "id": "bc-3009",
@@ -36749,7 +42560,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3009.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2528_o_1fv7lumgh1d7jg0u13ruqa71clm23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1616/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1616/",
+    "mech": "AMX-001 扎古III改",
+    "mechId": "amx-001扎古iii改",
+    "aliases": [
+      "AMX-001"
+    ]
   },
   {
     "id": "fg-rx78-2",
@@ -36778,7 +42594,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/fg-rx78-2.webp",
     "imageUrl": null,
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "bc-3463",
@@ -36803,7 +42629,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3463.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260324/6c7b9573aac90256a18ea35b16ef34e4.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达GP02A",
+    "mechId": "高达gp02a",
+    "aliases": [
+      "GP02A"
+    ]
   },
   {
     "id": "bc-3462",
@@ -36828,7 +42659,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3462.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260324/3e5e62f599a3de4e5a3ed8f8fd68f929.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达GP01Fb",
+    "mechId": "高达gp01fb",
+    "aliases": [
+      "GP01F"
+    ]
   },
   {
     "id": "mg-rx78gp01",
@@ -36857,7 +42693,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-rx78gp01.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_2371_o_1f0898omm1c07r11bifb9j51d23.jpg",
     "taxRate": 10,
-    "sourceJp": "https://bandai-hobby.net/item/01_1448/"
+    "sourceJp": "https://bandai-hobby.net/item/01_1448/",
+    "mech": "RX-78GP01 高达 试作1号机",
+    "mechId": "rx-78gp01高达试作1号机",
+    "aliases": [
+      "RX-78G",
+      "P01"
+    ]
   },
   {
     "id": "bc-3344",
@@ -36882,7 +42724,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3344.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260123/7a9be6731a202cc8ac8729adb1ef5e6e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "格鲁古古加农",
+    "mechId": "格鲁古古加农",
+    "aliases": []
   },
   {
     "id": "bc-3341",
@@ -36907,7 +42752,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/bc-3341.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260123/2775f7993eb4069201178b162ad9c8f0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MS-06F",
+    "mechId": "ms-06f",
+    "aliases": [
+      "MS-06F"
+    ]
   },
   {
     "id": "mg-zaku-ii",
@@ -36936,7 +42786,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/mg-zaku-ii.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260123/fe7287e58785441890898846e04d1bc1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "MS-06S",
+      "Zaku II",
+      "扎古II",
+      "沙扎比"
+    ]
   },
   {
     "id": "pb-278",
@@ -36944,7 +42802,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "FM",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -36964,7 +42822,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-278.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250428/ce86b500055205f539cccef6744a960b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "推进型强夺高达",
+    "mechId": "推进型强夺高达",
+    "aliases": []
   },
   {
     "id": "pb-182",
@@ -36972,7 +42833,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "FM",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -36992,7 +42853,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-182.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240828/ce86b500055205f539cccef6744a960b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "推进型强夺高达",
+    "mechId": "推进型强夺高达",
+    "aliases": []
   },
   {
     "id": "pb-150",
@@ -37020,7 +42884,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-150.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240628/7e52d7e58bf00b2c05c8186d84bb3f64.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "94式Base Jabber",
+    "mechId": "94式basejabber",
+    "aliases": []
   },
   {
     "id": "pb-361",
@@ -37048,7 +42915,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-361.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251029/0b0b40360e945158a09121badce613c6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "奥津",
+    "mechId": "奥津",
+    "aliases": []
   },
   {
     "id": "pb-159",
@@ -37076,7 +42946,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-159.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240710/e13a46479cf5102fa662a4c7ab314847.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "拜叶特",
+    "mechId": "拜叶特",
+    "aliases": []
   },
   {
     "id": "pb-372",
@@ -37104,7 +42977,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-372.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251126/9c792980fa2a88ca75d7e7b115e67b3b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "布鲁曼 克里塞侵攻",
+    "mechId": "布鲁曼克里塞侵攻",
+    "aliases": []
   },
   {
     "id": "pb-442",
@@ -37132,7 +43008,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-442.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260424/e74fb190829fe67fbf83d4af3d8e25a9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "大魔热带型",
+    "mechId": "大魔热带型",
+    "aliases": []
   },
   {
     "id": "pb-130",
@@ -37160,7 +43039,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-130.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240521/b15d5a1563f4cc987f4a11bb88308309.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "大魔热带型",
+    "mechId": "大魔热带型",
+    "aliases": []
   },
   {
     "id": "pb-260",
@@ -37168,7 +43050,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "wfm",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -37188,7 +43070,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-260.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250408/81bb62b30b24fb987b24ac2ec884ad26.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "戴斯塔尔 Desultor",
+    "mechId": "戴斯塔尔desultor",
+    "aliases": []
   },
   {
     "id": "pb-221",
@@ -37196,7 +43081,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "wfm",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -37216,7 +43101,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-221.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241126/81bb62b30b24fb987b24ac2ec884ad26.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "戴斯塔尔 Desultor",
+    "mechId": "戴斯塔尔desultor",
+    "aliases": []
   },
   {
     "id": "pb-219",
@@ -37244,7 +43132,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-219.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241119/5ec95cc064da12c51eab43bed5fa0c0e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "德尔塔Zayin",
+    "mechId": "德尔塔zayin",
+    "aliases": []
   },
   {
     "id": "pb-263",
@@ -37272,7 +43163,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-263.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250410/a217b2080e2277a0dba7a9c8db1138dc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "梵・法尔西娅",
+    "mechId": "梵・法尔西娅",
+    "aliases": []
   },
   {
     "id": "pb-241",
@@ -37280,7 +43174,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "g-gundam",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -37300,7 +43194,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-241.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250228/7ebafc57b268f0c0a338ebf88b8e3e1f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞龙高达",
+    "mechId": "飞龙高达",
+    "aliases": [
+      "Dragon Gundam",
+      "飞龙",
+      "Dragon"
+    ]
   },
   {
     "id": "pb-177",
@@ -37308,7 +43209,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "g-gundam",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -37328,7 +43229,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-177.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240822/7ebafc57b268f0c0a338ebf88b8e3e1f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞龙高达",
+    "mechId": "飞龙高达",
+    "aliases": [
+      "Dragon Gundam",
+      "飞龙",
+      "Dragon"
+    ]
   },
   {
     "id": "pb-455",
@@ -37356,7 +43264,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-455.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260702/badc39a61ed1683ccf6d6170eac65039.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达 L.O.Booster",
+    "mechId": "高达l.o.booster",
+    "aliases": []
   },
   {
     "id": "pb-351",
@@ -37384,7 +43295,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-351.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251016/481b0a2c79ac6f3ff08225bd22e74449.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达6号机",
+    "mechId": "高达6号机",
+    "aliases": []
   },
   {
     "id": "pb-479",
@@ -37412,7 +43326,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-479.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20261014/930e16e96d9333ef3745056fe20d0e80.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达吉乌魔灵二",
+    "mechId": "高达吉乌魔灵二",
+    "aliases": []
   },
   {
     "id": "pb-337",
@@ -37440,7 +43357,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-337.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250930/07e6117f44d67be5f8a19e6bd636a5c5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达亚斯古利奥",
+    "mechId": "高达亚斯古利奥",
+    "aliases": []
   },
   {
     "id": "pb-380",
@@ -37468,7 +43388,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-380.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251223/e3ff7de9f8c17c38e5d2115dfa8e9d53.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达TR-1 伊卡洛斯装备",
+    "mechId": "高达tr-1伊卡洛斯装备",
+    "aliases": [
+      "TR-1"
+    ]
   },
   {
     "id": "pb-471",
@@ -37496,7 +43421,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-471.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260904/4746248768ac5860bdfa8ac7caf2d9db.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高机动试作型扎古",
+    "mechId": "高机动试作型扎古",
+    "aliases": []
   },
   {
     "id": "pb-456",
@@ -37524,7 +43452,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-456.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260702/e0875680dbd72af1b8212d5680316bd8.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "海德拉高达",
+    "mechId": "海德拉高达",
+    "aliases": []
   },
   {
     "id": "pb-255",
@@ -37552,7 +43483,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-255.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250331/ca8bb55605112759bb4c80b99051c8ce.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "黑色审判女神高达",
+    "mechId": "黑色审判女神高达",
+    "aliases": []
   },
   {
     "id": "pb-394",
@@ -37580,7 +43514,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-394.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260129/9fd7c6b8fae111d717e6b872201f9bee.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "红色高达用扩展配件包",
+    "mechId": "红色高达用扩展配件包",
+    "aliases": []
   },
   {
     "id": "pb-398",
@@ -37608,7 +43545,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-398.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260204/cd4650bec309a7e41a35d061840c96b1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "幻象高达",
+    "mechId": "幻象高达",
+    "aliases": []
   },
   {
     "id": "pb-336",
@@ -37636,7 +43576,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-336.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250930/22472cff670eb4dc9e2fc1f551508979.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "幻象高达",
+    "mechId": "幻象高达",
+    "aliases": []
   },
   {
     "id": "pb-312",
@@ -37664,7 +43607,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-312.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250819/4d2dc33bec8aab9efce8a33d58a5051c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "机甲战记龙骑 龙骑2号机",
+    "mechId": "机甲战记龙骑龙骑2号机",
+    "aliases": []
   },
   {
     "id": "pb-176",
@@ -37692,7 +43638,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-176.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240809/f2ea6570717b7ff7ae3285902a010c9d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "机甲战记龙骑兵",
+    "mechId": "机甲战记龙骑兵",
+    "aliases": []
   },
   {
     "id": "pb-369",
@@ -37720,7 +43669,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-369.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251125/4ecc4eb239778764856eebe426229932.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆斯巴达",
+    "mechId": "吉姆斯巴达",
+    "aliases": []
   },
   {
     "id": "pb-304",
@@ -37748,7 +43700,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-304.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250807/4ecc4eb239778764856eebe426229932.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆斯巴达",
+    "mechId": "吉姆斯巴达",
+    "aliases": []
   },
   {
     "id": "pb-153",
@@ -37756,7 +43711,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -37776,7 +43731,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-153.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240628/9348d457f7ef99d91f7a92529e6b1abd.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆夜巡者Ⅱ",
+    "mechId": "吉姆夜巡者ii",
+    "aliases": []
   },
   {
     "id": "pb-348",
@@ -37804,7 +43762,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-348.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251015/a301a99bd0592f9fef82008aa7e7c478.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "杰钢D型",
+    "mechId": "杰钢d型",
+    "aliases": []
   },
   {
     "id": "pb-262",
@@ -37812,7 +43773,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "gundam-age",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -37832,7 +43793,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-262.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250410/4792e7b413bbde5fa98a2bcbbb756579.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "杰诺亚斯O特装型",
+    "mechId": "杰诺亚斯o特装型",
+    "aliases": [
+      "Geymalk",
+      "Geymalk O-Type",
+      "杰诺亚斯"
+    ]
   },
   {
     "id": "pb-465",
@@ -37860,7 +43828,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-465.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260806/9659c529a4ce08dd4ecb7316df9a51d7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "杰斯塔(SHEZARR型 TEAM B",
+    "mechId": "杰斯塔shezarr型teamb",
+    "aliases": []
   },
   {
     "id": "pb-207",
@@ -37888,7 +43859,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-207.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241015/3b261dfab6f79ad68313203ae156b6d0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "惊异魔蟹",
+    "mechId": "惊异魔蟹",
+    "aliases": []
   },
   {
     "id": "pb-405",
@@ -37916,7 +43890,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-405.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260309/da001e8e6b865ea4e016207a77a6c88e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "空中霸王高达 爆裂型",
+    "mechId": "空中霸王高达爆裂型",
+    "aliases": []
   },
   {
     "id": "pb-472",
@@ -37924,7 +43901,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -37944,7 +43921,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-472.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260904/55c05388d5ff84c81d37358f67607203.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "老虎",
+    "mechId": "老虎",
+    "aliases": [
+      "Leo-R",
+      "老虎",
+      "Leo"
+    ]
   },
   {
     "id": "pb-249",
@@ -37972,7 +43956,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-249.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250317/167a23d3e840dc52d6cd4ade3b5dc4e7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "里奥-N",
+    "mechId": "里奥-n",
+    "aliases": [
+      "Leo-N",
+      "里奥N"
+    ]
   },
   {
     "id": "pb-251",
@@ -38000,7 +43990,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-251.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250317/11d81180bc49efb23d4f22a56ad614ca.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "里奥-R",
+    "mechId": "里奥-r",
+    "aliases": [
+      "Leo-R",
+      "里奥R"
+    ]
   },
   {
     "id": "pb-194",
@@ -38028,7 +44024,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-194.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240927/f0e2bb43568793f39e6c701d3f0c1e84.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "里奥-R",
+    "mechId": "里奥-r",
+    "aliases": [
+      "Leo-R",
+      "里奥R"
+    ]
   },
   {
     "id": "pb-250",
@@ -38056,7 +44058,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-250.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250317/90d4ba99789b8453f476db581771e9da.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "里奥-S",
+    "mechId": "里奥-s",
+    "aliases": []
   },
   {
     "id": "pb-160",
@@ -38064,7 +44069,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "w",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -38084,7 +44089,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-160.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240710/a2c7e2824c4c76bf689f40a24cbc8b31.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "里奥",
+    "mechId": "里奥",
+    "aliases": []
   },
   {
     "id": "pb-412",
@@ -38112,7 +44120,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-412.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260312/c7ebda80f374df85dea52e8f730aacd7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "里杰尔格 独角兽版",
+    "mechId": "里杰尔格独角兽版",
+    "aliases": []
   },
   {
     "id": "pb-359",
@@ -38140,7 +44151,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-359.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251024/5af451c2c138c23f16032bda54e14bf8.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "里杰尔格 REGELGU",
+    "mechId": "里杰尔格regelgu",
+    "aliases": []
   },
   {
     "id": "pb-452",
@@ -38148,7 +44162,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "zeta",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -38168,7 +44182,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-452.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260603/b5c1583782202bf7a08ea7bb7f579dfc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "里克迪亚斯",
+    "mechId": "里克迪亚斯",
+    "aliases": []
   },
   {
     "id": "pb-453",
@@ -38176,7 +44193,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "zeta",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -38196,7 +44213,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-453.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260603/0a6ea50cb63964d12bea0b26addc1f0d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "里克迪亚斯",
+    "mechId": "里克迪亚斯",
+    "aliases": []
   },
   {
     "id": "pb-480",
@@ -38204,7 +44224,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "iron-blooded",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -38224,7 +44244,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-480.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20261014/5fa6a5fcb0d2fa6a199ac10261cf4206.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "流星号",
+    "mechId": "流星号",
+    "aliases": []
   },
   {
     "id": "pb-181",
@@ -38252,7 +44275,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-181.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240827/6716f891878f0246cddf51cd5914473d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "流星装置",
+    "mechId": "流星装置",
+    "aliases": []
   },
   {
     "id": "pb-175",
@@ -38280,7 +44306,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-175.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240809/4b4264dd0b020dfeb4810616140b50b9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "龙骑3号机 Lifter3装备型",
+    "mechId": "龙骑3号机lifter3装备型",
+    "aliases": []
   },
   {
     "id": "pb-349",
@@ -38308,7 +44337,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-349.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251015/7e546232d37748b62dd01e7d18bf844f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "曼陀罗高达",
+    "mechId": "曼陀罗高达",
+    "aliases": []
   },
   {
     "id": "pb-315",
@@ -38336,7 +44368,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-315.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250822/7e546232d37748b62dd01e7d18bf844f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "曼陀罗高达",
+    "mechId": "曼陀罗高达",
+    "aliases": []
   },
   {
     "id": "pb-316",
@@ -38364,7 +44399,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-316.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250822/1e576a757d526d70cb5c4bde7e5e5bc9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "玫瑰高达",
+    "mechId": "玫瑰高达",
+    "aliases": []
   },
   {
     "id": "pb-397",
@@ -38392,7 +44430,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-397.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260204/55be60f0784d6bd4dda7a3aa4b9a4432.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "梅萨F02型",
+    "mechId": "梅萨f02型",
+    "aliases": [
+      "F02"
+    ]
   },
   {
     "id": "pb-317",
@@ -38420,7 +44463,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-317.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250822/b307da0e6d229dc206722f4f66099c46.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "美国巨星高达",
+    "mechId": "美国巨星高达",
+    "aliases": []
   },
   {
     "id": "pb-370",
@@ -38448,7 +44494,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-370.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251125/ce66b48938126a7a55ca1d9b80843990.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "涅槃高达",
+    "mechId": "涅槃高达",
+    "aliases": []
   },
   {
     "id": "pb-287",
@@ -38476,7 +44525,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-287.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250527/1ae3f4f664d0b3ead75f6dd76a7417a5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "齐利乌斯高达",
+    "mechId": "齐利乌斯高达",
+    "aliases": []
   },
   {
     "id": "pb-132",
@@ -38484,7 +44536,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed-freedom",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -38504,7 +44556,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-132.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240521/ebac8840b5232656ac2a1fe0f25e05bb.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强人奔流",
+    "mechId": "强人奔流",
+    "aliases": []
   },
   {
     "id": "pb-305",
@@ -38532,7 +44587,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-305.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250807/93f1cf18304467394c857bf0c1d896e0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "塞拉专用轻加农",
+    "mechId": "塞拉专用轻加农",
+    "aliases": []
   },
   {
     "id": "pb-230",
@@ -38540,7 +44598,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "gundam-mv",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -38560,7 +44618,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-230.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250207/7f9e90ef327851bd8bf342645654477f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "沙漠型扎古 粉红豹小队机",
+    "mechId": "沙漠型扎古粉红豹小队机",
+    "aliases": [
+      "Zaku Desert Type (Pink Panther)",
+      "粉红豹扎古",
+      "沙漠型扎古"
+    ]
   },
   {
     "id": "pb-265",
@@ -38588,7 +44653,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-265.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250418/fdfb30b10911a62ce2d3eb35f0d862bb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "十字神殿 海尔密涅",
+    "mechId": "十字神殿海尔密涅",
+    "aliases": []
   },
   {
     "id": "pb-231",
@@ -38596,7 +44664,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "w",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -38616,7 +44684,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-231.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250210/58d4517bea71fcd15d0dfe3978796f53.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "双头龙高达",
+    "mechId": "双头龙高达",
+    "aliases": [
+      "Double Dragon Gundam",
+      "双头龙",
+      "Double Dragon"
+    ]
   },
   {
     "id": "pb-157",
@@ -38624,7 +44699,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "w",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -38644,7 +44719,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-157.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240702/58d4517bea71fcd15d0dfe3978796f53.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "双头龙高达",
+    "mechId": "双头龙高达",
+    "aliases": [
+      "Double Dragon Gundam",
+      "双头龙",
+      "Double Dragon"
+    ]
   },
   {
     "id": "pb-195",
@@ -38672,7 +44754,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-195.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240927/772c8c153797cc9deaaa131864b0cf9c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "双子座高达01",
+    "mechId": "双子座高达01",
+    "aliases": []
   },
   {
     "id": "pb-469",
@@ -38700,7 +44785,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-469.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260902/61789d5aef622e2789d3fea07d6c7124.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "铁球K型",
+    "mechId": "铁球k型",
+    "aliases": []
   },
   {
     "id": "pb-279",
@@ -38728,7 +44816,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-279.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250508/782cf44a5a6a5b73f63a4792e1152d85.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "夏亚专用高机动型扎古II",
+    "mechId": "夏亚专用高机动型扎古ii",
+    "aliases": [
+      "Zaku II (Char Type)",
+      "夏亚扎古",
+      "沙扎比",
+      "Char's Zaku"
+    ]
   },
   {
     "id": "pb-229",
@@ -38756,7 +44852,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-229.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250207/782cf44a5a6a5b73f63a4792e1152d85.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "夏亚专用高机动型扎古II",
+    "mechId": "夏亚专用高机动型扎古ii",
+    "aliases": [
+      "Zaku II (Char Type)",
+      "夏亚扎古",
+      "沙扎比",
+      "Char's Zaku"
+    ]
   },
   {
     "id": "pb-449",
@@ -38784,7 +44888,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-449.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260520/8f3248daad9c4882af1687451862be1b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "新安州原型",
+    "mechId": "新安州原型",
+    "aliases": []
   },
   {
     "id": "pb-245",
@@ -38812,7 +44919,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-245.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250307/b842d5b156b1bb272f0b9553b1356112.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "伊弗利特夜战型",
+    "mechId": "伊弗利特夜战型",
+    "aliases": []
   },
   {
     "id": "pb-192",
@@ -38820,7 +44930,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "wfm",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -38840,7 +44950,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-192.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240920/6b458d5517c8988068c7664818baaabd.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异端审判者·火炬",
+    "mechId": "异端审判者·火炬",
+    "aliases": []
   },
   {
     "id": "pb-163",
@@ -38848,7 +44961,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "wfm",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -38868,7 +44981,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-163.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240711/d28d58c83e2d24b5370b5db19b02f420.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异端审判者·火炬",
+    "mechId": "异端审判者·火炬",
+    "aliases": []
   },
   {
     "id": "pb-225",
@@ -38896,7 +45012,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-225.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250117/4f5d047bdc8bb7f9f68863e96f045024.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "战斗机甲萨芬格尔 布拉卡利",
+    "mechId": "战斗机甲萨芬格尔布拉卡利",
+    "aliases": []
   },
   {
     "id": "pb-404",
@@ -38924,7 +45043,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-404.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260309/e534c4ff1ff47f7a0c54fbf2bf36525c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "战斗机甲萨芬格尔 杜兰型",
+    "mechId": "战斗机甲萨芬格尔杜兰型",
+    "aliases": []
   },
   {
     "id": "pb-356",
@@ -38952,7 +45074,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-356.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251023/374ef7e3f8ee98d299b010fbf81bb702.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "重战机",
+    "mechId": "重战机",
+    "aliases": []
   },
   {
     "id": "pb-433",
@@ -38980,7 +45105,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-433.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260414/03aefb6a0c56b5d8dcdd3515884c70b2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "重战机 D-SEERD",
+    "mechId": "重战机d-seerd",
+    "aliases": []
   },
   {
     "id": "pb-209",
@@ -39008,7 +45136,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-209.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241016/d9a03ca49ef381b72155f6ecc6ce5d15.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "重战机 L-GAIM",
+    "mechId": "重战机l-gaim",
+    "aliases": []
   },
   {
     "id": "pb-264",
@@ -39036,7 +45167,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-264.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250418/a549d6334e07e0ec792bdaa6a7721de6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "重战机Mk-2",
+    "mechId": "重战机mk-2",
+    "aliases": []
   },
   {
     "id": "pb-409",
@@ -39064,7 +45198,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-409.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260311/2aa82429111e30e55c064c7b9c6486f5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "D高达First",
+    "mechId": "d高达first",
+    "aliases": []
   },
   {
     "id": "pb-223",
@@ -39092,7 +45229,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-223.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241211/2aa82429111e30e55c064c7b9c6486f5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "D高达First",
+    "mechId": "d高达first",
+    "aliases": []
   },
   {
     "id": "pb-408",
@@ -39120,7 +45260,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-408.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260311/39c69017e52bd5977590d27a5233f695.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "D高达Second",
+    "mechId": "d高达second",
+    "aliases": []
   },
   {
     "id": "pb-358",
@@ -39148,7 +45291,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-358.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251024/101f4e4e2f98db43d301cf2428009d87.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "GAZ-R",
+    "mechId": "gaz-r",
+    "aliases": []
   },
   {
     "id": "pb-303",
@@ -39176,7 +45322,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-303.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250807/98a284fc54ded30f68e6d86ac937fb28.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "GM Sloep",
+    "mechId": "gmsloep",
+    "aliases": []
   },
   {
     "id": "pb-166",
@@ -39184,7 +45333,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "wfm",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -39204,7 +45353,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-166.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240717/c6cf2e605499f0bcc6f5cf0f65df4127.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Gundnode",
+    "mechId": "gundnode",
+    "aliases": []
   },
   {
     "id": "pb-267",
@@ -39232,7 +45384,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-267.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250418/8b3fdc77363fda9d49f661fe2ba439f1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "V2高达用扩张特效组件“光之翼”",
+    "mechId": "v2高达用扩张特效组件“光之翼”",
+    "aliases": []
   },
   {
     "id": "pb-307",
@@ -39260,7 +45415,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-307.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250807/ed65b6108da97096e64443ed1e524321.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Zeta高达Plus",
+    "mechId": "zeta高达plus",
+    "aliases": []
   },
   {
     "id": "pb-432",
@@ -39288,7 +45446,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-432.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260410/09c5e1103a4557c25f2ec1a42978febf.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "红莲圣天八极式",
+    "mechId": "红莲圣天八极式",
+    "aliases": []
   },
   {
     "id": "pb-430",
@@ -39316,7 +45477,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-430.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260410/347349c7aea684b10350e4adbcde84bf.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "加文",
+    "mechId": "加文",
+    "aliases": []
   },
   {
     "id": "pb-474",
@@ -39344,7 +45508,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-474.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260916/35e10bf3cccee535544c56cf194483fb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "兰斯洛特",
+    "mechId": "兰斯洛特",
+    "aliases": []
   },
   {
     "id": "pb-431",
@@ -39372,7 +45539,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-431.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260410/bd13f087fc6b7f038c8422f07bcb9eb7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "兰斯洛特·阿尔比恩",
+    "mechId": "兰斯洛特·阿尔比恩",
+    "aliases": []
   },
   {
     "id": "pb-375",
@@ -39400,7 +45570,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-375.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251211/cede3d5cfe9f0d1024d5f07ea94dd188.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Zi-Apollo 阿波罗",
+    "mechId": "zi-apollo阿波罗",
+    "aliases": []
   },
   {
     "id": "pb-454",
@@ -39428,7 +45601,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-454.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260623/a3e8e3320651410527e8434004f3ac47.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Zi-Artemis Zi-阿尔忒弥斯",
+    "mechId": "zi-artemiszi-阿尔忒弥斯",
+    "aliases": []
   },
   {
     "id": "pb-318",
@@ -39456,7 +45632,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-318.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250826/4363004396953dde8722baac4cd52ab7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "陶德丹拜因",
+    "mechId": "陶德丹拜因",
+    "aliases": []
   },
   {
     "id": "pb-211",
@@ -39484,7 +45663,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-211.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241017/d5ac902ca3a63fbb9c3f8b535f1466b3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "托卡马克丹拜因",
+    "mechId": "托卡马克丹拜因",
+    "aliases": []
   },
   {
     "id": "pb-338",
@@ -39512,7 +45694,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-338.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250930/6fd2b5944abd5f815ddee45e84c49f89.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "拜叶特Suivant",
+    "mechId": "拜叶特suivant",
+    "aliases": []
   },
   {
     "id": "pb-274",
@@ -39540,7 +45725,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-274.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250423/7d1066e958c161a6eaeb3a1253a61da0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "超级机器人大战OG 凶鸟Mk-Ⅱ 龙卷",
+    "mechId": "超级机器人大战og凶鸟mk-ii龙卷",
+    "aliases": []
   },
   {
     "id": "pb-188",
@@ -39568,7 +45756,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-188.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240910/7d1066e958c161a6eaeb3a1253a61da0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "超级机器人大战OG 凶鸟Mk-Ⅱ 龙卷",
+    "mechId": "超级机器人大战og凶鸟mk-ii龙卷",
+    "aliases": []
   },
   {
     "id": "pb-376",
@@ -39596,7 +45787,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-376.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251212/6995815bf9d10e84c098b3c01e8daf65.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "超级机器人大战OG 凶鸟Mk-Ⅲ 龙卷",
+    "mechId": "超级机器人大战og凶鸟mk-iii龙卷",
+    "aliases": []
   },
   {
     "id": "pb-268",
@@ -39624,7 +45818,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-268.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250418/3a9045757f6f2d505cea74cead13d2c9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "倒A高达用扩张特效组件 “月光蝶”",
+    "mechId": "倒a高达用扩张特效组件“月光蝶”",
+    "aliases": []
   },
   {
     "id": "pb-138",
@@ -39652,7 +45849,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-138.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240605/6fd49aac895dd96dc3c2d5f5c467a45e.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达TR-6 巴扎姆2 火星吉翁俘获机",
+    "mechId": "高达tr-6巴扎姆2火星吉翁俘获机",
+    "aliases": [
+      "TR-6"
+    ]
   },
   {
     "id": "pb-189",
@@ -39680,7 +45882,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-189.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240910/cc341011a915e035c02c98654eba0738.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达TR-6伍德渥特 精神力天线特装型",
+    "mechId": "高达tr-6伍德渥特精神力天线特装型",
+    "aliases": [
+      "TR-6"
+    ]
   },
   {
     "id": "pb-218",
@@ -39688,7 +45895,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "gundam-mv",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -39708,7 +45915,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-218.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241114/b7cf15cab30d6aa9bbe6ce0e6b4ce73c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高机动型扎古 地上用",
+    "mechId": "高机动型扎古地上用",
+    "aliases": [
+      "Zaku II (Ground Type)",
+      "地上型扎古",
+      "Zaku Ground Type"
+    ]
   },
   {
     "id": "pb-473",
@@ -39736,7 +45950,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-473.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260915/f4b8ae24956f6b9789f784650abb031b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高扎古特装型",
+    "mechId": "高扎古特装型",
+    "aliases": [
+      "Blitz Gundam",
+      "高扎古",
+      "Blitz"
+    ]
   },
   {
     "id": "pb-190",
@@ -39764,7 +45985,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-190.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240911/ec519765ee4fbb8322dfb8803813038e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高扎古特装型",
+    "mechId": "高扎古特装型",
+    "aliases": [
+      "Blitz Gundam",
+      "高扎古",
+      "Blitz"
+    ]
   },
   {
     "id": "pb-311",
@@ -39792,7 +46020,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-311.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250808/c54d741194627a2f0d5e5c3179baa516.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "格拉汉姆专用联合旗帜式特装型Ⅱ",
+    "mechId": "格拉汉姆专用联合旗帜式特装型ii",
+    "aliases": []
   },
   {
     "id": "pb-402",
@@ -39820,7 +46051,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-402.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260309/21206e7f685186ba09c3e919e5a674e3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "格鲁古古",
+    "mechId": "格鲁古古",
+    "aliases": [
+      "Gelgoog",
+      "杰刚"
+    ]
   },
   {
     "id": "pb-413",
@@ -39848,7 +46085,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-413.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260312/6e4d945a648029eb877fc4602e540dc2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "古铁 夜战型",
+    "mechId": "古铁夜战型",
+    "aliases": []
   },
   {
     "id": "pb-444",
@@ -39876,7 +46116,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-444.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260430/1c1b5d0089e470c6c7ae8968a5dff42b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "航空踏板 独角兽吉恩军残党配色",
+    "mechId": "航空踏板独角兽吉恩军残党配色",
+    "aliases": []
   },
   {
     "id": "pb-149",
@@ -39904,7 +46147,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-149.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240627/70c76834e92a829ffaf2f0fc4be65491.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "航空踏板 独角兽吉恩军残党",
+    "mechId": "航空踏板独角兽吉恩军残党",
+    "aliases": []
   },
   {
     "id": "pb-368",
@@ -39932,7 +46178,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-368.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251121/bb85eb81995c9b01a7846e69efa44651.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "击龙神",
+    "mechId": "击龙神",
+    "aliases": []
   },
   {
     "id": "pb-123",
@@ -39960,7 +46209,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-123.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240426/70118c10eb6e98f09a41e74139c95290.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "基拉祖鲁",
+    "mechId": "基拉祖鲁",
+    "aliases": []
   },
   {
     "id": "pb-124",
@@ -39988,7 +46240,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-124.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240426/3e1e6874bc66f9ede068c7d9afc698eb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "基拉祖鲁",
+    "mechId": "基拉祖鲁",
+    "aliases": []
   },
   {
     "id": "pb-288",
@@ -40016,7 +46271,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-288.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250610/531d65d414c6577b73858a5eefed5cdd.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉莱轻装甲型",
+    "mechId": "吉莱轻装甲型",
+    "aliases": []
   },
   {
     "id": "pb-243",
@@ -40044,7 +46302,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-243.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250307/531d65d414c6577b73858a5eefed5cdd.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉莱轻装甲型",
+    "mechId": "吉莱轻装甲型",
+    "aliases": []
   },
   {
     "id": "pb-120",
@@ -40072,7 +46333,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-120.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240425/37a86840aaa52358267e822d92fa7f39.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆Ⅱ 简易打击型",
+    "mechId": "吉姆ii简易打击型",
+    "aliases": []
   },
   {
     "id": "pb-441",
@@ -40080,7 +46344,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -40100,7 +46364,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-441.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260424/f86f2a2fc4e82e1848809b280f1cf420.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆Ⅲ",
+    "mechId": "吉姆iii",
+    "aliases": []
   },
   {
     "id": "pb-152",
@@ -40128,7 +46395,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-152.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240628/a8b0e2ff00ae2cf88f7031959a61d33a.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆Ⅲ 组件",
+    "mechId": "吉姆iii组件",
+    "aliases": []
   },
   {
     "id": "pb-301",
@@ -40156,7 +46426,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-301.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250725/da24b264f0c231385eaaed7b6032e977.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "杰刚D型",
+    "mechId": "杰刚d型",
+    "aliases": []
   },
   {
     "id": "pb-438",
@@ -40184,7 +46457,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-438.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260420/daf6f86f65c3c6394dc93fa96a327fc5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "里谢尔C型",
+    "mechId": "里谢尔c型",
+    "aliases": []
   },
   {
     "id": "pb-148",
@@ -40212,7 +46488,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-148.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240627/5c6bf6bf6202ca2b2d4a45f35b58fcc4.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "里谢尔C型",
+    "mechId": "里谢尔c型",
+    "aliases": []
   },
   {
     "id": "pb-292",
@@ -40240,7 +46519,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-292.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250616/6b7b6ac6b2f42cc70350451bc733c27b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "量产型亡灵Mk-II",
+    "mechId": "量产型亡灵mk-ii",
+    "aliases": []
   },
   {
     "id": "pb-390",
@@ -40268,7 +46550,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-390.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260109/3f76e5cc0818110ba47dcf140416e6b6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强袭自由高达二式",
+    "mechId": "强袭自由高达二式",
+    "aliases": []
   },
   {
     "id": "pb-196",
@@ -40296,7 +46581,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-196.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240927/096407c3d733a761823e3ec90095eff2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "双子座高达01突击推进器",
+    "mechId": "双子座高达01突击推进器",
+    "aliases": []
   },
   {
     "id": "pb-440",
@@ -40324,7 +46612,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-440.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260424/4be996441e7cf925a7ef882e8aaee452.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "特拉杰 Dra-c",
+    "mechId": "特拉杰dra-c",
+    "aliases": []
   },
   {
     "id": "pb-119",
@@ -40352,7 +46643,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-119.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240425/4091672a3c13a4d224579b92bf751935.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "特拉杰 Dra-c",
+    "mechId": "特拉杰dra-c",
+    "aliases": []
   },
   {
     "id": "pb-300",
@@ -40380,7 +46674,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-300.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250725/237820cafce0fc0bfccfdd534ab98f04.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "武装强化型杰刚",
+    "mechId": "武装强化型杰刚",
+    "aliases": []
   },
   {
     "id": "pb-122",
@@ -40408,7 +46705,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-122.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240426/4f73800fbc6467612376b0005ec9a9bf.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "凶鸟 Boxer",
+    "mechId": "凶鸟boxer",
+    "aliases": []
   },
   {
     "id": "pb-125",
@@ -40436,7 +46736,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-125.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240514/7280cbf232684f20a8185eb5fe1d884e.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "雪霸 Sirbine",
+    "mechId": "雪霸sirbine",
+    "aliases": []
   },
   {
     "id": "pb-121",
@@ -40444,7 +46747,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -40464,7 +46767,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-121.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240425/4c1a2ca7b4941f07be5585ffe44586f5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "银弹",
+    "mechId": "银弹",
+    "aliases": []
   },
   {
     "id": "pb-213",
@@ -40472,7 +46778,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed-freedom",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -40492,7 +46798,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-213.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241021/24e79055ec95d1b163819a107f3e272e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "勇士险兆",
+    "mechId": "勇士险兆",
+    "aliases": [
+      "Gelgoog Menace",
+      "险兆勇士"
+    ]
   },
   {
     "id": "pb-164",
@@ -40500,7 +46812,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed-freedom",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -40520,7 +46832,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-164.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240717/98d1b4bf21378a0868d9c4decda896b7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "勇士险兆",
+    "mechId": "勇士险兆",
+    "aliases": [
+      "Gelgoog Menace",
+      "险兆勇士"
+    ]
   },
   {
     "id": "pb-437",
@@ -40548,7 +46866,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-437.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260420/f52d2cc253f4c1c04e038294f27eba72.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "侦察型扎古",
+    "mechId": "侦察型扎古",
+    "aliases": []
   },
   {
     "id": "pb-151",
@@ -40576,7 +46897,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-151.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240628/3cc3109f473bb24a53e474b89337eb5e.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "侦察型扎古",
+    "mechId": "侦察型扎古",
+    "aliases": []
   },
   {
     "id": "pb-424",
@@ -40604,7 +46928,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-424.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260330/83d896f86139b47c4acaf3379e0fab1f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "装甲骑兵 眼镜斗犬",
+    "mechId": "装甲骑兵眼镜斗犬",
+    "aliases": []
   },
   {
     "id": "pb-224",
@@ -40632,7 +46959,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-224.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250110/8505db7efde00cb446c4771bc46105d4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "装甲骑兵 眼镜斗犬用扩展配件",
+    "mechId": "装甲骑兵眼镜斗犬用扩展配件",
+    "aliases": []
   },
   {
     "id": "pb-313",
@@ -40660,7 +46990,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-313.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250819/e182365e2f6ac71e5f0d58d4d7cc467a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "装甲骑兵 眼镜斗犬用扩展配件",
+    "mechId": "装甲骑兵眼镜斗犬用扩展配件",
+    "aliases": []
   },
   {
     "id": "pb-314",
@@ -40688,7 +47021,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-314.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250819/ccc48f89c40c17005d76a1032ff20e3b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "装甲骑兵 眼镜斗犬用扩展配件",
+    "mechId": "装甲骑兵眼镜斗犬用扩展配件",
+    "aliases": []
   },
   {
     "id": "pb-133",
@@ -40716,7 +47052,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-133.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240605/d22938eca9ab18a600a0660cf56549a7.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "装甲骑兵 眼镜斗犬用扩张配件",
+    "mechId": "装甲骑兵眼镜斗犬用扩张配件",
+    "aliases": []
   },
   {
     "id": "pb-134",
@@ -40744,7 +47083,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-134.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240605/01922a53c47b5b4f5df1d531158c40d1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "装甲骑兵 眼镜斗犬用扩张配件",
+    "mechId": "装甲骑兵眼镜斗犬用扩张配件",
+    "aliases": []
   },
   {
     "id": "pb-135",
@@ -40772,7 +47114,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-135.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240605/ccfc488fad06132cc1d57b28723af11a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "装甲骑兵 眼镜斗犬用扩张配件",
+    "mechId": "装甲骑兵眼镜斗犬用扩张配件",
+    "aliases": []
   },
   {
     "id": "pb-341",
@@ -40800,7 +47145,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-341.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251013/0a5cc80c330f69bf1e0044a5b4270460.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "G-Self(大气圈",
+    "mechId": "g-self大气圈",
+    "aliases": []
   },
   {
     "id": "pb-366",
@@ -40828,7 +47176,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-366.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251107/9d1e674ac822cd82a506caf01ba3c6e9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "G防卫者",
+    "mechId": "g防卫者",
+    "aliases": []
   },
   {
     "id": "pb-259",
@@ -40856,7 +47207,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-259.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250408/4208bd48eed0d7bba3eca9c83c4f9a55.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "真实色",
+    "mechId": "真实色",
+    "aliases": []
   },
   {
     "id": "pb-139",
@@ -40884,7 +47238,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-139.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240621/bbdec23c80e55711ded878a24eec9a86.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VF-22S STURMVÖGEL Ⅱ GAMLIN 木崎 USE",
+    "mechId": "vf-22ssturmvögeliigamlin木崎use",
+    "aliases": [
+      "VF-22S"
+    ]
   },
   {
     "id": "pb-129",
@@ -40912,7 +47271,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-129.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240521/71c818b20e4b8c61afaabb6a97fe34cd.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "格鲁古古",
+    "mechId": "格鲁古古",
+    "aliases": [
+      "Gelgoog",
+      "杰刚"
+    ]
   },
   {
     "id": "pb-299",
@@ -40940,7 +47305,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-299.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250725/a0ac375228c4fc6804f5850eb902525e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "杰刚康洛伊机",
+    "mechId": "杰刚康洛伊机",
+    "aliases": []
   },
   {
     "id": "pb-439",
@@ -40948,7 +47316,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -40968,7 +47336,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-439.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260420/85bb8b2b8e19b0279459d7e724a6121b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "里歇尔",
+    "mechId": "里歇尔",
+    "aliases": []
   },
   {
     "id": "pb-360",
@@ -40996,7 +47367,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-360.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251024/8d28508ec0bdc5a788affa2ae1f0bfcb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "兹萨 兹沙 ZSSA",
+    "mechId": "兹萨兹沙zssa",
+    "aliases": []
   },
   {
     "id": "pb-296",
@@ -41024,7 +47398,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-296.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250725/077188d53255df774f65dc4a34207efa.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RGM-89D 杰刚D型",
+    "mechId": "rgm-89d杰刚d型",
+    "aliases": [
+      "RGM-89D"
+    ]
   },
   {
     "id": "pb-297",
@@ -41052,7 +47431,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-297.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250725/d17a2f0f682ce6371e26b09ed0d41e2a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RGM-89D 杰刚D型",
+    "mechId": "rgm-89d杰刚d型",
+    "aliases": [
+      "RGM-89D"
+    ]
   },
   {
     "id": "pb-295",
@@ -41080,7 +47464,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-295.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250725/e679ad9c8df18013d55d658c9989eed5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RGM-89DEW EWAC 杰刚",
+    "mechId": "rgm-89dewewac杰刚",
+    "aliases": [
+      "RGM-89D"
+    ]
   },
   {
     "id": "pb-298",
@@ -41108,7 +47497,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-298.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250725/0587abcf32e56c1dda3717f374b9f694.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RGM-89S 武装强化型杰刚 原型机",
+    "mechId": "rgm-89s武装强化型杰刚原型机",
+    "aliases": [
+      "RGM-89S"
+    ]
   },
   {
     "id": "pb-244",
@@ -41136,7 +47530,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-244.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250307/5149ef67fa22e4afe186d0441f7e5379.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉莱装甲标准型",
+    "mechId": "吉莱装甲标准型",
+    "aliases": []
   },
   {
     "id": "pb-343",
@@ -41164,7 +47561,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-343.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251013/eb7b42273c5b9c039781db6beb55fac9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆狙击Ⅱ型 利德·沃尔夫机",
+    "mechId": "吉姆狙击ii型利德·沃尔夫机",
+    "aliases": []
   },
   {
     "id": "pb-470",
@@ -41192,7 +47592,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-470.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260902/fd3aa6855c373e63f5b15c7d35313e98.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆改 标准配色",
+    "mechId": "吉姆改标准配色",
+    "aliases": [
+      "HGUC1"
+    ]
   },
   {
     "id": "pb-417",
@@ -41220,7 +47625,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-417.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260316/bb9a34b432225e3ebb35491cf32b7b2c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞驱鸟大将军",
+    "mechId": "飞驱鸟大将军",
+    "aliases": []
   },
   {
     "id": "pb-382",
@@ -41248,7 +47656,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-382.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251224/b60389a0edfb209b8ae46ab64c869a88.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞驱鸟大将军",
+    "mechId": "飞驱鸟大将军",
+    "aliases": []
   },
   {
     "id": "pb-477",
@@ -41276,7 +47687,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-477.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20261008/8ee0a3ff5250bd85afb6abbf9a589a38.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "骑士独角兽高达野兽模式",
+    "mechId": "骑士独角兽高达野兽模式",
+    "aliases": []
   },
   {
     "id": "pb-478",
@@ -41304,7 +47718,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-478.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20261008/593e32659460c1a163b8e726388b3094.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "杀驱头",
+    "mechId": "杀驱头",
+    "aliases": []
   },
   {
     "id": "pb-381",
@@ -41332,7 +47749,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-381.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251224/0515764160b5ea30e73d601bb7a8ac1c.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "武者顽駄无",
+    "mechId": "武者顽駄无",
+    "aliases": []
   },
   {
     "id": "pb-418",
@@ -41360,7 +47780,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-418.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260316/dc3800036b1e51089fecda894b3935f5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "新世大将军",
+    "mechId": "新世大将军",
+    "aliases": []
   },
   {
     "id": "pb-448",
@@ -41388,7 +47811,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-448.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260515/1b06cab68b7c07a83c422a9c62969708.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "∀高达",
+    "mechId": "∀高达",
+    "aliases": []
   },
   {
     "id": "pb-131",
@@ -41396,7 +47822,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -41416,7 +47842,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-131.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240521/f15ee4d3b5ebc035acdaf60c01b1eede.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽高达2号机 报丧女妖",
+    "mechId": "独角兽高达2号机报丧女妖",
+    "aliases": [
+      "Banshee",
+      "报丧女妖",
+      "独角兽2号机"
+    ]
   },
   {
     "id": "pb-281",
@@ -41444,7 +47877,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-281.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250513/8ef7069aed54fc3bae6981ab26f2f789.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽高达3号机 NT版",
+    "mechId": "独角兽高达3号机nt版",
+    "aliases": []
   },
   {
     "id": "pb-191",
@@ -41472,7 +47908,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-191.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240911/3e54aa75296c3a56ea61fd24adba14c7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "多瓦吉改",
+    "mechId": "多瓦吉改",
+    "aliases": []
   },
   {
     "id": "pb-342",
@@ -41500,7 +47939,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-342.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251013/02fc61322a0983c292661f3fe7471d37.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "多瓦吉DOWAGE",
+    "mechId": "多瓦吉dowage",
+    "aliases": []
   },
   {
     "id": "pb-377",
@@ -41528,7 +47970,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-377.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251218/4c726afdee5fefdd3d6dbc8d955cb72b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "范特西 自由高达",
+    "mechId": "范特西自由高达",
+    "aliases": []
   },
   {
     "id": "pb-345",
@@ -41556,7 +48001,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-345.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251014/4c726afdee5fefdd3d6dbc8d955cb72b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "范特西 自由高达",
+    "mechId": "范特西自由高达",
+    "aliases": []
   },
   {
     "id": "pb-371",
@@ -41584,7 +48032,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-371.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251126/db9dda9042704ad936bc0b4188f36a72.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达巴巴托斯天狼型用扩展配件",
+    "mechId": "高达巴巴托斯天狼型用扩展配件",
+    "aliases": []
   },
   {
     "id": "pb-283",
@@ -41612,7 +48063,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-283.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250513/db0795ea5ec7c1fa08e0d1c69a59c98d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达F90",
+    "mechId": "高达f90",
+    "aliases": [
+      "F90",
+      "Gundam F90"
+    ]
   },
   {
     "id": "pb-173",
@@ -41640,7 +48097,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-173.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240808/8b0f2010600856a94555da15e027f57d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达F90",
+    "mechId": "高达f90",
+    "aliases": [
+      "F90",
+      "Gundam F90"
+    ]
   },
   {
     "id": "pb-395",
@@ -41668,7 +48131,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-395.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260204/731bb2913f77c62322fb4ca6040da3db.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达F91 2.0",
+    "mechId": "高达f912.0",
+    "aliases": [
+      "F91"
+    ]
   },
   {
     "id": "pb-140",
@@ -41696,7 +48164,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-140.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240626/ffc4bb3234733df041133507c305ce45.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达TR-1 海兹尔·奥斯拉",
+    "mechId": "高达tr-1海兹尔·奥斯拉",
+    "aliases": [
+      "TR-1"
+    ]
   },
   {
     "id": "pb-253",
@@ -41724,7 +48197,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-253.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250328/4f69badf713bf30d5fd7dc0fd03b35fc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆 DOMINANCE",
+    "mechId": "吉姆dominance",
+    "aliases": []
   },
   {
     "id": "pb-215",
@@ -41752,7 +48228,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-215.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241028/6fda7a4bec69df47d60f705640a0b977.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆加农",
+    "mechId": "吉姆加农",
+    "aliases": []
   },
   {
     "id": "pb-415",
@@ -41780,7 +48259,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-415.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260316/41e1de014327c5c3a21d331f506ed0c4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆II 简易打击者",
+    "mechId": "吉姆ii简易打击者",
+    "aliases": []
   },
   {
     "id": "pb-410",
@@ -41808,7 +48290,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-410.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260312/8a8861c0f4b370184068628147d545b9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "雷姆 UC",
+    "mechId": "雷姆uc",
+    "aliases": []
   },
   {
     "id": "pb-158",
@@ -41836,7 +48321,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-158.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240703/6c9e055ed5eb4bcca9e7b1452b374bae.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "量产型璃子专用扎古",
+    "mechId": "量产型璃子专用扎古",
+    "aliases": []
   },
   {
     "id": "pb-434",
@@ -41863,7 +48351,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-434.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260415/5a7ae3d4cf9ec685dd0725681798a552.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "玛拉塞",
+    "mechId": "玛拉塞",
+    "aliases": []
   },
   {
     "id": "pb-436",
@@ -41871,7 +48362,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed-freedom",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -41891,7 +48382,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-436.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260415/97c952768804f24ac2a400f1ae7b70d5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "魔蟹",
+    "mechId": "魔蟹",
+    "aliases": [
+      "Gogg",
+      "蟹"
+    ]
   },
   {
     "id": "pb-128",
@@ -41899,7 +48396,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed-freedom",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -41919,7 +48416,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-128.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240521/8f482a47d22a9a76b938964347c3ab4c.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "魔蟹",
+    "mechId": "魔蟹",
+    "aliases": [
+      "Gogg",
+      "蟹"
+    ]
   },
   {
     "id": "pb-344",
@@ -41947,7 +48450,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-344.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251013/b98a4491ed98b31da95da6164bc2c869.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强化型 ZZ 高达 Ka版",
+    "mechId": "强化型zz高达ka版",
+    "aliases": []
   },
   {
     "id": "pb-384",
@@ -41975,7 +48481,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-384.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251226/98813af23f8468271332ecf9a8897303.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "沙漠高达EW",
+    "mechId": "沙漠高达ew",
+    "aliases": []
   },
   {
     "id": "pb-291",
@@ -41983,7 +48492,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed-destiny",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -42003,7 +48512,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-291.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250613/9fdc3b24dd3d390544eb7b70f0ee5cd8.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "瞬发扎古幻影",
+    "mechId": "瞬发扎古幻影",
+    "aliases": []
   },
   {
     "id": "pb-388",
@@ -42031,7 +48543,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-388.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260106/5b8d1f2f55662c1d7c49a816b968b1b2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "天帝高达",
+    "mechId": "天帝高达",
+    "aliases": []
   },
   {
     "id": "pb-407",
@@ -42059,7 +48574,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-407.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260311/8ae6bfbe462056982bd9b80fd2380dab.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "武装强化型杰刚",
+    "mechId": "武装强化型杰刚",
+    "aliases": []
   },
   {
     "id": "pb-161",
@@ -42067,7 +48585,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "gundam-build",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -42087,7 +48605,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-161.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240711/e9751a4feeba609cc66f9599c61b562d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "兴风者高达 P.F.",
+    "mechId": "兴风者高达p.f",
+    "aliases": []
   },
   {
     "id": "pb-335",
@@ -42115,7 +48636,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-335.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251017/59af9b87eb5d754642e6ed92d72220a3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异端高达",
+    "mechId": "异端高达",
+    "aliases": []
   },
   {
     "id": "pb-334",
@@ -42143,7 +48667,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-334.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251017/ada50182968fa0f2f614b8ea40b29529.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异端高达",
+    "mechId": "异端高达",
+    "aliases": []
   },
   {
     "id": "pb-389",
@@ -42171,7 +48698,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-389.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260107/9e77bb08f153c86bf99b8e86773b1b4d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异端高达幻惑机二期型",
+    "mechId": "异端高达幻惑机二期型",
+    "aliases": []
   },
   {
     "id": "pb-325",
@@ -42199,7 +48729,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-325.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250916/b74944c6c4f2390063ce287296a8952e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异端高达幻惑机二期型",
+    "mechId": "异端高达幻惑机二期型",
+    "aliases": []
   },
   {
     "id": "pb-435",
@@ -42207,7 +48740,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "gquuuuuux",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -42227,7 +48760,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-435.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260415/cbcd15658802696d8ee610f4d60a6de7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "渣古",
+    "mechId": "渣古",
+    "aliases": [
+      "Zaku",
+      "扎古"
+    ]
   },
   {
     "id": "pb-275",
@@ -42235,7 +48774,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -42255,7 +48794,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-275.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250424/5654ee1e7141700c748778f5253da7dd.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "Zaku II",
+      "扎古II",
+      "沙扎比",
+      "MS-06S"
+    ]
   },
   {
     "id": "pb-210",
@@ -42283,7 +48830,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-210.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241016/43bca4b317c8f11555da9dc8ea85db95.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "正义女神F型",
+    "mechId": "正义女神f型",
+    "aliases": []
   },
   {
     "id": "pb-399",
@@ -42311,7 +48861,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-399.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260206/b156db37dda6a12d88647a1864e9f3c0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "重装高达改 EW",
+    "mechId": "重装高达改ew",
+    "aliases": []
   },
   {
     "id": "pb-193",
@@ -42339,7 +48892,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-193.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240923/589abbb5f3afbe0021af4dffb63af759.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "F90ⅢY Cluster高达",
+    "mechId": "f90iiiycluster高达",
+    "aliases": [
+      "F90"
+    ]
   },
   {
     "id": "pb-170",
@@ -42367,7 +48925,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-170.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240807/589abbb5f3afbe0021af4dffb63af759.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "F90ⅢY Cluster高达",
+    "mechId": "f90iiiycluster高达",
+    "aliases": [
+      "F90"
+    ]
   },
   {
     "id": "pb-374",
@@ -42395,7 +48958,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-374.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251127/3c9c96c98d20f30674a82087809427e3.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "F90ⅢY Cluster高达用任务背包X型",
+    "mechId": "f90iiiycluster高达用任务背包x型",
+    "aliases": [
+      "F90"
+    ]
   },
   {
     "id": "pb-233",
@@ -42403,7 +48971,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "gundam-nt",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -42423,7 +48991,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-233.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250211/8ffa75ba216ce121a1745cb2a28cbe57.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "NT高达 B装备",
+    "mechId": "nt高达b装备",
+    "aliases": [
+      "Gundam NT B-Type",
+      "NT高达B",
+      "NT B"
+    ]
   },
   {
     "id": "pb-198",
@@ -42431,7 +49006,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "gundam-nt",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -42451,7 +49026,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-198.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241009/8ffa75ba216ce121a1745cb2a28cbe57.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "NT高达 B装备",
+    "mechId": "nt高达b装备",
+    "aliases": [
+      "Gundam NT B-Type",
+      "NT高达B",
+      "NT B"
+    ]
   },
   {
     "id": "pb-199",
@@ -42459,7 +49041,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "gundam-nt",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -42479,7 +49061,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-199.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241009/5d67f28e4c7f8648672615fc4793589e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "NT高达 C装备 Ver.Ka用B装备扩展",
+    "mechId": "nt高达c装备ver.ka用b装备扩展",
+    "aliases": []
   },
   {
     "id": "pb-143",
@@ -42507,7 +49092,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-143.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240626/b075d5893d1bc8e7f25791f967a75ee0.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "TR-1高达 进阶型海兹尔",
+    "mechId": "tr-1高达进阶型海兹尔",
+    "aliases": [
+      "TR-1"
+    ]
   },
   {
     "id": "pb-144",
@@ -42535,7 +49125,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-144.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240627/f24f8b33f9e56113f6015a5b3602398b.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "TR-1海兹尔改",
+    "mechId": "tr-1海兹尔改",
+    "aliases": [
+      "TR-1"
+    ]
   },
   {
     "id": "pb-145",
@@ -42563,7 +49158,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-145.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240627/23022065ca1aab535d55af349422d0b2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "TR-1海兹尔改",
+    "mechId": "tr-1海兹尔改",
+    "aliases": [
+      "TR-1"
+    ]
   },
   {
     "id": "pb-205",
@@ -42571,7 +49171,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "v-gundam",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -42591,7 +49191,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-205.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241015/5aab0162faa60788c6b6bcc7067105e5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "V2强袭破坏高达",
+    "mechId": "v2强袭破坏高达",
+    "aliases": [
+      "Gundam V2 Assault Buster",
+      "破坏高达",
+      "Assault Buster Gundam"
+    ]
   },
   {
     "id": "pb-127",
@@ -42599,7 +49206,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "iron-blooded",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -42619,7 +49226,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-127.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240520/cd41199dacbb129bf6620b9f80544b81.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达巴巴托斯",
+    "mechId": "高达巴巴托斯",
+    "aliases": [
+      "Gundam Barbatos",
+      "巴巴托斯",
+      "古夫",
+      "Barbatos"
+    ]
   },
   {
     "id": "pb-252",
@@ -42647,7 +49262,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-252.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250328/e4124b73d4bf95f8f2b7dd13807bef03.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达F91",
+    "mechId": "高达f91",
+    "aliases": [
+      "F91"
+    ]
   },
   {
     "id": "pb-270",
@@ -42675,7 +49295,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-270.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250422/aa7273fd3c7469088307a5d59abdc943.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达F91 Ver.2.0 背部加农",
+    "mechId": "高达f91ver.2.0背部加农",
+    "aliases": [
+      "F91"
+    ]
   },
   {
     "id": "pb-386",
@@ -42703,7 +49328,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-386.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251226/97fe3362a4796cc9e934b7655a305109.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高机动精神力渣古 雷霆宙域",
+    "mechId": "高机动精神力渣古雷霆宙域",
+    "aliases": []
   },
   {
     "id": "pb-457",
@@ -42731,7 +49359,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-457.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260710/27d65eac06b9a6412992f979081085a7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "格鲁古古",
+    "mechId": "格鲁古古",
+    "aliases": [
+      "Gelgoog",
+      "杰刚"
+    ]
   },
   {
     "id": "pb-429",
@@ -42759,7 +49393,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-429.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260407/40b2020015b1ddafd92def8169159a68.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "格鲁古古 阿纳贝尔·卡多专用机2.0",
+    "mechId": "格鲁古古阿纳贝尔·卡多专用机2.0",
+    "aliases": []
   },
   {
     "id": "pb-142",
@@ -42787,7 +49424,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-142.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240626/c3ef295b87f27e7dad5dbe118017eaa1.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "海兹尔高达TR-1盾型推进器组件",
+    "mechId": "海兹尔高达tr-1盾型推进器组件",
+    "aliases": [
+      "TR-1"
+    ]
   },
   {
     "id": "pb-126",
@@ -42815,7 +49457,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-126.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240520/672ab16e9b705166097a0659a30349a2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "红色异端高达 改[CROSS CONTRAST COLORS",
+    "mechId": "红色异端高达改crosscontrastcolors",
+    "aliases": []
   },
   {
     "id": "pb-156",
@@ -42843,7 +49488,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-156.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240702/6ca6aa8c9257ec4f8d3742247cc622a5.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆·狙击Ⅱ型 白色猎犬队样式",
+    "mechId": "吉姆·狙击ii型白色猎犬队样式",
+    "aliases": []
   },
   {
     "id": "pb-282",
@@ -42851,7 +49499,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "0080",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -42871,7 +49519,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-282.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250513/fbd8630f84e22f16be9e9c925ac95cef.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "吉姆·指挥型",
+    "mechId": "吉姆·指挥型",
+    "aliases": [
+      "Gelgoog (Command Type)",
+      "指挥型吉姆",
+      "GM指挥型"
+    ]
   },
   {
     "id": "pb-141",
@@ -42899,7 +49554,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-141.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240626/90f57ba2c2a8679a5be104dbb5c01a69.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "紧急逃生舱组件",
+    "mechId": "紧急逃生舱组件",
+    "aliases": []
   },
   {
     "id": "pb-411",
@@ -42927,7 +49585,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-411.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260312/b4b030b58230f7f544431bd42fe9ca21.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "雷姆 UC沙漠",
+    "mechId": "雷姆uc沙漠",
+    "aliases": []
   },
   {
     "id": "pb-426",
@@ -42955,7 +49616,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-426.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260401/b9e433cfcffeb5852f92961adc588491.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "力天使高达金属珠光版",
+    "mechId": "力天使高达金属珠光版",
+    "aliases": []
   },
   {
     "id": "pb-155",
@@ -42963,7 +49627,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -42983,7 +49647,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-155.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240628/985f4a104af599ca35e815970aa025ff.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "灵格斯 逆袭的夏亚配色",
+    "mechId": "灵格斯逆袭的夏亚配色",
+    "aliases": []
   },
   {
     "id": "pb-468",
@@ -43011,7 +49678,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-468.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260902/86be0e4274361e6d313f5e90e270331d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "全装甲独角兽高达 红色版",
+    "mechId": "全装甲独角兽高达红色版",
+    "aliases": []
   },
   {
     "id": "pb-385",
@@ -43039,7 +49709,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-385.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251226/2cb401520dd3051c4924c59664f11730.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "全装甲高达 雷霆宙域 LAST决战",
+    "mechId": "全装甲高达雷霆宙域last决战",
+    "aliases": []
   },
   {
     "id": "pb-203",
@@ -43047,7 +49720,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -43067,7 +49740,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-203.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241011/5862f7459b842d9aedd58e08b536f2eb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "Zaku II",
+      "扎古II",
+      "沙扎比",
+      "MS-06S"
+    ]
   },
   {
     "id": "pb-277",
@@ -43095,7 +49776,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-277.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250428/15950da44c3cbf06c34431d8018744c6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "突击高达RM版用重炮装",
+    "mechId": "突击高达rm版用重炮装",
+    "aliases": []
   },
   {
     "id": "pb-208",
@@ -43103,7 +49787,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "gundam-00",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -43123,7 +49807,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-208.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241016/3cd53f36596b3a6e3db1900282f966e6.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "正义女神高达",
+    "mechId": "正义女神高达",
+    "aliases": []
   },
   {
     "id": "pb-147",
@@ -43151,7 +49838,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-147.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240627/88c6c9b87c5ac51db07b2030e5e7a650.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "G单元 弗多德",
+    "mechId": "g单元弗多德",
+    "aliases": []
   },
   {
     "id": "pb-146",
@@ -43179,7 +49869,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-146.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240627/13a7c42e99200aa5e43f8a327febe63c.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "G单元 弗多德 组件",
+    "mechId": "g单元弗多德组件",
+    "aliases": []
   },
   {
     "id": "pb-276",
@@ -43207,7 +49900,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-276.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250424/f318a3937fde36b57a901fdf2d5b03de.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Hi-ν 高达扩展装备",
+    "mechId": "hi-ν高达扩展装备",
+    "aliases": []
   },
   {
     "id": "pb-428",
@@ -43235,7 +49931,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-428.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260407/dd49c4fe5a291741c626f6d87ce0cc69.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MS-06-1A ZAKUII GATO专用机 2.0版",
+    "mechId": "ms-06-1azakuiigato专用机2.0版",
+    "aliases": [
+      "MS-06-1A"
+    ]
   },
   {
     "id": "pb-458",
@@ -43263,7 +49964,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-458.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260710/276da67c0854c1d15be22928bfa3b3ee.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "MS-06S 强尼·莱汀专用渣古Ⅱ",
+    "mechId": "ms-06s强尼·莱汀专用渣古ii",
+    "aliases": [
+      "MS-06S"
+    ]
   },
   {
     "id": "pb-202",
@@ -43291,7 +49997,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-202.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241011/1ba31d4c3f56057b45d92476a491c669.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Nu高达",
+    "mechId": "nu高达",
+    "aliases": []
   },
   {
     "id": "pb-414",
@@ -43319,7 +50028,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-414.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260316/0fec49e634fa95baefd9169dec10c252.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Re-GZ",
+    "mechId": "re-gz",
+    "aliases": []
   },
   {
     "id": "pb-187",
@@ -43347,7 +50059,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-187.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240909/7c7268924e699e975b11609a53de8602.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达3.0版 扩充装备",
+    "mechId": "rx-78-2高达3.0版扩充装备",
+    "aliases": [
+      "RX-78-2"
+    ]
   },
   {
     "id": "pb-425",
@@ -43375,7 +50092,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-425.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260401/fb4197b275a92f7478a0ec39a23f04d9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "TRANS-AM Raiser",
+    "mechId": "trans-amraiser",
+    "aliases": []
   },
   {
     "id": "pb-206",
@@ -43403,7 +50123,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-206.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241015/3d066c937336ae6ff02274a3362c6e46.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "V2高达Ka版 光之翼扩张组件",
+    "mechId": "v2高达ka版光之翼扩张组件",
+    "aliases": []
   },
   {
     "id": "pb-391",
@@ -43431,7 +50154,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-391.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260115/d9d2824840474a0671d853569e19133a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强袭自由高达",
+    "mechId": "强袭自由高达",
+    "aliases": [
+      "Strike Freedom Gundam",
+      "强袭自由",
+      "SF",
+      "Strike Freedom"
+    ]
   },
   {
     "id": "pb-340",
@@ -43459,7 +50190,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-340.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251013/f4ad69d00cfe1269bf341fab7187410a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强袭自由高达",
+    "mechId": "强袭自由高达",
+    "aliases": [
+      "Strike Freedom Gundam",
+      "强袭自由",
+      "SF",
+      "Strike Freedom"
+    ]
   },
   {
     "id": "pb-460",
@@ -43467,7 +50206,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MGSD",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "w",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -43487,7 +50226,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-460.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260728/31ad0ae12569fc5b87785e7a0ab4aa31.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "飞翼零式高达EW",
+    "mechId": "飞翼零式高达ew",
+    "aliases": [
+      "Wing Gundam Zero EW",
+      "飞翼零式EW",
+      "EW零式"
+    ]
   },
   {
     "id": "pb-333",
@@ -43515,7 +50261,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-333.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250930/8d804c2fb10b7a962425296927636b69.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽2号机用扩充组件 武装战甲VN",
+    "mechId": "独角兽2号机用扩充组件武装战甲vn",
+    "aliases": []
   },
   {
     "id": "pb-365",
@@ -43543,7 +50292,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-365.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251103/5321c788459ed92e69fb29129d5fe7b2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽3号机 菲尼克斯",
+    "mechId": "独角兽3号机菲尼克斯",
+    "aliases": []
   },
   {
     "id": "pb-445",
@@ -43551,7 +50303,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "PG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/60",
     "released": "",
     "priceJpy": 0,
@@ -43571,7 +50323,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-445.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260430/5b8efa3319ec1759a84d8ea6ebd06a7b.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽高达 完美形态",
+    "mechId": "独角兽高达完美形态",
+    "aliases": [
+      "Unicorn Gundam (Perfect Mode)",
+      "完美形态独角兽",
+      "完美形态"
+    ]
   },
   {
     "id": "pb-332",
@@ -43599,7 +50358,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-332.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250930/abf2ff49f830cf5afa7e33d3590c8c20.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "独角兽高达用全武装扩张组件",
+    "mechId": "独角兽高达用全武装扩张组件",
+    "aliases": []
   },
   {
     "id": "pb-227",
@@ -43627,7 +50389,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-227.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250124/a7e9c913e3ce89435f15a630f49e0bc8.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "TRANS-AM强化模块",
+    "mechId": "trans-am强化模块",
+    "aliases": []
   },
   {
     "id": "pb-228",
@@ -43635,7 +50400,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "PG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "gundam-00",
     "scale": "1/60",
     "released": "",
     "priceJpy": 0,
@@ -43655,7 +50420,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-228.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250124/80e57a5fcb18e476e6e74185d855d9e5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "TRANS-AM强化模块 透明配色机身",
+    "mechId": "trans-am强化模块透明配色机身",
+    "aliases": []
   },
   {
     "id": "pb-363",
@@ -43683,7 +50451,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-363.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251029/3d935dc53849834963a26f6c0a8a4a81.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Nu高达 ν GUNDAM",
+    "mechId": "nu高达νgundam",
+    "aliases": []
   },
   {
     "id": "pb-364",
@@ -43711,7 +50482,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-364.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251029/8839b2e9fc813bd5ac818e7b953d0a7f.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Nu高达 ν GUNDAM用LED组件",
+    "mechId": "nu高达νgundam用led组件",
+    "aliases": []
   },
   {
     "id": "pb-204",
@@ -43739,7 +50513,17 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-204.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241011/b3add01976955c7622c3f1a44f3c9631.png",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
+    "aliases": [
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
+    ]
   },
   {
     "id": "pb-293",
@@ -43767,7 +50551,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-293.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250710/23381dbf85fd426c7497af3dd64da975.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "RX-78-2高达 彩色透明外甲",
+    "mechId": "rx-78-2高达彩色透明外甲",
+    "aliases": [
+      "RX-78-2"
+    ]
   },
   {
     "id": "pb-466",
@@ -43795,7 +50584,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-466.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260827/da6ffdff241b0d08f6d0a352f1eda5e4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "ν高达用浮游炮",
+    "mechId": "ν高达用浮游炮",
+    "aliases": []
   },
   {
     "id": "pb-323",
@@ -43823,7 +50615,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-323.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250905/a326abb58d6cdfdbbeac2f4b0e5435e4.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "德南·格",
+    "mechId": "德南·格",
+    "aliases": []
   },
   {
     "id": "pb-446",
@@ -43851,7 +50646,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-446.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260513/5537faab9452082223cc9d17a8ae4397.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "德南·佐恩",
+    "mechId": "德南·佐恩",
+    "aliases": []
   },
   {
     "id": "pb-272",
@@ -43859,7 +50657,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "MG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/100",
     "released": "",
     "priceJpy": 0,
@@ -43879,7 +50677,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-272.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250423/e8157b5b2f14c9d2c076ae0394cff170.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "乍得·多加",
+    "mechId": "乍得·多加",
+    "aliases": [
+      "Jesta",
+      "贾斯塔",
+      "渣爹"
+    ]
   },
   {
     "id": "pb-400",
@@ -43907,7 +50712,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-400.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260206/5dcc606db0824e9fa6eed1229e45d9d2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "创制突击高达全装备型",
+    "mechId": "创制突击高达全装备型",
+    "aliases": []
   },
   {
     "id": "pb-331",
@@ -43935,7 +50743,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-331.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250926/2c7f439c2af92227716e8f3d7d0c9dd5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "多鲁基斯II",
+    "mechId": "多鲁基斯ii",
+    "aliases": []
   },
   {
     "id": "pb-286",
@@ -43963,7 +50774,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-286.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250523/0309f644c297e001874b0e263e33f308.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "多鲁基斯Ⅲ",
+    "mechId": "多鲁基斯iii",
+    "aliases": []
   },
   {
     "id": "pb-464",
@@ -43991,7 +50805,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-464.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260730/110da317a2700585881675f8b182294e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "高达金色异端 天·哈娜",
+    "mechId": "高达金色异端天·哈娜",
+    "aliases": []
   },
   {
     "id": "pb-462",
@@ -43999,7 +50816,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed-freedom",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -44019,7 +50836,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-462.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260729/1ddf3eda118334fb4bb13b5b0ff7fd12.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "轰击型脉冲高达规格Ⅱ",
+    "mechId": "轰击型脉冲高达规格ii",
+    "aliases": [
+      "Impulse Gundam Spec II",
+      "脉冲高达规格2",
+      "Impulse Spec II",
+      "轰击型脉冲"
+    ]
   },
   {
     "id": "pb-258",
@@ -44027,7 +50852,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed-freedom",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -44047,7 +50872,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-258.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250402/1ddf3eda118334fb4bb13b5b0ff7fd12.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "轰击型脉冲高达规格Ⅱ",
+    "mechId": "轰击型脉冲高达规格ii",
+    "aliases": [
+      "Impulse Gundam Spec II",
+      "脉冲高达规格2",
+      "Impulse Spec II",
+      "轰击型脉冲"
+    ]
   },
   {
     "id": "pb-232",
@@ -44055,7 +50888,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed-freedom",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -44075,7 +50908,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-232.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250211/1ddf3eda118334fb4bb13b5b0ff7fd12.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "轰击型脉冲高达规格Ⅱ",
+    "mechId": "轰击型脉冲高达规格ii",
+    "aliases": [
+      "Impulse Gundam Spec II",
+      "脉冲高达规格2",
+      "Impulse Spec II",
+      "轰击型脉冲"
+    ]
   },
   {
     "id": "pb-168",
@@ -44083,7 +50924,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed-freedom",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -44103,7 +50944,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-168.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240719/1ddf3eda118334fb4bb13b5b0ff7fd12.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "轰击型脉冲高达规格Ⅱ",
+    "mechId": "轰击型脉冲高达规格ii",
+    "aliases": [
+      "Impulse Gundam Spec II",
+      "脉冲高达规格2",
+      "Impulse Spec II",
+      "轰击型脉冲"
+    ]
   },
   {
     "id": "pb-461",
@@ -44111,7 +50960,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed-freedom",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -44131,7 +50980,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-461.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260729/29b94efb417580644a5504c1c54637bc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "巨剑型脉冲高达",
+    "mechId": "巨剑型脉冲高达",
+    "aliases": [
+      "Impulse Gundam (Giant Sword)",
+      "巨剑脉冲",
+      "脉冲高达巨剑型"
+    ]
   },
   {
     "id": "pb-280",
@@ -44139,7 +50995,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed-freedom",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -44159,7 +51015,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-280.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250508/29b94efb417580644a5504c1c54637bc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "巨剑型脉冲高达",
+    "mechId": "巨剑型脉冲高达",
+    "aliases": [
+      "Impulse Gundam (Giant Sword)",
+      "巨剑脉冲",
+      "脉冲高达巨剑型"
+    ]
   },
   {
     "id": "pb-246",
@@ -44167,7 +51030,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed-freedom",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -44187,7 +51050,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-246.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250307/e9b91722c825e2e7a53321042d0e3362.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "巨剑型脉冲高达",
+    "mechId": "巨剑型脉冲高达",
+    "aliases": [
+      "Impulse Gundam (Giant Sword)",
+      "巨剑脉冲",
+      "脉冲高达巨剑型"
+    ]
   },
   {
     "id": "pb-234",
@@ -44195,7 +51065,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed-freedom",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -44215,7 +51085,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-234.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250214/29b94efb417580644a5504c1c54637bc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "巨剑型脉冲高达",
+    "mechId": "巨剑型脉冲高达",
+    "aliases": [
+      "Impulse Gundam (Giant Sword)",
+      "巨剑脉冲",
+      "脉冲高达巨剑型"
+    ]
   },
   {
     "id": "pb-419",
@@ -44243,7 +51120,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-419.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260319/d5ad08557a429789f475d8f90d80b550.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "空装脉冲高达 未启动模式",
+    "mechId": "空装脉冲高达未启动模式",
+    "aliases": []
   },
   {
     "id": "pb-212",
@@ -44251,7 +51131,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -44271,7 +51151,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-212.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241021/8dcf6eaabf44a5435ac74c12f0cd07cc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "量产型魔蟹",
+    "mechId": "量产型魔蟹",
+    "aliases": []
   },
   {
     "id": "pb-235",
@@ -44299,7 +51182,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-235.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250220/94c585450ef2da356c152ef4c0de90fc.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "零式飞翼高达EW版 扩张特效组件",
+    "mechId": "零式飞翼高达ew版扩张特效组件",
+    "aliases": []
   },
   {
     "id": "pb-308",
@@ -44327,7 +51213,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-308.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250808/342a6ac2fcaab93701c1be9ff9e270ec.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "命运高达 \"光之翼\"配件",
+    "mechId": "命运高达光之翼配件",
+    "aliases": []
   },
   {
     "id": "pb-420",
@@ -44355,7 +51244,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-420.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260319/b7042b1729001826175444d2d0ec5439.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "命运高达 未启动模式",
+    "mechId": "命运高达未启动模式",
+    "aliases": []
   },
   {
     "id": "pb-310",
@@ -44383,7 +51275,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-310.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250808/a84eed363f29e443013251eb0a21952a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "命运高达",
+    "mechId": "命运高达",
+    "aliases": [
+      "Destiny Gundam",
+      "Destiny"
+    ]
   },
   {
     "id": "pb-447",
@@ -44411,7 +51309,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-447.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260513/73671bffa7d1d17ce7922cbf705f92ca.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "能天使高达修复型IV",
+    "mechId": "能天使高达修复型iv",
+    "aliases": []
   },
   {
     "id": "pb-422",
@@ -44439,7 +51340,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-422.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260319/0d6d4de5e0f696aa7ca416c4107c8c05.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强袭高达 未启动模式",
+    "mechId": "强袭高达未启动模式",
+    "aliases": []
   },
   {
     "id": "pb-443",
@@ -44467,7 +51371,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-443.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260427/4e4f434205860af282d0c7c61961d2f2.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "强袭自由高达 未启动模式",
+    "mechId": "强袭自由高达未启动模式",
+    "aliases": []
   },
   {
     "id": "pb-321",
@@ -44475,7 +51382,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -44495,7 +51402,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-321.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250827/e45e6e8f0dbbcf372c8a95ad89e14ca1.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "Zaku II",
+      "扎古II",
+      "沙扎比",
+      "MS-06S"
+    ]
   },
   {
     "id": "pb-240",
@@ -44523,7 +51438,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-240.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250221/f9b0b54370dee9b041d0cbaf3c2f61fe.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "神高达专用扩张组件",
+    "mechId": "神高达专用扩张组件",
+    "aliases": []
   },
   {
     "id": "pb-309",
@@ -44551,7 +51469,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-309.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250808/998b01ba76490b147fdefbaea605531d.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "突击自由高达",
+    "mechId": "突击自由高达",
+    "aliases": []
   },
   {
     "id": "pb-238",
@@ -44579,7 +51500,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-238.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250220/86bfcdf64fc7127609a8a032056cdc32.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "新安州用 扩展组件",
+    "mechId": "新安州用扩展组件",
+    "aliases": []
   },
   {
     "id": "pb-322",
@@ -44587,7 +51511,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -44607,7 +51531,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-322.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250827/6dcc7cdd13228f2d180c0c9d85829809.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "新安洲",
+    "mechId": "新安洲",
+    "aliases": [
+      "Providence Gundam",
+      "新安洲高达",
+      "Providence"
+    ]
   },
   {
     "id": "pb-254",
@@ -44635,7 +51566,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-254.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250331/bf3eb0ac5ec67f20194df99d063625f5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "雪崩能天使高达",
+    "mechId": "雪崩能天使高达",
+    "aliases": []
   },
   {
     "id": "pb-378",
@@ -44643,7 +51577,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -44663,7 +51597,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-378.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251218/551ccda53d33de86aa61dfc3ebbfbecb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异端高达红色机红龙形态",
+    "mechId": "异端高达红色机红龙形态",
+    "aliases": []
   },
   {
     "id": "pb-373",
@@ -44671,7 +51608,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -44691,7 +51628,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-373.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251127/551ccda53d33de86aa61dfc3ebbfbecb.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异端高达红色机红龙形态",
+    "mechId": "异端高达红色机红龙形态",
+    "aliases": []
   },
   {
     "id": "pb-463",
@@ -44719,7 +51659,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-463.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260730/63fd7f0b732f4318356af416b6df5a08.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "异端高达蓝色机",
+    "mechId": "异端高达蓝色机",
+    "aliases": []
   },
   {
     "id": "pb-421",
@@ -44747,7 +51690,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-421.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260319/81f92a92fdd496ef3a6338e7783ba5ff.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "正义高达 未启动模式",
+    "mechId": "正义高达未启动模式",
+    "aliases": []
   },
   {
     "id": "pb-256",
@@ -44775,7 +51721,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-256.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250402/390c1222adcc5e4a6157ea0cca4ef94a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "正义女神高达F型",
+    "mechId": "正义女神高达f型",
+    "aliases": []
   },
   {
     "id": "pb-423",
@@ -44803,7 +51752,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-423.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260319/59873a9709b8a688468bd83df830bfb9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "自由高达 未启动模式",
+    "mechId": "自由高达未启动模式",
+    "aliases": []
   },
   {
     "id": "pb-392",
@@ -44831,7 +51783,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-392.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260121/1708153064dc882990bf2cd79122a882.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "MS-06S",
+      "Zaku II",
+      "扎古II",
+      "沙扎比"
+    ]
   },
   {
     "id": "pb-269",
@@ -44859,7 +51819,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-269.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250421/318e122034a7acbe6641921dec4c22f5.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "渣古II",
+    "mechId": "渣古ii",
+    "aliases": [
+      "MS-06S",
+      "Zaku II",
+      "扎古II",
+      "沙扎比"
+    ]
   },
   {
     "id": "pb-467",
@@ -44887,7 +51855,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-467.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260831/c90735e466839c3cf61356a977320807.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Nu高达 HWS",
+    "mechId": "nu高达hws",
+    "aliases": []
   },
   {
     "id": "pb-237",
@@ -44915,7 +51886,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-237.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250220/daeea6985a2c61e4fb67e9074414ddc9.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "扩展组件武装装甲VN",
+    "mechId": "扩展组件武装装甲vn",
+    "aliases": []
   },
   {
     "id": "pb-222",
@@ -44923,7 +51897,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -44943,7 +51917,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-222.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241206/da947b3685569f4eeeb803210f14bfb7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "报丧女妖命运女神特殊涂层版",
+    "mechId": "报丧女妖命运女神特殊涂层版",
+    "aliases": []
   },
   {
     "id": "pb-220",
@@ -44951,7 +51928,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "RG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "seed-freedom",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -44971,7 +51948,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-220.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20241122/e0b74ff1ddfb5280cb81254c29aa4356.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "拂晓高达不知火背包",
+    "mechId": "拂晓高达不知火背包",
+    "aliases": []
   },
   {
     "id": "pb-239",
@@ -44999,7 +51979,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-239.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250221/ae36f79484149a772db2660e0d2b56fe.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "能天使高达用战损部件",
+    "mechId": "能天使高达用战损部件",
+    "aliases": []
   },
   {
     "id": "pb-236",
@@ -45027,7 +52010,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-236.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20250220/ff63e7cc246403c54e71c3b27803102e.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "能天使高达用正义女神高达零件套组",
+    "mechId": "能天使高达用正义女神高达零件套组",
+    "aliases": []
   },
   {
     "id": "pb-197",
@@ -45055,7 +52041,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-197.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240927/941aea75896aa2c7eb0179c50a4168af.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "突击嫣红",
+    "mechId": "突击嫣红",
+    "aliases": []
   },
   {
     "id": "pb-357",
@@ -45083,7 +52072,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-357.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20251023/e1de1441cfcb3af6107adcba031f5ca7.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "Hi-ν高达用超米加火箭炮发射器",
+    "mechId": "hi-ν高达用超米加火箭炮发射器",
+    "aliases": []
   },
   {
     "id": "pb-401",
@@ -45111,7 +52103,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-401.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260210/43ddc316b1c323c413d4f118ea3a7d49.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "天零顽驮无 复刻辉罗钢",
+    "mechId": "天零顽驮无复刻辉罗钢",
+    "aliases": []
   },
   {
     "id": "pb-475",
@@ -45139,7 +52134,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-475.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20261008/d2c8f139b44dd3af411431b642119986.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VS暗军团",
+    "mechId": "vs暗军团",
+    "aliases": []
   },
   {
     "id": "pb-476",
@@ -45167,7 +52165,10 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-476.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20261008/890dcb8e0167e5107b0ab720deb3a92a.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "VS暗军团",
+    "mechId": "vs暗军团",
+    "aliases": []
   },
   {
     "id": "pb-459",
@@ -45195,6 +52196,9 @@ export const GUNDAM_KITS: GundamKit[] = [
     "image": "/gundam/pb-459.webp",
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20260716/1d18625ac48212c83b4769e98dac5704.jpg",
     "taxRate": null,
-    "sourceJp": null
+    "sourceJp": null,
+    "mech": "复活辉罗钢DX",
+    "mechId": "复活辉罗钢dx",
+    "aliases": []
   }
 ];

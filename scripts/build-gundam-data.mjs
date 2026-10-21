@@ -22,6 +22,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { mechOf, mechKey } from './lib/mech.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SOURCES = [
@@ -77,6 +78,16 @@ function readJsonArray(rel) {
     return Array.isArray(parsed) ? parsed : [];
   } catch {
     return [];
+  }
+}
+
+/** 读一个 JSON 对象文件；没有或坏了就当作空 */
+function readJsonObject(rel) {
+  try {
+    const parsed = JSON.parse(readFileSync(join(ROOT, rel), 'utf8'));
+    return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
+  } catch {
+    return {};
   }
 }
 
@@ -344,6 +355,108 @@ if (jpOverlay.length) {
   }
 }
 
+/*
+ * 机体维度。
+ *
+ * 同一个机体常有多个等级与多种配色——「RX-78-2 高达」既有 RG 也有 MG。
+ * 这里把品名归一成机体名，于是：
+ *   - 每条记录多一个 mech 字段，详情页能列出「这台机体的其它版本」；
+ *   - 同一台机体的其它条目如果已经归在某条作品线里，本条跟着归，
+ *     作品线不再只靠官网那 40 条分类反查。
+ */
+const mechMeta = readJsonObject('src/data/gundam.mech-meta.json');
+const mechGroups = new Map();
+for (const kit of kits) {
+  const mech = mechOf(kit.name, kit.grade);
+  kit.mech = mech || null;
+  kit.mechId = null;
+  if (!mech) continue;
+  const key = mechKey(mech);
+  if (!mechGroups.has(key)) mechGroups.set(key, { labels: new Map(), items: [] });
+  const group = mechGroups.get(key);
+  group.labels.set(mech, (group.labels.get(mech) ?? 0) + 1);
+  group.items.push(kit);
+  kit.mechId = key;
+}
+
+/*
+ * 同一台机体可能有几种写法（「RX-78-2 高达」与「RX-78-2高达」），
+ * 归一后撞进同一个键。取出现最多的那种写法当规范名，条数相同时取短的。
+ */
+for (const group of mechGroups.values()) {
+  group.label = [...group.labels.entries()].sort(
+    (a, b) => b[1] - a[1] || a[0].length - b[0].length,
+  )[0][0];
+  /* 每条记录都改用规范名，界面上不会出现同机两种写法 */
+  for (const item of group.items) item.mech = group.label;
+}
+
+/* 别名词典按机体的所有写法一起查，避免换了个写法就查不到 */
+const mechMetaById = {};
+for (const [key, group] of mechGroups) {
+  const merged = { en: null, alt: [] };
+  for (const label of group.labels.keys()) {
+    const meta = mechMeta[label];
+    if (!meta) continue;
+    if (meta.en && !merged.en) merged.en = meta.en;
+    for (const a of meta.alt || []) if (!merged.alt.includes(a)) merged.alt.push(a);
+  }
+  mechMetaById[key] = merged;
+}
+
+let seriesInherited = 0;
+for (const group of mechGroups.values()) {
+  /* 只有当同机体的其它条目全都指向同一条作品线时才继承，否则宁可不归 */
+  const known = new Set(group.items.map((i) => i.series).filter((s) => s && s !== 'other'));
+  if (known.size !== 1) continue;
+  const [series] = known;
+  for (const item of group.items) {
+    if (item.series === 'other') {
+      item.series = series;
+      seriesInherited++;
+    }
+  }
+}
+
+/* 别名：机体编号 + 词典里的英文名与俗称 */
+const DESIGNATION = /[A-Z]{1,5}-?\d{1,4}(?:-[A-Z]?\d{1,3})?[A-Z]?/g;
+for (const kit of kits) {
+  const alt = new Set();
+  for (const m of kit.name.match(DESIGNATION) || []) {
+    if (m.length >= 3) alt.add(m);
+  }
+  if (kit.mechId) {
+    const meta = mechMetaById[kit.mechId];
+    if (meta) {
+      if (meta.en) alt.add(meta.en);
+      for (const a of meta.alt || []) alt.add(a);
+    }
+  }
+  kit.aliases = [...alt].slice(0, 8);
+}
+
+/* 机体索引：给聚合页与导出用 */
+const mechIndex = {};
+for (const [key, group] of mechGroups) {
+  const meta = mechMetaById[key];
+  const grades = {};
+  for (const item of group.items) grades[item.grade] = (grades[item.grade] || 0) + 1;
+  mechIndex[key] = {
+    label: group.label,
+    en: meta.en || null,
+    alt: meta.alt || [],
+    count: group.items.length,
+    grades,
+    series: [...new Set(group.items.map((i) => i.series))],
+    kits: group.items.map((i) => i.id),
+  };
+}
+writeFileSync(
+  join(ROOT, 'src/data/gundam.mechs.json'),
+  JSON.stringify(mechIndex, null, 2).replace(/\n/g, '\r\n') + '\r\n',
+  'utf8',
+);
+
 const banner = `/* 本文件由 scripts/build-gundam-data.mjs 生成，请勿手工编辑。
  * 原始记录见 ${SOURCES.join(' 与 ')}，改动请改原始记录后重新运行脚本。 */
 import type { GundamKit } from './gundam';
@@ -355,14 +468,20 @@ writeFileSync(join(ROOT, OUT_FILE), banner, 'utf8');
 
 const withPrice = kits.filter((k) => k.priceJpy > 0).length;
 const verified = kits.filter((k) => k.verified).length;
+const withAlias = kits.filter((k) => k.aliases.length > 0).length;
+const multiVersion = [...mechGroups.values()].filter((g) => g.items.length > 1).length;
 
 console.log(`读到 ${read} 条记录，丢弃 ${dropped} 条重复或不合规的记录`);
 console.log(
   `合并后 ${kits.length} 条，其中 ${verified} 条已核实出处，${withPrice} 条有官方定价，${withImage} 条有本地图片`,
 );
 if (withJp) console.log(`其中 ${withJp} 条已用万代日本官网的数据校准（日文名、含税定价与税目）`);
+console.log(
+  `机体 ${mechGroups.size} 台，其中 ${multiVersion} 台有多个版本；靠同机体继承作品线 ${seriesInherited} 条；${withAlias} 条带别名`,
+);
 if (problems.length) {
   console.log('\n需要人工确认的问题：');
   for (const p of problems) console.log(`  - ${p}`);
 }
 console.log(`\n已写入 ${OUT_FILE}`);
+console.log('已写入 src/data/gundam.mechs.json');
