@@ -26,6 +26,12 @@ export const GET: APIRoute = () => {
     'mech',
     'aliases',
     'tags',
+    /* 对比页要用的几个字段。空的占位不少，但整库加起来也只多二十来 KB。 */
+    'parts',
+    'heightMm',
+    'skillLevel',
+    'material',
+    'note',
   ];
 
   const rows = KITS.map((kit) => [
@@ -43,6 +49,11 @@ export const GET: APIRoute = () => {
     kit.mech,
     kit.aliases,
     kit.tags,
+    kit.parts,
+    kit.heightMm,
+    kit.skillLevel,
+    kit.material,
+    kit.note,
   ]);
 
   const payload = {

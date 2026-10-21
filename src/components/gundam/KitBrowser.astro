@@ -66,6 +66,24 @@ const usedSeries = [...new Set(kits.map((k) => k.series))].sort(
 );
 const usedDecades = [...decadeCounts.keys()].sort();
 
+/**
+ * 特征标签。
+ *
+ * 标签里有三类东西：渠道与状态（Premium Bandai、PB再贩…）跟渠道分面重复，
+ * 只出现一两次的零散标签又会把这个分面撑爆。所以这里只留出现三次以上、
+ * 且不是渠道状态的那些——真正描述机体特征的。
+ */
+const CHANNELISH_TAG =
+  /^(Premium Bandai|PB再贩|PB上新|新商品|高达基地限定|网络限定|PB限定|再贩|预订|即将发售|初回限定)/;
+const tagCountOf = new Map<string, number>();
+for (const kit of kits) {
+  for (const tag of kit.tags) tagCountOf.set(tag, (tagCountOf.get(tag) ?? 0) + 1);
+}
+const usedTags = [...tagCountOf.entries()]
+  .filter(([tag, n]) => n >= 3 && !CHANNELISH_TAG.test(tag))
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'zh-Hans-CN'))
+  .map(([tag]) => tag);
+
 const PRICE_BUCKETS = [
   { id: '0-1000', label: '¥1,000 以下' },
   { id: '1001-3000', label: '¥1,000–3,000' },
@@ -198,6 +216,23 @@ const SORTS = [
             <button type="button" class="sorter__btn" data-value={b.id} aria-pressed="false">
               {b.label}
               <span class="sorter__count">{priceCounts.get(b.id) ?? 0}</span>
+            </button>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="gdb__facet">
+      <span class="sorter__label" id="gdb-f-tag">特征</span>
+      <div class="sorter__group" role="group" aria-labelledby="gdb-f-tag" data-facet="tag">
+        <button type="button" class="sorter__btn" data-value="" aria-pressed="true">
+          全部<span class="sorter__count">{kits.length}</span>
+        </button>
+        {
+          usedTags.map((t) => (
+            <button type="button" class="sorter__btn" data-value={t} aria-pressed="false">
+              {t}
+              <span class="sorter__count">{tagCountOf.get(t) ?? 0}</span>
             </button>
           ))
         }
@@ -336,7 +371,7 @@ const SORTS = [
 
     var GRADE_ORDER = { PG: 0, MG: 1, MGSD: 2, RG: 3, MR: 4, FM: 5, GA: 6, FG: 7, HG: 8, EG: 9, SD: 10 };
 
-    var state = { q: '', grade: '', series: '', channel: '', decade: '', price: '', sort: 'new', page: 1 };
+    var state = { q: '', grade: '', series: '', channel: '', decade: '', price: '', tag: '', sort: 'new', page: 1 };
 
     var DATA = null;
     var RECORDS = [];
@@ -475,6 +510,7 @@ const SORTS = [
       if (s.channel && r.channel !== s.channel) return false;
       if (s.decade && decadeOf(r.year) !== s.decade) return false;
       if (s.price && priceBucket(r.priceJpy) !== s.price) return false;
+      if (s.tag && (r.tags || []).indexOf(s.tag) === -1) return false;
       return true;
     }
 
@@ -562,7 +598,8 @@ const SORTS = [
           !state.series &&
           !state.channel &&
           !state.decade &&
-          !state.price;
+          !state.price &&
+          !state.tag;
       if (clearSearchBtn) clearSearchBtn.hidden = !state.q;
     }
 
@@ -571,7 +608,7 @@ const SORTS = [
       var params = url.searchParams;
       if (state.q) params.set('q', state.q);
       else params.delete('q');
-      ['grade', 'series', 'channel', 'decade', 'price'].forEach(function (key) {
+      ['grade', 'series', 'channel', 'decade', 'price', 'tag'].forEach(function (key) {
         if (state[key]) params.set(key, state[key]);
         else params.delete(key);
       });
@@ -584,9 +621,9 @@ const SORTS = [
 
     function readUrl() {
       var params = new URLSearchParams(window.location.search);
-      var next = { q: '', grade: '', series: '', channel: '', decade: '', price: '', sort: 'new', page: 1 };
+      var next = { q: '', grade: '', series: '', channel: '', decade: '', price: '', tag: '', sort: 'new', page: 1 };
       next.q = params.get('q') || '';
-      ['grade', 'series', 'channel', 'decade', 'price'].forEach(function (key) {
+      ['grade', 'series', 'channel', 'decade', 'price', 'tag'].forEach(function (key) {
         var value = params.get(key);
         if (value) next[key] = value;
       });
@@ -600,10 +637,10 @@ const SORTS = [
     /* 从 URL 读进来的条件必须真的能匹配到条目，否则会得到一个空网格 */
     function sanitize(next) {
       var probe = withFacet(next, 'q', '');
-      ['grade', 'series', 'channel', 'decade', 'price'].forEach(function (key) {
+      ['grade', 'series', 'channel', 'decade', 'price', 'tag'].forEach(function (key) {
         probe = withFacet(probe, key, '');
       });
-      ['grade', 'series', 'channel', 'decade', 'price'].forEach(function (key) {
+      ['grade', 'series', 'channel', 'decade', 'price', 'tag'].forEach(function (key) {
         if (!next[key]) return;
         var candidate = withFacet(probe, key, next[key]);
         for (var i = 0; i < RECORDS.length; i++) {
@@ -665,6 +702,7 @@ const SORTS = [
         state.channel = '';
         state.decade = '';
         state.price = '';
+        state.tag = '';
         state.page = 1;
         if (searchInput) searchInput.value = '';
         apply();

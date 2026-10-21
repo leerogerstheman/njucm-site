@@ -1,0 +1,700 @@
+---
+/**
+ * 数据概览与数据质量
+ *
+ * 两个问题放在一起回答：
+ *
+ *   「这个库里有什么」——规模、价格分布、等级与年代的交叉、渠道构成；
+ *   「这个库里缺什么」——每个关键字段的覆盖率。
+ *
+ * 第二问才是学术站该先回答的。一份数据集如果不把自己的缺口摊开讲，
+ * 别人就没法判断哪些结论能用、哪些不能。零件数目前是 0%，全高不到 1%，
+ * 这些数字写在这里，比藏起来有用。
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import MECHES from '../../../data/gundam.mechs.json';
+import {
+  KITS,
+  SERIES,
+  GRADES,
+  CHANNELS,
+  seriesMeta,
+  gradeMeta,
+  channelMeta,
+  releaseYear,
+  formatJPY,
+} from '../../../data/gundam';
+import '../../../styles/gundam.css';
+import '../../../styles/gundam-theme.css';
+
+interface MechEntry {
+  count: number;
+}
+
+/* ---------------------------------------------------------------- 规模 */
+
+const years = KITS.map((k) => releaseYear(k.released)).filter(Boolean);
+const from = years.length ? Math.min(...years) : null;
+const to = years.length ? Math.max(...years) : null;
+const mechCount = Object.keys(MECHES as Record<string, MechEntry>).length;
+const multiMech = Object.values(MECHES as Record<string, MechEntry>).filter((m) => m.count > 1).length;
+
+/* ------------------------------------------------------------ 价格分布 */
+
+const PRICE_BUCKETS = [
+  { id: 'lt1000', label: '¥1,000 以下', test: (p: number) => p <= 1000 },
+  { id: '1000-3000', label: '¥1,000–3,000', test: (p: number) => p > 1000 && p <= 3000 },
+  { id: '3000-6000', label: '¥3,000–6,000', test: (p: number) => p > 3000 && p <= 6000 },
+  { id: '6000-10000', label: '¥6,000–10,000', test: (p: number) => p > 6000 && p <= 10000 },
+  { id: 'gt10000', label: '¥10,000 以上', test: (p: number) => p > 10000 },
+];
+const priceRows = PRICE_BUCKETS.map((b) => ({
+  ...b,
+  count: KITS.filter((k) => k.priceJpy > 0 && b.test(k.priceJpy)).length,
+}));
+const priceMax = Math.max(1, ...priceRows.map((r) => r.count));
+const noPrice = KITS.filter((k) => k.priceJpy === 0 && k.priceCny === 0).length;
+const cnyOnly = KITS.filter((k) => k.priceJpy === 0 && k.priceCny > 0).length;
+
+/* -------------------------------------------------------- 等级 × 年代矩阵 */
+
+const decades = [...new Set(years.map((y) => Math.floor(y / 10) * 10))].sort();
+const usedGrades = GRADES.filter((g) => KITS.some((k) => k.grade === g.id));
+const matrix = usedGrades.map((g) => {
+  const cells = decades.map((d) => {
+    const n = KITS.filter(
+      (k) => k.grade === g.id && releaseYear(k.released) >= d && releaseYear(k.released) < d + 10,
+    ).length;
+    return { decade: d, count: n };
+  });
+  return { grade: g, cells, total: cells.reduce((a, c) => a + c.count, 0) };
+});
+const matrixMax = Math.max(1, ...matrix.flatMap((r) => r.cells.map((c) => c.count)));
+
+/* ------------------------------------------------------------ 渠道构成 */
+
+const channelRows = CHANNELS.map((c) => ({
+  meta: c,
+  count: KITS.filter((k) => k.channel === c.id).length,
+})).sort((a, b) => b.count - a.count);
+
+/* --------------------------------------------------------- 作品线排行 */
+
+const seriesRows = SERIES.map((s) => ({
+  meta: s,
+  count: KITS.filter((k) => k.series === s.id).length,
+}))
+  .filter((r) => r.count > 0)
+  .sort((a, b) => b.count - a.count);
+const seriesMax = Math.max(1, ...seriesRows.map((r) => r.count));
+
+/* ------------------------------------------------------------ 字段完整度 */
+
+interface Coverage {
+  key: string;
+  label: string;
+  hint: string;
+  hit: (k: (typeof KITS)[number]) => boolean;
+}
+
+const COVERAGE: Coverage[] = [
+  {
+    key: 'priceJpy',
+    label: '官方建议零售价（日元）',
+    hint: '万代官方页上的希望小売价（含税）',
+    hit: (k) => k.priceJpy > 0,
+  },
+  {
+    key: 'priceCny',
+    label: '中国内地官方零售价',
+    hint: '限定品只公布人民币价',
+    hit: (k) => k.priceCny > 0,
+  },
+  {
+    key: 'nameJa',
+    label: '官方日文品名',
+    hint: '来自万代日本站商品页',
+    hit: (k) => !!k.nameJa,
+  },
+  {
+    key: 'sourceJp',
+    label: '日本站出处',
+    hint: '被日站数据校准过的条目',
+    hit: (k) => !!k.sourceJp,
+  },
+  {
+    key: 'parts',
+    label: '零件数',
+    hint: '官方说明与玩家实测，官方站普遍不标',
+    hit: (k) => k.parts !== null,
+  },
+  {
+    key: 'heightMm',
+    label: '全高（mm）',
+    hint: '同上，只在少数条目里补到',
+    hit: (k) => k.heightMm !== null,
+  },
+  {
+    key: 'skillLevel',
+    label: '官方拼装难度',
+    hint: '万代官网的 skill level 1–5',
+    hit: (k) => k.skillLevel !== null,
+  },
+  {
+    key: 'material',
+    label: '材质简述',
+    hint: 'PS / PE / ABS、金属骨架等',
+    hit: (k) => !!k.material,
+  },
+  {
+    key: 'image',
+    label: '官方商品图',
+    hint: '下载并压缩后存在本站 public/',
+    hit: (k) => !!k.image,
+  },
+  {
+    key: 'series',
+    label: '作品线已判定',
+    hint: '官网只维护 40 条作品分类',
+    hit: (k) => k.series !== 'other',
+  },
+  {
+    key: 'mech',
+    label: '机体已归并',
+    hint: '品名归一后的机体名',
+    hit: (k) => !!k.mech,
+  },
+  {
+    key: 'aliases',
+    label: '带别名',
+    hint: '英文名、俗称、旧译、机体编号',
+    hit: (k) => k.aliases.length > 0,
+  },
+  {
+    key: 'note',
+    label: '一句话看点',
+    hint: '人工写的看点',
+    hit: (k) => !!k.note,
+  },
+  {
+    key: 'day',
+    label: '精确到日',
+    hint: '发售日期精确到 YYYY-MM-DD',
+    hit: (k) => /^\d{4}-\d{2}-\d{2}$/.test(k.released),
+  },
+];
+
+const coverageRows = COVERAGE.map((c) => {
+  const n = KITS.filter(c.hit).length;
+  return { ...c, count: n, pct: (n / KITS.length) * 100 };
+}).sort((a, b) => b.pct - a.pct);
+
+/* -------------------------------------------------------------- 来源域名 */
+
+const hostCount = new Map<string, number>();
+for (const k of KITS) {
+  if (!k.source) continue;
+  try {
+    const host = new URL(k.source).hostname;
+    hostCount.set(host, (hostCount.get(host) ?? 0) + 1);
+  } catch {
+    /* 不是 URL 就跳过 */
+  }
+}
+const hostRows = [...hostCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8);
+const hostMax = Math.max(1, ...hostRows.map(([, n]) => n));
+
+/* ---------------------------------------------------------------- 标签 */
+
+const tagCount = new Map<string, number>();
+for (const k of KITS) for (const t of k.tags || []) tagCount.set(t, (tagCount.get(t) ?? 0) + 1);
+const tagRows = [...tagCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, 24);
+const tagMax = Math.max(1, ...tagRows.map(([, n]) => n));
+---
+
+<BaseLayout
+  title="数据概览"
+  description="高达模型数据库的规模、价格分布、等级与年代交叉、渠道构成，以及每个关键字段的覆盖率。"
+  scope="gundam"
+>
+  <nav class="gbreadcrumb" aria-label="面包屑">
+    <a href="/data/">Data</a>
+    <span aria-hidden="true">/</span>
+    <a href="/data/gundam/">高达模型数据库</a>
+    <span aria-hidden="true">/</span>
+    <span class="faint">数据概览</span>
+  </nav>
+
+  <header class="page-head" data-reveal>
+    <p class="eyebrow">概览</p>
+    <h1>数据概览</h1>
+    <p class="page-head__desc">
+      这个库里有什么、缺什么。左边是规模与分布，右边是每个关键字段的覆盖率——
+      一份数据集不把自己的缺口摊开讲，别人就没法判断哪些结论能用。
+    </p>
+    <p class="gdb__tools">
+      <a href="/data/gundam/">条目列表</a>
+      <span aria-hidden="true">·</span>
+      <a href="/data/gundam/mech/">按机体浏览</a>
+      <span aria-hidden="true">·</span>
+      <a href="/data/gundam/series/">按作品线浏览</a>
+      <span aria-hidden="true">·</span>
+      <a href="/data/gundam-database/">字段口径</a>
+    </p>
+  </header>
+
+  <section class="gstat" data-reveal>
+    <ul class="gstat__figures">
+      <li>
+        <span class="gstat__num">{KITS.length}</span>
+        <span class="gstat__label">条记录</span>
+      </li>
+      <li>
+        <span class="gstat__num">{usedGrades.length}</span>
+        <span class="gstat__label">个等级</span>
+      </li>
+      <li>
+        <span class="gstat__num">{seriesRows.length}</span>
+        <span class="gstat__label">条作品线</span>
+      </li>
+      <li>
+        <span class="gstat__num">{mechCount}</span>
+        <span class="gstat__label">台机体</span>
+      </li>
+      <li>
+        <span class="gstat__num">{multiMech}</span>
+        <span class="gstat__label">台多版本机体</span>
+      </li>
+      <li>
+        <span class="gstat__num">{from}–{to}</span>
+        <span class="gstat__label">发售年份</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="gstat" data-reveal>
+    <h2 class="gstat__title">价格分布</h2>
+    <p class="gstat__desc">
+      按官方建议零售价（日元，含税）分档。另有 {noPrice} 条两种定价都没有、
+      {cnyOnly} 条只有人民币价——限定品通常只公布内地零售价。
+    </p>
+    <ul class="gstats__bars">
+      {
+        priceRows.map((r) => (
+          <li class="gstats__bar-row">
+            <span class="gstats__bar-label">{r.label}</span>
+            <span class="gstats__bar-track">
+              <span class="gstats__bar-fill" style={`--w:${(r.count / priceMax) * 100}%`} />
+            </span>
+            <span class="gstats__bar-num">{r.count}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="gstat" data-reveal>
+    <h2 class="gstat__title">等级 × 年代</h2>
+    <p class="gstat__desc">
+      每一格是那个等级在那十年里收录的条目数。颜色越深越多——可以一眼看出哪条
+      等级线集中在哪个年代。
+    </p>
+    <div class="gmatrix" role="table" aria-label="等级与年代的交叉表" style={`--cols:${decades.length}`}>
+      <div class="gmatrix__head" role="row">
+        <span class="gmatrix__corner" role="columnheader"></span>
+        {decades.map((d) => <span class="gmatrix__decade" role="columnheader">{d}s</span>)}
+        <span class="gmatrix__decade gmatrix__decade--total" role="columnheader">合计</span>
+      </div>
+      {
+        matrix.map((row) => (
+          <div class="gmatrix__row" role="row">
+            <span class="gmatrix__grade" role="rowheader">
+              <span class="gcard__grade" data-grade={row.grade.id}>
+                {row.grade.label}
+              </span>
+            </span>
+            {row.cells.map((c) => (
+              <span
+                class="gmatrix__cell"
+                role="cell"
+                style={`--a:${c.count ? Math.max(0.12, c.count / matrixMax) : 0}`}
+                data-empty={c.count === 0 ? 'true' : undefined}
+              >
+                {c.count || ''}
+              </span>
+            ))}
+            <span class="gmatrix__cell gmatrix__cell--total" role="cell">
+              {row.total}
+            </span>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="gstat gstat--two" data-reveal>
+    <div>
+      <h2 class="gstat__title">渠道构成</h2>
+      <ul class="gstats__bars">
+        {
+          channelRows.map((r) => (
+            <li class="gstats__bar-row">
+              <span class="gstats__bar-label">{r.meta.label}</span>
+              <span class="gstats__bar-track">
+                <span class="gstats__bar-fill" style={`--w:${(r.count / KITS.length) * 100 * 2.6}%`} />
+              </span>
+              <span class="gstats__bar-num">{r.count}</span>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="gstat__desc">
+        渠道以商品页上的官方徽章为准：「线上售卖」即网络限定，「高达基地限定」即店限定。
+      </p>
+    </div>
+
+    <div>
+      <h2 class="gstat__title">作品线排行</h2>
+      <ul class="gstats__bars">
+        {
+          seriesRows.slice(0, 10).map((r) => (
+            <li class="gstats__bar-row gstats__bar-row--wide">
+              <a class="gstats__bar-label gstats__bar-label--link" href={`/data/gundam/series/${r.meta.id}/`}>
+                {r.meta.short}
+              </a>
+              <span class="gstats__bar-track">
+                <span class="gstats__bar-fill" style={`--w:${(r.count / seriesMax) * 100}%`} />
+              </span>
+              <span class="gstats__bar-num">{r.count}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="gstat" data-reveal>
+    <h2 class="gstat__title">字段覆盖</h2>
+    <p class="gstat__desc">
+      每个字段有多少条记录是有的。缺失一律留空，不做估算——所以这里的百分比
+      就是这份数据能用到的边界。
+    </p>
+    <table class="gcover">
+      <thead>
+        <tr>
+          <th scope="col">字段</th>
+          <th scope="col">说明</th>
+          <th scope="col">覆盖率</th>
+          <th scope="col">条目数</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          coverageRows.map((r) => (
+            <tr>
+              <td class="gcover__key">{r.label}</td>
+              <td class="gcover__hint">{r.hint}</td>
+              <td class="gcover__pct">
+                <span class="gcover__track">
+                  <span class="gcover__fill" style={`--w:${r.pct}%`} />
+                </span>
+                <span class="gcover__num">{r.pct.toFixed(1)}%</span>
+              </td>
+              <td class="gcover__num gcover__count">{r.count}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </section>
+
+  <section class="gstat gstat--two" data-reveal>
+    <div>
+      <h2 class="gstat__title">来源分布</h2>
+      <p class="gstat__desc">每条记录的 `source` 指向它实际核实的那个页面。</p>
+      <ul class="gstats__bars">
+        {
+          hostRows.map(([host, n]) => (
+            <li class="gstats__bar-row gstats__bar-row--host">
+              <span class="gstats__bar-label">{host}</span>
+              <span class="gstats__bar-track">
+                <span class="gstats__bar-fill" style={`--w:${(n / hostMax) * 100}%`} />
+              </span>
+              <span class="gstats__bar-num">{n}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="gstat__title">特征标签</h2>
+      <p class="gstat__desc">
+        条目上的人工标签。前面几个是渠道与状态（与渠道字段重合），其余是特征类。
+      </p>
+      <ul class="gstat__tags">
+        {
+          tagRows.map(([tag, n]) => (
+            <li>
+              <a href={`/data/gundam/?tag=${encodeURIComponent(tag)}`}>
+                {tag}
+                <i>{n}</i>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .gstat {
+    margin: 2.2rem 0 0;
+  }
+
+  .gstat--two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+    gap: 2rem;
+  }
+
+  .gstat__title {
+    font-size: var(--fs-lg);
+    margin: 0 0 0.5rem;
+  }
+
+  .gstat__desc {
+    font-size: var(--fs-sm);
+    color: var(--text-dim);
+    margin: 0 0 0.9rem;
+    max-width: 62ch;
+  }
+
+  /* 条形图的标签列：全局样式只给 3.4rem，放不下「¥1,000–3,000」这类标签 */
+  .gstat .gstats__bar-row {
+    grid-template-columns: 6.5rem 1fr 2.4rem;
+  }
+
+  .gstat .gstats__bar-row--wide {
+    grid-template-columns: 9.5rem 1fr 2.4rem;
+  }
+
+  .gstat .gstats__bar-row--host {
+    grid-template-columns: 11.5rem 1fr 2.4rem;
+  }
+
+  .gstat .gstats__bar-row--host .gstats__bar-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .gstat__figures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+    gap: 0.7rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gstat__figures li {
+    padding: 0.8rem 0.9rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+
+  .gstat__num {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.2;
+  }
+
+  .gstat__label {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: var(--fs-xs);
+    color: var(--text-faint);
+  }
+
+  /* ---- 等级 × 年代矩阵 -------------------------------------------------- */
+  .gmatrix {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+    overflow-x: auto;
+    padding-bottom: 0.4rem;
+  }
+
+  .gmatrix__head,
+  .gmatrix__row {
+    display: grid;
+    grid-template-columns: 3.6rem repeat(var(--cols, 4), minmax(2.6rem, 1fr)) 3.4rem;
+    gap: 2px;
+    align-items: stretch;
+  }
+
+  .gmatrix__row {
+    grid-template-columns: 3.6rem repeat(var(--cols, 4), minmax(2.6rem, 1fr)) 3.4rem;
+  }
+
+  .gmatrix__head {
+    grid-template-columns: 3.6rem repeat(var(--cols, 4), minmax(2.6rem, 1fr)) 3.4rem;
+  }
+
+  .gmatrix__decade {
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    color: var(--text-faint);
+    text-align: center;
+    padding-bottom: 0.3rem;
+    white-space: nowrap;
+  }
+
+  .gmatrix__grade {
+    display: flex;
+    align-items: center;
+  }
+
+  .gmatrix__cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.1rem;
+    border-radius: var(--radius-xs);
+    background: color-mix(in oklab, var(--accent) calc(var(--a) * 100%), var(--surface-2));
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    color: var(--text);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .gmatrix__cell[data-empty='true'] {
+    background: var(--surface-2);
+    color: var(--text-faint);
+    opacity: 0.5;
+  }
+
+  .gmatrix__cell--total {
+    background: transparent;
+    color: var(--text-dim);
+    font-weight: 600;
+  }
+
+  /* ---- 覆盖率表 -------------------------------------------------------- */
+  .gcover {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--fs-sm);
+  }
+
+  .gcover th {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--text-faint);
+    font-weight: 500;
+    padding: 0.4rem 0.6rem;
+    border-bottom: 1px solid var(--line-strong);
+  }
+
+  .gcover td {
+    padding: 0.45rem 0.6rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: middle;
+  }
+
+  .gcover__key {
+    white-space: nowrap;
+    font-weight: 600;
+  }
+
+  .gcover__hint {
+    color: var(--text-faint);
+    font-size: var(--fs-xs);
+  }
+
+  .gcover__pct {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 9rem;
+  }
+
+  .gcover__track {
+    flex: 1;
+    min-width: 3.5rem;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--surface-2);
+    overflow: hidden;
+  }
+
+  .gcover__fill {
+    display: block;
+    width: var(--w);
+    height: 100%;
+    border-radius: 3px;
+    background: var(--accent);
+  }
+
+  .gcover__num {
+    font-family: var(--font-mono);
+    font-size: var(--fs-xs);
+    color: var(--text-dim);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .gcover__count {
+    text-align: right;
+  }
+
+  .gstats__bar-label--link {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  /* ---- 标签 ------------------------------------------------------------ */
+  .gstat__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gstat__tags a {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.35rem;
+    padding: 0.16rem 0.55rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-pill);
+    font-size: var(--fs-xs);
+    color: var(--text-dim);
+    background-image: none;
+  }
+
+  .gstat__tags a:hover {
+    background-image: none;
+    color: var(--accent);
+    border-color: var(--accent-line);
+    background: var(--accent-soft);
+  }
+
+  .gstat__tags i {
+    font-style: normal;
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    color: var(--text-faint);
+  }
+</style>

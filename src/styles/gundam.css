@@ -788,6 +788,38 @@
     font-weight: 700;
   }
 
+  /* 可点的标签（作品线、特征）走链接样式 */
+  a.gdetail__tag {
+    background-image: none;
+    transition: color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+  }
+
+  a.gdetail__tag:hover {
+    background-image: none;
+    color: var(--accent);
+    background: var(--accent-soft);
+  }
+
+  /* 「加入对比」按钮：外观与标签一致，但可点 */
+  .gdetail__tag--btn {
+    border: 1px solid var(--accent-line);
+    background: transparent;
+    color: var(--accent);
+    font-family: inherit;
+    font-size: var(--fs-2xs);
+    cursor: pointer;
+  }
+
+  .gdetail__tag--btn:hover {
+    background: var(--accent-soft);
+  }
+
+  .gdetail__tag--btn.is-on {
+    background: var(--accent);
+    color: var(--text-inverse);
+    border-color: var(--accent);
+  }
+
   .gdetail__note {
     margin: 1.1rem 0 0;
     padding: 0.85rem 1rem;

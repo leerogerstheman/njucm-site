@@ -2,6 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import KitBrowser from '../../../components/gundam/KitBrowser.astro';
 import KitStats from '../../../components/gundam/KitStats.astro';
+import CompareBar from '../../../components/gundam/CompareBar.astro';
 import { KITS, releaseYear } from '../../../data/gundam';
 import '../../../styles/gundam.css';
 import '../../../styles/gundam-theme.css';
@@ -29,6 +30,10 @@ const description =
     <p class="gdb__tools">
       <a href="/data/gundam/mech/">按机体浏览</a>
       <span aria-hidden="true">·</span>
+      <a href="/data/gundam/series/">按作品线浏览</a>
+      <span aria-hidden="true">·</span>
+      <a href="/data/gundam/stats/">数据概览</a>
+      <span aria-hidden="true">·</span>
       <a href="/data/gundam/export.json" download>导出 JSON</a>
       <span aria-hidden="true">·</span>
       <a href="/data/gundam/export.csv" download>导出 CSV</a>
@@ -40,4 +45,6 @@ const description =
   <KitStats kits={KITS} />
 
   <KitBrowser kits={KITS} />
+
+  <CompareBar />
 </BaseLayout>

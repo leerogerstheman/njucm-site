@@ -1,0 +1,246 @@
+---
+/**
+ * 对比栏
+ *
+ * 选中若干条目后浮在页面右下角，告诉你选了几件、以及怎么去看对比。
+ * 选择存在浏览器的 localStorage 里——这是一个纯本地的工具，不需要账号，
+ * 也不会把任何东西传到服务端。
+ */
+---
+
+<div class="gcmp" data-compare-bar hidden>
+  <div class="gcmp__panel">
+    <p class="gcmp__title">
+      对比
+      <span class="gcmp__count" data-compare-count>0</span>
+      件
+    </p>
+    <ul class="gcmp__chips" data-compare-chips></ul>
+    <div class="gcmp__actions">
+      <a class="gcmp__go" href="/data/gundam/compare/" data-compare-go>查看对比</a>
+      <button class="gcmp__clear" type="button" data-compare-clear>清空</button>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  // 对比栏。选中状态存在 localStorage，跨页面保留。
+  (function () {
+    var STORAGE_KEY = 'njucm:gundam:compare';
+    var MAX = 6;
+
+    var bar = document.querySelector('[data-compare-bar]');
+    if (!bar) return;
+
+    var countEl = bar.querySelector('[data-compare-count]');
+    var chipsEl = bar.querySelector('[data-compare-chips]');
+    var goEl = bar.querySelector('[data-compare-go]');
+    var clearEl = bar.querySelector('[data-compare-clear]');
+
+    function read() {
+      try {
+        var raw = localStorage.getItem(STORAGE_KEY);
+        var list = raw ? JSON.parse(raw) : [];
+        return Array.isArray(list) ? list.filter(function (x) { return typeof x === 'string'; }) : [];
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function write(list) {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+      } catch (e) {
+        /* 隐私模式下写不了，忽略即可 */
+      }
+    }
+
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+      });
+    }
+
+    function render() {
+      var list = read();
+      bar.hidden = list.length === 0;
+      if (countEl) countEl.textContent = String(list.length);
+      if (chipsEl) {
+        chipsEl.innerHTML = list
+          .map(function (id) {
+            return (
+              '<li class="gcmp__chip">' +
+              '<a href="/data/gundam/' + encodeURIComponent(id) + '/">' +
+              esc(document.documentElement.getAttribute('data-title-' + id) || id) +
+              '</a>' +
+              '<button type="button" data-compare-remove="' + esc(id) + '" aria-label="移除">×</button>' +
+              '</li>'
+            );
+          })
+          .join('');
+      }
+      if (goEl) goEl.href = '/data/gundam/compare/?ids=' + encodeURIComponent(list.join(','));
+    }
+
+    /* 条目名从页面里取：详情页把名字写在 <html data-title-<id>> 上 */
+    document.addEventListener('gundam:compare-change', function () {
+      render();
+    });
+
+    if (clearEl) {
+      clearEl.addEventListener('click', function () {
+        write([]);
+        render();
+      });
+    }
+
+    if (chipsEl) {
+      chipsEl.addEventListener('click', function (e) {
+        var btn = e.target.closest ? e.target.closest('[data-compare-remove]') : null;
+        if (!btn) return;
+        var id = btn.getAttribute('data-compare-remove');
+        write(read().filter(function (x) { return x !== id; }));
+        render();
+      });
+    }
+
+    window.__gundamCompare = {
+      add: function (id, name) {
+        var list = read();
+        if (list.indexOf(id) !== -1) {
+          list = list.filter(function (x) { return x !== id; });
+        } else {
+          if (list.length >= MAX) list.shift();
+          list.push(id);
+          if (name) {
+            document.documentElement.setAttribute('data-title-' + id, name);
+          }
+        }
+        write(list);
+        render();
+        return list.indexOf(id) !== -1;
+      },
+      has: function (id) {
+        return read().indexOf(id) !== -1;
+      },
+      count: function () {
+        return read().length;
+      },
+    };
+
+    render();
+  })();
+</script>
+
+<style>
+  .gcmp {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 40;
+    max-width: min(24rem, calc(100vw - 2rem));
+  }
+
+  .gcmp__panel {
+    padding: 0.7rem 0.8rem;
+    border: 1px solid var(--accent-line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .gcmp__title {
+    margin: 0 0 0.4rem;
+    font-size: var(--fs-xs);
+    color: var(--text-dim);
+  }
+
+  .gcmp__count {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  .gcmp__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.55rem;
+    max-height: 9rem;
+    overflow-y: auto;
+  }
+
+  .gcmp__chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    max-width: 100%;
+    padding: 0.1rem 0.2rem 0.1rem 0.45rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-pill);
+    font-size: var(--fs-2xs);
+  }
+
+  .gcmp__chip a {
+    color: var(--text-dim);
+    background-image: none;
+    max-width: 12rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .gcmp__chip a:hover {
+    color: var(--accent);
+  }
+
+  .gcmp__chip button {
+    border: none;
+    background: none;
+    padding: 0 0.2rem;
+    color: var(--text-faint);
+    font-size: 0.95rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .gcmp__chip button:hover {
+    color: var(--accent);
+  }
+
+  .gcmp__actions {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .gcmp__go {
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-pill);
+    background: var(--accent);
+    color: var(--text-inverse);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    background-image: none;
+  }
+
+  .gcmp__go:hover {
+    background-image: none;
+    filter: brightness(1.08);
+  }
+
+  .gcmp__clear {
+    border: none;
+    background: none;
+    padding: 0;
+    color: var(--text-faint);
+    font-size: var(--fs-xs);
+    cursor: pointer;
+  }
+
+  .gcmp__clear:hover {
+    color: var(--accent);
+  }
+</style>

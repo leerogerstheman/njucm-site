@@ -2,6 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import KitCover from '../../../components/gundam/KitCover.astro';
 import KitCard from '../../../components/gundam/KitCard.astro';
+import CompareBar from '../../../components/gundam/CompareBar.astro';
 import { ART_VIEWS } from '../../../data/gundam.art';
 import MECHES from '../../../data/gundam.mechs.json';
 import {
@@ -127,9 +128,12 @@ const description = `${kit.name}（${kit.grade} ${kit.scale}）· ${series.label
       <div class="gdetail__tags">
         <span class="gdetail__tag gdetail__tag--grade">{kit.grade}</span>
         <span class="gdetail__tag">{kit.scale}</span>
-        <span class="gdetail__tag">{series.label}</span>
+        <a class="gdetail__tag" href={`/data/gundam/series/${kit.series}/`}>{series.label}</a>
         <span class="gdetail__tag">{channel.label}</span>
-        {kit.tags.map((tag) => <span class="gdetail__tag">{tag}</span>)}
+        {kit.tags.map((tag) => <a class="gdetail__tag" href={`/data/gundam/?tag=${encodeURIComponent(tag)}`}>{tag}</a>)}
+        <button class="gdetail__tag gdetail__tag--btn" type="button" data-compare-add={kit.id} data-compare-name={kit.name}>
+          加入对比
+        </button>
       </div>
 
       {kit.note && <p class="gdetail__note">{kit.note}</p>}
@@ -152,7 +156,7 @@ const description = `${kit.name}（${kit.grade} ${kit.scale}）· ${series.label
         <div class="gspec__row">
           <span class="gspec__key">作品线</span>
           <span class="gspec__val">
-            <a href={`/data/gundam/?series=${kit.series}`}>{series.label}</a>
+            <a href={`/data/gundam/series/${kit.series}/`}>{series.label}</a>
           </span>
         </div>
         <div class="gspec__row">
@@ -342,6 +346,7 @@ const description = `${kit.name}（${kit.grade} ${kit.scale}）· ${series.label
       </section>
     )
   }
+  <CompareBar />
 </BaseLayout>
 
 <!-- 灯箱 -->
@@ -349,6 +354,32 @@ const description = `${kit.name}（${kit.grade} ${kit.scale}）· ${series.label
   <button class="glightbox__close" type="button" data-lightbox-close>关闭 (Esc)</button>
   <div data-lightbox-body></div>
 </dialog>
+
+<script is:inline>
+  // 「加入对比」按钮。选中状态存在浏览器里，由 CompareBar 组件负责显示。
+  (function () {
+    var btn = document.querySelector('[data-compare-add]');
+    if (!btn || !window.__gundamCompare) return;
+
+    var id = btn.getAttribute('data-compare-add');
+    var name = btn.getAttribute('data-compare-name') || '';
+
+    function sync() {
+      var on = window.__gundamCompare.has(id);
+      btn.textContent = on ? '已在对比中' : '加入对比';
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.classList.toggle('is-on', on);
+    }
+
+    btn.addEventListener('click', function () {
+      window.__gundamCompare.add(id, name);
+      sync();
+      document.dispatchEvent(new CustomEvent('gundam:compare-change'));
+    });
+
+    sync();
+  })();
+</script>
 
 <script is:inline>
   // 图集：切换视角 + 灯箱。

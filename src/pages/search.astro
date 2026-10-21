@@ -4,14 +4,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout
   title="Search"
-  description="搜索 njucm.org 的全部笔记、数据集与项目。"
+  description="搜索 njucm.org 的全部笔记、数据集、项目与高达模型条目。"
 >
   <header class="page-head" data-reveal>
     <p class="eyebrow">Search</p>
     <h1>搜索</h1>
     <p class="page-head__desc">
-      索引在构建期生成，包含每篇的正文纯文本。按 <kbd>/</kbd> 聚焦，
-      <kbd>Esc</kbd> 清空。中文不需要分词，直接按子串匹配。
+      索引在构建期生成，包含每篇的正文纯文本；高达模型条目则复用数据库自己的
+      索引（型号、中文名、日文名、机体、别名、标签都在里面）。
+      按 <kbd>/</kbd> 聚焦，<kbd>Esc</kbd> 清空。中文不需要分词，直接按子串匹配。
     </p>
   </header>
 
@@ -55,8 +56,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   // 索引是构建期生成的静态 JSON，只在访客第一次输入时才取 —— 所以搜索功能
   // 不给任何一个页面的首屏增加任何负担（见 pages/search-index.json.ts）。
   //
+  // 高达模型条目的索引是另一份：/data/gundam/index.json。列表页本来就在用它
+  // 做筛选与分页，搜索页直接复用同一份，不再单独造一份数据。
+  //
   // 匹配用的是朴素子串查找而不是分词：中文没有空格边界，分词反而会在
-  // 短查询上出错；英文那边 26 篇文档的规模也远没到需要索引结构的程度。
+  // 短查询上出错；英文那边几十篇文档的规模也远没到需要索引结构的程度。
   (function () {
     var form = document.querySelector('[data-search]');
     var input = form && form.querySelector('.search__input');
@@ -65,17 +69,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     var clearBtn = document.querySelector('[data-search-clear]');
     if (!form || !input || !list) return;
 
-    var INDEX_URL = '/search-index.json';
+    var DOC_INDEX_URL = '/search-index.json';
+    var KIT_INDEX_URL = '/data/gundam/index.json';
     var SNIPPET_RADIUS = 62;
-    var MAX_RESULTS = 20;
+    var MAX_RESULTS = 40;
 
     var index = null;
+    var kits = null;
     var loading = null;
+    var kitLoading = null;
 
     function load() {
       if (index) return Promise.resolve(index);
       if (loading) return loading;
-      loading = fetch(INDEX_URL)
+      loading = fetch(DOC_INDEX_URL)
         .then(function (r) {
           if (!r.ok) throw new Error('HTTP ' + r.status);
           return r.json();
@@ -103,6 +110,65 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           throw new Error('索引加载失败');
         });
       return loading;
+    }
+
+    /**
+     * 高达模型索引。列表页的数据结构直接复用：行是数组，字段顺序由 fields 定。
+     * 这里把它摊平成和文档一样的形状，好让打分与摘录走同一套代码。
+     */
+    function loadKits() {
+      if (kits) return Promise.resolve(kits);
+      if (kitLoading) return kitLoading;
+      kitLoading = fetch(KIT_INDEX_URL)
+        .then(function (r) {
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          return r.json();
+        })
+        .then(function (payload) {
+          var idx = {};
+          payload.fields.forEach(function (f, i) {
+            idx[f] = i;
+          });
+          kits = payload.rows.map(function (row) {
+            var k = {};
+            payload.fields.forEach(function (f, i) {
+              k[f] = row[i];
+            });
+            var seriesLabel = payload.series[k.series] || '';
+            var channelLabel = payload.channels[k.channel] || '';
+            var gradeFull = payload.grades[k.grade] || '';
+            var aliases = k.aliases || [];
+            var tags = k.tags || [];
+            var text = [k.name, k.nameJa, k.mech]
+              .concat(aliases)
+              .concat(tags)
+              .filter(Boolean)
+              .join(' · ');
+            var desc =
+              k.grade + ' ' + k.scale + ' · ' + seriesLabel + ' · ' + (k.released || '—');
+            if (k.priceJpy) desc += ' · ¥' + k.priceJpy.toLocaleString('en-US');
+            else if (k.priceCny) desc += ' · ¥' + k.priceCny.toLocaleString('en-US');
+            return {
+              title: k.name,
+              desc: desc,
+              href: '/data/gundam/' + encodeURIComponent(k.id) + '/',
+              section: 'gundam',
+              tags: [k.grade, k.scale, seriesLabel, channelLabel, k.mech].concat(aliases),
+              text: text,
+              lower: (k.name || '').toLowerCase(),
+              lowerDesc: desc.toLowerCase(),
+              lowerTags: [k.grade, k.scale, seriesLabel, channelLabel, k.mech].concat(aliases).join(' ').toLowerCase(),
+              lowerText: text.toLowerCase(),
+            };
+          });
+          return kits;
+        })
+        .catch(function () {
+          kits = null;
+          kitLoading = null;
+          throw new Error('模型索引加载失败');
+        });
+      return kitLoading;
     }
 
     /**
@@ -149,27 +215,37 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       return (start > 0 ? '…' : '') + highlight(body, q) + '…';
     }
 
-    var SECTION_LABEL = { projects: 'Projects', notes: 'Notes', data: 'Data' };
+    var SECTION_LABEL = { projects: 'Projects', notes: 'Notes', data: 'Data', gundam: '高达模型' };
 
     function render(q) {
       if (!q) {
         list.innerHTML = '';
-        status.textContent = '共 ' + (index ? index.length : 0) + ' 篇内容可搜索。输入关键词开始。';
+        status.textContent =
+          '共 ' + (index ? index.length : 0) + ' 篇内容可搜索，高达模型条目会一并搜。输入关键词开始。';
         return;
       }
 
       var hits = [];
-      for (var i = 0; i < index.length; i++) {
-        var s = score(index[i], q);
+      var i;
+      var s;
+      for (i = 0; i < index.length; i++) {
+        s = score(index[i], q);
         if (s > 0) hits.push({ doc: index[i], score: s });
+      }
+      if (kits) {
+        for (i = 0; i < kits.length; i++) {
+          s = score(kits[i], q);
+          if (s > 0) hits.push({ doc: kits[i], score: s });
+        }
       }
       hits.sort(function (a, b) {
         return b.score - a.score || a.doc.title.localeCompare(b.doc.title, 'zh-Hans-CN');
       });
+      var total = hits.length;
       hits = hits.slice(0, MAX_RESULTS);
 
-      status.textContent = hits.length
-        ? '找到 ' + hits.length + ' 条结果' + (hits.length === MAX_RESULTS ? '（仅显示前 ' + MAX_RESULTS + ' 条）' : '')
+      status.textContent = total
+        ? '找到 ' + total + ' 条结果' + (total > MAX_RESULTS ? '（仅显示前 ' + MAX_RESULTS + ' 条）' : '')
         : '没有匹配「' + q + '」的结果';
 
       list.innerHTML = hits
@@ -192,14 +268,31 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     function run() {
       var q = input.value.trim().toLowerCase();
       if (clearBtn) clearBtn.hidden = input.value.length === 0;
+
       if (!index) {
         status.textContent = '正在加载索引…';
         load()
           .then(function () {
-            render(q);
+            afterDocIndex(q);
           })
           .catch(function () {
             status.textContent = '索引加载失败，请稍后重试。';
+          });
+        return;
+      }
+      afterDocIndex(q);
+    }
+
+    /* 文档索引就绪之后，模型索引只在真的搜起来时才去取 */
+    function afterDocIndex(q) {
+      if (q && !kits) {
+        status.textContent = '正在准备模型索引…';
+        loadKits()
+          .then(function () {
+            render(q);
+          })
+          .catch(function () {
+            render(q);
           });
         return;
       }
@@ -228,7 +321,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     // 预取索引：访客打开页面时就在后台取，真正输入时几乎不用等。
     load()
       .then(function () {
-        status.textContent = '共 ' + index.length + ' 篇内容可搜索。输入关键词开始。';
+        status.textContent =
+          '共 ' + index.length + ' 篇内容可搜索，高达模型条目会一并搜。输入关键词开始。';
       })
       .catch(function () {
         status.textContent = '索引加载失败，请稍后重试。';

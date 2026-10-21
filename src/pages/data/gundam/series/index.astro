@@ -1,0 +1,254 @@
+---
+/**
+ * 作品线索引
+ *
+ * 列表页的分面里，「系列」只是一个筛选按钮——按下去看不到这条作品线究竟
+ * 收了些什���样。作品线是玩家挑选模型时最先想到的分类，所以每条作品线在这里
+ * 都有自己的一页：条目数、等级构成、年代跨度、价格区间，还有这条线里
+ * 版本最多的几台机体。
+ */
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { KITS, SERIES, seriesMeta, formatJPY, releaseYear } from '../../../../data/gundam';
+import MECHES from '../../../../data/gundam.mechs.json';
+import '../../../../styles/gundam.css';
+import '../../../../styles/gundam-theme.css';
+
+interface MechEntry {
+  label: string;
+  count: number;
+  kits: string[];
+  series: string[];
+}
+
+/** 每条作品线的一组统计，全部由条目本身算出来 */
+function statsOf(seriesId: string) {
+  const kits = KITS.filter((k) => k.series === seriesId);
+  const years = kits.map((k) => releaseYear(k.released)).filter(Boolean);
+  const prices = kits.map((k) => k.priceJpy).filter((p) => p > 0);
+  const grades = new Map<string, number>();
+  for (const k of kits) grades.set(k.grade, (grades.get(k.grade) ?? 0) + 1);
+
+  /* 这条线里版本最多的机体——同机体的不同等级与配色 */
+  const mechs = Object.entries(MECHES as Record<string, MechEntry>)
+    .filter(([, m]) => m.series.includes(seriesId) && m.count > 1)
+    .sort((a, b) => b[1].count - a[1].count || a[1].label.localeCompare(b[1].label, 'zh-Hans-CN'))
+    .slice(0, 6)
+    .map(([key, m]) => ({ key, label: m.label, count: m.count }));
+
+  return {
+    id: seriesId,
+    meta: seriesMeta(seriesId),
+    count: kits.length,
+    from: years.length ? Math.min(...years) : null,
+    to: years.length ? Math.max(...years) : null,
+    priceMin: prices.length ? Math.min(...prices) : 0,
+    priceMax: prices.length ? Math.max(...prices) : 0,
+    grades: [...grades.entries()].sort((a, b) => b[1] - a[1]),
+    mechs,
+  };
+}
+
+const rows = SERIES.map((s) => statsOf(s.id)).sort(
+  (a, b) => b.count - a.count || a.meta.label.localeCompare(b.meta.label, 'zh-Hans-CN'),
+);
+
+/* 表里有、但一条记录都没有的作品线（0093、08ms 之类）不列出来：空页面没有意义 */
+
+/** 「其他作品」是未归类的杂物间，排在最后 */
+const known = rows.filter((r) => r.id !== 'other' && r.count > 0);
+const rest = rows.filter((r) => r.id === 'other');
+
+const gradeLabel = (g: string) => g;
+---
+
+<BaseLayout
+  title="按作品线浏览"
+  description="每条高达作品线在库里的条目数、等级构成、年代跨度、官方定价区间与代表机体。"
+  scope="gundam"
+>
+  <nav class="gbreadcrumb" aria-label="面包屑">
+    <a href="/data/">Data</a>
+    <span aria-hidden="true">/</span>
+    <a href="/data/gundam/">高达模型数据库</a>
+    <span aria-hidden="true">/</span>
+    <span class="faint">按作品线浏览</span>
+  </nav>
+
+  <header class="page-head" data-reveal>
+    <p class="eyebrow">作品线</p>
+    <h1>按作品线浏览</h1>
+    <p class="page-head__desc">
+      同一台机体可以跨作品线出现，不同作品线也共用同一种等级语言。这里按作品线
+      把库里的条目分开，每条线给出自己的规模、等级构成、年代跨度与定价区间。
+    </p>
+    <p class="count" style="margin:1rem 0 0">
+      {known.length} 条作品线 · {KITS.length} 条记录
+    </p>
+    <p class="gdb__tools">
+      <a href="/data/gundam/mech/">按机体浏览</a>
+      <span aria-hidden="true">·</span>
+      <a href="/data/gundam/stats/">数据概览</a>
+      <span aria-hidden="true">·</span>
+      <a href="/data/gundam/">条目列表</a>
+    </p>
+  </header>
+
+  <section class="gser" data-reveal>
+    <ul class="gser__list">
+      {
+        [...known, ...rest].map((r) => (
+          <li class="gser__item">
+            <a class="gser__link" href={`/data/gundam/series/${r.id}/`}>
+              <span class="gser__head">
+                <span class="gser__swatch" data-series={r.id} aria-hidden="true">
+                  <i style={`--c:${r.meta.palette[0]}`} />
+                  <i style={`--c:${r.meta.palette[1]}`} />
+                  <i style={`--c:${r.meta.palette[2]}`} />
+                </span>
+                <span class="gser__label">{r.meta.label}</span>
+                <span class="gser__count">{r.count} 条</span>
+              </span>
+              <span class="gser__meta">
+                {r.from && (
+                  <span>
+                    {r.from}–{r.to} 年
+                  </span>
+                )}
+                {r.priceMax > 0 && (
+                  <span>
+                    {formatJPY(r.priceMin)} – {formatJPY(r.priceMax)}
+                  </span>
+                )}
+              </span>
+              {r.grades.length > 0 && (
+                <span class="gser__grades">
+                  {r.grades.slice(0, 5).map(([g, n]) => (
+                    <span class="gser__grade" data-grade={g}>
+                      {gradeLabel(g)}
+                      <i>{n}</i>
+                    </span>
+                  ))}
+                  {r.grades.length > 5 && (
+                    <span class="gser__grade gser__grade--more">+{r.grades.length - 5}</span>
+                  )}
+                </span>
+              )}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>
+
+<style>
+  .gser {
+    margin: 2rem 0 0;
+  }
+
+  .gser__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+    gap: 0.7rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gser__item {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+  }
+
+  .gser__link {
+    display: grid;
+    gap: 0.35rem;
+    padding: 0.75rem 0.9rem;
+    color: var(--text);
+    background-image: none;
+  }
+
+  .gser__link:hover {
+    background-image: none;
+    border-radius: var(--radius-sm);
+    background: var(--accent-soft);
+  }
+
+  .gser__head {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .gser__swatch {
+    display: inline-flex;
+    gap: 2px;
+    flex: none;
+  }
+
+  .gser__swatch i {
+    width: 7px;
+    height: 14px;
+    border-radius: 1px;
+    background: var(--c);
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.12);
+  }
+
+  .gser__label {
+    flex: 1;
+    min-width: 0;
+    font-size: var(--fs-sm);
+    font-weight: 640;
+    overflow-wrap: anywhere;
+  }
+
+  .gser__link:hover .gser__label {
+    color: var(--accent);
+  }
+
+  .gser__count {
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    color: var(--text-faint);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .gser__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 0.9rem;
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    color: var(--text-faint);
+  }
+
+  .gser__grades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .gser__grade {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    padding: 0.05rem 0.35rem;
+    border-radius: var(--radius-xs);
+    background: var(--surface-2);
+    font-family: var(--font-mono);
+    font-size: 0.64rem;
+    color: var(--text-dim);
+  }
+
+  .gser__grade i {
+    font-style: normal;
+    color: var(--text-faint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .gser__grade--more {
+    color: var(--text-faint);
+  }
+</style>
