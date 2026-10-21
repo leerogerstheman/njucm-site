@@ -18,6 +18,12 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync, appendFileSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import {
+  gradeOf,
+  scaleOf,
+  cleanName,
+  productName,
+} from './lib/grade.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CACHE = join(ROOT, '.cache', 'gundam-catalog');
@@ -288,43 +294,6 @@ for (const line of lines) {
   }
 }
 
-const GRADE_RULES = [
-  [/^HGUC/i, 'HG'],
-  [/^HG/i, 'HG'],
-  [/^RG/i, 'RG'],
-  [/^MG\s*Ver\.?\s*Ka/i, 'MG'],
-  [/^MGSD/i, 'MGSD'],
-  [/^MGEX/i, 'MG'],
-  [/^RE\s*\/\s*100/i, 'MG'],
-  [/^MG/i, 'MG'],
-  [/^PG/i, 'PG'],
-  [/^ENTRY\s*GRADE/i, 'EG'],
-  [/^EG/i, 'EG'],
-  [/^FULL\s*MECHANICS/i, 'FM'],
-  [/^FM/i, 'FM'],
-  [/^SDCS/i, 'SD'],
-  [/^SDEX/i, 'SD'],
-  [/^METAL\s*ROBOT/i, 'MR'],
-  [/^HIGH[- ]?RESOLUTION/i, 'MR'],
-  [/^SD\b/i, 'SD'],
-  [/^BB/i, null],
-];
-
-function gradeOf(name) {
-  for (const [re, grade] of GRADE_RULES) {
-    if (re.test(name)) return grade;
-  }
-  return null;
-}
-
-function scaleOf(grade, name) {
-  const m = /(1\/\d+)/.exec(name);
-  if (m) return m[1];
-  if (grade === 'SD') return 'SD 比例';
-  if (grade === 'MR') return '无比例';
-  return grade === 'MG' || grade === 'PG' || grade === 'FM' ? '1/100' : '1/144';
-}
-
 /**
  * 销售渠道只能从品名认。
  *
@@ -351,14 +320,12 @@ const catalog = [];
 for (const item of byId.values()) {
   const grade = gradeOf(item.name);
   if (!grade) continue;
-  const name = item.name.replace(/\s+/g, ' ').trim();
+  const name = cleanName(item.name);
   if (NOT_A_MODEL.test(name)) continue;
   const scale = scaleOf(grade, name);
   catalog.push({
     id: `bc-${item.detailId}`,
-    name: /^(HG|HGUC|RG|MG|PG|SD|EG|FG|FM|MGSD|MR|METAL|ENTRY|FULL|HIGH|RE)/i.test(name)
-      ? name
-      : `${grade} ${scale} ${name}`,
+    name: productName(grade, scale, name),
     nameJa: '',
     grade,
     maker: 'BANDAI SPIRITS',

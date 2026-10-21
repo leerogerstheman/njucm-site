@@ -469,9 +469,9 @@
       "ZGMF-X10A",
       "自由高达"
     ],
-    "count": 10,
+    "count": 11,
     "categories": {
-      "bandai:mg": 3,
+      "bandai:mg": 4,
       "bandai:mgsd": 2,
       "bandai:fm": 2,
       "bandai:sd": 1,
@@ -484,6 +484,7 @@
     "kits": [
       "bc-3590",
       "bc-2756",
+      "bc-242",
       "mgsd-freedom",
       "bc-284",
       "bc-532",
@@ -508,6 +509,21 @@
     "kits": [
       "bc-3533",
       "rg-dawn"
+    ]
+  },
+  "amplified盔甲加鲁鲁兽": {
+    "label": "Amplified 盔甲加鲁鲁兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-3405"
     ]
   },
   "vf-25gmessiahvalkyriemichaelcustom": {
@@ -970,6 +986,36 @@
       "bc-2653"
     ]
   },
+  "假面骑士新1号": {
+    "label": "假面骑士新1号",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-3134"
+    ]
+  },
+  "amplified-三幻神降临-欧西里斯之天空龙": {
+    "label": "Amplified -三幻神降临- 欧西里斯之天空龙",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-3155"
+    ]
+  },
   "vf-25fmessiahvalkyriealtocustom": {
     "label": "VF-25F MESSIAH VALKYRIE ALTO CUSTOM",
     "en": null,
@@ -1139,6 +1185,21 @@
     ],
     "kits": [
       "bc-3430"
+    ]
+  },
+  "蒂法·雅蒂尔": {
+    "label": "蒂法·雅蒂尔",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-3144"
     ]
   },
   "vf-31ssiegfried": {
@@ -1424,6 +1485,37 @@
       "mg-hyaku-shiki-ver2-0"
     ]
   },
+  "露娜玛丽亚・霍克": {
+    "label": "露娜玛丽亚･霍克",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "seed"
+    ],
+    "kits": [
+      "bc-3197"
+    ]
+  },
+  "普露兹": {
+    "label": "普露兹",
+    "en": null,
+    "alt": [],
+    "count": 2,
+    "categories": {
+      "bandai:figure": 2
+    },
+    "series": [
+      "zz"
+    ],
+    "kits": [
+      "bc-3196",
+      "bc-2772"
+    ]
+  },
   "无限正义高达二式": {
     "label": "无限正义高达二式",
     "en": "Infinite Justice Gundam II",
@@ -1486,10 +1578,11 @@
       "天狼型",
       "Lupus Rex"
     ],
-    "count": 4,
+    "count": 5,
     "categories": {
       "bandai:mg": 1,
       "bandai:sd": 2,
+      "bandai:fm": 1,
       "bandai:hg": 1
     },
     "series": [
@@ -1499,6 +1592,7 @@
       "bc-3037",
       "bc-2412",
       "bc-1699",
+      "bc-1683",
       "bc-1654"
     ]
   },
@@ -1735,6 +1829,21 @@
     "kits": [
       "bc-3288",
       "pb-306"
+    ]
+  },
+  "amplified恺撒暴龙兽": {
+    "label": "Amplified 恺撒暴龙兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-2961"
     ]
   },
   "瓦基尔高达头": {
@@ -1998,7 +2107,7 @@
     ]
   },
   "卡尔斯j": {
-    "label": "卡尔斯Ｊ",
+    "label": "卡尔斯J",
     "en": null,
     "alt": [],
     "count": 1,
@@ -2057,6 +2166,21 @@
     ],
     "kits": [
       "hg-gfreed"
+    ]
+  },
+  "尼娅安": {
+    "label": "尼娅安",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "gquuuuuux"
+    ],
+    "kits": [
+      "bc-2971"
     ]
   },
   "vf-31jsiegfried": {
@@ -2210,10 +2334,11 @@
       "古夫",
       "Barbatos"
     ],
-    "count": 8,
+    "count": 9,
     "categories": {
       "bandai:mgsd": 2,
       "bandai:mg": 4,
+      "bandai:hirm": 1,
       "bandai:hg": 2
     },
     "series": [
@@ -2225,9 +2350,25 @@
       "mgsd-bort",
       "bc-503",
       "mg-barbatos",
+      "bc-1390",
       "bc-1328",
       "bc-1289",
       "pb-127"
+    ]
+  },
+  "天手让叶": {
+    "label": "天手让叶",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "gquuuuuux"
+    ],
+    "kits": [
+      "bc-2968"
     ]
   },
   "格尔古格波卡塔机": {
@@ -2409,6 +2550,21 @@
     ],
     "kits": [
       "bc-3019"
+    ]
+  },
+  "amplified-三幻神降临-欧贝利斯克之巨神兵": {
+    "label": "Amplified -三幻神降临- 欧贝利斯克之巨神兵",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-2837"
     ]
   },
   "军警扎古": {
@@ -2650,9 +2806,10 @@
       "维达尔",
       "Vidar"
     ],
-    "count": 2,
+    "count": 3,
     "categories": {
       "bandai:mg": 1,
+      "bandai:fm": 1,
       "bandai:hg": 1
     },
     "series": [
@@ -2660,6 +2817,7 @@
     ],
     "kits": [
       "bc-2786",
+      "bc-1717",
       "bc-1697"
     ]
   },
@@ -2738,6 +2896,21 @@
     ],
     "kits": [
       "bc-2789"
+    ]
+  },
+  "假面骑士555爆裂形态": {
+    "label": "假面骑士 555 爆裂形态",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-3000"
     ]
   },
   "扎古iif型": {
@@ -2891,6 +3064,38 @@
     "kits": [
       "bc-2758",
       "bc-992"
+    ]
+  },
+  "假面骑士零一高跃飞蝗": {
+    "label": "假面骑士零一 高跃飞蝗",
+    "en": null,
+    "alt": [],
+    "count": 2,
+    "categories": {
+      "bandai:figure": 1,
+      "bandai:eg": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-2769",
+      "bc-1570"
+    ]
+  },
+  "闪耀优俊少女无声铃鹿": {
+    "label": "闪耀!优俊少女 无声铃鹿",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-2814"
     ]
   },
   "推进型强夺高达": {
@@ -3786,6 +3991,51 @@
       "goodsmile-12110"
     ]
   },
+  "迪迦奥特曼复合型": {
+    "label": "迪迦奥特曼 复合型",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-2721"
+    ]
+  },
+  "尼卡·七浦": {
+    "label": "尼卡·七浦",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "wfm"
+    ],
+    "kits": [
+      "bc-2714"
+    ]
+  },
+  "amplified-三幻神降临-拉之翼神龙": {
+    "label": "Amplified -三幻神降临- 拉之翼神龙",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-2720"
+    ]
+  },
   "高达ex": {
     "label": "高达EX",
     "en": null,
@@ -4182,6 +4432,36 @@
       "goodsmile-15171"
     ]
   },
+  "假面骑士空我究极形态": {
+    "label": "假面骑士空我 究极形态",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-2700"
+    ]
+  },
+  "amplified机甲龙兽": {
+    "label": "Amplified 机甲龙兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-2664"
+    ]
+  },
   "飞升自由高达": {
     "label": "飞升自由高达",
     "en": null,
@@ -4198,6 +4478,23 @@
       "bc-2821",
       "bc-1474",
       "bc-1476"
+    ]
+  },
+  "强人奔流": {
+    "label": "强人奔流",
+    "en": null,
+    "alt": [],
+    "count": 3,
+    "categories": {
+      "bandai:hg": 3
+    },
+    "series": [
+      "seed-freedom"
+    ],
+    "kits": [
+      "bc-2895",
+      "bc-2647",
+      "pb-132"
     ]
   },
   "闪电暴风高达": {
@@ -4819,6 +5116,22 @@
       "pb-122"
     ]
   },
+  "seed高达基地限定拉克丝・克莱因": {
+    "label": "SEED 高达基地限定 拉克丝・克莱因",
+    "en": null,
+    "alt": [],
+    "count": 2,
+    "categories": {
+      "bandai:figure": 2
+    },
+    "series": [
+      "seed"
+    ],
+    "kits": [
+      "bc-2757",
+      "bc-250"
+    ]
+  },
   "02兔女郎": {
     "label": "02 兔女郎Ver.",
     "en": null,
@@ -5364,6 +5677,21 @@
     "kits": [
       "goodsmile-9824",
       "goodsmile-14354"
+    ]
+  },
+  "露娜玛丽亚·霍克": {
+    "label": "露娜玛丽亚·霍克",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "seed-destiny"
+    ],
+    "kits": [
+      "bc-2690"
     ]
   },
   "00量子高达指挥官沙漠型": {
@@ -6515,6 +6843,36 @@
     ],
     "kits": [
       "goodsmile-15075"
+    ]
+  },
+  "捷德奥特曼原始形态": {
+    "label": "捷德奥特曼 原始形态",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-2087"
+    ]
+  },
+  "四之宫奇可露": {
+    "label": "四之宫奇可露",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-2086"
     ]
   },
   "剑装灾厄高达": {
@@ -8594,6 +8952,53 @@
       "goodsmile-14418"
     ]
   },
+  "艾莉": {
+    "label": "艾莉",
+    "en": null,
+    "alt": [],
+    "count": 2,
+    "categories": {
+      "bandai:figure": 1,
+      "goodsmile:nendoroid": 1
+    },
+    "series": [
+      "w505abbc202"
+    ],
+    "kits": [
+      "bc-2068",
+      "goodsmile-9622"
+    ]
+  },
+  "怪兽8号": {
+    "label": "怪兽8号",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-2065"
+    ]
+  },
+  "假面骑士月骑kiva形态": {
+    "label": "假面骑士月骑 KIVA形态",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-2067"
+    ]
+  },
   "高机动型扎古地上用": {
     "label": "高机动型扎古 地上用",
     "en": "Zaku II (Ground Type)",
@@ -8612,22 +9017,6 @@
       "bc-2871",
       "bc-2870",
       "pb-218"
-    ]
-  },
-  "强人奔流": {
-    "label": "强人奔流",
-    "en": null,
-    "alt": [],
-    "count": 2,
-    "categories": {
-      "bandai:hg": 2
-    },
-    "series": [
-      "seed-freedom"
-    ],
-    "kits": [
-      "bc-2647",
-      "pb-132"
     ]
   },
   "战斗机甲萨芬格尔萨芬格尔": {
@@ -9479,6 +9868,36 @@
     ],
     "kits": [
       "goodsmile-14440"
+    ]
+  },
+  "机动奥特曼装甲杰克-出击": {
+    "label": "机动奥特曼装甲 杰克 -出击-",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1456"
+    ]
+  },
+  "虚拟化身文奈": {
+    "label": "虚拟化身文奈",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "gundam-build"
+    ],
+    "kits": [
+      "bc-1485"
     ]
   },
   "黑骑士小队暴恶": {
@@ -10418,6 +10837,21 @@
       "goodsmile-14361",
       "goodsmile-13805",
       "goodsmile-13591"
+    ]
+  },
+  "雀丘利·潘兰杞": {
+    "label": "雀丘利·潘兰杞",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "wfm"
+    ],
+    "kits": [
+      "bc-1482"
     ]
   },
   "黑骑士小队毁灭": {
@@ -11745,6 +12179,36 @@
       "goodsmile-13881"
     ]
   },
+  "假面骑士铠武橙子武装": {
+    "label": "假面骑士铠武 橙子武装",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1455"
+    ]
+  },
+  "amplified混沌士兵": {
+    "label": "Amplified 混沌士兵",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1453"
+    ]
+  },
   "haneame雨波狗狗寵物女友": {
     "label": "HaneAme雨波 狗狗寵物女友",
     "en": null,
@@ -13062,6 +13526,36 @@
       "goodsmile-14223"
     ]
   },
+  "布莱泽奥特曼": {
+    "label": "布莱泽奥特曼",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-702"
+    ]
+  },
+  "闪耀优俊少女特别周": {
+    "label": "闪耀!优俊少女 特别周",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1566"
+    ]
+  },
   "高达00潜行者弧光": {
     "label": "高达00潜行者弧光",
     "en": null,
@@ -14282,6 +14776,21 @@
       "goodsmile-14285"
     ]
   },
+  "amplified机械暴龙兽": {
+    "label": "Amplified 机械暴龙兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-600"
+    ]
+  },
   "吉姆": {
     "label": "吉姆",
     "en": "GM",
@@ -14365,7 +14874,7 @@
     ]
   },
   "英雄再临复活的悟空脉冲高达": {
-    "label": "英雄再临！ 复活的悟空脉冲高达",
+    "label": "英雄再临! 复活的悟空脉冲高达",
     "en": null,
     "alt": [],
     "count": 1,
@@ -15406,6 +15915,21 @@
     ],
     "kits": [
       "goodsmile-13583"
+    ]
+  },
+  "机动奥特曼装甲赛罗〈sc制式〉-出击": {
+    "label": "机动奥特曼装甲 赛罗〈SC制式〉-出击-",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-606"
     ]
   },
   "yf-29杜兰达尔女武神": {
@@ -16488,6 +17012,21 @@
       "goodsmile-9441"
     ]
   },
+  "假面骑士驰骑飙速型": {
+    "label": "假面骑士驰骑 飙速型",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-417"
+    ]
+  },
   "foreigner葛飾北齋英霊旅装": {
     "label": "Foreigner/葛飾北齋 英霊旅装Ver.",
     "en": null,
@@ -17502,6 +18041,66 @@
     ],
     "kits": [
       "goodsmile-13518"
+    ]
+  },
+  "黑暗战斗暴龙兽": {
+    "label": "黑暗战斗暴龙兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-432"
+    ]
+  },
+  "诺瓦尔": {
+    "label": "诺瓦尔",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-428"
+    ]
+  },
+  "泽塔奥特曼原始形态": {
+    "label": "泽塔奥特曼 原始形态",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-409"
+    ]
+  },
+  "amplified召唤神艾克佐迪亚": {
+    "label": "Amplified 召唤神艾克佐迪亚",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-411"
     ]
   },
   "禁断高达": {
@@ -18613,6 +19212,21 @@
       "goodsmile-13401"
     ]
   },
+  "贝吉塔": {
+    "label": "贝吉塔",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-402"
+    ]
+  },
   "战骑高达": {
     "label": "战骑高达",
     "en": null,
@@ -19672,6 +20286,36 @@
       "goodsmile-13193"
     ]
   },
+  "机动奥特曼装甲邪恶迪迦-出击": {
+    "label": "机动奥特曼装甲 邪恶迪迦-出击-",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-279"
+    ]
+  },
+  "amplified闪光暴龙兽": {
+    "label": "Amplified 闪光暴龙兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-278"
+    ]
+  },
   "five-sevenfenfen的冒險": {
     "label": "Five-seven Fenfen的冒險",
     "en": null,
@@ -20347,6 +20991,36 @@
     ],
     "kits": [
       "goodsmile-12934"
+    ]
+  },
+  "德凯奥特曼闪亮型": {
+    "label": "德凯奥特曼 闪亮型",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-269"
+    ]
+  },
+  "假面骑士巫骑火焰风格": {
+    "label": "假面骑士巫骑 火焰风格",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-271"
     ]
   },
   "g.a.d_貂": {
@@ -21731,6 +22405,36 @@
       "goodsmile-13208"
     ]
   },
+  "假面骑士": {
+    "label": "假面骑士",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-229"
+    ]
+  },
+  "amplified青眼白龙": {
+    "label": "Amplified 青眼白龙",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-227"
+    ]
+  },
   "索恩魔灵高达": {
     "label": "索恩魔灵高达",
     "en": null,
@@ -21761,21 +22465,6 @@
       "hg-ulu-magin"
     ]
   },
-  "凶鸟mk-ii": {
-    "label": "凶鸟MK-Ⅱ",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "categories": {
-      "bandai:hg": 1
-    },
-    "series": [
-      "non-gundam"
-    ],
-    "kits": [
-      "bc-226"
-    ]
-  },
   "bradyfox": {
     "label": "BRADY FOX",
     "en": null,
@@ -21789,6 +22478,21 @@
     ],
     "kits": [
       "bc-386"
+    ]
+  },
+  "凶鸟mk-ii": {
+    "label": "凶鸟MK-Ⅱ",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hg": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-226"
     ]
   },
   "ots-14groza晚宴的統治者重傷": {
@@ -22149,6 +22853,25 @@
     ],
     "kits": [
       "goodsmile-12326"
+    ]
+  },
+  "rx-93ffν高达": {
+    "label": "RX-93ff ν高达",
+    "en": null,
+    "alt": [],
+    "count": 4,
+    "categories": {
+      "bandai:eg": 2,
+      "bandai:rg": 2
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-290",
+      "bc-289",
+      "bc-247",
+      "bc-245"
     ]
   },
   "人修羅": {
@@ -23024,6 +23747,21 @@
       "goodsmile-4045"
     ]
   },
+  "天使兽": {
+    "label": "天使兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-199"
+    ]
+  },
   "yf-19": {
     "label": "YF-19",
     "en": null,
@@ -23082,6 +23820,22 @@
     ],
     "kits": [
       "bc-232"
+    ]
+  },
+  "nu高达": {
+    "label": "Nu高达",
+    "en": null,
+    "alt": [],
+    "count": 2,
+    "categories": {
+      "bandai:mg": 2
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-243",
+      "pb-202"
     ]
   },
   "racingmiku2021": {
@@ -24303,6 +25057,38 @@
       "goodsmile-12298"
     ]
   },
+  "假面骑士剑": {
+    "label": "假面骑士剑",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-136"
+    ]
+  },
+  "赛罗奥特曼": {
+    "label": "赛罗奥特曼",
+    "en": null,
+    "alt": [],
+    "count": 2,
+    "categories": {
+      "bandai:figure": 1,
+      "bandai:eg": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-139",
+      "bc-1574"
+    ]
+  },
   "达利尔巴尔德": {
     "label": "达利尔巴尔德",
     "en": null,
@@ -24401,23 +25187,6 @@
       "bc-368",
       "mg-hi-nu-ver-ka",
       "bc-3333"
-    ]
-  },
-  "rx-93ffν高达": {
-    "label": "RX-93ff ν高达",
-    "en": null,
-    "alt": [],
-    "count": 2,
-    "categories": {
-      "bandai:eg": 1,
-      "bandai:rg": 1
-    },
-    "series": [
-      "uc"
-    ],
-    "kits": [
-      "bc-247",
-      "bc-245"
     ]
   },
   "白夏季": {
@@ -25245,6 +26014,36 @@
     ],
     "kits": [
       "goodsmile-11446"
+    ]
+  },
+  "米奥莉奈·伦布兰": {
+    "label": "米奥莉奈·伦布兰",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "wfm"
+    ],
+    "kits": [
+      "bc-166"
+    ]
+  },
+  "特利迦奥特曼复合型": {
+    "label": "特利迦奥特曼 复合型",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-127"
     ]
   },
   "迪兰扎": {
@@ -26298,6 +27097,42 @@
       "goodsmile-11900"
     ]
   },
+  "斯莱塔·墨丘利": {
+    "label": "斯莱塔·墨丘利",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "wfm"
+    ],
+    "kits": [
+      "bc-162"
+    ]
+  },
+  "孙悟空": {
+    "label": "孙悟空",
+    "en": null,
+    "alt": [],
+    "count": 6,
+    "categories": {
+      "bandai:figure": 5,
+      "modhtoy:alloy": 1
+    },
+    "series": [
+      "xjhcz"
+    ],
+    "kits": [
+      "bc-122",
+      "bc-1536",
+      "bc-1514",
+      "bc-1877",
+      "bc-1563",
+      "modhtoy-mnq-xh08"
+    ]
+  },
   "marinoatruless": {
     "label": "Marinoa Truless",
     "en": null,
@@ -26371,6 +27206,21 @@
     ],
     "kits": [
       "goodsmile-12778"
+    ]
+  },
+  "闪耀优俊少女东海帝王": {
+    "label": "闪耀!优俊少女 东海帝王",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1567"
     ]
   },
   "独角兽": {
@@ -27195,6 +28045,51 @@
     ],
     "kits": [
       "goodsmile-11162"
+    ]
+  },
+  "机动奥特曼装甲迪迦-出击": {
+    "label": "机动奥特曼装甲 迪迦 -出击-",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-109"
+    ]
+  },
+  "假面骑士颅骨": {
+    "label": "假面骑士颅骨",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-117"
+    ]
+  },
+  "amplified阿尔法兽": {
+    "label": "Amplified 阿尔法兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-118"
     ]
   },
   "foreigner葛飾北齋": {
@@ -29061,6 +29956,21 @@
       "goodsmile-11685"
     ]
   },
+  "假面骑士双骑獠牙王牌": {
+    "label": "假面骑士双骑 獠牙王牌",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-97"
+    ]
+  },
   "布雷迪幻影": {
     "label": "布雷迪幻影",
     "en": null,
@@ -29869,6 +30779,36 @@
     ],
     "kits": [
       "goodsmile-11531"
+    ]
+  },
+  "公爵兽": {
+    "label": "公爵兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-68"
+    ]
+  },
+  "假面骑士暗日": {
+    "label": "假面骑士暗日",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-67"
     ]
   },
   "希格露恩": {
@@ -30840,6 +31780,36 @@
       "goodsmile-10941"
     ]
   },
+  "机动奥特曼装甲泰罗-出击": {
+    "label": "机动奥特曼装甲 泰罗 -出击-",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-44"
+    ]
+  },
+  "假面骑士灵骑我魂": {
+    "label": "假面骑士灵骑 我魂",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-42"
+    ]
+  },
   "高达阿斯蒙蒂斯": {
     "label": "高达阿斯蒙蒂斯",
     "en": null,
@@ -31619,6 +32589,21 @@
       "goodsmile-11610"
     ]
   },
+  "金甲龙兽": {
+    "label": "金甲龙兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-23"
+    ]
+  },
   "牛人": {
     "label": "牛人",
     "en": null,
@@ -32123,6 +33108,21 @@
     ],
     "kits": [
       "goodsmile-10910"
+    ]
+  },
+  "amplified别西卜兽": {
+    "label": "Amplified 别西卜兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-80"
     ]
   },
   "mailes建武": {
@@ -33077,6 +34077,51 @@
       "goodsmile-11419"
     ]
   },
+  "钢铁加鲁鲁兽": {
+    "label": "钢铁加鲁鲁兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-311"
+    ]
+  },
+  "假面骑士欧兹鹰虎蝗联组": {
+    "label": "假面骑士欧兹 鹰虎蝗联组",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-306"
+    ]
+  },
+  "紫紫部史恩": {
+    "label": "紫紫部 史恩",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-298"
+    ]
+  },
   "炽热高达": {
     "label": "炽热高达",
     "en": null,
@@ -33807,6 +34852,22 @@
       "goodsmile-6682",
       "goodsmile-6994",
       "goodsmile-5766"
+    ]
+  },
+  "amplified奥米加兽": {
+    "label": "Amplified 奥米加兽",
+    "en": null,
+    "alt": [],
+    "count": 2,
+    "categories": {
+      "bandai:figure": 2
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-333",
+      "bc-1532"
     ]
   },
   "太阳神高达": {
@@ -34595,6 +35656,51 @@
     "kits": [
       "goodsmile-10179",
       "goodsmile-8453"
+    ]
+  },
+  "机动奥特曼装甲佐菲-出击": {
+    "label": "机动奥特曼装甲 佐菲 -出击-",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-190"
+    ]
+  },
+  "三角追迹者2000": {
+    "label": "三角追迹者2000",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-339"
+    ]
+  },
+  "战斗暴龙兽": {
+    "label": "战斗暴龙兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-353"
     ]
   },
   "高达格莫瑞": {
@@ -35430,6 +36536,21 @@
       "goodsmile-11163"
     ]
   },
+  "假面骑士卌骑基础状态": {
+    "label": "假面骑士 卌骑 基础状态",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-385"
+    ]
+  },
   "gddsr-50最高出價": {
     "label": "Gd DSR-50 最高出價Ver.",
     "en": null,
@@ -36078,6 +37199,21 @@
       "goodsmile-8189"
     ]
   },
+  "seed拉克丝·克莱因": {
+    "label": "SEED 拉克丝·克莱因",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "seed"
+    ],
+    "kits": [
+      "bc-377"
+    ]
+  },
   "kelly兔女郎": {
     "label": "Kelly 兔女郎Ver.",
     "en": null,
@@ -36106,6 +37242,21 @@
     ],
     "kits": [
       "goodsmile-8643"
+    ]
+  },
+  "假面骑士亚极陀大地形态": {
+    "label": "假面骑士亚极陀 大地形态",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1505"
     ]
   },
   "dateabullet原作版白女王": {
@@ -36797,6 +37948,51 @@
       "goodsmile-9311"
     ]
   },
+  "hguc1144夏亚专用扎古ii": {
+    "label": "HGUC 1/144 夏亚专用扎古II",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hg": 1
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-542"
+    ]
+  },
+  "比例高达基地限定sdcs高达・巴巴托斯天狼型帝王形态": {
+    "label": "比例 高达基地限定 SDCS 高达・巴巴托斯 天狼型 帝王形态",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:sd": 1
+    },
+    "series": [
+      "iron-blooded"
+    ],
+    "kits": [
+      "bc-540"
+    ]
+  },
+  "amplified公爵兽": {
+    "label": "Amplified 公爵兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1561"
+    ]
+  },
   "灾厄高达": {
     "label": "灾厄高达",
     "en": null,
@@ -36855,6 +38051,21 @@
     ],
     "kits": [
       "bc-2623"
+    ]
+  },
+  "机动奥特曼装甲迪迦空中型-出击": {
+    "label": "机动奥特曼装甲 迪迦 空中型-出击-",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1560"
     ]
   },
   "塞巴斯塔": {
@@ -37527,6 +38738,36 @@
       "goodsmile-10372"
     ]
   },
+  "entrygrade1144rx-78-2高达涂装用模型": {
+    "label": "ENTRY GRADE 1/144 RX-78-2 高达 【涂装用模型】",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:eg": 1
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-538"
+    ]
+  },
+  "fig高达基地限定figure-risestandard星野文奈": {
+    "label": "FIG 高达基地限定 Figure-rise Standard 星野文奈",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-536"
+    ]
+  },
   "“黑”之rider便服": {
     "label": "“黑”之Rider 便服ver.",
     "en": null,
@@ -37574,6 +38815,21 @@
     ],
     "kits": [
       "goodsmile-9381"
+    ]
+  },
+  "hguc1144高达mk-ii21世纪真实配色": {
+    "label": "HGUC 1/144 高达MK-II 【21世纪真实配色】",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hg": 1
+    },
+    "series": [
+      "zeta"
+    ],
+    "kits": [
+      "bc-539"
     ]
   },
   "racingmiku2018summer": {
@@ -38057,6 +39313,37 @@
       "goodsmile-8807"
     ]
   },
+  "hguc1144德戴改": {
+    "label": "HGUC 1/144 德戴改",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hg": 1
+    },
+    "series": [
+      "zeta"
+    ],
+    "kits": [
+      "bc-531"
+    ]
+  },
+  "机动奥特曼装甲ver7.5-出击": {
+    "label": "机动奥特曼装甲 Ver7.5-出击-",
+    "en": null,
+    "alt": [],
+    "count": 2,
+    "categories": {
+      "bandai:figure": 2
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1559",
+      "bc-1546"
+    ]
+  },
   "ξ高达vs佩涅罗佩浮游炮导弹特效零件": {
     "label": "Ξ高达VS佩涅罗佩 浮游炮导弹特效零件",
     "en": null,
@@ -38100,6 +39387,38 @@
     ],
     "kits": [
       "bc-2599"
+    ]
+  },
+  "假面骑士龙骑": {
+    "label": "假面骑士龙骑",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1504"
+    ]
+  },
+  "蕾娜": {
+    "label": "蕾娜",
+    "en": null,
+    "alt": [],
+    "count": 2,
+    "categories": {
+      "bandai:figure": 1,
+      "goodsmile:nendoroid": 1
+    },
+    "series": [
+      "w4e750da35c"
+    ],
+    "kits": [
+      "bc-1558",
+      "goodsmile-6057"
     ]
   },
   "三国创杰传大乔月亮女神高达": {
@@ -38783,6 +40102,21 @@
       "bc-3317"
     ]
   },
+  "figfigure-riselabo式波·明日香·兰格雷": {
+    "label": "FIG Figure-riseLABO 式波·明日香·兰格雷",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-2575"
+    ]
+  },
   "三国创杰传孙策异端高达": {
     "label": "三国创杰传 孙策异端高达",
     "en": null,
@@ -38826,6 +40160,21 @@
     ],
     "kits": [
       "bc-2576"
+    ]
+  },
+  "amplified无限龙兽": {
+    "label": "Amplified 无限龙兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1557"
     ]
   },
   "三国创杰传黄忠力天使高达": {
@@ -39917,6 +41266,21 @@
       "bc-3096"
     ]
   },
+  "amplified帝皇龙兽": {
+    "label": "Amplified 帝皇龙兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1556"
+    ]
+  },
   "钢铁吉克": {
     "label": "钢铁吉克",
     "en": null,
@@ -40585,6 +41949,21 @@
     ],
     "kits": [
       "bc-2523"
+    ]
+  },
+  "假面骑士帝骑": {
+    "label": "假面骑士帝骑",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1503"
     ]
   },
   "高达00天翔型莫比乌斯": {
@@ -41271,6 +42650,21 @@
       "goodsmile-8250"
     ]
   },
+  "终极孙悟饭": {
+    "label": "终极孙悟饭",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1555"
+    ]
+  },
   "帝王异端重锻二型": {
     "label": "帝王异端重锻二型",
     "en": null,
@@ -41284,6 +42678,21 @@
     ],
     "kits": [
       "bc-2509"
+    ]
+  },
+  "机动奥特曼装甲黑暗洛普斯赛罗-出击": {
+    "label": "机动奥特曼装甲 黑暗洛普斯赛罗 -出击-",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1554"
     ]
   },
   "約會大作戰原作版夜刀神十香晴姿": {
@@ -41393,21 +42802,6 @@
     ],
     "kits": [
       "goodsmile-9264"
-    ]
-  },
-  "艾莉": {
-    "label": "艾莉",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "categories": {
-      "goodsmile:nendoroid": 1
-    },
-    "series": [
-      "w505abbc202"
-    ],
-    "kits": [
-      "goodsmile-9622"
     ]
   },
   "冰川紗夜舞台服裝": {
@@ -41955,6 +43349,36 @@
     ],
     "kits": [
       "bc-2496"
+    ]
+  },
+  "假面骑士响鬼": {
+    "label": "假面骑士响鬼",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1502"
+    ]
+  },
+  "try星野文奈": {
+    "label": "TRY 星野文奈",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "gundam-build"
+    ],
+    "kits": [
+      "bc-1553"
     ]
   },
   "初音未來交響樂2017": {
@@ -42560,6 +43984,21 @@
       "bc-512"
     ]
   },
+  "hg机动人偶芽衣": {
+    "label": "HG 机动人偶芽衣",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hg": 1
+    },
+    "series": [
+      "gundam-build"
+    ],
+    "kits": [
+      "bc-513"
+    ]
+  },
   "saber弗蘭肯斯坦": {
     "label": "Saber/弗蘭肯斯坦",
     "en": null,
@@ -42604,6 +44043,21 @@
     ],
     "kits": [
       "bc-2492"
+    ]
+  },
+  "amplified黑暗战斗暴龙兽": {
+    "label": "Amplified 黑暗战斗暴龙兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1552"
     ]
   },
   "泛用人型决战兵器人造人eva正规实用型2号机": {
@@ -43674,21 +45128,6 @@
       "goodsmile-8395"
     ]
   },
-  "赛罗奥特曼": {
-    "label": "赛罗奥特曼",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "categories": {
-      "bandai:eg": 1
-    },
-    "series": [
-      "non-gundam"
-    ],
-    "kits": [
-      "bc-1574"
-    ]
-  },
   "艾黛爾賈特‧馮‧弗雷斯貝爾古": {
     "label": "艾黛爾賈特‧馮‧弗雷斯貝爾古",
     "en": null,
@@ -43766,6 +45205,21 @@
       "goodsmile-8947"
     ]
   },
+  "hg1144命运高达": {
+    "label": "HG 1/144 命运高达",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hg": 1
+    },
+    "series": [
+      "seed"
+    ],
+    "kits": [
+      "bc-508"
+    ]
+  },
   "kos-mosre": {
     "label": "KOS-MOS Re:",
     "en": null,
@@ -43837,6 +45291,36 @@
       "bc-2471"
     ]
   },
+  "假面骑士电王圣剑形态": {
+    "label": "假面骑士电王 圣剑形态",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1501"
+    ]
+  },
+  "amplified钢铁加鲁鲁": {
+    "label": "Amplified 钢铁加鲁鲁",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1551"
+    ]
+  },
   "海王星八型武器": {
     "label": "海王星八型武器",
     "en": null,
@@ -43880,6 +45364,21 @@
     ],
     "kits": [
       "bc-2459"
+    ]
+  },
+  "吉连": {
+    "label": "吉连",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1549"
     ]
   },
   "梅萨f01型": {
@@ -44323,15 +45822,17 @@
     "label": "哆啦A梦",
     "en": null,
     "alt": [],
-    "count": 1,
+    "count": 2,
     "categories": {
-      "bandai:eg": 1
+      "bandai:eg": 1,
+      "bandai:figure": 1
     },
     "series": [
       "non-gundam"
     ],
     "kits": [
-      "bc-1573"
+      "bc-1573",
+      "bc-1905"
     ]
   },
   "白根凜": {
@@ -44394,6 +45895,21 @@
     "kits": [
       "goodsmile-8674",
       "goodsmile-8079"
+    ]
+  },
+  "机动奥特曼装甲赛罗-出击": {
+    "label": "机动奥特曼装甲 赛罗 -出击-",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-189"
     ]
   },
   "高达f90ii": {
@@ -45086,6 +46602,36 @@
       "bc-2425"
     ]
   },
+  "机动奥特曼装甲邪恶迪迦": {
+    "label": "机动奥特曼装甲 邪恶迪迦",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1548"
+    ]
+  },
+  "机动奥特曼a装甲-出击": {
+    "label": "机动奥特曼A装甲 -出击-",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1547"
+    ]
+  },
   "温达姆": {
     "label": "温达姆",
     "en": null,
@@ -45495,6 +47041,21 @@
       "goodsmile-6390"
     ]
   },
+  "机动奥特曼装甲a-出击": {
+    "label": "机动奥特曼装甲 A -出击-",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-188"
+    ]
+  },
   "racingmikutony和服禮裝": {
     "label": "RACING MIKU Tony 和服禮裝Ver.",
     "en": null,
@@ -45542,6 +47103,21 @@
       "bc-2414",
       "bc-1432",
       "bc-3107"
+    ]
+  },
+  "机动奥特曼-出击": {
+    "label": "机动奥特曼 -出击-",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1545"
     ]
   },
   "高达gp罗煞天": {
@@ -45786,6 +47362,36 @@
       "goodsmile-4645"
     ]
   },
+  "机动奥特曼装甲7.5版本-出击": {
+    "label": "机动奥特曼装甲 7.5版本 -出击-",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-187"
+    ]
+  },
+  "机动奥特曼装甲-出击": {
+    "label": "机动奥特曼装甲-出击-",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-186"
+    ]
+  },
   "m1918兔女郎": {
     "label": "M1918 兔女郎Ver.",
     "en": null,
@@ -45816,6 +47422,21 @@
       "goodsmile-8002"
     ]
   },
+  "假面骑士空我全能形态": {
+    "label": "假面骑士空我 全能形态",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1500"
+    ]
+  },
   "高达g-else": {
     "label": "高达 G-ELSE",
     "en": null,
@@ -45829,27 +47450,6 @@
     ],
     "kits": [
       "bc-2402"
-    ]
-  },
-  "rx-78-02高达": {
-    "label": "RX-78-02 高达",
-    "en": "Gundam 02",
-    "alt": [
-      "高达02",
-      "RX78-02"
-    ],
-    "count": 3,
-    "categories": {
-      "bandai:hg": 1,
-      "bandai:mg": 2
-    },
-    "series": [
-      "uc"
-    ],
-    "kits": [
-      "bc-2401",
-      "bc-1777",
-      "bc-1310"
     ]
   },
   "水星一型武器": {
@@ -45880,6 +47480,27 @@
     ],
     "kits": [
       "bc-2395"
+    ]
+  },
+  "rx-78-02高达": {
+    "label": "RX-78-02 高达",
+    "en": "Gundam 02",
+    "alt": [
+      "高达02",
+      "RX78-02"
+    ],
+    "count": 3,
+    "categories": {
+      "bandai:hg": 1,
+      "bandai:mg": 2
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-2401",
+      "bc-1777",
+      "bc-1310"
     ]
   },
   "泛用人型决战兵器人造人eva初号机": {
@@ -46008,48 +47629,37 @@
     ]
   },
   "超级赛亚人之神超级赛亚人贝吉塔": {
-    "label": "超级赛亚人之神超级赛亚人 贝吉塔",
+    "label": "超级赛亚人之神超级赛亚人贝吉塔",
     "en": null,
     "alt": [],
-    "count": 1,
+    "count": 2,
     "categories": {
-      "bandai:eg": 1
+      "bandai:eg": 1,
+      "bandai:figure": 1
     },
     "series": [
       "non-gundam"
     ],
     "kits": [
-      "bc-1572"
+      "bc-1572",
+      "bc-1529"
     ]
   },
   "超级赛亚人之神超级赛亚人孙悟空": {
-    "label": "超级赛亚人之神超级赛亚人 孙悟空",
+    "label": "超级赛亚人之神超级赛亚人孙悟空",
     "en": null,
     "alt": [],
-    "count": 1,
+    "count": 2,
     "categories": {
-      "bandai:eg": 1
+      "bandai:eg": 1,
+      "bandai:figure": 1
     },
     "series": [
       "non-gundam"
     ],
     "kits": [
-      "bc-1571"
-    ]
-  },
-  "假面骑士零一高跃飞蝗": {
-    "label": "假面骑士零一 高跃飞蝗",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "categories": {
-      "bandai:eg": 1
-    },
-    "series": [
-      "non-gundam"
-    ],
-    "kits": [
-      "bc-1570"
+      "bc-1571",
+      "bc-1528"
     ]
   },
   "間桐慎二間桐櫻": {
@@ -46086,6 +47696,21 @@
       "goodsmile-7281"
     ]
   },
+  "巴达克": {
+    "label": "巴达克",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1544"
+    ]
+  },
   "地球三式高达": {
     "label": "地球三式高达",
     "en": null,
@@ -46103,6 +47728,36 @@
       "bc-2298"
     ]
   },
+  "南小鸟": {
+    "label": "南小鸟",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-2374"
+    ]
+  },
+  "机动奥特曼装甲迪迦": {
+    "label": "机动奥特曼装甲 迪迦",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1543"
+    ]
+  },
   "苍流丸": {
     "label": "苍流丸",
     "en": null,
@@ -46116,6 +47771,22 @@
     ],
     "kits": [
       "bc-2371"
+    ]
+  },
+  "机动奥特曼": {
+    "label": "机动奥特曼",
+    "en": null,
+    "alt": [],
+    "count": 2,
+    "categories": {
+      "bandai:figure": 2
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1542",
+      "bc-1508"
     ]
   },
   "帝提姆高达": {
@@ -46326,6 +47997,53 @@
     ],
     "kits": [
       "bc-2367"
+    ]
+  },
+  "超级赛亚人特兰克斯": {
+    "label": "超级赛亚人特兰克斯",
+    "en": null,
+    "alt": [],
+    "count": 3,
+    "categories": {
+      "bandai:figure": 3
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1541",
+      "bc-1842",
+      "bc-1564"
+    ]
+  },
+  "超级赛亚人2孙悟饭": {
+    "label": "超级赛亚人2孙悟饭",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1540"
+    ]
+  },
+  "沙鲁": {
+    "label": "沙鲁",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1539"
     ]
   },
   "木星五式高达": {
@@ -46896,6 +48614,36 @@
       "goodsmile-7447"
     ]
   },
+  "初音未来v4x": {
+    "label": "初音未来V4X",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-2347"
+    ]
+  },
+  "亚丝娜": {
+    "label": "亚丝娜",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1538"
+    ]
+  },
   "艾多拉野兽": {
     "label": "艾多拉野兽",
     "en": null,
@@ -46939,6 +48687,23 @@
     ],
     "kits": [
       "bc-2341"
+    ]
+  },
+  "哈罗": {
+    "label": "哈罗",
+    "en": null,
+    "alt": [],
+    "count": 3,
+    "categories": {
+      "bandai:figure": 3
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-2335",
+      "bc-483",
+      "bc-2143"
     ]
   },
   "神怪高达": {
@@ -47521,6 +49286,21 @@
       "bc-2099"
     ]
   },
+  "弗利萨": {
+    "label": "弗利萨",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1537"
+    ]
+  },
   "ν-吉翁高达": {
     "label": "ν-吉翁高达",
     "en": null,
@@ -48040,6 +49820,81 @@
       "bc-2304"
     ]
   },
+  "超级赛亚人4悟吉塔": {
+    "label": "超级赛亚人4悟吉塔",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1530"
+    ]
+  },
+  "库林": {
+    "label": "库林",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1533"
+    ]
+  },
+  "人造人17号": {
+    "label": "人造人17号",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1534"
+    ]
+  },
+  "人造人18号": {
+    "label": "人造人18号",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1535"
+    ]
+  },
+  "amplified战斗暴龙兽": {
+    "label": "Amplified 战斗暴龙兽",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1531"
+    ]
+  },
   "火星四式高达组件": {
     "label": "火星四式高达组件",
     "en": null,
@@ -48512,6 +50367,21 @@
       "goodsmile-8176"
     ]
   },
+  "bd高达基地限定菖蒲": {
+    "label": "BD 高达基地限定菖蒲",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-484"
+    ]
+  },
   "佩涅罗佩": {
     "label": "佩涅罗佩",
     "en": null,
@@ -48557,6 +50427,21 @@
       "bc-2290"
     ]
   },
+  "机动奥特曼装甲": {
+    "label": "机动奥特曼装甲",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1527"
+    ]
+  },
   "沙漠高达": {
     "label": "沙漠高达",
     "en": null,
@@ -48570,6 +50455,21 @@
     ],
     "kits": [
       "bc-2279"
+    ]
+  },
+  "假面骑士双骑月神扳机": {
+    "label": "假面骑士双骑 月神扳机",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1499"
     ]
   },
   "小熊霸角色熊霸萨拉": {
@@ -49040,6 +50940,66 @@
     ],
     "kits": [
       "bc-481"
+    ]
+  },
+  "超级赛亚人4贝吉塔": {
+    "label": "超级赛亚人4 贝吉塔",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1526"
+    ]
+  },
+  "超级赛亚人4孙悟空": {
+    "label": "超级赛亚人4 孙悟空",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1525"
+    ]
+  },
+  "假面骑士双骑炽热金属": {
+    "label": "假面骑士双骑 炽热金属",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1497"
+    ]
+  },
+  "假面骑士双骑疾风王牌": {
+    "label": "假面骑士双骑 疾风王牌",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1498"
     ]
   },
   "独角兽高达3号机菲尼克斯": {
@@ -49526,6 +51486,51 @@
     ],
     "kits": [
       "goodsmile-8289"
+    ]
+  },
+  "超级赛亚人贝吉塔": {
+    "label": "超级赛亚人 贝吉塔",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1565"
+    ]
+  },
+  "超级赛亚人孙悟空": {
+    "label": "超级赛亚人 孙悟空",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1523"
+    ]
+  },
+  "传奇超级赛亚人布罗利": {
+    "label": "传奇超级赛亚人 布罗利",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1524"
     ]
   },
   "超强修罗": {
@@ -50291,6 +52296,68 @@
       "goodsmile-6407"
     ]
   },
+  "星野文奈": {
+    "label": "星野文奈",
+    "en": null,
+    "alt": [],
+    "count": 3,
+    "categories": {
+      "bandai:figure": 3
+    },
+    "series": [
+      "gundam-build"
+    ],
+    "kits": [
+      "bc-2229",
+      "bc-2011",
+      "bc-1706"
+    ]
+  },
+  "超级赛亚人3孙悟空": {
+    "label": "超级赛亚人3 孙悟空",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1522"
+    ]
+  },
+  "魔人布欧": {
+    "label": "魔人布欧",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1521"
+    ]
+  },
+  "漆黑异端高达": {
+    "label": "漆黑异端高达",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hirm": 1
+    },
+    "series": [
+      "seed-destiny"
+    ],
+    "kits": [
+      "bc-2230"
+    ]
+  },
   "高达nt-1": {
     "label": "高达NT-1",
     "en": null,
@@ -50336,6 +52403,21 @@
     ],
     "kits": [
       "bc-2217"
+    ]
+  },
+  "假面骑士艾克赛德动作玩家等级2": {
+    "label": "假面骑士艾克赛德 动作玩家 等级2",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1496"
     ]
   },
   "初音未來結婚禮服": {
@@ -50792,6 +52874,66 @@
       "goodsmile-7698"
     ]
   },
+  "比例高达基地限定sdcs夜莺": {
+    "label": "比例 高达基地限定 SDCS 夜莺",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:sd": 1
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-475"
+    ]
+  },
+  "比克": {
+    "label": "比克",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1519"
+    ]
+  },
+  "超级赛亚人贝吉特": {
+    "label": "超级赛亚人贝吉特",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1520"
+    ]
+  },
+  "超级赛亚人悟天克斯": {
+    "label": "超级赛亚人悟天克斯",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1518"
+    ]
+  },
   "比基娜·基纳ii": {
     "label": "比基娜·基纳II",
     "en": null,
@@ -50805,6 +52947,21 @@
     ],
     "kits": [
       "bc-2215"
+    ]
+  },
+  "机动奥特曼装甲a": {
+    "label": "机动奥特曼装甲 A",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1517"
     ]
   },
   "海盗高达x1": {
@@ -51221,6 +53378,36 @@
       "goodsmile-7547"
     ]
   },
+  "hguc1144独角兽高达3号机菲尼克斯": {
+    "label": "HGUC 1/144 独角兽高达3号机 菲尼克斯",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hg": 1
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-470"
+    ]
+  },
+  "mg1100ms整备架": {
+    "label": "MG 1/100 MS整备架",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:mg": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-471"
+    ]
+  },
   "独角兽高达2号机报丧女妖复仇女神亮灯版": {
     "label": "独角兽高达2号机 报丧女妖 复仇女神亮灯版",
     "en": null,
@@ -51310,6 +53497,21 @@
     "kits": [
       "bc-2198",
       "bc-2199"
+    ]
+  },
+  "假面骑士盖茨": {
+    "label": "假面骑士盖茨",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1495"
     ]
   },
   "马格纳克": {
@@ -51805,6 +54007,81 @@
     ],
     "kits": [
       "bc-2186"
+    ]
+  },
+  "潜行者菖蒲": {
+    "label": "潜行者菖蒲",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "gundam-build"
+    ],
+    "kits": [
+      "bc-1516"
+    ]
+  },
+  "超级赛亚人之神超级赛亚人贝吉特": {
+    "label": "超级赛亚人之神超级赛亚人贝吉特",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1515"
+    ]
+  },
+  "假面骑士555": {
+    "label": "假面骑士555",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1494"
+    ]
+  },
+  "假面骑士甲斗王": {
+    "label": "假面骑士甲斗王",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1493"
+    ]
+  },
+  "假面骑士时王": {
+    "label": "假面骑士时王",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1492"
     ]
   },
   "卡恩兹巴克": {
@@ -52394,19 +54671,34 @@
       "goodsmile-7891"
     ]
   },
-  "复仇流浪者": {
-    "label": "复仇流浪者",
+  "机动奥特曼装甲7.5版本": {
+    "label": "机动奥特曼装甲 7.5版本",
     "en": null,
     "alt": [],
     "count": 1,
     "categories": {
-      "bandai:hg": 1
+      "bandai:figure": 1
     },
     "series": [
-      "other"
+      "non-gundam"
     ],
     "kits": [
-      "bc-2159"
+      "bc-1513"
+    ]
+  },
+  "超级赛亚人布罗利全功率": {
+    "label": "超级赛亚人布罗利 全功率",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1512"
     ]
   },
   "hws": {
@@ -52422,6 +54714,21 @@
     ],
     "kits": [
       "bc-2158"
+    ]
+  },
+  "复仇流浪者": {
+    "label": "复仇流浪者",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hg": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-2159"
     ]
   },
   "gbn-base高达": {
@@ -52911,19 +55218,19 @@
       "goodsmile-7507"
     ]
   },
-  "能天使高达用led发光组件": {
-    "label": "能天使高达用LED发光组件",
+  "hguc1144苍蓝命运1号机“exam”": {
+    "label": "HGUC 1/144 苍蓝命运1号机“EXAM”",
     "en": null,
     "alt": [],
     "count": 1,
     "categories": {
-      "bandai:pg": 1
+      "bandai:hg": 1
     },
     "series": [
-      "gundam-00"
+      "uc"
     ],
     "kits": [
-      "bc-2150"
+      "bc-466"
     ]
   },
   "钢伊吉": {
@@ -52939,6 +55246,21 @@
     ],
     "kits": [
       "bc-2148"
+    ]
+  },
+  "能天使高达用led发光组件": {
+    "label": "能天使高达用LED发光组件",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:pg": 1
+    },
+    "series": [
+      "gundam-00"
+    ],
+    "kits": [
+      "bc-2150"
     ]
   },
   "高达age-ii马格南sv": {
@@ -53007,6 +55329,36 @@
     ],
     "kits": [
       "bc-2142"
+    ]
+  },
+  "超级赛亚人之神超级赛亚人悟吉塔": {
+    "label": "超级赛亚人之神超级赛亚人悟吉塔",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1511"
+    ]
+  },
+  "figurerisemechanics布尔玛的19号变形摩托车": {
+    "label": "Figurerise Mechanics 布尔玛的19号变形摩托车",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-2138"
     ]
   },
   "迪杰": {
@@ -53397,6 +55749,36 @@
     ],
     "kits": [
       "goodsmile-6967"
+    ]
+  },
+  "超级赛亚人之神超级赛亚人贝吉塔“特别配色”": {
+    "label": "超级赛亚人之神超级赛亚人贝吉塔“特别配色”",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1510"
+    ]
+  },
+  "超级赛亚人之神超级赛亚人孙悟空“特别配色”": {
+    "label": "超级赛亚人之神超级赛亚人孙悟空“特别配色”",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1509"
     ]
   },
   "nt高达a装备": {
@@ -54172,6 +56554,21 @@
       "goodsmile-7178"
     ]
   },
+  "hguc1144ν高达vs沙扎比": {
+    "label": "HGUC 1/144 ν高达 vs 沙扎比",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hg": 1
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-460"
+    ]
+  },
   "iowa中破輕兵裝": {
     "label": "Iowa 中破 輕兵裝Ver.",
     "en": null,
@@ -54232,6 +56629,21 @@
       "goodsmile-7451"
     ]
   },
+  "比例高达基地限定sdcsrx-78-2高达": {
+    "label": "比例 高达基地限定 SDCS RX-78-2 高达",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:sd": 1
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-461"
+    ]
+  },
   "脉冲高达ark": {
     "label": "脉冲高达Ark",
     "en": null,
@@ -54260,6 +56672,21 @@
     ],
     "kits": [
       "bc-2107"
+    ]
+  },
+  "builddivers潜行者奈美": {
+    "label": "BUILD DIVERS潜行者奈美",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "gundam-build"
+    ],
+    "kits": [
+      "bc-1507"
     ]
   },
   "亚克托・德卡": {
@@ -54718,6 +57145,21 @@
       "bc-456"
     ]
   },
+  "mg1100新安洲": {
+    "label": "MG 1/100 新安洲",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:mg": 1
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-458"
+    ]
+  },
   "racingmiku2017": {
     "label": "RACING MIKU 2017 Ver.",
     "en": null,
@@ -54797,6 +57239,36 @@
     ],
     "kits": [
       "bc-2053"
+    ]
+  },
+  "冲击波白色款": {
+    "label": "冲击波 白色款",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-2049"
+    ]
+  },
+  "冲击波黄色款": {
+    "label": "冲击波 黄色款",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-2048"
     ]
   },
   "创制造型手方s、m、l": {
@@ -55339,6 +57811,66 @@
       "bc-440"
     ]
   },
+  "hg1144独角兽高达": {
+    "label": "HG 1/144 独角兽高达",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hg": 1
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-457"
+    ]
+  },
+  "hg1144小熊霸": {
+    "label": "HG 1/144 小熊霸",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hg": 1
+    },
+    "series": [
+      "gundam-build"
+    ],
+    "kits": [
+      "bc-438"
+    ]
+  },
+  "hguc1144独角兽高达": {
+    "label": "HGUC 1/144 独角兽高达",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hg": 1
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-437"
+    ]
+  },
+  "hguc1144rx-78-2高达": {
+    "label": "HGUC 1/144 RX-78-2 高达",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hg": 1
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-507"
+    ]
+  },
   "z高达3号机": {
     "label": "Z高达3号机",
     "en": null,
@@ -55369,6 +57901,81 @@
       "goodsmile-7257"
     ]
   },
+  "mg1100沙扎比": {
+    "label": "MG 1/100 沙扎比",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:mg": 1
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-444"
+    ]
+  },
+  "mg1100翔翼型强袭高达": {
+    "label": "MG 1/100 翔翼型强袭高达",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:mg": 1
+    },
+    "series": [
+      "seed"
+    ],
+    "kits": [
+      "bc-445"
+    ]
+  },
+  "mg1100rx-78-2高达": {
+    "label": "MG 1/100 RX-78-2 高达",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:mg": 1
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-443"
+    ]
+  },
+  "pg160异端高达红色机": {
+    "label": "PG 1/60 异端高达红色机",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:pg": 1
+    },
+    "series": [
+      "seed"
+    ],
+    "kits": [
+      "bc-448"
+    ]
+  },
+  "pg160rx-78-3g3高达": {
+    "label": "PG 1/60 RX-78-3 G3 高达",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:pg": 1
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-447"
+    ]
+  },
   "ramlethal": {
     "label": "Ramlethal",
     "en": null,
@@ -55382,6 +57989,37 @@
     ],
     "kits": [
       "goodsmile-6455"
+    ]
+  },
+  "rg1144独角兽高达": {
+    "label": "RG 1/144 独角兽高达",
+    "en": null,
+    "alt": [],
+    "count": 2,
+    "categories": {
+      "bandai:rg": 2
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-449",
+      "bc-450"
+    ]
+  },
+  "rg1144新安洲": {
+    "label": "RG1/144 新安洲",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:rg": 1
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-452"
     ]
   },
   "ruler貞德浴衣": {
@@ -55427,6 +58065,22 @@
     ],
     "kits": [
       "goodsmile-6981"
+    ]
+  },
+  "假面骑士创骑兔子坦克形态": {
+    "label": "假面骑士创骑 兔子坦克形态",
+    "en": null,
+    "alt": [],
+    "count": 2,
+    "categories": {
+      "bandai:figure": 2
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-2041",
+      "bc-1491"
     ]
   },
   "吉姆防御特装型": {
@@ -57045,6 +59699,21 @@
     ],
     "kits": [
       "bc-1991"
+    ]
+  },
+  "dr.slump阿拉蕾": {
+    "label": "Dr.SLUMP阿拉蕾",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1977"
     ]
   },
   "小熊霸潜行者主题蓝": {
@@ -59012,6 +61681,36 @@
       "hguc-zz"
     ]
   },
+  "哆啦美": {
+    "label": "哆啦美",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1903"
+    ]
+  },
+  "哆啦a梦的秘密道具时光机": {
+    "label": "哆啦A梦的秘密道具 时光机",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-1904"
+    ]
+  },
   "扎古半加农型": {
     "label": "扎古半加农型",
     "en": null,
@@ -59792,6 +62491,21 @@
       "bc-1879"
     ]
   },
+  "飞翼高达零式ew版": {
+    "label": "飞翼高达零式EW版",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hirm": 1
+    },
+    "series": [
+      "w"
+    ],
+    "kits": [
+      "bc-1878"
+    ]
+  },
   "扎古iic型c5型": {
     "label": "扎古Ⅱ C型/C5型",
     "en": null,
@@ -60214,6 +62928,21 @@
       "goodsmile-6207"
     ]
   },
+  "初音未来": {
+    "label": "初音未来",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1864"
+    ]
+  },
   "超绝强子": {
     "label": "超绝强子",
     "en": null,
@@ -60533,6 +63262,21 @@
     ],
     "kits": [
       "goodsmile-6196"
+    ]
+  },
+  "特兰克斯的时光机": {
+    "label": "特兰克斯的时光机",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1841"
     ]
   },
   "千奈熊霸": {
@@ -61492,21 +64236,6 @@
       "goodsmile-4413"
     ]
   },
-  "蕾娜": {
-    "label": "蕾娜",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "categories": {
-      "goodsmile:nendoroid": 1
-    },
-    "series": [
-      "w4e750da35c"
-    ],
-    "kits": [
-      "goodsmile-6057"
-    ]
-  },
   "木曾": {
     "label": "木曾",
     "en": null,
@@ -61670,6 +64399,21 @@
     ],
     "kits": [
       "goodsmile-6146"
+    ]
+  },
+  "星野文奈片尾曲造型": {
+    "label": "星野文奈 片尾曲造型",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "gundam-build"
+    ],
+    "kits": [
+      "bc-1808"
     ]
   },
   "陆战型高达s型": {
@@ -62739,6 +65483,23 @@
       "goodsmile-5787"
     ]
   },
+  "高达巴耶力": {
+    "label": "高达巴耶力",
+    "en": null,
+    "alt": [],
+    "count": 2,
+    "categories": {
+      "bandai:fm": 1,
+      "bandai:hg": 1
+    },
+    "series": [
+      "iron-blooded"
+    ],
+    "kits": [
+      "bc-1774",
+      "bc-1757"
+    ]
+  },
   "超级文奈阿克西斯天使版": {
     "label": "超级文奈 阿克西斯天使版",
     "en": null,
@@ -62866,21 +65627,6 @@
     ],
     "kits": [
       "bc-1760"
-    ]
-  },
-  "高达巴耶力": {
-    "label": "高达巴耶力",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "categories": {
-      "bandai:hg": 1
-    },
-    "series": [
-      "iron-blooded"
-    ],
-    "kits": [
-      "bc-1757"
     ]
   },
   "高达锡蒙力·维达尔": {
@@ -63198,6 +65944,23 @@
       "goodsmile-6253"
     ]
   },
+  "高达巴巴托斯天狼型帝王形态": {
+    "label": "高达巴巴托斯 天狼型 帝王形态",
+    "en": null,
+    "alt": [],
+    "count": 2,
+    "categories": {
+      "bandai:fm": 1,
+      "bandai:hg": 1
+    },
+    "series": [
+      "iron-blooded"
+    ],
+    "kits": [
+      "bc-1745",
+      "bc-1737"
+    ]
+  },
   "雷金雷兹朱丽雅": {
     "label": "雷金雷兹朱丽雅",
     "en": null,
@@ -63213,19 +65976,19 @@
       "bc-1744"
     ]
   },
-  "高达巴巴托斯天狼型帝王形态": {
-    "label": "高达巴巴托斯 天狼型 帝王形态",
+  "拉克丝·克莱因": {
+    "label": "拉克丝·克莱因",
     "en": null,
     "alt": [],
     "count": 1,
     "categories": {
-      "bandai:hg": 1
+      "bandai:figure": 1
     },
     "series": [
-      "iron-blooded"
+      "seed"
     ],
     "kits": [
-      "bc-1737"
+      "bc-1743"
     ]
   },
   "熊霸爸爸": {
@@ -63952,6 +66715,21 @@
       "goodsmile-5757"
     ]
   },
+  "弗利萨的小型飞船": {
+    "label": "弗利萨的小型飞船",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1720"
+    ]
+  },
   "独角兽高达钛合金涂装版": {
     "label": "独角兽高达钛合金涂装版",
     "en": null,
@@ -63997,21 +66775,6 @@
       "bc-1712"
     ]
   },
-  "ms-05s夏亚专用扎古i": {
-    "label": "MS-05S 夏亚专用扎古Ⅰ",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "categories": {
-      "bandai:hg": 1
-    },
-    "series": [
-      "uc"
-    ],
-    "kits": [
-      "bc-1702"
-    ]
-  },
   "小熊霸迷路黑": {
     "label": "小熊霸 迷路黑",
     "en": null,
@@ -64040,6 +66803,21 @@
     ],
     "kits": [
       "bc-1704"
+    ]
+  },
+  "ms-05s夏亚专用扎古i": {
+    "label": "MS-05S 夏亚专用扎古Ⅰ",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hg": 1
+    },
+    "series": [
+      "uc"
+    ],
+    "kits": [
+      "bc-1702"
     ]
   },
   "gat-x105b": {
@@ -64415,6 +67193,21 @@
     ],
     "kits": [
       "goodsmile-2304"
+    ]
+  },
+  "蕾娜·普劳拉": {
+    "label": "蕾娜·普劳拉",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1694"
     ]
   },
   "冰川瞬变高达": {
@@ -64873,6 +67666,21 @@
       "goodsmile-5609"
     ]
   },
+  "赛亚人的宇宙飞船": {
+    "label": "赛亚人的宇宙飞船",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1668"
+    ]
+  },
   "列金雷兹": {
     "label": "列金雷兹",
     "en": null,
@@ -64886,6 +67694,21 @@
     ],
     "kits": [
       "bc-1666"
+    ]
+  },
+  "要·巴卡妮雅": {
+    "label": "要·巴卡妮雅",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1661"
     ]
   },
   "高达古辛深度重锻型": {
@@ -65329,6 +68152,36 @@
       "bc-1657"
     ]
   },
+  "美云·吉努梅尔": {
+    "label": "美云·吉努梅尔",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1651"
+    ]
+  },
+  "刹那·f·清英": {
+    "label": "刹那·F·清英",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "gundam-00"
+    ],
+    "kits": [
+      "bc-1642"
+    ]
+  },
   "西亚00量子高达": {
     "label": "西亚00量子高达",
     "en": null,
@@ -65342,6 +68195,21 @@
     ],
     "kits": [
       "bc-1641"
+    ]
+  },
+  "liko": {
+    "label": "Liko",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1637"
     ]
   },
   "闪电背包武器系统mk-iii": {
@@ -65824,6 +68692,36 @@
       "goodsmile-5283"
     ]
   },
+  "玛基娜·中岛": {
+    "label": "玛基娜·中岛",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1629"
+    ]
+  },
+  "精灵∑": {
+    "label": "精灵∑",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1506"
+    ]
+  },
   "高达亚斯塔禄初始形态": {
     "label": "高达亚斯塔禄 初始形态",
     "en": null,
@@ -65837,6 +68735,36 @@
     ],
     "kits": [
       "bc-1628"
+    ]
+  },
+  "芙蕾雅·薇恩": {
+    "label": "芙蕾雅·薇恩",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1626"
+    ]
+  },
+  "三日月·奥古斯": {
+    "label": "三日月·奥古斯",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "iron-blooded"
+    ],
+    "kits": [
+      "bc-1623"
     ]
   },
   "北方武器舱": {
@@ -66460,6 +69388,21 @@
       "bc-1589"
     ]
   },
+  "强袭拦截者": {
+    "label": "强袭拦截者",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-1562"
+    ]
+  },
   "咖啡棕色小熊霸": {
     "label": "咖啡棕色小熊霸",
     "en": null,
@@ -66775,8 +69718,38 @@
       "goodsmile-5733"
     ]
   },
+  "figfigure-risebust阿斯兰・萨拉": {
+    "label": "FIG Figure-riseBust 阿斯兰・萨拉",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "seed-destiny"
+    ],
+    "kits": [
+      "bc-1437"
+    ]
+  },
+  "figfigure-risebust基拉・大和": {
+    "label": "FIG Figure-riseBust 基拉・大和",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "seed-destiny"
+    ],
+    "kits": [
+      "bc-1436"
+    ]
+  },
   "扎古i旧扎古": {
-    "label": "扎古Ｉ 旧扎古",
+    "label": "扎古I 旧扎古",
     "en": null,
     "alt": [],
     "count": 1,
@@ -68478,7 +71451,7 @@
     ]
   },
   "高达g路西法": {
-    "label": "高达 Ｇ路西法",
+    "label": "高达 G路西法",
     "en": null,
     "alt": [],
     "count": 1,
@@ -69262,6 +72235,51 @@
       "pb-448"
     ]
   },
+  "figfigure-rise6假面骑士555": {
+    "label": "FIG Figure-rise6 假面骑士555",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-988"
+    ]
+  },
+  "figfigure-rise6假面骑士甲斗": {
+    "label": "FIG Figure-rise6 假面骑士甲斗",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "non-gundam"
+    ],
+    "kits": [
+      "bc-987"
+    ]
+  },
+  "figfigure-rise6剧场版wildtigerstyle2": {
+    "label": "FIG Figure-rise6 剧场版 WILD TIGER Style2",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-989"
+    ]
+  },
   "暗物质推进器": {
     "label": "暗物质推进器",
     "en": null,
@@ -69431,6 +72449,21 @@
     ],
     "kits": [
       "bc-965"
+    ]
+  },
+  "6剧场版巴纳比·布鲁克斯jr.style2": {
+    "label": "6 剧场版 巴纳比·布鲁克斯Jr. Style 2",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-954"
     ]
   },
   "银弹": {
@@ -69751,6 +72784,21 @@
       "bc-875"
     ]
   },
+  "惊异扎古": {
+    "label": "惊异扎古",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:hg": 1
+    },
+    "series": [
+      "gundam-build"
+    ],
+    "kits": [
+      "bc-872"
+    ]
+  },
   "创制推进器": {
     "label": "创制推进器",
     "en": null,
@@ -69779,21 +72827,6 @@
     ],
     "kits": [
       "bc-874"
-    ]
-  },
-  "惊异扎古": {
-    "label": "惊异扎古",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "categories": {
-      "bandai:hg": 1
-    },
-    "series": [
-      "gundam-build"
-    ],
-    "kits": [
-      "bc-872"
     ]
   },
   "嫣红强袭凤装备": {
@@ -70276,6 +73309,21 @@
     ],
     "kits": [
       "bc-753"
+    ]
+  },
+  "6巴纳比·布鲁克斯jr": {
+    "label": "6 巴纳比·布鲁克斯Jr.",
+    "en": null,
+    "alt": [],
+    "count": 1,
+    "categories": {
+      "bandai:figure": 1
+    },
+    "series": [
+      "other"
+    ],
+    "kits": [
+      "bc-752"
     ]
   },
   "拜亚兰·特装型": {
@@ -71289,7 +74337,7 @@
     ]
   },
   "pmx-003the・o": {
-    "label": "PMX-003 The・Ｏ",
+    "label": "PMX-003 The・O",
     "en": null,
     "alt": [],
     "count": 1,
@@ -71691,7 +74739,7 @@
     ]
   },
   "g战机": {
-    "label": "Ｇ战机",
+    "label": "G战机",
     "en": null,
     "alt": [],
     "count": 1,
@@ -75032,21 +78080,6 @@
       "pb-458"
     ]
   },
-  "nu高达": {
-    "label": "Nu高达",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "categories": {
-      "bandai:mg": 1
-    },
-    "series": [
-      "uc"
-    ],
-    "kits": [
-      "pb-202"
-    ]
-  },
   "re-gz": {
     "label": "Re-GZ",
     "en": null,
@@ -75262,21 +78295,6 @@
     ],
     "kits": [
       "modhtoy-mnq-xh07"
-    ]
-  },
-  "孙悟空": {
-    "label": "孙悟空",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "categories": {
-      "modhtoy:alloy": 1
-    },
-    "series": [
-      "xjhcz"
-    ],
-    "kits": [
-      "modhtoy-mnq-xh08"
     ]
   },
   "关羽·赤炎火龙驹": {

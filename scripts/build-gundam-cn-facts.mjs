@@ -19,49 +19,15 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { seriesIdOf } from './lib/series-map.mjs';
+import { gradeOf, scaleOf, cleanName, productName } from './lib/grade.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CATALOG = 'src/data/gundam.kits.catalog.json';
 const ITEMALL = 'src/data/gundam.kits.itemall.json';
 const OUT_FILE = 'src/data/gundam.kits.cn.json';
 
-const GRADE_RULES = [
-  [/^HGUC/i, 'HG'],
-  [/^HG/i, 'HG'],
-  [/^RG/i, 'RG'],
-  [/^MG\s*Ver\.?\s*Ka/i, 'MG'],
-  [/^MGSD/i, 'MGSD'],
-  [/^MGEX/i, 'MG'],
-  [/^RE\s*\/\s*100/i, 'MG'],
-  [/^MG/i, 'MG'],
-  [/^PG/i, 'PG'],
-  [/^ENTRY\s*GRADE/i, 'EG'],
-  [/^EG/i, 'EG'],
-  [/^FULL\s*MECHANICS/i, 'FM'],
-  [/^FM/i, 'FM'],
-  [/^SDCS/i, 'SD'],
-  [/^SDEX/i, 'SD'],
-  [/^METAL\s*ROBOT/i, 'MR'],
-  [/^HIGH[- ]?RESOLUTION/i, 'MR'],
-  [/^SD\b/i, 'SD'],
-  [/^BB/i, null],
-];
-
 const NOT_A_MODEL =
   /扩张特效组件|扩展组件|扩展配件套装|零件套组|专用零件|改造零件|外形提升零件|形状提升零件|特效件|水贴|贴纸|说明书|胶水|涂装工具|工具套装|可动底座|底座|支架|一番赏|透明保护|装饰品|挂件/;
-
-function gradeOf(name) {
-  for (const [re, grade] of GRADE_RULES) if (re.test(name)) return grade;
-  return null;
-}
-
-function scaleOf(grade, name) {
-  const m = /(1\/\d+)/.exec(name);
-  if (m) return m[1];
-  if (grade === 'SD') return 'SD 比例';
-  if (grade === 'MR') return '无比例';
-  return grade === 'MG' || grade === 'PG' || grade === 'FM' ? '1/100' : '1/144';
-}
 
 const catalog = JSON.parse(readFileSync(join(ROOT, CATALOG), 'utf8'));
 const itemall = JSON.parse(readFileSync(join(ROOT, ITEMALL), 'utf8'));
@@ -83,7 +49,7 @@ const out = [];
 let skipped = 0;
 
 for (const item of itemall) {
-  const name = (item.name || '').replace(/\s+/g, ' ').trim();
+  const name = cleanName(item.name || '');
   const grade = gradeOf(name);
   if (!grade) {
     skipped++;
@@ -118,10 +84,8 @@ for (const item of itemall) {
           : 'general';
   }
 
-  /* 品名统一成「等级 比例 名称」 */
-  const fullName = /^(HG|HGUC|RG|MG|PG|SD|EG|FG|FM|MGSD|MR|METAL|ENTRY|FULL|HIGH|RE)/i.test(name)
-    ? name
-    : `${grade} ${scale} ${name}`;
+  /* 品名统一成「等级 比例 名称」（源站自己已经这么写的原样保留） */
+  const fullName = productName(grade, scale, name);
 
   out.push({
     id: `bc-${item.detailId}`,

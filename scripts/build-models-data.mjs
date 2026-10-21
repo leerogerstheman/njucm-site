@@ -92,13 +92,14 @@ const VENDORS = [
       PG: 'bandai:pg', MG: 'bandai:mg', MGSD: 'bandai:mgsd', RG: 'bandai:rg',
       HG: 'bandai:hg', FG: 'bandai:fg', SD: 'bandai:sd', EG: 'bandai:eg',
       FM: 'bandai:fm', MR: 'bandai:mr', GA: 'bandai:ga',
+      HIRM: 'bandai:hirm', FIG: 'bandai:figure',
     },
     defaultCategory: 'bandai:other',
     /** 缺比例时用它兜底 */
     defaultScale: {
       PG: '1/100', MG: '1/100', MGSD: 'SD 比例', RG: '1/144', HG: '1/144',
       FG: '1/144', SD: '非等比', EG: '1/144', FM: '1/100', MR: '约 1/100',
-      GA: '约 50mm',
+      GA: '约 50mm', HIRM: '1/100', FIG: '',
     },
     seriesMode: 'id',
     series: new Set([

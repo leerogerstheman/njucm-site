@@ -34,6 +34,14 @@ const PREFIX_WORDS = [
   'METAL ROBOT',
   'LEGENDBB',
   'RE/100',
+  'HIRM',
+  /* 人偶线：剥掉产品线名，剩下的才是人物 */
+  'FIGURE-RISE STANDARD',
+  'FIGURE-RISE BUST',
+  'FIGURE-RISE EFFECT',
+  'FIGURE-RISE LABO',
+  'FIGURE-RISE MECHANICS',
+  'FIGURE-RISE',
   /* 产品线 */
   'HG BUILD CUSTOM',
   'SD高达 CROSS SILHOUETTE',

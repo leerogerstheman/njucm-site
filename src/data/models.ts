@@ -115,6 +115,8 @@ export const CATEGORIES: CategoryMeta[] = [
   { id: 'bandai:eg', maker: 'bandai', label: 'EG', short: 'EG', scale: '1/144', brief: '平价入门，零件少、成型好' },
   { id: 'bandai:fm', maker: 'bandai', label: 'FM', short: 'FM', scale: '1/100', brief: '早期的高完成度线，现已停摆' },
   { id: 'bandai:mr', maker: 'bandai', label: 'MR', short: 'MR', scale: '约 1/100', brief: 'METAL ROBOT 魂，完成品，高度还原的收藏向' },
+  { id: 'bandai:hirm', maker: 'bandai', label: 'HIRM', short: 'HIRM', scale: '1/100', brief: '高级注入树脂模型：1/100 的高级完成品线' },
+  { id: 'bandai:figure', maker: 'bandai', label: 'Figure-rise', short: 'FIG', brief: '万代自己的人偶线：Standard / Bust / LABO / Mechanics' },
   { id: 'bandai:ga', maker: 'bandai', label: 'GA', short: 'GA', scale: '约 50mm', brief: '高达集结：桌面战棋用的拼装兵人' },
   { id: 'bandai:other', maker: 'bandai', label: '万代其它', brief: '拼装模型、食玩与其它万代产品线' },
 
