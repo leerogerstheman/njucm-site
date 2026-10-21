@@ -110,14 +110,17 @@ function markdownToText(md: string): string {
 const INDEX_TEXT_LIMIT = 2500;
 
 /**
- * Every doc across the three content sections, flattened for search.
+ * Every doc across the content sections, flattened for search.
  *
  * Built at compile time and served as one static JSON file, so the search page
  * itself stays a few kilobytes and the index is only fetched when the visitor
  * actually starts typing.
+ *
+ * The `about` section is a single page rendered at /about/, not one page per
+ * entry — so its href is fixed rather than derived from the slug.
  */
 export async function getSearchableDocs(): Promise<SearchableDoc[]> {
-  const sections: SectionName[] = ['notes', 'data', 'projects'];
+  const sections: SectionName[] = ['notes', 'data', 'projects', 'about'];
 
   const all = await Promise.all(
     sections.map(async (section) => {
@@ -126,7 +129,8 @@ export async function getSearchableDocs(): Promise<SearchableDoc[]> {
         docs.map(async (doc) => {
           const entry = await getRawEntry(section, doc.slug);
           const body = typeof entry?.body === 'string' ? entry.body : '';
-          return { ...doc, section, text: markdownToText(body).slice(0, INDEX_TEXT_LIMIT) };
+          const href = section === 'about' ? '/about/' : doc.href;
+          return { ...doc, href, section, text: markdownToText(body).slice(0, INDEX_TEXT_LIMIT) };
         }),
       );
     }),

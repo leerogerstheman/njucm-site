@@ -24,6 +24,7 @@ export const GET: APIRoute = () => {
     'priceCny',
     'image',
     'mech',
+    'mechId',
     'aliases',
     'tags',
     /* 对比页要用的几个字段。空的占位不少，但整库加起来也只多二十来 KB。 */
@@ -47,6 +48,7 @@ export const GET: APIRoute = () => {
     kit.priceCny,
     kit.image,
     kit.mech,
+    kit.mechId,
     kit.aliases,
     kit.tags,
     kit.parts,

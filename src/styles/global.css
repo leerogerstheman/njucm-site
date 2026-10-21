@@ -1821,6 +1821,59 @@
     font-weight: inherit;
   }
 
+  /* 结果分两段：高达模型与站点内容 */
+  .search__group {
+    padding: 1rem 0.4rem 0.35rem;
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--text-faint);
+    list-style: none;
+  }
+
+  .search__group:first-child {
+    padding-top: 0.2rem;
+  }
+
+  /* 机体聚合：标题链到机体页，下面挂几个具体版本 */
+  .search__hit--mech {
+    background: var(--surface);
+  }
+
+  .search__members {
+    display: grid;
+    gap: 0.15rem;
+    margin: 0.45rem 0 0;
+    padding: 0 0 0 0.9rem;
+    list-style: none;
+    border-left: 1px solid var(--line);
+  }
+
+  .search__members a {
+    font-size: var(--fs-sm);
+    color: var(--text-dim);
+    background-image: none;
+  }
+
+  .search__members a:hover {
+    background-image: none;
+    color: var(--accent);
+  }
+
+  .search__membersMore a {
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    color: var(--text-faint);
+  }
+
+  .search__members mark {
+    padding: 0.05em 0.2em;
+    border-radius: 3px;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+  }
+
   /* ---- changelog timeline ------------------------------------------------- */
   .timeline {
     margin-top: 2rem;

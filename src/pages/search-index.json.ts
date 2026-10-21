@@ -1,5 +1,8 @@
 import type { APIRoute } from 'astro';
 import { getSearchableDocs } from '../utils/content';
+import { SITE_PAGES } from '../data/site-pages';
+import { KITS, SERIES, releaseYear } from '../data/gundam';
+import MECHES from '../data/gundam.mechs.json';
 
 /**
  * 站内搜索索引（构建期生成）
@@ -9,13 +12,22 @@ import { getSearchableDocs } from '../utils/content';
  * 算好，输出成一个静态 JSON；搜索页只在访客真的开始输入时才去取它，
  * 所以搜索功能不会给任何一个页面的首屏增加任何代价。
  *
- * 索引本身携带正文纯文本（截断到 4000 字符/篇），这样搜「MedDRA」能命中
+ * 索引本身携带正文纯文本（截断到 2500 字符/篇），这样搜「MedDRA」能命中
  * 只在正文里出现过一次的词，而不只是标题和描述。
+ *
+ * 收三类东西：
+ *   1. 有 markdown 的内容页（笔记 / 数据集 / 项目 / 关于）
+ *   2. 静态页面清单——它们回答「这个站能做什么」，标题与描述本身就是关键词
+ *   3. 作品线页——每条作品线一行，给出规模、年代与代表机体
+ *
+ * 1742 个模型条目不在这里：它们由 /data/gundam/index.json 提供，搜索页复用
+ * 那一份（列表页本来就要用它），不另造数据。1244 个机体页也不逐条进来——
+ * 搜索结果在客户端按机体聚合，体积省下来，命中反而更准。
  */
 export const GET: APIRoute = async () => {
   const docs = await getSearchableDocs();
 
-  const index = docs.map((d) => ({
+  const entries = docs.map((d) => ({
     t: d.title,
     d: d.description ?? '',
     u: d.href,
@@ -24,7 +36,43 @@ export const GET: APIRoute = async () => {
     x: d.text,
   }));
 
-  return new Response(JSON.stringify(index), {
+  /* 静态页面：没有正文，把关键词当检索文本 */
+  for (const p of SITE_PAGES) {
+    entries.push({
+      t: p.title,
+      d: p.description,
+      u: p.href,
+      s: p.section,
+      g: p.keywords,
+      x: [p.title, p.description, ...p.keywords].join(' '),
+    });
+  }
+
+  /* 作品线页：每条一行。规模、年代、代表机体都进检索文本。 */
+  const mechs = MECHES as Record<string, { label: string; count: number; series: string[] }>;
+  for (const s of SERIES) {
+    const kits = KITS.filter((k) => k.series === s.id);
+    if (!kits.length) continue;
+    const years = kits.map((k) => releaseYear(k.released)).filter(Boolean);
+    const top = Object.entries(mechs)
+      .filter(([, m]) => m.series.includes(s.id) && m.count > 1)
+      .sort((a, b) => b[1].count - a[1].count)
+      .slice(0, 8)
+      .map(([, m]) => m.label);
+    const desc = `${s.label}：库里 ${kits.length} 条记录${
+      years.length ? `，${Math.min(...years)}–${Math.max(...years)} 年` : ''
+    }。`;
+    entries.push({
+      t: s.label,
+      d: desc,
+      u: `/data/gundam/series/${s.id}/`,
+      s: 'gundam',
+      g: [s.short, '作品线'],
+      x: [s.label, s.short, desc, ...top].join(' '),
+    });
+  }
+
+  return new Response(JSON.stringify(entries), {
     headers: {
       'Content-Type': 'application/json; charset=utf-8',
       // 索引在构建期就是死的，但部署平台可能仍会重新校验；给它一年。

@@ -21047,10 +21047,14 @@ export const GUNDAM_KITS: GundamKit[] = [
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20230509/e096a95ac240fe1b8034be43dea1f1a3.jpg",
     "taxRate": null,
     "sourceJp": null,
-    "mech": "RX-78-3 G3高达",
-    "mechId": "rx-78-3g3高达",
+    "mech": "RX-78-3 G-3高达",
+    "mechId": "rx-78-3g-3高达",
     "aliases": [
-      "RX-78-3"
+      "RX-78-3",
+      "Gundam G-3",
+      "G3高达",
+      "G-3",
+      "RX78-3"
     ]
   },
   {
@@ -26760,9 +26764,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20231212/0adbfd43d382a89110990527f2f163dc.jpg",
     "taxRate": null,
     "sourceJp": null,
-    "mech": "独角兽高达2号机 报丧女妖・命运女神",
-    "mechId": "独角兽高达2号机报丧女妖・命运女神",
-    "aliases": []
+    "mech": "独角兽高达2号机 报丧女妖·命运女神",
+    "mechId": "独角兽高达2号机报丧女妖·命运女神",
+    "aliases": [
+      "Banshee Norn",
+      "命运女神",
+      "报丧女妖命运女神"
+    ]
   },
   {
     "id": "bc-1759",
@@ -33168,9 +33176,13 @@ export const GUNDAM_KITS: GundamKit[] = [
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_1078_o_1ebdjhf8618n7l1416gb7vm4d28.jpg",
     "taxRate": 10,
     "sourceJp": "https://bandai-hobby.net/item/01_82/",
-    "mech": "独角兽高达2号机 报丧女妖・命运女神",
-    "mechId": "独角兽高达2号机报丧女妖・命运女神",
-    "aliases": []
+    "mech": "独角兽高达2号机 报丧女妖·命运女神",
+    "mechId": "独角兽高达2号机报丧女妖·命运女神",
+    "aliases": [
+      "Banshee Norn",
+      "命运女神",
+      "报丧女妖命运女神"
+    ]
   },
   {
     "id": "bc-978",
@@ -41760,10 +41772,15 @@ export const GUNDAM_KITS: GundamKit[] = [
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_316_o_1e7n61krhiblelvv3pfq6ce23.jpg",
     "taxRate": 10,
     "sourceJp": "https://bandai-hobby.net/item/01_2226/",
-    "mech": "RX-78-2 元祖高达",
-    "mechId": "rx-78-2元祖高达",
+    "mech": "RX-78-2 高达",
+    "mechId": "rx-78-2高达",
     "aliases": [
-      "RX-78-2"
+      "RX-78-2",
+      "RX-78-2 Gundam",
+      "78-2",
+      "元祖高达",
+      "RX78-2",
+      "初代高达"
     ]
   },
   {
@@ -46189,7 +46206,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -46210,9 +46227,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240426/70118c10eb6e98f09a41e74139c95290.jpg",
     "taxRate": null,
     "sourceJp": null,
-    "mech": "基拉祖鲁",
-    "mechId": "基拉祖鲁",
-    "aliases": []
+    "mech": "基拉·祖鲁",
+    "mechId": "基拉·祖鲁",
+    "aliases": [
+      "J-Zulu",
+      "祖鲁"
+    ]
   },
   {
     "id": "pb-124",
@@ -46220,7 +46240,7 @@ export const GUNDAM_KITS: GundamKit[] = [
     "nameJa": "",
     "grade": "HG",
     "maker": "BANDAI SPIRITS",
-    "series": "other",
+    "series": "uc",
     "scale": "1/144",
     "released": "",
     "priceJpy": 0,
@@ -46241,9 +46261,12 @@ export const GUNDAM_KITS: GundamKit[] = [
     "imageUrl": "https://staticcdn.bandaihobbysite.cn/www/uploads/20240426/3e1e6874bc66f9ede068c7d9afc698eb.jpg",
     "taxRate": null,
     "sourceJp": null,
-    "mech": "基拉祖鲁",
-    "mechId": "基拉祖鲁",
-    "aliases": []
+    "mech": "基拉·祖鲁",
+    "mechId": "基拉·祖鲁",
+    "aliases": [
+      "J-Zulu",
+      "祖鲁"
+    ]
   },
   {
     "id": "pb-288",
