@@ -23,16 +23,17 @@ const H = 630;
 
 /** 与 src/styles/global.css 的 tokens 保持一致（深色主题那一侧） */
 const C = {
-  bg: '#0c1012',
-  surface: '#182022',
-  line: '#263033',
+  bg: '#110c0b',
+  surface: '#1e1817',
+  line: '#322928',
   lineFaint: '#1b2427',
-  dot: 'rgba(190,232,224,0.09)',
-  text: '#e9eff0',
-  dim: '#a8b8bc',
-  faint: '#7d8f94',
-  accent: '#6fd3bd',
-  seal: '#dc6a49',
+  dot: 'rgba(208,195,167,0.08)',
+  text: '#f3efee',
+  dim: '#beb5b4',
+  faint: '#8c8280',
+  accent: '#f3625f',
+  accent2: '#f3c64c',
+  seal: '#c92f36',
 };
 
 const SANS = "'Segoe UI','Helvetica Neue',Arial,'Microsoft YaHei','PingFang SC',sans-serif";
@@ -77,6 +78,8 @@ const edges = [
 const seal = (x, y, size) => `
   <g transform="translate(${x} ${y})">
     <rect width="${size}" height="${size}" rx="${size * 0.09}" fill="${C.seal}"/>
+    <rect x="${size * 0.08}" y="${size * 0.08}" width="${size * 0.84}" height="${size * 0.84}"
+      rx="${size * 0.05}" fill="none" stroke="${C.accent2}" stroke-width="${size * 0.028}" opacity="0.75"/>
     <text x="${size / 2}" y="${size / 2}" text-anchor="middle" dominant-baseline="central"
       font-family="'Songti SC','Source Han Serif SC','SimSun',serif"
       font-size="${size * 0.56}" font-weight="600" fill="#ffffff">藥</text>
@@ -92,8 +95,8 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
       <stop offset="100%" stop-color="${C.accent}" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="washB" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="${C.seal}" stop-opacity="0.16"/>
-      <stop offset="100%" stop-color="${C.seal}" stop-opacity="0"/>
+      <stop offset="0%" stop-color="${C.accent2}" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="${C.accent2}" stop-opacity="0"/>
     </radialGradient>
     <clipPath id="sheet">
       <rect x="740" y="64" width="396" height="502" rx="16"/>
@@ -142,21 +145,21 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
 
     <g transform="translate(942 168)">
       <path d="M0 26C-2 13 3 3 0 -11" fill="none" stroke="${C.dim}" stroke-width="2.4" stroke-linecap="round"/>
-      <ellipse cx="0" cy="-19" rx="7.5" ry="11" fill="${C.accent}" fill-opacity="0.16" stroke="${C.accent}" stroke-width="2"/>
-      <ellipse cx="-11" cy="-5" rx="5" ry="7.5" fill="${C.bg}" stroke="${C.accent}" stroke-width="1.7"/>
-      <ellipse cx="11" cy="-3" rx="5" ry="7.5" fill="${C.bg}" stroke="${C.accent}" stroke-width="1.7"/>
+      <ellipse cx="0" cy="-19" rx="7.5" ry="11" fill="${C.accent2}" fill-opacity="0.16" stroke="${C.accent2}" stroke-width="2"/>
+      <ellipse cx="-11" cy="-5" rx="5" ry="7.5" fill="${C.bg}" stroke="${C.accent2}" stroke-width="1.7"/>
+      <ellipse cx="11" cy="-3" rx="5" ry="7.5" fill="${C.bg}" stroke="${C.accent2}" stroke-width="1.7"/>
     </g>
 
     ${edges
       .map(
         ([a, b]) =>
-          `<line x1="${nodes[a].x}" y1="${nodes[a].y}" x2="${nodes[b].x}" y2="${nodes[b].y}" stroke="${C.accent}" stroke-width="1.8" opacity="0.45"/>`,
+          `<line x1="${nodes[a].x}" y1="${nodes[a].y}" x2="${nodes[b].x}" y2="${nodes[b].y}" stroke="${C.accent2}" stroke-width="1.8" opacity="0.5"/>`,
       )
       .join('\n    ')}
     ${nodes
       .map(
         (n, i) =>
-          `<circle cx="${n.x}" cy="${n.y}" r="${n.r}" fill="${i === 0 ? C.accent : C.bg}" stroke="${C.accent}" stroke-width="2"/>`,
+          `<circle cx="${n.x}" cy="${n.y}" r="${n.r}" fill="${i === 0 ? C.accent2 : C.bg}" stroke="${C.accent2}" stroke-width="2"/>`,
       )
       .join('\n    ')}
 

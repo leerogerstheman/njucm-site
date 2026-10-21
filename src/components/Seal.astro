@@ -1,9 +1,10 @@
 ---
 /**
- * 站印：一枚朱砂方印，内含「藥」字。
+ * 站印：一枚朱红方印，内含「藥」字。
  *
- * 全站唯一发光的东西，也是唯一大量使用朱砂色的地方——印章之所以有力量，
- * 是因为整个画面里只有它一个红点。
+ * 全站唯一发光的东西，也是唯一大量使用主色的地方——印章之所以有力量，
+ * 是因为整个画面里只有它一个红点。取吉翁公国的旗色：红底压白字，
+ * 四周再留一道金线，像红底上的金鹰。
  */
 interface Props {
   /** 边长，任意 CSS 长度 */
@@ -19,11 +20,33 @@ const { size = '1.5rem', label } = Astro.props;
   label ? (
     <svg class="seal" viewBox="0 0 32 32" role="img" aria-label={label} style={`width:${size}`}>
       <rect width="32" height="32" rx="3" fill="var(--seal)" />
+      <rect
+        x="2.6"
+        y="2.6"
+        width="26.8"
+        height="26.8"
+        rx="1.6"
+        fill="none"
+        stroke="var(--accent-2)"
+        stroke-width="0.9"
+        opacity="0.75"
+      />
       <text x="16" y="17" text-anchor="middle" dominant-baseline="central">藥</text>
     </svg>
   ) : (
     <svg class="seal" viewBox="0 0 32 32" aria-hidden="true" style={`width:${size}`}>
       <rect width="32" height="32" rx="3" fill="var(--seal)" />
+      <rect
+        x="2.6"
+        y="2.6"
+        width="26.8"
+        height="26.8"
+        rx="1.6"
+        fill="none"
+        stroke="var(--accent-2)"
+        stroke-width="0.9"
+        opacity="0.75"
+      />
       <text x="16" y="17" text-anchor="middle" dominant-baseline="central">藥</text>
     </svg>
   )

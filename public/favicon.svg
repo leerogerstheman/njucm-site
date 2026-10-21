@@ -1,9 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="njucm.org">
-  <!-- 墨底 -->
-  <rect width="32" height="32" rx="7" fill="#0c1012"/>
-  <!-- 青瓷：一枚叶形，和首页标本图同一套语言 -->
-  <path d="M15 5.5c4.8 4.2 6.6 7.4 6.6 10.2a6.6 6.6 0 0 1-13.2 0C8.4 12.9 10.2 9.7 15 5.5Z" fill="#6fd3bd"/>
-  <path d="M15 10.5v9.5" stroke="#0c1012" stroke-width="1.1" stroke-linecap="round" opacity="0.55"/>
-  <!-- 朱砂：右下角一枚小印 -->
-  <rect x="19.5" y="19.5" width="8" height="8" rx="1.6" fill="#dc6a49"/>
+  <!-- 底：朱红，取吉翁公国的旗色 -->
+  <rect width="32" height="32" rx="7" fill="#ab1011"/>
+  <!-- 金线框 -->
+  <rect x="1.6" y="1.6" width="28.8" height="28.8" rx="5.6" fill="none" stroke="#e0aa2e" stroke-width="1"/>
+  <!-- 药滴：全站的形，金色 -->
+  <path d="M15 5.5c4.8 4.2 6.6 7.4 6.6 10.2a6.6 6.6 0 0 1-13.2 0C8.4 12.9 10.2 9.7 15 5.5Z" fill="#f3c64c"/>
+  <path d="M15 10.5v9.5" stroke="#ab1011" stroke-width="1.1" stroke-linecap="round" opacity="0.55"/>
+  <!-- 角上的小方印 -->
+  <rect x="19.5" y="19.5" width="8" height="8" rx="1.6" fill="#f3c64c"/>
 </svg>

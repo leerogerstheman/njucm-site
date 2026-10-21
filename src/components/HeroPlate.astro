@@ -143,6 +143,7 @@ const MIDRIB = 'M1 0C26 -5 58 -6 80 -2';
     </g>
 
     {/* ---- 节点网络：计算方法的那一半 ---- */}
+    {/* 植物是红的，网络是金的——一红一金各占一半，和分享卡片同一套分色。 */}
     <g class="plate__net">
       {
         edges.map(([a, b]) => (
@@ -151,9 +152,9 @@ const MIDRIB = 'M1 0C26 -5 58 -6 80 -2';
             y1={nodes[a].y}
             x2={nodes[b].x}
             y2={nodes[b].y}
-            stroke="var(--accent)"
+            stroke="var(--accent-2)"
             stroke-width="0.9"
-            opacity="0.4"
+            opacity="0.5"
           ></line>
         ))
       }
@@ -163,8 +164,8 @@ const MIDRIB = 'M1 0C26 -5 58 -6 80 -2';
             cx={n.x}
             cy={n.y}
             r={n.r}
-            fill={i === 0 ? 'var(--accent)' : 'var(--surface)'}
-            stroke="var(--accent)"
+            fill={i === 0 ? 'var(--accent-2)' : 'var(--surface)'}
+            stroke="var(--accent-2)"
             stroke-width="1.1"
           ></circle>
         ))
@@ -185,6 +186,16 @@ const MIDRIB = 'M1 0C26 -5 58 -6 80 -2';
 
     <g class="plate__seal" transform="translate(346 470)">
       <rect width="46" height="46" rx="4" fill="var(--seal)" opacity="0.92"></rect>
+      <rect
+        x="3.6"
+        y="3.6"
+        width="38.8"
+        height="38.8"
+        rx="2.6"
+        fill="none"
+        stroke="var(--accent-2)"
+        stroke-width="1.2"
+        opacity="0.75"></rect>
       <text x="23" y="24" text-anchor="middle" dominant-baseline="central">藥</text>
     </g>
   </g>

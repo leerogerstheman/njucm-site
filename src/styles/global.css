@@ -2,12 +2,18 @@
    njucm.org — design system v3
    --------------------------------------------------------------------------
    The subject is traditional Chinese medicine, pharmacy and computational
-   method — so the palette is drawn from the same shelf, not from a generic
-   developer-portfolio teal:
+   method — but the palette is not a generic developer-portfolio teal. It is
+   taken from the Principality of Zeon's colours: a red field, and the gold of
+   the eagle that sits on it.
 
-     墨 ink      the near-black ground (dark) / warm rice-paper (light)
-     青 celadon  the signal colour — glaze, jade, 青瓷
-     朱砂 cinnabar  the rare second voice: seal-paste red, used like a stamp
+     墨 ink        the near-black ground (dark) / warm rice-paper (light)
+     朱 zeon red   the signal colour — the Principality's flag red
+     金 zeon gold  the second voice, rationed to the places that should read
+                   as a second voice rather than as "another link"
+
+   Red carries the interface; gold is the accent. The ground is warm neutral in
+   both themes, so the red never reads as a stray colour sitting on a cold
+   ground.
 
    Architecture
      - @layer keeps the cascade predictable: reset < tokens < base < layout <
@@ -36,45 +42,42 @@
     color-scheme: dark;
 
     /* ---- 墨 · the ground ------------------------------------------------- */
-    --bg: light-dark(oklch(0.973 0.007 92), oklch(0.155 0.009 210));
-    --bg-soft: light-dark(oklch(0.944 0.009 92), oklch(0.19 0.01 210));
-    --surface: light-dark(oklch(0.994 0.003 92), oklch(0.215 0.011 210));
-    --surface-2: light-dark(oklch(0.956 0.008 92), oklch(0.255 0.012 210));
-    --surface-3: light-dark(oklch(0.918 0.01 92), oklch(0.3 0.013 210));
+    --bg: light-dark(oklch(0.972 0.007 88), oklch(0.16 0.009 25));
+    --bg-soft: light-dark(oklch(0.945 0.009 88), oklch(0.195 0.01 25));
+    --surface: light-dark(oklch(0.995 0.003 88), oklch(0.215 0.011 25));
+    --surface-2: light-dark(oklch(0.957 0.008 88), oklch(0.255 0.012 25));
+    --surface-3: light-dark(oklch(0.92 0.01 88), oklch(0.3 0.013 25));
 
-    --line: light-dark(oklch(0.884 0.008 92), oklch(0.28 0.012 210));
-    --line-strong: light-dark(oklch(0.788 0.012 92), oklch(0.372 0.014 210));
+    --line: light-dark(oklch(0.885 0.008 88), oklch(0.29 0.013 25));
+    --line-strong: light-dark(oklch(0.79 0.012 88), oklch(0.385 0.015 25));
 
     /* Dot grid, the way graph paper is actually ruled — a warmer, quieter
        ground than a blueprint grid and it never fights the type. */
-    --grid-dot: light-dark(oklch(0.36 0.02 210 / 0.1), oklch(0.8 0.02 185 / 0.09));
+    --grid-dot: light-dark(oklch(0.35 0.03 24 / 0.1), oklch(0.82 0.04 85 / 0.08));
 
     /* ---- text ----------------------------------------------------------- */
-    --text: light-dark(oklch(0.262 0.012 210), oklch(0.955 0.006 200));
-    --text-dim: light-dark(oklch(0.452 0.012 210), oklch(0.775 0.012 200));
+    --text: light-dark(oklch(0.25 0.012 25), oklch(0.955 0.005 30));
+    --text-dim: light-dark(oklch(0.45 0.012 25), oklch(0.78 0.01 30));
     /* Light-mode faint text sits on paper and on tinted chips, so it has to be
        noticeably darker than the dark-mode counterpart to clear 4.5:1. */
-    --text-faint: light-dark(oklch(0.552 0.012 210), oklch(0.605 0.013 200));
-    --text-inverse: light-dark(oklch(0.99 0 0), oklch(0.16 0.01 210));
+    --text-faint: light-dark(oklch(0.55 0.012 25), oklch(0.615 0.012 30));
+    --text-inverse: light-dark(oklch(0.99 0 0), oklch(0.16 0.009 25));
 
-    /* ---- 青 · celadon, the signal colour --------------------------------- */
-    --accent: light-dark(oklch(0.468 0.088 176), oklch(0.815 0.105 178));
-    --accent-strong: light-dark(oklch(0.398 0.09 176), oklch(0.892 0.115 178));
-    --accent-soft: light-dark(oklch(0.468 0.088 176 / 0.1), oklch(0.815 0.105 178 / 0.13));
-    --accent-line: light-dark(oklch(0.468 0.088 176 / 0.34), oklch(0.815 0.105 178 / 0.38));
-    --accent-ink: light-dark(oklch(0.99 0 0), oklch(0.17 0.028 192));
+    /* ---- 朱 · Zeon red, the signal colour --------------------------------- */
+    --accent: light-dark(oklch(0.472 0.185 28), oklch(0.68 0.18 24));
+    --accent-strong: light-dark(oklch(0.41 0.18 28), oklch(0.79 0.14 28));
+    --accent-soft: light-dark(oklch(0.472 0.185 28 / 0.1), oklch(0.68 0.18 24 / 0.14));
+    --accent-line: light-dark(oklch(0.472 0.185 28 / 0.34), oklch(0.68 0.18 24 / 0.4));
+    --accent-ink: light-dark(oklch(0.99 0 0), oklch(0.16 0.03 22));
 
-    /* ---- 朱砂 · cinnabar, the second voice ------------------------------- */
-    /* Rationed deliberately: the site seal, the wash behind the header, and
-       the "idea" tag. Nowhere else — if it shows up three times on one screen
-       it has stopped being a stamp and started being a colour. */
-    --accent-2: light-dark(oklch(0.502 0.16 32), oklch(0.715 0.165 33));
-    --accent-2-soft: light-dark(oklch(0.502 0.16 32 / 0.1), oklch(0.715 0.165 33 / 0.14));
-    --seal: light-dark(oklch(0.502 0.16 32), oklch(0.7 0.16 33));
+    /* ---- 金 · Zeon gold, the second voice -------------------------------- */
+    --accent-2: light-dark(oklch(0.52 0.115 80), oklch(0.845 0.145 88));
+    --accent-2-soft: light-dark(oklch(0.52 0.115 80 / 0.12), oklch(0.845 0.145 88 / 0.15));
+    --seal: light-dark(oklch(0.472 0.185 28), oklch(0.55 0.19 24));
 
-    --ok: light-dark(oklch(0.45 0.11 158), oklch(0.775 0.145 155));
-    --warn: light-dark(oklch(0.52 0.12 72), oklch(0.82 0.145 78));
-    --danger: light-dark(oklch(0.47 0.17 25), oklch(0.705 0.17 25));
+    --ok: light-dark(oklch(0.45 0.11 155), oklch(0.78 0.14 155));
+    --warn: light-dark(oklch(0.55 0.14 52), oklch(0.83 0.145 62));
+    --danger: light-dark(oklch(0.47 0.19 26), oklch(0.72 0.18 26));
 
     /* ---- type ------------------------------------------------------------ */
     --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI Variable Text",
@@ -160,29 +163,29 @@
      rather than invalid custom properties. */
   @supports not (color: light-dark(#000, #fff)) {
     :root {
-      --bg: #0c1012;
-      --bg-soft: #121719;
-      --surface: #182022;
-      --surface-2: #202a2c;
-      --surface-3: #2a3538;
-      --line: #263033;
-      --line-strong: #35434a;
-      --grid-dot: rgba(190, 232, 224, 0.09);
-      --text: #e9eff0;
-      --text-dim: #a8b8bc;
-      --text-faint: #7d8f94;
-      --text-inverse: #0c1012;
-      --accent: #6fd3bd;
-      --accent-strong: #96e8d6;
-      --accent-soft: rgba(111, 211, 189, 0.13);
-      --accent-line: rgba(111, 211, 189, 0.38);
-      --accent-ink: #0d2420;
-      --accent-2: #e0704f;
-      --accent-2-soft: rgba(224, 112, 79, 0.14);
-      --seal: #dc6a49;
-      --ok: #6bd6a4;
-      --warn: #e9b862;
-      --danger: #e8796f;
+      --bg: #110c0b;
+      --bg-soft: #191313;
+      --surface: #1e1817;
+      --surface-2: #282120;
+      --surface-3: #342b2a;
+      --line: #322928;
+      --line-strong: #4b4140;
+      --grid-dot: rgba(208, 195, 167, 0.08);
+      --text: #f3efee;
+      --text-dim: #beb5b4;
+      --text-faint: #8c8280;
+      --text-inverse: #110c0b;
+      --accent: #f3625f;
+      --accent-strong: #ff9587;
+      --accent-soft: rgba(243, 98, 95, 0.14);
+      --accent-line: rgba(243, 98, 95, 0.4);
+      --accent-ink: #180808;
+      --accent-2: #f3c64c;
+      --accent-2-soft: rgba(243, 198, 76, 0.15);
+      --seal: #c92f36;
+      --ok: #63d18f;
+      --warn: #ffb05b;
+      --danger: #ff6f67;
     }
   }
 }
@@ -977,7 +980,7 @@
     z-index: 1;
   }
 
-  /* 悬停时从卡片顶端漫下的一点青瓷色，像墨在纸上洇开一点——很轻，但让卡片
+  /* 悬停时从卡片顶端漫下的一点朱红，像印泥在纸上洇开一点——很轻，但让卡片
      从"有一块边框"变成"被点了一下"。用 ::after 而非 background 渐变，因为
      背景色之间的渐变无法过渡，而遮罩的不透明度可以。 */
   .card::after {
