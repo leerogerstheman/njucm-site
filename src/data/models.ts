@@ -250,6 +250,16 @@ const CATALOG_SERIES = (SERIES_CATALOG as SeriesMeta[]).filter(
 
 export const SERIES: SeriesMeta[] = [...CURATED_SERIES, ...CATALOG_SERIES];
 
+/**
+ * 人工整理过的作品线 id。
+ *
+ * 开放词表里的作品线（寿屋、良笑）是这一轮才有的，当年的站上没有它们的页面——
+ * 旧地址的跳转页只覆盖这一批。
+ */
+export const CURATED_SERIES_IDS: ReadonlySet<string> = new Set(
+  CURATED_SERIES.map((s) => s.id),
+);
+
 const SERIES_MAP = new Map(SERIES.map((s) => [s.id, s]));
 
 export function seriesMeta(id: string): SeriesMeta {

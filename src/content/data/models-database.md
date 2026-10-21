@@ -346,6 +346,21 @@ GitHub Pages 的站点上限是 1 GB，naïvely 内联会让站点涨到 1 GB �
 
 这些取舍不是为了省流量好看，是为了让数据集能真的放上去。
 
+## 旧地址怎么办
+
+数据库从 `/data/gundam/` 迁到 `/data/models/`，`mech` 那个维度也改叫 `subject`。
+旧地址没有直接断掉，而是各自生成了一张跳转页：
+
+- 条目页 `/data/gundam/<条目 id>/` → `/data/models/<条目 id>/`（条目 id 没变）
+- 机体页 `/data/gundam/mech/<机体键>/` → `/data/models/subject/<机体键>/`
+  （只有一个产品的主题落到那一条产品上——那才是当年那个页面上唯一的内容）
+- 作品线页、统计页、对比页 → 对应的新地址
+- `export.json` / `export.csv` / `index.json` → 老脚本照旧能拿到数据
+
+跳转页是静态生成的，自带 `meta refresh` 与 `canonical`，不依赖任何平台特性——
+GitHub Pages 的 `_redirects` 在站点同时有 `404.html` 时不生效（平台先把请求交给
+404 页），所以没有用它。
+
 ## 怎么复现
 
 数据链路是分层的，每一层都能单独检查：

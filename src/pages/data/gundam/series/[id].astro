@@ -1,0 +1,20 @@
+---
+/**
+ * 旧地址 /data/gundam/series/<作品线 id>/ → /data/models/series/<作品线 id>/
+ */
+import LegacyRedirect from '../../../../components/models/LegacyRedirect.astro';
+import { PRODUCTS, SERIES, CURATED_SERIES_IDS } from '../../../../data/models';
+
+export async function getStaticPaths() {
+  /* 当年的站上只有万代那批人工整理过的作品线，开放词表的是这一轮才有的 */
+  const used = new Set(PRODUCTS.map((k) => k.series));
+  return SERIES.filter((s) => used.has(s.id) && CURATED_SERIES_IDS.has(s.id)).map((s) => ({
+    params: { id: s.id },
+    props: { to: `/data/models/series/${s.id}/` },
+  }));
+}
+
+const { to } = Astro.props as { to: string };
+---
+
+<LegacyRedirect to={to} title="作品线页已迁移" />

@@ -1,0 +1,76 @@
+---
+/**
+ * 旧地址的跳转页
+ * ---------------------------------------------------------------------------
+ * 数据库从 /data/gundam/ 迁到 /data/models/ 之后，旧地址要继续能用。
+ *
+ * GitHub Pages 的 `_redirects` 本来能做这件事，但站点同时有 404.html 时，
+ * 平台会先把请求交给 404 页，重定向规则不生效——这个坑踩过一次就够了。
+ * 所以旧地址直接生成为静态页：自带 meta refresh 与 canonical，
+ * 不依赖任何平台特性，换到别的静态托管也照样工作。
+ *
+ * 页面刻意做得很小：它一闪而过，不值得为它背上整站的样式与脚本。
+ */
+interface Props {
+  /** 迁移后的地址 */
+  to: string;
+  /** 页面标题（默认「页面已迁移」） */
+  title?: string;
+}
+
+const { to, title = '页面已迁移' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, follow" />
+    <meta http-equiv="refresh" content={`0; url=${to}`} />
+    <link rel="canonical" href={to} />
+    <title>{title}</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font: 16px/1.7 system-ui, -apple-system, "Segoe UI", "Noto Sans SC", sans-serif;
+        background: light-dark(#faf8f4, #14151a);
+        color: light-dark(#23252b, #e6e6e6);
+      }
+      main {
+        max-width: 34rem;
+        padding: 2rem;
+        text-align: center;
+      }
+      h1 {
+        font-size: 1.25rem;
+        margin: 0 0 0.6rem;
+      }
+      p {
+        margin: 0;
+        color: light-dark(#5b5f66, #9aa0a8);
+        font-size: 0.9rem;
+      }
+      a {
+        color: light-dark(#a33b2a, #e8806c);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>{title}</h1>
+      <p>
+        这个地址换成了 <a href={to}>{to}</a>。
+      </p>
+    </main>
+    <script is:inline define:vars={{ to }}>
+      location.replace(to);
+    </script>
+  </body>
+</html>

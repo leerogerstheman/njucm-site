@@ -1,0 +1,20 @@
+---
+/**
+ * 旧地址 /data/gundam/<条目 id>/ → /data/models/<条目 id>/
+ *
+ * 条目 id 没变（事实层的数据没动过），所以只是把前缀换掉。
+ */
+import LegacyRedirect from '../../../components/models/LegacyRedirect.astro';
+import { PRODUCTS } from '../../../data/models';
+
+export async function getStaticPaths() {
+  return PRODUCTS.filter((k) => k.maker === 'bandai').map((kit) => ({
+    params: { id: kit.id },
+    props: { to: `/data/models/${kit.id}/` },
+  }));
+}
+
+const { to } = Astro.props as { to: string };
+---
+
+<LegacyRedirect to={to} title="条目已迁移" />

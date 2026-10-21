@@ -1,0 +1,37 @@
+---
+/**
+ * 旧地址 /data/gundam/mech/<机体键>/ → 主题页
+ *
+ * 「机体」这个维度现在叫「主题」：塑料模型那边是机体，手办那边是角色。
+ * 只有多版本的主题才单独有页面；只有一个产品的主题，落到那一条产品上——
+ * 那才是当年那个页面上唯一的内容。
+ */
+import LegacyRedirect from '../../../../components/models/LegacyRedirect.astro';
+import SUBJECTS from '../../../../data/models.subjects.json';
+import { PRODUCTS } from '../../../../data/models';
+
+interface MechEntry {
+  label: string;
+  count: number;
+  kits: string[];
+}
+
+export async function getStaticPaths() {
+  const bandai = new Set(PRODUCTS.filter((k) => k.maker === 'bandai').map((k) => k.id));
+  const byId = new Map(PRODUCTS.map((k) => [k.id, k]));
+
+  return Object.entries(SUBJECTS as Record<string, MechEntry>)
+    .filter(([, m]) => m.kits.some((id) => bandai.has(id)))
+    .map(([key, m]) => {
+      const target =
+        m.count > 1
+          ? `/data/models/subject/${key}/`
+          : `/data/models/${byId.get(m.kits[0])?.id ?? ''}/`;
+      return { params: { key }, props: { to: target } };
+    });
+}
+
+const { to } = Astro.props as { to: string };
+---
+
+<LegacyRedirect to={to} title="主题页已迁移" />
