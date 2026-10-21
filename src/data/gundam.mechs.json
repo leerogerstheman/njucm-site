@@ -3628,22 +3628,6 @@
       "pb-161"
     ]
   },
-  "rx-78-2高达2.0扩展武器包": {
-    "label": "RX-78-2 高达2.0 扩展武器包",
-    "en": null,
-    "alt": [],
-    "count": 2,
-    "grades": {
-      "RG": 2
-    },
-    "series": [
-      "uc"
-    ],
-    "kits": [
-      "bc-2898",
-      "pb-169"
-    ]
-  },
   "风灵高达帕梅特刻痕·6": {
     "label": "风灵高达 帕梅特刻痕·6",
     "en": null,
@@ -5426,21 +5410,6 @@
       "bc-165"
     ]
   },
-  "学院训练机用扩展配件包": {
-    "label": "学院训练机用扩展配件包",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "grades": {
-      "HG": 1
-    },
-    "series": [
-      "wfm"
-    ],
-    "kits": [
-      "bc-170"
-    ]
-  },
   "hi-ν高达": {
     "label": "Hi-ν高达",
     "en": "Hi-Nu Gundam",
@@ -6615,33 +6584,19 @@
       "bc-3337"
     ]
   },
-  "超时空要塞女武神特殊套装1": {
-    "label": "超时空要塞 女武神 特殊套装①",
+  "超时空要塞女武神特殊": {
+    "label": "超时空要塞 女武神 特殊",
     "en": null,
     "alt": [],
-    "count": 1,
+    "count": 2,
     "grades": {
-      "SD": 1
+      "SD": 2
     },
     "series": [
       "other"
     ],
     "kits": [
-      "bc-337"
-    ]
-  },
-  "超时空要塞女武神特殊套装2": {
-    "label": "超时空要塞 女武神 特殊套装②",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "grades": {
-      "SD": 1
-    },
-    "series": [
-      "other"
-    ],
-    "kits": [
+      "bc-337",
       "bc-338"
     ]
   },
@@ -9766,21 +9721,6 @@
       "bc-456"
     ]
   },
-  "skyhighwings配件包": {
-    "label": "SKY HIGH WINGS配件包",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "grades": {
-      "HG": 1
-    },
-    "series": [
-      "gundam-build"
-    ],
-    "kits": [
-      "bc-2092"
-    ]
-  },
   "高达00天翔型": {
     "label": "高达00天翔型",
     "en": null,
@@ -10219,21 +10159,6 @@
       "pb-160"
     ]
   },
-  "潜行者王牌配件包": {
-    "label": "潜行者王牌配件包",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "grades": {
-      "HG": 1
-    },
-    "series": [
-      "gundam-build"
-    ],
-    "kits": [
-      "bc-1995"
-    ]
-  },
   "格里摩亚红色贝雷帽": {
     "label": "格里摩亚红色贝雷帽",
     "en": null,
@@ -10589,21 +10514,6 @@
       "bc-1899"
     ]
   },
-  "24世纪武器配件包": {
-    "label": "24世纪武器配件包",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "grades": {
-      "HG": 1
-    },
-    "series": [
-      "gundam-build"
-    ],
-    "kits": [
-      "bc-1902"
-    ]
-  },
   "智天使sagatype.gbf": {
     "label": "智天使SAGA TYPE.GBF",
     "en": null,
@@ -10649,21 +10559,6 @@
     ],
     "kits": [
       "bc-1896"
-    ]
-  },
-  "弹道武器配件包": {
-    "label": "弹道武器配件包",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "grades": {
-      "HG": 1
-    },
-    "series": [
-      "gundam-build"
-    ],
-    "kits": [
-      "bc-1883"
     ]
   },
   "逆生高达": {
@@ -10742,22 +10637,6 @@
       "bc-1869"
     ]
   },
-  "gm": {
-    "label": "GM",
-    "en": null,
-    "alt": [],
-    "count": 2,
-    "grades": {
-      "HG": 2
-    },
-    "series": [
-      "gundam-build"
-    ],
-    "kits": [
-      "bc-1857",
-      "bc-1856"
-    ]
-  },
   "超绝强子": {
     "label": "超绝强子",
     "en": null,
@@ -10788,8 +10667,8 @@
       "bc-1855"
     ]
   },
-  "忍者脉冲光束配件包": {
-    "label": "忍者脉冲光束配件包",
+  "gm": {
+    "label": "GM",
     "en": null,
     "alt": [],
     "count": 1,
@@ -10800,7 +10679,7 @@
       "gundam-build"
     ],
     "kits": [
-      "bc-1851"
+      "bc-1856"
     ]
   },
   "忍者脉冲高达": {
@@ -11189,21 +11068,6 @@
       "bc-1759"
     ]
   },
-  "ms配件包9": {
-    "label": "MS配件包9",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "grades": {
-      "HG": 1
-    },
-    "series": [
-      "iron-blooded"
-    ],
-    "kits": [
-      "bc-1758"
-    ]
-  },
   "惊异强袭自由高达": {
     "label": "惊异强袭自由高达",
     "en": null,
@@ -11292,21 +11156,6 @@
     ],
     "kits": [
       "bc-1737"
-    ]
-  },
-  "ms配件包8": {
-    "label": "MS配件包8",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "grades": {
-      "HG": 1
-    },
-    "series": [
-      "iron-blooded"
-    ],
-    "kits": [
-      "bc-1738"
     ]
   },
   "熊霸爸爸": {
@@ -11519,21 +11368,6 @@
       "bc-1702"
     ]
   },
-  "ms配件包7": {
-    "label": "MS配件包7",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "grades": {
-      "HG": 1
-    },
-    "series": [
-      "iron-blooded"
-    ],
-    "kits": [
-      "bc-1701"
-    ]
-  },
   "小熊霸迷路黑": {
     "label": "小熊霸 迷路黑",
     "en": null,
@@ -11684,21 +11518,6 @@
       "bc-1673"
     ]
   },
-  "ms配件包6": {
-    "label": "MS配件包6",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "grades": {
-      "HG": 1
-    },
-    "series": [
-      "iron-blooded"
-    ],
-    "kits": [
-      "bc-1675"
-    ]
-  },
   "列金雷兹": {
     "label": "列金雷兹",
     "en": null,
@@ -11742,21 +11561,6 @@
     ],
     "kits": [
       "bc-1659"
-    ]
-  },
-  "ms配件包5": {
-    "label": "MS配件包5",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "grades": {
-      "HG": 1
-    },
-    "series": [
-      "iron-blooded"
-    ],
-    "kits": [
-      "bc-1655"
     ]
   },
   "湖绿色小熊霸": {
@@ -13311,21 +13115,6 @@
     ],
     "kits": [
       "bc-1137"
-    ]
-  },
-  "高达g-self宇宙用背包配件包": {
-    "label": "高达G-Self 宇宙用背包配件包",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "grades": {
-      "HG": 1
-    },
-    "series": [
-      "ring-of-nergal"
-    ],
-    "kits": [
-      "bc-1134"
     ]
   },
   "r强人": {
@@ -17476,21 +17265,6 @@
       "pb-456"
     ]
   },
-  "红色高达用扩展配件包": {
-    "label": "红色高达用扩展配件包",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "grades": {
-      "HG": 1
-    },
-    "series": [
-      "other"
-    ],
-    "kits": [
-      "pb-394"
-    ]
-  },
   "幻象高达": {
     "label": "幻象高达",
     "en": null,
@@ -19718,21 +19492,6 @@
     ],
     "kits": [
       "pb-197"
-    ]
-  },
-  "hi-ν高达用超米加火箭炮发射器": {
-    "label": "Hi-ν高达用超米加火箭炮发射器",
-    "en": null,
-    "alt": [],
-    "count": 1,
-    "grades": {
-      "RG": 1
-    },
-    "series": [
-      "other"
-    ],
-    "kits": [
-      "pb-357"
     ]
   },
   "天零顽驮无复刻辉罗钢": {
