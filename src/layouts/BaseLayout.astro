@@ -12,9 +12,17 @@ interface Props {
   description?: string;
   /** set on article pages so the title reads "page · site" */
   isArticle?: boolean;
+  /**
+   * 局部主题分区。
+   *
+   * 某些栏目自带一套自己的配色（比如高达模型数据库用吉翁公国的红与金）。
+   * 写进 <html> 的 data-scope，样式表据此只在这一节里换掉令牌，
+   * 站点的其余部分仍是原来的配色。
+   */
+  scope?: string;
 }
 
-const { title, description = SITE.description, isArticle = false } = Astro.props;
+const { title, description = SITE.description, isArticle = false, scope } = Astro.props;
 
 const pageTitle = title ? `${title} · ${SITE.title}` : `${SITE.title} · ${SITE.domain}`;
 
@@ -25,7 +33,7 @@ const ogImage = new URL('/og.png', siteOrigin).href;
 ---
 
 <!doctype html>
-<html lang={SITE.lang}>
+<html lang={SITE.lang} data-scope={scope}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -35,7 +43,7 @@ const ogImage = new URL('/og.png', siteOrigin).href;
     <link rel="canonical" href={canonical} />
 
     <meta name="color-scheme" content="dark light" />
-    <meta name="theme-color" content="#110c0b" />
+    <meta name="theme-color" content="#0c1012" />
     <meta name="author" content={SITE.author} />
 
     <meta property="og:type" content={isArticle ? 'article' : 'website'} />

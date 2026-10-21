@@ -2,6 +2,7 @@
 import { render } from 'astro:content';
 import DocLayout from '../../layouts/DocLayout.astro';
 import { getDocs, getRawEntry } from '../../utils/content';
+import '../../styles/gundam-theme.css';
 
 export async function getStaticPaths() {
   const docs = await getDocs('data');
@@ -12,8 +13,13 @@ const { doc } = Astro.props;
 
 const entry = await getRawEntry('data', doc.slug);
 const { Content, headings } = await render(entry);
+/*
+ * 高达模型数据库的说明页属于数据库这一节，跟数据库页面用同一套配色；
+ * Data 栏目里的其它文档仍走站点原来的配色。
+ */
+const scope = doc.slug.startsWith('gundam') ? 'gundam' : undefined;
 ---
 
-<DocLayout doc={doc} sectionLabel="Data" headings={headings}>
+<DocLayout doc={doc} sectionLabel="Data" headings={headings} scope={scope}>
   <Content />
 </DocLayout>

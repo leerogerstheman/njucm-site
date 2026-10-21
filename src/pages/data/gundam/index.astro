@@ -4,6 +4,7 @@ import KitBrowser from '../../../components/gundam/KitBrowser.astro';
 import KitStats from '../../../components/gundam/KitStats.astro';
 import { KITS, releaseYear } from '../../../data/gundam';
 import '../../../styles/gundam.css';
+import '../../../styles/gundam-theme.css';
 
 const years = KITS.map((k) => releaseYear(k.released)).filter(Boolean);
 const span = years.length ? `${Math.min(...years)}–${Math.max(...years)}` : '—';
@@ -14,7 +15,7 @@ const description =
   '按等级、系列、发售年代与官方定价检索的高达塑料模型数据库。每条记录都标注出处与核实状态。';
 ---
 
-<BaseLayout title="高达模型数据库" description={description}>
+<BaseLayout title="高达模型数据库" description={description} scope="gundam">
   <header class="page-head" data-reveal>
     <p class="eyebrow">Data</p>
     <h1>高达模型数据库</h1>

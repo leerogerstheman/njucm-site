@@ -14,6 +14,7 @@ import {
   type GundamKit,
 } from '../../../data/gundam';
 import '../../../styles/gundam.css';
+import '../../../styles/gundam-theme.css';
 
 export async function getStaticPaths() {
   return KITS.map((kit) => ({ params: { id: kit.id }, props: { kit } }));
@@ -40,7 +41,7 @@ const description = `${kit.name}（${kit.grade} ${kit.scale}）· ${series.label
 )} · ${formatJPY(kit.priceJpy)}`;
 ---
 
-<BaseLayout title={kit.name} description={description} isArticle>
+<BaseLayout title={kit.name} description={description} isArticle scope="gundam">
   <nav class="gbreadcrumb" aria-label="面包屑">
     <a href="/data/">Data</a>
     <span aria-hidden="true">/</span>

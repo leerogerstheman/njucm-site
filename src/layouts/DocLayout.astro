@@ -9,14 +9,16 @@ interface Props {
   sectionLabel: string;
   /** heading outline from the markdown renderer, drives the side TOC */
   headings?: TocHeading[];
+  /** 局部主题分区，见 BaseLayout 的 scope */
+  scope?: string;
 }
 
-const { doc, sectionLabel, headings = [] } = Astro.props;
+const { doc, sectionLabel, headings = [], scope } = Astro.props;
 const date = doc.date ? doc.date.toISOString().slice(0, 10) : undefined;
 const hasToc = headings.some((h) => h.depth >= 2 && h.depth <= 3);
 ---
 
-<BaseLayout title={doc.title} description={doc.description} isArticle>
+<BaseLayout title={doc.title} description={doc.description} isArticle scope={scope}>
   <div class:list={['article-layout', hasToc && 'article-layout--toc']}>
     {hasToc && <Toc headings={headings} />}
 
