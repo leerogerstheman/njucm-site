@@ -120,6 +120,18 @@
     "count": 98
   },
   {
+    "id": "w9cee7c2267",
+    "maker": "bandai",
+    "label": "30 MINUTES MISSIONS",
+    "short": "30 MINUTES …",
+    "palette": [
+      "hsl(180 26% 68%)",
+      "hsl(180 24% 34%)",
+      "hsl(6 58% 56%)"
+    ],
+    "count": 94
+  },
+  {
     "id": "wacb2fe3644",
     "maker": "goodsmile",
     "label": "黏土人配件系列",
@@ -130,6 +142,18 @@
       "hsl(79 58% 56%)"
     ],
     "count": 89
+  },
+  {
+    "id": "wd1107c5631",
+    "maker": "bandai",
+    "label": "宝可梦",
+    "short": "宝可梦",
+    "palette": [
+      "hsl(132 26% 68%)",
+      "hsl(132 24% 34%)",
+      "hsl(318 58% 56%)"
+    ],
+    "count": 84
   },
   {
     "id": "wbcd2b0c4fb",
@@ -370,6 +394,30 @@
       "hsl(96 58% 56%)"
     ],
     "count": 31
+  },
+  {
+    "id": "w7bda57b5d2",
+    "maker": "bandai",
+    "label": "宇宙战舰大和号",
+    "short": "宇宙战舰大和号",
+    "palette": [
+      "hsl(31 26% 68%)",
+      "hsl(31 24% 34%)",
+      "hsl(217 58% 56%)"
+    ],
+    "count": 30
+  },
+  {
+    "id": "wefcd3523c0",
+    "maker": "bandai",
+    "label": "30 MINUTES SISTERS",
+    "short": "30 MINUTES …",
+    "palette": [
+      "hsl(228 26% 68%)",
+      "hsl(228 24% 34%)",
+      "hsl(54 58% 56%)"
+    ],
+    "count": 29
   },
   {
     "id": "wa67854793c",
@@ -768,6 +816,18 @@
     "count": 16
   },
   {
+    "id": "w17424208d1",
+    "maker": "bandai",
+    "label": "奥特曼",
+    "short": "奥特曼",
+    "palette": [
+      "hsl(41 26% 68%)",
+      "hsl(41 24% 34%)",
+      "hsl(227 58% 56%)"
+    ],
+    "count": 15
+  },
+  {
     "id": "w8a8ed94c90",
     "maker": "goodsmile",
     "label": "東京復仇者",
@@ -788,6 +848,18 @@
       "hsl(51 26% 68%)",
       "hsl(51 24% 34%)",
       "hsl(237 58% 56%)"
+    ],
+    "count": 15
+  },
+  {
+    "id": "wf41026479d",
+    "maker": "bandai",
+    "label": "偶像大师系列",
+    "short": "偶像大师系列",
+    "palette": [
+      "hsl(84 26% 68%)",
+      "hsl(84 24% 34%)",
+      "hsl(270 58% 56%)"
     ],
     "count": 15
   },
@@ -996,6 +1068,18 @@
     "count": 12
   },
   {
+    "id": "w9eb3ecbbb0",
+    "maker": "bandai",
+    "label": "超时空要塞",
+    "short": "超时空要塞",
+    "palette": [
+      "hsl(93 26% 68%)",
+      "hsl(93 24% 34%)",
+      "hsl(279 58% 56%)"
+    ],
+    "count": 12
+  },
+  {
     "id": "wb2aeac157d",
     "maker": "goodsmile",
     "label": "催眠麥克風",
@@ -1016,6 +1100,18 @@
       "hsl(308 26% 68%)",
       "hsl(308 24% 34%)",
       "hsl(134 58% 56%)"
+    ],
+    "count": 12
+  },
+  {
+    "id": "wd4581af87e",
+    "maker": "bandai",
+    "label": "机战佣兵VI 境界天火",
+    "short": "机战佣兵VI 境界天火",
+    "palette": [
+      "hsl(273 26% 68%)",
+      "hsl(273 24% 34%)",
+      "hsl(99 58% 56%)"
     ],
     "count": 12
   },
@@ -1224,6 +1320,18 @@
     "count": 11
   },
   {
+    "id": "w260b0bb5e8",
+    "maker": "bandai",
+    "label": "Fate/stay night",
+    "short": "Fate/stay n…",
+    "palette": [
+      "hsl(283 26% 68%)",
+      "hsl(283 24% 34%)",
+      "hsl(109 58% 56%)"
+    ],
+    "count": 11
+  },
+  {
     "id": "wae18f662bf",
     "maker": "goodsmile",
     "label": "KILL la KILL",
@@ -1332,6 +1440,18 @@
     "count": 10
   },
   {
+    "id": "wc1b07db857",
+    "maker": "bandai",
+    "label": "高达创形者",
+    "short": "高达创形者",
+    "palette": [
+      "hsl(35 26% 68%)",
+      "hsl(35 24% 34%)",
+      "hsl(221 58% 56%)"
+    ],
+    "count": 10
+  },
+  {
     "id": "wbf12b1a89b",
     "maker": "kotobukiya",
     "label": "陸上自衛隊07式戦車 なっちん",
@@ -1412,18 +1532,6 @@
       "hsl(48 26% 68%)",
       "hsl(48 24% 34%)",
       "hsl(234 58% 56%)"
-    ],
-    "count": 10
-  },
-  {
-    "id": "w260b0bb5e8",
-    "maker": "goodsmile",
-    "label": "Fate/stay night",
-    "short": "Fate/stay n…",
-    "palette": [
-      "hsl(283 26% 68%)",
-      "hsl(283 24% 34%)",
-      "hsl(109 58% 56%)"
     ],
     "count": 10
   },
@@ -1666,6 +1774,18 @@
       "hsl(141 58% 56%)"
     ],
     "count": 9
+  },
+  {
+    "id": "w9c1ba8c389",
+    "maker": "bandai",
+    "label": "便便日常",
+    "short": "便便日常",
+    "palette": [
+      "hsl(39 26% 68%)",
+      "hsl(39 24% 34%)",
+      "hsl(225 58% 56%)"
+    ],
+    "count": 8
   },
   {
     "id": "wd2f83b418c",
@@ -2132,6 +2252,18 @@
       "hsl(11 26% 68%)",
       "hsl(11 24% 34%)",
       "hsl(197 58% 56%)"
+    ],
+    "count": 7
+  },
+  {
+    "id": "w181a075fed",
+    "maker": "bandai",
+    "label": "龙珠",
+    "short": "龙珠",
+    "palette": [
+      "hsl(352 26% 68%)",
+      "hsl(352 24% 34%)",
+      "hsl(178 58% 56%)"
     ],
     "count": 7
   },
@@ -2988,6 +3120,18 @@
     "count": 5
   },
   {
+    "id": "wf82495f1b1",
+    "maker": "bandai",
+    "label": "机动战士高达",
+    "short": "机动战士高达",
+    "palette": [
+      "hsl(352 26% 68%)",
+      "hsl(352 24% 34%)",
+      "hsl(178 58% 56%)"
+    ],
+    "count": 5
+  },
+  {
     "id": "wa7624dfd9a",
     "maker": "kotobukiya",
     "label": "機動警察 パトレイバー",
@@ -3396,6 +3540,18 @@
     "count": 5
   },
   {
+    "id": "wf873482223",
+    "maker": "bandai",
+    "label": "ねこぶそう",
+    "short": "ねこぶそう",
+    "palette": [
+      "hsl(274 26% 68%)",
+      "hsl(274 24% 34%)",
+      "hsl(100 58% 56%)"
+    ],
+    "count": 5
+  },
+  {
     "id": "wc9be11d529",
     "maker": "kotobukiya",
     "label": "フロントミッション",
@@ -3668,6 +3824,18 @@
       "hsl(302 26% 68%)",
       "hsl(302 24% 34%)",
       "hsl(128 58% 56%)"
+    ],
+    "count": 4
+  },
+  {
+    "id": "w3882c79658",
+    "maker": "bandai",
+    "label": "假面骑士",
+    "short": "假面骑士",
+    "palette": [
+      "hsl(233 26% 68%)",
+      "hsl(233 24% 34%)",
+      "hsl(59 58% 56%)"
     ],
     "count": 4
   },
@@ -4188,6 +4356,18 @@
     "count": 4
   },
   {
+    "id": "w1ba3ec9d20",
+    "maker": "bandai",
+    "label": "BOCCHI THE ROCK!",
+    "short": "BOCCHI THE …",
+    "palette": [
+      "hsl(25 26% 68%)",
+      "hsl(25 24% 34%)",
+      "hsl(211 58% 56%)"
+    ],
+    "count": 4
+  },
+  {
     "id": "w24a96b53b4",
     "maker": "kotobukiya",
     "label": "END OF HEROES",
@@ -4620,6 +4800,18 @@
     "count": 3
   },
   {
+    "id": "w6b92e7cb95",
+    "maker": "bandai",
+    "label": "高达创形者 再起",
+    "short": "高达创形者 再起",
+    "palette": [
+      "hsl(136 26% 68%)",
+      "hsl(136 24% 34%)",
+      "hsl(322 58% 56%)"
+    ],
+    "count": 3
+  },
+  {
     "id": "w3d772df130",
     "maker": "goodsmile",
     "label": "哥吉拉：奇異點",
@@ -4808,6 +5000,18 @@
       "hsl(75 26% 68%)",
       "hsl(75 24% 34%)",
       "hsl(261 58% 56%)"
+    ],
+    "count": 3
+  },
+  {
+    "id": "w95eba955dd",
+    "maker": "bandai",
+    "label": "魔法少女小圆",
+    "short": "魔法少女小圆",
+    "palette": [
+      "hsl(160 26% 68%)",
+      "hsl(160 24% 34%)",
+      "hsl(346 58% 56%)"
     ],
     "count": 3
   },
@@ -6924,6 +7128,18 @@
     "count": 2
   },
   {
+    "id": "w8fcd75ae50",
+    "maker": "bandai",
+    "label": "命运-冠位指定",
+    "short": "命运-冠位指定",
+    "palette": [
+      "hsl(127 26% 68%)",
+      "hsl(127 24% 34%)",
+      "hsl(313 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
     "id": "w038121b210",
     "maker": "goodsmile",
     "label": "魔法風雲會",
@@ -7700,6 +7916,18 @@
       "hsl(321 26% 68%)",
       "hsl(321 24% 34%)",
       "hsl(147 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
+    "id": "w84bd078ea7",
+    "maker": "bandai",
+    "label": "新世纪福音战士",
+    "short": "新世纪福音战士",
+    "palette": [
+      "hsl(290 26% 68%)",
+      "hsl(290 24% 34%)",
+      "hsl(116 58% 56%)"
     ],
     "count": 2
   },
@@ -12240,6 +12468,18 @@
     "count": 1
   },
   {
+    "id": "w920195c5fd",
+    "maker": "bandai",
+    "label": "魔法使之夜",
+    "short": "魔法使之夜",
+    "palette": [
+      "hsl(349 26% 68%)",
+      "hsl(349 24% 34%)",
+      "hsl(175 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "w009f344337",
     "maker": "goodsmile",
     "label": "魔法小天使",
@@ -13712,6 +13952,18 @@
       "hsl(318 26% 68%)",
       "hsl(318 24% 34%)",
       "hsl(144 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "w87891d1591",
+    "maker": "bandai",
+    "label": "蔚蓝档案",
+    "short": "蔚蓝档案",
+    "palette": [
+      "hsl(108 26% 68%)",
+      "hsl(108 24% 34%)",
+      "hsl(294 58% 56%)"
     ],
     "count": 1
   },
@@ -16680,6 +16932,18 @@
     "count": 1
   },
   {
+    "id": "w12ce7ec81c",
+    "maker": "bandai",
+    "label": "SD三国创杰传",
+    "short": "SD三国创杰传",
+    "palette": [
+      "hsl(357 26% 68%)",
+      "hsl(357 24% 34%)",
+      "hsl(183 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "w81c03e9dc1",
     "maker": "kotobukiya",
     "label": "Secret Cute",
@@ -17060,6 +17324,18 @@
       "hsl(225 26% 68%)",
       "hsl(225 24% 34%)",
       "hsl(51 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "w994a7ca764",
+    "maker": "bandai",
+    "label": "VERTEX FORCE",
+    "short": "VERTEX FORCE",
+    "palette": [
+      "hsl(68 26% 68%)",
+      "hsl(68 24% 34%)",
+      "hsl(254 58% 56%)"
     ],
     "count": 1
   },

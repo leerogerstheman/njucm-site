@@ -87,6 +87,8 @@ const VENDORS = [
       'src/data/gundam.kits.seed.json',
       'src/data/gundam.kits.pb.json',
       'src/data/gundam.kits.assemble.json',
+      /* 非高达产品线：宝可梦拼装模型、30MS/30MP、30MM、MECHA COLLECTION… */
+      'src/data/models.kits.bandai-nongundam.json',
     ],
     /** 原始等级 → 规范品类 id */
     categories: {
@@ -94,6 +96,10 @@ const VENDORS = [
       HG: 'bandai:hg', FG: 'bandai:fg', SD: 'bandai:sd', EG: 'bandai:eg',
       FM: 'bandai:fm', MR: 'bandai:mr', GA: 'bandai:ga',
       HIRM: 'bandai:hirm', FIG: 'bandai:figure',
+      /* 非高达产品线：等级那套分类法套不上去，各给一个品类 */
+      '30MM': 'bandai:30mm', '30MS': 'bandai:30ms', '30MP': 'bandai:30mp',
+      '宝可梦拼装模型': 'bandai:plamodel', 'MECHA COLLECTION': 'bandai:mecha',
+      '猫武装': 'bandai:neco', '黏土模型套件': 'bandai:clay',
     },
     defaultCategory: 'bandai:other',
     /** 缺比例时用它兜底 */
@@ -101,6 +107,8 @@ const VENDORS = [
       PG: '1/100', MG: '1/100', MGSD: 'SD 比例', RG: '1/144', HG: '1/144',
       FG: '1/144', SD: '非等比', EG: '1/144', FM: '1/100', MR: '约 1/100',
       GA: '约 50mm', HIRM: '1/100', FIG: '',
+      '30MM': '1/72', '30MS': '', '30MP': '', '宝可梦拼装模型': '',
+      'MECHA COLLECTION': '', '猫武装': '', '黏土模型套件': '',
     },
     seriesMode: 'id',
     series: new Set([
@@ -395,10 +403,25 @@ function normalise(entry, file, vendor) {
       note(`${file} / ${id}: 没有作品名，归入「其他」`);
     }
   } else {
-    series = text(entry.series).toLowerCase();
-    if (!vendor.series.has(series)) {
-      note(`${file} / ${id}: 作品线「${entry.series}」不在约定范围内，归入「其他」`);
+    const raw = text(entry.series);
+    series = raw.toLowerCase();
+    if (!series) {
+      /* 事实文件里没给作品名——留给后面的规则补齐 */
       series = 'other';
+    } else if (vendor.series.has(series)) {
+      /* 人工整理过的固定 id，原样用 */
+    } else if (series === 'other') {
+      /* 留给后面的规则补齐（机体编号、主题名、作品关键词） */
+    } else {
+      /*
+       * 固定表里没有、又不是「其他」——那是万代非高达产品线的作品名
+       * （Fate/stay night、宝可梦、机战佣兵VI 境界天火…）。这些是开放词表，
+       * 与寿屋、良笑一样为它们生成稳定 id，写进作品线目录。
+       */
+      series = seriesId(raw);
+      if (!seriesLabels.has(series)) {
+        seriesLabels.set(series, { label: raw, maker: vendor.id });
+      }
     }
   }
 

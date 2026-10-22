@@ -118,6 +118,14 @@ export const CATEGORIES: CategoryMeta[] = [
   { id: 'bandai:hirm', maker: 'bandai', label: 'HIRM', short: 'HIRM', scale: '1/100', brief: '高级注入树脂模型：1/100 的高级完成品线' },
   { id: 'bandai:figure', maker: 'bandai', label: 'Figure-rise', short: 'FIG', brief: '万代自己的人偶线：Standard / Bust / LABO / Mechanics' },
   { id: 'bandai:ga', maker: 'bandai', label: 'GA', short: 'GA', scale: '约 50mm', brief: '高达集结：桌面战棋用的拼装兵人' },
+  /* ---- 万代：非高达产品线 ------------------------------------------------ */
+  { id: 'bandai:30mm', maker: 'bandai', label: '30MM', short: '30MM', scale: '1/72', brief: '30 MINUTES MISSIONS：可拼装的机体模型，1/144 与 1/72 两种规格' },
+  { id: 'bandai:30ms', maker: 'bandai', label: '30MS', short: '30MS', brief: '30 MINUTES SISTERS：可拼装的人偶模型' },
+  { id: 'bandai:30mp', maker: 'bandai', label: '30MP', short: '30MP', brief: '30 MINUTES PREFERENCE：可拼装的人偶模型' },
+  { id: 'bandai:plamodel', maker: 'bandai', label: '宝可梦拼装模型', short: '宝可梦', brief: '宝可梦的免工具拼装模型' },
+  { id: 'bandai:mecha', maker: 'bandai', label: 'MECHA COLLECTION', short: 'MECHA', brief: '宇宙战舰与机体模型' },
+  { id: 'bandai:neco', maker: 'bandai', label: '猫武装', short: '猫武装', brief: '猫造型的武装模型' },
+  { id: 'bandai:clay', maker: 'bandai', label: '黏土模型套件', short: '黏土模型', brief: '黏土材质的拼装小玩意' },
   { id: 'bandai:other', maker: 'bandai', label: '万代其它', brief: '拼装模型、食玩与其它万代产品线' },
 
   /* ---- 寿屋 ---------------------------------------------------------- */

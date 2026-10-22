@@ -17,18 +17,18 @@ draft: false
 
 | 厂商 | 条目 | 品类 | 作品线 | 有定价 | 有发售日 | 一手来源 |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| 良笑 GOOD SMILE COMPANY | 4624 | 4 | 1137 | 99.2% | 99.1% | `goodsmile.info` 产品资料库（中文页） |
-| 寿屋 KOTOBUKIYA | 2337 | 7 | 279 | 100% | 99.7% | `shop.kotobukiya.co.jp` 官方直销商城 |
-| 万代 BANDAI SPIRITS | 1975 | 13 | 40 | 70.7% | 85.1% | `bandaihobbysite.cn` 中文站 + `bandai-hobby.net` 日站 |
+| 良笑 GOOD SMILE COMPANY | 4830 | 7 | 1198 | 99.2% | 99.1% | `goodsmile.info` 产品资料库（中文页）+ `goodsmile.com` 商城 |
+| 寿屋 KOTOBUKIYA | 2337 | 7 | 279 | 100.0% | 99.7% | `shop.kotobukiya.co.jp` 官方直销商城 |
+| 万代 BANDAI SPIRITS | 2325 | 20 | 64 | 74.7% | 87.3% | `bandaihobbysite.cn` 中文站 + `bandai-hobby.net` 日站 |
 | 魔动核 MO DONG HE | 32 | 5 | 2 | 0% | 0% | `mdhtoy.com` 官网产品线页 |
-| **合计** | **8968** | **29** | **1447** | **92.8%** | **95.8%** | |
+| **合计** | **9524** | **39** | **1543** | **93.1%** | **96.0%** | |
 
-发售年份跨 1995–2027，其中 2896 条精确到日。
+发售年份跨 1995–2028，其中 3059 条精确到日。
 
-「作品线」一栏两家口径不同：万代是人工整理的固定表（40 条，含「非高达作品」与
-「其他作品」两个兜底），寿屋与良笑是各自官网给出的作品名，属于开放词表——
-良笑一家就有 1100 多部作品/IP，寿屋 279 部。开放的这一套由
-`scripts/build-models-data.mjs` 生成到 `src/data/models.series.json`。
+「作品线」一栏有两种口径：万代的高达作品与魔动核是人工整理的固定表（万代 40 条，
+含「非高达作品」与「其他作品」两个兜底），其余是各自官网给出的作品名，属于开放词表——
+良笑一家就有 1100 多部作品/IP，寿屋 279 部，万代那七条非高达产品线另有 25 部。
+开放的这一套由 `scripts/build-models-data.mjs` 生成到 `src/data/models.series.json`。
 
 ## 数据来自哪里
 
@@ -86,6 +86,23 @@ HG 1/144 RX-78-2 高达              等级在最前（多数）
 **另有三条产品线是规则里没有的**，也一并补上了：FG（源站的 FG 品牌页没被采集器
 列入品牌清单，规则里也没有对应项）、HIRM（高级注入树脂模型）与 Figure-rise
 （万代自己的人偶线，与良笑的 figma 同一性质）。
+
+#### 非高达产品线
+
+中文站上除了高达模型，还卖着好几条别的线——宝可梦拼装模型、30MS/30MP 人偶、
+30MM/HAROPLA 机甲模型、MECHA COLLECTION 宇宙战舰模型、猫武装、黏土模型套件。
+它们与高达放在同一份目录里，但等级（PG/MG/HG…）那套分类法套不上去，所以另立一档：
+**每条线一个品类**（`30MM` / `30MS` / `30MP` / `宝可梦拼装模型` / `MECHA COLLECTION` /
+`猫武装` / `黏土模型套件`），共 350 条。
+
+数据来自中文站的全量商品总表，逐条抓详情页。详情页上有中文站自己的分类面包屑
+（`角色模型 → 产品线 → 作品 → 商品名`），**作品线就取自那一层**——所以这批条目的
+作品线是开放词表（宝可梦、超时空要塞、龙珠、魔法使之夜、机战佣兵VI 境界天火…），
+与寿屋、良笑一样由脚本生成稳定 id 写进作品线目录。详情页还给出日本地区建议零售价、
+发售日期、适合年龄与商品介绍（里面写着全高）。
+
+配件不收：30MM 的配件套组、拓展包、自定义装甲/武器/背包，30MS 的可选发型与面部配件，
+跟水贴、底座、说明书一样不是模型。**BB 战士不收**——那是一条被刻意排除的产品线。
 
 ### 寿屋
 
@@ -231,12 +248,14 @@ KADOKAWA 的手办都在良笑店里卖。**厂商字段记的是「这条记录
 - **厂商**四家：万代、寿屋、良笑、魔动核。每家有自己的官网、总部市场与定位。
 - **品类**按厂商各添一套。品类 id 的前缀就是厂商，所以「万代的 HG」与
   「良笑的 figma」在同一个维度上，却不会撞车：
-  - 万代：PG / MG / MGSD / RG / HG / FG / SD / EG / FM / MR / HIRM / Figure-rise / GA / 万代其它
+  - 万代：PG / MG / MGSD / RG / HG / FG / SD / EG / FM / MR / HIRM / Figure-rise / GA /
+    30MM / 30MS / 30MP / 宝可梦拼装模型 / MECHA COLLECTION / 猫武装 / 黏土模型套件 / 万代其它
   - 寿屋：拼装模型 / 支援单元 / 选件 / 等身手办 / 其它手办 / 树脂老kit / 寿屋周边
   - 良笑：figma / Nendoroid / 比例手办 / STICKY / PIXEL / MODEROID / PLAMATEA / 周边
   - 魔动核：超可动拼装 / 合金成品 / 超可动成品 / 小比例 / 机甲潮玩
-- **作品线**分两种口径。万代与魔动核是人工整理的固定表（`src/data/models.ts` 里的
-  `SERIES`），每条都有人工挑的配色；寿屋与良笑是开放词表，事实文件里直接给作品名，
+- **作品线**分两种口径。万代的高达作品与魔动核是人工整理的固定表
+  （`src/data/models.ts` 里的 `SERIES`），每条都有人工挑的配色；寿屋、良笑，
+  以及万代那七条非高达产品线是开放词表，事实文件里直接给作品名，
   脚本用作品名的哈希生成稳定 id（`w` + 10 位十六进制），并写进作品线目录
   `src/data/models.series.json`。作品名多是日文与中文，没法直接当目录名。
 
@@ -308,6 +327,10 @@ KADOKAWA 的手办都在良笑店里卖。**厂商字段记的是「这条记录
 （Macross 的 VF 系列、EVA、奥特曼、假面骑士、超级机器人大战、龙珠、柯南…）
 和高达放在同一个分类下，所以本库的高达栏里也混着它们。给它们单列一条作品线，
 比含糊地扔进「其他作品」诚实——「其他作品」指的是还没判定作品线的**高达**产品。
+
+这里说的是**等级品（PG/MG/HG…）里的非高达 IP**。中文站上另有七条完全不按等级分类的
+产品线（宝可梦拼装模型、30MS/30MP、30MM、MECHA COLLECTION、猫武装、黏土模型套件），
+它们另立一档、各给一个品类，作品线取自详情页自己的分类面包屑。
 
 寿屋与良笑不需要这套规则：它们的官网直接给作品名，拿来就是。
 
@@ -438,6 +461,7 @@ src/data/gundam.kits.catalog.json    事实层：万代按品牌/作品页抓的
 src/data/gundam.kits.itemall.json    事实层：万代全量商品总表（更全，带详情回填）
 src/data/models.kits.kotobukiya.json 事实层：寿屋官方直销商城
 src/data/models.kits.goodsmile.json  事实层：良笑产品资料库（中文页）
+src/data/models.kits.bandai-nongundam.json  事实层：万代非高达产品线（宝可梦、30MS/30MP/30MM…）
 src/data/models.kits.goodsmile-mall.json      事实层：良笑商城目录（商品 id / 品名 / 现价 / 限定标签）
 src/data/models.kits.goodsmile-mall-status.json 事实层：良笑商城商品状态（在售 / 预约中 / 售罄）
 src/data/models.kits.modhtoy.json    事实层：魔动核官网
@@ -479,6 +503,7 @@ node scripts/harvest-goodsmile.mjs   # 抓良笑产品资料库
 node scripts/harvest-goodsmile-mall.mjs   # 抓良笑商城目录（分类列表接口）
 node scripts/harvest-goodsmile-mall-status.mjs  # 抓良笑商城商品详情页（在售状态）
 node scripts/harvest-modhtoy.mjs     # 抓魔动核官网
+node scripts/harvest-bandai-nongundam.mjs  # 抓万代非高达产品线（详情页）
 node scripts/build-models-data.mjs    # 合并 → 生成 models.kits.ts
 pnpm data:gundam:images           # 下载万代商品图 → 生成 gundam.images.json
 node scripts/backfill-gundam-details.mjs   # 从详情页回填缺失的日期与定价
@@ -526,12 +551,12 @@ node scripts/build-models-data.mjs    # 再合并一次
 - **不是每家的完整目录**。万代是从官网的全量商品总表与作品分类页抓下来的子集；
   寿屋收的是官方直销商城在售的四个分类；良笑收的是 figma、黏土人与比例手办
   三条线；魔动核收的是官网列出的全部款式。
-- **万代这一栏只收高达与机体模型**。万代官方中文站同时卖宝可梦拼装模型、
-  30MS/30MP 人偶、30MM/HAROPLA 1/72 机甲模型、MECHA COLLECTION 宇宙战舰模型、
-  猫武装与黏土模型套件等非高达产品线（约 190 条），本库没有收——万代这一栏的
-  口径是「高达与机体模型」，其它产品线要另立一档再收。
+- **万代这一栏的高达部分只收塑料模型**。宝可梦拼装模型、30MS/30MP 人偶、
+  30MM/HAROPLA 机甲模型、MECHA COLLECTION、猫武装、黏土模型套件这七条**非高达
+  产品线单列一档**（共 350 条），每条线一个品类。
 - **水贴、零件套组、底座、工具、说明书、立牌不收**（源站上约 150 条）。
-  它们不是模型，虽然名字里也带等级。
+  它们不是模型，虽然名字里也带等级。非高达那批里的可选装甲/武器/背包、
+  可选发型与面部配件同理。
 - **BB 战士不收**（源站上 37 条）。这是一条被刻意排除的产品线，不是漏采。
 - **寿屋条目是官方日文名**。官方中文站连不上，拿不到官方中文名，所以不翻译；
   `nameJa` 因此留空——官方日文名就是 `name` 本身，重复一遍没有意义。
