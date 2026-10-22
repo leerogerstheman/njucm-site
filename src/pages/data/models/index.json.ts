@@ -35,7 +35,7 @@ export const GET: APIRoute = () => {
     'skillLevel',
     'material',
     'note',
-    /* 商城那边���现状：现在能不能买到、现价多少 */
+    /* 商城那边的现状：现在能不能买到、现价多少 */
     'saleStatus',
     'salePriceJpy',
   ];

@@ -54,7 +54,7 @@ function detailId(url) {
   return m ? m[1] : null;
 }
 
-/* 汇总事实文件里出现过��条目（同 id 保留字段更全的那条） */
+/* 汇总事实文件里出现过的条目（同 id 保留字段更全的那条） */
 const byId = new Map();
 for (const rel of SOURCES) {
   for (const kit of readJson(rel)) {
