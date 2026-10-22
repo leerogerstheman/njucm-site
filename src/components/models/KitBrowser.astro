@@ -672,6 +672,7 @@ const SORTS = [
           !state.channel &&
           !state.decade &&
           !state.price &&
+          !state.status &&
           !state.tag;
       if (clearSearchBtn) clearSearchBtn.hidden = !state.q;
     }
@@ -681,7 +682,7 @@ const SORTS = [
       var params = url.searchParams;
       if (state.q) params.set('q', state.q);
       else params.delete('q');
-      ['maker', 'category', 'series', 'channel', 'decade', 'price', 'tag'].forEach(function (key) {
+      ['maker', 'category', 'series', 'channel', 'decade', 'price', 'status', 'tag'].forEach(function (key) {
         if (state[key]) params.set(key, state[key]);
         else params.delete(key);
       });
@@ -694,9 +695,9 @@ const SORTS = [
 
     function readUrl() {
       var params = new URLSearchParams(window.location.search);
-      var next = { q: '', maker: '', category: '', series: '', channel: '', decade: '', price: '', tag: '', sort: 'new', page: 1 };
+      var next = { q: '', maker: '', category: '', series: '', channel: '', decade: '', price: '', status: '', tag: '', sort: 'new', page: 1 };
       next.q = params.get('q') || '';
-      ['maker', 'category', 'series', 'channel', 'decade', 'price', 'tag'].forEach(function (key) {
+      ['maker', 'category', 'series', 'channel', 'decade', 'price', 'status', 'tag'].forEach(function (key) {
         var value = params.get(key);
         if (value) next[key] = value;
       });
@@ -710,10 +711,10 @@ const SORTS = [
     /* 从 URL 读进来的条件必须真的能匹配到条目，否则会得到一个空网格 */
     function sanitize(next) {
       var probe = withFacet(next, 'q', '');
-      ['maker', 'category', 'series', 'channel', 'decade', 'price', 'tag'].forEach(function (key) {
+      ['maker', 'category', 'series', 'channel', 'decade', 'price', 'status', 'tag'].forEach(function (key) {
         probe = withFacet(probe, key, '');
       });
-      ['maker', 'category', 'series', 'channel', 'decade', 'price', 'tag'].forEach(function (key) {
+      ['maker', 'category', 'series', 'channel', 'decade', 'price', 'status', 'tag'].forEach(function (key) {
         if (!next[key]) return;
         var candidate = withFacet(probe, key, next[key]);
         for (var i = 0; i < RECORDS.length; i++) {

@@ -13,6 +13,8 @@ const span = years.length ? `${Math.min(...years)}–${Math.max(...years)}` : '�
 const categories = new Set(PRODUCTS.map((k) => k.category)).size;
 const seriesCount = new Set(PRODUCTS.map((k) => k.series)).size;
 const makers = MAKERS.filter((m) => PRODUCTS.some((k) => k.maker === m.id));
+/** 现在还能下单的：商城那边正在开放预购的 */
+const orderable = PRODUCTS.filter((k) => k.saleStatus === 'preorder').length;
 
 const description =
   '覆盖万代、寿屋、良笑、魔动核等厂商的模型产品数据库：按厂商、品类、作品线、主题与发售年代检索，每条记录都标注出处与核实状态。';
@@ -35,6 +37,12 @@ const description =
     <p class="gdb__tools">
       <a href="/data/models/collection/">我的清单</a>
       <span aria-hidden="true">·</span>
+      {
+        orderable > 0 && (
+          <a href="/data/models/?status=preorder">现在可订 {orderable} 件</a>
+        )
+      }
+      {orderable > 0 && <span aria-hidden="true">·</span>}
       <a href="/data/models/subject/">按主题浏览</a>
       <span aria-hidden="true">·</span>
       <a href="/data/models/series/">按作品线浏览</a>
