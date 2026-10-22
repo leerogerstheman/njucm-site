@@ -448,6 +448,13 @@ export interface ModelProduct {
   /** 商城上的补充说明：预定寄送月、每人限购… */
   saleNote: string;
   /**
+   * 商城状态核对于哪一天（YYYY-MM-DD）。
+   *
+   * 商城随时在开预购、结束预购、再次发售，这一栏会过期，
+   * 所以把核对日期一起记下来，页面上也照实写。
+   */
+  saleChecked: string;
+  /**
    * 与商城对上时用的方式：exact / no-bracket / prefix / same-price /
    * approx-price / no-price。空表示没对上。留着是为了以后复查对齐质量。
    */

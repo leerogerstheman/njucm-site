@@ -1,0 +1,88 @@
+---
+/**
+ * 收藏清单 · 本地状态
+ * ---------------------------------------------------------------------------
+ * 同类站点（Gunpla Hangar、GunplaDB、GunplaLog）都有的一件事：把自己的清单记下来——
+ * 「想要」和「已有」分开，愿望单上会一直挂着。
+ *
+ * 这里不用账号、不用后端，两个标记都存在浏览器自己的 localStorage 里，
+ * 和对比栏是同一套做法：纯本地、不上传、换设备就不在了。
+ *
+ * 这个组件只提供状态与接口（window.__gundamCollection），
+ * 按钮与清单页各自去用它。
+ */
+---
+
+<script>
+  // 收藏清单。两个标记各自一个数组，存条目 id。
+  //
+  // 这段被打包成模块（每页都会带上，所以别写太长）；用它的页面自己负责
+  // 等它就绪——脚本之间的先后不是页面能假设的。
+  (function () {
+    var KEY = 'njucm:gundam:collection';
+    var KINDS = ['wish', 'owned'];
+
+    function read() {
+      var out = { wish: [], owned: [] };
+      try {
+        var raw = localStorage.getItem(KEY);
+        if (!raw) return out;
+        var obj = JSON.parse(raw);
+        if (obj && Array.isArray(obj.wish)) out.wish = obj.wish.filter(function (x) { return typeof x === 'string'; });
+        if (obj && Array.isArray(obj.owned)) out.owned = obj.owned.filter(function (x) { return typeof x === 'string'; });
+      } catch (e) {
+        /* 隐私模式下读不了，当空清单处理 */
+      }
+      return out;
+    }
+
+    function write(state) {
+      try {
+        localStorage.setItem(KEY, JSON.stringify(state));
+      } catch (e) {
+        /* 写不了就算了 */
+      }
+      document.dispatchEvent(new CustomEvent('gundam:collection-change', { detail: state }));
+    }
+
+    function toggle(kind, id, name) {
+      if (KINDS.indexOf(kind) === -1) return false;
+      var state = read();
+      var list = state[kind];
+      var at = list.indexOf(id);
+      if (at === -1) {
+        list.push(id);
+        if (name) document.documentElement.setAttribute('data-title-' + id, name);
+      } else {
+        list.splice(at, 1);
+      }
+      state[kind] = list;
+      write(state);
+      return at === -1;
+    }
+
+    function has(kind, id) {
+      return read()[kind].indexOf(id) !== -1;
+    }
+
+    function counts() {
+      var s = read();
+      return { wish: s.wish.length, owned: s.owned.length };
+    }
+
+    function clear() {
+      write({ wish: [], owned: [] });
+    }
+
+    window.__gundamCollection = {
+      toggle: toggle,
+      has: has,
+      counts: counts,
+      read: read,
+      clear: clear,
+      kinds: KINDS,
+    };
+
+    document.dispatchEvent(new CustomEvent('gundam:collection-ready', { detail: read() }));
+  })();
+</script>

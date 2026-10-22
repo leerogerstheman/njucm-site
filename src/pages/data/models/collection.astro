@@ -1,0 +1,452 @@
+---
+/**
+ * 我的清单
+ * ---------------------------------------------------------------------------
+ * 自己记的两份单子：**想要**（愿望单）与**已有**（收藏）。
+ * 同类的模型站都有这件事——Gunpla Hangar 分六档，GunplaDB 在每条上显示
+ * Wishlist 与 Collections 的计数，GunplaLog 把愿望单和收藏连在一起。
+ *
+ * 这里没有账号，也不存到服务端：两个标记都在浏览器自己的 localStorage 里
+ * （和对比栏同一套做法）。换台设备就不在了，这是纯本地工具的代价。
+ *
+ * 页面自己渲染：清单条目可能上千条，服务器不知道你标了什么，
+ * 所以数据取列表页那份索引，条目从 localStorage 里挑。
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CollectionState from '../../../components/models/CollectionState.astro';
+import '../../../styles/models.css';
+import '../../../styles/gundam-theme.css';
+---
+
+<BaseLayout
+  title="我的清单"
+  description="自己记下的模型清单：想要的和已有的，附官方定价合计与品类分布。清单存在你自己的浏览器里。"
+  scope="gundam"
+>
+  <nav class="gbreadcrumb" aria-label="面包屑">
+    <a href="/data/">Data</a>
+    <span aria-hidden="true">/</span>
+    <a href="/data/models/">模型数据库</a>
+    <span aria-hidden="true">/</span>
+    <span class="faint">我的清单</span>
+  </nav>
+
+  <header class="page-head" data-reveal>
+    <p class="eyebrow">收藏</p>
+    <h1>我的清单</h1>
+    <p class="page-head__desc">
+      两份自己记的单子：<strong>想要</strong>是还没到手的，<strong>已有</strong>是已经到手的。
+      标记存在你自己的浏览器里，不会上传、换设备也不跟着走。
+    </p>
+    <p class="gdb__tools">
+      <a href="/data/models/">条目列表</a>
+      <span aria-hidden="true">·</span>
+      <a href="/data/models/stats/">数据概览</a>
+      <span aria-hidden="true">·</span>
+      <a href="/data/models-database/">字段口径</a>
+    </p>
+  </header>
+
+  <section class="gcol" data-reveal>
+    <div class="gcol__bar">
+      <p class="gcol__count" data-col-count aria-live="polite">正在读清单…</p>
+      <div class="gcol__actions">
+        <button type="button" class="gcol__clear" data-col-clear>清空清单</button>
+      </div>
+    </div>
+
+    <div class="gcol__summary" data-col-summary></div>
+
+    <div class="gcol__lists" data-col-body></div>
+  </section>
+
+  <noscript>
+    <p class="empty">
+      清单页需要 JavaScript 才能读出你标记过的条目。没有它的话，可以直接打开
+      <a href="/data/models/">条目列表</a>逐个查看。
+    </p>
+  </noscript>
+
+  <CollectionState />
+</BaseLayout>
+
+<script is:inline>
+  // 我的清单。条目从 index.json 里挑，id 从 localStorage 里来。
+  (function () {
+    var body = document.querySelector('[data-col-body]');
+    var countEl = document.querySelector('[data-col-count]');
+    var summaryEl = document.querySelector('[data-col-summary]');
+    if (!body) return;
+
+    var INDEX_URL = '/data/models/index.json';
+
+    var LABEL = { wish: '想要', owned: '已有' };
+    var HINT = {
+      wish: '还没到手，先记着。',
+      owned: '已经到手了。',
+    };
+
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+      });
+    }
+
+    function state() {
+      if (!window.__gundamCollection) return { wish: [], owned: [] };
+      return window.__gundamCollection.read();
+    }
+
+    /* 收藏状态由页面里的组件脚本提供；万一它还没跑起来，等一下再读 */
+    function whenReady(fn) {
+      if (window.__gundamCollection) {
+        fn();
+        return;
+      }
+      var tries = 0;
+      var timer = setInterval(function () {
+        if (window.__gundamCollection || ++tries > 40) {
+          clearInterval(timer);
+          fn();
+        }
+      }, 50);
+    }
+
+    function kindOf(id) {
+      /* 一件东西可以既想要又已有——前者是愿望，后者是事实 */
+      var s = state();
+      return { wish: s.wish.indexOf(id) !== -1, owned: s.owned.indexOf(id) !== -1 };
+    }
+
+    function render(map) {
+      var s = state();
+      var ids = s.wish.concat(s.owned.filter(function (id) { return s.wish.indexOf(id) === -1; }));
+      var rows = ids.map(function (id) { return map[id]; }).filter(Boolean);
+
+      var counts = window.__gundamCollection ? window.__gundamCollection.counts() : { wish: 0, owned: 0 };
+      if (countEl) {
+        countEl.textContent = counts.wish + counts.owned
+          ? '想要 ' + counts.wish + ' 件，已有 ' + counts.owned + ' 件'
+          : '还没有标记任何条目';
+      }
+
+      /* 合计与分布 */
+      var sum = 0;
+      var priced = 0;
+      var byCat = {};
+      var bySeries = {};
+      for (var i = 0; i < rows.length; i++) {
+        var r = rows[i];
+        if (r.priceJpy) { sum += r.priceJpy; priced++; }
+        var c = r.categoryLabel || r.category;
+        byCat[c] = (byCat[c] || 0) + 1;
+        var sl = r.seriesLabel || r.series;
+        bySeries[sl] = (bySeries[sl] || 0) + 1;
+      }
+      if (summaryEl) {
+        if (!rows.length) {
+          summaryEl.innerHTML = '';
+        } else {
+          var top = function (obj) {
+            return Object.keys(obj)
+              .sort(function (a, b) { return obj[b] - obj[a]; })
+              .slice(0, 6)
+              .map(function (k) { return '<li><span>' + esc(k) + '</span><b>' + obj[k] + '</b></li>'; })
+              .join('');
+          };
+          summaryEl.innerHTML =
+            '<div class="gcol__stat"><span class="gcol__statLabel">官方定价合计</span>' +
+            '<b class="gcol__statValue">¥' + sum.toLocaleString('en-US') + '</b>' +
+            '<span class="gcol__statHint">' + priced + ' / ' + rows.length + ' 条有定价</span></div>' +
+            '<div class="gcol__stat"><span class="gcol__statLabel">品类分布</span><ul class="gcol__dist">' + top(byCat) + '</ul></div>' +
+            '<div class="gcol__stat"><span class="gcol__statLabel">作品线分布</span><ul class="gcol__dist">' + top(bySeries) + '</ul></div>';
+        }
+      }
+
+      /* 两份单子 */
+      var html = '';
+      ['wish', 'owned'].forEach(function (kind) {
+        var list = s[kind]
+          .map(function (id) { return map[id]; })
+          .filter(Boolean);
+        html +=
+          '<section class="gcol__list">' +
+          '<h2 class="gcol__listTitle">' + LABEL[kind] + ' <span class="gcol__listCount">' + list.length + '</span></h2>' +
+          '<p class="gcol__listHint">' + HINT[kind] + '</p>';
+        if (!list.length) {
+          html += '<p class="gcol__empty">这一份还是空的。在条目详情页点「' + LABEL[kind] + '」就能加进来。</p>';
+        } else {
+          html += '<ul class="gcol__items">';
+          for (var j = 0; j < list.length; j++) {
+            var r = list[j];
+            var flags = kindOf(r.id);
+            html +=
+              '<li class="gcol__item">' +
+              '<a class="gcol__name" href="/data/models/' + encodeURIComponent(r.id) + '/">' + esc(r.name) + '</a>' +
+              '<span class="gcol__meta">' +
+              '<span class="gcard__grade" data-category="' + esc(r.categoryLabel || r.category) + '">' + esc(r.categoryLabel || r.category) + '</span>' +
+              (r.scale ? '<span class="gcol__mono">' + esc(r.scale) + '</span>' : '') +
+              (r.released ? '<span class="gcol__mono">' + esc(r.released) + '</span>' : '') +
+              (r.priceJpy ? '<span class="gcol__mono">¥' + r.priceJpy.toLocaleString('en-US') + '</span>' : '') +
+              '</span>' +
+              '<span class="gcol__marks">' +
+              (flags.wish ? '<span class="gcol__mark" data-kind="wish">想要</span>' : '') +
+              (flags.owned ? '<span class="gcol__mark" data-kind="owned">已有</span>' : '') +
+              '<button type="button" class="gcol__remove" data-col-remove="' + esc(r.id) + '" data-col-kind="' + kind + '">移除</button>' +
+              '</span>' +
+              '</li>';
+          }
+          html += '</ul>';
+        }
+        html += '</section>';
+      });
+      body.innerHTML = html;
+    }
+
+    function apply() {
+      var s = state();
+      var ids = s.wish.concat(s.owned);
+      if (!ids.length) {
+        render({});
+        return;
+      }
+      fetch(INDEX_URL)
+        .then(function (res) { return res.json(); })
+        .then(function (payload) {
+          var map = {};
+          payload.rows.forEach(function (row) {
+            var k = {};
+            payload.fields.forEach(function (f, i) { k[f] = row[i]; });
+            k.categoryLabel = payload.categoryLabels[k.category] || k.category;
+            k.seriesLabel = payload.series[k.series] || '';
+            map[k.id] = k;
+          });
+          render(map);
+        })
+        .catch(function () {
+          body.innerHTML = '<p class="empty">索引加载失败，请稍后重试。</p>';
+        });
+    }
+
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest ? e.target.closest('[data-col-remove]') : null;
+      if (btn && window.__gundamCollection) {
+        var id = btn.getAttribute('data-col-remove');
+        var kind = btn.getAttribute('data-col-kind');
+        window.__gundamCollection.toggle(kind, id);
+        apply();
+        return;
+      }
+      if (e.target.closest && e.target.closest('[data-col-clear]') && window.__gundamCollection) {
+        window.__gundamCollection.clear();
+        apply();
+      }
+    });
+
+    whenReady(apply);
+  })();
+</script>
+
+<style is:global>
+  .gcol {
+    margin: 2rem 0 0;
+  }
+
+  .gcol__bar {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .gcol__count {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: var(--fs-sm);
+    color: var(--accent);
+  }
+
+  .gcol__clear {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-pill);
+    padding: 0.2rem 0.7rem;
+    background: var(--surface);
+    color: var(--text-faint);
+    font-size: var(--fs-2xs);
+    cursor: pointer;
+  }
+
+  .gcol__clear:hover {
+    color: var(--danger);
+    border-color: color-mix(in oklab, var(--danger) 40%, transparent);
+  }
+
+  .gcol__summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .gcol__stat {
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+
+  .gcol__statLabel {
+    display: block;
+    font-size: var(--fs-2xs);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+
+  .gcol__statValue {
+    display: block;
+    margin-top: 0.3rem;
+    font-family: var(--font-mono);
+    font-size: var(--fs-lg);
+    color: var(--accent);
+  }
+
+  .gcol__statHint {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: var(--fs-2xs);
+    color: var(--text-faint);
+  }
+
+  .gcol__dist {
+    margin: 0.5rem 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .gcol__dist li {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.8rem;
+    font-size: var(--fs-xs);
+    color: var(--text-dim);
+  }
+
+  .gcol__dist b {
+    font-family: var(--font-mono);
+    color: var(--text);
+  }
+
+  .gcol__lists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.6rem;
+  }
+
+  .gcol__listTitle {
+    margin: 0 0 0.2rem;
+    font-family: var(--font-serif);
+    font-size: var(--fs-lg);
+    color: var(--text);
+  }
+
+  .gcol__listCount {
+    font-family: var(--font-mono);
+    font-size: var(--fs-sm);
+    color: var(--accent);
+  }
+
+  .gcol__listHint {
+    margin: 0 0 0.8rem;
+    font-size: var(--fs-xs);
+    color: var(--text-faint);
+  }
+
+  .gcol__empty {
+    margin: 0;
+    padding: 1rem;
+    border: 1px dashed var(--line-strong);
+    border-radius: var(--radius);
+    font-size: var(--fs-xs);
+    color: var(--text-faint);
+  }
+
+  .gcol__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gcol__item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: baseline;
+    gap: 0.2rem 0.8rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .gcol__name {
+    color: var(--text);
+    background-image: none;
+  }
+
+  .gcol__name:hover {
+    color: var(--accent);
+    background-image: none;
+  }
+
+  .gcol__meta {
+    grid-column: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: var(--fs-2xs);
+  }
+
+  .gcol__mono {
+    font-family: var(--font-mono);
+    color: var(--text-faint);
+  }
+
+  .gcol__marks {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .gcol__mark {
+    padding: 0.05rem 0.4rem;
+    border: 1px solid var(--accent-line);
+    border-radius: var(--radius-pill);
+    font-size: var(--fs-2xs);
+    color: var(--accent);
+  }
+
+  .gcol__mark[data-kind='owned'] {
+    color: var(--ok);
+    border-color: color-mix(in oklab, var(--ok) 40%, transparent);
+  }
+
+  .gcol__remove {
+    border: none;
+    background: none;
+    padding: 0 0.2rem;
+    color: var(--text-faint);
+    font-size: var(--fs-2xs);
+    cursor: pointer;
+  }
+
+  .gcol__remove:hover {
+    color: var(--danger);
+  }
+</style>

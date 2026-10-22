@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import KitCover from '../../../components/models/KitCover.astro';
 import KitCard from '../../../components/models/KitCard.astro';
 import CompareBar from '../../../components/models/CompareBar.astro';
+import CollectionState from '../../../components/models/CollectionState.astro';
 import ArtDefs from '../../../components/models/ArtDefs.astro';
 import { ART_VIEWS } from '../../../data/gundam.art';
 import SUBJECTS from '../../../data/models.subjects.json';
@@ -216,6 +217,27 @@ const jsonLd = {
         <button class="gdetail__tag gdetail__tag--btn" type="button" data-compare-add={kit.id} data-compare-name={kit.name}>
           加入对比
         </button>
+        <button
+          class="gdetail__tag gdetail__tag--btn gdetail__tag--coll"
+          type="button"
+          data-coll-kind="wish"
+          data-coll-id={kit.id}
+          data-coll-name={kit.name}
+          aria-pressed="false"
+        >
+          想要
+        </button>
+        <button
+          class="gdetail__tag gdetail__tag--btn gdetail__tag--coll"
+          type="button"
+          data-coll-kind="owned"
+          data-coll-id={kit.id}
+          data-coll-name={kit.name}
+          aria-pressed="false"
+        >
+          已有
+        </button>
+        <a class="gdetail__tag gdetail__tag--coll-link" href="/data/models/collection/">我的清单</a>
       </div>
 
       {kit.note && <p class="gdetail__note">{kit.note}</p>}
@@ -299,6 +321,7 @@ const jsonLd = {
                     {kit.saleStatusText}
                     {kit.saleNote ? `　${kit.saleNote}` : ''}
                     {kit.saleLabels.length ? `　${kit.saleLabels.join(' · ')}` : ''}
+                    {kit.saleChecked ? `　（状态核对于 ${kit.saleChecked}）` : ''}
                   </span>
                 )}
                 {kit.saleUrl && (
@@ -471,6 +494,7 @@ const jsonLd = {
     )
   }
   <CompareBar />
+  <CollectionState />
 </BaseLayout>
 
 <!-- 灯箱 -->
@@ -502,6 +526,52 @@ const jsonLd = {
     });
 
     sync();
+  })();
+</script>
+
+<script>
+  // 「想要」「已有」两个收藏标记。状态存在浏览器里，CollectionState 组件负责读写。
+  (function () {
+    var btns = Array.prototype.slice.call(document.querySelectorAll('[data-coll-kind]'));
+    if (!btns.length) return;
+
+    function sync() {
+      if (!window.__gundamCollection) return;
+      btns.forEach(function (btn) {
+        var on = window.__gundamCollection.has(btn.getAttribute('data-coll-kind'), btn.getAttribute('data-coll-id'));
+        btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+        btn.classList.toggle('is-on', on);
+        var kind = btn.getAttribute('data-coll-kind');
+        btn.textContent = on ? (kind === 'wish' ? '已加入想要' : '已在收藏中') : kind === 'wish' ? '想要' : '已有';
+      });
+    }
+
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        if (!window.__gundamCollection) return;
+        window.__gundamCollection.toggle(
+          btn.getAttribute('data-coll-kind'),
+          btn.getAttribute('data-coll-id'),
+          btn.getAttribute('data-coll-name')
+        );
+        sync();
+      });
+    });
+
+    document.addEventListener('gundam:collection-change', sync);
+
+    /* 状态脚本可能还没跑起来，等一下再对状态 */
+    if (window.__gundamCollection) {
+      sync();
+    } else {
+      var tries = 0;
+      var timer = setInterval(function () {
+        if (window.__gundamCollection || ++tries > 40) {
+          clearInterval(timer);
+          sync();
+        }
+      }, 50);
+    }
   })();
 </script>
 

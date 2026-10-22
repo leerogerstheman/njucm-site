@@ -334,6 +334,7 @@ function saleOverlay(mall, how) {
       saleCode: '',
       saleNote: '',
       saleMatch: '',
+      saleChecked: '',
       salePreorderFrom: '',
       salePreorderTo: '',
     };
@@ -359,6 +360,7 @@ function saleOverlay(mall, how) {
     saleCode: mall.mallNo || '',
     saleNote: st ? st.note || '' : '',
     saleMatch: how || '',
+    saleChecked: st ? st.checked || '' : '',
     salePreorderFrom: window.from,
     salePreorderTo: window.to,
   };
@@ -486,6 +488,7 @@ function normalise(entry, file, vendor) {
           saleCode: '',
           saleNote: '',
           saleMatch: '',
+          saleChecked: '',
           salePreorderFrom: '',
           salePreorderTo: '',
         };
@@ -569,6 +572,7 @@ function merge(a, b) {
     saleCode: keep.saleCode || other.saleCode,
     saleNote: keep.saleNote || other.saleNote,
     saleMatch: keep.saleMatch || other.saleMatch,
+    saleChecked: keep.saleChecked || other.saleChecked,
     salePreorderFrom: keep.salePreorderFrom || other.salePreorderFrom,
     salePreorderTo: keep.salePreorderTo || other.salePreorderTo,
   };

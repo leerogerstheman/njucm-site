@@ -18,7 +18,7 @@
  *
  * 用法：node scripts/harvest-goodsmile-mall-status.mjs [--limit N]
  */
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { buildMallIndex, matchMall, parsePreorderWindow, saleStatusOf } from './lib/mall.mjs';
@@ -197,6 +197,8 @@ for (let i = 0; i < targets.length; i += BATCH) {
           rec = JSON.parse(readFileSync(file, 'utf8'));
           /* 判定规则改过之后不必重抓：状态在这里按新规则重算一遍 */
           rec.status = saleStatusOf(rec.statusText, rec.orderButton, rec.priceJpy);
+          /* 核对日期 = 缓存文件写下的那天，也就是真正抓到这一页的那天 */
+          if (!rec.checked) rec.checked = statSync(file).mtime.toISOString().slice(0, 10);
         } else {
           const html = await fetchText(`${ORIGIN}/${LOCALE}/product/${m.mallId}`);
           if (!html) {
@@ -204,6 +206,7 @@ for (let i = 0; i < targets.length; i += BATCH) {
             continue;
           }
           rec = { mallId: m.mallId, locale: LOCALE, ...parseDetail(html) };
+          rec.checked = new Date().toISOString().slice(0, 10);
           writeFileSync(file, JSON.stringify(rec), 'utf8');
           await sleep(DELAY);
         }
