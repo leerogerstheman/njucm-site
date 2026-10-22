@@ -207,6 +207,53 @@
     white-space: nowrap;
   }
 
+  /* 商城在售状态。这是「现在能不能买到」的答案，所以颜色只给四种状态，
+     而且用语义色而不是装饰色——读者一眼要能分出「能买」和「买不到」。 */
+  .gcard__sale,
+  .gsale {
+    padding: 0.1rem 0.4rem;
+    border-radius: var(--radius-xs);
+    background: color-mix(in oklab, var(--sale-c) 12%, transparent);
+    color: var(--sale-c);
+    box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--sale-c) 42%, transparent);
+    font-family: var(--font-mono);
+    font-size: 0.64rem;
+    letter-spacing: 0.04em;
+    line-height: 1.6;
+    white-space: nowrap;
+  }
+
+  [data-status='preorder'] {
+    --sale-c: var(--accent);
+  }
+
+  [data-status='available'] {
+    --sale-c: var(--ok);
+  }
+
+  [data-status='soldout'] {
+    --sale-c: var(--danger);
+  }
+
+  [data-status='ended'] {
+    --sale-c: var(--text-faint);
+  }
+
+  /* 商城状态这一栏分三层：结论（可买／不可买）、现价、商城自己的话。
+     分行是因为商城那句状态说明往往很长，挤在一行里读不下去。 */
+  .gsale__price {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+  }
+
+  .gsale__detail {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: var(--fs-xs);
+    line-height: 1.7;
+    color: var(--text-faint);
+  }
+
   .gcard__body {
     display: flex;
     flex-direction: column;

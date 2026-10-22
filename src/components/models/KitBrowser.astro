@@ -20,6 +20,8 @@ import {
   releaseYear,
   releaseSortKey,
   searchHaystack,
+  SALE_STATUS_LABEL,
+  saleStatusLabel,
   makerMeta,
   type ModelProduct, categoryMeta } from '../../data/models';
 
@@ -67,6 +69,15 @@ const usedSeries = [...new Set(kits.map((k) => k.series))].sort(
 );
 const usedDecades = [...decadeCounts.keys()].sort();
 
+/**
+ * 商城在售状态。
+ *
+ * 只有良笑的条目带商城资料，所以这个分面只在有商城数据时才有东西可选。
+ * 顺序按「还能不能下单」排：预约中、在售排在前面，卖不掉的靠后。
+ */
+const SALE_STATUS_ORDER = ['preorder', 'available', 'soldout', 'ended'];
+const saleCounts = countByKey((k) => k.saleStatus ?? '');
+
 /** 厂商：库里现在有几家 */
 const makerCounts = countByKey((k) => k.maker);
 const usedMakers = [...makerCounts.keys()].sort(
@@ -96,8 +107,7 @@ const PRICE_BUCKETS = [
   { id: '1001-3000', label: '¥1,000–3,000' },
   { id: '3001-6000', label: '¥3,000–6,000' },
   { id: '6001+', label: '¥6,000 以上' },
-  { id: 'unknown', label: '暂无日元定价' },
-];
+  { id: 'unknown', label: '暂无日元定价' },];
 
 const SORTS = [
   { id: 'new', label: '最新' },
@@ -247,6 +257,23 @@ const SORTS = [
     </div>
 
     <div class="gdb__facet">
+      <span class="sorter__label" id="gdb-f-status">在售状态</span>
+      <div class="sorter__group" role="group" aria-labelledby="gdb-f-status" data-facet="status">
+        <button type="button" class="sorter__btn" data-value="" aria-pressed="true">
+          全部<span class="sorter__count">{kits.length}</span>
+        </button>
+        {
+          SALE_STATUS_ORDER.filter((s) => saleCounts.get(s)).map((s) => (
+            <button type="button" class="sorter__btn" data-value={s} aria-pressed="false">
+              {SALE_STATUS_LABEL[s]}
+              <span class="sorter__count">{saleCounts.get(s) ?? 0}</span>
+            </button>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="gdb__facet">
       <span class="sorter__label" id="gdb-f-tag">特征</span>
       <div class="sorter__group" role="group" aria-labelledby="gdb-f-tag" data-facet="tag">
         <button type="button" class="sorter__btn" data-value="" aria-pressed="true">
@@ -312,6 +339,13 @@ const SORTS = [
               <span class="gcard__head">
                 <span class="gcard__grade" data-category={categoryMeta(kit.category).label}>{categoryMeta(kit.category).label}</span>
                 <span class="gcard__scale">{kit.scale}</span>
+                {
+                  kit.saleStatus && (
+                    <span class="gcard__sale" data-status={kit.saleStatus}>
+                      {saleStatusLabel(kit)}
+                    </span>
+                  )
+                }
                 {
                   kit.channel !== 'general' && (
                     <span class="gcard__flag" data-channel={kit.channel}>
@@ -394,7 +428,7 @@ const SORTS = [
     var facetGroups = Array.prototype.slice.call(root.querySelectorAll('[data-facet]'));
     var sortButtons = Array.prototype.slice.call(root.querySelectorAll('[data-sort]'));
 
-    var state = { q: '', maker: '', category: '', series: '', channel: '', decade: '', price: '', tag: '', sort: 'new', page: 1 };
+    var state = { q: '', maker: '', category: '', series: '', channel: '', decade: '', price: '', status: '', tag: '', sort: 'new', page: 1 };
 
     var DATA = null;
     var RECORDS = [];
@@ -482,6 +516,7 @@ const SORTS = [
             r.subject || '',
             (r.aliases || []).join(' '),
             (r.tags || []).join(' '),
+            r.saleStatus ? DATA.saleStatus[r.saleStatus] || '' : '',
           ].join(' '),
         );
         return r;
@@ -504,6 +539,10 @@ const SORTS = [
           ? '<span class="gcard__flag" data-channel="' + esc(r.channel) + '">' +
             esc(DATA.channels[r.channel] || '') + '</span>'
           : '';
+      var sale = r.saleStatus
+        ? '<span class="gcard__sale" data-status="' + esc(r.saleStatus) + '">' +
+          esc(DATA.saleStatus[r.saleStatus] || '') + '</span>'
+        : '';
       var price = r.priceJpy
         ? '¥' + r.priceJpy.toLocaleString('en-US')
         : r.priceCny
@@ -520,7 +559,7 @@ const SORTS = [
         '<span class="gcard__body">' +
         '<span class="gcard__head">' +
         '<span class="gcard__grade" data-category="' + esc(categoryMeta(r.category).label) + '">' + esc(categoryMeta(r.category).label) + '</span>' +
-        '<span class="gcard__scale">' + esc(r.scale) + '</span>' + flag +
+        '<span class="gcard__scale">' + esc(r.scale) + '</span>' + sale + flag +
         '</span>' +
         '<span class="gcard__title">' + esc(r.name) + '</span>' +
         (r.nameJa ? '<span class="gcard__sub">' + esc(r.nameJa) + '</span>' : '') +
@@ -542,6 +581,7 @@ const SORTS = [
       if (s.channel && r.channel !== s.channel) return false;
       if (s.decade && decadeOf(r.year) !== s.decade) return false;
       if (s.price && priceBucket(r.priceJpy) !== s.price) return false;
+      if (s.status && (r.saleStatus || '') !== s.status) return false;
       if (s.tag && (r.tags || []).indexOf(s.tag) === -1) return false;
       return true;
     }

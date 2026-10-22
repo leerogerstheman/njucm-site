@@ -15,6 +15,7 @@ import {
   formatJPY,
   releaseLabel,
   relatedProducts,
+  saleStatusLabel,
   type ModelProduct, categoryMeta } from '../../../data/models';
 import '../../../styles/models.css';
 import '../../../styles/gundam-theme.css';
@@ -68,8 +69,22 @@ const description = [
  * 也不必再从页面里抠字段。
  */
 const SITE = 'https://njucm.org';
-const offers = kit.priceJpy
-  ? { '@type': 'Offer', price: kit.priceJpy, priceCurrency: 'JPY', availability: 'https://schema.org/InStock', url: `${SITE}/data/models/${kit.id}/` }
+/* 商城那边有现价就用现价，没有就退回官方建议零售价 */
+const offerPrice = kit.salePriceJpy || kit.priceJpy;
+const AVAILABILITY = {
+  preorder: 'https://schema.org/PreOrder',
+  available: 'https://schema.org/InStock',
+  soldout: 'https://schema.org/OutOfStock',
+  ended: 'https://schema.org/SoldOut',
+};
+const offers = offerPrice
+  ? {
+      '@type': 'Offer',
+      price: offerPrice,
+      priceCurrency: 'JPY',
+      availability: (kit.saleStatus && AVAILABILITY[kit.saleStatus]) || 'https://schema.org/InStock',
+      url: `${SITE}/data/models/${kit.id}/`,
+    }
   : kit.priceCny
     ? { '@type': 'Offer', price: kit.priceCny, priceCurrency: 'CNY', availability: 'https://schema.org/InStock', url: `${SITE}/data/models/${kit.id}/` }
     : undefined;
@@ -259,6 +274,41 @@ const jsonLd = {
               <span class="gspec__val">
                 ¥{kit.priceCny.toLocaleString('en-US')}
                 <span class="faint"> （万代官方旗舰店／高达基地零售价） </span>
+              </span>
+            </div>
+          )
+        }
+        {
+          kit.saleStatus && (
+            <div class="gspec__row">
+              <span class="gspec__key">商城状态</span>
+              <span class="gspec__val">
+                <span class="gsale" data-status={kit.saleStatus}>
+                  {saleStatusLabel(kit)}
+                </span>
+                {kit.salePriceJpy > 0 && (
+                  <span class="gsale__price">
+                    　商城现价 {formatJPY(kit.salePriceJpy)}
+                    {kit.priceJpy > 0 && kit.salePriceJpy !== kit.priceJpy && (
+                      <span class="faint">（官方定价 {formatJPY(kit.priceJpy)}）</span>
+                    )}
+                  </span>
+                )}
+                {(kit.saleStatusText || kit.saleNote || kit.saleLabels.length > 0) && (
+                  <span class="gsale__detail">
+                    {kit.saleStatusText}
+                    {kit.saleNote ? `　${kit.saleNote}` : ''}
+                    {kit.saleLabels.length ? `　${kit.saleLabels.join(' · ')}` : ''}
+                  </span>
+                )}
+                {kit.saleUrl && (
+                  <span class="gsale__detail">
+                    <a href={kit.saleUrl} rel="noopener noreferrer" target="_blank">
+                      良笑商城商品页
+                    </a>
+                    {kit.saleCode ? `　商城商品番号 ${kit.saleCode}` : ''}
+                  </span>
+                )}
               </span>
             </div>
           )

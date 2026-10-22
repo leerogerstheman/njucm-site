@@ -412,6 +412,42 @@ export interface ModelProduct {
   subjectKind: SubjectKind | null;
   /** 其它常见写法：英文名、俗称、旧译、机体编号。检索时一并匹配。 */
   aliases: string[];
+  /* ---------------------------------------------------------------------- */
+  /* 线上商城的现状                                                            */
+  /* ---------------------------------------------------------------------- */
+
+  /**
+   * 商城在售状态。
+   *
+   *   'preorder' 预约中——商城正在开放预购
+   *   'available' 在售
+   *   'soldout'  已售罄
+   *   'ended'    已结束——商城不再接受订购
+   *
+   * 没核对过商城就是 null，不猜。目前只有良笑商城的资料。
+   */
+  saleStatus: 'preorder' | 'available' | 'soldout' | 'ended' | null;
+  /** 商城上的原文状态说明（保留来源站的写法） */
+  saleStatusText: string;
+  /** 商城现价（日元）。0 表示没核对到 */
+  salePriceJpy: number;
+  /** 商城上的限定标签：限定商品、数量限定、附特典、再販… */
+  saleLabels: string[];
+  /** 商城商品页 */
+  saleUrl: string | null;
+  /** 商城商品番号 */
+  saleCode: string;
+  /** 商城上的补充说明：预定寄送月、每人限购… */
+  saleNote: string;
+  /**
+   * 与商城对上时用的方式：exact / no-bracket / prefix / same-price /
+   * approx-price / no-price。空表示没对上。留着是为了以后复查对齐质量。
+   */
+  saleMatch: string;
+  /** 预约开始的日期 YYYY-MM-DD */
+  salePreorderFrom: string;
+  /** 预约截止的日期 YYYY-MM-DD */
+  salePreorderTo: string;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -469,6 +505,20 @@ export function formatJPY(value: number): string {
   return `¥${value.toLocaleString('en-US')}`;
 }
 
+/** 商城在售状态的界面说法 */
+export const SALE_STATUS_LABEL: Record<string, string> = {
+  preorder: '预约中',
+  available: '在售',
+  soldout: '已售罄',
+  ended: '已结束',
+};
+
+/** 商城在售状态的一句话说明，用在卡片角标与详情页 */
+export function saleStatusLabel(product: ModelProduct): string {
+  if (!product.saleStatus) return '';
+  return SALE_STATUS_LABEL[product.saleStatus] ?? product.saleStatus;
+}
+
 /** 搜索用的归一化文本：小写、去掉空格与标点，中日文原样保留 */
 export function searchHaystack(product: ModelProduct): string {
   return [
@@ -485,6 +535,8 @@ export function searchHaystack(product: ModelProduct): string {
     product.subject ?? '',
     ...product.aliases,
     ...product.tags,
+    product.saleStatus ? SALE_STATUS_LABEL[product.saleStatus] : '',
+    ...product.saleLabels,
   ]
     .join(' ')
     .toLowerCase()

@@ -7,7 +7,7 @@
  * 行用数组而不是对象，字段顺序由 fields 定——同样一份数据，数组形式
  * 大概省掉三分之一的体积。
  */
-import { PRODUCTS, seriesMeta, channelMeta, categoryMeta, makerMeta,
+import { PRODUCTS, seriesMeta, channelMeta, categoryMeta, makerMeta, SALE_STATUS_LABEL,
 } from '../../../data/models';
 import type { APIRoute } from 'astro';
 
@@ -35,6 +35,9 @@ export const GET: APIRoute = () => {
     'skillLevel',
     'material',
     'note',
+    /* 商城那边���现状：现在能不能买到、现价多少 */
+    'saleStatus',
+    'salePriceJpy',
   ];
 
   const rows = PRODUCTS.map((kit) => [
@@ -59,6 +62,8 @@ export const GET: APIRoute = () => {
     kit.skillLevel,
     kit.material,
     kit.note,
+    kit.saleStatus,
+    kit.salePriceJpy,
   ]);
 
   /*
@@ -116,6 +121,8 @@ export const GET: APIRoute = () => {
     channels: Object.fromEntries(
       [...new Set(PRODUCTS.map((k) => k.channel))].map((id) => [id, channelMeta(id).label]),
     ),
+    /* 商城在售状态的说法，客户端画角标用 */
+    saleStatus: SALE_STATUS_LABEL,
     categories: Object.fromEntries(
       [...new Set(PRODUCTS.map((k) => k.category))].map((id) => [id, categoryMeta(id).brief]),
     ),

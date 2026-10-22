@@ -16,6 +16,7 @@ import {
   releaseSortKey,
   searchHaystack,
   channelMeta,
+  saleStatusLabel,
   type ModelProduct,
   categoryMeta,
 } from '../../data/models';
@@ -73,6 +74,13 @@ const channel = channelMeta(kit.channel);
       <span class="gcard__head">
         <span class="gcard__grade" data-category={categoryMeta(kit.category).label}>{categoryMeta(kit.category).label}</span>
         <span class="gcard__scale">{kit.scale}</span>
+        {
+          kit.saleStatus && (
+            <span class="gcard__sale" data-status={kit.saleStatus}>
+              {saleStatusLabel(kit)}
+            </span>
+          )
+        }
         {
           kit.channel !== 'general' && (
             <span class="gcard__flag" data-channel={kit.channel}>

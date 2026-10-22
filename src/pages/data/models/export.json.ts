@@ -44,6 +44,16 @@ export const GET: APIRoute = () => {
     sourceJp: kit.sourceJp,
     image: kit.image,
     imageUrl: kit.imageUrl,
+    /* 商城那边：现在买不买得到、现价多少（只有良笑商城有） */
+    saleStatus: kit.saleStatus,
+    saleStatusText: kit.saleStatusText,
+    salePriceJpy: kit.salePriceJpy,
+    saleLabels: kit.saleLabels,
+    saleUrl: kit.saleUrl,
+    saleCode: kit.saleCode,
+    saleNote: kit.saleNote,
+    salePreorderFrom: kit.salePreorderFrom,
+    salePreorderTo: kit.salePreorderTo,
   }));
 
   const payload = {

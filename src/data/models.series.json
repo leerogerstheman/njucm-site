@@ -105,7 +105,7 @@
       "hsl(46 24% 34%)",
       "hsl(232 58% 56%)"
     ],
-    "count": 105
+    "count": 113
   },
   {
     "id": "w5f9531d396",
@@ -165,7 +165,7 @@
       "hsl(235 24% 34%)",
       "hsl(61 58% 56%)"
     ],
-    "count": 73
+    "count": 74
   },
   {
     "id": "w63a09908e7",
@@ -177,7 +177,7 @@
       "hsl(127 24% 34%)",
       "hsl(313 58% 56%)"
     ],
-    "count": 62
+    "count": 63
   },
   {
     "id": "wffab55c460",
@@ -204,6 +204,18 @@
     "count": 46
   },
   {
+    "id": "w94f6d61500",
+    "maker": "goodsmile",
+    "label": "初音未來GT計畫",
+    "short": "初音未來GT計畫",
+    "palette": [
+      "hsl(46 26% 68%)",
+      "hsl(46 24% 34%)",
+      "hsl(232 58% 56%)"
+    ],
+    "count": 44
+  },
+  {
     "id": "wef4c142189",
     "maker": "goodsmile",
     "label": "hololive production",
@@ -226,18 +238,6 @@
       "hsl(3 58% 56%)"
     ],
     "count": 43
-  },
-  {
-    "id": "w94f6d61500",
-    "maker": "goodsmile",
-    "label": "初音未來GT計畫",
-    "short": "初音未來GT計畫",
-    "palette": [
-      "hsl(46 26% 68%)",
-      "hsl(46 24% 34%)",
-      "hsl(232 58% 56%)"
-    ],
-    "count": 41
   },
   {
     "id": "w11f462196c",
@@ -324,6 +324,18 @@
     "count": 33
   },
   {
+    "id": "w1d37f9bd79",
+    "maker": "goodsmile",
+    "label": "明日方舟",
+    "short": "明日方舟",
+    "palette": [
+      "hsl(8 26% 68%)",
+      "hsl(8 24% 34%)",
+      "hsl(194 58% 56%)"
+    ],
+    "count": 32
+  },
+  {
     "id": "w55a2b42440",
     "maker": "goodsmile",
     "label": "figma Styles",
@@ -358,18 +370,6 @@
       "hsl(96 58% 56%)"
     ],
     "count": 31
-  },
-  {
-    "id": "w1d37f9bd79",
-    "maker": "goodsmile",
-    "label": "明日方舟",
-    "short": "明日方舟",
-    "palette": [
-      "hsl(8 26% 68%)",
-      "hsl(8 24% 34%)",
-      "hsl(194 58% 56%)"
-    ],
-    "count": 30
   },
   {
     "id": "wa67854793c",
@@ -468,6 +468,18 @@
     "count": 26
   },
   {
+    "id": "w669974e174",
+    "maker": "goodsmile",
+    "label": "蔚藍檔案 Blue Archive",
+    "short": "蔚藍檔案 Blue A…",
+    "palette": [
+      "hsl(181 26% 68%)",
+      "hsl(181 24% 34%)",
+      "hsl(7 58% 56%)"
+    ],
+    "count": 25
+  },
+  {
     "id": "wfcd8a3d13a",
     "maker": "goodsmile",
     "label": "搖曳露營△",
@@ -524,6 +536,18 @@
       "hsl(250 26% 68%)",
       "hsl(250 24% 34%)",
       "hsl(76 58% 56%)"
+    ],
+    "count": 22
+  },
+  {
+    "id": "wc1a9010aef",
+    "maker": "goodsmile",
+    "label": "賽馬娘Pretty Derby",
+    "short": "賽馬娘Pretty D…",
+    "palette": [
+      "hsl(110 26% 68%)",
+      "hsl(110 24% 34%)",
+      "hsl(296 58% 56%)"
     ],
     "count": 22
   },
@@ -588,18 +612,6 @@
     "count": 20
   },
   {
-    "id": "wc1a9010aef",
-    "maker": "goodsmile",
-    "label": "賽馬娘Pretty Derby",
-    "short": "賽馬娘Pretty D…",
-    "palette": [
-      "hsl(110 26% 68%)",
-      "hsl(110 24% 34%)",
-      "hsl(296 58% 56%)"
-    ],
-    "count": 19
-  },
-  {
     "id": "w6dbc68d31a",
     "maker": "goodsmile",
     "label": "文豪Stray Dogs",
@@ -634,6 +646,18 @@
       "hsl(6 58% 56%)"
     ],
     "count": 19
+  },
+  {
+    "id": "w922f1626e6",
+    "maker": "goodsmile",
+    "label": "碧藍航線",
+    "short": "碧藍航線",
+    "palette": [
+      "hsl(24 26% 68%)",
+      "hsl(24 24% 34%)",
+      "hsl(210 58% 56%)"
+    ],
+    "count": 18
   },
   {
     "id": "wdeb988237d",
@@ -672,6 +696,18 @@
     "count": 18
   },
   {
+    "id": "w9c978abc47",
+    "maker": "goodsmile",
+    "label": "福音戰士新劇場版",
+    "short": "福音戰士新劇場版",
+    "palette": [
+      "hsl(191 26% 68%)",
+      "hsl(191 24% 34%)",
+      "hsl(17 58% 56%)"
+    ],
+    "count": 17
+  },
+  {
     "id": "w2f2876469d",
     "maker": "goodsmile",
     "label": "英雄聯盟",
@@ -706,18 +742,6 @@
       "hsl(145 58% 56%)"
     ],
     "count": 17
-  },
-  {
-    "id": "w9c978abc47",
-    "maker": "goodsmile",
-    "label": "福音戰士新劇場版",
-    "short": "福音戰士新劇場版",
-    "palette": [
-      "hsl(191 26% 68%)",
-      "hsl(191 24% 34%)",
-      "hsl(17 58% 56%)"
-    ],
-    "count": 16
   },
   {
     "id": "w039a4a516d",
@@ -792,18 +816,6 @@
     "count": 15
   },
   {
-    "id": "w669974e174",
-    "maker": "goodsmile",
-    "label": "蔚藍檔案 Blue Archive",
-    "short": "蔚藍檔案 Blue A…",
-    "palette": [
-      "hsl(181 26% 68%)",
-      "hsl(181 24% 34%)",
-      "hsl(7 58% 56%)"
-    ],
-    "count": 14
-  },
-  {
     "id": "wcbbc851b61",
     "maker": "goodsmile",
     "label": "影子籃球員",
@@ -812,6 +824,18 @@
       "hsl(131 26% 68%)",
       "hsl(131 24% 34%)",
       "hsl(317 58% 56%)"
+    ],
+    "count": 14
+  },
+  {
+    "id": "wed96b55a7f",
+    "maker": "goodsmile",
+    "label": "主播女孩重度依賴",
+    "short": "主播女孩重度依賴",
+    "palette": [
+      "hsl(290 26% 68%)",
+      "hsl(290 24% 34%)",
+      "hsl(116 58% 56%)"
     ],
     "count": 14
   },
@@ -972,18 +996,6 @@
     "count": 12
   },
   {
-    "id": "w922f1626e6",
-    "maker": "goodsmile",
-    "label": "碧藍航線",
-    "short": "碧藍航線",
-    "palette": [
-      "hsl(24 26% 68%)",
-      "hsl(24 24% 34%)",
-      "hsl(210 58% 56%)"
-    ],
-    "count": 12
-  },
-  {
     "id": "wb2aeac157d",
     "maker": "goodsmile",
     "label": "催眠麥克風",
@@ -1040,6 +1052,18 @@
       "hsl(235 26% 68%)",
       "hsl(235 24% 34%)",
       "hsl(61 58% 56%)"
+    ],
+    "count": 12
+  },
+  {
+    "id": "w4192588ea9",
+    "maker": "goodsmile",
+    "label": "BanG Dream!",
+    "short": "BanG Dream!",
+    "palette": [
+      "hsl(97 26% 68%)",
+      "hsl(97 24% 34%)",
+      "hsl(283 58% 56%)"
     ],
     "count": 12
   },
@@ -1136,6 +1160,30 @@
       "hsl(197 26% 68%)",
       "hsl(197 24% 34%)",
       "hsl(23 58% 56%)"
+    ],
+    "count": 11
+  },
+  {
+    "id": "we8b76d8df3",
+    "maker": "goodsmile",
+    "label": "庫洛魔法使",
+    "short": "庫洛魔法使",
+    "palette": [
+      "hsl(311 26% 68%)",
+      "hsl(311 24% 34%)",
+      "hsl(137 58% 56%)"
+    ],
+    "count": 11
+  },
+  {
+    "id": "w24c54c23cd",
+    "maker": "goodsmile",
+    "label": "命運石之門",
+    "short": "命運石之門",
+    "palette": [
+      "hsl(252 26% 68%)",
+      "hsl(252 24% 34%)",
+      "hsl(78 58% 56%)"
     ],
     "count": 11
   },
@@ -1284,18 +1332,6 @@
     "count": 10
   },
   {
-    "id": "we8b76d8df3",
-    "maker": "goodsmile",
-    "label": "庫洛魔法使",
-    "short": "庫洛魔法使",
-    "palette": [
-      "hsl(311 26% 68%)",
-      "hsl(311 24% 34%)",
-      "hsl(137 58% 56%)"
-    ],
-    "count": 10
-  },
-  {
     "id": "wbf12b1a89b",
     "maker": "kotobukiya",
     "label": "陸上自衛隊07式戦車 なっちん",
@@ -1332,6 +1368,18 @@
     "count": 10
   },
   {
+    "id": "we2376dbdc0",
+    "maker": "goodsmile",
+    "label": "薔薇少女",
+    "short": "薔薇少女",
+    "palette": [
+      "hsl(38 26% 68%)",
+      "hsl(38 24% 34%)",
+      "hsl(224 58% 56%)"
+    ],
+    "count": 10
+  },
+  {
     "id": "wa2c1722d8a",
     "maker": "goodsmile",
     "label": "全職高手",
@@ -1340,6 +1388,18 @@
       "hsl(11 26% 68%)",
       "hsl(11 24% 34%)",
       "hsl(197 58% 56%)"
+    ],
+    "count": 10
+  },
+  {
+    "id": "w85a1cc60bc",
+    "maker": "goodsmile",
+    "label": "食戟之靈",
+    "short": "食戟之靈",
+    "palette": [
+      "hsl(228 26% 68%)",
+      "hsl(228 24% 34%)",
+      "hsl(54 58% 56%)"
     ],
     "count": 10
   },
@@ -1392,6 +1452,18 @@
     "count": 9
   },
   {
+    "id": "wffbaabe228",
+    "maker": "goodsmile",
+    "label": "電視動畫《戀上換裝娃娃》",
+    "short": "電視動畫《戀上換裝娃娃》",
+    "palette": [
+      "hsl(349 26% 68%)",
+      "hsl(349 24% 34%)",
+      "hsl(175 58% 56%)"
+    ],
+    "count": 9
+  },
+  {
     "id": "w2ef6a4a419",
     "maker": "goodsmile",
     "label": "動畫《魔道祖師》",
@@ -1428,6 +1500,18 @@
     "count": 9
   },
   {
+    "id": "w79c8a10319",
+    "maker": "goodsmile",
+    "label": "科學超電磁砲T",
+    "short": "科學超電磁砲T",
+    "palette": [
+      "hsl(4 26% 68%)",
+      "hsl(4 24% 34%)",
+      "hsl(190 58% 56%)"
+    ],
+    "count": 9
+  },
+  {
     "id": "we9356f32f9",
     "maker": "goodsmile",
     "label": "龍王的工作！",
@@ -1460,18 +1544,6 @@
       "hsl(183 26% 68%)",
       "hsl(183 24% 34%)",
       "hsl(9 58% 56%)"
-    ],
-    "count": 9
-  },
-  {
-    "id": "w85a1cc60bc",
-    "maker": "goodsmile",
-    "label": "食戟之靈",
-    "short": "食戟之靈",
-    "palette": [
-      "hsl(228 26% 68%)",
-      "hsl(228 24% 34%)",
-      "hsl(54 58% 56%)"
     ],
     "count": 9
   },
@@ -1560,6 +1632,18 @@
     "count": 9
   },
   {
+    "id": "wdca73de52f",
+    "maker": "kotobukiya",
+    "label": "TRIGUN STARGAZE",
+    "short": "TRIGUN STAR…",
+    "palette": [
+      "hsl(250 26% 68%)",
+      "hsl(250 24% 34%)",
+      "hsl(76 58% 56%)"
+    ],
+    "count": 9
+  },
+  {
     "id": "w489bfaab9d",
     "maker": "kotobukiya",
     "label": "アズールレーン",
@@ -1592,18 +1676,6 @@
       "hsl(338 26% 68%)",
       "hsl(338 24% 34%)",
       "hsl(164 58% 56%)"
-    ],
-    "count": 8
-  },
-  {
-    "id": "wffbaabe228",
-    "maker": "goodsmile",
-    "label": "電視動畫《戀上換裝娃娃》",
-    "short": "電視動畫《戀上換裝娃娃》",
-    "palette": [
-      "hsl(349 26% 68%)",
-      "hsl(349 24% 34%)",
-      "hsl(175 58% 56%)"
     ],
     "count": 8
   },
@@ -1656,6 +1728,30 @@
     "count": 8
   },
   {
+    "id": "wc89d2e4f16",
+    "maker": "goodsmile",
+    "label": "普羅米亞",
+    "short": "普羅米亞",
+    "palette": [
+      "hsl(11 26% 68%)",
+      "hsl(11 24% 34%)",
+      "hsl(197 58% 56%)"
+    ],
+    "count": 8
+  },
+  {
+    "id": "w1d6235ffff",
+    "maker": "goodsmile",
+    "label": "少女與戰車 最終章",
+    "short": "少女與戰車 最終章",
+    "palette": [
+      "hsl(297 26% 68%)",
+      "hsl(297 24% 34%)",
+      "hsl(123 58% 56%)"
+    ],
+    "count": 8
+  },
+  {
     "id": "w22e8efb222",
     "maker": "goodsmile",
     "label": "聖火降魔錄",
@@ -1664,6 +1760,18 @@
       "hsl(100 26% 68%)",
       "hsl(100 24% 34%)",
       "hsl(286 58% 56%)"
+    ],
+    "count": 8
+  },
+  {
+    "id": "w6722d27df5",
+    "maker": "goodsmile",
+    "label": "死亡擱淺",
+    "short": "死亡擱淺",
+    "palette": [
+      "hsl(6 26% 68%)",
+      "hsl(6 24% 34%)",
+      "hsl(192 58% 56%)"
     ],
     "count": 8
   },
@@ -1700,6 +1808,18 @@
       "hsl(205 26% 68%)",
       "hsl(205 24% 34%)",
       "hsl(31 58% 56%)"
+    ],
+    "count": 8
+  },
+  {
+    "id": "w4a7fcdcd53",
+    "maker": "goodsmile",
+    "label": "心跳文學社!",
+    "short": "心跳文學社!",
+    "palette": [
+      "hsl(184 26% 68%)",
+      "hsl(184 24% 34%)",
+      "hsl(10 58% 56%)"
     ],
     "count": 8
   },
@@ -1776,18 +1896,6 @@
     "count": 8
   },
   {
-    "id": "w4192588ea9",
-    "maker": "goodsmile",
-    "label": "BanG Dream!",
-    "short": "BanG Dream!",
-    "palette": [
-      "hsl(97 26% 68%)",
-      "hsl(97 24% 34%)",
-      "hsl(283 58% 56%)"
-    ],
-    "count": 8
-  },
-  {
     "id": "wdddd431f91",
     "maker": "goodsmile",
     "label": "Kizuna AI",
@@ -1848,18 +1956,6 @@
     "count": 8
   },
   {
-    "id": "wdca73de52f",
-    "maker": "kotobukiya",
-    "label": "TRIGUN STARGAZE",
-    "short": "TRIGUN STAR…",
-    "palette": [
-      "hsl(250 26% 68%)",
-      "hsl(250 24% 34%)",
-      "hsl(76 58% 56%)"
-    ],
-    "count": 8
-  },
-  {
     "id": "w68727e571a",
     "maker": "kotobukiya",
     "label": "エンバー：オブシディアンプロトコル",
@@ -1904,6 +2000,18 @@
       "hsl(121 26% 68%)",
       "hsl(121 24% 34%)",
       "hsl(307 58% 56%)"
+    ],
+    "count": 7
+  },
+  {
+    "id": "w3a95e8e8ff",
+    "maker": "goodsmile",
+    "label": "動畫《主播女孩重度依賴》",
+    "short": "動畫《主播女孩重度依賴》",
+    "palette": [
+      "hsl(13 26% 68%)",
+      "hsl(13 24% 34%)",
+      "hsl(199 58% 56%)"
     ],
     "count": 7
   },
@@ -2016,14 +2124,14 @@
     "count": 7
   },
   {
-    "id": "w79c8a10319",
+    "id": "w37ef9301d2",
     "maker": "goodsmile",
-    "label": "科學超電磁砲T",
-    "short": "科學超電磁砲T",
+    "label": "烙印勇士",
+    "short": "烙印勇士",
     "palette": [
-      "hsl(4 26% 68%)",
-      "hsl(4 24% 34%)",
-      "hsl(190 58% 56%)"
+      "hsl(11 26% 68%)",
+      "hsl(11 24% 34%)",
+      "hsl(197 58% 56%)"
     ],
     "count": 7
   },
@@ -2040,26 +2148,14 @@
     "count": 7
   },
   {
-    "id": "w1d6235ffff",
+    "id": "w8bc2e2b801",
     "maker": "goodsmile",
-    "label": "少女與戰車 最終章",
-    "short": "少女與戰車 最終章",
+    "label": "青春豬頭少年不會夢到兔女郎學姊",
+    "short": "青春豬頭少年不會夢到兔…",
     "palette": [
-      "hsl(297 26% 68%)",
-      "hsl(297 24% 34%)",
-      "hsl(123 58% 56%)"
-    ],
-    "count": 7
-  },
-  {
-    "id": "w6722d27df5",
-    "maker": "goodsmile",
-    "label": "死亡擱淺",
-    "short": "死亡擱淺",
-    "palette": [
-      "hsl(6 26% 68%)",
-      "hsl(6 24% 34%)",
-      "hsl(192 58% 56%)"
+      "hsl(208 26% 68%)",
+      "hsl(208 24% 34%)",
+      "hsl(34 58% 56%)"
     ],
     "count": 7
   },
@@ -2196,6 +2292,18 @@
     "count": 7
   },
   {
+    "id": "wec6f49529b",
+    "maker": "goodsmile",
+    "label": "變形金剛",
+    "short": "變形金剛",
+    "palette": [
+      "hsl(162 26% 68%)",
+      "hsl(162 24% 34%)",
+      "hsl(348 58% 56%)"
+    ],
+    "count": 6
+  },
+  {
     "id": "w261b2d0818",
     "maker": "goodsmile",
     "label": "彩虹社",
@@ -2264,6 +2372,18 @@
       "hsl(240 26% 68%)",
       "hsl(240 24% 34%)",
       "hsl(66 58% 56%)"
+    ],
+    "count": 6
+  },
+  {
+    "id": "w50cfc1b09c",
+    "maker": "goodsmile",
+    "label": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
+    "short": "劇場版 魔法少女小圓〈…",
+    "palette": [
+      "hsl(82 26% 68%)",
+      "hsl(82 24% 34%)",
+      "hsl(268 58% 56%)"
     ],
     "count": 6
   },
@@ -2400,30 +2520,6 @@
     "count": 6
   },
   {
-    "id": "we2376dbdc0",
-    "maker": "goodsmile",
-    "label": "薔薇少女",
-    "short": "薔薇少女",
-    "palette": [
-      "hsl(38 26% 68%)",
-      "hsl(38 24% 34%)",
-      "hsl(224 58% 56%)"
-    ],
-    "count": 6
-  },
-  {
-    "id": "w8bc2e2b801",
-    "maker": "goodsmile",
-    "label": "青春豬頭少年不會夢到兔女郎學姊",
-    "short": "青春豬頭少年不會夢到兔…",
-    "palette": [
-      "hsl(208 26% 68%)",
-      "hsl(208 24% 34%)",
-      "hsl(34 58% 56%)"
-    ],
-    "count": 6
-  },
-  {
     "id": "w4813b2a30e",
     "maker": "goodsmile",
     "label": "情色漫畫老師",
@@ -2480,6 +2576,18 @@
       "hsl(335 26% 68%)",
       "hsl(335 24% 34%)",
       "hsl(161 58% 56%)"
+    ],
+    "count": 6
+  },
+  {
+    "id": "w0468466445",
+    "maker": "kotobukiya",
+    "label": "夏目友人帳",
+    "short": "夏目友人帳",
+    "palette": [
+      "hsl(269 26% 68%)",
+      "hsl(269 24% 34%)",
+      "hsl(95 58% 56%)"
     ],
     "count": 6
   },
@@ -2556,6 +2664,18 @@
     "count": 6
   },
   {
+    "id": "wc953e675cc",
+    "maker": "goodsmile",
+    "label": "桌上美術館-分館-",
+    "short": "桌上美術館-分館-",
+    "palette": [
+      "hsl(200 26% 68%)",
+      "hsl(200 24% 34%)",
+      "hsl(26 58% 56%)"
+    ],
+    "count": 6
+  },
+  {
     "id": "w27ac0e049d",
     "maker": "goodsmile",
     "label": "Dota 2",
@@ -2564,6 +2684,18 @@
       "hsl(73 26% 68%)",
       "hsl(73 24% 34%)",
       "hsl(259 58% 56%)"
+    ],
+    "count": 6
+  },
+  {
+    "id": "wa67ac0b26a",
+    "maker": "goodsmile",
+    "label": "DRAMAtical Murder戲劇性謀殺",
+    "short": "DRAMAtical …",
+    "palette": [
+      "hsl(187 26% 68%)",
+      "hsl(187 24% 34%)",
+      "hsl(13 58% 56%)"
     ],
     "count": 6
   },
@@ -2868,6 +3000,18 @@
     "count": 5
   },
   {
+    "id": "wee808ff73e",
+    "maker": "goodsmile",
+    "label": "吉伊卡哇",
+    "short": "吉伊卡哇",
+    "palette": [
+      "hsl(191 26% 68%)",
+      "hsl(191 24% 34%)",
+      "hsl(17 58% 56%)"
+    ],
+    "count": 5
+  },
+  {
     "id": "w8f4f2e06d9",
     "maker": "goodsmile",
     "label": "家庭教師HITMAN REBORN!",
@@ -2928,18 +3072,6 @@
     "count": 5
   },
   {
-    "id": "wc89d2e4f16",
-    "maker": "goodsmile",
-    "label": "普羅米亞",
-    "short": "普羅米亞",
-    "palette": [
-      "hsl(11 26% 68%)",
-      "hsl(11 24% 34%)",
-      "hsl(197 58% 56%)"
-    ],
-    "count": 5
-  },
-  {
     "id": "w3e081fb13a",
     "maker": "goodsmile",
     "label": "普通攻擊是全體二連擊，這樣的媽媽你喜歡嗎？",
@@ -2972,6 +3104,18 @@
       "hsl(203 26% 68%)",
       "hsl(203 24% 34%)",
       "hsl(29 58% 56%)"
+    ],
+    "count": 5
+  },
+  {
+    "id": "wd690630260",
+    "maker": "goodsmile",
+    "label": "勝利女神：妮姬",
+    "short": "勝利女神：妮姬",
+    "palette": [
+      "hsl(52 26% 68%)",
+      "hsl(52 24% 34%)",
+      "hsl(238 58% 56%)"
     ],
     "count": 5
   },
@@ -3024,6 +3168,18 @@
     "count": 5
   },
   {
+    "id": "w8e1c8fa41e",
+    "maker": "goodsmile",
+    "label": "藥師少女的獨語",
+    "short": "藥師少女的獨語",
+    "palette": [
+      "hsl(42 26% 68%)",
+      "hsl(42 24% 34%)",
+      "hsl(228 58% 56%)"
+    ],
+    "count": 5
+  },
+  {
     "id": "wb423e11cda",
     "maker": "kotobukiya",
     "label": "銀河英雄伝説",
@@ -3056,18 +3212,6 @@
       "hsl(302 26% 68%)",
       "hsl(302 24% 34%)",
       "hsl(128 58% 56%)"
-    ],
-    "count": 5
-  },
-  {
-    "id": "wc953e675cc",
-    "maker": "goodsmile",
-    "label": "桌上美術館-分館-",
-    "short": "桌上美術館-分館-",
-    "palette": [
-      "hsl(200 26% 68%)",
-      "hsl(200 24% 34%)",
-      "hsl(26 58% 56%)"
     ],
     "count": 5
   },
@@ -3312,6 +3456,18 @@
     "count": 4
   },
   {
+    "id": "wc921384f9a",
+    "maker": "goodsmile",
+    "label": "【我推的孩子】",
+    "short": "【我推的孩子】",
+    "palette": [
+      "hsl(195 26% 68%)",
+      "hsl(195 24% 34%)",
+      "hsl(21 58% 56%)"
+    ],
+    "count": 4
+  },
+  {
     "id": "w4f988c1c72",
     "maker": "goodsmile",
     "label": "10 count",
@@ -3348,6 +3504,18 @@
     "count": 4
   },
   {
+    "id": "w9cf186a4f7",
+    "maker": "goodsmile",
+    "label": "崩壞：星穹鐵道",
+    "short": "崩壞：星穹鐵道",
+    "palette": [
+      "hsl(291 26% 68%)",
+      "hsl(291 24% 34%)",
+      "hsl(117 58% 56%)"
+    ],
+    "count": 4
+  },
+  {
     "id": "w6a038f5209",
     "maker": "goodsmile",
     "label": "比宇宙更遠的地方",
@@ -3356,18 +3524,6 @@
       "hsl(58 26% 68%)",
       "hsl(58 24% 34%)",
       "hsl(244 58% 56%)"
-    ],
-    "count": 4
-  },
-  {
-    "id": "wec6f49529b",
-    "maker": "goodsmile",
-    "label": "變形金剛",
-    "short": "變形金剛",
-    "palette": [
-      "hsl(162 26% 68%)",
-      "hsl(162 24% 34%)",
-      "hsl(348 58% 56%)"
     ],
     "count": 4
   },
@@ -3440,6 +3596,18 @@
       "hsl(329 26% 68%)",
       "hsl(329 24% 34%)",
       "hsl(155 58% 56%)"
+    ],
+    "count": 4
+  },
+  {
+    "id": "w134472f548",
+    "maker": "goodsmile",
+    "label": "電馭叛客：邊緣行者",
+    "short": "電馭叛客：邊緣行者",
+    "palette": [
+      "hsl(156 26% 68%)",
+      "hsl(156 24% 34%)",
+      "hsl(342 58% 56%)"
     ],
     "count": 4
   },
@@ -3536,30 +3704,6 @@
       "hsl(305 26% 68%)",
       "hsl(305 24% 34%)",
       "hsl(131 58% 56%)"
-    ],
-    "count": 4
-  },
-  {
-    "id": "w37ef9301d2",
-    "maker": "goodsmile",
-    "label": "烙印勇士",
-    "short": "烙印勇士",
-    "palette": [
-      "hsl(11 26% 68%)",
-      "hsl(11 24% 34%)",
-      "hsl(197 58% 56%)"
-    ],
-    "count": 4
-  },
-  {
-    "id": "w24c54c23cd",
-    "maker": "goodsmile",
-    "label": "命運石之門",
-    "short": "命運石之門",
-    "palette": [
-      "hsl(252 26% 68%)",
-      "hsl(252 24% 34%)",
-      "hsl(78 58% 56%)"
     ],
     "count": 4
   },
@@ -3816,6 +3960,18 @@
     "count": 4
   },
   {
+    "id": "w67c3e2b42f",
+    "maker": "goodsmile",
+    "label": "五等分的新娘∽",
+    "short": "五等分的新娘∽",
+    "palette": [
+      "hsl(181 26% 68%)",
+      "hsl(181 24% 34%)",
+      "hsl(7 58% 56%)"
+    ],
+    "count": 4
+  },
+  {
     "id": "wdb7051f5fc",
     "maker": "kotobukiya",
     "label": "武装神姫",
@@ -3824,18 +3980,6 @@
       "hsl(8 26% 68%)",
       "hsl(8 24% 34%)",
       "hsl(194 58% 56%)"
-    ],
-    "count": 4
-  },
-  {
-    "id": "w4a7fcdcd53",
-    "maker": "goodsmile",
-    "label": "心跳文學社!",
-    "short": "心跳文學社!",
-    "palette": [
-      "hsl(184 26% 68%)",
-      "hsl(184 24% 34%)",
-      "hsl(10 58% 56%)"
     ],
     "count": 4
   },
@@ -3956,6 +4100,18 @@
       "hsl(267 26% 68%)",
       "hsl(267 24% 34%)",
       "hsl(93 58% 56%)"
+    ],
+    "count": 4
+  },
+  {
+    "id": "w4ec0bf3400",
+    "maker": "goodsmile",
+    "label": "葬送的芙莉蓮",
+    "short": "葬送的芙莉蓮",
+    "palette": [
+      "hsl(142 26% 68%)",
+      "hsl(142 24% 34%)",
+      "hsl(328 58% 56%)"
     ],
     "count": 4
   },
@@ -4200,18 +4356,6 @@
     "count": 4
   },
   {
-    "id": "wc921384f9a",
-    "maker": "goodsmile",
-    "label": "【我推的孩子】",
-    "short": "【我推的孩子】",
-    "palette": [
-      "hsl(195 26% 68%)",
-      "hsl(195 24% 34%)",
-      "hsl(21 58% 56%)"
-    ],
-    "count": 3
-  },
-  {
     "id": "w605c76dc24",
     "maker": "goodsmile",
     "label": "2gether只因我們天生一對",
@@ -4256,6 +4400,18 @@
       "hsl(354 26% 68%)",
       "hsl(354 24% 34%)",
       "hsl(180 58% 56%)"
+    ],
+    "count": 3
+  },
+  {
+    "id": "wbeeced69e7",
+    "maker": "goodsmile",
+    "label": "超時空輝耀姬！",
+    "short": "超時空輝耀姬！",
+    "palette": [
+      "hsl(194 26% 68%)",
+      "hsl(194 24% 34%)",
+      "hsl(20 58% 56%)"
     ],
     "count": 3
   },
@@ -4404,18 +4560,6 @@
     "count": 3
   },
   {
-    "id": "w134472f548",
-    "maker": "goodsmile",
-    "label": "電馭叛客：邊緣行者",
-    "short": "電馭叛客：邊緣行者",
-    "palette": [
-      "hsl(156 26% 68%)",
-      "hsl(156 24% 34%)",
-      "hsl(342 58% 56%)"
-    ],
-    "count": 3
-  },
-  {
     "id": "w4e5d6d6f89",
     "maker": "goodsmile",
     "label": "東方LostWord",
@@ -4556,18 +4700,6 @@
       "hsl(7 26% 68%)",
       "hsl(7 24% 34%)",
       "hsl(193 58% 56%)"
-    ],
-    "count": 3
-  },
-  {
-    "id": "wee808ff73e",
-    "maker": "goodsmile",
-    "label": "吉伊卡哇",
-    "short": "吉伊卡哇",
-    "palette": [
-      "hsl(191 26% 68%)",
-      "hsl(191 24% 34%)",
-      "hsl(17 58% 56%)"
     ],
     "count": 3
   },
@@ -4944,18 +5076,6 @@
     "count": 3
   },
   {
-    "id": "w0468466445",
-    "maker": "kotobukiya",
-    "label": "夏目友人帳",
-    "short": "夏目友人帳",
-    "palette": [
-      "hsl(269 26% 68%)",
-      "hsl(269 24% 34%)",
-      "hsl(95 58% 56%)"
-    ],
-    "count": 3
-  },
-  {
     "id": "w6e6ea59a63",
     "maker": "goodsmile",
     "label": "仙劍奇俠傳三",
@@ -4964,6 +5084,18 @@
       "hsl(115 26% 68%)",
       "hsl(115 24% 34%)",
       "hsl(301 58% 56%)"
+    ],
+    "count": 3
+  },
+  {
+    "id": "w72715e82e0",
+    "maker": "goodsmile",
+    "label": "新槍彈辯駁V3 大家的自相殘殺新學期",
+    "short": "新槍彈辯駁V3 大家的…",
+    "palette": [
+      "hsl(174 26% 68%)",
+      "hsl(174 24% 34%)",
+      "hsl(0 58% 56%)"
     ],
     "count": 3
   },
@@ -5084,6 +5216,18 @@
       "hsl(224 26% 68%)",
       "hsl(224 24% 34%)",
       "hsl(50 58% 56%)"
+    ],
+    "count": 3
+  },
+  {
+    "id": "w4aa8630d85",
+    "maker": "goodsmile",
+    "label": "勇者傳說",
+    "short": "勇者傳說",
+    "palette": [
+      "hsl(280 26% 68%)",
+      "hsl(280 24% 34%)",
+      "hsl(106 58% 56%)"
     ],
     "count": 3
   },
@@ -5400,6 +5544,18 @@
     "count": 3
   },
   {
+    "id": "wa4f058a3f9",
+    "maker": "goodsmile",
+    "label": "POP TEAM EPIC",
+    "short": "POP TEAM EP…",
+    "palette": [
+      "hsl(46 26% 68%)",
+      "hsl(46 24% 34%)",
+      "hsl(232 58% 56%)"
+    ],
+    "count": 3
+  },
+  {
     "id": "w7485975776",
     "maker": "goodsmile",
     "label": "PUI PUI 天竺鼠車車",
@@ -5664,6 +5820,30 @@
     "count": 3
   },
   {
+    "id": "wdd2887b85e",
+    "maker": "goodsmile",
+    "label": "《偶像大師 閃耀色彩》×《雀魂》",
+    "short": "《偶像大師 閃耀色彩》…",
+    "palette": [
+      "hsl(70 26% 68%)",
+      "hsl(70 24% 34%)",
+      "hsl(256 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
+    "id": "w1066f023bf",
+    "maker": "goodsmile",
+    "label": "《青春豬頭少年》系列",
+    "short": "《青春豬頭少年》系列",
+    "palette": [
+      "hsl(197 26% 68%)",
+      "hsl(197 24% 34%)",
+      "hsl(23 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
     "id": "wfdd3652617",
     "maker": "kotobukiya",
     "label": "『ファンタスティック・ビースト』シリーズ",
@@ -5864,6 +6044,30 @@
       "hsl(240 26% 68%)",
       "hsl(240 24% 34%)",
       "hsl(66 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
+    "id": "w8c75f0ee0e",
+    "maker": "goodsmile",
+    "label": "超級槍彈辯駁2×2",
+    "short": "超級槍彈辯駁2×2",
+    "palette": [
+      "hsl(32 26% 68%)",
+      "hsl(32 24% 34%)",
+      "hsl(218 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
+    "id": "w9ef6d21c01",
+    "maker": "goodsmile",
+    "label": "超時空要塞",
+    "short": "超時空要塞",
+    "palette": [
+      "hsl(23 26% 68%)",
+      "hsl(23 24% 34%)",
+      "hsl(209 58% 56%)"
     ],
     "count": 2
   },
@@ -6212,6 +6416,18 @@
       "hsl(267 26% 68%)",
       "hsl(267 24% 34%)",
       "hsl(93 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
+    "id": "w140286913d",
+    "maker": "goodsmile",
+    "label": "果然我的青春戀愛喜劇搞錯了。",
+    "short": "果然我的青春戀愛喜劇搞…",
+    "palette": [
+      "hsl(350 26% 68%)",
+      "hsl(350 24% 34%)",
+      "hsl(176 58% 56%)"
     ],
     "count": 2
   },
@@ -6672,6 +6888,30 @@
     "count": 2
   },
   {
+    "id": "wdb27464265",
+    "maker": "goodsmile",
+    "label": "洛克人",
+    "short": "洛克人",
+    "palette": [
+      "hsl(18 26% 68%)",
+      "hsl(18 24% 34%)",
+      "hsl(204 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
+    "id": "wb40d1d871e",
+    "maker": "goodsmile",
+    "label": "貓娘樂園 世界連結",
+    "short": "貓娘樂園 世界連結",
+    "palette": [
+      "hsl(235 26% 68%)",
+      "hsl(235 24% 34%)",
+      "hsl(61 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
     "id": "wd2f4b79a21",
     "maker": "goodsmile",
     "label": "密特羅德 生存恐懼",
@@ -6740,6 +6980,18 @@
       "hsl(136 26% 68%)",
       "hsl(136 24% 34%)",
       "hsl(322 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
+    "id": "w304d21ba10",
+    "maker": "goodsmile",
+    "label": "黏土人配件",
+    "short": "黏土人配件",
+    "palette": [
+      "hsl(287 26% 68%)",
+      "hsl(287 24% 34%)",
+      "hsl(113 58% 56%)"
     ],
     "count": 2
   },
@@ -7104,18 +7356,6 @@
     "count": 2
   },
   {
-    "id": "wd690630260",
-    "maker": "goodsmile",
-    "label": "勝利女神：妮姬",
-    "short": "勝利女神：妮姬",
-    "palette": [
-      "hsl(52 26% 68%)",
-      "hsl(52 24% 34%)",
-      "hsl(238 58% 56%)"
-    ],
-    "count": 2
-  },
-  {
     "id": "w2660d202af",
     "maker": "kotobukiya",
     "label": "勝利の女神：NIKKE",
@@ -7404,14 +7644,14 @@
     "count": 2
   },
   {
-    "id": "w67c3e2b42f",
+    "id": "w8a2a9d0f9d",
     "maker": "goodsmile",
-    "label": "五等分的新娘∽",
-    "short": "五等分的新娘∽",
+    "label": "物語系列",
+    "short": "物語系列",
     "palette": [
-      "hsl(181 26% 68%)",
-      "hsl(181 24% 34%)",
-      "hsl(7 58% 56%)"
+      "hsl(145 26% 68%)",
+      "hsl(145 24% 34%)",
+      "hsl(331 58% 56%)"
     ],
     "count": 2
   },
@@ -7464,18 +7704,6 @@
     "count": 2
   },
   {
-    "id": "w72715e82e0",
-    "maker": "goodsmile",
-    "label": "新槍彈辯駁V3 大家的自相殘殺新學期",
-    "short": "新槍彈辯駁V3 大家的…",
-    "palette": [
-      "hsl(174 26% 68%)",
-      "hsl(174 24% 34%)",
-      "hsl(0 58% 56%)"
-    ],
-    "count": 2
-  },
-  {
     "id": "wef721a00f2",
     "maker": "goodsmile",
     "label": "新網球王子",
@@ -7496,6 +7724,18 @@
       "hsl(63 26% 68%)",
       "hsl(63 24% 34%)",
       "hsl(249 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
+    "id": "wf464f7f48c",
+    "maker": "goodsmile",
+    "label": "星塔旅人",
+    "short": "星塔旅人",
+    "palette": [
+      "hsl(34 26% 68%)",
+      "hsl(34 24% 34%)",
+      "hsl(220 58% 56%)"
     ],
     "count": 2
   },
@@ -7560,18 +7800,6 @@
     "count": 2
   },
   {
-    "id": "w8e1c8fa41e",
-    "maker": "goodsmile",
-    "label": "藥師少女的獨語",
-    "short": "藥師少女的獨語",
-    "palette": [
-      "hsl(42 26% 68%)",
-      "hsl(42 24% 34%)",
-      "hsl(228 58% 56%)"
-    ],
-    "count": 2
-  },
-  {
     "id": "w2c5df41ba3",
     "maker": "kotobukiya",
     "label": "一撃殺虫！！ホイホイさん NEW EDITION",
@@ -7580,6 +7808,18 @@
       "hsl(98 26% 68%)",
       "hsl(98 24% 34%)",
       "hsl(284 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
+    "id": "w660bc0553a",
+    "maker": "goodsmile",
+    "label": "異塵餘生",
+    "short": "異塵餘生",
+    "palette": [
+      "hsl(118 26% 68%)",
+      "hsl(118 24% 34%)",
+      "hsl(304 58% 56%)"
     ],
     "count": 2
   },
@@ -7668,6 +7908,18 @@
     "count": 2
   },
   {
+    "id": "w8373172660",
+    "maker": "goodsmile",
+    "label": "勇者警察",
+    "short": "勇者警察",
+    "palette": [
+      "hsl(231 26% 68%)",
+      "hsl(231 24% 34%)",
+      "hsl(57 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
     "id": "wa9c2a5fe36",
     "maker": "kotobukiya",
     "label": "勇者聖戦バーンガーン",
@@ -7712,6 +7964,18 @@
       "hsl(7 26% 68%)",
       "hsl(7 24% 34%)",
       "hsl(193 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
+    "id": "wa296446859",
+    "maker": "goodsmile",
+    "label": "與妳相戀到生命盡頭",
+    "short": "與妳相戀到生命盡頭",
+    "palette": [
+      "hsl(250 26% 68%)",
+      "hsl(250 24% 34%)",
+      "hsl(76 58% 56%)"
     ],
     "count": 2
   },
@@ -7784,18 +8048,6 @@
       "hsl(148 26% 68%)",
       "hsl(148 24% 34%)",
       "hsl(334 58% 56%)"
-    ],
-    "count": 2
-  },
-  {
-    "id": "w4ec0bf3400",
-    "maker": "goodsmile",
-    "label": "葬送的芙莉蓮",
-    "short": "葬送的芙莉蓮",
-    "palette": [
-      "hsl(142 26% 68%)",
-      "hsl(142 24% 34%)",
-      "hsl(328 58% 56%)"
     ],
     "count": 2
   },
@@ -7892,6 +8144,18 @@
       "hsl(166 26% 68%)",
       "hsl(166 24% 34%)",
       "hsl(352 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
+    "id": "w3941fd1726",
+    "maker": "goodsmile",
+    "label": "重音Teto",
+    "short": "重音Teto",
+    "palette": [
+      "hsl(87 26% 68%)",
+      "hsl(87 24% 34%)",
+      "hsl(273 58% 56%)"
     ],
     "count": 2
   },
@@ -8232,6 +8496,18 @@
     "count": 2
   },
   {
+    "id": "w3d2c74fa9e",
+    "maker": "goodsmile",
+    "label": "Harmonia bloom",
+    "short": "Harmonia bl…",
+    "palette": [
+      "hsl(38 26% 68%)",
+      "hsl(38 24% 34%)",
+      "hsl(224 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
     "id": "w794aa9cf04",
     "maker": "goodsmile",
     "label": "Hisasi Original Bunny series",
@@ -8336,18 +8612,6 @@
       "hsl(300 26% 68%)",
       "hsl(300 24% 34%)",
       "hsl(126 58% 56%)"
-    ],
-    "count": 2
-  },
-  {
-    "id": "wa4f058a3f9",
-    "maker": "goodsmile",
-    "label": "POP TEAM EPIC",
-    "short": "POP TEAM EP…",
-    "palette": [
-      "hsl(46 26% 68%)",
-      "hsl(46 24% 34%)",
-      "hsl(232 58% 56%)"
     ],
     "count": 2
   },
@@ -8832,6 +9096,18 @@
     "count": 1
   },
   {
+    "id": "w9428b86e73",
+    "maker": "goodsmile",
+    "label": "《劇場版 藥師少女的獨語 亡妃的秘寶》",
+    "short": "《劇場版 藥師少女的獨…",
+    "palette": [
+      "hsl(228 26% 68%)",
+      "hsl(228 24% 34%)",
+      "hsl(54 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "waba0d0b498",
     "maker": "goodsmile",
     "label": "《快打旋風》系列",
@@ -8864,6 +9140,18 @@
       "hsl(270 26% 68%)",
       "hsl(270 24% 34%)",
       "hsl(96 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "w25bb8b0ab8",
+    "maker": "goodsmile",
+    "label": "《Monster Hunter》系列",
+    "short": "《Monster Hu…",
+    "palette": [
+      "hsl(207 26% 68%)",
+      "hsl(207 24% 34%)",
+      "hsl(33 58% 56%)"
     ],
     "count": 1
   },
@@ -9128,18 +9416,6 @@
       "hsl(59 26% 68%)",
       "hsl(59 24% 34%)",
       "hsl(245 58% 56%)"
-    ],
-    "count": 1
-  },
-  {
-    "id": "w9cf186a4f7",
-    "maker": "goodsmile",
-    "label": "崩壞：星穹鐵道",
-    "short": "崩壞：星穹鐵道",
-    "palette": [
-      "hsl(291 26% 68%)",
-      "hsl(291 24% 34%)",
-      "hsl(117 58% 56%)"
     ],
     "count": 1
   },
@@ -9756,6 +10032,18 @@
     "count": 1
   },
   {
+    "id": "w4e2d9b659b",
+    "maker": "goodsmile",
+    "label": "電視動畫《光逝去的夏天》",
+    "short": "電視動畫《光逝去的夏天》",
+    "palette": [
+      "hsl(284 26% 68%)",
+      "hsl(284 24% 34%)",
+      "hsl(110 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "wbe86c790e4",
     "maker": "goodsmile",
     "label": "電視動畫《進擊的巨人》",
@@ -9792,6 +10080,18 @@
     "count": 1
   },
   {
+    "id": "w4b599a2a5b",
+    "maker": "goodsmile",
+    "label": "電視動畫《魔法帽的工作室》",
+    "short": "電視動畫《魔法帽的工作…",
+    "palette": [
+      "hsl(188 26% 68%)",
+      "hsl(188 24% 34%)",
+      "hsl(14 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "w4861c85b02",
     "maker": "goodsmile",
     "label": "電視動畫《神劍闖江湖－明治劍客浪漫譚－》",
@@ -9812,6 +10112,18 @@
       "hsl(212 26% 68%)",
       "hsl(212 24% 34%)",
       "hsl(38 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "w76344a1ef3",
+    "maker": "goodsmile",
+    "label": "電視動畫《我獨自升級》",
+    "short": "電視動畫《我獨自升級》",
+    "palette": [
+      "hsl(34 26% 68%)",
+      "hsl(34 24% 34%)",
+      "hsl(220 58% 56%)"
     ],
     "count": 1
   },
@@ -9960,6 +10272,18 @@
     "count": 1
   },
   {
+    "id": "wff3dadd914",
+    "maker": "goodsmile",
+    "label": "動畫《孤獨搖滾！》",
+    "short": "動畫《孤獨搖滾！》",
+    "palette": [
+      "hsl(243 26% 68%)",
+      "hsl(243 24% 34%)",
+      "hsl(69 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "w8d9006321b",
     "maker": "goodsmile",
     "label": "斗羅大陸",
@@ -9968,6 +10292,18 @@
       "hsl(46 26% 68%)",
       "hsl(46 24% 34%)",
       "hsl(232 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "w4127b35bad",
+    "maker": "goodsmile",
+    "label": "嘟嘟臉惡作劇",
+    "short": "嘟嘟臉惡作劇",
+    "palette": [
+      "hsl(228 26% 68%)",
+      "hsl(228 24% 34%)",
+      "hsl(54 58% 56%)"
     ],
     "count": 1
   },
@@ -10112,6 +10448,18 @@
       "hsl(145 26% 68%)",
       "hsl(145 24% 34%)",
       "hsl(331 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "wf3db9e7937",
+    "maker": "goodsmile",
+    "label": "放鬆時光：與你共享Lo-Fi故事",
+    "short": "放鬆時光：與你共享Lo…",
+    "palette": [
+      "hsl(65 26% 68%)",
+      "hsl(65 24% 34%)",
+      "hsl(251 58% 56%)"
     ],
     "count": 1
   },
@@ -10512,18 +10860,6 @@
     "count": 1
   },
   {
-    "id": "w140286913d",
-    "maker": "goodsmile",
-    "label": "果然我的青春戀愛喜劇搞錯了。",
-    "short": "果然我的青春戀愛喜劇搞…",
-    "palette": [
-      "hsl(350 26% 68%)",
-      "hsl(350 24% 34%)",
-      "hsl(176 58% 56%)"
-    ],
-    "count": 1
-  },
-  {
     "id": "w4cec1b6f4e",
     "maker": "goodsmile",
     "label": "哈姆太郎",
@@ -10680,6 +11016,18 @@
     "count": 1
   },
   {
+    "id": "w378c200f32",
+    "maker": "goodsmile",
+    "label": "環太平洋",
+    "short": "環太平洋",
+    "palette": [
+      "hsl(66 26% 68%)",
+      "hsl(66 24% 34%)",
+      "hsl(252 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "w4e35caf403",
     "maker": "kotobukiya",
     "label": "幻奏美術館",
@@ -10772,6 +11120,18 @@
       "hsl(35 26% 68%)",
       "hsl(35 24% 34%)",
       "hsl(221 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "w7301874389",
+    "maker": "goodsmile",
+    "label": "極惡老大",
+    "short": "極惡老大",
+    "palette": [
+      "hsl(38 26% 68%)",
+      "hsl(38 24% 34%)",
+      "hsl(224 58% 56%)"
     ],
     "count": 1
   },
@@ -11376,6 +11736,18 @@
     "count": 1
   },
   {
+    "id": "w4f2f66ce5b",
+    "maker": "goodsmile",
+    "label": "玲音",
+    "short": "玲音",
+    "palette": [
+      "hsl(225 26% 68%)",
+      "hsl(225 24% 34%)",
+      "hsl(51 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "w171f19fd99",
     "maker": "goodsmile",
     "label": "零之使魔",
@@ -11384,6 +11756,18 @@
       "hsl(156 26% 68%)",
       "hsl(156 24% 34%)",
       "hsl(342 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "wb59ff62c88",
+    "maker": "goodsmile",
+    "label": "零之使魔F",
+    "short": "零之使魔F",
+    "palette": [
+      "hsl(84 26% 68%)",
+      "hsl(84 24% 34%)",
+      "hsl(270 58% 56%)"
     ],
     "count": 1
   },
@@ -11460,6 +11844,18 @@
     "count": 1
   },
   {
+    "id": "w436b874460",
+    "maker": "goodsmile",
+    "label": "羅德斯島戰記",
+    "short": "羅德斯島戰記",
+    "palette": [
+      "hsl(107 26% 68%)",
+      "hsl(107 24% 34%)",
+      "hsl(293 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "w4033168ade",
     "maker": "goodsmile",
     "label": "蘿樂娜的鍊金工房 ～亞蘭德之鍊金術士～",
@@ -11468,18 +11864,6 @@
       "hsl(240 26% 68%)",
       "hsl(240 24% 34%)",
       "hsl(66 58% 56%)"
-    ],
-    "count": 1
-  },
-  {
-    "id": "wdb27464265",
-    "maker": "goodsmile",
-    "label": "洛克人",
-    "short": "洛克人",
-    "palette": [
-      "hsl(18 26% 68%)",
-      "hsl(18 24% 34%)",
-      "hsl(204 58% 56%)"
     ],
     "count": 1
   },
@@ -11604,6 +11988,18 @@
     "count": 1
   },
   {
+    "id": "w5429c4c613",
+    "maker": "goodsmile",
+    "label": "魅影巨神 THE Big O",
+    "short": "魅影巨神 THE Bi…",
+    "palette": [
+      "hsl(246 26% 68%)",
+      "hsl(246 24% 34%)",
+      "hsl(72 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "w30fb5c4c4d",
     "maker": "goodsmile",
     "label": "夢幻遊戲",
@@ -11696,6 +12092,18 @@
       "hsl(359 26% 68%)",
       "hsl(359 24% 34%)",
       "hsl(185 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "wf9f591c94e",
+    "maker": "goodsmile",
+    "label": "命運石之門 RE:BOOT",
+    "short": "命運石之門 RE:BO…",
+    "palette": [
+      "hsl(354 26% 68%)",
+      "hsl(354 24% 34%)",
+      "hsl(180 58% 56%)"
     ],
     "count": 1
   },
@@ -11868,6 +12276,18 @@
     "count": 1
   },
   {
+    "id": "w87317a47b0",
+    "maker": "goodsmile",
+    "label": "魔男伊奇",
+    "short": "魔男伊奇",
+    "palette": [
+      "hsl(293 26% 68%)",
+      "hsl(293 24% 34%)",
+      "hsl(119 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "w1b6c36b041",
     "maker": "goodsmile",
     "label": "魔神英雄傳",
@@ -11964,14 +12384,14 @@
     "count": 1
   },
   {
-    "id": "w304d21ba10",
+    "id": "w723331a513",
     "maker": "goodsmile",
-    "label": "黏土人配件",
-    "short": "黏土人配件",
+    "label": "尼爾：自動人形 Ver1.1a",
+    "short": "尼爾：自動人形 Ver…",
     "palette": [
-      "hsl(287 26% 68%)",
-      "hsl(287 24% 34%)",
-      "hsl(113 58% 56%)"
+      "hsl(179 26% 68%)",
+      "hsl(179 24% 34%)",
+      "hsl(5 58% 56%)"
     ],
     "count": 1
   },
@@ -12228,6 +12648,18 @@
     "count": 1
   },
   {
+    "id": "w1db7498e65",
+    "maker": "goodsmile",
+    "label": "齊木楠雄的災難",
+    "short": "齊木楠雄的災難",
+    "palette": [
+      "hsl(146 26% 68%)",
+      "hsl(146 24% 34%)",
+      "hsl(332 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "wf1b453fd8d",
     "maker": "goodsmile",
     "label": "騎士&魔法",
@@ -12296,6 +12728,30 @@
       "hsl(48 26% 68%)",
       "hsl(48 24% 34%)",
       "hsl(234 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "wbff18dae8c",
+    "maker": "goodsmile",
+    "label": "槍彈辯駁1‧2 Reload",
+    "short": "槍彈辯駁1‧2 Rel…",
+    "palette": [
+      "hsl(194 26% 68%)",
+      "hsl(194 24% 34%)",
+      "hsl(20 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "wd0e70d9d4a",
+    "maker": "goodsmile",
+    "label": "槍與劍",
+    "short": "槍與劍",
+    "palette": [
+      "hsl(136 26% 68%)",
+      "hsl(136 24% 34%)",
+      "hsl(322 58% 56%)"
     ],
     "count": 1
   },
@@ -12384,6 +12840,18 @@
     "count": 1
   },
   {
+    "id": "w60dfa7042f",
+    "maker": "goodsmile",
+    "label": "熱血最強",
+    "short": "熱血最強",
+    "palette": [
+      "hsl(309 26% 68%)",
+      "hsl(309 24% 34%)",
+      "hsl(135 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "w062f4469f2",
     "maker": "goodsmile",
     "label": "人中之龍",
@@ -12440,6 +12908,18 @@
       "hsl(235 26% 68%)",
       "hsl(235 24% 34%)",
       "hsl(61 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "wcb74094be6",
+    "maker": "goodsmile",
+    "label": "賽馬娘 灰髮灰姑娘",
+    "short": "賽馬娘 灰髮灰姑娘",
+    "palette": [
+      "hsl(233 26% 68%)",
+      "hsl(233 24% 34%)",
+      "hsl(59 58% 56%)"
     ],
     "count": 1
   },
@@ -12552,6 +13032,18 @@
     "count": 1
   },
   {
+    "id": "w5146ab5038",
+    "maker": "goodsmile",
+    "label": "少女發動機",
+    "short": "少女發動機",
+    "palette": [
+      "hsl(224 26% 68%)",
+      "hsl(224 24% 34%)",
+      "hsl(50 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "w088beb9eca",
     "maker": "goodsmile",
     "label": "少女革命",
@@ -12560,6 +13052,18 @@
       "hsl(270 26% 68%)",
       "hsl(270 24% 34%)",
       "hsl(96 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "w451d6e1f82",
+    "maker": "goodsmile",
+    "label": "少女前線2：追放",
+    "short": "少女前線2：追放",
+    "palette": [
+      "hsl(153 26% 68%)",
+      "hsl(153 24% 34%)",
+      "hsl(339 58% 56%)"
     ],
     "count": 1
   },
@@ -12716,6 +13220,18 @@
       "hsl(68 26% 68%)",
       "hsl(68 24% 34%)",
       "hsl(254 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "wc5d6fc6f4f",
+    "maker": "goodsmile",
+    "label": "聖戰士丹拜因",
+    "short": "聖戰士丹拜因",
+    "palette": [
+      "hsl(307 26% 68%)",
+      "hsl(307 24% 34%)",
+      "hsl(133 58% 56%)"
     ],
     "count": 1
   },
@@ -12920,6 +13436,18 @@
       "hsl(339 26% 68%)",
       "hsl(339 24% 34%)",
       "hsl(165 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "w332dd38767",
+    "maker": "goodsmile",
+    "label": "溯行可動台座系列",
+    "short": "溯行可動台座系列",
+    "palette": [
+      "hsl(18 26% 68%)",
+      "hsl(18 24% 34%)",
+      "hsl(204 58% 56%)"
     ],
     "count": 1
   },
@@ -13232,6 +13760,18 @@
       "hsl(136 26% 68%)",
       "hsl(136 24% 34%)",
       "hsl(322 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "wa1c8be7a8e",
+    "maker": "goodsmile",
+    "label": "我們不可能成為戀人！絕對不行。（※似乎可行？）",
+    "short": "我們不可能成為戀人！絕…",
+    "palette": [
+      "hsl(48 26% 68%)",
+      "hsl(48 24% 34%)",
+      "hsl(234 58% 56%)"
     ],
     "count": 1
   },
@@ -13884,18 +14424,6 @@
     "count": 1
   },
   {
-    "id": "w660bc0553a",
-    "maker": "goodsmile",
-    "label": "異塵餘生",
-    "short": "異塵餘生",
-    "palette": [
-      "hsl(118 26% 68%)",
-      "hsl(118 24% 34%)",
-      "hsl(304 58% 56%)"
-    ],
-    "count": 1
-  },
-  {
     "id": "w71c53d211a",
     "maker": "goodsmile",
     "label": "異度神劍 終極版",
@@ -14204,6 +14732,18 @@
       "hsl(134 26% 68%)",
       "hsl(134 24% 34%)",
       "hsl(320 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "wc9c68c4016",
+    "maker": "goodsmile",
+    "label": "遊戲王GX",
+    "short": "遊戲王GX",
+    "palette": [
+      "hsl(316 26% 68%)",
+      "hsl(316 24% 34%)",
+      "hsl(142 58% 56%)"
     ],
     "count": 1
   },
@@ -14616,6 +15156,18 @@
     "count": 1
   },
   {
+    "id": "w23730dd48a",
+    "maker": "goodsmile",
+    "label": "正宗哥吉拉",
+    "short": "正宗哥吉拉",
+    "palette": [
+      "hsl(255 26% 68%)",
+      "hsl(255 24% 34%)",
+      "hsl(81 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "wb77c095dd3",
     "maker": "kotobukiya",
     "label": "隻狼: SHADOWS DIE TWICE",
@@ -14672,18 +15224,6 @@
       "hsl(111 26% 68%)",
       "hsl(111 24% 34%)",
       "hsl(297 58% 56%)"
-    ],
-    "count": 1
-  },
-  {
-    "id": "wed96b55a7f",
-    "maker": "goodsmile",
-    "label": "主播女孩重度依賴",
-    "short": "主播女孩重度依賴",
-    "palette": [
-      "hsl(290 26% 68%)",
-      "hsl(290 24% 34%)",
-      "hsl(116 58% 56%)"
     ],
     "count": 1
   },
@@ -14760,6 +15300,18 @@
     "count": 1
   },
   {
+    "id": "wa8c9b68dc6",
+    "maker": "goodsmile",
+    "label": "裝甲騎兵波德姆茲",
+    "short": "裝甲騎兵波德姆茲",
+    "palette": [
+      "hsl(176 26% 68%)",
+      "hsl(176 24% 34%)",
+      "hsl(2 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "wc22bf0a36a",
     "maker": "goodsmile",
     "label": "灼熱卡巴迪",
@@ -14768,6 +15320,18 @@
       "hsl(238 26% 68%)",
       "hsl(238 24% 34%)",
       "hsl(64 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "w216884e87f",
+    "maker": "goodsmile",
+    "label": "棕色塵埃2",
+    "short": "棕色塵埃2",
+    "palette": [
+      "hsl(333 26% 68%)",
+      "hsl(333 24% 34%)",
+      "hsl(159 58% 56%)"
     ],
     "count": 1
   },
@@ -14820,6 +15384,18 @@
     "count": 1
   },
   {
+    "id": "we47a0ae1f9",
+    "maker": "goodsmile",
+    "label": "Alien Stage異星舞台",
+    "short": "Alien Stage…",
+    "palette": [
+      "hsl(262 26% 68%)",
+      "hsl(262 24% 34%)",
+      "hsl(88 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "waac2a6b7f4",
     "maker": "goodsmile",
     "label": "Angel Beats!-1st beat-",
@@ -14864,6 +15440,18 @@
       "hsl(236 26% 68%)",
       "hsl(236 24% 34%)",
       "hsl(62 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "we1828e5dbe",
+    "maker": "goodsmile",
+    "label": "Aya&friends",
+    "short": "Aya&friends",
+    "palette": [
+      "hsl(212 26% 68%)",
+      "hsl(212 24% 34%)",
+      "hsl(38 58% 56%)"
     ],
     "count": 1
   },
@@ -15144,6 +15732,18 @@
     "count": 1
   },
   {
+    "id": "w9d0b04f00e",
+    "maker": "goodsmile",
+    "label": "Dioramansion200",
+    "short": "Dioramansio…",
+    "palette": [
+      "hsl(333 26% 68%)",
+      "hsl(333 24% 34%)",
+      "hsl(159 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "wd21dd95c88",
     "maker": "goodsmile",
     "label": "DOTA2",
@@ -15332,6 +15932,30 @@
       "hsl(294 26% 68%)",
       "hsl(294 24% 34%)",
       "hsl(120 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "wc667a5de6c",
+    "maker": "goodsmile",
+    "label": "FINAL FANTASY X",
+    "short": "FINAL FANTA…",
+    "palette": [
+      "hsl(228 26% 68%)",
+      "hsl(228 24% 34%)",
+      "hsl(54 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "w5938556056",
+    "maker": "goodsmile",
+    "label": "FINAL FANTASY XIV",
+    "short": "FINAL FANTA…",
+    "palette": [
+      "hsl(32 26% 68%)",
+      "hsl(32 24% 34%)",
+      "hsl(218 58% 56%)"
     ],
     "count": 1
   },
@@ -15600,6 +16224,18 @@
     "count": 1
   },
   {
+    "id": "wd6c8315e41",
+    "maker": "goodsmile",
+    "label": "KAITO",
+    "short": "KAITO",
+    "palette": [
+      "hsl(79 26% 68%)",
+      "hsl(79 24% 34%)",
+      "hsl(265 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "wea0ce11417",
     "maker": "goodsmile",
     "label": "Kanon",
@@ -15660,6 +16296,18 @@
     "count": 1
   },
   {
+    "id": "wa933f273b2",
+    "maker": "goodsmile",
+    "label": "Limbus Company",
+    "short": "Limbus Comp…",
+    "palette": [
+      "hsl(184 26% 68%)",
+      "hsl(184 24% 34%)",
+      "hsl(10 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "w425f4a7a22",
     "maker": "goodsmile",
     "label": "Love Live! 虹咲學園 學園偶像同好會",
@@ -15696,6 +16344,18 @@
     "count": 1
   },
   {
+    "id": "we2bdbe10f3",
+    "maker": "goodsmile",
+    "label": "Marvel&#039;s Spider-Man 2",
+    "short": "Marvel&#039…",
+    "palette": [
+      "hsl(158 26% 68%)",
+      "hsl(158 24% 34%)",
+      "hsl(344 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "w53a87ecfdd",
     "maker": "goodsmile",
     "label": "MechatroWeGo",
@@ -15716,6 +16376,18 @@
       "hsl(79 26% 68%)",
       "hsl(79 24% 34%)",
       "hsl(265 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "we86d97a696",
+    "maker": "goodsmile",
+    "label": "Mint Fantôme",
+    "short": "Mint Fantôme",
+    "palette": [
+      "hsl(333 26% 68%)",
+      "hsl(333 24% 34%)",
+      "hsl(159 58% 56%)"
     ],
     "count": 1
   },
@@ -15792,6 +16464,18 @@
     "count": 1
   },
   {
+    "id": "w07a3ea8710",
+    "maker": "goodsmile",
+    "label": "Neuro-sama",
+    "short": "Neuro-sama",
+    "palette": [
+      "hsl(76 26% 68%)",
+      "hsl(76 24% 34%)",
+      "hsl(262 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "w9b2beec142",
     "maker": "goodsmile",
     "label": "NieR Re[in]carnation（尼爾：重生）",
@@ -15848,6 +16532,18 @@
       "hsl(163 26% 68%)",
       "hsl(163 24% 34%)",
       "hsl(349 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "w06ed57d91e",
+    "maker": "goodsmile",
+    "label": "P丸樣｡",
+    "short": "P丸樣｡",
+    "palette": [
+      "hsl(250 26% 68%)",
+      "hsl(250 24% 34%)",
+      "hsl(76 58% 56%)"
     ],
     "count": 1
   },
@@ -16056,6 +16752,18 @@
     "count": 1
   },
   {
+    "id": "w1070cfaba2",
+    "maker": "goodsmile",
+    "label": "SILENT HILL f",
+    "short": "SILENT HILL…",
+    "palette": [
+      "hsl(339 26% 68%)",
+      "hsl(339 24% 34%)",
+      "hsl(165 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "w24097bdaaa",
     "maker": "goodsmile",
     "label": "SiStart!",
@@ -16232,6 +16940,18 @@
       "hsl(186 26% 68%)",
       "hsl(186 24% 34%)",
       "hsl(12 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "wbe7d794398",
+    "maker": "goodsmile",
+    "label": "TIYOKO",
+    "short": "TIYOKO",
+    "palette": [
+      "hsl(166 26% 68%)",
+      "hsl(166 24% 34%)",
+      "hsl(352 58% 56%)"
     ],
     "count": 1
   },

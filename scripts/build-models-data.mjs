@@ -24,6 +24,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { createHash } from 'node:crypto';
 import { subjectOf, subjectKey, subjectKeyFor } from './lib/subject.mjs';
+import { buildMallIndex, matchMall, parsePreorderWindow, saleStatusOf } from './lib/mall.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_FILE = 'src/data/models.kits.ts';
@@ -158,7 +159,11 @@ const VENDORS = [
   {
     id: 'goodsmile',
     label: 'GOOD SMILE COMPANY',
-    sources: ['src/data/models.kits.goodsmile.json'],
+    sources: [
+      'src/data/models.kits.goodsmile.json',
+      /* 商城上正在开放预购、资料库里还没有的新品 */
+      'src/data/models.kits.goodsmile-preorder.json',
+    ],
     categories: {
       figma: 'goodsmile:figma',
       nendoroid: 'goodsmile:nendoroid',
@@ -208,6 +213,11 @@ function readJsonArray(rel) {
   } catch {
     return [];
   }
+}
+
+/** 同上，但返回原始数组（带来源标记的那个版本是给事实文件用的） */
+function readJsonRaw(rel) {
+  return readJsonArray(rel);
 }
 
 /** 读一个 JSON 对象文件；没有或坏了就当作空 */
@@ -270,6 +280,80 @@ function releaseKey(released) {
   const m = /^(\d{4})(?:-(\d{1,2}))?(?:-(\d{1,2}))?/.exec(released);
   if (!m) return 0;
   return Number(m[1]) * 10000 + Number(m[2] ?? 1) * 100 + Number(m[3] ?? 1);
+}
+
+/* -------------------------------------------------------------------------- */
+/* 良笑商城：在售状态与现价                                                     */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * 良笑有���套系统：
+ *
+ *   goodsmile.info  产品资料库——中文品名、作品名、发售月、建议零售价
+ *   goodsmile.com   线上商城——当下的在售状态、现价、限定标签
+ *
+ * 两边的 id 各是各的，**同一个产品两边的 id 并不相等**，只能靠品名对照。
+ * 对照规则见 scripts/lib/mall.mjs。
+ */
+const MALL = readJsonRaw('src/data/models.kits.goodsmile-mall.json');
+const MALL_STATUS = readJsonRaw('src/data/models.kits.goodsmile-mall-status.json');
+
+const MALL_INDEX = buildMallIndex(MALL);
+const MALL_STATUS_BY_ID = new Map(
+  MALL_STATUS.filter((s) => s && s.mallId).map((s) => [String(s.mallId), s]),
+);
+
+/** 商城状态标签里属于「状态」而不是「限定」的几个 */
+const MALL_STATUS_LABELS = new Set(['開放預購中', '予約受付中', '販売中', '完売', '売り切れ']);
+
+/** 状态 → 界面上的说法 */
+const SALE_STATUS_LABEL = {
+  preorder: '预约中',
+  available: '在售',
+  soldout: '已售罄',
+  ended: '已结束',
+};
+
+/** 商城那边的现状，挂到资料库记录上 */
+function saleOverlay(mall, how) {
+  if (!mall) {
+    return {
+      saleStatus: null,
+      saleStatusText: '',
+      salePriceJpy: 0,
+      saleLabels: [],
+      saleUrl: null,
+      saleCode: '',
+      saleNote: '',
+      saleMatch: '',
+      salePreorderFrom: '',
+      salePreorderTo: '',
+    };
+  }
+  const st = MALL_STATUS_BY_ID.get(String(mall.mallId));
+  /* 状态在这里重新算一遍：判定规则改过之后不必重抓详情页 */
+  const status = st
+    ? saleStatusOf(st.statusText, st.orderButton, st.priceJpy || mall.priceJpy || 0)
+    : null;
+  const labels = (mall.labels || []).filter((l) => l && !MALL_STATUS_LABELS.has(l));
+  /* 预约区间：抓取器顺手存了一份，这里再从状态原文兜一次（规则改过也能兜住） */
+  const window = st
+    ? st.preorderFrom || st.preorderTo
+      ? { from: st.preorderFrom || '', to: st.preorderTo || '' }
+      : parsePreorderWindow(st.statusText)
+    : { from: '', to: '' };
+  return {
+    saleStatus: status && status !== 'no-data' && status !== 'unknown' ? status : null,
+    saleStatusText: st ? st.statusText || '' : '',
+    salePriceJpy: (st && st.priceJpy) || mall.priceJpy || 0,
+    saleLabels: labels,
+    saleUrl: mall.url || `https://www.goodsmile.com/zh/product/${mall.mallId}`,
+    saleCode: mall.mallNo || '',
+    saleNote: st ? st.note || '' : '',
+    saleMatch: how || '',
+    salePreorderFrom: window.from,
+    salePreorderTo: window.to,
+  };
 }
 
 function normalise(entry, file, vendor) {
@@ -363,6 +447,26 @@ function normalise(entry, file, vendor) {
   const localImage = rawImage?.startsWith('/gundam/') ? rawImage : null;
   const imageUrl = localImage ? null : rawImage || optionalText(entry.imageUrl);
 
+  /* 良笑：把商城那边的现状挂上来（在售状态、现价、限定标签） */
+  const sale =
+    vendor.id === 'goodsmile'
+      ? (() => {
+          const hit = matchMall(MALL_INDEX, name, price ?? undefined);
+          return saleOverlay(hit ? hit.mall : null, hit ? hit.how : '');
+        })()
+      : {
+          saleStatus: null,
+          saleStatusText: '',
+          salePriceJpy: 0,
+          saleLabels: [],
+          saleUrl: null,
+          saleCode: '',
+          saleNote: '',
+          saleMatch: '',
+          salePreorderFrom: '',
+          salePreorderTo: '',
+        };
+
   return {
     id,
     name,
@@ -391,6 +495,7 @@ function normalise(entry, file, vendor) {
     taxRate: Number.isFinite(entry.taxRate) ? entry.taxRate : null,
     sourceJp: optionalText(entry.sourceJp),
     units: Array.isArray(entry.units) && entry.units.length ? entry.units : undefined,
+    ...sale,
   };
 }
 
@@ -433,6 +538,16 @@ function merge(a, b) {
     taxRate: keep.taxRate ?? other.taxRate,
     sourceJp: keep.sourceJp ?? other.sourceJp,
     units: keep.units ?? other.units,
+    saleStatus: keep.saleStatus ?? other.saleStatus,
+    saleStatusText: keep.saleStatusText || other.saleStatusText,
+    salePriceJpy: keep.salePriceJpy || other.salePriceJpy,
+    saleLabels: keep.saleLabels.length ? keep.saleLabels : other.saleLabels,
+    saleUrl: keep.saleUrl ?? other.saleUrl,
+    saleCode: keep.saleCode || other.saleCode,
+    saleNote: keep.saleNote || other.saleNote,
+    saleMatch: keep.saleMatch || other.saleMatch,
+    salePreorderFrom: keep.salePreorderFrom || other.salePreorderFrom,
+    salePreorderTo: keep.salePreorderTo || other.salePreorderTo,
   };
 }
 

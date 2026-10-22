@@ -39,6 +39,15 @@ const COLUMNS = [
   'source',
   'sourceJp',
   'image',
+  'saleStatus',
+  'saleStatusText',
+  'salePriceJpy',
+  'saleLabels',
+  'saleUrl',
+  'saleCode',
+  'saleNote',
+  'salePreorderFrom',
+  'salePreorderTo',
 ] as const;
 
 function cell(value: unknown): string {
@@ -82,6 +91,15 @@ export const GET: APIRoute = () => {
       source: kit.source ?? '',
       sourceJp: kit.sourceJp ?? '',
       image: kit.image ?? '',
+      saleStatus: kit.saleStatus ?? '',
+      saleStatusText: kit.saleStatusText,
+      salePriceJpy: kit.salePriceJpy || '',
+      saleLabels: kit.saleLabels,
+      saleUrl: kit.saleUrl ?? '',
+      saleCode: kit.saleCode,
+      saleNote: kit.saleNote,
+      salePreorderFrom: kit.salePreorderFrom,
+      salePreorderTo: kit.salePreorderTo,
     };
     lines.push(COLUMNS.map((c) => cell((row as Record<string, unknown>)[c])).join(','));
   }
