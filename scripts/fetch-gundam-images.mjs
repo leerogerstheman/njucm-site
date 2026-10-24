@@ -25,7 +25,8 @@ import { dirname, join } from 'node:path';
 import { createRequire } from 'node:module';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const KITS_FILE = 'src/data/gundam.kits.ts';
+/** 合并后的总表——万代、寿屋、良笑、魔动核、田宫都在里面 */
+const KITS_FILE = 'src/data/models.kits.ts';
 const OUT_DIR = 'public/gundam';
 /** public/ 会被整个拷到站点根，所以站内路径要剥掉 public 这一层 */
 const URL_PREFIX = '/gundam';
@@ -41,6 +42,15 @@ const DELAY = 250;
 const args = process.argv.slice(2);
 const limitArg = args.indexOf('--limit');
 const limit = limitArg >= 0 ? Number(args[limitArg + 1]) : Infinity;
+/**
+ * 只下某一家的图（--maker tamiya）。
+ *
+ * 默认只处理万代——那是这条管线原本的范围。田宫的图由
+ * scripts/fetch-tamiya-images.py 单独下（要解 AVIF），良笑与寿屋的图
+ * 一次几千张会让仓库体积翻几倍，得分开来。
+ */
+const makerArg = args.indexOf('--maker');
+const maker = makerArg >= 0 ? args[makerArg + 1] : 'bandai';
 const force = args.includes('--force');
 
 /* sharp 是 Astro 的可选依赖，pnpm 会把它装进虚拟 store，直接按名字 import
@@ -72,6 +82,45 @@ function readKits() {
   return JSON.parse(raw.slice(start, raw.lastIndexOf(']') + 1));
 }
 
+/**
+ * 综合库的合并表——万代、寿屋、良笑、魔动核、田宫都在里面。
+ *
+ * 田宫条目带商城自己的商品图地址，那批图能直接下载（Sucuri 只拦 HTML，
+ * 不拦静态资源），所以一并走这个管线。
+ */
+function readModelKits() {
+  const file = join(ROOT, 'src/data/models.kits.ts');
+  if (!existsSync(file)) return [];
+  const raw = readFileSync(file, 'utf8');
+  const start = raw.indexOf('= [') + 2;
+  try {
+    return JSON.parse(raw.slice(start, raw.lastIndexOf(']') + 1));
+  } catch {
+    return [];
+  }
+}
+
+/**
+ * 参照页按图片所在站给，别让对方以为是盗链。
+ */
+function refererFor(url) {
+  try {
+    return new URL(url).origin + '/';
+  } catch {
+    return 'https://www.bandaihobbysite.cn/';
+  }
+}
+
+/**
+ * 每张图之间的间隔。
+ *
+ * 万代的图走的是自己的 CDN，250 毫秒一个；田宫那批由
+ * scripts/fetch-tamiya-images.py 单独下（那边要解 AVIF）。
+ */
+function delayFor(url) {
+  return 250;
+}
+
 async function fetchBuffer(url, asText = false) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 30_000);
@@ -81,7 +130,7 @@ async function fetchBuffer(url, asText = false) {
       headers: {
         'User-Agent':
           'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36',
-        Referer: 'https://www.bandaihobbysite.cn/',
+        Referer: refererFor(url),
         Accept: asText
           ? 'text/html,application/xhtml+xml'
           : 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8',
@@ -120,9 +169,12 @@ async function resolveImageUrl(kit) {
 }
 
 const sharp = await loadSharp();
-const kits = readKits();
+const kits = readModelKits();
 
-const wanted = kits.filter((k) => k.imageUrl || /bandaihobbysite\.cn/.test(k.source || '')).slice(0, limit);
+const wanted = kits
+  .filter((k) => (maker ? k.maker === maker : true))
+  .filter((k) => k.imageUrl || /bandaihobbysite\.cn/.test(k.source || ''))
+  .slice(0, limit);
 mkdirSync(join(ROOT, OUT_DIR), { recursive: true });
 
 const manifest = existsSync(join(ROOT, MANIFEST))
@@ -174,7 +226,7 @@ const workers = Array.from({ length: Math.min(CONCURRENCY, wanted.length) }, asy
   while (cursor < wanted.length) {
     const kit = wanted[cursor++];
     await handle(kit);
-    await new Promise((r) => setTimeout(r, DELAY));
+    await new Promise((r) => setTimeout(r, delayFor(kit.imageUrl)));
     if (done % 50 === 0 || done === wanted.length) {
       const pct = ((done / wanted.length) * 100).toFixed(0);
       process.stdout.write(`\r  ${done}/${wanted.length} (${pct}%)  失败 ${failed}  `);

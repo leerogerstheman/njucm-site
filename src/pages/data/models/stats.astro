@@ -35,7 +35,15 @@ interface MechEntry {
 
 /* ---------------------------------------------------------------- 规模 */
 
-const years = PRODUCTS.map((k) => releaseYear(k.released)).filter(Boolean);
+/*
+ * 年代口径。
+ *
+ * 有发售日的用发售日；官网没给发售日的（田宫的商城只给上架日）按上架年计，
+ * 与列表页的年代分面是同一套口径。
+ */
+const yearOf = (k: (typeof PRODUCTS)[number]) => releaseYear(k.released) || releaseYear(k.listedAt);
+
+const years = PRODUCTS.map((k) => yearOf(k)).filter(Boolean);
 const from = years.length ? Math.min(...years) : null;
 const to = years.length ? Math.max(...years) : null;
 const mechCount = Object.keys(SUBJECTS as Record<string, MechEntry>).length;
@@ -55,8 +63,28 @@ const priceRows = PRICE_BUCKETS.map((b) => ({
   count: PRODUCTS.filter((k) => k.priceJpy > 0 && b.test(k.priceJpy)).length,
 }));
 const priceMax = Math.max(1, ...priceRows.map((r) => r.count));
-const noPrice = PRODUCTS.filter((k) => k.priceJpy === 0 && k.priceCny === 0).length;
-const cnyOnly = PRODUCTS.filter((k) => k.priceJpy === 0 && k.priceCny > 0).length;
+
+/*
+ * 港币定价单独一档。
+ *
+ * 田宫的直销店挂港币标价，价位跟日元不是一个量级，混进日元的分档里
+ * 既失真也没法看。
+ */
+const PRICE_BUCKETS_HKD = [
+  { id: 'h-0-150', label: 'HK$150 以下', test: (p: number) => p <= 150 },
+  { id: 'h-151-300', label: 'HK$150–300', test: (p: number) => p > 150 && p <= 300 },
+  { id: 'h-301-600', label: 'HK$300–600', test: (p: number) => p > 300 && p <= 600 },
+  { id: 'h-601+', label: 'HK$600 以上', test: (p: number) => p > 600 },
+];
+const priceRowsHkd = PRICE_BUCKETS_HKD.map((b) => ({
+  ...b,
+  count: PRODUCTS.filter((k) => k.priceHkd > 0 && b.test(k.priceHkd)).length,
+}));
+const priceMaxHkd = Math.max(1, ...priceRowsHkd.map((r) => r.count));
+
+const noPrice = PRODUCTS.filter((k) => k.priceJpy === 0 && k.priceCny === 0 && k.priceHkd === 0).length;
+const cnyOnly = PRODUCTS.filter((k) => k.priceJpy === 0 && k.priceCny > 0 && k.priceHkd === 0).length;
+const hkdOnly = PRODUCTS.filter((k) => k.priceJpy === 0 && k.priceHkd > 0).length;
 
 /* -------------------------------------------------------- 等级 × 年代矩阵 */
 
@@ -65,7 +93,7 @@ const usedCategories = CATEGORIES.filter((c) => PRODUCTS.some((k) => k.category 
 const matrix = usedCategories.map((g) => {
   const cells = decades.map((d) => {
     const n = PRODUCTS.filter(
-      (k) => k.category === g.id && releaseYear(k.released) >= d && releaseYear(k.released) < d + 10,
+      (k) => k.category === g.id && yearOf(k) >= d && yearOf(k) < d + 10,
     ).length;
     return { decade: d, count: n };
   });
@@ -84,8 +112,10 @@ const channelRows = CHANNELS.map((c) => ({
 
 const makerRows = MAKERS.map((m) => {
   const kits = PRODUCTS.filter((k) => k.maker === m.id);
-  const withPrice = kits.filter((k) => k.priceJpy > 0).length;
+  /* 定价按币种分开：有日元的算日元那列，只有港币的另算 */
+  const withPrice = kits.filter((k) => k.priceJpy > 0 || k.priceCny > 0 || k.priceHkd > 0).length;
   const withDate = kits.filter((k) => k.released).length;
+  const withListed = kits.filter((k) => !k.released && k.listedAt).length;
   return {
     meta: m,
     count: kits.length,
@@ -93,6 +123,7 @@ const makerRows = MAKERS.map((m) => {
     series: new Set(kits.map((k) => k.series)).size,
     withPrice,
     withDate,
+    withListed,
   };
 }).filter((r) => r.count > 0);
 const makerMax = Math.max(1, ...makerRows.map((r) => r.count));
@@ -128,6 +159,12 @@ const COVERAGE: Coverage[] = [
     label: '中国内地官方零售价',
     hint: '限定品只公布人民币价',
     hit: (k) => k.priceCny > 0,
+  },
+  {
+    key: 'priceHkd',
+    label: '商城港币标价',
+    hint: '田宫直销店按港币挂价',
+    hit: (k) => k.priceHkd > 0,
   },
   {
     key: 'nameJa',
@@ -339,6 +376,9 @@ const tagMax = Math.max(1, ...tagRows.map(([, n]) => n));
               </td>
               <td class="gcover__num">
                 {r.withDate}（{((r.withDate / r.count) * 100).toFixed(0)}%）
+                {r.withListed > 0 && (
+                  <span class="faint"> ＋{r.withListed} 只有上架日</span>
+                )}
               </td>
               <td class="gcover__hint">{r.meta.site.replace(/^https?:\/\//, '')}</td>
             </tr>
@@ -351,8 +391,9 @@ const tagMax = Math.max(1, ...tagRows.map(([, n]) => n));
   <section class="gstat" data-reveal>
     <h2 class="gstat__title">价格分布</h2>
     <p class="gstat__desc">
-      按官方建议零售价（日元，含税）分档。另有 {noPrice} 条两种定价都没有、
-      {cnyOnly} 条只有人民币价——限定品通常只公布内地零售价。
+      按官方建议零售价（日元，含税）分档。另有 {noPrice} 条三种定价都没有、
+      {cnyOnly} 条只有人民币价——限定品通常只公布内地零售价；{hkdOnly} 条挂的是
+      港币价，见下面那张表。
     </p>
     <ul class="gstats__bars">
       {
@@ -367,13 +408,28 @@ const tagMax = Math.max(1, ...tagRows.map(([, n]) => n));
         ))
       }
     </ul>
+    <h3 class="gstat__subtitle">港币定价（田宫直销店）</h3>
+    <ul class="gstats__bars">
+      {
+        priceRowsHkd.map((r) => (
+          <li class="gstats__bar-row">
+            <span class="gstats__bar-label">{r.label}</span>
+            <span class="gstats__bar-track">
+              <span class="gstats__bar-fill" style={`--w:${(r.count / priceMaxHkd) * 100}%`} />
+            </span>
+            <span class="gstats__bar-num">{r.count}</span>
+          </li>
+        ))
+      }
+    </ul>
   </section>
 
   <section class="gstat" data-reveal>
     <h2 class="gstat__title">品类 × 年代</h2>
     <p class="gstat__desc">
       每一格是那个品类在那十年里收录的条目数。颜色越深越多——可以一眼看出哪条
-      产品线集中在哪个年代。
+      产品线集中在哪个年代。年代按发售年算；官网没给发售日的（田宫那批只有商城
+      上架日）按上架年计。
     </p>
     <div class="gmatrix" role="table" aria-label="品类与年代的交叉表" style={`--cols:${decades.length}`}>
       <div class="gmatrix__head" role="row">

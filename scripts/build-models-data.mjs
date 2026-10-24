@@ -191,6 +191,50 @@ const VENDORS = [
     channels: new Set(['general', 'limited', 'exclusive']),
     subjectKind: null,
   },
+  {
+    id: 'tamiya',
+    label: 'TAMIYA',
+    sources: ['src/data/models.kits.tamiya.json'],
+    /**
+     * 商城自己的分类路径 → 库里的品类 id。
+     *
+     * 分类路径是商城那棵树上的原文（「军事模型 > 陆军模型 > 1/35 军事微缩模型系列」），
+     * 换句话说，这条表就是「商城怎么分、田宫就怎么分」。
+     */
+    categories: {
+      '军事模型 > 陆军模型 > 1/35 军事微缩模型系列': 'tamiya:mm35',
+      '军事模型 > 陆军模型 > 1/48 军事微缩模型系列': 'tamiya:mm48',
+      '军事模型 > 陆军模型 > 1/16 军事战车模型系列': 'tamiya:mm16',
+      '军事模型 > 陆军模型 > 1/16 全球军人系列': 'tamiya:soldier16',
+      '军事模型 > 飞机模型 > 1/32 飞机模型': 'tamiya:air32',
+      '军事模型 > 飞机模型 > 1/48 飞机模型': 'tamiya:air48',
+      '军事模型 > 飞机模型 > 1/72 飞机模型': 'tamiya:air72',
+      '军事模型 > 舰船模型 > 1/350 舰船模型': 'tamiya:ship350',
+      '军事模型 > 舰船模型 > 1/700 吃水线系列 舰船模型': 'tamiya:ship700',
+      '比例模型 > 汽车模型 > 1/24 跑车模型系列': 'tamiya:car24',
+      '比例模型 > 汽车模型 > 1/12 汽车模型系列': 'tamiya:car12',
+      '比例模型 > 汽车模型 > 1/18 汽车模型系列': 'tamiya:car18',
+      '比例模型 > 汽车模型 > 1/20 格兰披治赛车模型': 'tamiya:race20',
+      '比例模型 > 摩托车模型 > 1/12 摩托车模型系列': 'tamiya:bike12',
+      '比例模型 > 摩托车模型 > 1/6 摩托车模型系列': 'tamiya:bike6',
+      '比例模型 > 恐龙模型系列': 'tamiya:dino',
+    },
+    /**
+     * 迷你四驱车、遥控车与 STEM 的分类带子级（产品线、车型），
+     * 路径不固定，用前缀归到同一个品类。
+     */
+    categoryPrefixes: [
+      ['迷你四驱车 > ', 'tamiya:mini4wd'],
+      ['遥控车 > ', 'tamiya:rc'],
+      ['STEM 教育模型 > ', 'tamiya:stem'],
+    ],
+    defaultScale: {},
+    /* 作品线是开放词表：商城自己的分组（陆军模型、Mini4wd Pro、沙滩车系列…） */
+    seriesMode: 'label',
+    series: null,
+    channels: new Set(['general', 'limited', 'exclusive']),
+    subjectKind: null,
+  },
 ];
 
 /** 品类 id → 原始等级（万代那边等级就是品类名） */
@@ -376,6 +420,15 @@ function normalise(entry, file, vendor) {
   /* 品类：原始写法（万代是等级，良笑是系列名）→ 规范 id */
   const rawCategory = text(entry.category || entry.grade);
   let category = vendor.categories[rawCategory];
+  if (!category && vendor.categoryPrefixes) {
+    /* 有的厂商分类带子级，路径不固定，用前缀归类 */
+    for (const [prefix, id] of vendor.categoryPrefixes) {
+      if (rawCategory.startsWith(prefix)) {
+        category = id;
+        break;
+      }
+    }
+  }
   if (!category) {
     const fallback = vendor.categories[rawCategory.toUpperCase()];
     if (!fallback) {
@@ -447,6 +500,19 @@ function normalise(entry, file, vendor) {
     note(`${file} / ${id}: 价格为负，已清空`);
   }
 
+  /* 田宫的直销店挂港币标价，原值记下，不折算 */
+  const priceHkd = numberOrNull(entry.priceHkd);
+  if (priceHkd !== null && priceHkd < 0) {
+    note(`${file} / ${id}: 港币价为负，已清空`);
+  }
+
+  /* 商城上架日期：不是发售日，单独记 */
+  let listedAt = text(entry.listedAt);
+  if (listedAt && !/^\d{4}-\d{2}-\d{2}$/.test(listedAt)) {
+    note(`${file} / ${id}: 上架日期「${listedAt}」格式不对，已清空`);
+    listedAt = '';
+  }
+
   const skill = numberOrNull(entry.skillLevel);
   const parts = numberOrNull(entry.parts);
   const height = numberOrNull(entry.heightMm);
@@ -504,6 +570,8 @@ function normalise(entry, file, vendor) {
     released,
     priceJpy: price !== null && price >= 0 ? price : 0,
     priceCny: numberOrNull(entry.priceCny) ?? 0,
+    priceHkd: priceHkd !== null && priceHkd >= 0 ? priceHkd : 0,
+    listedAt,
     channel,
     skillLevel: skill !== null && skill >= 1 && skill <= 5 ? skill : null,
     parts,
@@ -550,6 +618,8 @@ function merge(a, b) {
     released: keep.released || other.released,
     priceJpy: keep.priceJpy || other.priceJpy,
     priceCny: keep.priceCny || other.priceCny,
+    priceHkd: keep.priceHkd || other.priceHkd,
+    listedAt: keep.listedAt || other.listedAt,
     channel: keep.channel !== 'general' ? keep.channel : other.channel,
     skillLevel: keep.skillLevel ?? other.skillLevel,
     parts: keep.parts ?? other.parts,
@@ -630,8 +700,18 @@ for (const vendor of VENDORS) {
   }
 }
 
+/**
+ * 排序用的时间键。
+ *
+ * 官网给了发售日就用发售日；没有发售日的条目（田宫的商城只给上架日）
+ * 退回上架日，好让整份列表仍有先后。
+ */
+function sortKey(kit) {
+  return releaseKey(kit.released) || releaseKey(kit.listedAt);
+}
+
 const kits = [...byId.values()].sort(
-  (a, b) => releaseKey(b.released) - releaseKey(a.released) || a.name.localeCompare(b.name, 'zh-Hans-CN'),
+  (a, b) => sortKey(b) - sortKey(a) || a.name.localeCompare(b.name, 'zh-Hans-CN'),
 );
 
 /* 挂上本地缓存的图片路径（由 scripts/fetch-gundam-images.mjs 生成） */

@@ -14,8 +14,16 @@ interface Props {
 
 const { kits } = Astro.props;
 
+/**
+ * 年代口径。
+ *
+ * 有发售日的用发售日；官网没给发售日的（田宫的商城只给上架日）按上架年计，
+ * 与列表页的年代分面是同一套口径。
+ */
+const yearOf = (k: ModelProduct) => releaseYear(k.released) || releaseYear(k.listedAt);
+
 /** 按年代分桶，空的年代也保留，好让横轴的时间感是连续的 */
-const decadeCounts = countBy(kits, (k) => decadeOf(releaseYear(k.released)), (id) => id);
+const decadeCounts = countBy(kits, (k) => decadeOf(yearOf(k)), (id) => id);
 const decades = [...decadeCounts].sort((a, b) => a.id.localeCompare(b.id));
 const decadeMax = Math.max(1, ...decades.map((d) => d.count));
 
@@ -26,11 +34,11 @@ const topGrades = categoryCounts.slice(0, 2).map((g) => g.label).join(' 与 ');
 const hasAssemble = kits.some((k) => k.category === 'bandai:ga');
 
 const earliest = kits.reduce(
-  (min, k) => (releaseYear(k.released) && (!min || releaseYear(k.released) < releaseYear(min.released)) ? k : min),
+  (min, k) => (yearOf(k) && (!min || yearOf(k) < yearOf(min)) ? k : min),
   null as ModelProduct | null,
 );
 const latest = kits.reduce(
-  (max, k) => (releaseYear(k.released) > releaseYear(max.released) ? k : max),
+  (max, k) => (yearOf(k) > yearOf(max) ? k : max),
   kits[0],
 );
 ---
@@ -39,8 +47,9 @@ const latest = kits.reduce(
   <div class="gstats__block">
     <h2 class="gstats__title">年代分布</h2>
     <p class="gstats__desc">
-      按发售年份统计收录条目。库里的时间跨度从 {earliest ? releaseYear(earliest.released) : '—'} 年到
-      {latest ? releaseYear(latest.released) : '—'} 年。
+      按发售年份统计收录条目；官网没给发售日的（田宫那批只有商城上架日）按上架年
+      计。库里的时间跨度从 {earliest ? yearOf(earliest) : '—'} 年到
+      {latest ? yearOf(latest) : '—'} 年。
     </p>
     <ul class="gstats__bars">
       {

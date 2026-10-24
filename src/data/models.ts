@@ -11,8 +11,8 @@
  * 一律 verified: false，界面上会明确标出来，而不是混在已核实条目里。
  *
  * 库覆盖多家厂商的产品——万代（塑料模型、拼装模型、食玩）、寿屋、良笑、
- * 魔动核等。所以分类表都是**开放词表**：厂商、产品品类（品类 id 前缀即厂商）
- * 与作品线各自成套，不是一套写死的枚举值。
+ * 魔动核、田宫（军事模型、汽车模型、迷你四驱、RC）等。所以分类表都是**开放词表**：
+ * 厂商、产品品类（品类 id 前缀即厂商）与作品线各自成套，不是一套写死的枚举值。
  */
 
 import { MODEL_KITS } from './models.kits';
@@ -23,7 +23,7 @@ import SERIES_CATALOG from './models.series.json';
 /* 厂商                                                                        */
 /* -------------------------------------------------------------------------- */
 
-export type MakerId = 'bandai' | 'kotobukiya' | 'goodsmile' | 'modhtoy';
+export type MakerId = 'bandai' | 'kotobukiya' | 'goodsmile' | 'modhtoy' | 'tamiya';
 
 export interface MakerMeta {
   id: MakerId;
@@ -71,6 +71,14 @@ export const MAKERS: MakerMeta[] = [
     site: 'http://mdhtoy.com/',
     origin: 'cn',
     brief: '东莞东秀的国产机甲品牌，《星甲魂将传》等原创 IP 的超可动拼装与成品。',
+  },
+  {
+    id: 'tamiya',
+    label: '田宫',
+    labelEn: 'TAMIYA',
+    site: 'https://tamiya.cn/',
+    origin: 'jp',
+    brief: '与万代齐名的塑料模型老厂牌，1/35 军事模型、1/24 汽车、1/32 迷你四驱与 RC 电动模型都做。',
   },
 ];
 
@@ -157,6 +165,27 @@ export const CATEGORIES: CategoryMeta[] = [
   { id: 'modhtoy:small', maker: 'modhtoy', label: '小比例', short: '小比例', brief: '小尺寸的机甲与角色产品' },
   { id: 'modhtoy:toy', maker: 'modhtoy', label: '机甲潮玩', short: '潮玩', brief: '机甲造型的手办与潮玩' },
   { id: 'modhtoy:other', maker: 'modhtoy', label: '魔动核其它', brief: '其它产品线' },
+
+  /* ---- 田宫：按商城自己的分类（比例 + 类型）--------------------------- */
+  { id: 'tamiya:mm35', maker: 'tamiya', label: '1/35 军事模型', short: '1/35', scale: '1/35', brief: '田宫最经典的一档比例，坦克、火炮与车辆都有' },
+  { id: 'tamiya:mm48', maker: 'tamiya', label: '1/48 军事模型', short: '1/48', scale: '1/48', brief: '比 1/35 更省空间的一档军模' },
+  { id: 'tamiya:mm16', maker: 'tamiya', label: '1/16 军事战车', short: '1/16', scale: '1/16', brief: '大比例战车，细节多、拼装久' },
+  { id: 'tamiya:soldier16', maker: 'tamiya', label: '1/16 兵人', short: '兵人', scale: '1/16', brief: '可上色的兵人模型' },
+  { id: 'tamiya:air32', maker: 'tamiya', label: '1/32 飞机模型', short: '1/32', scale: '1/32', brief: '双发的 1/32 机种，小型与舰载机为主' },
+  { id: 'tamiya:air48', maker: 'tamiya', label: '1/48 飞机模型', short: '1/48', scale: '1/48', brief: '现代与螺旋桨飞机的经典比例' },
+  { id: 'tamiya:air72', maker: 'tamiya', label: '1/72 飞机模型', short: '1/72', scale: '1/72', brief: '入门比例的军机，小而整' },
+  { id: 'tamiya:ship350', maker: 'tamiya', label: '1/350 舰船模型', short: '1/350', scale: '1/350', brief: '水面线舰船，题材集中在近代舰' },
+  { id: 'tamiya:ship700', maker: 'tamiya', label: '1/700 舰船模型', short: '1/700', scale: '1/700', brief: '吃水线舰船，比例最省料' },
+  { id: 'tamiya:car12', maker: 'tamiya', label: '1/12 汽车模型', short: '1/12', scale: '1/12', brief: '大型车的精细比例' },
+  { id: 'tamiya:car18', maker: 'tamiya', label: '1/18 汽车模型', short: '1/18', scale: '1/18', brief: '跑车的另一档经典比例' },
+  { id: 'tamiya:race20', maker: 'tamiya', label: '1/20 赛车模型', short: '1/20', scale: '1/20', brief: '方程式与赛车题材' },
+  { id: 'tamiya:car24', maker: 'tamiya', label: '1/24 汽车模型', short: '1/24', scale: '1/24', brief: '产量最大的一档汽车模型' },
+  { id: 'tamiya:bike6', maker: 'tamiya', label: '1/6 摩托车模型', short: '1/6', scale: '1/6', brief: '大比例摩托' },
+  { id: 'tamiya:bike12', maker: 'tamiya', label: '1/12 摩托车模型', short: '1/12', scale: '1/12', brief: '街车与复古摩托' },
+  { id: 'tamiya:dino', maker: 'tamiya', label: '恐龙模型', short: '恐龙', brief: 'Clic Loc 一键拼装恐龙' },
+  { id: 'tamiya:mini4wd', maker: 'tamiya', label: '迷你四驱车', short: 'MINI4WD', scale: '1/32', brief: '1/32 电动四驱车，田宫最长寿的产品线' },
+  { id: 'tamiya:rc', maker: 'tamiya', label: 'RC 遥控车', short: 'RC', brief: '1/10、1/12 等比例的电动遥控车套件' },
+  { id: 'tamiya:stem', maker: 'tamiya', label: 'STEM 教育模型', short: 'STEM', brief: '编程机械人与机械动物等益智套件' },
 ];
 
 const CATEGORY_MAP = new Map(CATEGORIES.map((c) => [c.id, c]));
@@ -368,6 +397,20 @@ export interface ModelProduct {
    * 才有价可显示。0 表示未公布。
    */
   priceCny: number;
+  /**
+   * 官方零售价（港币）。
+   *
+   * 田宫的直销店（田宫模型中国 / 香港旗舰店）挂的是港币标价，页面另标
+   * 「折合人民币约」。这里只记商城自己的原值，不做折算。
+   */
+  priceHkd: number;
+  /**
+   * 商城上架日期（YYYY-MM-DD）。
+   *
+   * 这是商城把商品挂上去的时间，**不是发售日**——两者不混。
+   * 官网不公布发售日的条目就靠它排个先后。
+   */
+  listedAt: string;
   /** 销售渠道 */
   channel: string;
   /** 官方拼装难度 1–5 */
@@ -518,6 +561,27 @@ export function releaseShort(released: string): string {
 export function formatJPY(value: number): string {
   if (!value) return '—';
   return `¥${value.toLocaleString('en-US')}`;
+}
+
+/**
+ * 定价的显示。
+ *
+ * 三个币种各按各的写法：日元 ¥、人民币 ¥、港币 HK$。
+ * 港币是田宫直销店自己的标价，不折算成人民币。
+ */
+export function formatPrice(kit: Pick<ModelProduct, 'priceJpy' | 'priceCny' | 'priceHkd'>): string {
+  if (kit.priceJpy) return formatJPY(kit.priceJpy);
+  if (kit.priceHkd) return `HK$${kit.priceHkd.toLocaleString('en-US')}`;
+  if (kit.priceCny) return `¥${kit.priceCny.toLocaleString('en-US')}`;
+  return '—';
+}
+
+/** 定价的币种标签，用于「以什么币种统计」的场合 */
+export function priceCurrency(kit: Pick<ModelProduct, 'priceJpy' | 'priceCny' | 'priceHkd'>): string {
+  if (kit.priceJpy) return '日元';
+  if (kit.priceHkd) return '港币';
+  if (kit.priceCny) return '人民币';
+  return '';
 }
 
 /** 商城在售状态的界面说法 */

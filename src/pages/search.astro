@@ -152,8 +152,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             .filter(Boolean)
             .join(' · ');
           var desc =
-            k.category + ' ' + k.scale + ' · ' + seriesLabel + ' · ' + (k.released || '—');
+            k.category + ' ' + k.scale + ' · ' + seriesLabel + ' · ' + (k.released || k.listedAt || '—');
           if (k.priceJpy) desc += ' · ¥' + k.priceJpy.toLocaleString('en-US');
+          else if (k.priceHkd) desc += ' · HK$' + k.priceHkd.toLocaleString('en-US');
           else if (k.priceCny) desc += ' · ¥' + k.priceCny.toLocaleString('en-US');
           var tagList = [k.category, k.scale, seriesLabel, channelLabel].concat(tags);
           return {

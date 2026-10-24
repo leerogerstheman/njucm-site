@@ -67,7 +67,7 @@ export const SITE_PAGES: SitePage[] = [
     href: '/data/models/',
     title: '模型数据库',
     description:
-      '覆盖万代、寿屋、良笑、魔动核等厂商的模型产品数据库，按厂商、品类、作品线、主题、发售年代与官方定价检索，每条记录都标注出处。',
+      '覆盖万代、寿屋、良笑、魔动核、田宫等厂商的模型产品数据库，按厂商、品类、作品线、主题、发售年代与官方定价检索，每条记录都标注出处。',
     keywords: [
       '高达',
       '高达模型',
@@ -81,6 +81,10 @@ export const SITE_PAGES: SitePage[] = [
       'figma',
       'Nendoroid',
       '魔动核',
+      '田宫',
+      'tamiya',
+      '军事模型',
+      '迷你四驱',
       '模型',
       '塑料模型',
       '手办',

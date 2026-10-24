@@ -10,7 +10,7 @@ import KitCover from './KitCover.astro';
 import {
   productHref,
   seriesMeta,
-  formatJPY,
+  formatPrice,
   releaseShort,
   releaseYear,
   releaseSortKey,
@@ -38,9 +38,9 @@ const channel = channelMeta(kit.channel);
   data-category={categoryMeta(kit.category).label}
   data-series={kit.series}
   data-channel={kit.channel}
-  data-year={releaseYear(kit.released)}
-  data-price={kit.priceJpy}
-  data-rk={releaseSortKey(kit.released)}
+  data-year={releaseYear(kit.released) || releaseYear(kit.listedAt)}
+  data-price={kit.priceJpy || kit.priceHkd}
+  data-rk={releaseSortKey(kit.released) || releaseSortKey(kit.listedAt)}
   data-name={kit.name}
   data-text={searchHaystack(kit)}
 >
@@ -94,10 +94,13 @@ const channel = channelMeta(kit.channel);
       <span class="gcard__sub">{kit.nameJa}</span>
 
       <span class="gcard__meta">
-        <time datetime={kit.released}>{releaseShort(kit.released)}</time>
-        <span class="gcard__price">
-          {kit.priceJpy > 0 ? formatJPY(kit.priceJpy) : kit.priceCny > 0 ? `¥${kit.priceCny.toLocaleString('en-US')}` : '—'}
-        </span>
+        <time
+          datetime={kit.released || kit.listedAt}
+          title={kit.released ? '' : '商城上架日期（官网未公布发售日）'}
+        >
+          {releaseShort(kit.released) || releaseShort(kit.listedAt)}
+        </time>
+        <span class="gcard__price">{formatPrice(kit)}</span>
       </span>
 
       <span class="gcard__series">{meta.label}</span>

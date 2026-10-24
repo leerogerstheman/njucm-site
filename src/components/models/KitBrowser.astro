@@ -49,16 +49,34 @@ const countByKey = (pick: (k: ModelProduct) => string) => {
 const categoryCounts = countByKey((k) => k.category);
 const channelCounts = countByKey((k) => k.channel);
 const decadeCounts = countByKey((k) => {
-  const y = releaseYear(k.released);
+  /* 有发售日用发售日；只查得到商城上架日的（田宫）按上架年计 */
+  const y = releaseYear(k.released) || releaseYear(k.listedAt);
   return y ? `${Math.floor(y / 10) * 10}s` : '未知';
 });
-const priceCounts = countByKey((k) => {
-  if (!k.priceJpy) return 'unknown';
-  if (k.priceJpy <= 1000) return '0-1000';
-  if (k.priceJpy <= 3000) return '1001-3000';
-  if (k.priceJpy <= 6000) return '3001-6000';
-  return '6001+';
-});
+
+/**
+ * 定价分档。
+ *
+ * 日元与港币各按各的价目：田宫直销店挂的是港币，价位跟日元档不是一个量级，
+ * 混在同一档里既看不懂也筛不准。
+ */
+function priceBucketOf(k: ModelProduct): string {
+  if (k.priceJpy) {
+    if (k.priceJpy <= 1000) return '0-1000';
+    if (k.priceJpy <= 3000) return '1001-3000';
+    if (k.priceJpy <= 6000) return '3001-6000';
+    return '6001+';
+  }
+  if (k.priceHkd) {
+    if (k.priceHkd <= 150) return 'h-0-150';
+    if (k.priceHkd <= 300) return 'h-151-300';
+    if (k.priceHkd <= 600) return 'h-301-600';
+    return 'h-601+';
+  }
+  return 'unknown';
+}
+
+const priceCounts = countByKey((k) => priceBucketOf(k));
 
 const usedCategories = [...categoryCounts.keys()].sort(
   (a, b) => (categoryCounts.get(b) ?? 0) - (categoryCounts.get(a) ?? 0),
@@ -107,7 +125,11 @@ const PRICE_BUCKETS = [
   { id: '1001-3000', label: '¥1,000–3,000' },
   { id: '3001-6000', label: '¥3,000–6,000' },
   { id: '6001+', label: '¥6,000 以上' },
-  { id: 'unknown', label: '暂无日元定价' },];
+  { id: 'h-0-150', label: 'HK$150 以下' },
+  { id: 'h-151-300', label: 'HK$150–300' },
+  { id: 'h-301-600', label: 'HK$300–600' },
+  { id: 'h-601+', label: 'HK$600 以上' },
+  { id: 'unknown', label: '暂无定价' },];
 
 const SORTS = [
   { id: 'new', label: '最新' },
@@ -307,7 +329,7 @@ const SORTS = [
           data-series={kit.series}
           data-channel={kit.channel}
           data-year={releaseYear(kit.released)}
-          data-price={kit.priceJpy}
+          data-price={kit.priceJpy || kit.priceHkd}
           data-rk={releaseSortKey(kit.released)}
           data-name={kit.name}
           data-text={searchHaystack(kit)}
@@ -357,13 +379,20 @@ const SORTS = [
               <span class="gcard__title">{kit.name}</span>
               {kit.nameJa && <span class="gcard__sub">{kit.nameJa}</span>}
               <span class="gcard__meta">
-                <time datetime={kit.released}>{releaseShort(kit.released)}</time>
+                <time
+                  datetime={kit.released || kit.listedAt}
+                  title={kit.released ? '' : '商城上架日期（官网未公布发售日）'}
+                >
+                  {releaseShort(kit.released) || releaseShort(kit.listedAt)}
+                </time>
                 <span class="gcard__price">
                   {kit.priceJpy > 0
                     ? `¥${kit.priceJpy.toLocaleString('en-US')}`
-                    : kit.priceCny > 0
-                      ? `¥${kit.priceCny.toLocaleString('en-US')}`
-                      : '—'}
+                    : kit.priceHkd > 0
+                      ? `HK$${kit.priceHkd.toLocaleString('en-US')}`
+                      : kit.priceCny > 0
+                        ? `¥${kit.priceCny.toLocaleString('en-US')}`
+                        : '—'}
                 </span>
               </span>
               <span class="gcard__series">{seriesMeta(kit.series).label}</span>
@@ -472,12 +501,20 @@ const SORTS = [
       return Math.floor(year / 10) * 10 + 's';
     }
 
-    function priceBucket(price) {
-      if (!price) return 'unknown';
-      if (price <= 1000) return '0-1000';
-      if (price <= 3000) return '1001-3000';
-      if (price <= 6000) return '3001-6000';
-      return '6001+';
+    function priceBucket(r) {
+      if (r.priceJpy) {
+        if (r.priceJpy <= 1000) return '0-1000';
+        if (r.priceJpy <= 3000) return '1001-3000';
+        if (r.priceJpy <= 6000) return '3001-6000';
+        return '6001+';
+      }
+      if (r.priceHkd) {
+        if (r.priceHkd <= 150) return 'h-0-150';
+        if (r.priceHkd <= 300) return 'h-151-300';
+        if (r.priceHkd <= 600) return 'h-301-600';
+        return 'h-601+';
+      }
+      return 'unknown';
     }
 
     function esc(s) {
@@ -498,8 +535,8 @@ const SORTS = [
         payload.fields.forEach(function (f, i) {
           r[f] = row[i];
         });
-        r.year = releaseYear(r.released);
-        r.rk = releaseKey(r.released);
+        r.year = releaseYear(r.released) || releaseYear(r.listedAt);
+        r.rk = releaseKey(r.released) || releaseKey(r.listedAt);
         /* 检索文本在客户端拼，与服务端的 searchHaystack 同一套口径 */
         r.hay = norm(
           [
@@ -545,14 +582,19 @@ const SORTS = [
         : '';
       var price = r.priceJpy
         ? '¥' + r.priceJpy.toLocaleString('en-US')
-        : r.priceCny
-          ? '¥' + r.priceCny.toLocaleString('en-US')
-          : '—';
+        : r.priceHkd
+          ? 'HK$' + r.priceHkd.toLocaleString('en-US')
+          : r.priceCny
+            ? '¥' + r.priceCny.toLocaleString('en-US')
+            : '—';
+      /* 没有发售日的条目（田宫）用商城上架日，hover 时说明这是什么日期 */
+      var when = r.released || r.listedAt || '';
+      var whenTitle = r.released ? '' : '商城上架日期（官网未公布发售日）';
       return (
         '<article class="gcard" data-reveal style="--reveal-delay:' + Math.min(i, 8) * 40 + '"' +
         ' data-category="' + esc(categoryMeta(r.category).label) + '" data-series="' + esc(r.series) + '"' +
         ' data-channel="' + esc(r.channel) + '" data-year="' + r.year + '"' +
-        ' data-price="' + r.priceJpy + '" data-rk="' + r.rk + '"' +
+        ' data-price="' + (r.priceJpy || r.priceHkd) + '" data-rk="' + r.rk + '"' +
         ' data-name="' + esc(r.name) + '" data-text="' + esc(r.hay) + '">' +
         '<a class="gcard__link" href="/data/models/' + encodeURIComponent(r.id) + '/">' +
         '<span class="gcard__poster">' + img + '</span>' +
@@ -563,8 +605,8 @@ const SORTS = [
         '</span>' +
         '<span class="gcard__title">' + esc(r.name) + '</span>' +
         (r.nameJa ? '<span class="gcard__sub">' + esc(r.nameJa) + '</span>' : '') +
-        '<span class="gcard__meta"><time datetime="' + esc(r.released) + '">' +
-        releaseShort(r.released) + '</time>' +
+        '<span class="gcard__meta"><time datetime="' + esc(when) + '" title="' + esc(whenTitle) + '">' +
+        releaseShort(when) + '</time>' +
         '<span class="gcard__price">' + price + '</span></span>' +
         '<span class="gcard__series">' + esc(DATA.series[r.series] || '') + '</span>' +
         '</span></a></article>'
@@ -580,7 +622,7 @@ const SORTS = [
       if (s.series && r.series !== s.series) return false;
       if (s.channel && r.channel !== s.channel) return false;
       if (s.decade && decadeOf(r.year) !== s.decade) return false;
-      if (s.price && priceBucket(r.priceJpy) !== s.price) return false;
+      if (s.price && priceBucket(r) !== s.price) return false;
       if (s.status && (r.saleStatus || '') !== s.status) return false;
       if (s.tag && (r.tags || []).indexOf(s.tag) === -1) return false;
       return true;

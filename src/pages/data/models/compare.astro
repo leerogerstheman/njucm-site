@@ -122,10 +122,13 @@ import '../../../styles/gundam-theme.css';
           return esc(r.channelLabel);
         } },
       { key: 'released', label: '发售', render: function (r) {
-          return '<span class="gcmppage__mono">' + esc(r.released || '—') + '</span>';
+          if (r.released) return '<span class="gcmppage__mono">' + esc(r.released) + '</span>';
+          if (r.listedAt) return '<span class="gcmppage__mono">' + esc(r.listedAt) + '</span><span class="gcmppage__hint">商城上架</span>';
+          return '—';
         } },
       { key: 'price', label: '官方定价', render: function (r) {
           if (r.priceJpy) return '<span class="gcmppage__mono">¥' + r.priceJpy.toLocaleString('en-US') + '</span>';
+          if (r.priceHkd) return '<span class="gcmppage__mono">HK$' + r.priceHkd.toLocaleString('en-US') + '</span><span class="gcmppage__hint">港币</span>';
           if (r.priceCny) return '<span class="gcmppage__mono">¥' + r.priceCny.toLocaleString('en-US') + '</span><span class="gcmppage__hint">人民币</span>';
           return '—';
         } },

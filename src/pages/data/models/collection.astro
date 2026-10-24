@@ -132,12 +132,15 @@ import '../../../styles/gundam-theme.css';
 
       /* 合计与分布 */
       var sum = 0;
+      var sumHkd = 0;
       var priced = 0;
+      var pricedHkd = 0;
       var byCat = {};
       var bySeries = {};
       for (var i = 0; i < rows.length; i++) {
         var r = rows[i];
         if (r.priceJpy) { sum += r.priceJpy; priced++; }
+        else if (r.priceHkd) { sumHkd += r.priceHkd; pricedHkd++; }
         var c = r.categoryLabel || r.category;
         byCat[c] = (byCat[c] || 0) + 1;
         var sl = r.seriesLabel || r.series;
@@ -158,6 +161,11 @@ import '../../../styles/gundam-theme.css';
             '<div class="gcol__stat"><span class="gcol__statLabel">官方定价合计</span>' +
             '<b class="gcol__statValue">¥' + sum.toLocaleString('en-US') + '</b>' +
             '<span class="gcol__statHint">' + priced + ' / ' + rows.length + ' 条有定价</span></div>' +
+            (pricedHkd
+              ? '<div class="gcol__stat"><span class="gcol__statLabel">港币定价合计</span>' +
+                '<b class="gcol__statValue">HK$' + sumHkd.toLocaleString('en-US') + '</b>' +
+                '<span class="gcol__statHint">' + pricedHkd + ' 条按港币计价</span></div>'
+              : '') +
             '<div class="gcol__stat"><span class="gcol__statLabel">品类分布</span><ul class="gcol__dist">' + top(byCat) + '</ul></div>' +
             '<div class="gcol__stat"><span class="gcol__statLabel">作品线分布</span><ul class="gcol__dist">' + top(bySeries) + '</ul></div>';
         }
@@ -186,8 +194,9 @@ import '../../../styles/gundam-theme.css';
               '<span class="gcol__meta">' +
               '<span class="gcard__grade" data-category="' + esc(r.categoryLabel || r.category) + '">' + esc(r.categoryLabel || r.category) + '</span>' +
               (r.scale ? '<span class="gcol__mono">' + esc(r.scale) + '</span>' : '') +
-              (r.released ? '<span class="gcol__mono">' + esc(r.released) + '</span>' : '') +
+              (r.released || r.listedAt ? '<span class="gcol__mono">' + esc(r.released || r.listedAt) + '</span>' : '') +
               (r.priceJpy ? '<span class="gcol__mono">¥' + r.priceJpy.toLocaleString('en-US') + '</span>' : '') +
+              (r.priceHkd ? '<span class="gcol__mono">HK$' + r.priceHkd.toLocaleString('en-US') + '</span>' : '') +
               '</span>' +
               '<span class="gcol__marks">' +
               (flags.wish ? '<span class="gcol__mark" data-kind="wish">想要</span>' : '') +

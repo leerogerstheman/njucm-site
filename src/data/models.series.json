@@ -1,5 +1,17 @@
 [
   {
+    "id": "w702b8b7db9",
+    "maker": "tamiya",
+    "label": "陆军模型",
+    "short": "陆军模型",
+    "palette": [
+      "hsl(11 26% 68%)",
+      "hsl(11 24% 34%)",
+      "hsl(197 58% 56%)"
+    ],
+    "count": 474
+  },
+  {
     "id": "wdf0fc492e4",
     "maker": "kotobukiya",
     "label": "M.S.G",
@@ -22,6 +34,30 @@
       "hsl(241 58% 56%)"
     ],
     "count": 210
+  },
+  {
+    "id": "w7e89bae364",
+    "maker": "tamiya",
+    "label": "飞机模型",
+    "short": "飞机模型",
+    "palette": [
+      "hsl(298 26% 68%)",
+      "hsl(298 24% 34%)",
+      "hsl(124 58% 56%)"
+    ],
+    "count": 205
+  },
+  {
+    "id": "w5c990845b7",
+    "maker": "tamiya",
+    "label": "汽车模型",
+    "short": "汽车模型",
+    "palette": [
+      "hsl(239 26% 68%)",
+      "hsl(239 24% 34%)",
+      "hsl(65 58% 56%)"
+    ],
+    "count": 203
   },
   {
     "id": "w1e9891c210",
@@ -60,6 +96,18 @@
     "count": 166
   },
   {
+    "id": "w4d6e03bf8e",
+    "maker": "tamiya",
+    "label": "轿车系列",
+    "short": "轿车系列",
+    "palette": [
+      "hsl(264 26% 68%)",
+      "hsl(264 24% 34%)",
+      "hsl(90 58% 56%)"
+    ],
+    "count": 159
+  },
+  {
     "id": "w9ca80d1f26",
     "maker": "kotobukiya",
     "label": "メガミデバイス",
@@ -96,6 +144,18 @@
     "count": 140
   },
   {
+    "id": "w489d182226",
+    "maker": "tamiya",
+    "label": "Mini4wd Pro",
+    "short": "Mini4wd Pro",
+    "palette": [
+      "hsl(148 26% 68%)",
+      "hsl(148 24% 34%)",
+      "hsl(334 58% 56%)"
+    ],
+    "count": 118
+  },
+  {
     "id": "w8a4fd012b0",
     "maker": "goodsmile",
     "label": "Character Vocal系列01 初音未來",
@@ -106,6 +166,18 @@
       "hsl(232 58% 56%)"
     ],
     "count": 113
+  },
+  {
+    "id": "w2e934faddf",
+    "maker": "tamiya",
+    "label": "舰船模型",
+    "short": "舰船模型",
+    "palette": [
+      "hsl(188 26% 68%)",
+      "hsl(188 24% 34%)",
+      "hsl(14 58% 56%)"
+    ],
+    "count": 104
   },
   {
     "id": "w5f9531d396",
@@ -168,6 +240,18 @@
     "count": 82
   },
   {
+    "id": "wd6303369eb",
+    "maker": "tamiya",
+    "label": "Racer Mini4wd",
+    "short": "Racer Mini4…",
+    "palette": [
+      "hsl(162 26% 68%)",
+      "hsl(162 24% 34%)",
+      "hsl(348 58% 56%)"
+    ],
+    "count": 80
+  },
+  {
     "id": "we396cf7643",
     "maker": "goodsmile",
     "label": "刀劍亂舞-ONLINE-",
@@ -176,6 +260,18 @@
       "hsl(18 26% 68%)",
       "hsl(18 24% 34%)",
       "hsl(204 58% 56%)"
+    ],
+    "count": 78
+  },
+  {
+    "id": "wa3af0962f3",
+    "maker": "tamiya",
+    "label": "沙滩车系列",
+    "short": "沙滩车系列",
+    "palette": [
+      "hsl(38 26% 68%)",
+      "hsl(38 24% 34%)",
+      "hsl(224 58% 56%)"
     ],
     "count": 78
   },
@@ -192,6 +288,18 @@
     "count": 74
   },
   {
+    "id": "w8b49c5490d",
+    "maker": "tamiya",
+    "label": "摩托车模型",
+    "short": "摩托车模型",
+    "palette": [
+      "hsl(271 26% 68%)",
+      "hsl(271 24% 34%)",
+      "hsl(97 58% 56%)"
+    ],
+    "count": 67
+  },
+  {
     "id": "w63a09908e7",
     "maker": "goodsmile",
     "label": "鬼滅之刃",
@@ -202,6 +310,42 @@
       "hsl(313 58% 56%)"
     ],
     "count": 63
+  },
+  {
+    "id": "w7d61303110",
+    "maker": "tamiya",
+    "label": "Fully Cowled Mini4wd",
+    "short": "Fully Cowle…",
+    "palette": [
+      "hsl(198 26% 68%)",
+      "hsl(198 24% 34%)",
+      "hsl(24 58% 56%)"
+    ],
+    "count": 61
+  },
+  {
+    "id": "wa57fe9bbef",
+    "maker": "tamiya",
+    "label": "越野车/拉力车系列",
+    "short": "越野车/拉力车系列",
+    "palette": [
+      "hsl(115 26% 68%)",
+      "hsl(115 24% 34%)",
+      "hsl(301 58% 56%)"
+    ],
+    "count": 53
+  },
+  {
+    "id": "w9312738b29",
+    "maker": "tamiya",
+    "label": "Mini4wd Rev",
+    "short": "Mini4wd Rev",
+    "palette": [
+      "hsl(167 26% 68%)",
+      "hsl(167 24% 34%)",
+      "hsl(353 58% 56%)"
+    ],
+    "count": 52
   },
   {
     "id": "wffab55c460",
@@ -228,6 +372,30 @@
     "count": 46
   },
   {
+    "id": "w8a52ad02c7",
+    "maker": "tamiya",
+    "label": "小型轿车系列(M底盘)",
+    "short": "小型轿车系列(M底盘)",
+    "palette": [
+      "hsl(352 26% 68%)",
+      "hsl(352 24% 34%)",
+      "hsl(178 58% 56%)"
+    ],
+    "count": 45
+  },
+  {
+    "id": "wb06c31e82c",
+    "maker": "tamiya",
+    "label": "1/14拖挂车系列",
+    "short": "1/14拖挂车系列",
+    "palette": [
+      "hsl(204 26% 68%)",
+      "hsl(204 24% 34%)",
+      "hsl(30 58% 56%)"
+    ],
+    "count": 44
+  },
+  {
     "id": "w94f6d61500",
     "maker": "goodsmile",
     "label": "初音未來GT計畫",
@@ -250,6 +418,18 @@
       "hsl(291 58% 56%)"
     ],
     "count": 44
+  },
+  {
+    "id": "w55bbd4ff20",
+    "maker": "tamiya",
+    "label": "彷真车系列",
+    "short": "彷真车系列",
+    "palette": [
+      "hsl(24 26% 68%)",
+      "hsl(24 24% 34%)",
+      "hsl(210 58% 56%)"
+    ],
+    "count": 43
   },
   {
     "id": "w516b7f16c0",
@@ -298,6 +478,18 @@
       "hsl(111 58% 56%)"
     ],
     "count": 39
+  },
+  {
+    "id": "wcb59351d50",
+    "maker": "tamiya",
+    "label": "机械彷生动物",
+    "short": "机械彷生动物",
+    "palette": [
+      "hsl(309 26% 68%)",
+      "hsl(309 24% 34%)",
+      "hsl(135 58% 56%)"
+    ],
+    "count": 38
   },
   {
     "id": "w8d66998dd5",
@@ -528,6 +720,30 @@
     "count": 25
   },
   {
+    "id": "wec99d6eb1c",
+    "maker": "tamiya",
+    "label": "遥控坦克系列",
+    "short": "遥控坦克系列",
+    "palette": [
+      "hsl(10 26% 68%)",
+      "hsl(10 24% 34%)",
+      "hsl(196 58% 56%)"
+    ],
+    "count": 25
+  },
+  {
+    "id": "w23dc6c2532",
+    "maker": "tamiya",
+    "label": "机械创意车/工程车",
+    "short": "机械创意车/工程车",
+    "palette": [
+      "hsl(44 26% 68%)",
+      "hsl(44 24% 34%)",
+      "hsl(230 58% 56%)"
+    ],
+    "count": 24
+  },
+  {
     "id": "wfcd8a3d13a",
     "maker": "goodsmile",
     "label": "搖曳露營△",
@@ -648,6 +864,18 @@
     "count": 20
   },
   {
+    "id": "w8c9d1b29a7",
+    "maker": "tamiya",
+    "label": "趣味车系列",
+    "short": "趣味车系列",
+    "palette": [
+      "hsl(76 26% 68%)",
+      "hsl(76 24% 34%)",
+      "hsl(262 58% 56%)"
+    ],
+    "count": 20
+  },
+  {
     "id": "w43a03d7731",
     "maker": "goodsmile",
     "label": "為美好的世界獻上祝福！",
@@ -668,6 +896,18 @@
       "hsl(245 26% 68%)",
       "hsl(245 24% 34%)",
       "hsl(71 58% 56%)"
+    ],
+    "count": 19
+  },
+  {
+    "id": "wc85272b8c8",
+    "maker": "tamiya",
+    "label": "Aero Mini4wd",
+    "short": "Aero Mini4wd",
+    "palette": [
+      "hsl(98 26% 68%)",
+      "hsl(98 24% 34%)",
+      "hsl(284 58% 56%)"
     ],
     "count": 19
   },
@@ -840,6 +1080,18 @@
     "count": 15
   },
   {
+    "id": "wadf4462cb4",
+    "maker": "tamiya",
+    "label": "方程式赛车系列",
+    "short": "方程式赛车系列",
+    "palette": [
+      "hsl(204 26% 68%)",
+      "hsl(204 24% 34%)",
+      "hsl(30 58% 56%)"
+    ],
+    "count": 15
+  },
+  {
     "id": "w68499d76bf",
     "maker": "goodsmile",
     "label": "黏土人",
@@ -888,6 +1140,18 @@
     "count": 15
   },
   {
+    "id": "w07f5589666",
+    "maker": "tamiya",
+    "label": "飘移车系列",
+    "short": "飘移车系列",
+    "palette": [
+      "hsl(4 26% 68%)",
+      "hsl(4 24% 34%)",
+      "hsl(190 58% 56%)"
+    ],
+    "count": 14
+  },
+  {
     "id": "wcbbc851b61",
     "maker": "goodsmile",
     "label": "影子籃球員",
@@ -896,6 +1160,18 @@
       "hsl(131 26% 68%)",
       "hsl(131 24% 34%)",
       "hsl(317 58% 56%)"
+    ],
+    "count": 14
+  },
+  {
+    "id": "w6bae75d4b4",
+    "maker": "tamiya",
+    "label": "再生能源系列",
+    "short": "再生能源系列",
+    "palette": [
+      "hsl(173 26% 68%)",
+      "hsl(173 24% 34%)",
+      "hsl(359 58% 56%)"
     ],
     "count": 14
   },
@@ -1256,6 +1532,18 @@
       "hsl(197 26% 68%)",
       "hsl(197 24% 34%)",
       "hsl(23 58% 56%)"
+    ],
+    "count": 11
+  },
+  {
+    "id": "wc91c826266",
+    "maker": "tamiya",
+    "label": "恐龙模型系列",
+    "short": "恐龙模型系列",
+    "palette": [
+      "hsl(346 26% 68%)",
+      "hsl(346 24% 34%)",
+      "hsl(172 58% 56%)"
     ],
     "count": 11
   },
@@ -1728,6 +2016,18 @@
     "count": 9
   },
   {
+    "id": "w36cde00ce5",
+    "maker": "tamiya",
+    "label": "Mini4wd Series",
+    "short": "Mini4wd Ser…",
+    "palette": [
+      "hsl(139 26% 68%)",
+      "hsl(139 24% 34%)",
+      "hsl(325 58% 56%)"
+    ],
+    "count": 9
+  },
+  {
     "id": "w871b6b00b6",
     "maker": "goodsmile",
     "label": "ONE-PUNCH MAN 一拳超人",
@@ -1880,6 +2180,18 @@
       "hsl(100 26% 68%)",
       "hsl(100 24% 34%)",
       "hsl(286 58% 56%)"
+    ],
+    "count": 8
+  },
+  {
+    "id": "w81e5c089b2",
+    "maker": "tamiya",
+    "label": "水上机械人",
+    "short": "水上机械人",
+    "palette": [
+      "hsl(89 26% 68%)",
+      "hsl(89 24% 34%)",
+      "hsl(275 58% 56%)"
     ],
     "count": 8
   },
@@ -2076,6 +2388,18 @@
     "count": 8
   },
   {
+    "id": "w3337973bda",
+    "maker": "tamiya",
+    "label": "Wild Mini4wd",
+    "short": "Wild Mini4wd",
+    "palette": [
+      "hsl(305 26% 68%)",
+      "hsl(305 24% 34%)",
+      "hsl(131 58% 56%)"
+    ],
+    "count": 8
+  },
+  {
     "id": "w68727e571a",
     "maker": "kotobukiya",
     "label": "エンバー：オブシディアンプロトコル",
@@ -2086,6 +2410,30 @@
       "hsl(241 58% 56%)"
     ],
     "count": 8
+  },
+  {
+    "id": "w305e0b5a87",
+    "maker": "tamiya",
+    "label": "1/32 迷你四驱车",
+    "short": "1/32 迷你四驱车",
+    "palette": [
+      "hsl(262 26% 68%)",
+      "hsl(262 24% 34%)",
+      "hsl(88 58% 56%)"
+    ],
+    "count": 7
+  },
+  {
+    "id": "w2016843734",
+    "maker": "tamiya",
+    "label": "编程机械人",
+    "short": "编程机械人",
+    "palette": [
+      "hsl(93 26% 68%)",
+      "hsl(93 24% 34%)",
+      "hsl(279 58% 56%)"
+    ],
+    "count": 7
   },
   {
     "id": "wdcb581f307",
@@ -3492,6 +3840,18 @@
     "count": 5
   },
   {
+    "id": "wbc0b192e61",
+    "maker": "tamiya",
+    "label": "Super Mini4wd",
+    "short": "Super Mini4…",
+    "palette": [
+      "hsl(212 26% 68%)",
+      "hsl(212 24% 34%)",
+      "hsl(38 58% 56%)"
+    ],
+    "count": 5
+  },
+  {
     "id": "w2cec1054da",
     "maker": "goodsmile",
     "label": "Thunderbolt Fantasy 東離劍遊紀",
@@ -4068,6 +4428,18 @@
     "count": 4
   },
   {
+    "id": "wa0de316ba1",
+    "maker": "tamiya",
+    "label": "拖挂赛车系列",
+    "short": "拖挂赛车系列",
+    "palette": [
+      "hsl(100 26% 68%)",
+      "hsl(100 24% 34%)",
+      "hsl(286 58% 56%)"
+    ],
+    "count": 4
+  },
+  {
     "id": "w1708175cba",
     "maker": "goodsmile",
     "label": "未定事件簿",
@@ -4196,6 +4568,18 @@
       "hsl(101 26% 68%)",
       "hsl(101 24% 34%)",
       "hsl(287 58% 56%)"
+    ],
+    "count": 4
+  },
+  {
+    "id": "w49af5cf5d6",
+    "maker": "tamiya",
+    "label": "遥控对战机械人",
+    "short": "遥控对战机械人",
+    "palette": [
+      "hsl(259 26% 68%)",
+      "hsl(259 24% 34%)",
+      "hsl(85 58% 56%)"
     ],
     "count": 4
   },
@@ -4400,6 +4784,18 @@
       "hsl(210 26% 68%)",
       "hsl(210 24% 34%)",
       "hsl(36 58% 56%)"
+    ],
+    "count": 4
+  },
+  {
+    "id": "wf70212a5c9",
+    "maker": "tamiya",
+    "label": "Mighty Mini4wd",
+    "short": "Mighty Mini…",
+    "palette": [
+      "hsl(128 26% 68%)",
+      "hsl(128 24% 34%)",
+      "hsl(314 58% 56%)"
     ],
     "count": 4
   },
@@ -5696,6 +6092,18 @@
       "hsl(307 26% 68%)",
       "hsl(307 24% 34%)",
       "hsl(133 58% 56%)"
+    ],
+    "count": 3
+  },
+  {
+    "id": "w5629a9a019",
+    "maker": "tamiya",
+    "label": "Laser Mini4WD",
+    "short": "Laser Mini4…",
+    "palette": [
+      "hsl(183 26% 68%)",
+      "hsl(183 24% 34%)",
+      "hsl(9 58% 56%)"
     ],
     "count": 3
   },
@@ -8996,6 +9404,18 @@
       "hsl(148 26% 68%)",
       "hsl(148 24% 34%)",
       "hsl(334 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
+    "id": "wba022298f0",
+    "maker": "tamiya",
+    "label": "Truckin Mini4wd",
+    "short": "Truckin Min…",
+    "palette": [
+      "hsl(314 26% 68%)",
+      "hsl(314 24% 34%)",
+      "hsl(140 58% 56%)"
     ],
     "count": 2
   },

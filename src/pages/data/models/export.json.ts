@@ -26,8 +26,11 @@ export const GET: APIRoute = () => {
     channel: kit.channel,
     channelLabel: channelMeta(kit.channel).label,
     released: kit.released,
+    /* 商城上架日期（不是发售日） */
+    listedAt: kit.listedAt,
     priceJpy: kit.priceJpy,
     priceCny: kit.priceCny,
+    priceHkd: kit.priceHkd,
     taxRate: kit.taxRate,
     subject: kit.subject,
     subjectId: kit.subjectId,

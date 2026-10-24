@@ -32,6 +32,9 @@
     "data:goodsmile:mall:status": "node scripts/harvest-goodsmile-mall-status.mjs",
     "data:goodsmile:preorder": "node scripts/build-goodsmile-preorder-facts.mjs",
     "data:bandai:nongundam": "node scripts/harvest-bandai-nongundam.mjs",
+    "data:tamiya": "node scripts/harvest-tamiya-cn.mjs",
+    "data:tamiya:facts": "node scripts/build-tamiya-facts.mjs",
+    "data:tamiya:images": "python scripts/fetch-tamiya-images.py",
     "test:mech": "node scripts/test-subject.mjs",
     "test:subject": "node scripts/test-subject.mjs"
   },

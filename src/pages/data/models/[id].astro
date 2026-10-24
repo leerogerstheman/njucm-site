@@ -14,6 +14,7 @@ import {
   channelMeta,
   makerMeta,
   formatJPY,
+  formatPrice,
   releaseLabel,
   relatedProducts,
   saleStatusLabel,
@@ -57,7 +58,7 @@ const description = [
   [category.label, kit.scale].filter(Boolean).join(' '),
   series.label,
   releaseLabel(kit.released),
-  formatJPY(kit.priceJpy),
+  formatPrice(kit),
 ]
   .filter(Boolean)
   .join(' · ');
@@ -88,7 +89,9 @@ const offers = offerPrice
     }
   : kit.priceCny
     ? { '@type': 'Offer', price: kit.priceCny, priceCurrency: 'CNY', availability: 'https://schema.org/InStock', url: `${SITE}/data/models/${kit.id}/` }
-    : undefined;
+    : kit.priceHkd
+      ? { '@type': 'Offer', price: kit.priceHkd, priceCurrency: 'HKD', availability: 'https://schema.org/InStock', url: `${SITE}/data/models/${kit.id}/` }
+      : undefined;
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -101,7 +104,7 @@ const jsonLd = {
   image: kit.image ? [`${SITE}${kit.image}`] : undefined,
   brand: { '@type': 'Brand', name: maker.label },
   category: `${category.label} ${kit.scale} · ${series.label}`,
-  releaseDate: kit.released,
+  releaseDate: kit.released || undefined,
   material: kit.material ?? undefined,
   weight: kit.heightMm
     ? { '@type': 'QuantitativeValue', value: kit.heightMm, unitCode: 'MMT', name: '全高' }
@@ -115,6 +118,9 @@ const jsonLd = {
     { '@type': 'PropertyValue', name: '作品线', value: series.label },
     { '@type': 'PropertyValue', name: '销售渠道', value: channel.label },
     ...(kit.subject ? [{ '@type': 'PropertyValue', name: '主题', value: kit.subject }] : []),
+    ...(kit.listedAt
+      ? [{ '@type': 'PropertyValue', name: '商城上架日期', value: kit.listedAt }]
+      : []),
     ...(kit.aliases.length
       ? [{ '@type': 'PropertyValue', name: '又名', value: kit.aliases.join(' · ') }]
       : []),
@@ -272,17 +278,29 @@ const jsonLd = {
           )
         }
         <div class="gspec__row">
-          <span class="gspec__key">发售时间</span>
-          <span class="gspec__val">{releaseLabel(kit.released)}</span>
+          <span class="gspec__key">{kit.released ? '发售时间' : '商城上架'}</span>
+          <span class="gspec__val">
+            {kit.released
+              ? releaseLabel(kit.released)
+              : kit.listedAt
+                ? `${kit.listedAt}`
+                : '—'}
+            {!kit.released && kit.listedAt && (
+              <span class="faint"> （官网未公布发售日，这是商城上架日期） </span>
+            )}
+          </span>
         </div>
         <div class="gspec__row">
-          <span class="gspec__key">官方定价</span>
+          <span class="gspec__key">{kit.priceHkd > 0 ? '商城定价' : '官方定价'}</span>
           <span class="gspec__val">
-            {formatJPY(kit.priceJpy)}
+            {formatPrice(kit)}
             {kit.priceJpy > 0 && (
               <span class="faint">
                 （含税{kit.taxRate ? ` ${kit.taxRate}%` : ''}）
               </span>
+            )}
+            {kit.priceHkd > 0 && (
+              <span class="faint"> （田宫直销店的港币标价） </span>
             )}
             {kit.priceJpy === 0 && kit.priceCny > 0 && (
               <span class="faint"> （限定品只公布人民币零售价） </span>
