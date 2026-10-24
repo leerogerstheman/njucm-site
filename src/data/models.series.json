@@ -324,6 +324,18 @@
     "count": 78
   },
   {
+    "id": "w501339795d",
+    "maker": "volks",
+    "label": "F.S.S. 五星物语",
+    "short": "F.S.S. 五星物语",
+    "palette": [
+      "hsl(132 26% 68%)",
+      "hsl(132 24% 34%)",
+      "hsl(318 58% 56%)"
+    ],
+    "count": 77
+  },
+  {
     "id": "wf28f4a2959",
     "maker": "goodsmile",
     "label": "Re:從零開始的異世界生活",
@@ -394,6 +406,18 @@
       "hsl(268 58% 56%)"
     ],
     "count": 48
+  },
+  {
+    "id": "wa5dec569dd",
+    "maker": "volks",
+    "label": "SWS 航空模型",
+    "short": "SWS 航空模型",
+    "palette": [
+      "hsl(309 26% 68%)",
+      "hsl(309 24% 34%)",
+      "hsl(135 58% 56%)"
+    ],
+    "count": 47
   },
   {
     "id": "wb18f969118",
@@ -824,6 +848,18 @@
       "hsl(357 26% 68%)",
       "hsl(357 24% 34%)",
       "hsl(183 58% 56%)"
+    ],
+    "count": 24
+  },
+  {
+    "id": "w84860041c1",
+    "maker": "volks",
+    "label": "BLOCKer’s FIORE",
+    "short": "BLOCKer’s F…",
+    "palette": [
+      "hsl(228 26% 68%)",
+      "hsl(228 24% 34%)",
+      "hsl(54 58% 56%)"
     ],
     "count": 24
   },
@@ -6048,6 +6084,18 @@
     "count": 3
   },
   {
+    "id": "w7c040ca031",
+    "maker": "volks",
+    "label": "自组手办（チャグミン）",
+    "short": "自组手办（チャグミン）",
+    "palette": [
+      "hsl(300 26% 68%)",
+      "hsl(300 24% 34%)",
+      "hsl(126 58% 56%)"
+    ],
+    "count": 3
+  },
+  {
     "id": "wb490d635a1",
     "maker": "goodsmile",
     "label": "佐賀偶像是傳奇",
@@ -10016,6 +10064,18 @@
       "hsl(107 26% 68%)",
       "hsl(107 24% 34%)",
       "hsl(293 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "wc92aeb419d",
+    "maker": "volks",
+    "label": "1/24 机甲模型",
+    "short": "1/24 机甲模型",
+    "palette": [
+      "hsl(304 26% 68%)",
+      "hsl(304 24% 34%)",
+      "hsl(130 58% 56%)"
     ],
     "count": 1
   },

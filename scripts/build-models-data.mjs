@@ -275,6 +275,24 @@ const VENDORS = [
     channels: new Set(['general', 'limited', 'exclusive']),
     subjectKind: null,
   },
+  {
+    id: 'volks',
+    label: 'VOLKS',
+    sources: ['src/data/models.kits.volks.json'],
+    /* 事实文件里直接写规范 id */
+    categories: Object.fromEntries(
+      [
+        'volks:sws', 'volks:base', 'volks:fss', 'volks:blockers',
+        'volks:charagumin', 'volks:mecha', 'volks:figure', 'volks:other',
+      ].map((id) => [id, id]),
+    ),
+    defaultScale: {},
+    /* 作品名是开放词表：SWS 航空模型、F.S.S. 五星物语… */
+    seriesMode: 'label',
+    series: null,
+    channels: new Set(['general', 'limited', 'exclusive']),
+    subjectKind: null,
+  },
 ];
 
 /** 品类 id → 原始等级（万代那边等级就是品类名） */
@@ -844,6 +862,35 @@ if (tamiyaJp.length) {
     if (jp.sourceJp) kit.sourceJp = jp.sourceJp;
     if (jp.imageUrl && !kit.imageUrl) kit.imageUrl = jp.imageUrl;
     withTamiyaJp++;
+  }
+}
+
+/*
+ * 良笑官方日文商品页的叠加层。
+ *
+ * 良笑的条目 id 就是官网商品号（goodsmile-10000 ↔ /product/10000/），
+ * 所以官网的日文页能按 id 精确对上——不需要任何模糊匹配。
+ *
+ * 日文页给的是官方日文品名、含税定价、発売時期与比例。这些字段的源头就是
+ * 日文页，所以官方日文名直接盖掉商城条目带来的名字。
+ *
+ * 这一层必须放在商城叠加层（saleOverlay）之后：商城那层展开时会把字段
+ * 整个盖掉，顺序反了日文名就又没了。
+ */
+const goodsmileJp = readJsonArray('src/data/models.kits.goodsmile-jp.json');
+let withGoodsmileJp = 0;
+if (goodsmileJp.length) {
+  const byId = new Map(goodsmileJp.map((e) => [e.id, e]));
+  for (const kit of kits) {
+    if (kit.maker !== 'goodsmile') continue;
+    const jp = byId.get(kit.id);
+    if (!jp) continue;
+    if (jp.nameJa) kit.nameJa = jp.nameJa;
+    if (jp.priceJpy) kit.priceJpy = jp.priceJpy;
+    if (!kit.released && jp.released) kit.released = jp.released;
+    if (!kit.scale && jp.scale) kit.scale = jp.scale;
+    if (jp.sourceJp) kit.sourceJp = jp.sourceJp;
+    withGoodsmileJp++;
   }
 }
 

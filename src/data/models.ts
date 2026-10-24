@@ -24,7 +24,14 @@ import SERIES_CATALOG from './models.series.json';
 /* 厂商                                                                        */
 /* -------------------------------------------------------------------------- */
 
-export type MakerId = 'bandai' | 'kotobukiya' | 'goodsmile' | 'modhtoy' | 'tamiya' | 'kaiyodo';
+export type MakerId =
+  | 'bandai'
+  | 'kotobukiya'
+  | 'goodsmile'
+  | 'modhtoy'
+  | 'tamiya'
+  | 'kaiyodo'
+  | 'volks';
 
 export interface MakerMeta {
   id: MakerId;
@@ -97,6 +104,16 @@ export const MAKERS: MakerMeta[] = [
     site: 'https://kaiyodo.co.jp/',
     origin: 'jp',
     brief: '以 1/35 拼装模型与手办见长，官网资料的字段最全：税込价、発売予定月、缩放与材质齐全。',
+  },
+  {
+    id: 'volks',
+    label: '造型村',
+    labelEn: 'VOLKS',
+    site: 'https://www.volks.co.jp/',
+    origin: 'jp',
+    brief: '京都起家的模型厂，本业是飞机比例模型（SWS 系列），人形手办（造型村）反而更有名。',
+    /* 飞机与情景基座——那套机体线稿画上去不对，详情页只留商品图 */
+    techViews: false,
   },
 ];
 
@@ -209,6 +226,16 @@ export const CATEGORIES: CategoryMeta[] = [
   { id: 'kaiyodo:plamo', maker: 'kaiyodo', label: 'プラモケイ', short: 'ARTPLA', brief: 'ARTPLA 等塑料模型套件，怪兽与机甲题材居多' },
   { id: 'kaiyodo:dgarage', maker: 'kaiyodo', label: 'デジタルガレージキット', short: 'DGK', brief: '1/35 数字模型套件，Android 与角色题材' },
   { id: 'kaiyodo:mecha', maker: 'kaiyodo', label: 'アッセンブルボーグ', short: 'NEXUS', brief: '可动骨架的 1/35 机甲套件' },
+
+  /* ---- 造型村：按官网商城自己的产品线 --------------------------------- */
+  { id: 'volks:sws', maker: 'volks', label: 'SWS 航空模型', short: 'SWS', scale: '1/32', brief: 'SUPER WING SERIES，飞机的塑料套件，1/32 与 1/48 为主' },
+  { id: 'volks:base', maker: 'volks', label: 'SWS 情景基座', short: 'SWS-VB', brief: '用来给航空模型配场景的基座与地砖模块' },
+  { id: 'volks:fss', maker: 'volks', label: 'F.S.S. 机甲套件', short: 'F.S.S.', brief: '五星物语系列的高完成度机甲模型' },
+  { id: 'volks:blockers', maker: 'volks', label: 'BLOCKer’s 机娘', short: "BLOCKer's", brief: '可动机械人形与装甲人偶系列' },
+  { id: 'volks:charagumin', maker: 'volks', label: '自组手办', short: '自組手办', brief: '自己拼装上色的角色手办模型' },
+  { id: 'volks:mecha', maker: 'volks', label: '1/24 机甲模型', short: '1/24', brief: '1/24 比例的机甲与载具模型' },
+  { id: 'volks:figure', maker: 'volks', label: 'VOLKS 角色模型', short: 'VOLKS', brief: '绝对领域、萌收藏 Plus 等角色比例模型' },
+  { id: 'volks:other', maker: 'volks', label: '其他模型', short: '其他', brief: '暂时没有归入上面几条产品线的模型' },
 ];
 
 const CATEGORY_MAP = new Map(CATEGORIES.map((c) => [c.id, c]));
