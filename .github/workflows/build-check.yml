@@ -1,0 +1,53 @@
+name: Build check
+
+# 分支保护要求 PR 必须通过这项检查。
+#
+# 部署仍然只发生在 push 到 main 之后（见 deploy.yml）；这里的检查不部署，
+# 只回答一个问题：这个 PR 能不能构建出来。
+#
+# 所以它用 `--frozen-lockfile`：依赖版本必须与仓库里提交的 pnpm-lock.yaml
+# 一致，构建内容才是可复现的。
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run data tests
+        run: pnpm test:subject
+
+      - name: Build site
+        run: pnpm build
+
+      # 构建完再扫一遍产物：内联脚本、内联样式、站外子资源、CSP meta
+      # 是不是都还符合策略。这道闸是给「以后有人加了一段内联脚本」
+      # 准备的——那种改动在本地看不出来，只有策略会拦。
+      - name: Audit content security policy
+        run: pnpm test:csp

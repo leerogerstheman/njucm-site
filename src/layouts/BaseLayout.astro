@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE } from '../data/site';
+import { CSP_META_CONTENT } from '../utils/csp';
 import '../styles/global.css';
 import '../styles/header.css';
 import '../styles/footer.css';
@@ -13,6 +14,15 @@ interface Props {
   /** set on article pages so the title reads "page · site" */
   isArticle?: boolean;
   /**
+   * 页面自己的脚本，提前抓起来。
+   *
+   * 这些脚本要在解析到它们的位置时立刻执行（项目卡片要先排好序再首帧），
+   * 所以它们是「阻塞式外部脚本」而不是延迟模块。浏览器是边解析边下载的，
+   * 等它解析到脚本标签才去请求，就晚了一轮往返；这里先声明一遍，抓取与
+   * 解析并行，脚本到达时基本已经躺在缓存里。
+   */
+  preload?: string[];
+  /**
    * 局部主题分区。
    *
    * 某些栏目自带一套自己的配色（比如高达模型数据库用吉翁公国的红与金）。
@@ -22,7 +32,7 @@ interface Props {
   scope?: string;
 }
 
-const { title, description = SITE.description, isArticle = false, scope } = Astro.props;
+const { title, description = SITE.description, isArticle = false, scope, preload = [] } = Astro.props;
 
 const pageTitle = title ? `${title} · ${SITE.title}` : `${SITE.title} · ${SITE.domain}`;
 
@@ -36,6 +46,14 @@ const ogImage = new URL('/og.png', siteOrigin).href;
 <html lang={SITE.lang} data-scope={scope}>
   <head>
     <meta charset="utf-8" />
+    {/*
+      内容安全策略。
+      放在 head 最前面：meta 形式的策略只对它之后解析到的内容生效，
+      放晚了，前面那几行就漏在闸门外面了。
+      策略正文见 src/utils/csp.ts，与 Cloudflare 响应头用的是同一份。
+    */}
+    <meta http-equiv="Content-Security-Policy" content={CSP_META_CONTENT} />
+    {preload.map((href) => <link rel="preload" as="script" href={href} />)}
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
@@ -63,33 +81,18 @@ const ogImage = new URL('/og.png', siteOrigin).href;
 
     {/*
       Applies a previously chosen theme before the first paint, so a light-theme
-      visitor never sees a dark flash. Inline (not bundled) on purpose: a module
-      script would be deferred until after the page has already rendered.
+      visitor never sees a dark flash.
+
+      External, not inline: an inline script would need a CSP hash, and the
+      hash changes whenever this code changes — which would silently break
+      the rule copied into Cloudflare. Same-origin files pass 'self' forever.
+
+      preload + async: the fetch starts while the head is still parsing, and
+      async keeps the parser running so the stylesheets are discovered at the
+      same time instead of one round trip later.
     */}
-    <script is:inline>
-      (function () {
-        // 两件事，都必须在首帧之前同步做完，所以内联且不加 defer。
-
-        // 1) 主题：提前落定，避免浅色访客看到一闪的深色。
-        try {
-          var saved = localStorage.getItem('njucm:theme');
-          if (saved === 'light' || saved === 'dark') {
-            document.documentElement.dataset.theme = saved;
-          }
-        } catch (e) {
-          /* storage blocked: fall through to the dark default */
-        }
-
-        // 2) 入场动效的分级开关（见 global.css 的 rise-in）：
-        //    内容绝不能因为「动画没跑」而看不见，所以动画只在确认脚本可用时
-        //    才启用；再由下面的兜底计时器保证它一定会被解除。
-        var root = document.documentElement;
-        root.classList.add('js');
-        window.setTimeout(function () {
-          root.classList.add('reveal-settled');
-        }, 2500);
-      })();
-    </script>
+    <link rel="preload" as="script" href="/scripts/theme.js?v=1" />
+    <script is:inline src="/scripts/theme.js?v=1" async></script>
   </head>
 
   <body>

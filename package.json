@@ -38,11 +38,17 @@
     "data:kaiyodo": "node scripts/harvest-kaiyodo.mjs",
     "data:kaiyodo:facts": "node scripts/build-kaiyodo-facts.mjs",
     "test:mech": "node scripts/test-subject.mjs",
-    "test:subject": "node scripts/test-subject.mjs"
+    "test:subject": "node scripts/test-subject.mjs",
+    "test:csp": "node scripts/test-csp.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.3.0",
     "astro": "^5.6.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "source-map-js": "^1.2.2"
+    }
   }
 }

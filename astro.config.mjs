@@ -42,4 +42,13 @@ export default defineConfig({
       wrap: true,
     },
   },
+  /*
+   * 内容安全策略不用 Astro 的 experimental.csp。
+   *
+   * 那个选项只认配置里手写的哈希，不会替用户脚本算；页面上真正跑着的
+   * 那几段内联脚本一条都不在它的哈希表里——照抄的结果是「策略看起来
+   * 很严，实际把所有脚本都拦了」。所以策略自己写在 src/utils/csp.ts，
+   * 由 BaseLayout 以 meta 的形式注入每个页面，Cloudflare 那边用同一份
+   * 字符串做响应头。
+   */
 });

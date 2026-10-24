@@ -11,6 +11,8 @@
  *
  * 页面刻意做得很小：它一闪而过，不值得为它背上整站的样式与脚本。
  */
+import { CSP_META_CONTENT } from '../../utils/csp';
+
 interface Props {
   /** 迁移后的地址 */
   to: string;
@@ -25,6 +27,8 @@ const { to, title = '页面已迁移' } = Astro.props;
 <html lang="zh-Hans">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content={CSP_META_CONTENT} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, follow" />
     <meta http-equiv="refresh" content={`0; url=${to}`} />
@@ -69,8 +73,12 @@ const { to, title = '页面已迁移' } = Astro.props;
         这个地址换成了 <a href={to}>{to}</a>。
       </p>
     </main>
-    <script is:inline define:vars={{ to }}>
-      location.replace(to);
-    </script>
+    {/*
+      跳转兜底。页面本身已经带 meta refresh（0 秒），正常情况下浏览器
+      立刻就跳走了，这个脚本只在少数不认 meta refresh 的浏览器上兜底。
+      写成外部文件是为了不引入内联脚本——内联脚本要靠 CSP 哈希放行，
+      哈希一变，抄到 Cloudflare 上的规则就过期了。
+    */}
+    <script is:inline src="/scripts/redirect.js?v=1"></script>
   </body>
 </html>

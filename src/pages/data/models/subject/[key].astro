@@ -9,6 +9,7 @@ import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import KitCard from '../../../../components/models/KitCard.astro';
 import CompareBar from '../../../../components/models/CompareBar.astro';
 import ArtDefs from '../../../../components/models/ArtDefs.astro';
+import { safeJsonLd } from '../../../../utils/jsonld';
 import SUBJECTS from '../../../../data/models.subjects.json';
 import { PRODUCTS, seriesMeta, categoryMeta, formatJPY, releaseLabel , categoryMeta } from '../../../../data/models';
 import '../../../../styles/models.css';
@@ -94,7 +95,7 @@ const jsonLd = {
   description={`${mech.label}（${mech.en ?? ''}）在库里的 ${mech.count} 个版本：品类、比例、发售日、官方定价与渠道的横向对比。`}
   scope="gundam"
 >
-  <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
+  <script type="application/ld+json" is:inline set:html={safeJsonLd(jsonLd)} />
 
   <ArtDefs />
 

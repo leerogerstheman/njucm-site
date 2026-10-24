@@ -5,6 +5,7 @@ import KitCard from '../../../components/models/KitCard.astro';
 import CompareBar from '../../../components/models/CompareBar.astro';
 import CollectionState from '../../../components/models/CollectionState.astro';
 import ArtDefs from '../../../components/models/ArtDefs.astro';
+import { safeJsonLd } from '../../../utils/jsonld';
 import { ART_VIEWS } from '../../../data/gundam.art';
 import SUBJECTS from '../../../data/models.subjects.json';
 import {
@@ -141,7 +142,7 @@ const jsonLd = {
 ---
 
 <BaseLayout title={kit.name} description={description} isArticle scope="gundam">
-  <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
+  <script type="application/ld+json" is:inline set:html={safeJsonLd(jsonLd)} />
 
   <ArtDefs />
 

@@ -17,6 +17,20 @@ www.njucm.org {
 njucm.org {
 	encode gzip zstd
 
+	# 安全响应头：与 deploy/security-headers.md 里给 Cloudflare 的那套一致。
+	# 放在站点层级，下面各个 handle 里的响应头会叠加上去。
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "SAMEORIGIN"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "geolocation=(), microphone=(), camera=(), interest-cohort=()"
+		Cross-Origin-Opener-Policy "same-origin"
+		# 与页面里那条 meta 策略是同一份（见 src/utils/csp.ts）。策略里没有
+		# 哈希，所以这一行是静态的，不会因为改了脚本而过期。
+		Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; frame-src 'none'; form-action 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'none'; style-src 'self' 'unsafe-inline'; style-src-elem 'self'; style-src-attr 'unsafe-inline'; script-src 'self'; upgrade-insecure-requests"
+	}
+
 	# 商品图：文件名带 hash 之外也不变，但内容不常改，给足一年
 	@gundam path /gundam/*
 	handle @gundam {
