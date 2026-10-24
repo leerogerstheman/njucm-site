@@ -3,6 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+    # 只改了文档就不重建：整站有近两万个页面，一次构建要五分钟。
+    paths-ignore:
+      - "**/*.md"
+      - "src/content/**"
   workflow_dispatch:
 
 # Allow the workflow to publish to Pages and mint an OIDC token.

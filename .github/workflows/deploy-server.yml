@@ -6,12 +6,11 @@ name: Deploy to server
 # 第一次请用 workflow_dispatch 手动触发，确认没问题后再挂到 push 上。
 
 on:
+  # 只在手动触发时推送。
+  #
+  # 服务器还没配好之前（Secrets 里没有 SSH 密钥），自动触发只会留下一条
+  # 失败记录。配好之后再把 push 触发打开，或者一直手动触发也行。
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths-ignore:
-      - "**/*.md"
-      - "docs/**"
 
 permissions:
   contents: read
