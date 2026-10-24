@@ -11,8 +11,9 @@
  * 一律 verified: false，界面上会明确标出来，而不是混在已核实条目里。
  *
  * 库覆盖多家厂商的产品——万代（塑料模型、拼装模型、食玩）、寿屋、良笑、
- * 魔动核、田宫（军事模型、汽车模型、迷你四驱、RC）等。所以分类表都是**开放词表**：
- * 厂商、产品品类（品类 id 前缀即厂商）与作品线各自成套，不是一套写死的枚举值。
+ * 魔动核、田宫（军事模型、汽车模型、迷你四驱、RC）、海洋堂（ARTPLA、DGK）等。
+ * 所以分类表都是**开放词表**：厂商、产品品类（品类 id 前缀即厂商）
+ * 与作品线各自成套，不是一套写死的枚举值。
  */
 
 import { MODEL_KITS } from './models.kits';
@@ -23,7 +24,7 @@ import SERIES_CATALOG from './models.series.json';
 /* 厂商                                                                        */
 /* -------------------------------------------------------------------------- */
 
-export type MakerId = 'bandai' | 'kotobukiya' | 'goodsmile' | 'modhtoy' | 'tamiya';
+export type MakerId = 'bandai' | 'kotobukiya' | 'goodsmile' | 'modhtoy' | 'tamiya' | 'kaiyodo';
 
 export interface MakerMeta {
   id: MakerId;
@@ -37,6 +38,13 @@ export interface MakerMeta {
   origin: 'jp' | 'cn';
   /** 一句话定位 */
   brief: string;
+  /**
+   * 详情页那组「正面 / 侧面 / 背面 / 头部」技术视图要不要画。
+   *
+   * 那套线稿画的是机体——车子、飞机、舰船这类产品配上去是错的，
+   * 所以做车辆与舰船的厂商把这一组关掉，页面只留商品图。
+   */
+  techViews?: boolean;
 }
 
 export const MAKERS: MakerMeta[] = [
@@ -79,6 +87,16 @@ export const MAKERS: MakerMeta[] = [
     site: 'https://tamiya.cn/',
     origin: 'jp',
     brief: '与万代齐名的塑料模型老厂牌，1/35 军事模型、1/24 汽车、1/32 迷你四驱与 RC 电动模型都做。',
+    /* 车、飞机、舰船——那套机体线稿画上去不对，详情页只留商品图 */
+    techViews: false,
+  },
+  {
+    id: 'kaiyodo',
+    label: '海洋堂',
+    labelEn: 'KAIYODO',
+    site: 'https://kaiyodo.co.jp/',
+    origin: 'jp',
+    brief: '以 1/35 拼装模型与手办见长，官网资料的字段最全：税込价、発売予定月、缩放与材质齐全。',
   },
 ];
 
@@ -186,6 +204,11 @@ export const CATEGORIES: CategoryMeta[] = [
   { id: 'tamiya:mini4wd', maker: 'tamiya', label: '迷你四驱车', short: 'MINI4WD', scale: '1/32', brief: '1/32 电动四驱车，田宫最长寿的产品线' },
   { id: 'tamiya:rc', maker: 'tamiya', label: 'RC 遥控车', short: 'RC', brief: '1/10、1/12 等比例的电动遥控车套件' },
   { id: 'tamiya:stem', maker: 'tamiya', label: 'STEM 教育模型', short: 'STEM', brief: '编程机械人与机械动物等益智套件' },
+
+  /* ---- 海洋堂：按官网自己的产品线 ------------------------------------- */
+  { id: 'kaiyodo:plamo', maker: 'kaiyodo', label: 'プラモケイ', short: 'ARTPLA', brief: 'ARTPLA 等塑料模型套件，怪兽与机甲题材居多' },
+  { id: 'kaiyodo:dgarage', maker: 'kaiyodo', label: 'デジタルガレージキット', short: 'DGK', brief: '1/35 数字模型套件，Android 与角色题材' },
+  { id: 'kaiyodo:mecha', maker: 'kaiyodo', label: 'アッセンブルボーグ', short: 'NEXUS', brief: '可动骨架的 1/35 机甲套件' },
 ];
 
 const CATEGORY_MAP = new Map(CATEGORIES.map((c) => [c.id, c]));

@@ -235,6 +235,46 @@ const VENDORS = [
     channels: new Set(['general', 'limited', 'exclusive']),
     subjectKind: null,
   },
+  {
+    id: 'tamiya-jp',
+    label: 'TAMIYA（日本官网）',
+    /* 这批条目的厂商还是田宫——日本官网是同一家厂的自营站 */
+    maker: 'tamiya',
+    sources: ['src/data/models.kits.tamiya-jp.json'],
+    /**
+     * 这批事实文件直接写规范 id（`tamiya:mm35` 这样的）——
+     * 它们是日本官网独有的产品，商城那套分类路径套不上。
+     */
+    categories: Object.fromEntries(
+      [
+        'tamiya:mm35', 'tamiya:mm48', 'tamiya:mm16', 'tamiya:soldier16',
+        'tamiya:air32', 'tamiya:air48', 'tamiya:air72', 'tamiya:ship350', 'tamiya:ship700',
+        'tamiya:car12', 'tamiya:car18', 'tamiya:race20', 'tamiya:car24',
+        'tamiya:bike6', 'tamiya:bike12', 'tamiya:dino',
+        'tamiya:mini4wd', 'tamiya:rc', 'tamiya:stem',
+      ].map((id) => [id, id]),
+    ),
+    defaultScale: {},
+    seriesMode: 'label',
+    series: null,
+    channels: new Set(['general', 'limited', 'exclusive']),
+    subjectKind: null,
+  },
+  {
+    id: 'kaiyodo',
+    label: 'KAIYODO',
+    sources: ['src/data/models.kits.kaiyodo.json'],
+    categories: {
+      'kaiyodo:plamo': 'kaiyodo:plamo',
+      'kaiyodo:dgarage': 'kaiyodo:dgarage',
+      'kaiyodo:mecha': 'kaiyodo:mecha',
+    },
+    defaultScale: {},
+    seriesMode: 'label',
+    series: null,
+    channels: new Set(['general', 'limited', 'exclusive']),
+    subjectKind: null,
+  },
 ];
 
 /** 品类 id → 原始等级（万代那边等级就是品类名） */
@@ -452,7 +492,7 @@ function normalise(entry, file, vendor) {
     series = label ? seriesId(label) : 'other';
     if (label) {
       if (!seriesLabels.has(series)) {
-        seriesLabels.set(series, { label, maker: vendor.id });
+        seriesLabels.set(series, { label, maker: vendor.maker || vendor.id });
       }
     } else {
       note(`${file} / ${id}: 没有作品名，归入「其他」`);
@@ -475,7 +515,7 @@ function normalise(entry, file, vendor) {
        */
       series = seriesId(raw);
       if (!seriesLabels.has(series)) {
-        seriesLabels.set(series, { label: raw, maker: vendor.id });
+        seriesLabels.set(series, { label: raw, maker: vendor.maker || vendor.id });
       }
     }
   }
@@ -563,7 +603,7 @@ function normalise(entry, file, vendor) {
     id,
     name,
     nameJa: text(entry.nameJa),
-    maker: vendor.id,
+    maker: vendor.maker || vendor.id,
     category,
     series,
     scale: text(entry.scale) || vendor.defaultScale[CATEGORY_LABEL[category]] || '',
@@ -768,6 +808,27 @@ if (jpOverlay.length) {
     if (jp.imageUrl) kit.imageUrl = jp.imageUrl;
     if (jp.sourceJp) kit.sourceJp = jp.sourceJp;
     withJp++;
+  }
+}
+
+/*
+ * 田宫日本官网的叠加层。
+ *
+ * 商城那批条目已经有中文名与出处了，日本官网补的是**官方日文品名**与
+ * **厂商希望零售价（日元）**——同一款产品的两份资料，按 id 接上。
+ */
+const tamiyaJp = readJsonArray('src/data/models.kits.tamiya-jp-enriched.json');
+let withTamiyaJp = 0;
+if (tamiyaJp.length) {
+  const byId = new Map(tamiyaJp.map((e) => [e.id, e]));
+  for (const kit of kits) {
+    const jp = byId.get(kit.id);
+    if (!jp) continue;
+    if (jp.nameJa) kit.nameJa = jp.nameJa;
+    if (jp.priceJpy) kit.priceJpy = jp.priceJpy;
+    if (jp.sourceJp) kit.sourceJp = jp.sourceJp;
+    if (jp.imageUrl && !kit.imageUrl) kit.imageUrl = jp.imageUrl;
+    withTamiyaJp++;
   }
 }
 

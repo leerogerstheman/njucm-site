@@ -758,7 +758,8 @@
 
   .ggallery__thumbs {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    /* 列数由页面给出——只有一张缩略图时不要把它拉满整行 */
+    grid-template-columns: repeat(var(--thumbs, 5), minmax(0, 1fr));
     gap: 0.45rem;
   }
 

@@ -34,7 +34,9 @@
     "data:bandai:nongundam": "node scripts/harvest-bandai-nongundam.mjs",
     "data:tamiya": "node scripts/harvest-tamiya-cn.mjs",
     "data:tamiya:facts": "node scripts/build-tamiya-facts.mjs",
-    "data:tamiya:images": "python scripts/fetch-tamiya-images.py",
+    "data:tamiya:images": "python scripts/fetch-model-images.py",
+    "data:kaiyodo": "node scripts/harvest-kaiyodo.mjs",
+    "data:kaiyodo:facts": "node scripts/build-kaiyodo-facts.mjs",
     "test:mech": "node scripts/test-subject.mjs",
     "test:subject": "node scripts/test-subject.mjs"
   },

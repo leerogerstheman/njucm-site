@@ -32,6 +32,11 @@ const series = seriesMeta(kit.series);
 const category = categoryMeta(kit.category);
 const channel = channelMeta(kit.channel);
 const maker = makerMeta(kit.maker);
+/**
+ * 那套「正面 / 侧面 / 背面 / 头部」技术视图画的是机体——
+ * 车子、飞机、舰船这类产品配上去是错的，所以按厂商关掉，页面只留商品图。
+ */
+const showViews = maker.techViews !== false;
 const related = relatedProducts(kit, PRODUCTS, 6);
 
 /* 同一主题的其它产品 */
@@ -166,15 +171,24 @@ const jsonLd = {
           )
         }
         {
-          ART_VIEWS.map((view, i) => (
-            <span class="ggallery__frame" data-frame={view.id} hidden={i !== 0 || Boolean(kit.image)}>
-              <KitCover kit={kit} view={view.id} uid={`detail-${kit.id}-${view.id}`} />
-            </span>
-          ))
+          showViews &&
+            ART_VIEWS.map((view, i) => (
+              <span class="ggallery__frame" data-frame={view.id} hidden={i !== 0 || Boolean(kit.image)}>
+                <KitCover kit={kit} view={view.id} uid={`detail-${kit.id}-${view.id}`} />
+              </span>
+            ))
         }
       </button>
 
-      <div class="ggallery__thumbs" role="group" aria-label="切换视角">
+      {
+        /* 只有一张图时没有「切换视角」可言，缩略行就不必占地方了 */
+        (kit.image ? 1 : 0) + (showViews ? ART_VIEWS.length : 0) > 1 && (
+          <div
+            class="ggallery__thumbs"
+            role="group"
+            aria-label="切换视角"
+            style={`--thumbs:${(kit.image ? 1 : 0) + (showViews ? ART_VIEWS.length : 0)}`}
+          >
         {
           kit.image && (
             <button
@@ -191,19 +205,22 @@ const jsonLd = {
           )
         }
         {
-          ART_VIEWS.map((view, i) => (
-            <button
-              class="ggallery__thumb"
-              type="button"
-              data-view={view.id}
-              aria-pressed={!kit.image && i === 0 ? 'true' : 'false'}
-            >
-              <KitCover kit={kit} view={view.id} compact uid={`thumb-${kit.id}-${view.id}`} />
-              <span class="ggallery__thumb-label">{view.label}</span>
-            </button>
-          ))
+          showViews &&
+            ART_VIEWS.map((view, i) => (
+              <button
+                class="ggallery__thumb"
+                type="button"
+                data-view={view.id}
+                aria-pressed={!kit.image && i === 0 ? 'true' : 'false'}
+              >
+                <KitCover kit={kit} view={view.id} compact uid={`thumb-${kit.id}-${view.id}`} />
+                <span class="ggallery__thumb-label">{view.label}</span>
+              </button>
+            ))
         }
-      </div>
+          </div>
+        )
+      }
     </div>
 
     <!-- 条目信息 -->
@@ -291,15 +308,15 @@ const jsonLd = {
           </span>
         </div>
         <div class="gspec__row">
-          <span class="gspec__key">{kit.priceHkd > 0 ? '商城定价' : '官方定价'}</span>
+          <span class="gspec__key">{kit.priceJpy > 0 ? '官方定价' : kit.priceHkd > 0 ? '商城定价' : '官方定价'}</span>
           <span class="gspec__val">
-            {formatPrice(kit)}
+            {kit.priceJpy > 0 ? formatJPY(kit.priceJpy) : kit.priceHkd > 0 ? `HK$${kit.priceHkd.toLocaleString('en-US')}` : '—'}
             {kit.priceJpy > 0 && (
               <span class="faint">
                 （含税{kit.taxRate ? ` ${kit.taxRate}%` : ''}）
               </span>
             )}
-            {kit.priceHkd > 0 && (
+            {kit.priceJpy === 0 && kit.priceHkd > 0 && (
               <span class="faint"> （田宫直销店的港币标价） </span>
             )}
             {kit.priceJpy === 0 && kit.priceCny > 0 && (
@@ -307,6 +324,17 @@ const jsonLd = {
             )}
           </span>
         </div>
+        {
+          kit.priceJpy > 0 && kit.priceHkd > 0 && (
+            <div class="gspec__row">
+              <span class="gspec__key">商城定价</span>
+              <span class="gspec__val">
+                HK${kit.priceHkd.toLocaleString('en-US')}
+                <span class="faint"> （田宫直销店按港币挂的价） </span>
+              </span>
+            </div>
+          )
+        }
         {
           kit.priceJpy === 0 && kit.priceCny > 0 && (
             <div class="gspec__row">

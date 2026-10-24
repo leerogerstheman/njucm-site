@@ -59,6 +59,9 @@ const decadeCounts = countByKey((k) => {
  *
  * 日元与港币各按各的价目：田宫直销店挂的是港币，价位跟日元档不是一个量级，
  * 混在同一档里既看不懂也筛不准。
+ *
+ * 一条记录两个价时按**日元**归档——那是卡片上显示的官方定价；
+ * 港币那档留给只有商城价的条目。
  */
 function priceBucketOf(k: ModelProduct): string {
   if (k.priceJpy) {

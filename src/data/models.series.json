@@ -9,7 +9,31 @@
       "hsl(11 24% 34%)",
       "hsl(197 58% 56%)"
     ],
-    "count": 474
+    "count": 659
+  },
+  {
+    "id": "wf930472dd3",
+    "maker": "tamiya",
+    "label": "遥控车",
+    "short": "遥控车",
+    "palette": [
+      "hsl(271 26% 68%)",
+      "hsl(271 24% 34%)",
+      "hsl(97 58% 56%)"
+    ],
+    "count": 454
+  },
+  {
+    "id": "w5c990845b7",
+    "maker": "tamiya",
+    "label": "汽车模型",
+    "short": "汽车模型",
+    "palette": [
+      "hsl(239 26% 68%)",
+      "hsl(239 24% 34%)",
+      "hsl(65 58% 56%)"
+    ],
+    "count": 352
   },
   {
     "id": "wdf0fc492e4",
@@ -24,6 +48,18 @@
     "count": 351
   },
   {
+    "id": "w7e89bae364",
+    "maker": "tamiya",
+    "label": "飞机模型",
+    "short": "飞机模型",
+    "palette": [
+      "hsl(298 26% 68%)",
+      "hsl(298 24% 34%)",
+      "hsl(124 58% 56%)"
+    ],
+    "count": 300
+  },
+  {
     "id": "wac5eda2ab8",
     "maker": "goodsmile",
     "label": "黏土娃",
@@ -36,30 +72,6 @@
     "count": 210
   },
   {
-    "id": "w7e89bae364",
-    "maker": "tamiya",
-    "label": "飞机模型",
-    "short": "飞机模型",
-    "palette": [
-      "hsl(298 26% 68%)",
-      "hsl(298 24% 34%)",
-      "hsl(124 58% 56%)"
-    ],
-    "count": 205
-  },
-  {
-    "id": "w5c990845b7",
-    "maker": "tamiya",
-    "label": "汽车模型",
-    "short": "汽车模型",
-    "palette": [
-      "hsl(239 26% 68%)",
-      "hsl(239 24% 34%)",
-      "hsl(65 58% 56%)"
-    ],
-    "count": 203
-  },
-  {
     "id": "w1e9891c210",
     "maker": "kotobukiya",
     "label": "Fate/Grand Order",
@@ -70,6 +82,18 @@
       "hsl(135 58% 56%)"
     ],
     "count": 174
+  },
+  {
+    "id": "w293c89e293",
+    "maker": "tamiya",
+    "label": "迷你四驱车",
+    "short": "迷你四驱车",
+    "palette": [
+      "hsl(255 26% 68%)",
+      "hsl(255 24% 34%)",
+      "hsl(81 58% 56%)"
+    ],
+    "count": 169
   },
   {
     "id": "w9aa91c44e5",
@@ -94,6 +118,18 @@
       "hsl(201 58% 56%)"
     ],
     "count": 166
+  },
+  {
+    "id": "w2218f08831",
+    "maker": "tamiya",
+    "label": "STEM 教育模型",
+    "short": "STEM 教育模型",
+    "palette": [
+      "hsl(17 26% 68%)",
+      "hsl(17 24% 34%)",
+      "hsl(203 58% 56%)"
+    ],
+    "count": 164
   },
   {
     "id": "w4d6e03bf8e",
@@ -132,6 +168,18 @@
     "count": 146
   },
   {
+    "id": "w8b49c5490d",
+    "maker": "tamiya",
+    "label": "摩托车模型",
+    "short": "摩托车模型",
+    "palette": [
+      "hsl(271 26% 68%)",
+      "hsl(271 24% 34%)",
+      "hsl(97 58% 56%)"
+    ],
+    "count": 142
+  },
+  {
     "id": "waeb18c3540",
     "maker": "kotobukiya",
     "label": "ゾイド -ZOIDS-",
@@ -142,6 +190,18 @@
       "hsl(218 58% 56%)"
     ],
     "count": 140
+  },
+  {
+    "id": "w2e934faddf",
+    "maker": "tamiya",
+    "label": "舰船模型",
+    "short": "舰船模型",
+    "palette": [
+      "hsl(188 26% 68%)",
+      "hsl(188 24% 34%)",
+      "hsl(14 58% 56%)"
+    ],
+    "count": 125
   },
   {
     "id": "w489d182226",
@@ -166,18 +226,6 @@
       "hsl(232 58% 56%)"
     ],
     "count": 113
-  },
-  {
-    "id": "w2e934faddf",
-    "maker": "tamiya",
-    "label": "舰船模型",
-    "short": "舰船模型",
-    "palette": [
-      "hsl(188 26% 68%)",
-      "hsl(188 24% 34%)",
-      "hsl(14 58% 56%)"
-    ],
-    "count": 104
   },
   {
     "id": "w5f9531d396",
@@ -288,18 +336,6 @@
     "count": 74
   },
   {
-    "id": "w8b49c5490d",
-    "maker": "tamiya",
-    "label": "摩托车模型",
-    "short": "摩托车模型",
-    "palette": [
-      "hsl(271 26% 68%)",
-      "hsl(271 24% 34%)",
-      "hsl(97 58% 56%)"
-    ],
-    "count": 67
-  },
-  {
     "id": "w63a09908e7",
     "maker": "goodsmile",
     "label": "鬼滅之刃",
@@ -380,6 +416,18 @@
       "hsl(352 26% 68%)",
       "hsl(352 24% 34%)",
       "hsl(178 58% 56%)"
+    ],
+    "count": 45
+  },
+  {
+    "id": "w662f38ad8d",
+    "maker": "kaiyodo",
+    "label": "デジタルガレージキット",
+    "short": "デジタルガレージキット",
+    "palette": [
+      "hsl(135 26% 68%)",
+      "hsl(135 24% 34%)",
+      "hsl(321 58% 56%)"
     ],
     "count": 45
   },
@@ -624,6 +672,18 @@
     "count": 28
   },
   {
+    "id": "wa1d733e2ae",
+    "maker": "kaiyodo",
+    "label": "ARTPLA",
+    "short": "ARTPLA",
+    "palette": [
+      "hsl(176 26% 68%)",
+      "hsl(176 24% 34%)",
+      "hsl(2 58% 56%)"
+    ],
+    "count": 28
+  },
+  {
     "id": "w0042503cca",
     "maker": "goodsmile",
     "label": "少女與戰車",
@@ -668,6 +728,18 @@
       "hsl(270 26% 68%)",
       "hsl(270 24% 34%)",
       "hsl(96 58% 56%)"
+    ],
+    "count": 26
+  },
+  {
+    "id": "w226dd739f6",
+    "maker": "tamiya",
+    "label": "限定模型",
+    "short": "限定模型",
+    "palette": [
+      "hsl(322 26% 68%)",
+      "hsl(322 24% 34%)",
+      "hsl(148 58% 56%)"
     ],
     "count": 26
   },
@@ -908,6 +980,18 @@
       "hsl(98 26% 68%)",
       "hsl(98 24% 34%)",
       "hsl(284 58% 56%)"
+    ],
+    "count": 19
+  },
+  {
+    "id": "w61557e9ca3",
+    "maker": "kaiyodo",
+    "label": "ARTPLA SCULPTURE WORKS",
+    "short": "ARTPLA SCUL…",
+    "palette": [
+      "hsl(103 26% 68%)",
+      "hsl(103 24% 34%)",
+      "hsl(289 58% 56%)"
     ],
     "count": 19
   },
@@ -1820,6 +1904,18 @@
       "hsl(48 26% 68%)",
       "hsl(48 24% 34%)",
       "hsl(234 58% 56%)"
+    ],
+    "count": 10
+  },
+  {
+    "id": "wf03155fe0a",
+    "maker": "kaiyodo",
+    "label": "AB0",
+    "short": "AB0",
+    "palette": [
+      "hsl(167 26% 68%)",
+      "hsl(167 24% 34%)",
+      "hsl(353 58% 56%)"
     ],
     "count": 10
   },
@@ -2768,6 +2864,18 @@
       "hsl(82 26% 68%)",
       "hsl(82 24% 34%)",
       "hsl(268 58% 56%)"
+    ],
+    "count": 7
+  },
+  {
+    "id": "w50e51750d8",
+    "maker": "kaiyodo",
+    "label": "リコンビナント",
+    "short": "リコンビナント",
+    "palette": [
+      "hsl(134 26% 68%)",
+      "hsl(134 24% 34%)",
+      "hsl(320 58% 56%)"
     ],
     "count": 7
   },
@@ -3888,6 +3996,18 @@
     "count": 5
   },
   {
+    "id": "w2f66629d1a",
+    "maker": "kaiyodo",
+    "label": "アッセンブルボーグNEXUS",
+    "short": "アッセンブルボーグNE…",
+    "palette": [
+      "hsl(194 26% 68%)",
+      "hsl(194 24% 34%)",
+      "hsl(20 58% 56%)"
+    ],
+    "count": 5
+  },
+  {
     "id": "wa9535d7e66",
     "maker": "kotobukiya",
     "label": "かふん症候群",
@@ -4812,6 +4932,18 @@
     "count": 4
   },
   {
+    "id": "wd0941e68da",
+    "maker": "kaiyodo",
+    "label": "other",
+    "short": "other",
+    "palette": [
+      "hsl(94 26% 68%)",
+      "hsl(94 24% 34%)",
+      "hsl(280 58% 56%)"
+    ],
+    "count": 4
+  },
+  {
     "id": "wa59e650929",
     "maker": "goodsmile",
     "label": "Piapro Characters",
@@ -4916,6 +5048,18 @@
       "hsl(340 26% 68%)",
       "hsl(340 24% 34%)",
       "hsl(166 58% 56%)"
+    ],
+    "count": 4
+  },
+  {
+    "id": "w77763e6a3a",
+    "maker": "kaiyodo",
+    "label": "マシーネンクリーガー",
+    "short": "マシーネンクリーガー",
+    "palette": [
+      "hsl(281 26% 68%)",
+      "hsl(281 24% 34%)",
+      "hsl(107 58% 56%)"
     ],
     "count": 4
   },
@@ -5948,6 +6092,18 @@
       "hsl(156 26% 68%)",
       "hsl(156 24% 34%)",
       "hsl(342 58% 56%)"
+    ],
+    "count": 3
+  },
+  {
+    "id": "w70f84ed858",
+    "maker": "kaiyodo",
+    "label": "ASSEMBLE BORG",
+    "short": "ASSEMBLE BO…",
+    "palette": [
+      "hsl(236 26% 68%)",
+      "hsl(236 24% 34%)",
+      "hsl(62 58% 56%)"
     ],
     "count": 3
   },
@@ -7340,6 +7496,18 @@
       "hsl(325 26% 68%)",
       "hsl(325 24% 34%)",
       "hsl(151 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
+    "id": "w8a3cf48a30",
+    "maker": "tamiya",
+    "label": "恐龙模型",
+    "short": "恐龙模型",
+    "palette": [
+      "hsl(63 26% 68%)",
+      "hsl(63 24% 34%)",
+      "hsl(249 58% 56%)"
     ],
     "count": 2
   },
@@ -9576,6 +9744,18 @@
     "count": 2
   },
   {
+    "id": "wb23e0ecf24",
+    "maker": "kaiyodo",
+    "label": "ドーヤネン",
+    "short": "ドーヤネン",
+    "palette": [
+      "hsl(87 26% 68%)",
+      "hsl(87 24% 34%)",
+      "hsl(273 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
     "id": "wb40e23352b",
     "maker": "kotobukiya",
     "label": "ドールズフロントライン",
@@ -9644,6 +9824,18 @@
       "hsl(21 26% 68%)",
       "hsl(21 24% 34%)",
       "hsl(207 58% 56%)"
+    ],
+    "count": 2
+  },
+  {
+    "id": "w6e415fd41c",
+    "maker": "kaiyodo",
+    "label": "パックレーテ",
+    "short": "パックレーテ",
+    "palette": [
+      "hsl(32 26% 68%)",
+      "hsl(32 24% 34%)",
+      "hsl(218 58% 56%)"
     ],
     "count": 2
   },
@@ -16116,6 +16308,18 @@
     "count": 1
   },
   {
+    "id": "w4eda182c83",
+    "maker": "kaiyodo",
+    "label": "ARTPLA Marble Q",
+    "short": "ARTPLA Marb…",
+    "palette": [
+      "hsl(160 26% 68%)",
+      "hsl(160 24% 34%)",
+      "hsl(346 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "we1828e5dbe",
     "maker": "goodsmile",
     "label": "Aya&friends",
@@ -17796,6 +18000,18 @@
     "count": 1
   },
   {
+    "id": "wcd8b75829e",
+    "maker": "kaiyodo",
+    "label": "アーモロイド",
+    "short": "アーモロイド",
+    "palette": [
+      "hsl(82 26% 68%)",
+      "hsl(82 24% 34%)",
+      "hsl(268 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
     "id": "w8e4087decf",
     "maker": "kotobukiya",
     "label": "アイドルマスター シリーズ",
@@ -17804,6 +18020,18 @@
       "hsl(321 26% 68%)",
       "hsl(321 24% 34%)",
       "hsl(147 58% 56%)"
+    ],
+    "count": 1
+  },
+  {
+    "id": "w57e4b156d1",
+    "maker": "kaiyodo",
+    "label": "アッセンブルボーグ カスタムスタイル",
+    "short": "アッセンブルボーグ カ…",
+    "palette": [
+      "hsl(76 26% 68%)",
+      "hsl(76 24% 34%)",
+      "hsl(262 58% 56%)"
     ],
     "count": 1
   },
