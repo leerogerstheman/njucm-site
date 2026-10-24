@@ -5358,5 +5358,935 @@
     "image": "/gundam/jp-01_4604.webp",
     "imageUrl": "https://bandai-hobby.net/images/ecms_154_5500_o_1go0qgm4d1s851vm91hi11vg81qli23.jpg",
     "sourceJp": "https://bandai-hobby.net/item/01_4604/"
+  },
+  {
+    "id": "bc-3046",
+    "nameJa": "HG 1/144 ガンダムザガン",
+    "priceJpy": 3080,
+    "taxRate": 10,
+    "released": "2025-12-06",
+    "image": "/gundam/jp-01_6773.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/12/abt2iZ5Nc9H9aNBM/RionObYSPZ47ZZ0l.jpeg?Expires=1792507216&Key-Pair-Id=K7AVJM1114TH7&Signature=UxV4Hpd7R--DgDOAGKYgO~AfzSMIFkzgYZ8FNypI9nuIk1K-Es~yyPLK96VznhVghKJSVHOUgz5vO0ypmLf0w76PUhHhBGRhHK3H6MP1umfJsxQ-W4scQqmmiTnY5lJQ8kHIkk~n7omfo36XZlB9uUTgy7CNxTGdk4G9LjmuaNZUxyhoL2IoClIhUUrhY1gg8p9b~O6hM1lp6dV-FMUs~mdreFibX5hRFYtAIZlZTaRVwQeICGXE~uBLlbsUJniBae1cx5ktrF~KL76013iEcsVKMT-mOFQ6fxzMqFVX8LG0c2VNFXLYSUSGxoejV-n78znEEqcQVLR5x6xRpMI2Kg__",
+    "sourceJp": "https://bandai-hobby.net/item/01_6773/"
+  },
+  {
+    "id": "bc-594",
+    "nameJa": "HG 1/144 ジム (ショルダー・キャノン装備/ミサイルポッド装備)",
+    "priceJpy": 2530,
+    "taxRate": 10,
+    "released": "2023-11-18",
+    "image": "/gundam/jp-01_5016.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_5883_o_1i7t2skpvt5cofv55o18r310kl23.jpeg",
+    "sourceJp": "https://bandai-hobby.net/item/01_5016/"
+  },
+  {
+    "id": "bc-863",
+    "nameJa": "HG 1/144 ガンダムアストレイゴールドフレーム天（アマツ）ミナ",
+    "priceJpy": 2200,
+    "taxRate": 10,
+    "released": "2013-09-21",
+    "image": "/gundam/jp-01_5866.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_945_o_1e6b94vmr18jagrvaoa16u11c5b23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_5866/"
+  },
+  {
+    "id": "bc-841",
+    "nameJa": "HGUC 1/144 ガーベラ・テトラ",
+    "priceJpy": 2200,
+    "taxRate": 10,
+    "released": "2013-07-27",
+    "image": "/gundam/jp-01_5843.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_916_o_1ddsumc3nq4o12q8t1lt5avch23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_5843/"
+  },
+  {
+    "id": "bc-795",
+    "nameJa": "HGUC 1/144 ガンダムEz8",
+    "priceJpy": 1980,
+    "taxRate": 10,
+    "released": "2013-04-13",
+    "image": "/gundam/jp-01_5792.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_858_o_1eb33shj715ue1vcp4t81so91gd923.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_5792/"
+  },
+  {
+    "id": "bc-787",
+    "nameJa": "HGUC 1/144 MS-06R-1A シン・マツナガ専用ザク",
+    "priceJpy": 1760,
+    "taxRate": 10,
+    "released": "2013-03-09",
+    "image": "/gundam/jp-01_5782.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_843_o_1eb33mcs71e2q1pbq1vbt1tbt73523.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_5782/"
+  },
+  {
+    "id": "bc-778",
+    "nameJa": "HGUC 1/144 MS-06R-1A 黒い三連星ザク",
+    "priceJpy": 1760,
+    "taxRate": 10,
+    "released": "2013-02-16",
+    "image": "/gundam/jp-01_1803.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_2741_o_1ebdh1lmpmo71her1jgotas1j228.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1803/"
+  },
+  {
+    "id": "bc-3013",
+    "nameJa": "HGUC 1/144 グフカスタム",
+    "priceJpy": 1980,
+    "taxRate": 10,
+    "released": "2010-11-06",
+    "image": "/gundam/jp-01_1771.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_2711_o_1eb3397v21po4ilr1u6b10g15he23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1771/"
+  },
+  {
+    "id": "bc-3458",
+    "nameJa": "HGUC 1/144 MS-06F-2 ザクII(連邦軍仕様)",
+    "priceJpy": 1870,
+    "taxRate": 10,
+    "released": "2010-03-11",
+    "image": "/gundam/jp-01_1749.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_2690_o_1fdu1h7lq1pq91rpkq461de61v8i23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1749/"
+  },
+  {
+    "id": "bc-3456",
+    "nameJa": "HGUC 1/144 MS-06F-2 ザクII(ジオン軍仕様)",
+    "priceJpy": 1870,
+    "taxRate": 10,
+    "released": "2010-02-25",
+    "image": "/gundam/jp-01_1745.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_2678_o_1fdu1fn8r1dbnabkrtvcq1e1l23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1745/"
+  },
+  {
+    "id": "bc-3450",
+    "nameJa": "HGUC 1/144 ガンダムGP02A サイサリス",
+    "priceJpy": 2420,
+    "taxRate": 10,
+    "released": "2006-07-23",
+    "image": "/gundam/jp-01_5607.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_656_o_1fdu1a7c636u19ca15hk1ojgj5o28.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_5607/"
+  },
+  {
+    "id": "bc-3433",
+    "nameJa": "HG 1/144 ストライクノワールガンダム",
+    "priceJpy": 1980,
+    "taxRate": 10,
+    "released": "2006-06-30",
+    "image": "/gundam/jp-01_5604.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_652_o_1ddkup3ur1251llh1so1ee81mr023.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_5604/"
+  },
+  {
+    "id": "bc-3079",
+    "nameJa": "HGUC 1/144 ヅダ",
+    "priceJpy": 1760,
+    "taxRate": 10,
+    "released": "2006-06-10",
+    "image": "/gundam/jp-01_5600.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_646_o_1fgislleu1rejmnpup692er4s23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_5600/"
+  },
+  {
+    "id": "bc-3063",
+    "nameJa": "HGUC 1/144 ガンダム NT-1",
+    "priceJpy": 1980,
+    "taxRate": 10,
+    "released": "2004-06",
+    "image": "/gundam/jp-01_3486.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_443_o_1ddsu10n99ho148ccfouon1ktq23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_3486/"
+  },
+  {
+    "id": "bc-3011",
+    "nameJa": "HGUC 1/144 MSM-07S ズゴック（シャア専用）",
+    "priceJpy": 1100,
+    "taxRate": 10,
+    "released": "2001-02",
+    "image": "/gundam/jp-01_951.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_188_o_1e7n2e0i2136813t4v7n67ovh023.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_951/"
+  },
+  {
+    "id": "bc-3527",
+    "nameJa": "MG 1/100 Concept-X 6-1-2 ターンX",
+    "priceJpy": 7040,
+    "taxRate": 10,
+    "released": "2014-06-14",
+    "image": "/gundam/jp-01_120.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_1113_o_1dbuq06un1elnfvv1ike1lkp178523.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_120/"
+  },
+  {
+    "id": "pb-214",
+    "nameJa": "MG 1/100 武者ガンダムMk-II 徳川家康Ver.",
+    "priceJpy": 7000,
+    "taxRate": 10,
+    "released": "2012-01",
+    "image": null,
+    "imageUrl": "https://bandai-hobby.net/images/154_4765_s_sorkckzivh2zm6c06487wixtomw5.jpg",
+    "sourceJp": "https://p-bandai.jp/item/item-1000006380"
+  },
+  {
+    "id": "bc-3478",
+    "nameJa": "MG 1/100 ダブルオーライザー",
+    "priceJpy": 7590,
+    "taxRate": 10,
+    "released": "2011-05-28",
+    "image": null,
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_1923_o_1bbm4ft1li3nnpv10ac1q3m1raf28.jpg",
+    "sourceJp": "https://p-bandai.jp/item/item-1000141550/"
+  },
+  {
+    "id": "bc-3098",
+    "nameJa": "MG 1/100 XXXG-01D ガンダムデスサイズEW(エンドレスワルツ版)",
+    "priceJpy": 4620,
+    "taxRate": 10,
+    "released": "2010-09-24",
+    "image": "/gundam/jp-01_1765.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_2706_o_1dhb1nml6ocbppb1lc01lb91f5h23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1765/"
+  },
+  {
+    "id": "bc-3361",
+    "nameJa": "MG 1/100 ソードインパルスガンダム",
+    "priceJpy": 5390,
+    "taxRate": 10,
+    "released": "2009-04",
+    "image": "/gundam/jp-01_1698.webp",
+    "imageUrl": "https://bandai-hobby.net/images/154_2608_s_cw0qfl7m3axcq3vq92qoidnre58c.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1698/"
+  },
+  {
+    "id": "bc-3528",
+    "nameJa": "MG 1/100 MS-06R-1A シン・マツナガ専用ザク Ver.2.0",
+    "priceJpy": 4950,
+    "taxRate": 10,
+    "released": "2008-11-16",
+    "image": "/gundam/jp-01_1456.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_2379_o_1fu91miok1ahg2cp1tee3b411t923.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1456/"
+  },
+  {
+    "id": "bc-3526",
+    "nameJa": "MG 1/100 MS-06R-2 ジョニー・ライデン専用ザク Ver.2.0",
+    "priceJpy": 4950,
+    "taxRate": 10,
+    "released": "2008-09-13",
+    "image": "/gundam/jp-01_1455.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_2378_o_1f67fnki951l3ks1cjj1f6916623.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1455/"
+  },
+  {
+    "id": "bc-3535",
+    "nameJa": "MG 1/100 量産型ゲルググ Ver.2.0",
+    "priceJpy": 4950,
+    "taxRate": 10,
+    "released": "2008-04",
+    "image": "/gundam/jp-01_1677.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_2584_o_1f67fimmcg4q7g41a2e1bt8sbm23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1677/"
+  },
+  {
+    "id": "bc-3530",
+    "nameJa": "MG 1/100 ザクマインレイヤー",
+    "priceJpy": 4950,
+    "taxRate": 10,
+    "released": "2008-03",
+    "image": "/gundam/jp-01_1674.webp",
+    "imageUrl": "https://bandai-hobby.net/images/154_2581_s_gdf8c5xrda4f03wp77szgt5tsq4s.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1674/"
+  },
+  {
+    "id": "bc-3468",
+    "nameJa": "MG 1/100 クロスボーンガンダムX-1フルクロス",
+    "priceJpy": 5390,
+    "taxRate": 10,
+    "released": "2007-01-27",
+    "image": "/gundam/jp-01_5649.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_714_o_1ej9p2c0j1316stm1q1uaao1uus23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_5649/"
+  },
+  {
+    "id": "bc-3338",
+    "nameJa": "MG 1/100 ボール(第08MS小隊版)",
+    "priceJpy": 3300,
+    "taxRate": 10,
+    "released": "2005-05",
+    "image": "/gundam/jp-01_4602.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_549_o_1f1u8s6gf4t5ssu1lkj15uf1i8923.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_4602/"
+  },
+  {
+    "id": "bc-3100",
+    "nameJa": "MG 1/100 ゴッグ",
+    "priceJpy": 4290,
+    "taxRate": 10,
+    "released": "2003-06",
+    "image": "/gundam/jp-01_2667.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_358_o_1fu8uov66cl018sb1g141h6i170c23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_2667/"
+  },
+  {
+    "id": "bc-3309",
+    "nameJa": "MG 1/100 MS-07B3 グフカスタム",
+    "priceJpy": 3740,
+    "taxRate": 10,
+    "released": "2001-02",
+    "image": "/gundam/jp-01_982.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_191_o_1ej9jtsqc1ugb1gbq10tq6o8171823.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_982/"
+  },
+  {
+    "id": "bc-3463",
+    "nameJa": "MG 1/100 ガンダムGP02A",
+    "priceJpy": 4840,
+    "taxRate": 10,
+    "released": "1998-06",
+    "image": "/gundam/jp-01_1588.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_2501_o_1f089clt51pvi1er012r31ahmtj23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1588/"
+  },
+  {
+    "id": "bc-3462",
+    "nameJa": "MG 1/100 ガンダムGP01Fb",
+    "priceJpy": 3740,
+    "taxRate": 10,
+    "released": "1997-12",
+    "image": "/gundam/jp-01_1569.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_2485_o_1f089ag2e17p8n2v2cacdm19q23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1569/"
+  },
+  {
+    "id": "bc-3344",
+    "nameJa": "MG 1/100 ゲルググキャノン",
+    "priceJpy": 3740,
+    "taxRate": 10,
+    "released": "1997-03",
+    "image": "/gundam/jp-01_1564.webp",
+    "imageUrl": "https://bandai-hobby.net/images/154_2480_s_hpky4hmmrgouhgvfj42yxyv99os8.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1564/"
+  },
+  {
+    "id": "bc-3351",
+    "nameJa": "MG 1/100 クロスボーンガンダムX-1 Ver.Ka",
+    "priceJpy": 4290,
+    "taxRate": 10,
+    "released": "2006-09-29",
+    "image": "/gundam/jp-01_5622.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_680_o_1ej9k9e391iu51i4s10nqngj6l023.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_5622/"
+  },
+  {
+    "id": "bc-875",
+    "nameJa": "HGUC 1/144 ゾゴック(ジャブロー攻略戦仕様)",
+    "priceJpy": 2090,
+    "taxRate": 10,
+    "released": "2013-10",
+    "image": null,
+    "imageUrl": "https://bandai-hobby.net/images/154_4826_s_loscseyt0zmyzgc6pkh5f9rfyfqs.jpg",
+    "sourceJp": "https://p-bandai.jp/item/item-1000105687"
+  },
+  {
+    "id": "bc-24",
+    "nameJa": "HG 1/72 ニュウレン",
+    "priceJpy": 2640,
+    "taxRate": 10,
+    "released": "2022-02-19",
+    "image": "/gundam/jp-01_3765.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509317&Key-Pair-Id=K7AVJM1114TH7&Signature=Z-AwhAVu~qzMtAWEQ1XXTM75zFY78x3T6GpwPbPEoBuH-Y4XJJueadWsq0BBZ0aNE0oYVkpbedfvEcAukGPfLyfUVlN8CPo4Q3cc~mPUlzcMT~iEJfZQlZSPXM1H0ppD3D-HkNN3T5SOfZFbUm1xb6HIDIFpcePvwEo~wYbTJiuVEkkXj3C~DKYmk9i-G0z4cWxYT90Ep1PLsAjrCzHmNXz1gEdjsPtIr3pqxaP3oYf4tk8NzBCwKgoJNCeVf9k3F39MsFLkchC1trSRzKG~TqZ2UynR-3ExkKdZas0CcBONDh7ddQEMukUoSeDf8InKr1FoV8KITf4IPAhS0omLZA__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3765/"
+  },
+  {
+    "id": "bc-397",
+    "nameJa": "HG 1/100 YF-29 デュランダルバルキリー(早乙女アルト機)",
+    "priceJpy": 4400,
+    "taxRate": 10,
+    "released": "2023-08-26",
+    "image": "/gundam/jp-01_4907.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509323&Key-Pair-Id=K7AVJM1114TH7&Signature=PRqFW32xFJkIo-JePQgucoqAIvwdfIjdXjpvZSMJeqoo4gh-duviHpiPSiXqiYc6Fd~MLPmv07yRBCUdIogi7BP6j-yyhdwtpQrIZUiv9RJZ7xg3tKf7cZ-4fXEk07ZkYvQ5gOyspCjqXO7eXhPavQdiVKcOK2l32rE4iEK-gDWE1W-6qZeJYKBykCRR--hIw8oQZYnkZYfop5drZ3Qnmhuvr4vajSdtGmu4I5FKpk8HGd7BM9MY79kUIEwzTwO8hZKXtpCFbW1XSnPNLngZCOiS6a8gGkvTCyaNiIMf7ABsJm3tlT-jerKgp0YB1AANAPRNTv~EvJ4yzD3ikZwmpA__",
+    "sourceJp": "https://bandai-hobby.net/item/01_4907/"
+  },
+  {
+    "id": "bc-329",
+    "nameJa": "HG 1/48 レギンレイヴ（クレナ/アンジュ搭乗機）",
+    "priceJpy": 4180,
+    "taxRate": 10,
+    "released": "2021-11-06",
+    "image": "/gundam/jp-01_3665.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509323&Key-Pair-Id=K7AVJM1114TH7&Signature=PRqFW32xFJkIo-JePQgucoqAIvwdfIjdXjpvZSMJeqoo4gh-duviHpiPSiXqiYc6Fd~MLPmv07yRBCUdIogi7BP6j-yyhdwtpQrIZUiv9RJZ7xg3tKf7cZ-4fXEk07ZkYvQ5gOyspCjqXO7eXhPavQdiVKcOK2l32rE4iEK-gDWE1W-6qZeJYKBykCRR--hIw8oQZYnkZYfop5drZ3Qnmhuvr4vajSdtGmu4I5FKpk8HGd7BM9MY79kUIEwzTwO8hZKXtpCFbW1XSnPNLngZCOiS6a8gGkvTCyaNiIMf7ABsJm3tlT-jerKgp0YB1AANAPRNTv~EvJ4yzD3ikZwmpA__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3665/"
+  },
+  {
+    "id": "bc-326",
+    "nameJa": "HG 1/72 特大型装甲特殊運搬車",
+    "priceJpy": 3300,
+    "taxRate": 10,
+    "released": "2021-11-13",
+    "image": "/gundam/jp-01_3691.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509323&Key-Pair-Id=K7AVJM1114TH7&Signature=PRqFW32xFJkIo-JePQgucoqAIvwdfIjdXjpvZSMJeqoo4gh-duviHpiPSiXqiYc6Fd~MLPmv07yRBCUdIogi7BP6j-yyhdwtpQrIZUiv9RJZ7xg3tKf7cZ-4fXEk07ZkYvQ5gOyspCjqXO7eXhPavQdiVKcOK2l32rE4iEK-gDWE1W-6qZeJYKBykCRR--hIw8oQZYnkZYfop5drZ3Qnmhuvr4vajSdtGmu4I5FKpk8HGd7BM9MY79kUIEwzTwO8hZKXtpCFbW1XSnPNLngZCOiS6a8gGkvTCyaNiIMf7ABsJm3tlT-jerKgp0YB1AANAPRNTv~EvJ4yzD3ikZwmpA__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3691/"
+  },
+  {
+    "id": "bc-3111",
+    "nameJa": "MG 1/100 RX-79[G] 陸戦型ガンダム",
+    "priceJpy": 3740,
+    "taxRate": 10,
+    "released": "2000-05",
+    "image": "/gundam/jp-01_452.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/03/lUihtDHsZuFbkbL1/kXMOhygmoI3TBb2W.jpeg?Expires=1792509446&Key-Pair-Id=K7AVJM1114TH7&Signature=BJqFSJ0HtcG4L5FeZeQnCV6g5MaYxqX7UAtA65GuOJ6LKaODHGphniaopPW~gEAySaATZA-pzcRNuJ0R4YlrvdxPSJNdfSmE~DYa9rUoXvhokM37M-bg5oDu2rNiejVLT3f3hjv2nOguqvhLV5t9lweiGUeZcUoZ6vW6QNuASn02dLcFbFuD75KI295tJB7~phjBMqonC5ykY7yfrdQl7OqFjQlC9EtXE0-ZZt1ldljFC5ajiyAnopcoWlZoXq3BFsCv4fUrQ6XbtL8EEAixGX-xUoI~YlHl-QGf1vEeYFcgCzwyzbqaOLuxR9g~z~87~Q88YCznwc0XiuNxq1JjLg__",
+    "sourceJp": "https://bandai-hobby.net/item/01_452/"
+  },
+  {
+    "id": "bc-2074",
+    "nameJa": "HG 1/100 VF-19改 ファイヤーバルキリー サウンドブースター装備",
+    "priceJpy": 5500,
+    "taxRate": 10,
+    "released": "2024-05-18",
+    "image": "/gundam/jp-01_5184.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509622&Key-Pair-Id=K7AVJM1114TH7&Signature=dpLqI7lfRY9uY51FOoLDOB6eub2lhIDryzXPGjbit27wG8I022xFSN6At2yGajqDBHrZQvBK5roc3D6Ta~orIyetjmlybvF26xLvWX5jwKtZWA~kyljqRgNBE1CvpuvdHWiBPs2iLTz9mnwFg8xXpbTBQr5cbmJKiwLtSxMoqbSfOmB~Trt~EKu0AIYxiegnqqMIRkmLFIUwBi-n~Vhh2YlfBp1vOMl~ew40NywrJ5USi0CfawG5YrlOHT3oS515rAycUJebRrLKFHu48Y3gJANySqmMjeZ3~bGZjVH5OaOQLiXA3dIpYmFqu5WnLXjCmvAFbDInLnenPNiJ5chE8g__",
+    "sourceJp": "https://bandai-hobby.net/item/01_5184/"
+  },
+  {
+    "id": "bc-2075",
+    "nameJa": "HG 1/100 VF-19改 ファイヤーバルキリー サウンドブースター装備 専用水転写式デカール",
+    "priceJpy": 770,
+    "taxRate": 10,
+    "released": "2024-05-18",
+    "image": "/gundam/jp-01_5185.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509622&Key-Pair-Id=K7AVJM1114TH7&Signature=dpLqI7lfRY9uY51FOoLDOB6eub2lhIDryzXPGjbit27wG8I022xFSN6At2yGajqDBHrZQvBK5roc3D6Ta~orIyetjmlybvF26xLvWX5jwKtZWA~kyljqRgNBE1CvpuvdHWiBPs2iLTz9mnwFg8xXpbTBQr5cbmJKiwLtSxMoqbSfOmB~Trt~EKu0AIYxiegnqqMIRkmLFIUwBi-n~Vhh2YlfBp1vOMl~ew40NywrJ5USi0CfawG5YrlOHT3oS515rAycUJebRrLKFHu48Y3gJANySqmMjeZ3~bGZjVH5OaOQLiXA3dIpYmFqu5WnLXjCmvAFbDInLnenPNiJ5chE8g__",
+    "sourceJp": "https://bandai-hobby.net/item/01_5185/"
+  },
+  {
+    "id": "bc-2105",
+    "nameJa": "HG 1/144 グレートマジンガー（マジンガーZ INFINITY Ver.）",
+    "priceJpy": 4400,
+    "taxRate": 10,
+    "released": "2018-09-29",
+    "image": "/gundam/jp-01_1436.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509641&Key-Pair-Id=K7AVJM1114TH7&Signature=HMCfgI6qbma6U~2Tvu1qlom-Ji0SU5AFQJQQWXIhnpCSXHJXYQwa8lp77gWeZQQ9JV-EwaRtOT6TpnWV2xAsOWT69OH5XG6XMwCm9qLCUeSnTRmIx1adCZWKvA4x9xekezE8guEVp~8mayvXY9kf7242rSCn1yIA1ypRpK0szpuJudeCHSANZp2IcLso12p66p5DEnGC0by~sCqqccm-DrxsLnuEiZGOXJ~jpKsghFNBTQ15fJ4LH7JLZrly-IdaifXB28nJjq3DrqNrl2Vylaa~-s3JgR2DLNhSvKmdBK56w7VURHznTWJvWqYRYC7Es9YxvL-LRBTWQEG1Oh1xJQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_1436/"
+  },
+  {
+    "id": "bc-386",
+    "nameJa": "HG 1/72 ブレイディフォックス(TYPE G)",
+    "priceJpy": 2750,
+    "taxRate": 10,
+    "released": "2023-03-11",
+    "image": "/gundam/jp-01_4342.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509622&Key-Pair-Id=K7AVJM1114TH7&Signature=dpLqI7lfRY9uY51FOoLDOB6eub2lhIDryzXPGjbit27wG8I022xFSN6At2yGajqDBHrZQvBK5roc3D6Ta~orIyetjmlybvF26xLvWX5jwKtZWA~kyljqRgNBE1CvpuvdHWiBPs2iLTz9mnwFg8xXpbTBQr5cbmJKiwLtSxMoqbSfOmB~Trt~EKu0AIYxiegnqqMIRkmLFIUwBi-n~Vhh2YlfBp1vOMl~ew40NywrJ5USi0CfawG5YrlOHT3oS515rAycUJebRrLKFHu48Y3gJANySqmMjeZ3~bGZjVH5OaOQLiXA3dIpYmFqu5WnLXjCmvAFbDInLnenPNiJ5chE8g__",
+    "sourceJp": "https://bandai-hobby.net/item/01_4342/"
+  },
+  {
+    "id": "bc-3102",
+    "nameJa": "MG 1/100 XXXG-01S シェンロンガンダム EW",
+    "priceJpy": 4620,
+    "taxRate": 10,
+    "released": "2011-03-26",
+    "image": "/gundam/jp-01_1776.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/05/foU92GTR8ymgrGQX/uLUGRrPWpjFryOoN.jpg?Expires=1792509799&Key-Pair-Id=K7AVJM1114TH7&Signature=AIJ-8TRRofVSmjFp3CsNbA3wPN-n0TXI2bYfdpMl~BaI6bIRqLRfntdz8JiYzua8n5Y9zYt-xkUBY7RKsTi9uHlpMKMs8ZYmeqZGITHqlIJJgEEWBAHHYjFVRybBWVl9QPtdnQizubR2p~U4Arxfi0iKPf5nPMSSyAvc-Vb75DWv35uUt5moAQ29VXL7KkWj98ZZyHTbjHIUz-T8fIOliJtosJGSyDZGeZh5qDNyyhTHut9DlKhA9KBKa~9kbKLFfeGZGelSBhpjostOGinqePesYv9t4LGrs4sTzuA5FOmohO2Uid4CxxX6gw4aVes89E914Toc1RhdVE2W9r5caQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_1776/"
+  },
+  {
+    "id": "bc-3072",
+    "nameJa": "HGUC 1/144 RGM-79C ジム改",
+    "priceJpy": 1540,
+    "taxRate": 10,
+    "released": "2010-08-21",
+    "image": "/gundam/jp-01_1763.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/BdqjBlEtWRmOIX1l/QTKojchM9ffJferE.JPG?Expires=1792509646&Key-Pair-Id=K7AVJM1114TH7&Signature=ABf7uHEf2MZ0vjWStvLSZdGHhzhcXLLLuVwOh4hikCRSlJy8F5parDKyT~Ch8XGqbCOKeC79FrFQ9s7~8P0ls8BYPwZ0uDOmHFfA735Lev1Dp7KQyRJYDOobNv72JtFQLGKsq5G3u5W7qVn1RStAlAP5STSnwJSvA~EqqMcazAJekC1nM6c6H6VZ70A8Ut9K4RuLrWa2l8mh6Zwz~LKzZyeNsj3vIcw4jaYuu83kYSkOs5XGZ4kr-1oUeI9kJa0EccmDEli8lpD-wqh0ODKMz6f7lDwI8gvetiUNSbgUTl3wO~zgj7d0RzHnjSVlI8fFZQPLwXIYgqccr2XRb33X-g__",
+    "sourceJp": "https://bandai-hobby.net/item/01_1763/"
+  },
+  {
+    "id": "bc-3068",
+    "nameJa": "HGUC 1/144 MS-06Fz ザクII改",
+    "priceJpy": 1540,
+    "taxRate": 10,
+    "released": "2008-05",
+    "image": "/gundam/jp-01_1680.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/tDOyVZkDuOAiZVKJ/w3ysDLzh7ZP9O8RH.jpg?Expires=1792509598&Key-Pair-Id=K7AVJM1114TH7&Signature=Bkgp8wzJj9sSdVrnTMrJL2edz-lIZ3AN6pqB019C5x5I4jKiPa-8PhAJ-F1rfpxsTNB3OJNaebah0VKIauQJQtbArhHZ5hxGMQyexwM9bN7ocz43TKZ8l13GVl8c9BrQx3RwY9yS~qVP7bBtd4T1J3Mfn6-coTjR6arJ-GgRAKURQQ5CISt9cdWN0Kg2e6HfBmTxiGfCMAmLSpl9DiYxYaShU2G3FWniSC2GGEFxQqEuLyy2mbrraxfX5cYflKa0c2Ui8zdOTusZ2WoU1hi1Ygf96hG6NxalgoTYS7~ICMWR4Ht10WvtdRAC8DE7mk~-VyOJLE5ieJkFaM48RavTDg__",
+    "sourceJp": "https://bandai-hobby.net/item/01_1680/"
+  },
+  {
+    "id": "bc-200",
+    "nameJa": "HG 1/100 YF-19",
+    "priceJpy": 4180,
+    "taxRate": 10,
+    "released": "2023-01-28",
+    "image": "/gundam/jp-01_4303.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509622&Key-Pair-Id=K7AVJM1114TH7&Signature=dpLqI7lfRY9uY51FOoLDOB6eub2lhIDryzXPGjbit27wG8I022xFSN6At2yGajqDBHrZQvBK5roc3D6Ta~orIyetjmlybvF26xLvWX5jwKtZWA~kyljqRgNBE1CvpuvdHWiBPs2iLTz9mnwFg8xXpbTBQr5cbmJKiwLtSxMoqbSfOmB~Trt~EKu0AIYxiegnqqMIRkmLFIUwBi-n~Vhh2YlfBp1vOMl~ew40NywrJ5USi0CfawG5YrlOHT3oS515rAycUJebRrLKFHu48Y3gJANySqmMjeZ3~bGZjVH5OaOQLiXA3dIpYmFqu5WnLXjCmvAFbDInLnenPNiJ5chE8g__",
+    "sourceJp": "https://bandai-hobby.net/item/01_4303/"
+  },
+  {
+    "id": "bc-140",
+    "nameJa": "HG 1/144 マジンガーZERO(INFINITISM)",
+    "priceJpy": 6050,
+    "taxRate": 10,
+    "released": "2022-12-10",
+    "image": "/gundam/jp-01_4234.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509622&Key-Pair-Id=K7AVJM1114TH7&Signature=dpLqI7lfRY9uY51FOoLDOB6eub2lhIDryzXPGjbit27wG8I022xFSN6At2yGajqDBHrZQvBK5roc3D6Ta~orIyetjmlybvF26xLvWX5jwKtZWA~kyljqRgNBE1CvpuvdHWiBPs2iLTz9mnwFg8xXpbTBQr5cbmJKiwLtSxMoqbSfOmB~Trt~EKu0AIYxiegnqqMIRkmLFIUwBi-n~Vhh2YlfBp1vOMl~ew40NywrJ5USi0CfawG5YrlOHT3oS515rAycUJebRrLKFHu48Y3gJANySqmMjeZ3~bGZjVH5OaOQLiXA3dIpYmFqu5WnLXjCmvAFbDInLnenPNiJ5chE8g__",
+    "sourceJp": "https://bandai-hobby.net/item/01_4234/"
+  },
+  {
+    "id": "bc-108",
+    "nameJa": "FULL MECHANICS 1/48 メイレスケンブ斬",
+    "priceJpy": 6050,
+    "taxRate": 10,
+    "released": "2022-08-13",
+    "image": "/gundam/jp-01_4158.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/K5QnAQ3yLf0NEBO1/BPOLRX21gJ5nsYqk.jpg?Expires=1792509848&Key-Pair-Id=K7AVJM1114TH7&Signature=TdkLW9PObkyr0PNpAGJwyJkyP-QQtQF2IxDWCJVSTIgK-bdfeQi7AL2ERHj0OMES8wchPfEUDSJaccuW~iJdPMLCsaf1lrRdnkKkczCjtWmwoo63YRiugXrbtcqB4M2oMvuQm5JjvEVPEzAKv4wqGgqY2aVcySm8U1AXZU16UXGz9MmuoWpZAttZd9m-VrtS11kmBtuezMUfgyP6Bjp3vE69A7eRK3zB-AtRsguMvsFR2ZgxTnKLdnqmdZXLSD9zYlqMycKs22VFH-cvkE9W1JwaMzkOFZtwZXEzYamdvWjusVZpJhu5TL7zNQ~75ddVtbnBEU3shqG~~~GBNvsgOA__",
+    "sourceJp": "https://bandai-hobby.net/item/01_4158/"
+  },
+  {
+    "id": "bc-99",
+    "nameJa": "HG 1/72 ブレイディファントム",
+    "priceJpy": 2750,
+    "taxRate": 10,
+    "released": "2022-07-09",
+    "image": "/gundam/jp-01_4156.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509641&Key-Pair-Id=K7AVJM1114TH7&Signature=HMCfgI6qbma6U~2Tvu1qlom-Ji0SU5AFQJQQWXIhnpCSXHJXYQwa8lp77gWeZQQ9JV-EwaRtOT6TpnWV2xAsOWT69OH5XG6XMwCm9qLCUeSnTRmIx1adCZWKvA4x9xekezE8guEVp~8mayvXY9kf7242rSCn1yIA1ypRpK0szpuJudeCHSANZp2IcLso12p66p5DEnGC0by~sCqqccm-DrxsLnuEiZGOXJ~jpKsghFNBTQ15fJ4LH7JLZrly-IdaifXB28nJjq3DrqNrl2Vylaa~-s3JgR2DLNhSvKmdBK56w7VURHznTWJvWqYRYC7Es9YxvL-LRBTWQEG1Oh1xJQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_4156/"
+  },
+  {
+    "id": "bc-46",
+    "nameJa": "HG 1/72 ジョーハウンド",
+    "priceJpy": 2640,
+    "taxRate": 10,
+    "released": "2022-04-09",
+    "image": "/gundam/jp-01_4089.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509641&Key-Pair-Id=K7AVJM1114TH7&Signature=HMCfgI6qbma6U~2Tvu1qlom-Ji0SU5AFQJQQWXIhnpCSXHJXYQwa8lp77gWeZQQ9JV-EwaRtOT6TpnWV2xAsOWT69OH5XG6XMwCm9qLCUeSnTRmIx1adCZWKvA4x9xekezE8guEVp~8mayvXY9kf7242rSCn1yIA1ypRpK0szpuJudeCHSANZp2IcLso12p66p5DEnGC0by~sCqqccm-DrxsLnuEiZGOXJ~jpKsghFNBTQ15fJ4LH7JLZrly-IdaifXB28nJjq3DrqNrl2Vylaa~-s3JgR2DLNhSvKmdBK56w7VURHznTWJvWqYRYC7Es9YxvL-LRBTWQEG1Oh1xJQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_4089/"
+  },
+  {
+    "id": "bc-45",
+    "nameJa": "HG 1/72 境界戦機ウェポンセット",
+    "priceJpy": 1650,
+    "taxRate": 10,
+    "released": "2022-04-09",
+    "image": "/gundam/jp-01_4090.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509641&Key-Pair-Id=K7AVJM1114TH7&Signature=HMCfgI6qbma6U~2Tvu1qlom-Ji0SU5AFQJQQWXIhnpCSXHJXYQwa8lp77gWeZQQ9JV-EwaRtOT6TpnWV2xAsOWT69OH5XG6XMwCm9qLCUeSnTRmIx1adCZWKvA4x9xekezE8guEVp~8mayvXY9kf7242rSCn1yIA1ypRpK0szpuJudeCHSANZp2IcLso12p66p5DEnGC0by~sCqqccm-DrxsLnuEiZGOXJ~jpKsghFNBTQ15fJ4LH7JLZrly-IdaifXB28nJjq3DrqNrl2Vylaa~-s3JgR2DLNhSvKmdBK56w7VURHznTWJvWqYRYC7Es9YxvL-LRBTWQEG1Oh1xJQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_4090/"
+  },
+  {
+    "id": "bc-86",
+    "nameJa": "HG 1/72 メイレスジョウガン改",
+    "priceJpy": 2750,
+    "taxRate": 10,
+    "released": "2022-05-21",
+    "image": "/gundam/jp-01_3777.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509641&Key-Pair-Id=K7AVJM1114TH7&Signature=HMCfgI6qbma6U~2Tvu1qlom-Ji0SU5AFQJQQWXIhnpCSXHJXYQwa8lp77gWeZQQ9JV-EwaRtOT6TpnWV2xAsOWT69OH5XG6XMwCm9qLCUeSnTRmIx1adCZWKvA4x9xekezE8guEVp~8mayvXY9kf7242rSCn1yIA1ypRpK0szpuJudeCHSANZp2IcLso12p66p5DEnGC0by~sCqqccm-DrxsLnuEiZGOXJ~jpKsghFNBTQ15fJ4LH7JLZrly-IdaifXB28nJjq3DrqNrl2Vylaa~-s3JgR2DLNhSvKmdBK56w7VURHznTWJvWqYRYC7Es9YxvL-LRBTWQEG1Oh1xJQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3777/"
+  },
+  {
+    "id": "bc-30",
+    "nameJa": "HG 1/72 ブレイディハウンド(ブラッド専用機)",
+    "priceJpy": 2750,
+    "taxRate": 10,
+    "released": "2022-03-12",
+    "image": "/gundam/jp-01_3778.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509622&Key-Pair-Id=K7AVJM1114TH7&Signature=dpLqI7lfRY9uY51FOoLDOB6eub2lhIDryzXPGjbit27wG8I022xFSN6At2yGajqDBHrZQvBK5roc3D6Ta~orIyetjmlybvF26xLvWX5jwKtZWA~kyljqRgNBE1CvpuvdHWiBPs2iLTz9mnwFg8xXpbTBQr5cbmJKiwLtSxMoqbSfOmB~Trt~EKu0AIYxiegnqqMIRkmLFIUwBi-n~Vhh2YlfBp1vOMl~ew40NywrJ5USi0CfawG5YrlOHT3oS515rAycUJebRrLKFHu48Y3gJANySqmMjeZ3~bGZjVH5OaOQLiXA3dIpYmFqu5WnLXjCmvAFbDInLnenPNiJ5chE8g__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3778/"
+  },
+  {
+    "id": "bc-85",
+    "nameJa": "HG 1/72 メイレスケンブ斬",
+    "priceJpy": 2750,
+    "taxRate": 10,
+    "released": "2022-04-16",
+    "image": "/gundam/jp-01_3764.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509641&Key-Pair-Id=K7AVJM1114TH7&Signature=HMCfgI6qbma6U~2Tvu1qlom-Ji0SU5AFQJQQWXIhnpCSXHJXYQwa8lp77gWeZQQ9JV-EwaRtOT6TpnWV2xAsOWT69OH5XG6XMwCm9qLCUeSnTRmIx1adCZWKvA4x9xekezE8guEVp~8mayvXY9kf7242rSCn1yIA1ypRpK0szpuJudeCHSANZp2IcLso12p66p5DEnGC0by~sCqqccm-DrxsLnuEiZGOXJ~jpKsghFNBTQ15fJ4LH7JLZrly-IdaifXB28nJjq3DrqNrl2Vylaa~-s3JgR2DLNhSvKmdBK56w7VURHznTWJvWqYRYC7Es9YxvL-LRBTWQEG1Oh1xJQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3764/"
+  },
+  {
+    "id": "bc-1450",
+    "nameJa": "HG 1/100 YF-21",
+    "priceJpy": 4730,
+    "taxRate": 10,
+    "released": "2024-01-20",
+    "image": "/gundam/jp-01_5066.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509622&Key-Pair-Id=K7AVJM1114TH7&Signature=dpLqI7lfRY9uY51FOoLDOB6eub2lhIDryzXPGjbit27wG8I022xFSN6At2yGajqDBHrZQvBK5roc3D6Ta~orIyetjmlybvF26xLvWX5jwKtZWA~kyljqRgNBE1CvpuvdHWiBPs2iLTz9mnwFg8xXpbTBQr5cbmJKiwLtSxMoqbSfOmB~Trt~EKu0AIYxiegnqqMIRkmLFIUwBi-n~Vhh2YlfBp1vOMl~ew40NywrJ5USi0CfawG5YrlOHT3oS515rAycUJebRrLKFHu48Y3gJANySqmMjeZ3~bGZjVH5OaOQLiXA3dIpYmFqu5WnLXjCmvAFbDInLnenPNiJ5chE8g__",
+    "sourceJp": "https://bandai-hobby.net/item/01_5066/"
+  },
+  {
+    "id": "bc-602",
+    "nameJa": "HG 1/100 YF-29 デュランダルバルキリー(マクシミリアン・ジーナス機)フルセットパック",
+    "priceJpy": 5610,
+    "taxRate": 10,
+    "released": "2023-10-07",
+    "image": "/gundam/jp-01_5007.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509641&Key-Pair-Id=K7AVJM1114TH7&Signature=HMCfgI6qbma6U~2Tvu1qlom-Ji0SU5AFQJQQWXIhnpCSXHJXYQwa8lp77gWeZQQ9JV-EwaRtOT6TpnWV2xAsOWT69OH5XG6XMwCm9qLCUeSnTRmIx1adCZWKvA4x9xekezE8guEVp~8mayvXY9kf7242rSCn1yIA1ypRpK0szpuJudeCHSANZp2IcLso12p66p5DEnGC0by~sCqqccm-DrxsLnuEiZGOXJ~jpKsghFNBTQ15fJ4LH7JLZrly-IdaifXB28nJjq3DrqNrl2Vylaa~-s3JgR2DLNhSvKmdBK56w7VURHznTWJvWqYRYC7Es9YxvL-LRBTWQEG1Oh1xJQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_5007/"
+  },
+  {
+    "id": "bc-425",
+    "nameJa": "HG 1/72 メイレス プロトゴウヨウ",
+    "priceJpy": 2640,
+    "taxRate": 10,
+    "released": "2023-08-11",
+    "image": "/gundam/jp-01_4915.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509641&Key-Pair-Id=K7AVJM1114TH7&Signature=HMCfgI6qbma6U~2Tvu1qlom-Ji0SU5AFQJQQWXIhnpCSXHJXYQwa8lp77gWeZQQ9JV-EwaRtOT6TpnWV2xAsOWT69OH5XG6XMwCm9qLCUeSnTRmIx1adCZWKvA4x9xekezE8guEVp~8mayvXY9kf7242rSCn1yIA1ypRpK0szpuJudeCHSANZp2IcLso12p66p5DEnGC0by~sCqqccm-DrxsLnuEiZGOXJ~jpKsghFNBTQ15fJ4LH7JLZrly-IdaifXB28nJjq3DrqNrl2Vylaa~-s3JgR2DLNhSvKmdBK56w7VURHznTWJvWqYRYC7Es9YxvL-LRBTWQEG1Oh1xJQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_4915/"
+  },
+  {
+    "id": "bc-277",
+    "nameJa": "HG 1/72 境界戦機ウェポンセット5",
+    "priceJpy": 1320,
+    "taxRate": 10,
+    "released": "2023-06-17",
+    "image": "/gundam/jp-01_4397.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509641&Key-Pair-Id=K7AVJM1114TH7&Signature=HMCfgI6qbma6U~2Tvu1qlom-Ji0SU5AFQJQQWXIhnpCSXHJXYQwa8lp77gWeZQQ9JV-EwaRtOT6TpnWV2xAsOWT69OH5XG6XMwCm9qLCUeSnTRmIx1adCZWKvA4x9xekezE8guEVp~8mayvXY9kf7242rSCn1yIA1ypRpK0szpuJudeCHSANZp2IcLso12p66p5DEnGC0by~sCqqccm-DrxsLnuEiZGOXJ~jpKsghFNBTQ15fJ4LH7JLZrly-IdaifXB28nJjq3DrqNrl2Vylaa~-s3JgR2DLNhSvKmdBK56w7VURHznTWJvWqYRYC7Es9YxvL-LRBTWQEG1Oh1xJQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_4397/"
+  },
+  {
+    "id": "bc-268",
+    "nameJa": "HG 1/72 境界戦機ウェポンセット4 マルチジョイントフレーム",
+    "priceJpy": 1320,
+    "taxRate": 10,
+    "released": "2023-05-27",
+    "image": "/gundam/jp-01_4387.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509622&Key-Pair-Id=K7AVJM1114TH7&Signature=dpLqI7lfRY9uY51FOoLDOB6eub2lhIDryzXPGjbit27wG8I022xFSN6At2yGajqDBHrZQvBK5roc3D6Ta~orIyetjmlybvF26xLvWX5jwKtZWA~kyljqRgNBE1CvpuvdHWiBPs2iLTz9mnwFg8xXpbTBQr5cbmJKiwLtSxMoqbSfOmB~Trt~EKu0AIYxiegnqqMIRkmLFIUwBi-n~Vhh2YlfBp1vOMl~ew40NywrJ5USi0CfawG5YrlOHT3oS515rAycUJebRrLKFHu48Y3gJANySqmMjeZ3~bGZjVH5OaOQLiXA3dIpYmFqu5WnLXjCmvAFbDInLnenPNiJ5chE8g__",
+    "sourceJp": "https://bandai-hobby.net/item/01_4387/"
+  },
+  {
+    "id": "bc-18",
+    "nameJa": "FULL MECHANICS 1/48 メイレスケンブ(初回限定クリア外装付き)",
+    "priceJpy": 5280,
+    "taxRate": 10,
+    "released": "2022-01-29",
+    "image": "/gundam/jp-01_3752.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/series/2025/02/K5QnAQ3yLf0NEBO1/BPOLRX21gJ5nsYqk.jpg?Expires=1792509848&Key-Pair-Id=K7AVJM1114TH7&Signature=TdkLW9PObkyr0PNpAGJwyJkyP-QQtQF2IxDWCJVSTIgK-bdfeQi7AL2ERHj0OMES8wchPfEUDSJaccuW~iJdPMLCsaf1lrRdnkKkczCjtWmwoo63YRiugXrbtcqB4M2oMvuQm5JjvEVPEzAKv4wqGgqY2aVcySm8U1AXZU16UXGz9MmuoWpZAttZd9m-VrtS11kmBtuezMUfgyP6Bjp3vE69A7eRK3zB-AtRsguMvsFR2ZgxTnKLdnqmdZXLSD9zYlqMycKs22VFH-cvkE9W1JwaMzkOFZtwZXEzYamdvWjusVZpJhu5TL7zNQ~75ddVtbnBEU3shqG~~~GBNvsgOA__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3752/"
+  },
+  {
+    "id": "bc-17",
+    "nameJa": "HG 1/72 ブレイディハウンド",
+    "priceJpy": 2640,
+    "taxRate": 10,
+    "released": "2022-01-22",
+    "image": "/gundam/jp-01_3750.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509641&Key-Pair-Id=K7AVJM1114TH7&Signature=HMCfgI6qbma6U~2Tvu1qlom-Ji0SU5AFQJQQWXIhnpCSXHJXYQwa8lp77gWeZQQ9JV-EwaRtOT6TpnWV2xAsOWT69OH5XG6XMwCm9qLCUeSnTRmIx1adCZWKvA4x9xekezE8guEVp~8mayvXY9kf7242rSCn1yIA1ypRpK0szpuJudeCHSANZp2IcLso12p66p5DEnGC0by~sCqqccm-DrxsLnuEiZGOXJ~jpKsghFNBTQ15fJ4LH7JLZrly-IdaifXB28nJjq3DrqNrl2Vylaa~-s3JgR2DLNhSvKmdBK56w7VURHznTWJvWqYRYC7Es9YxvL-LRBTWQEG1Oh1xJQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3750/"
+  },
+  {
+    "id": "bc-16",
+    "nameJa": "HG 1/72 V-33 ストークキャリー",
+    "priceJpy": 3080,
+    "taxRate": 10,
+    "released": "2022-01-22",
+    "image": "/gundam/jp-01_3751.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509641&Key-Pair-Id=K7AVJM1114TH7&Signature=HMCfgI6qbma6U~2Tvu1qlom-Ji0SU5AFQJQQWXIhnpCSXHJXYQwa8lp77gWeZQQ9JV-EwaRtOT6TpnWV2xAsOWT69OH5XG6XMwCm9qLCUeSnTRmIx1adCZWKvA4x9xekezE8guEVp~8mayvXY9kf7242rSCn1yIA1ypRpK0szpuJudeCHSANZp2IcLso12p66p5DEnGC0by~sCqqccm-DrxsLnuEiZGOXJ~jpKsghFNBTQ15fJ4LH7JLZrly-IdaifXB28nJjq3DrqNrl2Vylaa~-s3JgR2DLNhSvKmdBK56w7VURHznTWJvWqYRYC7Es9YxvL-LRBTWQEG1Oh1xJQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3751/"
+  },
+  {
+    "id": "bc-308",
+    "nameJa": "HG 1/72 アメインゴースト",
+    "priceJpy": 3080,
+    "taxRate": 10,
+    "released": "2021-12-11",
+    "image": "/gundam/jp-01_3692.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509622&Key-Pair-Id=K7AVJM1114TH7&Signature=dpLqI7lfRY9uY51FOoLDOB6eub2lhIDryzXPGjbit27wG8I022xFSN6At2yGajqDBHrZQvBK5roc3D6Ta~orIyetjmlybvF26xLvWX5jwKtZWA~kyljqRgNBE1CvpuvdHWiBPs2iLTz9mnwFg8xXpbTBQr5cbmJKiwLtSxMoqbSfOmB~Trt~EKu0AIYxiegnqqMIRkmLFIUwBi-n~Vhh2YlfBp1vOMl~ew40NywrJ5USi0CfawG5YrlOHT3oS515rAycUJebRrLKFHu48Y3gJANySqmMjeZ3~bGZjVH5OaOQLiXA3dIpYmFqu5WnLXjCmvAFbDInLnenPNiJ5chE8g__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3692/"
+  },
+  {
+    "id": "bc-297",
+    "nameJa": "HG 1/72 メイレスレイキ",
+    "priceJpy": 2640,
+    "taxRate": 10,
+    "released": "2021-12-18",
+    "image": "/gundam/jp-01_3693.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509641&Key-Pair-Id=K7AVJM1114TH7&Signature=HMCfgI6qbma6U~2Tvu1qlom-Ji0SU5AFQJQQWXIhnpCSXHJXYQwa8lp77gWeZQQ9JV-EwaRtOT6TpnWV2xAsOWT69OH5XG6XMwCm9qLCUeSnTRmIx1adCZWKvA4x9xekezE8guEVp~8mayvXY9kf7242rSCn1yIA1ypRpK0szpuJudeCHSANZp2IcLso12p66p5DEnGC0by~sCqqccm-DrxsLnuEiZGOXJ~jpKsghFNBTQ15fJ4LH7JLZrly-IdaifXB28nJjq3DrqNrl2Vylaa~-s3JgR2DLNhSvKmdBK56w7VURHznTWJvWqYRYC7Es9YxvL-LRBTWQEG1Oh1xJQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3693/"
+  },
+  {
+    "id": "bc-325",
+    "nameJa": "HG 1/72 メイレスジョウガン",
+    "priceJpy": 2640,
+    "taxRate": 10,
+    "released": "2021-11-13",
+    "image": "/gundam/jp-01_3690.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509641&Key-Pair-Id=K7AVJM1114TH7&Signature=HMCfgI6qbma6U~2Tvu1qlom-Ji0SU5AFQJQQWXIhnpCSXHJXYQwa8lp77gWeZQQ9JV-EwaRtOT6TpnWV2xAsOWT69OH5XG6XMwCm9qLCUeSnTRmIx1adCZWKvA4x9xekezE8guEVp~8mayvXY9kf7242rSCn1yIA1ypRpK0szpuJudeCHSANZp2IcLso12p66p5DEnGC0by~sCqqccm-DrxsLnuEiZGOXJ~jpKsghFNBTQ15fJ4LH7JLZrly-IdaifXB28nJjq3DrqNrl2Vylaa~-s3JgR2DLNhSvKmdBK56w7VURHznTWJvWqYRYC7Es9YxvL-LRBTWQEG1Oh1xJQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3690/"
+  },
+  {
+    "id": "bc-364",
+    "nameJa": "HG 1/72 メイレスビャクチ",
+    "priceJpy": 2640,
+    "taxRate": 10,
+    "released": "2021-09-25",
+    "image": "/gundam/jp-01_3688.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509641&Key-Pair-Id=K7AVJM1114TH7&Signature=HMCfgI6qbma6U~2Tvu1qlom-Ji0SU5AFQJQQWXIhnpCSXHJXYQwa8lp77gWeZQQ9JV-EwaRtOT6TpnWV2xAsOWT69OH5XG6XMwCm9qLCUeSnTRmIx1adCZWKvA4x9xekezE8guEVp~8mayvXY9kf7242rSCn1yIA1ypRpK0szpuJudeCHSANZp2IcLso12p66p5DEnGC0by~sCqqccm-DrxsLnuEiZGOXJ~jpKsghFNBTQ15fJ4LH7JLZrly-IdaifXB28nJjq3DrqNrl2Vylaa~-s3JgR2DLNhSvKmdBK56w7VURHznTWJvWqYRYC7Es9YxvL-LRBTWQEG1Oh1xJQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3688/"
+  },
+  {
+    "id": "bc-350",
+    "nameJa": "HG 1/48 レギンレイヴ（ライデン/セオ搭乗機）",
+    "priceJpy": 3960,
+    "taxRate": 10,
+    "released": "2021-10-16",
+    "image": "/gundam/jp-01_3648.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509622&Key-Pair-Id=K7AVJM1114TH7&Signature=dpLqI7lfRY9uY51FOoLDOB6eub2lhIDryzXPGjbit27wG8I022xFSN6At2yGajqDBHrZQvBK5roc3D6Ta~orIyetjmlybvF26xLvWX5jwKtZWA~kyljqRgNBE1CvpuvdHWiBPs2iLTz9mnwFg8xXpbTBQr5cbmJKiwLtSxMoqbSfOmB~Trt~EKu0AIYxiegnqqMIRkmLFIUwBi-n~Vhh2YlfBp1vOMl~ew40NywrJ5USi0CfawG5YrlOHT3oS515rAycUJebRrLKFHu48Y3gJANySqmMjeZ3~bGZjVH5OaOQLiXA3dIpYmFqu5WnLXjCmvAFbDInLnenPNiJ5chE8g__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3648/"
+  },
+  {
+    "id": "bc-349",
+    "nameJa": "HG 1/48 レギンレイヴ（シン搭乗機）",
+    "priceJpy": 3740,
+    "taxRate": 10,
+    "released": "2021-10-16",
+    "image": "/gundam/jp-01_3647.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509622&Key-Pair-Id=K7AVJM1114TH7&Signature=dpLqI7lfRY9uY51FOoLDOB6eub2lhIDryzXPGjbit27wG8I022xFSN6At2yGajqDBHrZQvBK5roc3D6Ta~orIyetjmlybvF26xLvWX5jwKtZWA~kyljqRgNBE1CvpuvdHWiBPs2iLTz9mnwFg8xXpbTBQr5cbmJKiwLtSxMoqbSfOmB~Trt~EKu0AIYxiegnqqMIRkmLFIUwBi-n~Vhh2YlfBp1vOMl~ew40NywrJ5USi0CfawG5YrlOHT3oS515rAycUJebRrLKFHu48Y3gJANySqmMjeZ3~bGZjVH5OaOQLiXA3dIpYmFqu5WnLXjCmvAFbDInLnenPNiJ5chE8g__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3647/"
+  },
+  {
+    "id": "bc-2543",
+    "nameJa": "HG 1/144 鋼鉄ジーグ(INFINITISM)",
+    "priceJpy": 5500,
+    "taxRate": 10,
+    "released": "2021-01-30",
+    "image": "/gundam/jp-01_3332.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509922&Key-Pair-Id=K7AVJM1114TH7&Signature=UpagvTKdzRHtjUoftL5BHtuSOXypIy8YsNhDJANOwaGG8L4lQak5m0VAnkIrp5ockMwK8xaYIBlFZQS3z3N3YRbAx7piTC6w85V1NCPa2D5dZtqjR1mPx6O3kGHaV~ztlXjLL2mcGysGaXgr09HQGPJyQkvypMoZQLzDtgod18uxR8VAp2JRJVZM1MJNz5dWqzY045Owtv6jsKC~6FSK5q51z4HBWpirpMl0FxzzLugfEei3kNkfc~cX~EiVyDn9Ua96xsSKCk3qCXuK7xGBsUSp8frcfkRclqzftWylzi76tFOe436e-ZV872dOKH39920g3bcuF7ld8RSeOQzXfA__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3332/"
+  },
+  {
+    "id": "bc-2933",
+    "nameJa": "HG 1/100 VF-31J ジークフリード (ハヤテ･インメルマン機) デラックスセット",
+    "priceJpy": 8250,
+    "taxRate": 10,
+    "released": "2025-07-26",
+    "image": "/gundam/jp-01_5946.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/07/5AB3yba3JNySPcLN/cLYnkUpL1oLJtQeR.jpeg?Expires=1792509987&Key-Pair-Id=K7AVJM1114TH7&Signature=QEdQUEpEDOFBS3rfU5atuUvkYPnvSlA6gefs513kmhZQe2zYt6qqsY-FWb971-6y0qnyo7hRuxesGNuy09y8Eof6Dsw4QVYtkFwutMCCc-g8evkx73Eyc8RGbyFInB~Kp2ZF5MTbRUOjqd2pFradMoXO3zoXFvajzPZNi8XyhAuwGAyY5XnYHQIgs2oj~aHkvggZCfyGZAN0laSo1Whceg13HlOXBN24AYsYFRxeNEW0LK~0TINycFAqToM2KF1vqfRJyoAiMiY7WtA9uJfinUTziljvDC3Pa0sXTK5XKZ~J24QIV2i-Xa1OEQ0Qo5Pv6XXBJYjq2d~NqGZWYZyhiA__",
+    "sourceJp": "https://bandai-hobby.net/item/01_5946/"
+  },
+  {
+    "id": "bc-2931",
+    "nameJa": "HG 1/100 VF-31J ジークフリード (ハヤテ･インメルマン機)",
+    "priceJpy": 5500,
+    "taxRate": 10,
+    "released": "2025-07-26",
+    "image": "/gundam/jp-01_5944.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/07/548qfQAOxQqg0XJB/aB6mZxbyNyeU8m1H.jpeg?Expires=1792509987&Key-Pair-Id=K7AVJM1114TH7&Signature=VBWT1e2RdOxwR8pKDK~kE~iibamJuOPUyal5zyGd3zSfLo5tMwZVXaWcdqDCxcyk9A~onPB-4m2LpPH6H-EMHSnO7j0LImqL~0q098lMNcfXuyrZ9fwU0nzwXvsI84B9CF8Lh7HQTZNEVGWuDCHNwmQxmELrKs1Cpa8vkGE4madozKlDk577DyyH7acN76rbUQe-F57aVgDSM1HgWLFKOlQwBpEtyhKdwaCsSiw5CsCgUB43ipzDlfghTlkvzYT2NE3OnXttsDMBHuoVZbRGap5Z4PH0KQmIqinozrMbrGbszIGAyPRiq-z40kU2UZ7NnmKOQMS7VQWrDvsFmRyCJg__",
+    "sourceJp": "https://bandai-hobby.net/item/01_5944/"
+  },
+  {
+    "id": "bc-2782",
+    "nameJa": "HG 1/100 VF-22S シュトゥルムフォーゲルII(マクシミリアン・ジーナス機)",
+    "priceJpy": 4730,
+    "taxRate": 10,
+    "released": "2025-02-22",
+    "image": "/gundam/jp-01_5465.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792509922&Key-Pair-Id=K7AVJM1114TH7&Signature=UpagvTKdzRHtjUoftL5BHtuSOXypIy8YsNhDJANOwaGG8L4lQak5m0VAnkIrp5ockMwK8xaYIBlFZQS3z3N3YRbAx7piTC6w85V1NCPa2D5dZtqjR1mPx6O3kGHaV~ztlXjLL2mcGysGaXgr09HQGPJyQkvypMoZQLzDtgod18uxR8VAp2JRJVZM1MJNz5dWqzY045Owtv6jsKC~6FSK5q51z4HBWpirpMl0FxzzLugfEei3kNkfc~cX~EiVyDn9Ua96xsSKCk3qCXuK7xGBsUSp8frcfkRclqzftWylzi76tFOe436e-ZV872dOKH39920g3bcuF7ld8RSeOQzXfA__",
+    "sourceJp": "https://bandai-hobby.net/item/01_5465/"
+  },
+  {
+    "id": "bc-343",
+    "nameJa": "HG 1/72 ビッグトニー(ガガンバー・メメンプー機)",
+    "priceJpy": 5720,
+    "taxRate": 10,
+    "released": "2021-10-23",
+    "image": "/gundam/jp-01_3616.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792510225&Key-Pair-Id=K7AVJM1114TH7&Signature=Y4hTG0tfcTu36IH4DenkDTCIh9TA5mdB0bl~JxFLCLtoDyErgIFcz8DRWV0SLCRI0vNvonRFX35YWfbdNpbV19unXTiPLqwFYbHZvlufbNS9dANtaxXgJGFRi1GRfY9iEyi1MS2MOwrok23u6cw7EbxwJit5Jj6x5NbUOkPoWLP23SMAB4t4TqdVdtsFw0dXGkrcPN5tIApxpJ1ruVFf3TQSxIAP8sJDK4xaHvmEYgLfIZjKXLXJuTYJKx~oGXx6keqVstxtr00n6IDaedL4WJOMUredaAaQfn49VyziJH447jB5hzoWnHOGYyFANlgt7szZXyawRW4eRzUBytriqA__",
+    "sourceJp": "https://bandai-hobby.net/item/01_3616/"
+  },
+  {
+    "id": "bc-3163",
+    "nameJa": "HG 1/100 VF-25F メサイアバルキリー(早乙女アルト機)",
+    "priceJpy": 4730,
+    "taxRate": 10,
+    "released": "2026-03-21",
+    "image": "/gundam/jp-01_6868.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/03/MlsCQrtlSsWFW05X/QsKDP4vsUQmDbLZp.jpeg?Expires=1792510284&Key-Pair-Id=K7AVJM1114TH7&Signature=Vwl5HYsWC5AHyfX~jyyq8Gw~IdjzSUOX9HoNegtv2EqD4~MsclbSKztREH7RlRSTSnKBRe4JNG2guyq8DAC8hZRUsByrzjJqTuPzyDaUDZh4iOEzRqElMK8pkuUmsA3Ik7KUOCYBkH-lfh7Dpc7eNkAIWQ-YErNzsaIrNtyO2PFm5idwrAl9oC8~BBvdqFHAyoY2RE42D9pJWuoATaYGQaS5Q2jOmk3AH6VXzBybxQSZC8y8A~2FmwoBlR-Bmn0v2u6JsM2E64BQkBr2jmHCQFtQqsL6S0WTeHbwJUXFCwMuInX8Z270u2EKh99huLDJxwMMPlzhTS5I-YPy7m2Z6w__",
+    "sourceJp": "https://bandai-hobby.net/item/01_6868/"
+  },
+  {
+    "id": "bc-3165",
+    "nameJa": "HG 1/100 VF-25F メサイアバルキリー(早乙女アルト機)デラックスセット",
+    "priceJpy": 7480,
+    "taxRate": 10,
+    "released": "2026-03-21",
+    "image": "/gundam/jp-01_6870.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/03/YhrGzSuUxmwSC9LI/n6nFtnT5Jqz83tqZ.jpeg?Expires=1792510284&Key-Pair-Id=K7AVJM1114TH7&Signature=DZIh8X6iY6a3hYH-MTyzlnTBOYX6JA4Y3gEwZYt5GAUUbAHrV29CGHnFeGBiPg~GzmZS6yt6mA9F5QxKRESeKrEQ60qBYkhc1QXvliip0DXom7yOYUsAM518jeB0QOWCEesdzGjUujeldye9AG3-u8FvY5Ax2wnRgP9ovx3QwUY7Pd8m7w1NQoy2K8YUZIZ3T21fM9eQzFz84Lmgp1C0KPH-kYKidV6Vf9bfRO8ZOVWZldCJfYyZzRr9eb0RRCUIn-xzmomtlKte7bzNv5Om-i8V04m7uZBftsKmZcClKrBCoC76PlDbaoBI5BT9VvLHrIGNeqmEtPi0xwv~CJg3mg__",
+    "sourceJp": "https://bandai-hobby.net/item/01_6870/"
+  },
+  {
+    "id": "bc-2243",
+    "nameJa": "HG 1/300 マグナザウラー",
+    "priceJpy": 5720,
+    "taxRate": 10,
+    "released": "2019-07-20",
+    "image": "/gundam/jp-01_2303.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792510584&Key-Pair-Id=K7AVJM1114TH7&Signature=F6qB3GOQhRidURUqeiPnainC7ow2QxdGo29zNgnhRcdOW1fOAUENYA6TFSjf2II2V3zO9Vn7IVe5ctMcRgwQ7NaWAuW21EN5PGktv93A1JytIKOMScxWYEk0mAap6jgY5pu~rrgXx9VgGzOxdSrJcORK7obgJa2WZKcc59G7lRHo-28e9KVeEPAElkAKKkZASbZOEol1e8lr0qlBmggr0n0UxgL3dLbymeb-gws7ifSPBqdU0se4SS3LAppsHcgO3qbD94DUAeGAUm2hWjmVSOXHvPD-G2wa1PDWLK73xcmLRnklO18T7N1hUOvltOYgCDs99P1TJx6Z8px5uqVvWQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_2303/"
+  },
+  {
+    "id": "bc-2765",
+    "nameJa": "HG 1/100 VF-22S シュトゥルムフォーゲルII(ミリア・ファリーナ・ジーナス機)",
+    "priceJpy": 4730,
+    "taxRate": 10,
+    "released": "2025-01-17",
+    "image": "/gundam/jp-01_5448.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/czK4XVFyOa4H7RAo/5kMcq8qvNmNXaGpZ.jpg?Expires=1792510584&Key-Pair-Id=K7AVJM1114TH7&Signature=F6qB3GOQhRidURUqeiPnainC7ow2QxdGo29zNgnhRcdOW1fOAUENYA6TFSjf2II2V3zO9Vn7IVe5ctMcRgwQ7NaWAuW21EN5PGktv93A1JytIKOMScxWYEk0mAap6jgY5pu~rrgXx9VgGzOxdSrJcORK7obgJa2WZKcc59G7lRHo-28e9KVeEPAElkAKKkZASbZOEol1e8lr0qlBmggr0n0UxgL3dLbymeb-gws7ifSPBqdU0se4SS3LAppsHcgO3qbD94DUAeGAUm2hWjmVSOXHvPD-G2wa1PDWLK73xcmLRnklO18T7N1hUOvltOYgCDs99P1TJx6Z8px5uqVvWQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_5448/"
+  },
+  {
+    "id": "bc-3157",
+    "nameJa": "HG 1/100 VF-31S ジークフリード (アラド・メルダース機)",
+    "priceJpy": 5500,
+    "taxRate": 10,
+    "released": "2026-01-17",
+    "image": "/gundam/jp-01_6891.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/01/cp59jvHeSRM7D3xv/MgCV1C5OUrjPORWa.jpeg?Expires=1792510801&Key-Pair-Id=K7AVJM1114TH7&Signature=mVwxnD-iNFkl6HdMjv5AcBfevOtrXvfEe9Vo688RHPcuJEPVZ407wsGSk1yuslI9nC7TMkTUVwi8Lqchfuf8hQ28eshaicuvLUY9K30ev~hoOE7UxgwkWE61jhA9TwdNHiEEZ-Am~eM53ZykEyUqsW2IxDKXc3INcRQDeLLPUJlsEApGHis4zZUlqHKvuAUFjQD1eRUFVeQQmyhJR5XJP8cHhLB6lol51DUclGi23X1aFontgo5sjaKWSz7W-ELJVLYV-gLxLzSo8rKzu2-dI1wxJRyx67mQD7fQ9VWiHc-b2Vwgf8T6pmbfaJ-RgGJ8y1yisDA1hRMqtJSNnI3iVA__",
+    "sourceJp": "https://bandai-hobby.net/item/01_6891/"
+  },
+  {
+    "id": "bc-3159",
+    "nameJa": "HG 1/100 VF-31S ジークフリード (アラド・メルダース機)デラックスセット",
+    "priceJpy": 8250,
+    "taxRate": 10,
+    "released": "2026-01-17",
+    "image": "/gundam/jp-01_6893.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/01/ZhXPQOa26kKHB4KN/cruEeSW6dxGACwHL.jpeg?Expires=1792510802&Key-Pair-Id=K7AVJM1114TH7&Signature=RzzY-sDuOsHfMhX1WNXGF-qkirnWiluH77sGPXx7BI53Cv396IULvg0OyoaYGXt3ndbhvasUaY32ju7m6kw7G1yz9RWYmbavF7j0khV5Ln3~h3HjS6RAykuHWgdNpeCCU5kwyK07zjHKtY9avKKM-YLf~yjFDI6exB5EHTpcaDZoIa187JuqYGgNFZum6p4xbCEXCh0FJplCxjROYxjUcyK7s9suhDKVjThNig5iYO-Ht0WZSoOQNHBidupeiun8JaZi8-vnbN0uRzEGh4dbOQHRN6IiBGIgBpMIl4p7wDbzalbeAKYtvP1hvvQh0cvRdR8E9DmODNRVC6JA24NRig__",
+    "sourceJp": "https://bandai-hobby.net/item/01_6893/"
+  },
+  {
+    "id": "bc-3032",
+    "nameJa": "HG 1/100 VF-31C ジークフリード(ミラージュ･ファリーナ･ジーナス機)",
+    "priceJpy": 5500,
+    "taxRate": 10,
+    "released": "2025-10-25",
+    "image": "/gundam/jp-01_6759.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/10/AMh4QSojDWsWUyyj/SpTlzSWUpF8pCaCZ.jpeg?Expires=1792510803&Key-Pair-Id=K7AVJM1114TH7&Signature=M8KOyjwE~DcwM~ZX~GJCK~eoUaeMrxTGmU2s9O7s8x4HzbRUAbF6KKVjTIt4ULcIqoA38tEvWUGMxtrIzwIhitJT~kemiEGCUKUJ4OTL-tFTB47ox8Uun5oLkUIobfFTcH~OFSlqFuGtWb9EdvREDqJk3H-cQvrLBu9VK-LfHbx8UavwkaGyVfB~vsSpKcrSwSM94Z3C7j89i525xVTrqiWZC3VLh7BIdcdJwPRq-VR9-sQKy2o2NV8pxYDTjQSTepMsFzTbSDkG0~9FCH2~0zlMpa6QBMPIvwJN3DYo7fNDV-O2BxjC0ojXLdUaDaC19W0HY7HWN-GsjgOdt~1rPQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_6759/"
+  },
+  {
+    "id": "bc-3034",
+    "nameJa": "HG 1/100 VF-31C ジークフリード(ミラージュ･ファリーナ･ジーナス機)デラックスセット",
+    "priceJpy": 8250,
+    "taxRate": 10,
+    "released": "2025-10-25",
+    "image": "/gundam/jp-01_6761.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2025/10/IFDDvDAMlBl2jCxb/qDj2BOxmDtfxEXzX.jpeg?Expires=1792510803&Key-Pair-Id=K7AVJM1114TH7&Signature=eUZfFnvMO-iCxYNFsygUHW6ftyen-GsseyOsOCEixs5G0TYpu6ZuNbyCCedd~he-OXZZfL~QAg644wMUpvdRCMERXcX-I5bbyEsM4syap~1jh~gbjAgPGBSuWEMB7-xe0okMwvHszV1OR2redPQKI8SdEZVP--KKAVpjF~0X3ORelHXu9Xo48lGo9Jvn1sPnrJ7px21j4DRzGUnIuyYvUrNlIjVDtIH6wQ4cmrdszV1XbUx7crSUTEvZ9KwGkrCxl05d4b9aX1eB9c~66iu5sTb~Db3-uG-gKvP2KaeNuawde2KO1fc9d3KawcdXYpBkNG~NzoNmj4u7YFL0vGyasg__",
+    "sourceJp": "https://bandai-hobby.net/item/01_6761/"
+  },
+  {
+    "id": "bc-3238",
+    "nameJa": "HG 1/100 VF-31E ジークフリード(チャック・マスタング機)",
+    "priceJpy": 5500,
+    "taxRate": 10,
+    "released": "2026-06-06",
+    "image": "/gundam/jp-01_7035.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/06/BFAOVj7suJ90vnsc/X9lc0beQsTZvhVmj.jpeg?Expires=1792510843&Key-Pair-Id=K7AVJM1114TH7&Signature=NnOQpcFnxEQRGVJT0nYJf1O6~R4s6yRJTOnNYUbJHGH7tj1dY3KefYSVo0RrPl3xco3Ya11OF3D-FqLDXBJR11UJSxAQgZwsxFmV0y54xPMlM~qNanFxy6ougO9MlVZbLdOtfidz53BsxB-GuMrn~CHnxsY92obU1cKU1X8qk0O-d-7yffW6BJSqlV7vbqYz4Dov0u-2QCuYYiWZLGK-iQ8MyY7rkpJiZy2rA2DkgttKCtGrtI0UFiMZtoyn4PjwfeT8DFbsrQQzJ2PgRyk39W-oQvkrHSOfOfDnHA5EhZvQ8sKNXeu9-iyP6GkiMg6fJaQsLjUbU7ftOz80OJz6YA__",
+    "sourceJp": "https://bandai-hobby.net/item/01_7035/"
+  },
+  {
+    "id": "bc-3240",
+    "nameJa": "HG 1/100 VF-31E ジークフリード(チャック・マスタング機)デラックスセット",
+    "priceJpy": 8250,
+    "taxRate": 10,
+    "released": "2026-06-06",
+    "image": "/gundam/jp-01_7037.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/06/0ofzmlzAmX5r1mfN/czCkyjbTYSYvX772.jpeg?Expires=1792510843&Key-Pair-Id=K7AVJM1114TH7&Signature=DhZyLewqVLxtiQ2Xg7aNKoEQl9z-c-7tYqyy1pQhGVAo5h3ruX3KTB-DgTfRYLsCb7DiELybr~uuuhaY0JHA6YBUJsQ0kgW8WaAFzNjPoZl0NYT7KEqJ1LWk~TzIDlMyc~que98Xj-8t55bd54XzDdG0tyN~WfPCYylkyvnpLTfVgugsOsglNWrv1yorahcZZnrgDAY~FNA1JF3IBhMCxmjRNKaOlyXqaSd88xEAbcMm9fJDc4-pC7a5JRFr96I1KspbYHV8UPXYnDCu2EWLiLGdv4IzU8S3HIUMcDehqZKbPd1pgpO1Bu~Gj8Vsz3nB7lGlIjiETUGmEHxTatmsFg__",
+    "sourceJp": "https://bandai-hobby.net/item/01_7037/"
+  },
+  {
+    "id": "pb-374",
+    "nameJa": "MG 1/100 ガンダムベース限定 ガンダムF90[クリアカラー］",
+    "priceJpy": 5060,
+    "taxRate": 10,
+    "released": "2022-06-11",
+    "image": "/gundam/jp-01_4213.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_5132_o_1g49di3mel5c1420b1o1l1i1g0028.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_4213/"
+  },
+  {
+    "id": "pb-270",
+    "nameJa": "MG 1/100 ガンダムF91 Ver.2.0",
+    "priceJpy": 4840,
+    "taxRate": 10,
+    "released": "2018-05-19",
+    "image": "/gundam/jp-01_1349.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_2277_o_1cdelvovqppi1s2sb6i1doc143828.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1349/"
+  },
+  {
+    "id": "pb-264",
+    "nameJa": "HG 1/144 ガンダムMK2",
+    "priceJpy": 1100,
+    "taxRate": 10,
+    "released": "1990-07",
+    "image": "/gundam/jp-01_1469.webp",
+    "imageUrl": "https://bandai-hobby.net/images/154_2391_s_742qojeya6t6t2wzdf99shllm1mh.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_1469/"
+  },
+  {
+    "id": "pb-193",
+    "nameJa": "MG 1/100 ガンダムベース限定 ガンダムF90[クリアカラー］",
+    "priceJpy": 5060,
+    "taxRate": 10,
+    "released": "2022-06-11",
+    "image": "/gundam/jp-01_4213.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_5132_o_1g49di3mel5c1420b1o1l1i1g0028.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_4213/"
+  },
+  {
+    "id": "pb-173",
+    "nameJa": "MG 1/100 ガンダムベース限定 ガンダムF90[クリアカラー］",
+    "priceJpy": 5060,
+    "taxRate": 10,
+    "released": "2022-06-11",
+    "image": "/gundam/jp-01_4213.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_5132_o_1g49di3mel5c1420b1o1l1i1g0028.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_4213/"
+  },
+  {
+    "id": "bc-3575",
+    "nameJa": "MGSD ダブルオーライザー",
+    "priceJpy": 6050,
+    "taxRate": 10,
+    "released": "2027-03",
+    "image": "/gundam/jp-01_7379.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/product/2026/08/7khgiRw8GyE0IiU7/oVH13KhLccA9iKos.jpg?Expires=1792507971&Key-Pair-Id=K7AVJM1114TH7&Signature=Ml2tsB2Ll1AybSMgeC8L5XgV5fr5Z4JoiFHO~7za5h6MWADtX6ItJhzgqQ8k6A0b6YJoUXGvLTOTmf~rZbW-XW9-MfkwzQ63QSJsRQ7NYyLtUaIXuT7FxMDvwq5E68nCvYFKw-3Z~2yG6TYHeovEkZGYs~dJk-qQsMrd1hN9~HifZeEeNZYNpv5SKmtVG~vWt2m61xNVjSpXX1kxGpq74Amv3umqxEA2Tq2JUm2K-GBbMd~r89PtUS3wrN6Z-eTsU5fdGXozkuBilxf1AyqKONXtB9Rw4TvGmfFVoWWDmzkYdTE3k6k4a43vSStwu1BTI5uUhS0V4Njphjt6rqHxMQ__",
+    "sourceJp": "https://bandai-hobby.net/item/01_7379/"
+  },
+  {
+    "id": "bc-2321",
+    "nameJa": "HGBD:R 1/144 ν-ジオンガンダム",
+    "priceJpy": 3410,
+    "taxRate": 10,
+    "released": "2019-11-16",
+    "image": "/gundam/jp-01_2483.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_3410_o_1dpkhngnpuc69nblin8lj1sn723.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_2483/"
+  },
+  {
+    "id": "bc-1930",
+    "nameJa": "HG 1/144 ガンダムベース限定 プチッガイ [ガンダムベースカラー]",
+    "priceJpy": 550,
+    "taxRate": 10,
+    "released": "2017-12",
+    "image": "/gundam/jp-01_1935.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/mDsXxQq2K49t3iH2/GykS0IHQqm0tpdEs.jpg?Expires=1792509525&Key-Pair-Id=K7AVJM1114TH7&Signature=lbyYL0F1P29MjrVgnk8pD3gAADSe3cQELXqHbiRFsOH9ByuZ2gYGF6st0oyBqjAn6TK~zN4X29nBNmzeYrxYy601g89iN4tqyWO6DVGTY2x7LMxXn-RQI2m8zssiuQHoi7xmQivWPtxDIrooO8M4Xwz975HigJeYf6waQdewE3FjJg2usD2ZzVEnX~nJ~pUe-eJDieJDlCSf9RJj1ashP4~3~p9f2UgQuI7Lc5t91mKZKW4cPK3ymmNUnh1LKyiXaeJrvjOwa1evwPB7OW-oW3FNaDGzGC1QaAaojIsiS55CkDC9UBKO3~KdauzWp6GFBqkUnhlnwDkVkmTAbepA9g__",
+    "sourceJp": "https://bandai-hobby.net/item/01_1935/"
+  },
+  {
+    "id": "bc-1914",
+    "nameJa": "HG 1/144 ガンダムベース限定 プチッガイ [ガンダムベースカラー]",
+    "priceJpy": 550,
+    "taxRate": 10,
+    "released": "2017-12",
+    "image": "/gundam/jp-01_1935.webp",
+    "imageUrl": "https://d3bk8pkqsprcvh.cloudfront.net/hobby/jp/brand/2025/02/mDsXxQq2K49t3iH2/GykS0IHQqm0tpdEs.jpg?Expires=1792509525&Key-Pair-Id=K7AVJM1114TH7&Signature=lbyYL0F1P29MjrVgnk8pD3gAADSe3cQELXqHbiRFsOH9ByuZ2gYGF6st0oyBqjAn6TK~zN4X29nBNmzeYrxYy601g89iN4tqyWO6DVGTY2x7LMxXn-RQI2m8zssiuQHoi7xmQivWPtxDIrooO8M4Xwz975HigJeYf6waQdewE3FjJg2usD2ZzVEnX~nJ~pUe-eJDieJDlCSf9RJj1ashP4~3~p9f2UgQuI7Lc5t91mKZKW4cPK3ymmNUnh1LKyiXaeJrvjOwa1evwPB7OW-oW3FNaDGzGC1QaAaojIsiS55CkDC9UBKO3~KdauzWp6GFBqkUnhlnwDkVkmTAbepA9g__",
+    "sourceJp": "https://bandai-hobby.net/item/01_1935/"
+  },
+  {
+    "id": "bc-1745",
+    "nameJa": "1/100 フルメカニクス ガンダムバルバトスルプスレクス",
+    "priceJpy": 3520,
+    "taxRate": 10,
+    "released": "2017-02-18",
+    "image": "/gundam/jp-01_797.webp",
+    "imageUrl": "https://bandai-hobby.net/images/ecms_154_1744_o_1b8tfk3fh1928jjqo3k1tll113h23.jpg",
+    "sourceJp": "https://bandai-hobby.net/item/01_797/"
   }
 ]

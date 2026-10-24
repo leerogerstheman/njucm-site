@@ -410,6 +410,7 @@ const SALE_STATUS_LABEL = {
 function saleOverlay(mall, how) {
   if (!mall) {
     return {
+      nameJa: '',
       saleStatus: null,
       saleStatusText: '',
       salePriceJpy: 0,
@@ -436,6 +437,11 @@ function saleOverlay(mall, how) {
       : parsePreorderWindow(st.statusText)
     : { from: '', to: '' };
   return {
+    /*
+     * 商城商品卡里同时写着中文名与日文名。资料库（goodsmile.info）给的是
+     * 中文名，日文官方品名只有商城那边有——对上了就一并接过来。
+     */
+    nameJa: mall.nameJa || '',
     saleStatus: status && status !== 'no-data' && status !== 'unknown' ? status : null,
     saleStatusText: st ? st.statusText || '' : '',
     salePriceJpy: (st && st.priceJpy) || mall.priceJpy || 0,
@@ -586,6 +592,7 @@ function normalise(entry, file, vendor) {
           return saleOverlay(hit ? hit.mall : null, hit ? hit.how : '');
         })()
       : {
+          nameJa: '',
           saleStatus: null,
           saleStatusText: '',
           salePriceJpy: 0,
@@ -602,7 +609,6 @@ function normalise(entry, file, vendor) {
   return {
     id,
     name,
-    nameJa: text(entry.nameJa),
     maker: vendor.maker || vendor.id,
     category,
     series,
@@ -630,6 +636,15 @@ function normalise(entry, file, vendor) {
     sourceJp: optionalText(entry.sourceJp),
     units: Array.isArray(entry.units) && entry.units.length ? entry.units : undefined,
     ...sale,
+    /*
+     * 官方日文品名。
+     *
+     * 良笑的商城商品卡里同时写着中文名与日文名，资料库（goodsmile.info）
+     * 给的是中文名——对上了就把日文名一并接过来。
+     *
+     * 这一行要放在 ...sale 之后：展开写在前面会把这里的值覆盖掉。
+     */
+    nameJa: sale.nameJa || text(entry.nameJa),
   };
 }
 

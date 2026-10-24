@@ -52,11 +52,22 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const JP_FILE = 'src/data/gundam.kits.jp.json';
 const OUT_FILE = 'src/data/gundam.kits.jp-enriched.json';
 
+/*
+ * 中文站的来源文件。
+ *
+ * **顺序必须与 scripts/build-models-data.mjs 里 bandai 那家的 sources 一致**：
+ * 同一条产品可能在几个文件里各有一个 id，合并脚本按「来源页」合并时保留
+ * 先出现的那条 id——顺序不一样，叠加层就会打在合并结果里不存在的 id 上。
+ */
 const CN_SOURCES = [
   'src/data/gundam.kits.classic.json',
   'src/data/gundam.kits.recent.json',
-  'src/data/gundam.kits.catalog.json',
+  'src/data/gundam.kits.cn.json',
   'src/data/gundam.kits.seed.json',
+  'src/data/gundam.kits.pb.json',
+  'src/data/gundam.kits.assemble.json',
+  /* 非高达产品线：宝可梦拼装模型、30MS/30MP、30MM、MECHA COLLECTION… */
+  'src/data/models.kits.bandai-nongundam.json',
 ];
 
 function readJson(rel) {
@@ -317,16 +328,94 @@ for (const cn of cnBySource.values()) {
 }
 
 /*
+ * 第三轮：把发售月先放一放。
+ *
+ * 中文站有些条目没有发售月（有些只有年），四元组就凑不齐。但**厂商建议零售价
+ * 是硬事实**——同一个等级、同一个比例、同一个价钱的商品，在日站的目录里
+ * 通常只有一件。所以候选唯一时就认下它；两边都有发售月却对不上，就放弃。
+ *
+ * 宁可少配几条，也不能把日文名安到错的商品上——日文名与定价是要写进数据里的。
+ */
+const jpByGradeScalePrice = new Map();
+const jpByGradePrice = new Map();
+for (const item of jp) {
+  const gs = gradeScale(item.nameJa);
+  const grade = gs.grade || item.grade;
+  for (const scale of gs.scale ? [gs.scale] : ['']) {
+    const k3 = `${grade}|${scale}|${item.priceJpy}`;
+    if (!jpByGradeScalePrice.has(k3)) jpByGradeScalePrice.set(k3, []);
+    jpByGradeScalePrice.get(k3).push(item);
+    const k2 = `${grade}|${item.priceJpy}`;
+    if (!jpByGradePrice.has(k2)) jpByGradePrice.set(k2, []);
+    jpByGradePrice.get(k2).push(item);
+  }
+}
+
+let byLooseKey = 0;
+for (const cn of cnBySource.values()) {
+  if (matchedIds.has(cn.id)) continue;
+  if (cn.nameJa) continue;
+  if (!cn.priceJpy) continue;
+
+  const scales = cn.scale ? [cn.scale] : [''];
+  const cands = new Map();
+  for (const scale of scales) {
+    for (const j of jpByGradeScalePrice.get(`${cn.grade}|${scale}|${cn.priceJpy}`) || []) {
+      cands.set(j.url, j);
+    }
+  }
+  let j = cands.size === 1 ? [...cands.values()][0] : null;
+  if (!j) {
+    const wide = new Map();
+    for (const j2 of jpByGradePrice.get(`${cn.grade}|${cn.priceJpy}`) || []) wide.set(j2.url, j2);
+    j = wide.size === 1 ? [...wide.values()][0] : null;
+  }
+  if (!j) continue;
+  if (j.priceJpy && j.priceJpy !== cn.priceJpy) continue;
+
+  /* 两边都有发售月却对不上，说明不是同一款 */
+  const cnMonth = (cn.released || '').slice(0, 7);
+  const jpMonth = (j.released || '').slice(0, 7);
+  if (cnMonth.length === 7 && jpMonth.length === 7 && cnMonth !== jpMonth) continue;
+
+  enriched.push({
+    id: cn.id,
+    nameJa: j.nameJa,
+    priceJpy: j.priceJpy,
+    taxRate: j.taxRate,
+    released: j.released || cn.released,
+    image: j.image || null,
+    imageUrl: j.imageUrl || null,
+    sourceJp: j.url,
+  });
+  matchedIds.add(cn.id);
+  byLooseKey++;
+}
+
+/*
  * 写出一个叠加层，而不是改写中文站的事实文件。
  *
  * 两个来源各有权威之处：中文站给中文品名与商品页 URL，日本站给官方日文
  * 品名、含税定价与税目。叠加层在合并之后按 id 覆盖，事实文件保持原样，
  * 谁先跑、跑几遍都不影响结果。
  */
+
+/*
+ * 上一轮对上的条目先留着。
+ *
+ * 有些条目靠的是更细的规则（高达集结那批的比例写的是「约 50mm」而不是
+ * 1/100，四元组凑不齐）。这些条目本身还在、名字也对，规则换了不该把
+ * 已经核实过的资料扔掉——新一轮对上的覆盖同 id 的旧条目。
+ */
+const previous = readJson('src/data/gundam.kits.jp-enriched.json');
+const merged = new Map();
+for (const e of previous) if (e && e.id) merged.set(e.id, e);
+for (const e of enriched) merged.set(e.id, e);
+const kept = merged.size - enriched.length;
 writeFileSync(
   join(ROOT, OUT_FILE),
   JSON.stringify(
-    enriched.map(({ _src, ...rest }) => rest),
+    [...merged.values()].map(({ _src, ...rest }) => rest),
     null,
     2,
   ).replace(/\n/g, '\r\n') + '\r\n',
@@ -338,6 +427,8 @@ console.log(
   `对上的 ${matched} 条（型号标识消歧 ${byDesignation} 条，精确发售日消歧 ${byDate} 条），跳过歧义 ${ambiguous} 条`,
 );
 console.log(`其中 ${byDesigAnchor} 条是靠机体编号单独对上的`);
+console.log(`另有 ${byLooseKey} 条是靠「等级 + 比例 + 定价」唯一候选对上的`);
+console.log(`上一轮已对上的 ${kept} 条保留不动`);
 if (priceMismatch.length) {
   console.log(`\n定价对不上的 ${priceMismatch.length} 条：`);
   for (const m of priceMismatch.slice(0, 20)) {
