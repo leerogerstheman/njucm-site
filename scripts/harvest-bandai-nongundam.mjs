@@ -160,17 +160,37 @@ function parseBreadcrumb(html) {
   return { crumbs, title, line, work };
 }
 
-/** 商品信息整段（描述在第一段，全高在后面的条目里） */
-function parseDescription(html) {
-  const i = html.indexOf('商品信息');
+/**
+ * 商品信息整段（描述在第一段，全高在后面的条目里）
+ *
+ * 官网的描述是从 Word 贴过来的：一串 <p>，每段里又拆成许多 <span>。
+ * 所以要**按 <p> 取整段**，而不是把标签逐个换成换行——
+ * 后者会把一句话拆成十几个碎片，长度判断随之失效，还会让切片边界
+ * 落在某个标签中间，把半截 HTML 当成正文存进库里（bc-207 就是这么来的）。
+ */
+function parseDescription(html, title = '') {
+  const i = html.indexOf('pg-products__instruction');
   if (i < 0) return { lead: '', full: '' };
-  const block = html.slice(i, i + 4000).replace(/<br\s*\/?>/gi, '\n');
-  const paras = block
-    .replace(/<[^>]+>/g, '\n')
-    .split('\n')
-    .map((s) => s.replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim())
+  const block = html.slice(i, i + 6000);
+  const paras = [...block.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)]
+    .map((m) =>
+      m[1]
+        .replace(/<[^>]*>?/g, ' ')
+        .replace(/&nbsp;/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+    )
     .filter(Boolean);
-  const first = paras.find((p) => p.length > 20 && !/^【|^■/.test(p));
+
+  /* 第一段通常是产品标题本身，不是描述 */
+  const norm = (s) => s.replace(/[\s「」『』（）()·・]/g, '');
+  const normTitle = norm(title);
+  const first = paras.find(
+    (p) =>
+      p.length > 20 &&
+      !/^【|^■/.test(p) &&
+      (!normTitle || !norm(p).startsWith(normTitle))
+  );
   return { lead: first ?? '', full: paras.join(' ') };
 }
 
@@ -195,7 +215,7 @@ function parseDetail(html) {
 
   const age = fields.get('适合年龄') ?? '';
 
-  const description = parseDescription(html);
+  const description = parseDescription(html, title);
   const hm = description.full.match(/全高\s*约?\s*(\d{2,4})\s*(cm|mm|厘米|毫米)/);
   const heightMm = hm
     ? hm[2] === 'mm' || hm[2] === '毫米'
