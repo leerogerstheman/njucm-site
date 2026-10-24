@@ -17612,7 +17612,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 263,
-    "heightMm": 9,
+    "heightMm": 244,
     "material": "2色成型（クリアダークネイビー、メタリックグレー）PS、ABS、TPE",
     "tags": [
       "VOLKS",
@@ -23944,7 +23944,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 543,
-    "heightMm": 2,
+    "heightMm": 280,
     "material": "5色成型（乳白色、グレー（関節色）、黒、シルバー、クリアレッド）PS、PE",
     "tags": [
       "VOLKS",
@@ -23991,7 +23991,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 539,
-    "heightMm": 0,
+    "heightMm": 355,
     "material": null,
     "tags": [
       "VOLKS",
@@ -27727,7 +27727,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 621,
-    "heightMm": 8,
+    "heightMm": 284,
     "material": "5色成型（ホワイト、グレー、ガンメタル、ゴールド、ダークグレー）PS、PE",
     "tags": [
       "VOLKS",
@@ -27774,7 +27774,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 284,
-    "heightMm": 9,
+    "heightMm": 196,
     "material": "5色成型（乳白色、グレー（関節色）、黒、シルバー、クリアレッド）PS、PE",
     "tags": [
       "VOLKS",
@@ -30334,7 +30334,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 296,
-    "heightMm": 2,
+    "heightMm": 291,
     "material": "4色成型（クリアーブルー、ホワイト、グレーメタリック、クリアー）PS、ABS、TPE、PC",
     "tags": [
       "VOLKS",
@@ -40138,7 +40138,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 276,
-    "heightMm": 0,
+    "heightMm": 309,
     "material": "4色成型（ホワイト、シルバー、クリアーブラック、クリアー）PS、ABS、TPE",
     "tags": [
       "VOLKS",
@@ -43555,7 +43555,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 294,
-    "heightMm": 9,
+    "heightMm": 305,
     "material": "4色成型（クリアーブルー、ホワイト、グレーメタリック、クリアー）PS、ABS、TPE",
     "tags": [
       "VOLKS",
@@ -47070,7 +47070,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 643,
-    "heightMm": 0,
+    "heightMm": 284,
     "material": "ホワイト、グレー、ガンメタル、ゴールド、ダークグレー PS、PE、Al",
     "tags": [
       "VOLKS",
@@ -57179,7 +57179,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 327,
-    "heightMm": 5,
+    "heightMm": 184,
     "material": "2色成型（ゴールド、カッパー）PS、PE",
     "tags": [
       "VOLKS",
@@ -67814,7 +67814,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 452,
-    "heightMm": 5,
+    "heightMm": 254,
     "material": null,
     "tags": [
       "VOLKS",
@@ -75183,7 +75183,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 245,
-    "heightMm": 9,
+    "heightMm": 244,
     "material": "2色成型（クリアーダークグリーン、ブラウンメタリック）PS、ABS、TPE",
     "tags": [
       "VOLKS",
@@ -75712,7 +75712,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 420,
-    "heightMm": 0,
+    "heightMm": 262,
     "material": "2色成型（赤、グレー（関節色））PS、PE、NBR、Fe、SUS",
     "tags": [
       "VOLKS",
@@ -79654,7 +79654,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 808,
-    "heightMm": 0,
+    "heightMm": 281,
     "material": "6色成型（クリア、ブラック、グレー、クリアレッド、パープル、ライトグレー）PS、PE",
     "tags": [
       "VOLKS",
@@ -118289,7 +118289,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 578,
-    "heightMm": 8,
+    "heightMm": 284,
     "material": "5色成型（ホワイト、グレー、ネイビーブルー、ゴールド、シルバー）PS、PE",
     "tags": [
       "VOLKS",
@@ -129441,7 +129441,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 284,
-    "heightMm": 9,
+    "heightMm": 196,
     "material": "5色成型（クリア、グレー（関節色）、黒、シルバー、クリアレッド）PS、PE",
     "tags": [
       "VOLKS",
@@ -151671,7 +151671,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 553,
-    "heightMm": 3,
+    "heightMm": 292,
     "material": "5色成型（乳白色、グレー（関節色）、黒、シルバー、クリアレッド）PS、PE",
     "tags": [
       "VOLKS",
@@ -171878,7 +171878,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 539,
-    "heightMm": 0,
+    "heightMm": 355,
     "material": null,
     "tags": [
       "VOLKS",
@@ -178499,7 +178499,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 271,
-    "heightMm": 5,
+    "heightMm": 236,
     "material": "3色成型（ホワイト、グレー、バイオレット）PS、PE ホワイト成型ランナーはメッキ・塗装仕上げ",
     "tags": [
       "VOLKS",
@@ -185288,7 +185288,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 271,
-    "heightMm": 5,
+    "heightMm": 236,
     "material": "3色成型（ホワイト、グレー、バイオレット）PS、PE",
     "tags": [
       "VOLKS",
@@ -185335,7 +185335,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": null,
-    "heightMm": 0,
+    "heightMm": 160,
     "material": null,
     "tags": [
       "VOLKS",
@@ -185382,7 +185382,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": null,
-    "heightMm": 0,
+    "heightMm": 160,
     "material": null,
     "tags": [
       "VOLKS",
@@ -237095,7 +237095,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 367,
-    "heightMm": 7,
+    "heightMm": 252,
     "material": null,
     "tags": [
       "VOLKS",
@@ -237142,7 +237142,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 367,
-    "heightMm": 7,
+    "heightMm": 252,
     "material": null,
     "tags": [
       "VOLKS",
@@ -330699,7 +330699,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 428,
-    "heightMm": 3,
+    "heightMm": 102,
     "material": null,
     "tags": [
       "VOLKS",
@@ -552762,7 +552762,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 197,
-    "heightMm": 5,
+    "heightMm": 135,
     "material": "6色成型PS、PE",
     "tags": [
       "VOLKS",
@@ -573917,7 +573917,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 103,
-    "heightMm": 8,
+    "heightMm": 297,
     "material": "2色成型（ベージュ、クリアー）レジン",
     "tags": [
       "VOLKS",
@@ -574058,7 +574058,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 108,
-    "heightMm": 2,
+    "heightMm": 305,
     "material": "2色成型（ベージュ、クリアー）レジン",
     "tags": [
       "VOLKS",
@@ -574199,7 +574199,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 99,
-    "heightMm": 6,
+    "heightMm": 244,
     "material": null,
     "tags": [
       "VOLKS",
@@ -574246,7 +574246,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 131,
-    "heightMm": 0,
+    "heightMm": 245,
     "material": "2色成型（ベージュ、クリアー）レジン",
     "tags": [
       "VOLKS",
@@ -574293,7 +574293,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 131,
-    "heightMm": 4,
+    "heightMm": 272,
     "material": "2色成型（ベージュ、クリアー）レジン",
     "tags": [
       "VOLKS",
@@ -574340,7 +574340,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 114,
-    "heightMm": 7,
+    "heightMm": 408,
     "material": "2色成型（ベージュ、クリアー）レジン",
     "tags": [
       "VOLKS",
@@ -574387,7 +574387,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 138,
-    "heightMm": 5,
+    "heightMm": 343,
     "material": null,
     "tags": [
       "VOLKS",
@@ -574434,7 +574434,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 146,
-    "heightMm": 0,
+    "heightMm": 360,
     "material": "2色成型（ベージュ、クリアー）レジン",
     "tags": [
       "VOLKS",
@@ -574481,7 +574481,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 180,
-    "heightMm": 0,
+    "heightMm": 400,
     "material": "2色成型（ベージュ、クリアー）レジン",
     "tags": [
       "VOLKS",
@@ -574528,7 +574528,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 187,
-    "heightMm": 0,
+    "heightMm": 420,
     "material": "2色成型（ベージュ、クリアー）レジン",
     "tags": [
       "VOLKS",
@@ -574575,7 +574575,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 117,
-    "heightMm": 0,
+    "heightMm": 415,
     "material": "2色成型（ベージュ、クリアー）レジン",
     "tags": [
       "VOLKS",
@@ -574669,7 +574669,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 149,
-    "heightMm": 5,
+    "heightMm": 345,
     "material": "2色成型（ベージュ、クリアー）レジン",
     "tags": [
       "VOLKS",
@@ -574716,7 +574716,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 165,
-    "heightMm": 5,
+    "heightMm": 345,
     "material": "2色成型（ベージュ、クリアー）レジン",
     "tags": [
       "VOLKS",
@@ -574810,7 +574810,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 156,
-    "heightMm": 5,
+    "heightMm": 360,
     "material": "2色成型（ベージュ、クリアー）レジン",
     "tags": [
       "VOLKS",
@@ -574857,7 +574857,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 146,
-    "heightMm": 0,
+    "heightMm": 360,
     "material": "2色成型（ベージュ、クリアー）レジン",
     "tags": [
       "VOLKS",
@@ -574904,7 +574904,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 123,
-    "heightMm": 7,
+    "heightMm": 376,
     "material": "2色成型（ベージュ、クリアー）レジン",
     "tags": [
       "VOLKS",
@@ -583619,7 +583619,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 99,
-    "heightMm": 5,
+    "heightMm": 310,
     "material": "2色成型（ベージュ、クリアー）レジン",
     "tags": [
       "VOLKS",
@@ -583760,7 +583760,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 92,
-    "heightMm": 0,
+    "heightMm": 256,
     "material": null,
     "tags": [
       "VOLKS",
@@ -586475,7 +586475,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 111,
-    "heightMm": null,
+    "heightMm": 200,
     "material": "カラーレジン",
     "tags": [
       "VOLKS",
@@ -586522,7 +586522,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 113,
-    "heightMm": null,
+    "heightMm": 140,
     "material": "カラーレジン",
     "tags": [
       "VOLKS",
@@ -586569,7 +586569,7 @@ export const MODEL_KITS: ModelProduct[] = [
     "channel": "general",
     "skillLevel": null,
     "parts": 107,
-    "heightMm": null,
+    "heightMm": 135,
     "material": "カラーレジン",
     "tags": [
       "VOLKS",

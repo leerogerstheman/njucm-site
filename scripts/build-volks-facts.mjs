@@ -152,7 +152,15 @@ for (const it of items) {
   const { jpy, base } = priceOf(html);
   const scale = pick(rows, 'スケール').match(/(\d+\s*\/\s*\d+)/)?.[1]?.replace(/\s+/g, '') || '';
   const partsRaw = pick(rows, 'パーツ数', 'パーツ総数').match(/(\d+)/)?.[1];
-  const heightRaw = pick(rows, 'サイズ').match(/全高[^約]*約?(\d+)\s*mm/)?.[1];
+  /*
+   * 全高：规格表里写的是「全高約185mm」「全高252mm」这类，单位可能是 mm 或 cm。
+   * 「約」可有可无，数字必须整段取走——不能只抓末位。
+   */
+  const sizeRaw = pick(rows, 'サイズ');
+  const heightMatch = sizeRaw.match(/全高\s*[:：]?\s*(?:約|约)?\s*(\d+(?:\.\d+)?)\s*(mm|cm)/i);
+  const heightRaw = heightMatch
+    ? Math.round(Number(heightMatch[1]) * (heightMatch[2].toLowerCase() === 'cm' ? 10 : 1))
+    : null;
   const material = pick(rows, '素材');
   const sculptor = pick(rows, '原型制作', '原型製作');
   const code = pick(rows, '型番');
@@ -184,7 +192,7 @@ for (const it of items) {
     channel: 'general',
     skillLevel: null,
     parts: partsRaw ? Number(partsRaw) : null,
-    heightMm: heightRaw ? Number(heightRaw) : null,
+    heightMm: heightRaw,
     material: material || null,
     tags: ['VOLKS', '造型村'],
     note: noteParts.join('；'),
