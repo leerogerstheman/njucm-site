@@ -27,6 +27,7 @@ updated: 2026-10-04
     <span class="dl__how">解压后双击 <code>LeebertyGXP.exe</code>，首次启动自动完成全部初始化（约 5 秒）</span>
   </a>
 </div>
+<p class="muted">下载后可用 SHA-256 对一下，确认拿到的是原封不动的那一份：<a href="/downloads/SHA256SUMS.txt">校验和清单</a>。</p>
 
 **环境要求**：需要 **Node.js 22.5 或更高**（用内置 `node:sqlite`）+ Windows 自带的 WebView2/Edge 引擎
 （Win10/11 一般自带）。**零 npm 依赖，不需要 `npm install`，断网可运行。**

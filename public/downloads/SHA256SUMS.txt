@@ -1,0 +1,22 @@
+# njucm.org 下载文件校验和（SHA-256）
+#
+# 用法（Windows）：
+#   certutil -hashfile <文件名>.zip SHA256
+# 用法（macOS / Linux）：
+#   shasum -a 256 <文件名>.zip
+#
+# 对不上请先重下；仍然不一致请联系站点作者。
+#
+# 生成方式：node scripts/write-download-checksums.mjs
+51bcd8276292319d0f1902404a0748771e49c11f90d143790c88047855fbf8a0  ActionGameTemplate-portable.zip
+6c78162fe27aae1237f7b8a511c039bad927f1c89b45e9d1b2aa399968ef5248  LeebertyCR-windows-portable.zip
+94b0c356ebc4a2b6393f03ed1f57a155ca2a45815ada86c78a986d53025fd637  LeebertyGXP-windows-x64-v1.0.0.zip
+4ddc1312b3042bf4a6d246886e5d6e177cf2d13cb9323585008a4e60c32c85a7  LeebertyPV-windows-portable.zip
+7b3a0563fe532a512d715e94bf3e50ec2c9d3e0e90a8c5e6a9521370087f4b13  LeebertyPharmacyAdministration-windows-portable.zip
+4d3a74adeef8eb3757da4135fc0b46b413e1519d72266b2c76ba122b7bcd9ca0  PEWorkbench-windows-portable.zip
+d4927aee5f1958bf8c2378b9f099cc5bc1e52938d892cd4cb6269f52cad0a60e  PharmaCrawler-v1.0.0-portable-win64.zip
+2240c8ddc5e697e1dfa7874dc22fbe887cca34d25585d2ec2f32b9d58bfbeadb  PharmacovigilanceAgent-windows-portable.zip
+7556d40e92e76917c9def85d58c4151b446186f40ce66f0b9e01a351447f11af  PixivCrawler-windows-v0.11.1-beta.zip
+4f842b46670969d16adaa017ff1a15d9f82354ab18980ddacbf8eff44cd379ae  StarfallChronicle-v0.3.0.zip
+e73df5d3947a5eb3a3de6384a4454726600a1f616e6c978fbac03fd9b3dd8ad1  SysMonitorBar-1.1.0-win-x64.zip
+29bcd9a6c40c56b504c773f446916ded157eaf4f00f126a6a5346ea55648db6d  perler-bead-studio-v1.1.0-full.zip

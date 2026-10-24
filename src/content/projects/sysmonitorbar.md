@@ -42,6 +42,7 @@ Windows 10/11 · .NET 8 · WinForms · MIT 协议
     <span class="dl__how">解压后双击 <code>启动-管理员.cmd</code>（推荐）或 <code>启动.cmd</code></span>
   </a>
 </div>
+<p class="muted">下载后可用 SHA-256 对一下，确认拿到的是原封不动的那一份：<a href="/downloads/SHA256SUMS.txt">校验和清单</a>。</p>
 
 ### ⚠️ 先装 .NET 8 桌面运行时，否则打不开
 

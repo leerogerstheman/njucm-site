@@ -47,6 +47,7 @@ updated: 2026-09-27
     <span class="dl__how">直接双击运行。首次启动会自解压到临时目录，约等 3~8 秒</span>
   </a>
 </div>
+<p class="muted">下载后可用 SHA-256 对一下，确认拿到的是原封不动的那一份：<a href="/downloads/SHA256SUMS.txt">校验和清单</a>。</p>
 
 **版本怎么选**：推荐下第一个 `full.zip`——它**自带 Python 运行时**，解压就能跑，也不依赖网络。
 `exe` 单文件更省事但每次启动要自解压、稍慢，且需要从 GitHub 下载。两个版本功能完全一样。

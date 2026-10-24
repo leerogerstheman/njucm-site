@@ -31,6 +31,7 @@ updated: 2026-10-06
     <span class="dl__how">解压后双击 <code>start.bat</code>，弹出独立窗口「星陨纪年 · Starfall Chronicle」</span>
   </a>
 </div>
+<p class="muted">下载后可用 SHA-256 对一下，确认拿到的是原封不动的那一份：<a href="/downloads/SHA256SUMS.txt">校验和清单</a>。</p>
 
 **环境要求**：**只需要 Node.js 22 或更新版本**，其余什么都不用装。
 

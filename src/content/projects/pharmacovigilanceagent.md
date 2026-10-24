@@ -27,6 +27,7 @@ hello-agents 框架的思路，结合 RAG（检索增强生成）技术，构建
     <span class="dl__how">解压后双击 <code>启动药物警戒助手.vbs</code>（无黑窗口）或 <code>启动药物警戒助手.bat</code></span>
   </a>
 </div>
+<p class="muted">下载后可用 SHA-256 对一下，确认拿到的是原封不动的那一份：<a href="/downloads/SHA256SUMS.txt">校验和清单</a>。</p>
 
 **系统要求**：Windows 7 / 10 / 11 或 macOS / Linux + 任意现代浏览器（Edge / Chrome / Firefox / Safari）。
 

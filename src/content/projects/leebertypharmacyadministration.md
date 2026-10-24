@@ -24,6 +24,7 @@ updated: 2026-10-03
     <span class="dl__how">解压后双击 <code>LeebertyPharmacyAdministration.exe</code> 打开桌面应用</span>
   </a>
 </div>
+<p class="muted">下载后可用 SHA-256 对一下，确认拿到的是原封不动的那一份：<a href="/downloads/SHA256SUMS.txt">校验和清单</a>。</p>
 
 **环境要求**：Windows。**包内已含打包好的单文件 exe，不需要安装 Python**。
 首次启动会解压运行所需组件，稍等几秒即可。

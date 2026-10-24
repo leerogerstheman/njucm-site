@@ -26,6 +26,7 @@ LeebertyCR 是一个**本地运行、零依赖**的药物临床试验岗位辅�
     <span class="dl__how">解压后双击 <code>LeebertyCR.exe</code>（推荐）或 <code>start.bat</code></span>
   </a>
 </div>
+<p class="muted">下载后可用 SHA-256 对一下，确认拿到的是原封不动的那一份：<a href="/downloads/SHA256SUMS.txt">校验和清单</a>。</p>
 
 **环境要求**：**只需要 Node.js 18+**（推荐 22+）。零第三方依赖，**断网可运行**。
 

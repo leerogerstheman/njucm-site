@@ -30,6 +30,7 @@ updated: 2026-10-04
     <span class="dl__how">解压后双击 <code>PixivCrawler.exe</code> 即可运行，无需装 Python</span>
   </a>
 </div>
+<p class="muted">下载后可用 SHA-256 对一下，确认拿到的是原封不动的那一份：<a href="/downloads/SHA256SUMS.txt">校验和清单</a>。</p>
 
 **使用前必看**：
 

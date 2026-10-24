@@ -27,6 +27,7 @@ updated: 2026-10-06
     <span class="dl__how">解压后双击 <code>index.html</code> 即可开始（无需构建、无需依赖、file:// 下可运行）</span>
   </a>
 </div>
+<p class="muted">下载后可用 SHA-256 对一下，确认拿到的是原封不动的那一份：<a href="/downloads/SHA256SUMS.txt">校验和清单</a>。</p>
 
 **环境要求**：**任意现代浏览器**（Edge / Chrome / Firefox）。没有 Node.js、没有 npm install、没有构建步骤。
 

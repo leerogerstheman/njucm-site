@@ -25,6 +25,7 @@ Markdown / RIS / BibTeX / MEDLINE 索引 → 多维检索 + Material Design 3 �
     <span class="dl__how">解压后双击 <code>PharmaCrawler.exe</code>（或 <code>gui.bat</code>）打开图形界面</span>
   </a>
 </div>
+<p class="muted">下载后可用 SHA-256 对一下，确认拿到的是原封不动的那一份：<a href="/downloads/SHA256SUMS.txt">校验和清单</a>。</p>
 
 **环境要求**：**Windows 10/11 x64。官方便携版已内置 Python 运行时——不需要安装 Python，也不需要
 `pip install` 任何东西。**
