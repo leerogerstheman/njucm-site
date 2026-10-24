@@ -1,0 +1,72 @@
+name: Deploy to server
+
+# 推到自建主机（静态站点的完整构建产物）。
+#
+# 与 Pages 那条流程并存：Pages 继续跑着当备份，服务器上的这份是主力。
+# 第一次请用 workflow_dispatch 手动触发，确认没问题后再挂到 push 上。
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "**/*.md"
+      - "docs/**"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: server-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Build site
+        run: pnpm build
+
+      - name: Set up SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SERVER_KNOWN_HOSTS }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
+
+      - name: Push to server
+        env:
+          DEPLOY_HOST: ${{ secrets.SERVER_HOST }}
+          DEPLOY_PATH: ${{ secrets.SERVER_PATH }}
+          DEPLOY_KEY: /home/runner/.ssh/id_ed25519
+        run: |
+          chmod +x deploy/deploy.sh
+          DEPLOY_HOST="$DEPLOY_HOST" DEPLOY_PATH="$DEPLOY_PATH" DEPLOY_KEY="$DEPLOY_KEY" ./deploy/deploy.sh
+
+      - name: Health check
+        run: |
+          sleep 10
+          code=$(curl -s -o /dev/null -w '%{http_code}' https://njucm.org/data/models/index.json)
+          echo "index.json → $code"
+          test "$code" = "200"

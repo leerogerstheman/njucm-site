@@ -1,0 +1,26 @@
+# 站点托管：构建产物整份放在 ./dist，由 Caddy 直接发。
+#
+#   docker compose up -d      第一次起服务
+#   ./deploy.sh                之后每次推送（rsync 增量，只传改动过的文件）
+#
+# 为什么是容器：换机器、换托管方时这套配置原样搬过去，不用重装一遍环境。
+
+services:
+  site:
+    image: caddy:2-alpine
+    container_name: njucm-site
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      ACME_EMAIL: ${ACME_EMAIL:-admin@njucm.org}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./dist:/srv:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:
